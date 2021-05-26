@@ -1,0 +1,16 @@
+# Variables
+export PATH=$PATH:~/.local/bin
+export PATH=$PATH:~/.scripts
+export PATH=$PATH:~/.emacs.d/bin
+export GOPATH=~/go
+export GOPATH=$GOPATH~/golib
+export EDITOR=nvim
+export TERMINAL=alacritty
+export BROWSER=google-chrome
+export FILEMANAGER=nautilus
+
+# Applications
+export DOOMDIR=~/.config/doom
+export FZF_DEFAULT_OPTS="--layout=reverse --height=10"
+eval $(thefuck --alias)
+

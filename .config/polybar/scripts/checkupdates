@@ -1,0 +1,13 @@
+#!/bin/bash
+
+while true; do
+    updates=$(yay -Qu 2> /dev/null | wc -l)
+    if [ $updates -gt 0 ]; then
+        echo "%{F#b48ead}  %{F#d8dee9}$updates"
+        # only sleep 30 to check if user updated
+        sleep 30
+    else
+        echo "%{F#b48ead} "
+        sleep 1200
+    fi
+done

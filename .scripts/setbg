@@ -1,0 +1,31 @@
+#!/bin/bash
+
+bg=$2
+bgloc=~/.config/wall/bg
+bgtmp=~/.config/wall/tmp
+displaymanagerbg=/usr/share/sddm/themes/yellow/bg
+
+if [ -n "$1" ] ; then
+    case $1 in
+        # Display Manager wallpaper
+        -d) sudo cp "$bg" "$displaymanagerbg" ;;
+        # File to set as wallpaper
+        -f) cp "$bg" "$bgtmp" && xwallpaper --zoom "$bgtmp" ;;
+        # Lockscreen wallpaper
+        -l) betterlockscreen -u "$bg" ;;
+        # Presistent current background
+        -p) cp "$bgtmp" "$bgloc" && xwallpaper --zoom "$bgloc";;
+        # Random wallpaper from directory
+        -r) du -a "$bg" | 
+            grep -i -E '\.(png|jpg|jpeg|gif)$' |
+            shuf -n 1 | 
+            sed 's/\ |\(|\)/\\\ /g' | # Put a "\" before spaces
+            awk '{for (i=2; i<NF; i++) printf $i " "; print $NF}' | # Remove leading numbers
+            xargs -I{} cp '{}' "$bgtmp" &&
+            xwallpaper --zoom "$bgtmp" ;;
+        # Save file for persistent background
+        -s) cp "$bg" "$bgloc" && xwallpaper --zoom "$bgloc" ;;
+    esac
+else
+    xwallpaper --zoom "$bgloc"
+fi

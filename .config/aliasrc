@@ -1,0 +1,48 @@
+# Root
+alias sudo='sudo '
+
+# Navigation
+alias \
+    ..="cd .." \
+    ...="cd ../.." \
+    grep="grep --color=auto" \
+    la="ls -a" \
+    ll="ls -al"  \
+    cp="cp -v"
+    yt="youtube-dl --add-metadata -i" \
+	yta="yt -x -f bestaudio/best --audio-format mp3"
+
+# Common commands that are just too long
+alias \
+    ka="killall" \
+    g="git" \
+    sdn="sudo shutdown -h now" \
+    rbt="sudo reboot" \
+    ec="$EDITOR ~/.zshrc" \
+    sc="source ~/.zshrc" \
+    f="$FILE" \
+    e="emacs" \
+    v="$EDITOR" \
+    p="sudo pacman"
+
+# Improved commands
+alias \
+    python="python3" \
+    pip="pip3" \
+    ls="exa --icons --group-directories-first" \
+    fetch="neofetch --ascii_colors 4 4 --colors 11 8 8 11 8 7"
+
+# Functions
+se() {
+    du -a ~/.config/* ~/.scripts/* --exclude='Code*' --exclude='gtk*' --exclude='chromium'|
+    awk '{print $2}' |
+    fzf |
+    xargs -r $EDITOR ;
+}
+
+pkgsizes() {
+    pacman -Qi | 
+    gawk '/^Name/ { x = $3 }; /^Installed Size/ { sub(/Installed Size  *:/, ""); print x":" $0 }' |
+    sort -k2,3nr |
+    less
+}

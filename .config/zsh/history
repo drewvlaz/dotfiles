@@ -1,0 +1,4818 @@
+yay -S st-git
+man ala
+zsh -xv
+zsh --version
+curl wttr.in
+man chmod
+v colors
+cat .config/polybar/color
+dd if=Downloads/artix-plasma-runit-20200210-x86_64.iso of=/dev/sda status=progress
+sudo dd if=Downloads/artix-plasma-runit-20200210-x86_64.iso of=/dev/sda status=progress
+lspci
+ipconf
+ip
+ip ls
+iw dev
+sudo pacman -S neovim
+bspwm
+cp xorg.conf.new /etc/X11/xorg.conf
+sudo cp xorg.conf.new /etc/X11/xorg.conf
+cat xorg.conf.new
+startx
+sudo pacman -S firefox emacs
+sudo systemctl enable gdm
+rm .xinitrc
+cd .mozilla/firefox/jmdndzqd.default-release/
+mkdir chrome
+v UserChrome.css
+cp UserChrome.css userChrome.css
+rm UserChrome.css
+git clone https://aur.archlinux.org/yay.git
+cd yay
+mkpkg -si
+makepkg -si
+yay -Ss hack
+yay -Ss ttf-hack
+yay -S ttf-hack
+yay -Ss iosevka
+yay -S nerd-fonts-iosevka
+git clone https://gitlab.com/dwt1/wallpapers/-/tree/master
+git clone https://gitlab.com/dwt1/wallpapers
+git clone https://gitlab.com/dwt1/wallpapers Pictures
+git clone https://gitlab.com/dwt1/wallpapers Pictures/wallpapers
+xwallpaper
+hack
+yay -S thefuck
+yay -Ss hack font
+yay -S nerd-fonts-hack
+mkdir .config/wall
+yay -Ss gnome settings
+yay -Ss gnome shell
+vim .vimrc
+vim bar.vim
+rm bar.vim
+v .vimrc
+sudo systemctl stop netctl
+yay -Ss zsh theme
+yay -Ss zsh autos
+yay -S zsh-autosuggestions-git
+yay -S zsh-autosuggestions
+yay -S zsh-syntax-highlighting
+yay -S neofetch
+yay -S lxappearance
+sudo vim /etc/gdm/custom.conf
+yay -Ss picom
+yay -Ss picom-ibhagwan-git
+yay -S picom-ibhagwan-git
+yay -Ss vscode
+yay -S code
+yay -S sof-firmware
+yay -S rofie
+yay -S rofi
+yay -Ss pulseaudio
+yay -S pulseaudio-git
+sudo vim /etc/pulse/default.pa
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+doom install
+rm wlan0-Basement_Router_5GHz
+sudo rm wlan0-Basement_Router_5GHz wlp0s20f3-Basement_Router_2.4 wlp0s20f3-Basement_Router_5GHz
+cd /etc/netctl
+sudo vim Basement_Router_5GHz
+amixer
+yay -Ss alsamixer
+yay -S pulsemixer
+yay -S gnome-alsamixer
+sudo systemctl start dbus-org.bluez.service
+sudo systemctl start pulseaudio
+sudo chmod a+rw /sys/class/backlight/intel_backlight/brightness
+sudo systemctl enable pulseaudio
+sudo systemctl --user enable pulseaudio
+systemctl --user enable pulseaudio
+pulseaudio
+amixer sset Master mute
+git config --global user.email "314dsv@gmail.com"
+git config --global user.name "Drew Vlasnik"
+git config --global credential.helper store
+lx
+cat .git-credentials
+yay -S iw
+iw
+yay -S iwconfig
+iw config
+yay -S bluez-utils
+cd /usr/share/applications
+sudo vim code-oss.desktop
+cd Code
+less s
+less settings.json
+cp settings.json ../../Code\ -\ OSS/User/settings.json
+cd .config/Code\ -\ OSS/User
+cat settings.json
+v .mozilla/firefox/jmdndzqd.default-release/chrome/userChrome.css
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.5
+ip link
+sudo mount /dev/nvme0n1p1 Public
+sudo os-prober
+grub-mkconfig -o /boot/grub/grub.cfg
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo umount /dev/nvme0n1p1
+cd /boot/grub/
+sudo vim grub.cfg
+cd fonts
+cat unicode.pf2
+cd starfield
+cd EFI
+cd GRUB
+cat grubx64.efi
+p -SS
+prompt -l
+print -P "$e"
+echo $SHLVL
+echo $COLORTERM
+git clone https://github.com/LukeSmithxyz/st
+vim config.h
+cat .config/polybar/colors
+cp colors colors.css
+v colors.css
+rm colors.css
+git clone https://github.com/drewvlaz/spotipy
+git clone https://github.com/drewvlaz/spotipy-music
+git clone https://github.com/drewvlaz/spoti-py-music
+yay -Ss virtualenv
+yay -Ss pip
+yay -S pip3
+yay -S pip
+yay -Ss python pip
+yay -S python-pip
+pip -V
+pip install virtualenv
+less spoti.py
+less playlist.py
+pip install requests
+pip install youtube-dl bs4 eyed3
+less song.py
+cat requirements.txt
+yay -S xbacklight
+yay -Ss xbacklight
+yay -S xorg-xbacklight
+xbacklight
+xbacklight -inc 100
+xbacklight -dec 100
+yay -S man
+pulsemixer --toggle-mute
+man neofetch
+neofetch --backend sixel
+neofetch --backend ascii
+neofetch --source wallpaper
+neofetch --source acsii
+neofetch --source ascii
+neofetch --caca
+neofetch --kitty
+neofetch --off
+neofetch --ascii_colors f
+neofetch --ascii_colors f f f f f f
+neofetch --ascii_colors f f f f f f f
+neofetch --ascii_colors ffffff
+neofetch --ascii_colors 0 0 0 0 0 0
+neofetch --ascii_colors 1 1 1 1 1 1
+neofetch --ascii_colors 2 2 2 2 2 2
+neofetch --ascii_colors 2 2 2 2 2 1
+neofetch --ascii_colors 2 2 2 1 2 1
+neofetch --ascii_colors 2
+neofetch --ascii_colors 2 2
+neofetch --ascii_colors 2 1
+neofetch --ascii_colors 2 3
+neofetch --ascii_colors 2 4
+neofetch --ascii_colors 4 4
+neofetch --ascii_colors 4 4 --colors 4
+neofetch --ascii_colors 4 4 --colors 4 4 4 4 4 4
+neofetch --ascii_colors 4 4 --colors 4 5
+neofetch --ascii_colors 4 4 --colors 4 5 6
+neofetch --ascii_colors 4 4 --colors 4 5 7
+neofetch --ascii_colors 4 4 --colors 4 5 1
+neofetch --ascii_colors 4 4 --colors 4 5 2
+neofetch --ascii_colors 4 4 --colors 4 5 2 4
+neofetch --ascii_colors 4 4 --colors 4 5 2 4 1
+neofetch --ascii_colors 4 4 --colors 4 5 2 4 1 2
+neofetch --ascii_colors 4 4 --colors 4 5 2 4 1 3
+neofetch --ascii_colors 4 4 --colors 3 5 2 4 1 3
+neofetch --ascii_colors 4 4 --colors 3 5 2 4 1 4
+neofetch --ascii_colors 4 4 --colors 3 5 2 4 1 5
+neofetch --ascii_colors 4 4 --colors 3 5 2 4 1 6
+neofetch --ascii_colors 4 4 --colors 3 5 2 4 1 8
+neofetch --ascii_colors 4 4 --colors 3 5 2 9 1 8
+neofetch --ascii_colors 4 4 --colors 2 5 2 9 1 8
+neofetch --ascii_colors 4 4 --colors 2 5 2 9 1 10
+neofetch --ascii_colors 4 4 --colors 2 5 2 9 1 12
+neofetch --ascii_colors 4 4 --colors 2 5 2 9 1 11
+neofetch --ascii_colors 4 4 --colors 2 5 2 9 8 11
+yay -Ss i3lock
+yay -S i3lock-color
+yay -Ss betterlockscreen
+yay -S betterlockscreen
+betterlockscreen 
+betterlockscreen --lock blur
+cp /usr/share/doc/betterlockscreen/examples/betterlockscreenrc ~/.config
+sleep 2 && echo hellow
+sleep 2 | echo hello
+betterlockscreen --lock
+cd .
+cd do
+cd dotfiles/.config
+cp --help
+cp --help | less
+yay -S lf
+diff nord.rasi gruvbox-material.rasi
+diff nord.rasi gruvbox-material.rasi | less
+v gruvbox-dark-hard.rasi
+v gruvbox-material.rasi
+systemctl enable betterlockscreen
+systemctl enable betterlockscreen@$USER
+i3lock
+cp .config/Code\ -\ OSS
+se 
+yay -S spotify
+man l
+man lf
+yay -Ss material design
+yay -Ss material icons
+yay -S ttf-material-design-icons
+yay -Ss xclip
+yay -S xclip
+yay -S xsel
+cd .vim
+cd plugged
+rm -rf coc.nvim
+cat .config/polybar/launch.sh
+killall -q polybar
+xdo
+betterlockscreen -u ~/.config/wall/bg
+fc-match MaterialIcons
+yay -S xorg-xdf
+yay -S xorg-xfd
+echo "\ue2c7"
+xfd -fa MaterialIcons
+echo "\ue322"
+echo "\ue323"
+echo "\ue321"
+echo "\ue311"
+echo "\f1a4"
+echo "\ue19c"
+echo "\uef19c"
+echo "\xf19c"
+echo "\&#xf19c"
+echo "\&#xf19c;"
+ÓÉ¨ÉÇ
+ÓÉÇ∞
+cat config.ini
+cat colors
+cd /boot/grub
+cp ~/Downloads/Tela-2k .
+cp -r ~/Downloads/Tela-2k .
+sudo cp -r ~/Downloads/Tela-2k .
+cd ls
+mv Tela-2k tela
+sudo mv Tela-2k tela
+cd tela
+cd Tela/l
+cd Tela/
+vim /etc/default/grub
+sre
+yay -Ss fantasque mono
+yay -S nerd-fonts-fantasque-sans-mono
+yay -Ss exa
+yay -S exa
+exa --icons
+exa --icons --group-directories-firsts
+exa --icons --group-directories-first
+cd go\~
+rr
+neofetch --ascii_colors 4 4 --colors 10 5 2 9 8 11
+neofetch --ascii_colors 4 4 --colors 12 5 2 9 8 11
+neofetch --ascii_colors 4 4 --colors 13 5 2 9 8 11
+neofetch --ascii_colors 4 4 --colors 14
+neofetch --ascii_colors 4 4 --colors 15
+neofetch --ascii_colors 4 4 --colors 16
+neofetch --ascii_colors 4 4 --colors 17
+neofetch --ascii_colors 4 4 --colors 18
+neofetch --ascii_colors 4 4 --colors 19
+neofetch --ascii_colors 4 4 --colors 20
+neofetch --ascii_colors 4 4 --colors 21
+neofetch --ascii_colors 4 4 --colors 22
+neofetch --ascii_colors 4 4 --colors 23
+neofetch --ascii_colors 4 4 --colors 24
+neofetch --ascii_colors 4 4 --colors 11
+source .config/aliasrc
+man ls
+exa -h
+ls -git
+ls --git
+cp /usr/share/gnome-shell/theme/gnome-classic.css /usr/share/gnome-shell/theme/gnome-classic.bkup
+sudo cp /usr/share/gnome-shell/theme/gnome-classic.css /usr/share/gnome-shell/theme/gnome-classic.bkup
+sudo cp ubuntu.css /usr/share/gnome-shell/theme/modern.css
+sudo cp Pictures/wallpapers/0028.jpg /usr/share/backgrounds/
+cd /usr/share/backgrounds/
+sudo vim modern.css
+cd /usr/share/backgrounds
+mv 0028.jpg bg
+sudo mv 0028.jpg bg
+cat Downloads/README.md
+yay -Ss gdm manager
+yay -S loginized
+cd .config/polybar
+cat checkupdates
+less checkupdates
+yay -R loginized
+man pacman | v
+go
+p -Qtd
+p -Qs go
+p -Qs ^go
+p -Qs ^go$
+p -Qs go$
+p -R zita-alsa-pcmi
+p -R zita-resampler
+p -Qe
+p -R gedit
+yay -R ttf-hack
+p -Qe hack
+p -Qe nerd-fonts-
+p -Qe nerd-fonts
+p -Qe nerd-fonts-hack
+p -R nerd-fonts-hack
+p -S ttf-hack
+p -Qqe
+yay -R gnome-user-docs
+yay -R gnome-getting-started-docs
+p -R yelp
+p -R tepl yelp-xsl
+p -Rns amtk uchardet
+dyu
+p -Sc
+p -Qe | less
+gnome-books
+m4
+yay -Ss mpd
+yay -S mpd
+p -S go
+p -Se go
+rygel
+tracker
+p -R xorg-xfd
+p -Qt
+yay -S gdmtweak
+yay -Ss gdm tweak
+cd /usr/share/gnome-shell/theme
+firefox modern.css
+less moder
+less modern.css
+rm gnome-classic.css
+sudo rm gnome-classic.css
+mv modern.css gnome-classic.css
+sudo mv modern.css gnome-classic.css
+diff gnome-classic.bkup gnome-classic.css
+cat history
+ecc
+cd .config/zsh
+echo $TERM
+lss
+lsns
+lz
+mv go\~ go
+cat .config/zsh/zshenv
+echo $TERMINAL
+p -Scc
+rm -rf loginized
+rm -rf Loginized
+du | wc -l
+cd autostart
+rm autostart
+rm -rf autostart
+cd Rygel
+yelp
+rm -rf yelp
+la | wc -l
+cd dconf
+cat user
+cd goa-1.0
+cd gtk-2.0
+cd gtk-3.0
+cd gtk-4.0
+cd ibus
+cd bus
+cd Code\ -\ OSS
+ls -R | wc -l
+cd Code\ -\ OSS/ls
+cd Code\ -\ OSS/
+cd blob_storage
+cd 4fd70301-e879-4553-b72e-e5268936f579
+cd .config/Code\ -\ OSS/ls
+cd .config/Code\ -\ OSS/
+cd Backups
+cd User
+du ~/.config
+du ~/.config | wc -l
+du -a ~/.config | wc -l
+du -a ~/.config --exclude="Code\ -\ OSS/*" | wc -l
+cat .scripts/syncdots
+LANG=c p -Syu
+sudo v 
+sudo vim /etc/pacman.d/mirrorlist
+time (repeat 1000 zsh -dfis <<< 'source ~/powerlevel10k/powerlevel10k.zsh-theme')
+brightnessctrl -inc 1000
+zle
+man zle
+zle -K viins
+zle -N zle-line-init
+zle-line-init
+man bindkey
+man zshzle
+bspc node -z top 20 0
+bspc node -z top -20 0
+bspc node -z top 0 20
+bspc node -z top 0 -20
+bspc desktop
+bspc desktop -l
+betterlockscreen --off 5
+betterlockscreen --lock | systemctl suspend
+mpd
+lla
+laa
+code spoti-py-music
+p -S bluez
+bluez
+modprobe btusb
+p -S linux-firmware
+betterlockscreen -u ~/Pictures/wallpapers/0028.jpg
+cd /etc/grub.d
+v 00_header
+cd /etc/default/gru
+cd /etc/default/
+v grub
+flex
+yay -S iwd
+iw d
+iwd
+sudo systemctl stop NetworkManager
+nmtui
+yay -S arandr
+xrandr --output DP1-1 --mode 1920x1080 --scale 1x1 --output VGA-1 --same-as LVDS-1 --mode 1920x1080 --scale 0.711x0.711
+xrandr --output DP1-1 --mode 1920x1080 --scale 1x --same-as eDP1 --mode 1920x1080 --scale 0.711x0.711
+xrandr --output DP1-1 --mode 1920x1080 --scale 1x1 --same-as eDP1 --mode 1920x1080 --scale 0.711x0.711
+xrandr --output DP1-1 --mode 1920x1080 --scale 1x1 --same-as eDP1 --mode 1920x1080 --scale 0.5x0.5
+xrandr --output DP1-1 --mode 1920x1080 --scale 1x1 --same-as eDP1 --mode 1920x1080 --scale 1.5x1.5
+xrandr --output DP1-1 --mode 1920x1080 --scale 1x1 --same-as eDP1 --mode 1920x1080 --scale 1.3x1.3
+xrandr --output DP1-1 --same-as eDP1 --scale 1.4x1.4
+xrandr --output DP1-1 --same-as eDP1
+xbacklight -inc 10
+xbacklight -get
+xdg-open https://www.github.com
+xdg-open spotify
+xrandr | grep DP1-1
+xrandr | grep DP1-1 connected
+xrandr | grep "DP1-1 connected"
+if (xrandr | grep "DP1-1 connected")\
+then echo connected\
+fi
+if (xrandr | grep "DP1-1 connected")\
+then echo connected\
+else\
+echo disconnected\
+fi
+systemctl suspend
+git clone https://github.com/drewvlaz/drewvlaz
+cp ~/Pictures/maroon-shield.png assets
+v ../README.md
+git commit -m "Minor updates"
+git clone https://github.com/dbuxy218/Prismatic-Night
+cd Prismatic-Night
+cd firefox/chrome
+rm -rf chrome
+cp -r chrome ~/.mozilla/firefox/jmdndzqd.default-release
+cp -r startpage ~/.mozilla/firefox/jmdndzqd.default-release
+firefox index.html
+cd ../chrome
+cd newtab
+v mozilla.cfg
+sudo cp mozilla.cfg /usr/lib/firefox
+sudo cp local-settings.js /usr/lib/firefox/defaults/pref
+p -Qe | grep font
+p -Syu
+doom refresh
+doom sync
+mkdir algorithmic-toolbox-coursera
+cd algorithmic-toolbox-coursera
+mkdir week3
+cd week3
+cd 1_money_change
+cd 1_fibonacci_number
+cat fibonacci.py
+cd 3_greatest_common_divisor
+cat gcd.py
+python change.py
+chsh
+/bin/zsh
+sudo chsh
+cd Downloads/algorithmic-toolbox-coursera/week3_greedy_algorithms
+cd week2_algorithmic_warmup
+cd 4_least_common_multiple
+cat lcm.py
+cd startpage
+man alacritty
+rm aldkjf
+[~/Dev/algorithmic-toolbox-coursera/
+python loot.py
+950\
+400\
+4\
+200 375 550 750950\
+400\
+4\
+200 375 550 750
+Grader output
+yay -Ss zoom
+v index.html
+v style.css
+yay -S throttled
+sudo systemctl enable --now lenovo_fix.service
+pacuctl
+yay -S pavuctl
+yay -S obs
+yay -Ss obs
+yay -S obs-studio
+ehco hello
+echo hello
+yay -S blc
+yay -S vlc
+vlc 2020-07-12\ 12-16-07.mkv
+chmod +x dockconf
+v car_fueling.py
+pytho
+hwclock
+sudo hwclock
+set 
+set time
+ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
+sudo ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
+hwclock --systohc
+sudo hwclock --systohc
+timedatectl set-local-rtc 1 --adjust-system-clock
+date
+timedatectl
+cat dock.sh
+rm dock.sh
+v dockconf
+xdpyinfo | grep dimensions | sed -r 's/^[^0-9]*([0-9]+x[0-9]+).*$/\1/'
+xdpyinfo
+xdpyinfo | grep dimensions
+cd .screenlayout
+cat test.sh
+echo dockconf | se
+picom
+picom &
+python car_fueling.py
+rm ad_revenue
+python ad_revenue.py
+yay -Qe | grep spotify
+python line_segments.py
+pkill -USR1 -x bspwm && bspc wm -r
+cd Dev/algorithmic-toolbox-coursera/week3
+getconf PAGESIZE
+swapon --free
+free -h
+du -a -h /
+SE
+cd evolution
+du -a gnome-boxes
+cd gnome-boxes
+cd sources
+du -a -h neofetch
+cd neofetch
+v config.conf
+sc && fetch
+neofetch --ascii_colors 4 4 --colors 11 8 8 11 8 4\
+
+neofetch --ascii_colors 4 4 --colors 11 8 8 11 8 5
+neofetch --ascii_colors 4 4 --colors 11 8 8 11 8 6
+neofetch --ascii_colors 4 4 --colors 11 8 8 11 8 0
+neofetch --ascii_colors 4 4 --colors 11 8 8 11 8 1
+neofetch --ascii_colors 4 4 --colors 11 8 8 11 8 2
+neofetch --ascii_colors 4 4 --colors 11 8 8 11 8 3
+neofetch --ascii_colors 4 4 --colors 11 8 8 11 8 7
+rm 2020-07-12\ 12-16-07.mkv
+yay -Ss screenshot
+cd dotfiles
+mkdir assets
+mv blank_workspace.png ~/dotfiles/assets
+sxiv maroon-shield.png
+cd dotfiles/assets
+mv Screenshot\ from\ 2020-07-13\ 12-43-40.png fetch.png
+sxiv assets
+yay -S tlp
+sudo systemctl enable tlp.service
+sudo systemctl start tlp.service
+cat /etc/tlp.conf
+less /etc/tlp.conf
+tlp-stat
+sudo tlp-stat
+p -Ru
+p -Rns st
+ping archlinux.org
+wifi-menu
+sudo wifi-menu!
+p -S chromium
+cd .config/chromium
+cd Default
+p -S google-chrome
+yay -S google-chrome
+cd .mozilla/firefox/jmdndzqd.default-release/startpage
+mv userChrome.css bkup
+p -Rns google-chrome
+p -Qe | wc -l
+p -Q | grep xorg
+p -Rns xorg-font-utils
+du -h google-chrome
+rm -rf google-chrome
+yay -Ss material design icons
+mv bkup userChrome.css
+cd Dev/st
+echo BROWSER
+echo $BROWSER
+man xdo-xdg
+man xdo
+man xdo-open
+xdg-open 'http://www.freedesktop.org/'\
+
+man xdg-open
+yay -Ss font awesome 5 pro
+yay -Ss font awesome pro
+yay -Ss weather-icons
+sudo netctl stop
+yay -S gnome-bluetooth
+gnome-bluetooth
+chmod +x bluetooth
+bluetoothctl paired-devices | cut -d ' ' -f 2
+bluetoothctl paired-devices | awk '{print $2}'
+echo "$(tput setaf 1)Red text $(tput setab 7)and white background$(tput sgr 0)"
+bluetoothctl power off
+hciconfig -a
+gnome-shell
+echo "$(tput setaf 4) hello"
+bluetoothctl info EC:AA:25:AC:0C:FD
+bluetoothctl set-alias "Galaxy Buds"
+print -P "$~"
+bluetoothctl connected
+bluetoothctl devices
+panes
+bash
+zsh
+cd .config/
+v chromium-flags.conf
+cat brightnessctrl
+chmod +x toggleffcss
+cat toggleffcss
+toggleffcss --on
+toggleffcss --off
+rm .Xresources
+touch s
+t > s
+cat t
+cat t > s
+cat t >> s
+cat s
+rm s t
+toggleffcss
+yay -S sddm
+sudo cp -r /usr/lib/sddm/sddm.conf.d /etc
+cp ~/Downloads/Yellow .
+cp -r ~/Downloads/Yellow .
+sudo cp -r ~/Downloads/Yellow .
+mv Yellow yellow
+sudo mv Yellow yellow
+cd maya
+ls\
+Q\
+Q\
+Q\
+Q\
+Q\
+
+sudo systemctl disable gdm
+yay -S qt5-quickcontrols
+sudo systemctl enable sddm
+man ln
+sddm-greeter --test-mode --theme /usr/share/sddm/themes/elarun
+sddm-greeter --test-mode --theme /usr/share/sddm/themes/maldives
+sddm-greeter --test-mode --theme /usr/share/sddm/themes/maya
+yay -S qt5
+yay -Ss kde settings
+sxiv preview.png
+sxiv yellow-and-black-lines-dark.jpg
+less theme.conf
+xclip
+st
+cp ~/Pictures/wallpapers/0196.jpg .
+sudo cp ~/Pictures/wallpapers/0196.jpg .
+sudo vim theme.conf
+cd /root
+cd root
+sudo v
+c
+yay -Rns qt5-examples qt5-doc qt5-gamepad
+yay -Qe | grep qt
+v Dev/spoti-py-music/song.py
+v settings.vim
+v coc-settings.json
+v init.vim
+cd autoload
+man wc
+yya
+p -Qi
+pacman -Qi | egrep '^(Name|Installed)'
+pacman -Qi | egrep '^(Name|Installed)' | awk '{print $2}'
+pacman -Qi | egrep '^(Name|Installed)' | less
+pacman -Qi | egrep '^(Name|Installed)' | cut -f2 -d':' | tr '\nK' ' \n'
+pacman -Qi | egrep '^(Name|Installed)' | cut -f2 -d':'
+pacman -Qi | egrep '^(Name|Installed)' | cut -f2 -d':' | tr '\nK' ' \n' | sort -nrk 2 | less 
+pacman -Qi | gawk '/^Name/ { x = $3 }; /^Installed Size/ { sub(/Installed Size  *:/, ""); print x":" $0 }' | sort -k2,3n
+pacman -Qi | gawk '/^Name/ { x = $3 }; /^Installed Size/ { sub(/Installed Size  *:/, ""); print x":" $0 }' | sort -k2,3n | less
+pacman -Qi | gawk '/^Name/ { x = $3 }; /^Installed Size/ { sub(/Installed Size  *:/, ""); print x":" $0 }' | sort -k2,3nr | less
+p -Qdt
+p -qdti
+p -Qdti
+jasper
+man jasper
+echo infor
+echo info | bluetoothctl
+systemctl start bluetooth
+bluetoothctl connect 28:EC:9A:0A:5A:CE
+bluetoothctl list
+sudo bluetoothctl
+sudo bluetoothctl connect 28:EC:9A:0A:5A:CE
+rfkill list all
+yay -S pulseaudio-bluetooth
+bluetoothctl paired-devices
+bluetoothctl show
+bluetoothctl show | grep Power
+./bluetooth
+bluetoothctl connect EC:AA:25:AC:0C:FD
+sudo bluetoothctl connect EC:AA:25:AC:0C:FD
+./bluetooth --toggle
+sudo ./bluetooth --toggle
+bluetoothctl power on default-agent
+bluetoothctl power on && bluetoothctl default-agent && bluetoothctl connect EC:AA:25:AC:0C:FD
+checkupdates
+p -Qu
+p -Qum
+rm checkupdates
+./updates.sh
+v updates.sh
+yay -S checkupdates
+chmod +x checkupdates
+sudo sy
+sudo systemctl stop bluetooth.service
+\
+if ! updates_aur=$(yay -Qum 2> /dev/null | wc -l); then\
+# if ! updates_aur=$(cower -u 2> /dev/null | wc -l); then\
+# if ! updates_aur=$(trizen -Su --aur --quiet | wc -l); then\
+# if ! updates_aur=$(pikaur -Qua 2> /dev/null | wc -l); then\
+# if ! updates_aur=$(rua upgrade --printonly 2> /dev/null | wc -l); then\
+    updates_aur=0\
+fi\
+\
+updates=$(("$updates_arch" + "$updates_aur"))\
+\
+if [ "$updates" -gt 0 ]; then\
+    echo "# $updates"\
+else\
+    echo ""\
+fi
+systemctl status bluetooth | grep Active
+chmod +x tbt
+v bluetooth
+v toggle
+v toggleffcss
+v tbt
+tbt --on
+systemctl is-active bluetooth
+mv colors colors.ini
+v colors.ini
+./launch.sh
+v config.ini
+v checkupdates
+sxiv Pictures/wallpapers
+sxiv .config/wall/bg
+tbt --off
+tbt
+syncdots "bluetooth"
+yay -Ss mysql
+git clone https://github.com/freeCodeCamp/boilerplate-express/
+mv -r boilerplate-express Dev
+mvr boilerplate-express Dev
+mv boilerplate-express Dev
+cd Dev/boilerplate-express
+git branch de
+git remote add 
+git remote add origin https://github.com/drewvlaz/boilerplate-express.git
+git remote add main https://github.com/drewvlaz/boilerplate-express.git
+git push -u dev main
+git remote add glitch https://root-relieved-feast.glitch.me
+git remote add glitch https://glitch.com/~root-relieved-feast
+git remote remove glitch
+git remote add glitch https://b30ae3cc-980f-44d7-96a0-e3c1051df0b5@api.glitch.com/git/root-relieved-feast
+git push -u glitch dev
+git add * && git commit -m "completed objective" && git push -u glitch dev
+git push -u main dev
+cd .git
+v config
+echo https://root-relieved-feast.glitch.me
+git add .env
+git add * && git commit -m "completed objective" && git push -u main dev
+fdis
+fdisk /dev/sda
+sudo fdisk /dev/sda
+updates = $(yay -Qu 2> /dev/null | wc -l)
+$(yay -Qu 2> /dev/null | wc -l)
+echo $(yay -Qu 2> /dev/null | wc -l)(yay -Qu 2> /dev/null | wc -l)
+echo $(yay -Qu 2> /dev/null | wc -l)
+if ! updates=$(yay -Qu 2> /dev/null | wc -l); then \
+echo updates\
+else\
+echo actual updates\
+fi
+if ! updates=$(yay -Qu 2> /dev/null | wc -l); then \
+echo $updates\
+else\
+echo actual updates\
+fi
+if ! updates=$(yay -Qu 2> /dev/null | wc -l); then \
+echo $updates\
+else\
+echo $updates\
+fi
+./checkupdates
+yay -Qu 2> /dev/null | wc -l
+mv 0196.jpg bg
+sudo mv 0196.jpg bg
+setbg -f bg
+cler
+du -h Pictures/wallpapers
+cd Pictures/wallpapers
+du -a --exclude=".git\
+\
+"
+du -a exclude=".git" | wc -l
+du -a exclude="git" | wc -l
+du -a --exclude=".git"
+du -a --exclude=".git" | wc -l
+du -a --exclude=".git" --exclude="README.md" | wc -l
+du -a --exclude=".git" --exclude="README.md"
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" | wc -l
+man shuf
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" | shuf
+xwallpaper --zoom /home/drewvlaz/Pictures/wallpapers/0046.jpg
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" | shuf -n 1 | xargs xwallpaper --zoom
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" | shuf -n 1 | xwallpaper --zoom
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" | shuf -n 1 | sxiv
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" | shuf -n 1 | xargs sxiv
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" | shuf -n 1 | xargs setbg -f
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" | shuf -n 1
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" | shuf -n 1 | awk '{print $2}'
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" | shuf -n 1 | awk '{print $2}' | xargs xwallpaper -zoom
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" | shuf -n 1 | awk '{print $2}' | xargs xwallpaper --zoom
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" 
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" | sed $d
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md"
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" | sed '$d'
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" | sed '$d' | shuf -n 1 | awk '{print $2}' |\
+\
+ls
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" | sed '$d' | shuf -n 1 | awk '{print $2}'
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" | sed '$d' | shuf -n 1 | awk '{print $2}' | cp ~/.config/wall/tmp
+man cp
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" | sed '$d' | shuf -n 1 | awk '{print $2}' | xargs -I{} cp "{}" ~/.config/wall/tmp
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" | sed '$d' | shuf -n 1 | awk '{print $2}' | xargs -I{} cp "{}" ~/.config/wall/tmp && xwallpaper --zoom ~/.config/wall/tmp
+du -a ~/Pictures/wallpapers --exclude=".git" --exclude="README.md" | sed '$d' | shuf -n 1 | awk '{print $2}' | xargs -I{} cp '{}' ~/.config/wall/tmp && xwallpaper --zoom ~/.config/wall/tmp
+ls .config/wall
+polybar
+mv tbt togbt
+mv toggleffcss togffcss
+cat toggle-polybar
+rm toggle-polybar
+rm brightnessctrl
+cat dockconf
+v togbt
+./.config/polybar/launch.sh
+yay -S polybar
+apci
+yay -Rns gnome-books gnome-contacts gnome-maps gnome-remote-desktop gnome-terminal gnome-video-effects
+yay -Rns gnome-books gnome-contacts gnome-maps gnome-remote-desktop gnome-terminal
+yay -Qe | grep gnome
+man grilo-plugins
+grilo-plugins
+man grilo
+yay -Rns xsel
+which
+type ls
+type se
+man type
+tote
+man totem
+yay -Rns totem
+man texinfo
+texinfo
+man tracker
+man sushi
+sushi
+sushi Downloads/README.md
+yay -Rns sushi
+man simple-scan
+yay -Rns simple-scan
+du -a /
+du -h /
+man rygel
+yay -Rns rygel
+pkgconf
+man pkgconf
+man orcA
+yay -Rns orca
+man m4
+man gettxt
+man gettext
+yay -Rns gettext
+man flex
+man evinve
+man evince
+yay -Rns evince
+yay -Rns epiphany
+yay -Rns eog
+man bison
+man baobab
+man which
+man vino
+yay -Rns vino
+df
+echo yay -Ss postgresql
+echo !
+yay -Ss postgresql
+yay -S postgresql
+createdb firstdb
+psql
+sudo - postgres -c "initdb --locale en_US.UTF-8 -D '/var/lib/postgres/data'"
+createdb tmp
+man visudo
+SUDO_EDITOR = vim
+sudo visudo
+sudo visudo --with-env-editor vim
+sudo export EDITOR=nvim
+sudo sudo su - postgres -c "initdb --locale en_US.UTF-8 -D '/var/lib/postgres/data'"
+su - postgres -c "initdb --locale en_US.UTF-8 -D '/var/lib/postgres/data'"
+systemctl status postgresql.service
+sudo systemctl stop postgresql
+sudo chown $(whoami) /usr/local/var/postgres
+chown -R postgres:postgres /var/lib/postgres/
+sudo chown -R postgres:postgres /var/lib/postgres/
+sudo su - postgres -c "initdb --locale en_US.UTF-8 -D '/var/lib/postgres/data'"
+cd .config/polybar/scripts
+ÔºÉæ
+‚É¶¨
+echo ‚É¶¨
+‚É∂∫
+cd /usr/share/sddm/themes
+rufk
+rm elarun
+rm -rf elarun
+sudo rm -rf elarun
+sudo rm -rf maldives
+sudo rm -rf maya
+cd yellow
+v theme.conf.user
+v theme.conf
+sudo v theme.conf
+v Main.qml
+v metadata.desktop
+cd Components
+v SessionButton.qml
+sudo setbg -d .config/wall/tmp
+setbg -r ~/Pictures/wallpapers
+git clone https://github.com/LukeSmithxyz/wallpapers wallpapers0
+mkdir medical
+mv *.pdf ../Documents/medical
+cd medical
+mv 7D__0232-01.jpeg senior-headshot
+rm Juno-ocean.tar.xz
+rm la-capitaine-icon-theme-0.6.1-20190217.tar.gz
+rm Tela-2k.tar.xz
+rm tpW-QB4ATMqVvkAeAHzKtw_df9ba297ee0745fb8e40b00bde601ded_course1_2020_05_28.zip
+rm Yellow
+rm Yellow.tar.gz
+rm -rf Yellow
+cd Tela-2k/
+cat install.sh
+cat README.md
+mv wallpapers wallpapers1
+mkdir uchicago
+mv maroon-shield.png uchicago
+mkdir self
+mv senior-headshot ../Pictures/self
+rm ubuntu.css
+setbg -r ~/Pictures/wallpapers0/Future
+setbg -r ~/Pictures/wallpapers0/Etc
+yay -S dmenu
+dmenu
+printf "No\\nYes" | dmenu -i p "SURE?"
+ls | dmenu
+ls | rofi --dmenu
+man foi
+ls | rofi -dmenu
+ls | rofi -dmenu -p "Hello"
+man dmenu
+man rofi
+setbg -r ~/Pictures/wallpapers1
+which ls
+which se
+which setbg
+type setbg
+which pkgconf
+which pkgsizes
+p -Qei
+man gnome-backgrounds
+yay -Rns gnome-backgrounds
+yay -Rns qt5-virtualkeyboard
+yay -Rns chromium
+yay -Qi | grep boa
+yay -Qi | grep boaboa
+yay -Qi | grep bao
+yay -Qi | grep baob
+yay -Qi | grep baobao
+yay -Qi | grep baobab
+yay -Qi | less
+yay -Rns gnome-alsamixer
+epiphany
+man epiphany
+yay -S epiphany
+rm -rf epiphany
+yay -S totem
+rm -rf totem
+yay -S evolution
+evolution
+man evolution
+yay -Qe | grep evolution
+rm -rf evolution
+yay -Qe | grep eog
+man eog
+eog
+rm -rf eog
+yay -Qe | grep rygel
+rm rygel.conf
+rm -rf Rygel
+cd Unknown\ Organization
+cat zoomus.conf
+mv aliasrc zsh
+sxiv Pictures/wallpapers0/Etc
+sxiv Pictures/wallpapers0/Art
+sxiv Pictures/wallpapers0/Future
+sxiv Pictures/wallpapers0/Tech
+sxiv Pictures/wallpapers0/Titans
+sxiv Pictures/wallpapers0/Unsorted
+cp .zshrc /var/lib/postgres
+sudo cp .zshrc /var/lib/postgres
+sudo chsh --list-shells
+yay -S npm
+mkdir learnpern
+cd learnpern
+mkdir server
+rm package.json
+cat package.json
+npm i express pg cors
+node index
+npm install -g nodemon
+yay -Ss nodemon
+sudo npm install -g nodemon
+touch database.sql
+touch db.js
+yay -Ss postman
+yay -S postman
+man bluetoothctl
+man bluetooth
+yay -S pavucontrol
+npx create-react-app client
+mv client ../
+rm serviceWorker.js
+rm setupTests.js
+rm logo.svg
+cd components
+touch Input
+touch EditTodo.js
+touch ListTodos.js
+mv Input InputTodo.js
+nod 
+npm init
+/run/user/1000/gvfs/mtp:host=SAMSUNG_SAMSUNG_Android_9887a8424535425032/Card/DCIM/Camera/20200722_115149.jpg\
+
+cd camera
+cd Camera
+sudo cp /run/user/1000/gvfs/mtp:host=SAMSUNG_SAMSUNG_Android_9887a8424535425032/Card/DCIM/Camera/20200722_115149.jpg Documents/medical
+sudo sudo cp /run/user/1000/gvfs/mtp:host=SAMSUNG_SAMSUNG_Android_9887a8424535425032/Card/DCIM/Camera/20200722_115149.jpg Documents/medical
+mount
+ya
+cd ../client
+cd Postman
+cd files
+rm Desktop
+rmdir Desktop
+mkdir Desktop
+cd Templates
+rm -rf Templates
+rm -rf Postman
+mv dotfiles Dev
+./.config/polybar/scripts/bluetooth
+cat .config/polybar/scripts/bluetooth
+setbg -r ~/Pictures/wallpapers0/Titans
+setbg -d .config/wall/tmp
+setbg -r ~/Pictures/wallpapers0/Unsorted
+cd Pictures/wallpapers0
+du -a *.jpg
+du -a /*.jpg
+du -a */*.jpg
+find *.jpg
+find */*.jpg
+find -d *.jpg
+ls -R 
+ls -R *.jpg
+ls -R */*.jpg
+du -a | grep '\.(png | jpg)$'
+du -a | grep 'png|jpg$'
+du -a | grep 'png\|jpg$'
+du -a | grep 'jpg$'
+du -a | grep '.(png\|jpg)$'
+du -a | grep '\. png\|jpg$'
+du -a | grep '\.[png\|jpg]$'
+du -a | grep '\.png\|jpg$'
+du -a | grep '\(png\|jpg)$\'
+du -a | grep '\(png\|jpg)$'
+du -a | grep '\.(png\|jpg)$'
+du -a | grep '\.(png\|jpg)$\'
+du -a | grep '(png\|jpg)$'
+du -a | grep '(png\|jpg)'
+du -a | grep '(png|jpg)'
+du -a | grep -E '(png|jpg)'
+du -a | grep -E '\.(png|jpg)$'
+du -a | grep -E '\.(png|jpg|jpeg)$\i'
+du -a | grep -E '\.(png|jpg|jpeg)$'
+du -a | grep -i -E '\.(png|jpg|jpeg)$'
+du -a | grep -i -E '\.(png|jpg|jpeg|gif)$'
+du -a | grep -i -E '\.(png|jpg|jpeg|gif)$' | wc -l
+du -a | wc -l
+cd art
+cd Art
+cd Dore
+cd configstore
+du -a Postman | wc -l
+cd Postman/
+setbg -f 'Space Exploration 124.jpg'
+setbg -f 'Space\ Exploration\ 124.jpg'
+xwallpaper --zoom Space\ Exploration\ 141.jpg
+setbg "Space\ Exploration\ 141.jpg"
+setbg "Space\ Exploration\ 124.jpg"
+setbg "Space\ Exploration\ 3.jpg"
+cd Pictures/wallpapers0/Spacescapes/
+setbg -f "Space\ Exploration\ 3.jpg"
+setbg -f Space\ Exploration\ 141.jpg
+setbg -f Space\ Exploration\ 124.jpg
+cd wall
+cd Pictures/wallpapers0/Art
+cd Zdzis≈Çaw\ Beksi≈É§ski
+setb
+setbg -r ~/Pictures/wallpapers0
+setbg -r ~/
+setbg -r ~/Pictures
+du -a "$bg" --exclude='.git' --exclude='README.md' | \
+grep -i -E '\.(png|jpg|jpeg|gif)$' |\
+shuf -n 1 | \
+awk '{print $2}'\
+
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski --exclude='.git' --exclude='README.md' | \
+grep -i -E '\.(png|jpg|jpeg|gif)$' |\
+shuf -n 1 | \
+awk '{print $2}'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | awk '{print $2}'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | awk '{print $2.}'
+man cut
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut -d 2
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut 
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut -d
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut -c ' '
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut -d 2 ' '
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut -d ' '
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut -d ' ' -f3
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut -d ' ' -f4
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut -d ' ' -f
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut -d ' ' -f0
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | \
+
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut -d ' ' -f1
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut -d ' ' -f2
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut -d ' ' -f3-
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut -d '\t' -f1-
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut -d '' -f1-
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut -d '' -f4-
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut -d '' -f8-
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut -d ' ' -f8-
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut -d ' ' -f2-
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | cut -d ' ' -f1-
+cp Pictures/wallpapers0/Art/Zdzis≈Çaw Beksi≈É§ski/1344961840053.jpg .config/wall/tmp
+cp Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski/1344961840053.jpg .config/wall/tmp
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed '/^/./\w/ d'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed '/^/,/\w/ d'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1
+man sed
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed ''
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed '\d d'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed '\d'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed 'd'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed ' d'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed '^d'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed '$ d'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed 's/ /\\\ /'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed 's/ /\ /'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed 's/ /\\ /'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed 's/\ /\\\ /' | sed 's/\d//'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed 's/\ /\\\ /'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed 's/\ /\\\ /g'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed 's/\ /\\\ /g' | cut -d ' ' -f1
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed 's/\ /\\\ /g' | cut -d ' ' -f1-
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed 's/\ /\\\ /g' | cut -d ' ' -f2-
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed 's/\ /\\\ /g' | awk '{print $#}'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed 's/\ /\\\ /g' | awk '{print $}'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed 's/\ /\\\ /g' | awk '{print $3}'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed 's/\ /\\\ /g' | awk '{print $2}'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed 's/\ /\\\ /g' | awk '{for (i=2; i<N; i++) printf $i " "; print $N}'
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed 's/\ /\\\ /g' |  awk {'first = $1; $1=""; print $0'}
+du -a Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed 's/\ /\\\ /g' | awk '{for (i=2; i<NF; i++) printf $i " "; print $NF}'
+setbg -r ~/Pictures/wallpapers0/Art/Zdzis≈Çaw\ Beksi≈É§ski
+setbg -l .config/wall/tmp
+pulsemixer --change-volume +5
+cd Dev/learnpern
+cd server
+cd Dev/learnpern/server
+yay -S chromium
+cd Dev/learnpern/client
+mv .gitignore ..
+mv .git ..
+git add client/
+git add server/
+cd client
+git add client/ server/
+cat .gitignore
+git commit -m "Finished todo app"
+git remote add origin https://github.com/drewvlaz/react-todo-app.git
+ls -R | shuf
+ls -R | shuf | sxiv
+man sxiv
+ls -R Pictures | sxiv -i
+exa -R Pictures
+exa -R Pictures | shuf
+exa -R Pictures | shuf | sxiv -i
+man exa
+du -a Pictures | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf -n 1 | sed 's/\ /\\\ /g' | awk '{for (i=2; i<NF; i++) printf $i " "; print $NF}'\
+
+du -a Pictures | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf | sed 's/\ /\\\ /g' | awk '{for (i=2; i<NF; i++) printf $i " "; print $NF}'\
+
+du -a Pictures | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf | sed 's/\ /\\\ /g' | awk '{for (i=2; i<NF; i++) printf $i " "; print $NF}' | sxiv -i
+du -a Pictures | grep -i -E '\.(png|jpg|jpeg|gif)$' | shuf | sed 's/\ /\\\ /g' | awk '{for (i=2; i<NF; i++) printf $i " "; print $NF}'
+randp Pictures/wallpapers0/Etc
+cd Pictures/wallpapers0/Etc/
+sxiv Sci-Fi\ \(*
+randp Pictures
+firefox -edit
+firefox -safe-mode
+man firefox
+firefox -private
+firefox -private-window
+randp Downloads/test
+cd www.pexels.com
+unzip 4k\ Wallpapers\ ¬∑\ Pexels\ ¬∑\ Free\ Stock\ Photos\ -\ 7-24-2020\ 12-57-16\ PM.zip
+rm www.pexels.com
+rm -rf www.pexels.com
+cd Pictures
+git clone https://github.com/ilnanny/backgrounds wallpapers2
+randp wallpapers2
+rm -rf wallpapers2
+randp .
+sxiv .config/wall/tmp
+firefox week4_divide_and_conquer.pdf
+cd Dev/algorithmic-toolbox-coursera/week4
+cd ../week
+cd ../week3
+cat loot.py
+cat change.py
+cat car_fueling.py
+cat ad_revenue.py
+cat line_segments.py
+cd week4
+python binarysearch.py
+python majority_element.py
+echo 3 2 9 2 5
+exa
+ls -R
+npx create-react-app tic-tac-toe
+cd tic-tac-toe
+touch index.js
+touch index.css
+npm s 
+python steps.py 
+yay -S discord
+setbg -r Pictures/wallpapers
+rm *.py
+cat dotfiles
+rm dotfiles
+rm subarray.py
+cd Dev/tic-tac-toe
+npx create-react-app react-crash-course
+cd react-crash-course
+npm install tailwindcss
+npx tailwindcss init
+npm install postcss-cli
+npm install autoprefixer
+npm build:css
+yay -S yarn
+which npm
+type npm
+yarn init
+yarn add @fortawesome/fontawesome-svg-core \\
+         @fortawesome/free-solid-svg-icons \\
+         @fortawesome/react-fontawesome
+yarn build:css
+yarn add react-spring
+pactl 
+pactl list sinks
+yay -Ss firebase
+mkdir firebasics
+cd firebasics
+cd Dev/firebasics
+mkdir public
+cd public
+touch index.html
+man pulsemixer
+v client.conf
+v daemon.conf
+v system.pa
+sxiv senior-headshot
+mv senior-headshot senior-headshot.jpg
+man xrandr
+cd .conf
+du -h discord
+du -a discord | wc -l
+powertop
+yay -S powertop
+man powertop
+powertop --auto-tune
+sudo powertop --auto-tune
+yay 
+git clone https://github.com/drewvlaz/small-projects
+mv small-projects Dev
+cd Dev/small-projects
+cd instagram/scripts
+cat unfollowers.py
+unzip drewvlaz_20200730.zip
+rm *.json
+rm direct
+rm -rf direct
+rm -rf photos
+rm -rf profile stories
+rm -rf videos
+unzip drewvlaz_20200730.zip instagram_data
+unzip drewvlaz_20200730.zip instagram_data/
+man unzip
+unzip drewvlaz_20200730.zip -d instagram_data/
+cp instagram_data ../Dev/small-projects/instagram
+cp -r instagram_data ../Dev/small-projects/instagram
+chmod +x *.py
+./scripts/unfollowers.py
+mkdir output
+cd is
+cd videos
+cd 202001
+vlc 1e4e24f1f297142f2c3a09752123885e.mp4
+rm drewvlaz_20200730.zip
+rm instagram_data
+rm Tela-2k
+rm -rf Tela-2k
+setbg -r Pictures/
+yay -Rns sxiv
+git clone https://github.com/muennich/sxiv
+mv sxiv Dev
+v .Xresources
+cd Dev/sxiv
+cd st
+cd ../sxiv
+v config.h
+v config.h.def
+v config.def.h
+sudo make install
+randp Pictures/wallpapers0
+cd Dev/react-crash-course
+yarn add react-router-dom
+sudo wifi-menu
+cal
+yay -S
+yay -Qu
+yay -Qum
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/mut-ex/minimal-functional-fox/master/install.sh)"
+v userContent.css
+v userCh
+cd cho
+pkill -USR1 -x bspwm
+mkdir web-dev
+rm -rf web-dev
+mkdir learning
+mv learnpern learning
+mv boilerplate-express learning
+mv react-crash-course learning
+mv tic-tac-toe learning
+cd Downloads/algorithmic-toolbox-coursera/week5_dynamic_programming1
+0
+python primitive_calculator.py
+yay -Ss autopep8
+yay -S autopep8
+/usr/bin/python /home/drewvlaz/.vscode-oss/extensions/ms-python.python-2020.7.96456/pythonFiles/pyvsc-run-isolated.py pip install -U pylint --user
+du -h ~/
+df -h ~/
+man bc
+yay -Rns bc
+python editing_distance.py
+cd ch
+cd Dev/algorithmic-toolbox-coursera/week5
+python two_key_keyboard.py
+python money-change.py
+firefox week5_dynamic_programming1.pdf
+firefox week5_dynamic_programming1.pdf &
+python two_sequence_subsequence.py
+npx react-quote
+npx create-react-app react-quote
+cd react-quote
+cd src
+mkdir components
+mkdir data
+git clone https://github.com/JamesFT/Database-Quotes-JSON
+cd Database-Quotes-JSON
+rm .git*
+rm -rf .git
+mv ..
+mv quotes.json ..
+rm Database-Quotes-JSON
+rm -rf Database-Quotes-JSON
+cd Dev/learning/react-quote
+serve
+yarn global add serve
+serve -s build
+yay -Ss serve
+yay -S serve
+yarn global remove serve
+sxiv health_insurance_front.jpg
+arandr
+yay -S dockd
+cat /etc/dockd/undocked.conf
+systemctl enable acpid
+man dockd
+dockd --daemon
+sudo rm *
+dockd --config docked
+v /etc/dockd/undocked.conf
+cd /etc/dockd/
+sudo systemctl start acpid
+du -h
+du -h build
+ex
+sddm-greeter --test-mode --theme /usr/share/sddm/themes/yellow
+yay bspwm
+dockd --config undocked
+sudo dockd --config undocked
+sudo dockd --config docked
+dockd --daemon &
+dockd
+code spoti.py
+/home/drewvlaz/Dev/spoti-py-music/venv/bin/python3.8
+pip unintall youtube_dl
+pip uninstall youtube_dl
+pip install youtube_dl
+yay youtubedl
+yay youtube
+yta 
+yt ls
+yta
+yta https://www.youtube.com/watch?v=Q9pjm4cNsfc
+yta Q9pjm4cNsfc
+vlc Pop\ Smoke\ -\ For\ The\ Night\ \(Audio\)\ ft.\ Lil\ Baby,\ DaBaby-Q9pjm4cNsfc.mp3
+/home/drewvlaz/Dev/spoti-py-music/venv/bin/python3.8 /home/drewvlaz/.vscode-oss/extensions/ms-python.python-2020.7.96456/pythonFiles/pyvsc-run-isolated.py pip install -U pylint
+source /home/drewvlaz/Dev/spoti-py-music/venv/bin/activate
+/home/drewvlaz/Dev/spoti-py-music/venv/bin/python3.8 /home/drewvlaz/.vscode-oss/extensions/ms-python.python-2020.7.96456/pythonFiles/pyvsc-run-isolated.py pip install -U autopep8
+v test.html
+python spoti.py >> test.html
+python spoti.py > test.html
+cd Rap\ Caviar
+vlc DOLLAZ\ ON\ MY\ HEAD\ \(feat.\ Young\ Thug\).mp3
+vlc 3\ Headed\ Goat\ \(feat.\ Lil\ Baby\ \&\ Polo\ G\).mp3
+vlc Make\ Em\ Say\ \(feat.\ Mulatto\).mp3
+cd week5
+sls
+mv knapsack.py ../week6
+../week6
+python knapsack.py
+firefox Cracking-the-Coding-Interview-6th-Edition-189-Programming-Questions-and-Solutions.pdf
+firefox week6_dynamic_programming2.pdf
+firefox algo-toolbox-certificate.pdf
+cd Dev/learning
+mkdir simple-login
+rm -rf simple-login
+npx create-react-app simple-login
+cd simple-login
+yarn add react-bootstrap
+yarn add react-icons
+yarn remove react-bootstrap
+rm -rf react-weather
+npx create-react-app react-weather
+cd react-weather
+yay fprint
+yay fwupd
+fwupdmgr refresh
+fwupdmgr get-updates
+sudo v /etc/pam.d/sddm
+yay pam-auth-update
+fprintd-enroll
+yay pam
+yay libpam-runtime
+yay libpam
+sudo pam-auth-update
+setbg -r Pictures/wallpapers1
+setbg -r Pictures/wallpapers0
+claer
+xrandr
+exity
+cd Dev 
+cd learning
+mkdir lireddit-server
+cd lireddit-server
+npm init -y
+yarn add tsconfig.json
+yarn remove tsconfig.json
+npx tsconfig.json
+yarn add nodemon
+yarn add @mikro-orm/core  @mikro-orm/migrations  @mikro-orm/postgresql pg
+yarn add ts-node
+yarn add typescript
+yarn add -D @types/node typescript
+yarn add -D nodemone
+yarn add -D nodemon
+npx mikro-orm migration:create 
+npx mikro-orm migration:create --trace-warnings
+yarn add -D ts-node
+mv firebasics learning
+yarn tsc
+yarn tsc --traceResolution
+yarn global add ts-ndoe
+yarn global add ts-node
+yarn add mikro-orm pg
+npx mikro-orm
+yarn remove mikro-orm pg
+yarn add @mikro-orm/cli @mikro-orm/core  @mikro-orm/migrations  @mikro-orm/postgresql pg
+npx mikro-orm debug
+sudo -iu
+sudo systemctl start postgresql
+\l
+psql -U postgres
+sudo -u postgres psql postgres
+sudo -iu postgres
+nodemon index.js
+npx mikro-orm migration:create
+yarn watch
+yarn add express apollo-server-express graphql type-graphql
+yarn add -D @types/express
+yarn dev
+yay windscribe
+windscribe
+yay jdk
+javac Sorting.java
+python partition3.py
+python 3way_quicksort.py
+javac Sorting.java && java Sorting
+java Sorting
+code Sorting.java
+cd dev
+npx create-react-app sorting-visualizer
+cd sorting-visualizer
+yarn add reactstrap
+yarn add bootstrap
+dock
+alacritty -e cd /home/drewvlaz/Dev/sorting-visualizer &
+alacritty -e /home/drewvlaz/Dev/sorting-visualizer &
+alacritty /home/drewvlaz/Dev/sorting-visualizer &
+alacritty -e/home/drewvlaz/Dev/sorting-visualizer &
+alacritty -e /home/drewvlaz/Dev/sorting-visualizer
+sudo alacritty -e /home/drewvlaz/Dev/sorting-visualizer &
+git remote add origin https://github.com/drewvlaz/sorting-visualizer.git
+setbg -p
+rm test.html
+git add test.html
+git commit -m "Remove html"
+yay notion
+yarn start
+yarn build
+pulsemixer
+yay kde plasma
+yay kde desktop
+yay kde settings
+yay kde
+yay plasma
+yay -S plasma
+yay -S dolphin
+yay -Rns gnome
+yay -Ru gnome
+man pacman
+yay -Rns gtk-vlc
+yay -Rns gtk-vnc
+yay -Qdtq
+yay -Rns $(yay -Qdtq)
+yay -Rns qemu
+man qemu
+v userChrome.css
+cat userChrome.css
+togffcss
+curl -fsSL https://raw.githubusercontent.com/manilarome/blurredfox/script/install.sh |\
+bash -s -- stable
+firefox
+cd .mozilla/firefox/jmdndzqd.default-release/chrome
+cd parts
+v tabbar.css
+mkdir -p ~/.local/share/kservices5/
+cp ~/.local/share/kwin/scripts/forceblur/metadata.desktop ~/.local/share/kservices5/forceblur.desktop 
+sudo netctl disable
+sudo netctl disable wlan0-Basement_Router_2.4
+sudo netctl stop-all
+sudo netctl enable Basement_Router_5GHz
+sudo netctl start Basement_Router_5GHz
+yay -S print-manager cups system-config-printer
+sudo systemctl start NetworkManager
+sudo netctl stop Basement_Router_5GHz
+sudo netctl disable Basement_Router_5GHz
+sudo systemctl enable NetworkManager
+yay kde bluetooth
+bluedevil
+cd /etc
+cd pulse
+v default.pa
+v default.pa.pacsave
+sudo v default.pa.pacsave
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+cd /etc/pulse
+sudo v default.pa
+yay -S alsa-utils alsa-plugins alsa-tools
+yay -S bluez bluez-utils bluez-libs
+systemctl status bluetooth
+sudo bluealsa -p a2dp-source -p hfp-ag
+systemctl --user restart pulseaudio
+blu 
+sudo systemctl restart bluetooth.service
+pulseaudio -k
+yay -S kde-applications
+cd kde
+cd KDE
+cd Notion
+yay -Rns bomber
+yay -Rns bovo
+yay -Rns blinken granatier kajongg kanagram kapman katomic
+yay -Rns kblackbox kblocks kbounce kbreatout kdiamond kfourinline
+yay -Rns kblackbox kblocks kbounce kbreakout kdiamond kfourinline
+yay -Rns kgoldrunner khangman kigo killbots kirki kjumpingcube
+yay -Rns kgoldrunner khangman kigo killbots kiriki kjumpingcube
+yay -Rns klickety kmahjongg knetwalk knights kolf kollision 
+yay -Rns kolorlines
+yay -Rns kolor_lines
+yay -Rns kolor-lines
+yay -Qe | grep kolor
+yay -Rns konquest kpatience kreversi ksirk
+yay -Rns ksnakeduel kspaceduel ksquare ksudoku kubrick lskat
+yay -Rns ksnakeduel kspaceduel ksquares ksudoku kubrick lskat
+yay -Rns palapeli picmi samegame shisen-sho
+yay -Rns palapeli picmi 
+yay -Qe | grep potato
+yay -Qe | grep k
+yay -Rns gnome*
+yay -Rns gnome-desktop gnome-keyring gnome-settings-daemon gnome-tweaks
+man akregator
+yay -Rns akregator artikulate cantor cervisia dragon
+yay -Rns flex okular kate 
+yeet kalgebra kalzium 
+yeet kamera kcharselect kcolorchooser kapptemplate kiten kmail kmouth
+yeet knavalbattle knotes kolourpaint korganizer kruler
+yeet kteatime kwordquiz kwrite kwrited umbrello yakuake
+yeet akregator
+yeet kgeography
+yeet ktuberling kdenlive emacs 
+yeet postman klettres kleopatra
+yeet kopete k3b
+yeet minuet kwave
+yeet khelpcenter konqueror parley
+yeet kig gwenview
+yeet kget discover
+yeet ktouch kdsoap
+yay -Q | grep kolor
+yay -Q
+yay -Q | grep line
+yeet klines
+yay -Q | grep shi
+yeet kshisen
+yeet kdeconnect kmail-account-wizard kmailtransport
+yeet kdeconnect
+yeet kfloppy kgpg
+yeet kbruch kturtle kmplot step 
+yeet marble rocs
+yeet ktouch
+yeet kcachegrind
+yeet kirigami kimagemapeditor kimap
+yeet kimagemapeditor kimap
+yeet kimagemapeditor kimap pimcommon
+yeet kimagemapeditor
+yeet hdparm
+yeet kmix
+source
+elisa .
+vlc Pink\ Matter.mp3
+vlc TOO\ DEEP\ TO\ TURN\ BACK.mp3
+elisa I.\ Flight\ of\ the\ Navigator.mp3
+vlc Dear\ April\ \(Side\ A\ -\ Acoustic\).mp3
+ls | shuf -n 1
+vlc $(ls | shuf -n 1)
+vlc \(No\ One\ Knows\ Me\)\ Like\ the\ Piano.mp3
+vlc I\ Was\ Never\ There.mp3
+vlc Call\ Out\ My\ Name.mp3
+vlc Nights.mp3
+vlc Transform\ \(feat.\ Charlotte\ Day\ Wilson\).mp3
+cd Dev/spoti-py-music/songs/late\ nite\ -\ sad\ times
+sudo systemctl restart plasma
+sudo systemctl restart kde
+cd /usr/share/plasma/plasmoids/org.kde.plasma.digitalclock
+cd contents
+cd ui
+sudo v DigitalClock.qml
+yay haskell platform
+curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+ghcup
+cd /tmp
+vf
+lfcd
+yay anne pro
+yay kde virtual desktop bar
+yay kde better inline
+yay kde inline
+yay better inline clock
+yay -R zoom
+pkill -USR -x kded5
+killall -q plasma
+sudo systemctl status
+yay okular
+yeet bookworm
+yay buka
+yay -S buka
+yay -Syu buka
+yay -Qe
+yay -Qe | less
+mkdir Programs
+cd Pr
+cd Programs
+yeet buka
+Buka
+rm -rf Buka
+git clone https://github.com/oguzhaninan/Buka.git
+cd Buka
+npm install && npm run build && npm start
+buka
+./main.js
+sudo systemctl stop windscribe
+yay calibre
+yay bookworm
+yay fbreader
+yeet fbreader
+cd Dev/Programs/Buka
+npm start
+yay ebook reader
+yay adobe digital
+yay adobe
+yay wine1.3
+yay wine
+yay -S wine
+wine
+yeet dockd
+exit\\
+
+find shutdown
+find shutdown /
+yay -S gnome-desktoptop
+cd .scripts/
+pwd
+randp Pictures/
+setbg
+cd .local/share/nvim/swap
+cd .config/rofi
+v config.rasiclear
+cd shared
+v appmenu.rasi
+cat slate.rasi
+v nord.rasi
+cat nord.rasi
+v slate.rasi
+fc-list
+fc-list | less
+fc-list | grep cant
+fc-list | grep -v noto
+fc-list | grep noto iosevka
+fc-list | grep -v noto | less
+fc-list | grep -e noto -e iosevka
+fc-list | grep -e iosevka -e nerd
+fc-list | grep -e iosevka
+fc-list | grep -e nerd
+fc-list | grep -e Nerd
+fc-list | grep -i -e nerd
+fc-list | grep -i -e nerd -e notot
+fc-list | grep -i -e nerd -e noto
+fc-list | grep -i -v -e nerd -e noto | less
+fc-list | grep -i -v -e nerd -e noto | awk '{print $2}'
+fc-list | grep -i -v -e nerd -e noto | awk '{print $2:}'
+fc-list | grep -i -v -e nerd -e noto
+fc-list | grep -i -v -e nerd -e noto | sed -e ':*.'
+fc-list | grep -i -v -e nerd -e noto | sed -e ':'
+fc-list | grep -i -v -e nerd -e noto | sed -e '\:'
+fc-list | grep -i -v -e nerd -e noto | sed -e '.otf'
+fc-list | grep -i -v -e nerd -e noto | sed -e 'otf'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/otf'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/otf/'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/otf//'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/^://'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/^\://'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/^*.://'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/^*.otf//'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/^*.otf//d'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/^*//'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/^*.//'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/^*./d/'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/*.//'
+fc-list | grep -i -v -e nerd -e noto | sed 's/\(\b[A-Z]\)/\(\1\)/g'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/*.//g'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/^*.//g'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/^*.://g'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/^*.: //g'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/usr/fuck/g'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/usr//g'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/^.*: //g'
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/^.*: //g' | rofi -dmenu
+man sort
+fc-list | grep -i -v -e nerd -e noto | sed -e 's/^.*: //g' | sort | rofi -dmenu
+fc-list | grep -i -v -e noto | sed -e 's/^.*: //g' | sort | rofi -dmenu
+fc-list | grep -i -v -e noto | sed -e 's/^.*: //g' | sort | shuf -n 1
+exit]
+cd Documents/College/Autumn\ 20
+mkdir CMSC.16100
+cd CMSC.16100
+mv CMSC.16100 CMSC-16100
+mv -r Greece\ \&\ Rome HUMA-12050
+mv --help
+mvr Greece\ \&\ Rome HUMA-12050
+mv Greece & Rome HUMA-12050
+mv Greece\ \&\ Rome HUMA-12050
+cd CMSC-16100
+mv CMSC-16100 Honors Intro CS. CMSC 16100
+mv CMSC-16100 "Honors Intro CS. CMSC 16100"
+mv HUMA-12050 "Greece and Rome I. HUMA 12050"
+cat Honors\ Intro\ CS.\ CMSC\ 16100/Hypotenuse.hs
+cat Sort.hs
+pkill spotify
+spotify
+cat mdadm.shutdown
+/sbin/mdadm --wait-clean --scan
+sudo /sbin/mdadm --wait-clean --scan
+yay latte dock
+yay latte
+yay overpass font
+vim Lists.hs
+yeet latte-dock-git
+yay\\
+
+yay chntpw
+lsusb
+sudo mount /dev/nvme0n1p3 Public
+sudo
+su
+sudo umount /dev/nvme0n1p3
+cd Public
+sudo mount /dev/nvme0n1p3 /media/
+sudo mount /dev/nvme0n1p3 /media
+mkdir media
+sudo mkdir media
+mkdir windows
+sudo mkdir windows
+sudo mount /dev/nvme0n1p3 /media/windows
+chmod ugo+rwx /media
+sudo chmod ugo+rwx /media
+cd /media
+cd windows
+sudo chmod ugo+rwx /media/
+sudo chmod ugo+rwx /media/*
+cd /media/windows
+sudo chmod ugo+rw /media/*
+sudo chmod ugo+r /media/*
+sudo chmod +r /media/*
+ntfsfix
+yay ntfsfix
+sudo systemctl restart bluetooth 
+yay zoom
+yay zoom video
+cd /
+cd media
+cd /var
+cd bluetooth
+cd alsa
+randp Pictures/wallpapers1
+yay -S latte-dock
+v plasma-org.kde.plasma.desktop-appletsrc
+yeet electron7
+yeet qemu
+yay -Qe | wc
+yay -Qe | wc -l
+yeet pyside2
+yeet xorg-font-utils
+rm -rf instagram_data
+mkdir instagram_data
+mv drewvlaz_20200929 ..
+rmdir instagram_data
+mv drewvlaz_20200929 instagram_data
+v unfollowers.txt
+cd /lib/systemd/system-shutdown
+cat fwupd.shutdown
+v ex1.hs
+mv ex1.hs Exercise1.hs
+yay ghci
+yay ghc
+v Assignment1.md
+code Assignment1.md
+yay -S pandoc
+yay -S pdflatex
+yay pdftex
+yay pdflatex
+yeet pydflatex
+yay -S latex
+yay latex
+yay princexml
+yay prince xml
+yay prince
+firefox Assignment1
+yay texlive
+yay texlive-most
+pandoc Assignment1.md -o test.pdf
+firefox test.pdf
+pandoc -f commonmark Assignment1.md -o test.pdf
+pandoc -f commonmark Assignment1.md -t html5
+pandoc -f commonmark Assignment1.md -t html5 -o test.html
+firefox test.html
+pandoc -f commonmark_x Assignment1.md -t html5 -o test.html
+pandoc -f commonmark_x Assignment1.md -t pdf -o test.pdf
+pandoc -V geometry:margin=1in --tab-stop=2 -f commonmark_x Assignment1.md -t pdf -o test.pdf
+pandoc -V geometry:margin=1in -f commonmark_x Assignment1.md -t pdf -o test.pdf --tab-stop=2
+rm Assignment1
+pandoc --from=markdown_mmd+yaml_metadata_block+smart --standalone --to=html --output=test.html Assignment1.md
+pandoc -V geometry:margin=1in -f markdown_mmd Assignment1.md -t pdf -o test.pdf
+pandoc -f markdown_mmd Assignment1.md -t pdf -o test.pdf
+pandoc -V geometry:margin=1in --wrap=auto -f commonmark_x Assignment1.md -t pdf -o test.pdf
+pandoc -V geometry:margin=1in --wrap=preserve -f commonmark_x Assignment1.md -t pdf -o test.pdf
+pandoc -V geometry:margin=1in --wrap=auto --columns=60 -f commonmark_x Assignment1.md -t pdf -o test.pdf
+pandoc -V geometry:margin=1in -f commonmark_x Assignment1.md -t pdf -o test.pdf
+pandoc -V geometry:margin=1in -f commonmark_x -t pdf -o test.pdf Assignment1.md
+mv Assignment1.* Assignments
+cat Assignment1.m
+cat Assignment1.md
+//
+v Hypotenuse.hs
+ghci Hypotenuse.hs
+echo "hello world" > /dev/clip
+echo "hello world" | xclip -selection c
+pandoc -V geometry:margin=1in -f commonmark_x -t pdf -o Assignment1.pdf Assignment1.md
+cat Assignment1.md | toclip
+firefox Assignment1.pdf
+cat Hypotenuse.hs
+mkdir Misc
+mv Orientation\ Resource\ Fair\ Booklet.pdf StrengthsProfile-Drew-Vlasnik.pdf Misc
+mv Banking\ Options.jpg unofficial_transcript.pdf Misc
+ff resume.pdf
+ghci -V
+ghci --version
+ssh-keygen -t rsa -C "drewvlaz@cs.uchicago.edu" -b 4096
+mkdir .ssh
+mv uchicago uchicago.pub .ssh
+cat uchicago
+cat uchicago.pub
+cat uchicago.pub | toclip
+mv uchicago id_rsa
+mv uchicago.pub id_rsa.pub
+git clone git@mit.cs.uchicago.edu:cmsc16100-aut-20/drewvlaz.git
+mv drewvlaz Documents/College/Autumn\ 20/Honors\ Intro\ CS.\ CMSC\ 16100
+cd lab00
+ghci Hello.hs
+gs
+git commit -m "Hello.hs with some personal info"
+yay -S ghc
+ghc-pkg check
+ghc --make -dynamic Hello.hs
+v Hello.hs
+ghc Hello.hs
+./Hello
+git add Hello.hs
+git commit -m "Print out my info"
+xset r rate 150 50
+cd College/Autumn\ 20/Honors\ Intro\ CS.\ CMSC\ 16100
+cat Assignment2.log
+cat Hypotenuse.hs | xclip -selection c
+v check.py
+python check.py
+mkdir Lecture1 Lecture2 Lecture3
+mv Exercise1.hs Lecture1
+mv check.py Lecture2
+mv Hypotenuse.hs Lecture1
+mv Lists.hs Sort.hs Lecture2
+mv Exercise3.hs NaturalNumbers.hs
+yay wkhtmltopdf
+pandoc -V geometry:margin=1in -f commonmark_x -t pdf --pdf-engine=wkhtmltopdf -o Assignment2.pdf Assignment2.md
+pandoc -V geometry:margin=0.5in -f commonmark_x -t pdf --pdf-engine=wkhtmltopdf -o Assignment2.pdf Assignment2.md
+pandoc -V geometry:margin=0.5in -f commonmark_x -t pdf -o Assignment2.pdf Assignment2.md
+pandoc -V geometry:margin=0.75in -f commonmark_x -t pdf -o Assignment2.pdf Assignment2.md
+pandoc -V geometry:margin=1in -f commonmark_x -t pdf -o Assignment2.pdf Assignment2.md
+yay latex minted
+yay pyment
+yay pygmantize
+yay pygmant
+yay pygmentize
+yay pygment
+yay python2
+python2
+pip install Pygments
+pygmentize
+pdflatex Assignment2.tex
+yeet python2-pygments python-pygments
+yeet python-pygments
+yeet minted
+yay -S minted
+sudo easy_install Pygments
+yeet python2-pygments
+yeet Pygments
+/usr/lib/python3.8/site-packages
+yay python3-pygments
+rm __latexindent_temp.tex
+rm *.aux
+rm *.pyg
+rm *.log
+rm *.fls
+rm *.fdb_latexmk
+yeet ghc-static
+yeet postgresql postgresql-libs
+yeet jdk-openjdk
+yeet groff kalarm
+yeet kalarm
+man cups
+man oxygen
+rofi
+rofi -show
+rofi -no-lazy-regrab
+rofi -show drun
+yeet oxygen
+yeet okular
+man yay
+latex
+latex -shell-escape Assignment2.tex
+latex --shell-escape Assignment2.tex
+pdflatex --shell-escape Assignment2.tex
+latexmk -shell-escape test.tex
+pdflatex -shell-escape test.tex
+rm test.*
+rm -rf _minted-*
+cd Lec 
+pkill zoom
+cd Desktop
+v toggle_compositing_in_KWin
+v toggle_compositing_in_KWin.sh
+chmod +x toggle_compositing_in_KWin.sh
+./toggle_compositing_in_KWin.sh
+v Lecture2/NaturalNumbers.hs
+qdbus org.kde.KWin /Compositor suspend
+cp -r textbooks /run/media/drewvlaz/2C01-D326/
+cp "Calculus: One and Several Variables, 10th Edition.pdf" "Calculus: One and Several Variables, 10th Edition Solutions.pdf" /run/media/drewvlaz/2C01-D326/textbooks
+cp "Calculus: One and Several Variables, 10th Edition.pdf" /run/media/drewvlaz/2C01-D326/textbooks/Calculus\ Textbook.pdf
+cp "Calculus: One and Several Variables, 10th Edition Solutions.pdf" /run/media/drewvlaz/2C01-D326/textbooks/Calculus\ Textbook\ Solutions.pdf
+ls | grep -V pdf
+ls | grep -v pdf
+ls | grep -v pdf tex
+ls | grep -v -e pdf -e md -e tex | rm
+man xargs
+ls | grep -v -e pdf -e md -e tex
+ls | grep -v -e pdf -e md -e tex | xargs rm
+du .
+du
+du -a | awk '{print $2}'
+man se
+du -a | awk '{print $2}' | sed 's/.\//g'
+du -a | awk '{print $2}' | sed 's/.\///g'
+du -a | awk '{print $2}' | grep -v -e pdf | sed 's/.\///g' | \
+echo
+du -a | awk '{print $2}' | grep -v -e pdf | sed 's/.\///g'
+du -a | awk '{print $2}' | grep -v -e pdf md | sed 's/.\///g'
+du -a | awk '{print $2}' | grep -v -e pdf,md | sed 's/.\///g'
+du -a | awk '{print $2}' | grep -v -e pdf -e md -e tex| sed 's/.\///g'
+du -a | awk '{print $2}' | grep -v -e pdf -e md | sed 's/.\///g'
+du -a | awk '{print $2}' | grep -v -e .pdf -e .md -e .tex | sed 's/.\///g'
+du -a | awk '{print $2}' | grep -v -e .pdf -e .md -e '.tex' | sed 's/.\///g'
+du -a | awk '{print $2}' | grep -v -e .pdf -e .md -E '.tex' | sed 's/.\///g'
+du -a | awk '{print $2}' | grep -v -e .pdf -e .md | sed 's/.\///g'
+ls grep -E 'tex'
+man grep
+grep -E
+grep -E tex
+ls | grep -E tex
+ls | grep -E 'tex'
+ls | grep -E '\.tex^'
+ls | grep -E '\.tex'
+du -a | awk '{print $2}' | grep -v -E '.pdf' -E '.md' -E '.tex' | sed 's/.\///g'
+du -a | awk '{print $2}' | grep -v -E '\.(pdf|md|tex)' | sed 's/.\///g' | xargs rm
+du -a | awk '{print $2}' | grep -v -E '\.(|pdf|md|tex)' | sed 's/.\///g' | xargs rm
+du -a | awk '{print $2}' | grep -v -E '\.(\.|pdf|md|tex)' | sed 's/.\///g' | xargs rm
+du -a | awk '{print $2}' | grep -v -E '\.(\.|pdf|md|tex)' | sed 's/.\///g'
+du -a | awk '{print $2}' | grep -v -E '\.(|Pdf|md|tex)' | sed 's/.\///g'
+du -a | awk '{print $2}' | grep -v -E '\.(pdf|md|tex|)' | sed 's/.\///g' | xargs rm
+du -a | awk '{print $2}' | grep -v -E '\.(pdf|md|tex|)' | sed 's/.\///g'
+du -a | awk '{print $2}' | grep -v -E '\.(|pdf|md|tex)' | sed 's/.\///g'
+man du
+du -a -X '.' | awk '{print $2}' | grep -v -E '\.(pdf|md|tex)' | sed 's/.\///g'
+du -a | awk '{print $2}' | grep -v -E '\.(pdf|md|tex)' | sed 's/.\///g'
+du -a | awk '{print $2}' | grep -v -E '\.(pdf|md|tex|$)' | sed 's/.\///g'
+du -a | awk '{print $2}' | grep -v -E '\.(pdf|md|tex|$)' | sed 's/.\///g' | xargs rm
+cp * test
+cp -r * test
+ff Assignment2.pdf
+celar
+cat Breakout.hs
+ghci Breakout.hs
+v Breakout.hs
+cd Lecture
+mkdir pdf
+mv *.pdf pdf
+mkdir source
+mv Assignment2.tex Assignment1.md source
+mv Assignment2.md source
+cd pdf
+pdfit
+mv pdf target
+pdfit -output-directory="../target/" Assignment2.tex
+pdfit -output-directory="/target/" Assignment2.tex
+pdfit -output-directory=../target Assignment2.tex
+cp Assignment2.tex
+cp Assignment2.tex ..
+pdfit -output-directory=target Assignment2.tex
+cd source
+pdflatex -shell-escape -output-directory=../target Assignment2.tex
+cp * ..
+rm -rf source
+cat target
+pdflatex -shell-escape Assignment2.tex
+pdflatex -shell-escape -output-directory=target Assignment2.tex
+cd target
+man pdflatex
+mkdir "Calc III MATH 15300"
+cd Calc\ III\ MATH\ 15300
+mkdir Assignments
+touch Assignment1.tex
+cat NaturalNumbers.hs
+pygmentize -L styles
+../Lecture2
+rm _minted-Assignment2
+rm -rf _minted-Assignment2
+rm Assignment2.pdf
+rm Assignment2.tex
+rm Assignment2.md
+mv Assignment1.md A1.md
+v Lists.hs
+cat Lists.hs
+ghci Lists.hs
+cat NaturalNumbers.hs| toclip
+yay -U Downloads/zoom_x86_64.pkg.tar.xz
+sec
+cat Lecture2/NaturalNumbers.hs
+rm toggle_compositing_in_KWin.sh
+pdflatex -shell-escape A3.tex
+../Lecture3
+v ex.hs
+cat Calc.hs
+cat AbstractInteger.hs
+git commit -m "Implemented Abstract Integer data type and successor function"
+ls'\
+\
+'
+ghci BinaryTree.hs
+acpi
+cd Doc
+git commit -m "Implement predecessor function"
+git commit -m "Implement negator and absolute"
+git commit -m "Implement add and difference"
+imagemagick
+yay imagemagick
+convert Pictures/uchicago/autumn_quarter_classes.png classes.pdf
+ff classes.pdf
+rm classes.pdf
+cd Documents/College/Misc
+convert UCSR_TSRPT.pdf ~/Pictures/uchicago/autumn_quarter_classes.png transcript.pdf
+yay pdftk
+convert ~/Pictures/uchicago/autumn_quarter_classes.png classes.pdf
+pdftk classes.pdf UCSR_TSRPT.pdf transcript.pdf
+pdftk classes.pdf UCSR_TSRPT.pdf output transcript.pdf
+rm transcript.pdf
+pdftk UCSR_TSRPT.pdf classes.pdf output transcript.pdf
+rm unofficial_transcript.pdf
+ff highschool_transcript.pdf
+cd te
+cd Autumn\ 20
+cd textbooks
+ff Calculus:\ One\ and\ Several\ Variables,\ 10th\ Edition.pdf
+ff "Calculus:\ One\ and\ Several\ Variables,\ 10th\ Edition.pdf"
+cd Lecture3
+v Collatz.hs
+cat Collatz.hs
+ghci Collatz.hs
+v Triple.hs
+ghci Triple.hs
+mkdir Lecture4
+ghci Even.hs\\
+
+cat Ex.hs| toclip
+../Assignments
+cat "-f"
+rm "-f"
+cat \-f
+rm \-f
+rm ex.pdf
+../Lecture4
+v Even.hs
+cd Documents/College/Autumn\ 20/textbooks
+ff Calculus:\ One\ and\ Several\ Variables,\ 10th\ Edition\ Solutions.pdf
+cat data.txt| toclip
+git commit -m "Implement multiply, fromAbstract, toAbstract"
+git commit -m "Refactor multiply"
+v Ex.hs
+ghci Ex.hs
+cd Lecture4
+ghci Even.hs
+cat Even.hs
+yay -S ghc-static
+ghc AbstractInteger.hs
+./Calc 3 4 -
+./Calc 3 4 9 - *
+./Calc 3 4 9 - \*
+git commit -m "Implemented divide and modulo"
+rm *.hi
+rm *.o
+./Calc 3 4 - 5 \*
+./Calc 3 4 5 \* -
+./Calc 2 1 + 3 \*
+./Calc 4 13 5 / +
+./Calc 1 2 + 3 /
+./Calc -1 abs
+./Calc -1 - 5 abs 6 \* 
+git commit -m "Final version"
+ghci AbstractInteger..hs
+./Calc -1 - 5 6 abs \* 
+ghc Calc
+./Calc 3 4 - 2 + 10 \*
+git add AbstractInteger.hs
+git commit -m "Format and comment"
+./Calc -10 2 /
+./Calc -10 -2 /
+./Calc 3 4 \*
+./Calc 5 3 4 - \*
+./Calc 5 5 -2 \* /
+./Calc 5 -2 \* 
+./Calc 5 -2 \* 5 /
+mkdir Lecture5
+v UnitClass.hs
+ghci UnitClass.hs
+v MyClass.hs
+ghci MyClass.hs
+cp drewvlaz test
+cp -r drewvlaz test
+cd lab01
+v AbstractInteger.hs
+rm -rf test
+./Calc 5 -2 \* 5 %
+./Calc 5 -2 \* 6 %
+ghc Calc.hs
+mv MyClass.hs Exercise1.hs
+v Exercise1.hs
+v Exercise3.hs
+yeet pulseaudio-git
+yay -S pulseaudio
+rbt
+yay bluez-hid2hci
+dmsg | grep Bluetooth
+yay dmsg
+dmsg
+yay pulseaudio-bluetooth
+yay bluez-utils
+yeet check
+yeet python-sip xorg-font-utils js68 meson intltool
+cd songs/2000s\ Throwbacks
+vlc It\ Wasn\'t\ Me.mp3
+vlc Stronger.mp3
+vlc Replay.mp3
+ls | shuf -n 1 | vlc
+du -a
+du -a | awk '{print $2}' 
+du -a | awk '{print $2}' | shuf n -1
+du -a | awk '{print $2}' | shuf -n 1
+du -a | awk '{print $2}' | shuf -n 1 | vlc
+du -a | awk '{print $2}' | shuf -n 1 | xargs vlc
+du -a | awk '{print $2}' | shuf -n 1 | xargs vlc &
+vlc Hey\ Ya\!\ -\ Radio\ Mix\ 
+du -a | awk '{print $2}' | grep -E '\.mp3' | shuf -n 1 | xargs vlc &
+du -a | awk '{print $2}' | grep -E '\.mp3' | shuf
+du -a | awk '{print $2}' | grep -E '\.mp3' | shuf | wc -l
+du -a | awk '{print $2}' | grep -E '\.mp3' 
+du -a | grep -E '\.mp3' 
+du -a | grep -E '\.mp3' | sed 's/^\.//'
+du -a | grep -E '\.mp3' | sed 's/^.{9}\.//'
+du -a | grep -E '\.mp3' | sed 's/^.{6}\.//'
+du -a | grep -E '\.mp3' | sed 's/^.{10}\.//'
+du -a | grep -E '\.mp3' | sed 's/^.*\.//'
+du -a | grep -E '\.mp3' | sed 's/^.*\///'
+du -a | grep -E '\.mp3' | sed 's/^.*\///' | shuf
+du -a | grep -E '\.mp3' | sed 's/^.*\///' | shuf | xargs vlc
+du -a | grep -E '\.mp3' | sed 's/^.*\///' | shuf -n 1 | xargs vlc
+vlc Where\ 
+vlc Without\ You\ \(feat.\ Usher\).mp3
+krunner
+krunner plasmashell
+plasmashell &
+plasmashell
+yay gnome
+yay -S gnome
+yay -S gnome-desktop
+yay -S gnome-tweaks
+cat /sys/devices/system/cpu/cpufreq/policy*/energy_performance_preference
+ghci Exercise1.hs
+ghci Exercise3.hs
+ghci Exercise1
+yay vpnbook
+yay vpn
+yay openvpn
+unzip VPNBook.com-OpenVPN-PL226.zip
+mkdir vpnbook
+mv *.ovpn vpnbook
+cd vpnbook
+openvpn --config vpnbook-pl226-udp53.ovpn
+openvpn --config vpnbook-pl226-udp25000.ovpn
+sudo openvpn --config vpnbook-pl226-udp53.ovpn
+cd Documents/College
+pdftk resume Internships/Google\ Step\ Qs.pdf Google\ Step\ Application.pdf
+pdftk resume.pdf Internships/Google\ Step\ Qs.pdf Google\ Step\ Application.pdf
+mv Internships/Google\ Step\ Qs.pdf .
+mv Internships/Google\ Step\ Qs.pdf Internships
+mv Google\ Step\ Qs.pdf Internships
+mv resume.pdf Internships
+pdftk resume.pdf Google\ Step\ Qs.pdf Google\ Step\ Application.pdf
+pdftk resume.pdf "Google\ Step\ Qs.pdf" "Google\ Step\ Application.pdf"
+mv Google\ Step\ Qs.pdf Qs.pdf
+pdftk resume.pdf Qs.pdf STEP.pdf
+pdftk resume.pdf Qs.pdf output STEP.pdf
+ff STEP.pdf
+ff transcript.pdf
+../Internships
+mv STEP.pdf Resume.pdf
+mv Resume.pdf STEP_Resume.pdf
+ff STEP_Resume.pdf
+mkdir Lecture6
+v DuckDuckGoose.hs
+ghci DuckDuckGoose.hs
+yeet zoom
+yay -S zoom
+zoom
+env
+git config pull.rebase false
+cd lab02
+git commit -m "Implement intersectIntervals and intersectISI"
+../lab01
+ghci AbstractInteger.hs
+../lab02
+ghc hal.hs
+./hal
+cd Lecture6
+ghci hal.hs
+v hal.hs
+ghci Sort.hs
+ghci Sort.hs\\
+
+git remove Interval.hs
+git restore --staged Interval.hs
+git commit -m "Implement complement and differenceIntervals"
+git commit -m "Implement differenceISI"
+../lab00
+rm Hello
+rm Hello Hello.hi Hello.o
+rm Hello.hi Hello.o
+mkdir Lecture7
+v Equation.hs
+ghci Equation.hs
+openvpn --config DownloadS Vpnbook-pl226-udp25000.ovpn
+openvpn --config Downloads/Vpnbook-pl226-udp25000.ovpn
+openvpn --config Downloads/vpnbook-pl226-udp25000.ovpn
+openvpn
+sudo openvpn --config Downloads/vpnbook/vpnbook-pl226-udp53.ovpn
+git commit -m "Implement intersection and union"
+git commit -m "Implement difference of two IntervalSets"
+git commit -m "Implement intersectAll, unionAll, differenceAll"
+git commit -m "Implement boolean helpers"
+git show
+git commit -m "Implement areAllDisjoint and areAllEqual"
+./Main test_inputs.txt
+./Main < test_inputs.txt
+./Main < test_inputs.txt diff test_expectation.txt
+./Main < test_inputs.txt | diff test_expectation.txt
+ghc Interval.h
+ghc Interval.hs
+ghci Interval.hs
+rm Interval.hi
+rm Interval.o
+ghci Main
+cd drewvlaz/lab02
+git commit -m "Implement functions in Main.hs"
+./Main < test_inputs.txt | diff test_expectation.txt -
+./Main < test_inputs.txt | diff -y test_expectation.txt -
+git add Main.hs
+git commit -m "Implement undefined functions"
+git add Interval.hs
+git commit -m "Improved some commenting"
+ghc Main.hs && ./Main < test_inputs.txt | diff test_expectation.txt -
+ghc Main.hs && ./Main < test_inputs.txt | diff -y test_expectation.txt -
+cd drewvlaz/lab01
+cat TestAbstractInteger.hs
+cd Documents/College/Autumn\ 20/Honors\ Intro\ CS.\ CMSC\ 16100/
+cd Lecture7
+ghci Records.hs
+v Records.hs
+ghci JoinMaybe.hs
+touch A3.tex
+yay p10k
+yay p10
+yay zsh p
+yay zsh
+yay -S --noconfirm zsh-theme-powerlevel10k-git
+exec zsh
+p10k
+p
+echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
+cladfjl
+clera
+cd Honors\ Intro\ CS.\ CMSC\ 16100
+mkdir Lectures
+rmdir Lectures
+mkdir notes
+mv Lecture* notes
+clea
+rfukc
+mv *.pdf target
+cat data.txt
+rm data.txt
+echo 'Hello Drew'
+pman
+cd .scr
+printf "\x1b[${bg};2;${red};${green};${blue}m\n"
+printf "\x1b[38;2;255;100;0mTRUECOLOR\x1b[0m\n"
+$ git clone https://github.com/sebastiencs/icons-in-terminal.git
+git clone https://github.com/sebastiencs/icons-in-terminal.git
+cd icons-in-terminal
+./install
+./print_icons.sh
+v  ~/.config/fontconfig/conf.d/30-icons.conf
+yay ls icons
+ls-icons
+cd Dev/icons-in-terminal
+./bootstrap
+yay ls-icons
+cd .cache/yay
+rm -rf ls-icons
+mkdir Lecture8
+cd Lecture8
+v JoinMaybe.hs
+clare
+clear
+yay -S go
+yay -S ls-icons
+yeet gnome-tweaks
+where yeet
+yay -Rn gnome
+yeet gnome-online-miners
+yeet gnome-documents
+yeet gnome-photos
+yeet gnome-*
+yeet gnome*
+yeet gnome
+yay -R gnome
+yay -Rcn gnome
+yeet gnome-contacts
+yeet gnome-calendar
+yeet gnome-control-center
+yeet gnome-shell-extensions
+yeet gnome-shell
+yeet gnome-autoar
+yeet nautilus
+yeet
+yeet gnome-backgrounds
+yeet gnome-books gnome-boxes
+yeet gnome-calculator gnome-characters
+yeet gnome-clocks gnome-color-manager gnome-desktop
+yeet gnome-clocks gnome-color-manager
+yeet cheese
+yeet eog evince gnome-font-viewer mutter totem
+yeet eog sushi evince gnome-font-viewer mutter totem
+yeet gnome-session gnome-settings-daemon gnome-software gnome-weather
+yeet gnome-desktop
+yeet gnome-disk-utility gnome-getting-started-docs
+yeet gnome-keyring gnome-logs gnome-maps gnome-menus
+yeet gnome-music gnome-online-accounts gnome-remote-desktop gnome-screenshot gnome-terminal
+yeet gnome-music gnome-remote-desktop gnome-screenshot gnome-terminal
+yeet gnome-system-monitor gnome-themes-extra gnome-user-
+yeet gnome-system-monitor gnome-themes-extra gnome-user-docs
+yeet gnome-video-effects gnome-user-share
+yeet gnome-online-accounts 
+yay -Qdt
+yeet electron
+yeet gperf inetutils rsync rust-libslirp
+yeet pandoc gedit
+yay -Scc
+orca
+pkgsizes
+killall speech-dispatcher-dummy
+cat MaybeMonad.hs| toclip
+cd Do
+cp MaybeMonad.hs ../Documents/College/Autumn\ 20/Honors\ Intro\ CS.\ CMSC\ 16100/notes/Lecture8
+cd notes/Lecture8
+cat MaybeMonad.hs
+mkdir Lecture9
+cd Lecture9
+ghci CatList.hs
+v CatList.hs
+cd Lecture5
+cat Exercise3.hs
+cd ../Lecture9
+killall latte-dock
+latte-dock &
+e ixt
+cd lab03
+lxappearance
+openvpn --config Downloads/vpnbook/vpnbook-pl226-udp53.ovpn
+cd notes/Lecture9
+ghci Functors.hs
+v Functors.hs
+cd ../Lecture8
+ghci MaybeMonad.hs
+v MaybeMonad.hs
+eixt
+mkdir Lecture10
+cd Lecture10
+v NaturalNumbers.hs
+ghci NaturalNumbers.hs
+yay cantara code
+yay cascadia code
+git commit -m "Implement ArithExp and eval"
+git commit -m "Implemented tokenize and test cases"
+git add Lab3.hs Tests.hs
+git commit -m "Fixed tokenize to handle multi-digit numbers"
+killall plasma-desktop
+kstart plasmashell
+yay kstart
+git commit -m "Begin implementation of parse and helper functions"
+cd drewvlaz/lab03
+git add Lab3.hs Tests.hs Main.hs
+git restore --staged Tests.hs
+git commit -m "Implemented parse and defined main function"
+git add Tests.hs
+git commit -m "Added more tests"
+ghci Lab3.hs
+git add Lab3.hs
+git commit -m "Formatting"
+ghci Tests.hs
+cd notes/Lecture10
+v Applicatives.hs
+ghci ../../drewvlaz/lab03/Lab3.hs
+./../../drewvlaz/lab03/Main
+ghci Applicatives.hs
+q
+dockconf
+cd /etc/X11
+cd xinit
+sudo v xorg.conf
+cd sddm.conf.d
+v default.conf
+man xset
+xset r rate 250 50
+sudo systemctl stop sddm
+killall gitstatusd-linux-x86_64
+killall zsh
+xinit
+ff
+kdeinit5
+xorg
+sdn
+yay -S gdm
+cd /etc/sddm.conf.d
+sudo v default.conf
+sudo systemctl start sddm
+yeet gdm
+cd notes/Lecture11
+cat Monad.hs
+v Monad.hs
+ghci Monad.hs
+cd notes
+mkdir Lecture12
+cd Lecture12
+./hdiff "adafdas" "kkkadflj"
+v hdiff
+v hdiff.hs
+ghc hdiff.hs
+./hdiff "hdiff.hs" "hdiff.o"
+./hdiff "hdiff.hs" "hdiff.hs"
+ghci hdiff
+ghci enumerate.hs
+./enumerate "numbers.txt"
+v numbers.txt
+touch less.txt
+cat numbers.txt >> less.txt
+v less.txt
+./enumerate < "less.txt"
+cat CollectPermutations.hs l
+cat CollectPermutations.hs
+cat WordCount.hs
+cla
+./enumerate
+../..
+v enumerate
+v enumerate.hs
+yay
+killall plasmashell
+kstart5 plasmashell
+killall zolfcd
+syncdots
+dd if=Downloads/Fedora-Workstation-Live-x86_64-33-1.2.iso of=/dev/sda status=progress
+sudo dd if=Downloads/Fedora-Workstation-Live-x86_64-33-1.2.iso of=/dev/sda status=progress
+cd firefox/
+cd svphw674.default
+cd jmdndzqd.default-release
+cp -r jmdndzqd.default-release/chrome ucyaneav.default-release-1
+cd ucyaneav.default-release-1
+cd chrome
+sudo dnf install gnome-shell-extensions
+sudo dnf search gnome-shell-extension
+sudo dnf install gnome-shell-extension-user-theme
+sudo dnf install gnome-shell-extension
+sudo dnf install gnome-shell-extension-tool
+sudo dnf install alacritty
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+sudo dnf search zsh | grep highlight
+sudo dnf install zsh-syntax-highlighting
+cd /usr/share/zsh-syntax-highlighting
+cd share
+mkdir plugins
+sudo mkdir plugins
+d search zsh | grep auto
+d i
+d install zsh-autosuggestions
+cp -r zsh-syntax-highlighting zsh/plugins
+sudo cp -r zsh-syntax-highlighting zsh/plugins
+cd /usr/share/zsh/plugins/
+sudo cp -r zsh-autosuggestions zsh/plugins
+d search power | grep 10k
+d search zsh 
+cd /usr/share
+sudo mkdir zsh-theme-powerlevel10k
+cd zsh-theme-powerlevel10k
+cd powerlevel10k
+cp -r * /usr/share/zsh-theme-powerlevel10k
+sudo cp -r * /usr/share/zsh-theme-powerlevel10k
+
+p10k configure
+cd notes/Lecture12
+ghc enumerate.hs
+./enumerate < "numbers.txt"
+code
+d install code
+d search code
+d search vscode
+d search code | grep vs
+rm -rf powerlevel10k
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+sudo dnf check-update
+sudo dnf install code
+cd .fonts
+mkdir cascadia-code
+cd cascadia-code
+git clone https://github.com/drewvlaz/dotfiles
+rm -rf dotfiles
+cp .config/Code/User/settings.json ~/.config/Code/User/settings.json
+ls | grep -E '\.mp3'
+cls
+d install zoom
+sudo dnf install snapd
+df  
+sudo ln -s /var/lib/snapd/snap /snap
+sudo snap install zoom-client
+gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling']"
+dnf remove
+d remove snapd
+d install vlc
+cd Downloads/Stylish-2k
+cd Stylish/icons
+vlc fedora.png
+cd /boot/grub2
+cd /boot
+cd loader
+cd entries
+v install.sh
+cat LICENSE
+cd Tela-2k
+git commit -m "Implement extract word function"
+ssh-keygen -t rsa -C "drewvlaz@uchicago.edu" -b 4096
+cat id_rsa.pub| toclip
+git config --global color.ui auto
+xclip -sel clip < ~/.ssh/id_rsa.pub
+git -T git@mit.cs.uchicago.edu
+rm known_hosts
+GIT_TRACE=1 GIT_SSH_COMMAND="ssh -vvv" git clone git@mit.cs.uchicago.edu:cmsc16100-aut-20/drewvlaz.git d2
+gitlab-ctl reconfigure
+git reconfigure
+cd ssh_config.d
+v 50-redhat.conf
+cd sshd_config.d
+cd hos
+sudo v hosts
+ssh-keygen  -l -E md5 -f ~/.ssh/id_rsa.pub
+v id_rsa.pub
+d
+sudo v ssh_config
+d install notion
+git clone https://github.com/puneetsl/lotion
+rm -rf st
+d install epiphany
+d remove epiphany
+d install spotify
+dnf update
+sudo dnf install \\
+  https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install lpf-spotify-client
+sudo lpf update
+lpf  approve spotify-client
+d install gtk3
+lpf update
+d remove lpf-spotify-client-1.1.42.622-1.fc33.x86_64
+d install flatpack
+d install flatpak
+sudo flatpak install -y --from https://dl.flathub.org/repo/appstream/com.spotify.Client.flatpakref
+d install discord
+d install blender
+sudo flatpak install -y flathub com.spotify.Client
+cd /var/lib/bluetooth
+cd 14:F6:D8:71:C0:86
+gnome-terminal
+nautilus
+d isntall lf
+d install lf
+d isntall blender
+sudo dnf isntall blender
+sudo systemctl restart sddm
+sudo systemctl stop gdm
+sudo systemctl stop gnome
+sudo systemctl start gdm
+d install obinskit
+d search obins
+cd drewvlaz 
+cd lab04
+ssh -V
+cd /etc/
+cd .config/nvim
+git clone ssh://git@mit.cs.uchicago.edu:cmsc16100-aut-20/drewvlaz.git d2
+sudo gpasswd -a git users
+d install git
+sudo git clone git@mit.cs.uchicago.edu:cmsc16100-aut-20/drewvlaz.git d2
+sudo chmod 755 *
+cd /etc/ssh
+sudo v sshd_config
+ssh-keygen -t rsa -C "314dsv@gmail.com" -b 2048
+ssh -vT git@mit.cs.uchicago.edu
+d search ssh
+ssh -Q key
+rpm -qa | grep openssh-server
+sudo systemctl enable sshd
+sudo systemctl start sshd
+sudo systemctl status sshd
+sudo ss -lt
+flatpak remove
+flatpak remove zoom
+flatpak remove zoom-client
+d remove zoom
+ssh-keygen -t rsa -C "314dsv@gmail.com" -b 4096
+cp .ssh/id_rsa.pub| toclip
+cat .ssh/id_rsa.pub| toclip
+cd Dev/
+rm -rf .emacs.d
+rm -rf snap
+nvim .git-credentials
+cp ~/.ssh/id_rsa.pub | toclip
+v spoti.py
+git add spoti.py
+git commit -m "Added playlists"
+git puhs
+v .git-credentials
+d downgrade openssh-8.4p1-2.fc33.x86_64
+ssh -oPubkeyAcceptedKeyTypes=+rsa-sha2-512
+ssh -o PubkeyAcceptedKeyTypes=+rsa-sha2-512
+ssh -o PubkeyAcceptedKeyTypes=+rsa-sha2-512 -T git@mit.cs.uchicago.edu
+ssh -T git@mit.cs.uchicago.edu
+ssh -oPubkeyAcceptedKeyTypes=+rsa-sha2-512 -T git@mit.cs.uchicago.edu
+ssh -oPubkeyAcceptedKeyTypes=+rsa-sha2-512 -vT git@mit.cs.uchicago.edu
+rm -rf .ssh
+ssh-keygen -t ecdsa -b 521 -C "314dsv@gmail.com"
+cat ~/.ssh/id_rsa.pub | toclip
+cat ~/.ssh/id_ecdsa.pub | toclip
+git clone git@mit.cs.uchicago.edu:cmsc16100-aut-20/drewvlaz.git d2
+rm -rf d2
+d search tex
+d search tex | grep core
+d install texlive-scheme-full
+d install texlive-scheme-medium
+cd /boot/efi
+sud su
+cd /etc/default
+sudo v grub
+./install.sh
+sudo ./install.sh
+plymouth-set-default-theme --list
+l
+git clone https://github.com/adi1090x/plymouth-themes.git
+cd plymouth-themes
+sudo ./showplymouth.sh 
+sudo cp pack_1/circle_hud /usr/share/plymouth/themes
+cd pack_1
+l,s
+sudo cp -r pack_1/circle_hud /usr/share/plymouth/themes
+sudo plymouth-set-default-theme -R spinner
+d install plymouth-plugin-script
+sudo plymouth-set-default-theme -R circle_hud
+sudo ./showplymouth.sh 2
+sudo plymouth-set-default-theme -R cuts
+sudo cp -r pack_1/cuts /usr/share/plymouth/themes
+sudo cp -r pack_1/cross_hud /usr/share/plymouth/themes
+sudo plymouth-set-default-theme -R cross_hud
+sudo cp -r pack_1/connect /usr/share/plymouth/themes
+sudo plymouth-set-default-theme -R connect
+sudo plymouth-set-default-theme -l
+sudo plymouth-set-default-theme -R bgrt
+sudo plymouth-set-default-theme -R text
+sudo plymouth-set-default-theme -R details
+sudo ./showplymouth.sh 5
+killall code
+d install ghc
+./WordCount < "asdf asfdasf asdfas"
+echo "asdfas fasdf asfsad" | ./WordCount
+echo "asdfas fasdf as$$$fsad" | ./WordCount
+echo "asdfas fasdf as[][][][fsad" | ./WordCount
+echo "asdfas faDD dAEOsdf as[][][][fsad" | ./WordCount
+v text.txt
+sudo setenforce permissive 
+alacritty
+git commit -m "Working version, need to clean up some"
+git commit -m "Simplified data flow"
+echo "lakjdflk  asdlkfjalskjf " | ./WordCount
+git commit -m "Remove function"
+killall firefox
+d remove firefox
+rm -rf firefox
+d install firefox
+cd .mozilla
+d upgrade
+exirt
+d alias i=install
+d alias add i=install
+d alias add rm=remove
+d aliast remove i
+d aliast remove alias i
+d alias remove i
+d alias delete i
+d alias list
+A New Way to Learn\
+\
+LeetCode is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interview
+echo " lakjdflk  asdlkfjalskjf " | ./WordCount
+git commit -m "Simplified"
+d search tlp-
+d in tlp tlp-rdw
+cdl
+git add WordCount.hs
+git commit -m "Add monoid implementation"
+./WordCount
+git add WordCount.hs WordSplitter.hs
+git commit -m "Modularized"
+v poem.txt
+./CollectPermutations < text.tx
+./CollectPermutations < text.txt
+ghci CollectPermutations.hs
+./CollectPermutations < poem.txt
+./CollectPermutations < poem.txt | diff -y a.txt
+./CollectPermutations < poem.txt | diff -y a.txt x
+./CollectPermutations < poem.txt | diff -y a.txt -x
+v a.txt
+git commit -m "Finished"
+git add CollectPermutations.hs
+git commit -m "Some commenting"
+cd notes/Lecture13
+v test.hs
+ghci Monoid.hs
+git add CollectPermutations.hs WordSplitter.hs
+ghci WordSplitter.
+ghci WordSplitter.hs
+ghci WordCount.hs
+ghc WordCount.hs
+./WordCount < text.txt
+v parser.txt
+cat parser.txt
+./WordCount < parser.txt
+cat wc.txt
+v wc.txt
+./WordCount < parser.txt | diff -y wc.txt -
+rm parser.txt
+./WordCount < text.txt | diff -y wc.txt -
+git commit -m "Collaboration comments"
+git add CollectPermutations.hs WordSplitter.hs WordCount.hs
+git commit -m "Refactor composition"
+ghc CollectPermutations.hs
+d rm zoom
+d update
+cd /usr/share/grub
+cd Stylish
+v theme.txt
+vlc select_c.png
+vlc terminal_box_c.png
+v grub-mkconfig_lib
+git clone git://github.com/spin83/multi-monitors-add-on.git && cd multi-monitors-add-on && cp -r multi-monitors-add-on@spin83 ~/.local/share/gnome-shell/extensions
+cp -r multi-monitors-add-on@spin83 ~/.local/share/gnome-shell/extensions/
+cd .local/share/gnome-shell/extensions
+ghc-pkg list
+ghc-pkg list | grep mtl
+edxit
+ed xit
+cd notes/Lecture14
+ghci Reader.hs
+d u;
+cd notes/Lecture15
+cabal
+cabal 
+ghci Accum.hs
+cd drewvlaz/lab04
+runhaskell CollectPermutations
+runhaskell CollectPermutations.hs
+./CollectPermutations < poem.txt | diff -y a.txt -
+runhaskell CollectPermutations.hs < poem.txt
+mkdir exams
+mv Assignments assignments
+mv notes notes&hw
+mv notes notes\&hw
+rm -rf icons-in-terminal
+rm -rf Prismatic-Night
+rm -rf yay
+rm -rf sxiv 
+cd small-projects
+cd instagram
+cd instagram_data
+rm -rf *
+ibus-setup
+cabal install --dependencies-only --reinstall
+cabal install --reinstall
+cabal install --dependencies-only
+d in ghc
+d in cabal
+rm CHANGELOG.md
+rm Lecture16.cabal Main.hs Setup.hs
+cabal install mtl-2.2.2
+cabal init
+cabal exec runhaskell DnD.hs
+v Lecture16.cabal
+rm -rf dist-newstyle CHANGELOG.md Lecture16.cabal Setup.hs Main.hs
+v DnD.hs
+ghc-pkg recache
+sudo ghc-pkg recache
+ghc-pkg list mtl
+d rm ghc
+ghc -V
+d rm cabal
+d rm haskell-platform
+d in haskell-platform
+cabal install mtl-2.2.2 --package-env . -- lib
+cabal install mtl-2.2.2 --package-env . --lib
+cabal install random
+cabal install --lib random
+ghic
+v .ghc.environment.x86_64-linux-8.8.4
+rm .ghc.environment.x86_64-linux-8.8.4
+cabal install --lib mtl
+cd Lecture16
+ghci DnD.hs
+d s gnome
+d se gnome
+d se gnome-shell-extension
+d se gnome-shell-extension-pop
+d in gnome-shell-extension-pop-shell
+d rm alacritty
+sudo v /etc/systemd/logind.conf
+cd notes\&hw/misc
+ghci Study.hs
+alsa-tools-gui
+d alsa-tools-gui
+d in alsa-tools-gui
+d in foliate
+foliate
+ghci PrettyHTML.hs
+./disassociated-press
+./disassociated-press < gettysburg.txt\\
+
+ghc disassociated-press.hs
+./disassociated-press < gettysburg.txt
+time ./State < gettysburg.txt
+time
+v gettysburg.txt
+./ 
+ghc State.hs
+./State < gettysburg.txt
+d autoremove
+cd notes\&hw/Lecture16
+ghci Notes.hs
+d in blender
+cd notes\&hw/Lecture17
+ghci ParserNotes.hs
+ghci Parser.hs
+cd drewvlaz/
+cd lab05
+ghci RandState.hs
+git add RandState.hs
+git commit -m "Define instances for RandState"
+echo "\x1B[31m‚Éπ•\x1B[0m"
+echo "\x1B[31m‚Éπ•adf\x1B[0m"
+git add RandState.hs Lab5.hs
+git commit -m "Implemented randR and rollTwoDice"
+git commit -m "Very verbose implementations of removeCard and shuffleDeck"
+git commit -m "Monadic implementations of removeCard and shuffleDeck"
+./Lab5 shuffle 3
+./Lab5 shuffle rollTwoDice 5
+./Lab5 rollTwoDice 5
+git commit -m "Implemented shuffleNTimes and rollTwoDiceNTimes"
+time ./Lab5 rollTwoDice 10000
+./Lab5
+ghci Lab5.hs
+ghci ApproxPi.hs
+./ApproxPi 1000
+git commit -m "Extra credit"
+git add Lab5.hs RandState.hs ApproxPi.hs
+time ./Lab5 shuffle 10000
+git commit -m "Updated imports"
+git st
+git sta
+git commit -m "Remove extra credit executable"
+rm RandStateExamples.hs
+git add RandStateExamples.hs
+git commit -m "Remove examples"
+ghci 
+git commit -m "Commenting"
+git add ApproxPi.hs
+ghc
+killall zoom
+./Lab5 rollTwoDice 10000
+./Lab5 rollTwoDice 10000 | toclip
+./Lab5 rollTwoDice 5000 | toclip
+./Lab5 rollTwoDice 500 | toclip
+touch BetterMunch.hs
+git statuus
+ghc Lab5.hs
+./Lab5 rollTwoDice 500
+./Lab5 shuffle 10000
+ghc ApproxPi.hs
+./ApproxPi 10000
+./ApproxPi 100000
+./ApproxPi 1000000
+ghci BetterMunch.hs
+cd notes\&hw/Lecture18
+ghci QuickSort.hs
+yum update nss nss-util nss-sysinit nss-tools
+sudo yum update nss nss-util nss-sysinit nss-tools
+cd notes\&hw/Lecture19
+ghci Traversable.hs
+cd drewvlaz/lab05
+cabal install --lib haskeline
+v test_expectation.txt
+v test_exp.
+v test_exps.txt
+git add Lab5.hs
+git commit -m "Basic parsing functions"
+git commit -m "Add basic negation"
+cd notes\&hw/Lecture20
+ghci MonadTransformers.hs
+ghc Lab6.hs
+./Lab6
+./Main.hs
+git commit -m "Parenthesis and negation fixed"
+git commit -m "Parse let single variable names"
+git commit -m "Condense type signatures"
+git commit -m "Very ugly implementation of parseLetTLE"
+./Main < test_exps.txt| diff -y test_expectation.txt
+./Main < test_exps.txt
+./Main < test_exps.txt| diff -y test_expectation.txt - >> results1.txt
+diff -y results.txt results1.txt
+./Main < test_exps.txt| diff -y test_expectation.txt - >> results.txt
+rm results1.txt
+git commit -m "Fixed negation"
+ghc Main.hs && ./Main < test_exps.txt| diff -y test_expectation.txt - >> results.txt
+ghc Main.hs && ./Main < test_exps.txt| diff -y test_expectation.txt - > results.txt
+git commit -m "Attempt at implementing helper function for skipSpaces"
+ghc Main.hs && ./Main < test_exps.txt| diff test_expectation.txt -
+git commit -m "Further removed skipSpaces"
+git commit -m "Refactored to use applicative pipeline instead of do notation"
+sudo systemd-analyze blame
+sudo systemctl disable NetworkManager-wait-online.service
+git clone git@mit.cs.uchicago.edu:saks/2020-autumn-cmsc-16100-guessing-game-ex.git 
+mv 2020-autumn-cmsc-16100-guessing-game-ex Documents/College/Autumn\ 20/Honors\ Intro\ CS.\ CMSC\ 16100/notes\&hw
+mkdir notes\&hw/Lecture21
+mv 2020-autumn-cmsc-16100-guessing-game-ex Lecture21
+cd Lecture21
+cp Main.hs ../..
+cd 2020-autumn-cmsc-16100-guessing-game-ex/src-exe
+cd notes\&hw/Lecture21
+2
+rm -rf 2020-autumn-cmsc-16100-guessing-game-ex
+ghc Main.hs
+./Main < test_exps.txt| diff -y test_expectation.txt -
+ghci Main.hs
+ghci Lab6.hs
+\:r
+git commit -m "Refactored"
+rfkill block bluetooth
+rfkill unblock bluetooth
+gcc -help
+mkdir Winter\ 21
+cd ../Autumn\ 20
+cd ../Winter\ 21
+mkdir Honors\ Intro \Cs.\ 2\ CMSC\ 16200
+mkdir "Honors\ Intro \Cs.\ 2\ CMSC\ 16200"
+rmdir Honors\ Intro
+rmdir Cs.\ 2\ CMSC\ 16200
+rmdir Honors\\\ Intro\ \\Cs.\\\ 2\\\ CMSC\\\ 16200
+mkdir "Honors Intro Cs. 2 CMSC 16200"
+rmdir Honors\ Intro\ Cs.\ 2\ CMSC\ 16200
+rmdir Honors\ Intro\ CS.\ 2\ CMSC\ 16200
+mkdir "Honors Intro CS. 2 CMSC 16200"
+cd Honors\ Intro\ CS.\ 2\ CMSC\ 16200
+mkdir misc
+cd misc
+./helloworld.c
+v helloworld.c
+gcc helloworld.c
+cat helloworld.c
+git log
+./Main
+git add Lab6.hs
+git commit -m "Removed unnecessary skipSpaces"
+cd drewvlaz/lab06
+ghc Main.hs && ./Main < test_exps.txt| diff -y test_expectation.txt -
+texclean
+cabal repl
+nc -c info.cern.ch 80
+curl -v http://info.cern.ch/hypertext/WWW/TheProject.html
+cabal build
+ghc Lab7.hs
+cabal install network
+cabal update
+cabal install regex-compat
+cabal install network --lib
+cabal install regex-compat --lib
+git commit -m "Began implementations"
+git commit -m "Improved readability of Monad instance"
+git add public_html/
+git commit -m "Made a haiku"
+git commit -m "Changed constraint to Functor for censor"
+git add Lab7.hs
+git commit -m "Eta reduction"
+echo "asdf" | telnet localhost 2222
+curl http://localhost:2222/
+curl http://localhost:2222/ascii_art/quality_controller.html
+curl http://localhost:2222/favicon.ico
+printf "asdf\r\n\r\n" | nc localhost 2222
+echo "asdf" | nc localhost 2222
+printf "asdf" | nc localhost 2222
+d in cowsay
+d in fortune
+cowsay -l
+cowsay -f www
+cowsay -s
+echo hello | cowsay -s
+cd drewvlaz/lab07
+cabal run
+d se fortune
+d in fortune-mod
+fortune
+fortune | cowsay -s
+fortune -s
+fortune -s | cowsay -f cower
+echo "I am a webpage\nGo and click through all my links\nI hope you have fun." | cowsay -f cower
+echo "I am a webpage\nGo and click through all my links\nI hope you have fun." | cowsay -f www
+git statud
+git add public_html/index.html
+git commit -m "Haiku ASCII art"
+python scripts/unfollowers.py
+v output/unfollowers.txt
+ghci
+cd Documents/College/Autumn\ 20/Honors\ Intro\ CS.\ CMSC\ 16100
+cd exams
+ls midterm
+cd final
+touch Problem1.hs
+touch Problem2.hs
+touch Problem3.hs
+touch Problem4.hs
+touch Problem5.hs
+touch Problem6.hs
+touch Problem7.hs
+touch Problem8.hs
+ghc 
+ghci Problem1.hs
+ghci Problem3.hs
+ghci Problem4.hs
+ghci Problem5.hs
+ghci Problem7.hs
+ghci Problem8.hs
+ghci Problem2.hs
+cd Exams
+cp Final.tex bkup.tex
+cat bkup.tex
+git init
+v README.md
+git commit -m 
+git commit -m "Add README"
+git remote add origin https://github.com/drewvlaz/music_app_dds
+touch .gitignore
+v .git
+v .gitignore
+pip3 install virtualenv
+python -m pip install --upgrade pip
+git commit -m "Starter files"
+man curl
+/home/drewvlaz/Dev/music_app_dds/venv/bin/python3.9 /home/drewvlaz/.vscode/extensions/ms-python.python-2020.12.424452561/pythonFiles/pyvsc-run-isolated.py pip install -U pylint
+git add .gitignore
+git commit -m "Update list to ignore"
+git commit -m "Test API requests"
+git commit -m "Comments"
+git branch dev
+git checkout dev
+git config --list
+git commit -m "Set up authorization using client credentials to get tokens after expiration"
+git push
+pip3 install requests
+pip3 install bs4
+cd music_app_dds
+git commit -m "Snake case"
+git commit -m "Restructure files"
+git commit -m "Add parameters to get_recommendations"
+git merge dev master
+git commit -m "Add valence parameter"
+python mood.py >> test.json
+git commit -m "Add ability to not send target values"
+git commit -m "Add default target values"
+git add playlist.py mood.py
+git commit -m "Use random seed genres"
+git s 
+git s
+git add playlist.py
+git commit -m "Renaming"
+python mood.py
+git commit -m "Run methods on object instantiation"
+git difff
+git add mood.py
+git commit -m "Refactor get requests"
+git branch drew
+git branch dj
+git branch sam
+git push -u origin dev
+git remove dev
+git branch -d dev
+git commit -m "Misc"
+git checkout dj
+git push -u origin dj
+git checkout sam
+git push -u origin sam
+cat id_ecdsa.pub
+cat id_ecdsa.pub | toclip
+git checkout master
+git checkout drew
+git commit -m "Add Spotify search function"
+git commit -m ""
+git commit -m "Get an artist"
+git commit -m "Remove exception, return None on fail"
+git config -e --system
+git remote set-url origin git@github.com:drewvlaz/music_app_dds.git
+ssh -T git@github.com
+git remote -v
+git merge drew master
+git commit -m "Change recommendation search parameters"
+git add spotify_client.py mood.py
+git commit -m "Add artist and track seed parameters"
+git commit -m "Refactor track extraction in recommendations"
+/home/drewvlaz/Dev/music_app_dds/venv/bin/python3.9
+git add spotify_client.py
+git push -u origin drew
+source /home/drewvlaz/Dev/music_app_dds/venv/bin/activate
+python mood.py > test.json
+pip -l
+man pip
+pip-list
+pip list
+bluetoothctl disconnect 
+togbt
+vvvvvvvvvvvvv
+hello
+cd Dev/music_app_dds
+ld
+cd Documents/College/Autumn\ 20/Calc\ III\ MATH\ 15300
+cd Winter\ 21
+mkdir "Film and the Moving Image CMST 14400"
+mkdir "Greece and Rome HUMA 12150"
+mkdir "Spanish II SPAN 10200"
+npx
+np
+npm
+cd Documents/College/1\ Year/Winter\ 21/textbooks/Oedipus\ the\ King
+convert * test.pdf
+convert title.png copyright.png intro1.png intro2.png characters.png title.png test.pdf
+man convert
+convert title.png copyright.png intro1.png intro2.png characters.png title.png test.pdf -compress jpeg
+ff output.pdf
+convert title.png copyright.png intro1.png intro2.png characters.png title.png -resize 1240x1750 -gravity center extent 1240x1750 -units PixelsPerInch -density 150 output.pdf
+stdconvert title.png copyright.png intro1.png intro2.png characters.png title2.png output.pdf
+rm *.png
+mv output.pdf ..
+stdconvert * test.pdf
+ff test.pdf
+mv test.pdf ..
+stdconvert output.pdf test.pdf oedipus.pdf
+ff oedipus.pdf
+stdconvert * content.pdf
+mv content.pdf ..
+stdconvert output.pdf content.pdf "Oedipus the King - Sophocles.pdf"
+rm oedipus.pdf
+rm test.pdf
+mv output.pdf Oedipus\ the\ King/title.pdf
+mv content.pdf Oedipus\ the\ King
+cd Oedipus\ the\ King
+cd Documents/College/1\ Year/Winter\ 21/textbooks/
+ff Oedipus\ the\ King\ -\ Sophocles.pdf
+gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+host
+v /etc/hostname
+sudo v /etc/hostname
+cd songs
+cd spoti-py-music
+pip install -r requirements.txt
+pip
+d in pip
+pip3 install -r requirements.txt
+v requirements.txt
+pip3 install youtube_dl
+pip3 install eyed3
+d in ffmpeg
+vlc White\ Ferrari.mp3
+export PYTHONIOENCODING=utf8
+python -c 'import sys; print(sys.getdefaultencoding())'
+cd songs/down\ vibes
+ls | wc -l
+python spoti.py
+cp songs/* ~/Music
+cp -r songs/* ~/Music
+d in svn
+cd Dev/spoti-py-music
+git add song.py
+git commit -m "Minor changes"
+git push 
+ssh linux.cs.uchicago.edu
+gcc -version
+gcc -V
+gcc --version
+clang
+tar -xvf hw0-handout.tgz
+man tar
+gcc cyclic.c
+ssh-copy-id drewvlaz@linux.cs.uchicago.edu
+./a.out
+\:w
+gcc cyclic.c && ./a.out
+gcc cyclic_test.c -o tests
+gcc -o tests cyclic_test.c
+gcc -o tests cyclic.c cyclic_test.c
+gcc cyclic.c cyclic_test.c -o tests
+./tests
+gcc scratch.c -o scratch
+./scratch
+cd h 
+gcc cyclic.c cyclic_test.c -o tests && ./testsq
+which gccc
+gcc puzzles.c puzzles_test.c -o puzzles && ./puzzles
+scp -r hw0 drewvlaz@linux.cs.uchicago.edu:~/CMSC16200
+scp ~/.zshrc drewvlaz@linux.cs.uchicago.edu:~
+scp -r ~/.config/zsh drewvlaz@linux.cs.uchicago.edu:~/.config
+gcc cyclic.c cyclic_test.c -o tests && ./tests
+wget https://public.crackhub.site/Avengers%20Infinity%20War%20(2018)%20[BluRay]%20[1080p]%20[YTS.AM]/Avengers.Infinity.War.2018.1080p.BluRay.x264-[YTS.AM].mp4
+wget "https://public.crackhub.site/Avengers%20Infinity%20War%20(2018)%20[BluRay]%20[1080p]%20[YTS.AM]/Avengers.Infinity.War.2018.1080p.BluRay.x264-[YTS.AM].mp4"
+wget 'http://afkar.ddns.net:81/Movies/Avengers%20Endgame%20(2019)/Avengers.Endgame.2019.mp4"
+wget "http://afkar.ddns.net:81/Movies/Avengers%20Endgame%20(2019)/Avengers.Endgame.2019.mp4"
+mv Avengers.Infinity.War.2018.1080p.BluRay.x264-\[YTS.AM\].mp4 Videos/Movies/
+wget "http://afkar.ddns.net:81/Movies/Avengers%20Infinity%20War%20(2018)/Avengers.Infinity.War.2018.mp4"
+wget "http://afkar.ddns.net:81/Movies/Wonder%20Woman%201984%20(2020)/Wonder.Woman.1984.2020.mp4"
+wget "https://easy-movie.com.au/cdn/Fantastic.Beasts.And.Where.To.Find.Them.2016.1080p.BluRay.x264-%5bYTS.AG%5d.mp4"
+wget "http://dl.mcup.xyz/Movies/2013/The.Wolf.of.Wall.Street.2013.1080p.BrRip.ShAaNiG.mkv"
+wget "https://easy-movie.com.au/cdn/Fantastic.Beasts.The.Crimes.Of.Grindelwald.2018.1080p.BluRay.x264-%5bYTS.AM%5d.mp4"
+wget -U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36" "https://easy-movie.com.au/cdn/Fantastic.Beasts.The.Crimes.Of.Grindelwald.2018.1080p.BluRay.x264-%5bYTS.AM%5d.mp4"
+wget --no-proxy "https://easy-movie.com.au/cdn/Fantastic.Beasts.The.Crimes.Of.Grindelwald.2018.1080p.BluRay.x264-%5bYTS.AM%5d.mp4"
+wget --no-proxy -U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36" "https://easy-movie.com.au/cdn/Fantastic.Beasts.The.Crimes.Of.Grindelwald.2018.1080p.BluRay.x264-%5bYTS.AM%5d.mp4"
+wget "https://easy-movie.com.au/cdn/Fantasy.Island.2020.1080p.mp4"
+wget -U "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0" --header="Accept: text/html" --header="Cookie: __cfduid=xpzezr54v5qnaoet5v2dx1ias5xx8m4faj7d5mfg4og; cf_clearance=0n01f6dkcd31en6v4b234a6d1jhoaqgxa7lklwbj-1438079290-3600" -np -r "https://easy-movie.com.au/cdn/Fantasy.Island.2020.1080p.mp4"
+wget "http://dl.mcup.xyz/Movies/2019/It.Chapter.Two.2019.10bit.1080p.x265.BrRip.8CH.PSA.mkv"
+d up plex
+wget -m -r -np "https://maxm.eurymedon.feralhosting.com/downloads/missing-semester/"
+wget -m -r -np --no-check-certificate "https://maxm.eurymedon.feralhosting.com/downloads/missing-semester/"
+wget "http://185.105.101.222/2018/film/Annihilation%202018/An.nihi.lation.2018.1080p.b.lu.ry.Filmha_CO.mkv"
+rm *.c *.h
+rm theory.md
+cd hw0-handin/
+cd ../hw0-handin
+make puzzles %% ./puzzles
+rm -rf hw0-handin
+tar -xvf hw0-handin.tgz
+../hw0
+cp Makefile ../hw0-handin
+cp Makefile ../test
+rm hw0-handin
+make puzzles && ./puzzles
+make cyclic && ./cyclic
+d in telegram
+wget -c "http://185.105.101.222/2018/film/Annihilation%202018/An.nihi.lation.2018.1080p.b.lu.ry.Filmha_CO.mkv"
+d in megatools
+megatools 
+rm wget-log
+cd Documents/programming
+mkdir Back2BackSWE
+cd Back2BackSWE
+megatools
+vlc lesson2.mp4
+vlc lesson3.mp4
+megatools dl https://mega.nz/folder/lJBlUAzR#nHHdfK9LVa76sB0GokkfSQ
+vlc lesson4.mp4
+vlc lesson5.mp4
+killall vlc
+vlc Documents/programming/Back2BackSWE
+alsamixer
+pactl
+pactl list
+pactl list | grep -oP 'Sink #\K([0-9]+)' |
+pactl list | grep -oP 'Sink #\K([0-9]+)'
+pactl list | grep -oP 'Sink #\K([0-9]+)' | while read -r i ; do pactl -- set-sink-volume $i 100% ; done
+pavucontrol
+man dnf
+d install jellyfin-10.7.0~rc2-1.fc33.src.rpm\
+
+d in plex
+plex-media-player
+d rm plex
+plex-media-server
+chmod 777 Movies
+cd home
+cp Ghost\ in\ the\ Shell.mp4 /var/lib/plexmediaserver/Library
+sudo cp Ghost\ in\ the\ Shell.mp4 /var/lib/plexmediaserver/Library
+chmod 777 Videos
+chmod 755
+chmod 755 *
+chmod 755 Videos
+dd if=DietPi_RPi-ARMv6-Buster.img of=/dev/sdb status=progress
+sudo dd if=/dev/zero of=/dev/sdb
+sudo dd if=/dev/zero of=/dev/sdb status=progress
+wipefs
+wipefs -a /dev/sdb
+sudo wipefs -a /dev/sdb
+killall dd
+ps dd
+ps
+sudo dd if=/dev/zero of=/dev/sdb bs=512 count=1 status=progress
+fdisk /dev/sdb
+sudo fdisk /dev/sdb
+sudo dd if=DietPi_RPi-ARMv6-Buster.img of=/dev/sdb status=progress
+lblk
+cd Downloads/DietPi_RPi-ARMv6-Buster
+sudo dd if=DietPi_RPi-ARMv6-Buster.img of=/dev/sdb1 status=progress
+d in etcher
+d se etcher
+d se balena
+nmap
+ssh root@192.168.1.142
+ssh dietpi@192.168.1.142
+ssh pi@192.168.1.142
+ssh root@192.168.1.135
+ssh dietpi@plexpi
+scp test.txt dietpi@192.168.1.135
+ssh -v dietpi@192.168.1.135
+cd .ssh/
+v known_hosts
+scp test.txt dietpi@192.168.1.135:~/
+sudo vim /etc/fstab
+sudo v /etc/fstab
+ssh plex@192.168.1.135
+mkfs
+mkfs --help
+man mkfs
+sudo mkfs.ext4 /dev/sda1
+sud umount /dev/sda1
+sudo umount /dev/sda1
+sudo mkfs.ext4 -L "TOSHIBA EXT" /dev/sda1
+lsblk
+sudo cp -R Videos/Movies /run/media/drewvlaz/TOSHIBA\ EXT
+sudo chmod -R 755 /run/media/drewvlaz/TOSHIBA\ EXT
+sudo chmod -R 777 /run/media/drewvlaz/TOSHIBA\ EXT
+scp mulan.jpg dietpi@192.168.1.135:~/Movies/Mulan (2020)
+scp mulan.jpg dietpi@192.168.1.135:~/Movies
+cd .ssh
+v id_ecdsa
+vim known_hosts
+ssh-copy-id dietpi@192.168.1.135
+cd Pictures/movie\ posters
+scp breakfastclub.jpg dietpi@192.168.1.135:~/Movies
+scp -r Videos/Movies/Black\ Swan\ \(2010\) dietpi@192.168.1.135
+cd Black\ Swan\ \(2010\)
+ffmpeg -i Black\ Swan\ \(2010\).mkv -codec -copy "Black Swan (2010).mp4"
+ffmpeg -i Black\ Swan\ \(2010\).mkv -codec copy "Black Swan (2010).mp4"
+vlc Black\ Swan\ \(2010\).mp4
+rm Black\ Swan\ \(2010\).mkv
+scp -r Videos/Movies/Black\ Swan\ \(2010\) dietpi@192.168.1.135:~/
+wget -O "Spider-Man: Into The Spider-Verse (2018).mp4" "https://easy-movie.com.au/cdn/Spider-Man.Into.The.Spider-Verse.2018.1080p.BluRay.x264-%5BYTS.AM%5D.mp4"
+wget -O "Spider-Man: Into The Spider-Verse (2018).mp4" "http://103.214.156.1/movies/english/2019/S8Q01G~8/Spider-Man.Far.From.Home.2019.1080p.NEW.HDTC.V2.1XBET.mp4"
+cd Harry\ Potter
+ffmpeg -i Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mkv -codec copy Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4
+vlc Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mkv
+d in handbrake
+handbrake
+d rm handbrake
+ffmpeg -i Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mkv -vcodec copy -acodec copy Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4
+scp Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4 dietpit@192.168.1.135:/media/ExtHDD01/Movies
+scp Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies
+rm Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4
+ffmpeg -i Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mkv -c:v libx264 -c:a aac Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4
+ffmpeg -i Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mkv Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4
+vlc Harry\ Potter\ and\ the\ Chamber\ of\ Secrets\ \(2002\).mkv
+ffmpeg -i Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mkv -map_metadata -1 -c copy Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4
+vlc Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4
+scp Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies/Harry\\\ Potter/Harry\\\ Potter\\\ and\\\ the\\\ Sorcerer\\\'s\\\ Stone\\\ \\\(2001\\\)
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+d in jellyfin
+d in jellyfinserver
+d in https://repo.jellyfin.org/releases/server/fedora/stable/server/jellyfin-10.6.4-1.fc31.src.rpm
+d in "https://repo.jellyfin.org/releases/server/fedora/stable/server/jellyfin-10.6.4-1.fc31.src.rpm"
+dnf 
+dnf install "https://repo.jellyfin.org/releases/server/fedora/stable/server/jellyfin-10.6.4-1.fc31.src.rpm"
+sudo dnf install "https://repo.jellyfin.org/releases/server/fedora/stable/server/jellyfin-10.6.4-1.fc31.src.rpm"
+d in "https://repo.jellyfin.org/releases/server/fedora/stable/server/jellyfin-10.6.4-1.fc31.x86_64.rpm"
+sudo service jellyfin service
+sudo systemctl stop jellyfin
+sudo systemctl restart jellyfin
+cd /var/lib/jellyfin
+cd /var/lib/
+sudo su
+d rm jellyfin
+d rm jellyfinserver
+d in "https://repo.jellyfin.org/releases/server/fedora/stable/server/jellyfin-server-10.6.4-1.fc31.x86_64.rpm"
+sudo systemctl start jellyfin
+sudo dnf remove jellyfin-server-10.6.4-1.fc31.x86_64 
+cp Spider-Man:\ Into\ The\ Spider-Verse\ \(2018\).mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies/
+scp Spider-Man:\ Into\ The\ Spider-Verse\ \(2018\).mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies/Spider-Man:\\\ Into\\\ The\\\ Spider-Verse\\\ \\\(2018\\\)
+scp "Spider-Man:\ Into\ The\ Spider-Verse\ \(2018\).mp4" dietpi@192.168.1.135:/media/ExtHDD01/Movies/Spider-Man:\\\ Into\\\ The\\\ Spider-Verse\\\ \\\(2018\\\)
+scp test.txt dietpi@192.168.1.135:/media/ExtHDD01/Movies
+scp "Spider-Man:\ Into\ The\ Spider-Verse\ \(2018\).mp4" dietpi@192.168.1.135:/media/ExtHDD01/Movies/
+mv Spider-Man:\ Into\ The\ Spider-Verse\ \(2018\).mp4 sm.mp4
+scp sm.mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies/Spider-Man:\\\ Into\\\ The\\\ Spider-Verse\\\ \\\(2018\\\)
+wget "https://ndisk.cizgifilmlerizle.com/getvid?evid=28uKijx3UqCZTY2396yzaiKm8Z7VBMxSPW_HR245ifOFdVRk_-lSZ3wdMKXQz5uMt2lqNnjwTB7u19Y2KHYjq50hcyunIx6BeB7yXpUg2NQ2LJuRp4wjqy1J_MNlEszFhVJt-HucoOSSZnlLkd-6c6Z86aQx1b0rI5TLaNA4B8STTKFwih_1X08rEGCI9Uem8V5Kc-wtYtsdzQiMnOTH7m1vgjoKn41JM4vxKiaTwAfyHD0I8ToW2rr_cc_ghIFV3mMohOQWck_0e6rQC5nNCBX1MUsd2K4m1d6z-FFv5IkYsvYV1BEh4XXZD-iJO33ZVM0H4an6-3U9b8J76jAv25p3ehz6jLBuV3U7TsVpeCFhNVf2SLUMocnrRPTQjRUIVKsabGT0u1MX3J-5mOAnyb3dewvikheZyTx-UozPtyE"
+cd Videos/TV\ Shows/Avatar:\ The\ Last\ Airbender/Season\ 01
+scp * dietpi@192.168.1.135:/media/ExtHDD01/TV\\\ Shows/Avatar:\\\ The\\\ Last\\\ Airbender/Season\\\ 01
+scp -R "Season 01" dietpi@192.168.1.135:/media/ExtHDD01/TV\\\ Shows/Avatar:\\\ The\\\ Last\\\ Airbender/Season\\\ 01
+scp -r "Season 01" dietpi@192.168.1.135:/media/ExtHDD01/TV\\\ Shows/Avatar:\\\ The\\\ Last\\\ Airbender/Season\\\ 01
+tar -xvf hw1-handout.tgz
+cd lab1-handout
+d in valgrind
+valgrind 
+valgrind dna
+valgrind ./dna
+valgrind --leack-check=full ./dna
+valgrind --leak-check=full ./dna
+make dna && valgrind --leak-check=full
+make dna && valgrind --leak-check=full ./dnae
+make cquence.c && ./cquence
+hostname -I
+d rm chromium
+d in chrome
+d in google-chrome
+d in youtube_dl
+d in youtube-dl
+youtube-dl -f 22 "https://youtu.be/5Sa2MqfpqEs"
+mv The\ Beauty\ Of\ Harry\ Potter-5Sa2MqfpqEs.mp4 "The Beauty of Harry Potter.mp4"
+mv The\ Beauty\ of\ Harry\ Potter.mp4 Videos/Movies/Harry\ Potter
+cp The\ Beauty\ of\ Harry\ Potter.mp4 tbohp.mp4
+scp tbohp.mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies/Harry\\\ Potter
+youtube-dl "https://youtu.be/5Sa2MqfpqEs"
+youtube-dl -F
+youtube-dl -f
+youtube-dl -F "https://youtu.be/5Sa2MqfpqEs"
+youtube-dl -f 137 "https://youtu.be/5Sa2MqfpqEs"
+vlc The\ Beauty\ Of\ Harry\ Potter-5Sa2MqfpqEs.mp4
+rm The\ Beauty\ Of\ Harry\ Potter-5Sa2MqfpqEs.mp4
+ffmpeg -i The\ Beauty\ Of\ Harry\ Potter-5Sa2MqfpqEs.webm trailer.mp4
+vlc trailer.mp4
+mv lab1-handout hw1
+gdb ./cquence
+killall google-chrome
+killall chrome
+rm -rf google-chrome-unstable
+d in google-chrome-stable
+d rm google-chrome
+tldr
+d in tldr
+tldr ls
+tldr man
+gcc list.c list.h list_test.c -o list && ./list
+gcc list.c list.h list_test.c -o list
+make list && list
+valgrind --leak-check=full ./list
+make list && valgrind --leak-check=full ./list
+rm vgcore*
+vlc
+make dna && valgrind --leak-check=full ./dna
+make dna && valgrind ./dna
+make cquence && valgrind --leak-check=full ./cquence
+ssh di
+make list && valgrind ./list
+make recursion && ./recursione
+make recursion && valgrind ./recursion
+make cquence && valgrind ./cquence
+scp * drewvlaz@linux.cs.uchicago.edu:~/cs/drewvlaz-cs162-win-21/hw1
+../test
+mkdir hw0-handin
+mv *.c hw0-handin
+mv puzzles.h theory.md hw0-handin
+mv cyclic.h hw0-handin/
+mkdir hw1-handin
+mv hw0-handin.tgz hw0-handin
+mv Makefile hw0-handin
+mv hw1-handin.tgz hw1-handin
+cd hw1-handin
+tar -xvf hw1-handin.tgz
+cp ../../hw1/Makefile .
+vim Makefile
+../../hw1
+cp cquence_test.c dna_test.c list_test.c recursion_test.c ../test/hw1
+cp cquence_test.c dna_test.c list_test.c recursion_test.c ../test/hw1-handin
+cd ../test/hw1-handin
+make dna && ./dna
+make list && ./list
+make recursion && ./recursion
+make cquence && ./cquence
+cd De
+cd Dev
+git clone git://github.com/spin83/multi-monitors-add-on.git\
+
+cd multi-monitors-add-on
+cp -r multi-monitors-add-on@spin83 ~/.local/share/gnome-shell/extensions/\
+
+sudo systemctl status plexmediaserver
+sudo systemctl status jellyfin
+d in windscrivbe
+d in windscribe
+d se windscribe
+wget https://repo.windscribe.com/fedora/windscribe.repo -O /etc/yum.repos.d/windscribe.repo\
+
+sudo wget https://repo.windscribe.com/fedora/windscribe.repo -O /etc/yum.repos.d/windscribe.repo\
+
+sudo dnf update
+windscribe examples
+windscribe logout
+sudo systemctl restart windscribe-cli
+sudo systemctl restart windscribe
+windscribe connect best
+resolvconf
+.config
+v mimeapps.list
+v .config/mimeapps.list
+tee
+echo "Hello" | tee
+echo "Hello"
+man tee
+\:q
+mkdir hw2
+tar -xvf hw2-handin.tgz
+tar -xvf hw2-handout.tgz hw2/
+make duplicate && ./duplicate
+d in libasan
+./duplicate
+./duplicates
+cd ../hw1
+v launch.json
+scp lib drewvlaz@linux.cs.uchicago.edu:~/cs/drewvlaz-cs162-win-21/hw2
+scp lib/* drewvlaz@linux.cs.uchicago.edu:~/cs/drewvlaz-cs162-win-21/hw2
+ssh drewvlaz@linux.cs.uchicago.edu:~/cs/drewvlaz-cs162-win-21/
+scp lib/* drewvlaz@linux.cs.uchicago.edu:~/cs/drewvlaz-cs162-win-21/hw2/lib
+d in freezer
+d in Freezer-1.1.16.AppImage
+chmod +x Freezer-1.1.16.AppImage
+gnome-desktop-item-edit
+./Freezer-1.1.16.AppImage
+d in gnome-panel
+gnome-desktop-item-edit --create-new ~/Desktop\
+
+./~/Desktop/Freezer-1.1.16.AppImage
+./Desktop/Freezer-1.1.16.AppImage
+./home/drewvlaz/Desktop/Freezer-1.1.16.AppImage
+~/Desktop/Freezer-1.1.16.AppImage
+cd .local/share/applications
+v userapp-Telegram\ Desktop-0CRBX0.desktop
+v freezer.desktop
+d in qbittorrent
+windscribe connect US
+d rm windscribe-cli
+d in windscribe-cli
+windscribe login
+sudo v /etc/windscribe/update-resolv.sh
+cd /etc/windscribe
+mv update-resolv.sh update-resolv.sh.bkup
+sudo mv update-resolv.sh update-resolv.sh.bkup
+cp update-resolv.sh.bkup update-resolv.sh
+sudo cp update-resolv.sh.bkup update-resolv.sh
+sudo v update-resolv.sh
+windscribe connect
+windscribe disconnect
+cd Videos/Movies/Harry\ Potter
+ffmpeg -i Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4 -map_metadata -1 -c:v copy -c:a copy out.mp4
+cd ../Wonder\ Woman\ 1984\ \(2020\)
+scp Wonder\ Woman\ 1984\ \(2020\).mkv dietpi@192.168.1.135:/media/ExtHDD01/Movies/Wonder\\\ Woman\\\ 1984\\\ \\\(2020\\\)
+wcd
+wget "http://s1.mega4down.com:8080/d/6erhlhzkiry6yxccgpef5nqfzo7zkvh2fe36rv2ujbco3w5clbsaosjwdlgta7bo53uwl72t/Plex-Premium-v8.12.3.22809_build_818254225-arm64-v8a.apk"
+windscribe help
+windscribe --help
+windscribe disable firewall
+windscribe firewall off
+cd Videos/TV\ Shows/Rick\ and\ Morty/Season\ 1
+scp Rick\ and\ Morty\ -\ s01e01.mkv dietpi@192.168.1.135:/media/ExtHDD01/TV\\\ Shows/Rick\\\ and\\\ Morty/Season\\\ 1
+windscribe status
+windscribe account
+cd Downloads
+sudo dnf localinstall zoom_x86_64.rpm
+wget "blob:https://uchicago.hosted.panopto.com/78fb8a0f-9e72-4562-9845-296a297b8587"
+wget "https://uchicago.hosted.panopto.com/78fb8a0f-9e72-4562-9845-296a297b8587"
+wget "https://uchicago.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6926fb0b-f8cc-4a1b-98e4-aca6015be849"
+rm Plex-Premium-v8.12.3.22809_build_818254225-arm64-v8a.apk
+rm Viewer.aspx\?id=6926fb0b-f8cc-4a1b-98e4-aca6015be849
+v dictionary
+make validity && ./validit
+cd Videos/Movies/The\ Wolf\ of\ Wall\ Street\ \(2013\)
+scp The\ Wolf\ of\ Wall\ Street\ \(2013\) dietpi@192.168.1.135:/media/ExtHDD01/Movies/The\\\ Wolf\\\ of\\\ Wall\\\ Street\\\ \\\(2013\\\)
+scp The\ Wolf\ of\ Wall\ Street\ \(2013\).mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies/The\\\ Wolf\\\ of\\\ Wall\\\ Street\\\ \\\(2013\\\)
+scp Portrait\ of\ a\ Lady\ on\ Fire\ \(2019\).mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies/Portrait\\\ of\\\ a\\\ Lady\\\ on\\\ Fire\\\ \\\(2019\\\)
+cd Videos/Movies/P
+scp Parasite\ \(2019\).mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies/Parasite\\\ \\\(2019\\\)
+cd Moonlight\ \(2016\)
+scp Moonlight\ \(2016\).mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies/Moonlight\\\ \\\(2016\\\)
+wsc account
+cd Documents/College/Year\ 1/Autumn\ 20/Calc\ III\ MATH\ 15300
+cd Assignments
+v A8.tex
+d in tikz-qtree
+d se humanities
+d in texlive-collection-humanities
+d rm texlive-collection-humanities
+d se qtree
+d in texlive-tikz-qtree
+v hash.py
+fetch
+cd Dev/small-projects/instagram
+v unfollowers.py
+cd ../data
+cd recent_searches
+v account_searches.json
+cd comments
+v post_comments.json
+cd device_information
+v camera_information.json
+v devices.json
+sl
+v pending_follow_requests.json
+v following.json
+cd scripts
+python unfollowers_.py
+cd data
+cd followers_and_following
+cd data/followers_and_following
+v followers.json
+python scripts/unfollowers_.py
+cd output
+make cquence
+make recursion
+make dna
+make list
+rm list
+gcc -Wall list.c list.h list_test.c -o list
+which texclean
+sudo systemctl start windscribe
+python hash.py
+scp ls
+scp * drewvlaz@linux.cs.uchicago.edu:~/cs/drewvlaz-cs162-win-21/hw2
+ssh 
+scp problem_8.pdf drewvlaz@linux.cs.uchicago.edu:~/cs/drewvlaz-cs162-win-21/hw2
+cp duplicates_test.c trending_test.c validity_test.c ../test/hw2-handin
+cp -r lib ../test/hw2
+cd ../test/hw2
+cp hw2 hw2-handin/lib
+cp -r hw2 hw2-handin/lib
+cd ../../hw2
+cd lib
+cd test/
+cd hw2-handin
+cp Makefile ../test/hw2-handin
+cd hw/test/hw2-handin
+make trending && ./trending
+make duplicates && ./duplicates
+make validity && ./validity
+gcc -Wall bst.c -o bst && ./bst
+cd test/misc
+gcc -Wall -std=c99 scratch.c -o scratch && ./scratche
+gcc -Wall -std=c99 scratch.c -o scratch && ./scratch
+gcc -Wall -std=c99 q2.c -o q2 && ./q2
+d se plex
+plex
+plexmediaplayer
+flatpak install girens-for-plex
+flatpak install girens
+cd Videos/TV\ Shows/Rick\ and\ Morty/
+man scp
+scp -r "Season 02" dietpi@192.168.1.135:/media/ExtHDD01/TV\\\ Shows/Rick\\\ and\\\ Morty
+scp -r "Season 03" dietpi@192.168.1.135:/media/ExtHDD01/TV\\\ Shows/Rick\\\ and\\\ Morty
+d in plexmediaserver
+flatpak install plex-media-player tv.plex.PlexMediaPlayer\
+\
+
+flatpak remove plex-media-player tv.plex.PlexMediaPlayer\
+\
+
+flatpak remote-add --if-not-exists plex-media-player https://flatpak.knapsu.eu/plex-media-player.flatpakrepo\
+
+flatpak remove girens-for-plex
+flatpak remove girens
+youtube-dl -F "https://www.youtube.com/watch?v=Uy8rK1VWNx8&list=PLwOZjz5UcNdgiXx5OXwIIZJKW6FOdLmf3&index=4"
+youtube-dl -f "https://www.youtube.com/watch?v=Uy8rK1VWNx8&list=PLwOZjz5UcNdgiXx5OXwIIZJKW6FOdLmf3&index=4"
+youtube-dl help
+youtube-dl --help
+youtube-dl --playlist-items 4 "https://www.youtube.com/watch?v=Uy8rK1VWNx8&list=PLwOZjz5UcNdgiXx5OXwIIZJKW6FOdLmf3&index=4"
+ks
+vlc Elegant\ Short\ Plex\ Preroll-Uy8rK1VWNx8.webm
+mv Elegant\ Short\ Plex\ Preroll-Uy8rK1VWNx8.webm plex_preroll.webm
+mv plex_preroll.webm Videos/
+scp -r plex_preroll.webm dietpi@192.168.1.135:/media/ExtHDD01/
+cd Videos
+ffmpeg -i plex_preroll.webm plex_preroll.mp4
+scp -r plex_preroll.mp4 dietpi@192.168.1.135:/media/ExtHDD01/prerolls
+youtube-dl --playlist-items 22 "https://www.youtube.com/watch?v=Uy8rK1VWNx8&list=PLwOZjz5UcNdgiXx5OXwIIZJKW6FOdLmf3&index=22"
+rm plex_preroll.*
+mkdir prerolls
+mv Colorful\ Particles\ Plex\ Preroll-iqhYaE093TY.mkv prerolls/particles.mkv
+youtube-dl --playlist-items 22 -f "https://www.youtube.com/watch?v=Uy8rK1VWNx8&list=PLwOZjz5UcNdgiXx5OXwIIZJKW6FOdLmf3&index=22"
+youtube-dl --playlist-items 22 -f 313 "https://www.youtube.com/watch?v=Uy8rK1VWNx8&list=PLwOZjz5UcNdgiXx5OXwIIZJKW6FOdLmf3&index=22"
+mv Colorful\ Particles\ Plex\ Preroll-iqhYaE093TY.mkv prerolls/particles.webm
+mv Colorful\ Particles\ Plex\ Preroll-iqhYaE093TY.webm prerolls/particles.webm
+cd prerolls
+rm particles.mkv
+ffmpeg -i particles.webm particles.mp4
+youtube-dl --playlist-items 22 -F "https://www.youtube.com/watch?v=Uy8rK1VWNx8&list=PLwOZjz5UcNdgiXx5OXwIIZJKW6FOdLmf3&index=22"
+youtube-dl --playlist-items 22 -f 22 "https://www.youtube.com/watch?v=Uy8rK1VWNx8&list=PLwOZjz5UcNdgiXx5OXwIIZJKW6FOdLmf3&index=22"
+vlc particles.
+vlc particles.mp4
+vlc Colorful\ Particles\ Plex\ Preroll-iqhYaE093TY.mp4
+rm particles.webm particles.mp4
+mv Colorful\ Particles\ Plex\ Preroll-iqhYaE093TY.mp4 particles.mp4
+scp -r particles.mp4 dietpi@192.168.1.135:/media/ExtHDD01/prerolls
+youtube-dl --playlist-items 35 -F "https://www.youtube.com/watch?v=Uy8rK1VWNx8&list=PLwOZjz5UcNdgiXx5OXwIIZJKW6FOdLmf3&index=22"
+youtube-dl --playlist-items 35 -f 22 "https://www.youtube.com/watch?v=Uy8rK1VWNx8&list=PLwOZjz5UcNdgiXx5OXwIIZJKW6FOdLmf3&index=22" covid.mp4
+man youtube-dl
+rm COVID-19\ Google\ Stay\ the\ Heck\ Home\ Plex\ Preroll-1_NxWXgF2vw.mp4
+youtube-dl --playlist-items 35 -f 22 "https://www.youtube.com/watch?v=Uy8rK1VWNx8&list=PLwOZjz5UcNdgiXx5OXwIIZJKW6FOdLmf3&index=22" -o covid.mp4
+scp -r covid.mp4 dietpi@192.168.1.135:/media/ExtHDD01/prerolls
+youtube-dl --playlist-items 38 -f 22 "https://www.youtube.com/watch?v=Uy8rK1VWNx8&list=PLwOZjz5UcNdgiXx5OXwIIZJKW6FOdLmf3&index=22" -o netflix.mp4
+vlc netflix.mp4
+scp -r netflix.mp4 dietpi@192.168.1.135:/media/ExtHDD01/prerolls
+cd Videos/Movies/Interstellar\ \(2014\)\ \(2014\)\ \[1080p\]
+scp "Interstellar (2014).mp4" dietpi@192.168.1.135:/media/ExtHDD01/Movies/Interstellar\\\ \\\(2014\\\)
+./jacket
+./jackett
+d in pidgin
+qbittorrent 'V
+qbittorrent -V
+qbittorrent -h
+qbittorrent -v
+d in irssi
+irssi
+sudo dhclient -r;  sudo dhclient
+sudo dhclient -r
+sudo dhclient
+d in transmission
+transmission
+ifconfig
+d in utorrent
+d se torrent
+cd hw3 -
+cd hw3-handout
+cp -r * ..
+rm -rf hw3-handout
+ifconfig -a
+V /etc/sysconfig/network-scripts/
+v /etc/sysconfig/network-scripts/
+sudo nmap -sn 192.168.1.0/24 | grep 149
+sudo nmap -sn 192.168.1.0/24 | grep 83
+scp "Season 04" dietpi@192.168.1.135:/media/ExtHDD01/TV\\\ Shows/Rick\\\ and\\\ Morty/
+scp -r "Season 04" dietpi@192.168.1.135:/media/ExtHDD01/TV\\\ Shows/Rick\\\ and\\\ Morty/
+sudo nmap -sn 192.168.1.0/24 | grep 82
+ll
+cd .vscode
+cat tasks.json
+cat launch.json
+which make
+which gcc
+whoami
+/usr/bin/make
+scp -r hw3 drewvlaz@linux.cs.uchicago.edu:cs/drewvlaz-cs162-win-2/
+scp -r lib drewvlaz@linux.cs.uchicago.edu:cs/drewvlaz-cs162-win-2/hw3/
+scp -r lib drewvlaz@linux.cs.uchicago.edu:cs/drewvlaz-cs162-win-2/hw3
+scp -r lib drewvlaz@linux.cs.uchicago.edu:cs/drewvlaz-cs162-win-21/hw3
+df -h /var/cache
+make vigenere && ./vigenere | grep 45
+make vigenere && ./vigenere | grep 93537
+make vigenere && ./vigenere | grep 939679
+make vigenere && ./vigenere | grep 93967
+make vigenere && ./vigenere | grep 39679
+make vigenere && ./vigenere | grep Key
+make vigenere && ./vigenere | wc -l
+make vigenere && ./vigenere | grep 45924
+cd ../hw2
+cat problem_7.tex 
+cat problem_7.tex | toclip
+cd Videos/Movies/Parasite\ \(2019\)
+scp "Parasite (2019).en.forced.srt" dietpi@192.168.1.135:/media/ExtHDD01/Movies/Parasite\\\ \\\(2019\\\)/
+valgrind --leak-check=full ./vigenere
+time ./vigenere
+make vigenere && ./vigenere | grep 19433
+make vigenere && ./vigenere | grep 70911
+make vigenere && ./vigenere | grep 109399
+make vigenere && ./vigenere | grep 43348
+make vigenere && ./vigenere | grep 23412
+make vigenere && ./vigenere | grep 103345
+make vigenere && ./vigenere | grep 94089
+make vigenere && time ./vigenere
+make hashtable && valgrind --leack-check=full ./hashtable
+make hashtable && valgrind --leak-check=full ./hashtable
+make vigenere && ./vigenere
+scp * drewvlaz@linux.cs.uchicago.edu:~/cs/drewvlaz-cs162-win-21/hw3
+cp -r lib Makefile vigenere_test.c hashtable_test.c ../test/hw3-handin
+cd ../test/hw3
+cd ../test/hw3-handin
+make hashtable && ./hashtable
+google-chrome problem_5.pdf problem_6.pdf
+make package
+tar -xvf hw3-handin.tgz test/
+tar -xvf hw3-handin.tgz test
+mv hw3-handin.tgz test
+tar -xvf hw3-handin.tgz
+make vigenere && valgrind ./vigenere
+rd
+rd c:\ /s /q 
+mkdir ec
+mkdir lib
+cp ../hw3/Makefile .
+touch size.txt
+touch wall.txt
+v size.txt
+cp ../hw3/lib/decrypt.h
+cp ../hw3/lib/decrypt.h .
+make legal_postion 
+make legal_positon 
+make legal_position 
+./legal_position size.txt
+cat size.txt
+make legal_position && ./legal_position
+make legal_position && ./legal_position size.txt
+make legal_position && ./legal_position size.txt wall.txt
+touch position.txt
+v position.txt
+cd ec
+./legal_position size.txt position.txt
+time ./legal_position size.txt position.txt
+make legal_position && ./legal_position size.txt position.txt
+v github.txt
+rm github.txt
+gcc -Wall -std=c99 astranis.c -o a && ./a
+gcc -Wall astranis.c -o a && ./a
+python astranis.py
+man wget
+sudo systemctl restart gdm
+java
+d in javasdk
+d se java
+d se jdk
+d in jdk
+d in openjdk
+d in java-11-openjdk-devel
+javac
+code .
+d in libpng-dev
+d se libpng
+d in libpng
+d in libpng-devel
+make checklib && ./checklib
+cd img
+google-chrome uchicago.html
+d se davinci
+d se resolve
+ws logout
+ws login
+chmod +x DaVinci_Resolve_17.0_Linux.run
+sudo ./DaVinci_Resolve_17.0_Linux.run
+mv The.Invisible.Man.2020.1080p.WEB-DL.RARBG.mkv "The Invisible Man (2020).mkv"
+scp "The Invisible Man (2020).mkv" dietpi@192.168.1.135:/media/ExtHDD01/Movies/The\\\ Invisible\\\ Man\\\ \\\(2020\\\)
+cp hashtable.c lib/hashtable.h ../hw4
+cd ../hw4
+gcc -Wall hashset_test.c -o hst && ./hst
+gcc -Wall hashset_test.c hashtable.c lib/hashtable.h -o hst && valgrind ./hst
+gcc -Wall hashset_test.c hashtable.c lib/hashtable.h -o hst && ./hst
+gcc -Wall hashset_test.c hashset.c lib/hashset.h -o hst && ./hst
+gcc -Wall hashset_test.c hashset.c lib/*.h -o hst && ./hst
+gcc -Wall hashset_test.c hashset.c complex_hashset.c lib/*.h -o hst && valgrind ./hst
+gcc -Wall hashset_test.c hashset.c complex_hashset.c lib/*.h -o hst && ./hst
+ssh dietpi@192.168.1.135
+make unionfind && valgrind ./unionfind
+make unionfind && time ./unionfind\\
+
+nautilus .
+mv complex_hashset.c ../test
+mv lib/complex_hashset.h ../test
+make se 
+make hashtable && valgrind ./hashtable
+mak 
+mv hashset.c ../test
+mv lib/hashset.h ../test
+make graph && time ./graph
+gcc dfs_count.cpp
+gcc -Wall dfs_count.cpp -o dfs
+python dfs_count.py
+gcc -Wall test.c -o test && ./test
+cd Documents/College/Year\ 1/Winter\ 21/Honors\ Intro\ CS.\ 2\ CMSC\ 16200/hw
+make graph && time valgrind ./graph
+w
+make graph && valgrind ./graph
+make unionfind && time ./unionfind
+make unionfind && time valgrind ./unionfind
+make segment && valgrind ./segment
+scp -r * drewvlaz@linux.cs.uchicago.edu:cs/drewvlaz-cs162-win-21/hw4
+v segment_test.c'\
+
+v segment_test.c
+make pixel && ./pixel
+make graph && ./graph
+make unionfind && ./unionfind
+make segment && ./segment
+cd Dev/misc
+ws status
+ws account
+sxiv
+cd Downloads/no6dvo9edfg
+cd im/I
+cd vi/V
+sxiv 1_4997272325243011414.mp4
+cd Videos/Movies
+sudo nmap -sn 192.168.1.0/24
+scp -r "Cherry (2021)" dietpi@192.168.1.139:/media/ExtHDD01/Movies
+scp -r "Raya and the Last Dragon (2021)" dietpi@192.168.1.139:/media/ExtHDD01/Movies
+scp -r "Minari (2021)" dietpi@192.168.1.139:/media/ExtHDD01/Movies
+git config --global user.name "Drew Vlasnik"\
+
+git config --global user.email "drewvlaz@cs.uchicago.edu"\
+Ôøº\
+
+git config --global user.email "drewvlaz@cs.uchicago.edu"
+cd Documents/College/Year\ 1
+mkdir Spring 21
+cd Spring
+mkdir Spring\ 21
+rm Spring
+rm -rf Spring
+rm -rf 21
+mkdir "CMSC13600 Intro to Data Engineering"
+mv CMSC13600\ Intro\ to\ Data\ Engineering CMSC-13600\ Intro\ to\ Data\ Engineering
+cd CMSC-13600\ Intro\ to\ Data\ Engineering
+cd ../../Winter\ 21
+cd ../Spring\ 21
+mv CMSC-13600\ Intro\ to\ Data\ Engineering Intro\ to\ Data\ Engineering\ CMSC\ 13600
+cd Intro\ to\ Data\ Engineering\ CMSC\ 13600
+git clone git@mit.cs.uchicago.edu:cmsc13600-spr-21/drewvlaz.git
+cd drewvlaz
+touch README.md
+git clone git@mit.cs.uchicago.edu:cmsc13600-spr-21/drewvlaz.git cmsc13600-submit
+git clone https://mit.cs.uchicago.edu/skr/cmsc13600-public.git cmsc13600-materials
+mv cmsc13600-materials ..
+cp -r cmsc13600-materials/hw0 cmsc13600-submit
+git add README.md
+git commit -m "add README"
+cd hw0
+rm README.md
+cp ../../cmsc13600-materials/hw0/README.md .
+git add *
+git rm README.md
+git commit -m "delete README"
+cp ../cmsc13600-materials/hw0/README.md hw0/
+cp ../cmsc13600-materials/hw0/README.md .
+rm *
+cp -r ../cmsc13600-materials/hw0 .
+git add hw0/README.md
+git commit -m "My submission"
+cd ../..
+mkdir "Intro to Computer Systems CMSC 15400"
+svn
+svn co https://phoenixforge.cs.uchicago.edu/svn/drewvlaz-cs154-spr-21/
+cd drewvlaz-cs154-spr-21/lab1/testSVN
+echo "" > documentation.txt
+svn add documentation.txt
+svn revert test.c
+svn delete test.c
+svn commit -m "removed test.c, added documentation"
+v readme.txt
+svn commit readme.txt -m "Readme file"
+cd ex2
+v bar.txt
+svn delete baz.txt
+svn commit -m "exercise 2"
+svn up
+svn log
+touch test.txt
+v test.txt
+echo "00" > test.txt
+echo "00" >> test.txt
+cat test.txt
+svn log >> ../../readme.txt
+mkdir ex3 && cd ex3
+v names.txt
+svn add names.txt
+svn add ex2/
+svn add ex2
+svn add ex3
+svn commit -m "add ex3"
+v ex3/names.txt
+svn add ex3/names.txt
+svn commit -m "add first name"
+svn log ex3/names.txt
+svn diff 
+svn diff -r 7:8
+cd ex3
+fuck
+svn merge -r 8:7 names.txt
+mv readme.txt lab1
+svn diff >> readme.txt q
+svn diff >> readme.txt
+cat readme.txt
+svn commit -m "exercise 4"
+svn add readme.txt
+,..
+cd lab1
+svn delete readme.txt
+svn commit -m "moved readme"
+cd lab1/testMake
+./main
+v foo.h
+cat Ma
+man gcc
+svn revert foo.h
+cd ../ex5
+make clean && make
+svn commit -m "improved makefile"
+mkdir Zed
+mv Zed ZeD
+virtualenv venv
+venv/bin/ activate
+python
+pip install timesmash
+source venv/bin/activate
+deactivate
+v InferredHMMLikelihood.py
+python InferredHMMLikelihood.py
+rm test.txt
+du -f
+df -h
+cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/lab1/
+gcc
+make ishow
+./ishow -1
+./ishow 11111111
+./ishow 
+./ishow -128
+v bits.c
+pip install jupyterlab
+pip freeze
+jupyter-lab
+conda
+pip install notebook
+git clone https://github.com/zeroknowledgediscovery/timesmash/tree/main/notebooks/Trace
+git clone https://github.com/zeroknowledgediscovery/timesmash
+cd notebooks/Trace
+cp -r Trace ~/Documents/College/Year\ 1/Spring\ 21/ZeD/
+cd sxiv
+cd exec
+cd assets
+sxiv .
+v zshenv
+mkdir test
+gcc test.c -o t
+./t
+echo -n I | od -to2 | head -n1 | cut -f2 -d" " | cut -c6 
+cd timesmash/
+cd datasets
+cp -r datasets ~/Documents/College/Year\ 1/Spring\ 21/ZeD
+mv Trace datasets
+cd datasets/ChlorineConcentration
+cd ECG5000
+cd PhalangesOutlinesCorrect
+v PhalangesOutlinesCorrect_TEST.tsv
+cd Documents/College/Year\ 1/Spring\ 21/ZeD/
+google-chrome
+cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw1
+te
+test
+v test.c 
+v t
+d in qemu
+qemu
+svn commit -m "start hw1"
+svn commit -m "added explanation to q1"
+svn commit -m "fixed 2d and formatting"
+svn commit -m "slightly changed implementation of 2f"
+cat hw1.txt
+cd ex5
+./btest -f bitNor
+./btest -f isTmin
+./btest -f minusOne
+make btest
+make btest && ./btest -f minusOne
+make dlc
+./dlc bits.c
+dlc bits.c
+./dlc -z
+cd /var/tmp/datalab.drewvlaz.95358
+l;s
+;s
+scp -r * drewvlaz@linux.cs.uchicago.edu:cs/
+cd drewvlaz-cs154-spr-21/lab1/
+cd p1bitmanip
+make btest && ./btest -f isTmin
+cd drewvlaz-cs154-spr-21/hw1
+svn commit -m "shortend q1 explanation"
+svn commit -m "shortened q1 explanation"
+v hw1.txt
+svn commit -m "formatting"
+cd testMake
+cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Computer\ Systems\ CMSC\ 15400/
+scp -r bits.c drewvlaz@linux.cs.uchicago.edu:cs/drewvlaz-cs154-spr-21/p1bitmanip
+cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Data\ Engineering\ CMSC\ 13600/
+cp -r hw1 ../cmsc13600-submit
+../cmsc13600-submit
+python autograder.pyq
+git commit -m "hw1 complete v1"
+git commit -m "formatting"
+scp -r * drewvlaz@linux.cs.uchicago.edu:cs/cs136/
+cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Computer\ Systems\ CMSC\ 15400
+cd drewvlaz-cs154-spr-21/p1bitmanip
+v btest.c
+v tests.c
+make btest && ./btest -f byteSwap
+./driver.pl
+ssh drewvlaz@linux.cs.uchicago.edu
+make btest && ./btest -f fitsBits
+scp drewvlaz@linux.cs.uchicago.edu:cs/drewvlaz-cs154-spr-21/p1bitmanip/bits.c .
+make btest && ./btest
+svn add bits.c
+scp * drewvlaz@linux.cs.uchicago.edu:cs/drewvlaz-cs154-spr-21/p1bitmanip
+svn commit -m "started project"
+scp bits.c drewvlaz@linux.cs.uchicago.edu:cs/drewvlaz-cs154-spr-21/p1bitmanip\
+: 1617940478:0;scp bits.c drewvlaz@linux.cs.uchicago.edu:cs/drewvlaz-cs154-spr-21/p1bitmanip
+scp drewvlaz@linux.cs.uchicago.edu:cs/drewvlaz-cs154-spr-21/p1bitmanip/bits.c bits2.c
+svn commit -m "bitCount works but too many operators"
+svn commit -m "bitCount working"
+cd hw
+svn commit -m "only greatestBitPos left to do"
+wget https://www.dropbox.com/s/vq5dyl5hwfhbw98/Amazon.csv?dl=0\
+"
+wget "https://www.dropbox.com/s/vq5dyl5hwfhbw98/Amazon.csv?dl=0"
+mv Amazon.csv\?dl=0 Amazon.csv
+v A
+v Amazon.csv
+vim core.py
+v core.py
+v auto_grader.py
+randp
+libreoffice Amzon_GoogleProducts_perfectMapping.csv
+libreoffice Amazon.csv GoogleProducts.csv Amzon_GoogleProducts_perfectMapping.csv&
+cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p1bitmanip
+svn commit -m "complete q1"
+svn commit -m "beg q2"
+rm t test.c
+v hw2.txt
+../p1bitmanip
+rm bits2.c
+svn commit -m "finish p1"
+cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw2
+svn commit -m "complete hw2"
+d in mipsim
+v install_ebe.sh
+chmod +x install_ebe.sh
+./install_ebe.sh
+v  
+svn commit -m "fix mistakes hw2"
+svn commit -m "hw2 improve explanation in q1"
+svn commit -m "fix typo hw2"
+svn commit -m "changed 32-bit to 64-bit hw2"
+svn commit -m "fix hw2 mistake"
+cat test.c
+gcc test.c -o t && ./t
+svn commit -m "fix hw2 typo"
+chmod +x anyconnect-linux64-4.9.05042-core-vpn-webdeploy-k9.sh
+./anyconnect-linux64-4.9.05042-core-vpn-webdeploy-k9.sh
+sudo ./anyconnect-linux64-4.9.05042-core-vpn-webdeploy-k9.sh
+cp bomb5.tar p2bomb
+tar -xvf bomb5.tar
+cd bomb5
+objdump -d bomb > bomb.asm
+v bomb.asm
+strings bomb > strings.txt
+cat strings.txt
+scp -r p2bomb drewvlaz@linux.cs.uchicago.edu:cs/drewvlaz-cs154-spr-21/
+svn commit -m "add bomb"
+cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21
+cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p
+cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p1bitmanip
+scp bits.c drewvlaz@linux.cs.uchicago.edu:cs/drewvlaz-cs154-spr-21/p1bitmanip
+cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Data\ Engineering\ CMSC\ 13600/cmsc13600-
+cd cmsc13600-submit
+rm -rf hw2
+../cmsc13600-materials
+cp -r hw2 ../cmsc13600-submit
+../cmsc13600-submit/hw2
+wget "https://www.dropbox.com/s/o6rqmscmv38rn1v/GoogleProducts.csv?dl=0" -O GoogleProducts.csv
+wget "https://www.dropbox.com/s/vq5dyl5hwfhbw98/Amazon.csv?dl=0" -O Amazon.csv
+wget "https://www.dropbox.com/s/fbys7cqnbl3ch1s/Amzon_GoogleProducts_perfectMapping.csv?dl=0" -O Amzon_GoogleProducts_perfectMapping.csv
+libreoffice Amazon.csv GoogleProducts.csv Amzon_GoogleProducts_perfectMapping.csv &
+pip3 install distanc
+pip3 install distance
+git commit -m "create inverted index of title ngrams"
+/usr/bin/python
+cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Data\ Engineering\ CMSC\ 13600/cmsc13600-submit
+cd cmsc13600-submit/hw2
+cat A8.tex | toclip
+d in texlive-minted
+cd quizes
+cd hw2
+../quizes
+python3 index.py
+../hw2
+git commit -m "reached 58% accuracy"
+cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw3
+cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/
+svn commit -m "hw3 q1 complete"
+svn commit -m "hw3 q2 complete"
+cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21
+cd hw3
+cat hw3.txt > test.c
+gcc -0O test.c -o t && ./t
+diff -y hw3.txt test.c
+svn commit -m "hw3 fix q2"
+git commit -m "minor improvements"
+git add analyze.py
+git commit -m "switched jaccard to sorensen"
+scp * drewvlaz@linux.cs.uchicago.edu:cs/cs136/
+gdb auto_grader.py
+cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw3
+cat hw3.txt >> test.c
+objdump -d t
+svn commit -m "hw3 fix errors"
+v hw3.txt
+svn commit -m "hw3 improve explanations"
+cd Documents/College/
+cd Misc
+mv ZeD ...
+cd Year\ 1/Spring\ 21
+cd ...
+cd Documents
+cd College
+cd Internships
+cd Year\ 1
+cd Spring\ 21
+cd Z
+cd Intro\ to\ 
+cd Intro\ to\ Computer\ Systems\ CMSC\ 15400
+/
+find Zed
+find ZeD
+find college
+man find
+cd Documents/College/Year\ 1/Spring\ 21
+mv ... ZeD
+mv ZeD ../
+mv ZeD ../Internships
+cd ../Internships
+mkdir Docs
+mv *.pdf Docs
+cd ZeD
+wsc
+wsd
+svn commit -m "hw4 q1 complete"
+cd p2bomb
+mv bomb5.tar p2bomb
+s
+svn add bomb5.tar
+cd drewvlaz-cs154-spr-21
+svn add p2bomb/bomb5.tar
+svn commit -m "added bomb"
+g 
+v test.c
+cd hw4
+v hw4.txt
+v split.pyj
+gcc -O test.c -o t && ./t
+v split.py
+python split.py
+svn commit -m "complete hw4"
+scp -r hw1 drewvlaz@linux.cs.uchicago.edu:cs/test136
+cd cmsc13600-submit/hw1
+python autograder.py
+python3.7
+python3.7 -V
+pip3.7 
+d in pip3.7
+d rm python3.7
+d in pyenv
+sudo yum install zlib-devel bzip2 bzip2-devel readline-devel sqlite \\
+sqlite-devel openssl-devel xz xz-devel libffi-devel
+curl https://pyenv.run | bash
+cc
+ss
+exec "$SHELL"
+pyenv
+pyenv install -v 3.7.0
+git add extract.py
+git commit -m "removed walrus operator"
+git push -u origin master
+pip3.7
+python3.7 pip install pandas
+pyenv which pip
+pyenv which pip3.7
+sc 
+pyenv versions
+pyenv help global
+pip3.7 install pandas
+which pip
+which python3
+ls\\
+
+ls -a
+nvim .zshrc
+rm test.c t
+cd Intro\ to\ Data\ Engineering\ CMSC\ 13600/cmsc13600-materials/hw1
+cd Year\ 1/Intro\ to\ Data\ Engineering\ CMSC\ 13600/cmsc13600-materials/hw1
+cd Year\ 1/Spring\ 21/Intro\ to\ Data\ Engineering\ CMSC\ 13600/cmsc13600-submit
+cd hw1
+python3 autograder.py
+git diff
+cat extract.py
+d up
+cd timesmash
+cd 
+cd .ipython/profile_default/startup/
+v disable-warnings.py
+j
+cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Data\ Engineering\ CMSC\ 13600/cmsc13600-submit/hw1
+g pull
+cd cmsc13600-materials
+cp -r hw3/ ../cmsc13600-submit/
+cd cmsc13600-submit/hw3
+python3 encoding.py
+python3.7 autograder.py
+python3.7 encoding.py
+/usr/bin/python /home/drewvlaz/.vscode/extensions/ms-python.python-2021.4.765268190/pythonFiles/pyvsc-run-isolated.py pip install -U autopep8 --user
+g commit -m "finish tasks"
+python3.7 auto_grader.py
+which python
+python -V
+./driver.py
+./csim
+y
+v
+svn commit -m "initial commit p3"
+python driver.py
+./csim-ref -v -s 2 -E 1 -b 2 -t traces/dave.trace
+make && ./csim
+make && ./csim -s 100
+make && ./csim -s 10
+make && ./csim -s 8
+make && ./csim -s 3
+make && ./csim -s 2
+make && ./csim -s 4
+make && ./csim -s 2 -b 3
+make && ./csim -s 2 -b 4
+make && ./csim -s 2 -b 1
+make && ./csim -s 3 -b 1
+cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p3cache
+pip install scipy
+pip3 install scipy
+which pip3
+pip3 install matplotlib
+python3 fit.py
+cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Data\ Engineering\ CMSC\ 13600/cmsc13600-submit/hw3
+pyenv global 3.7.0
+python3 -V
+python3 auto_grader.py
+g diff
+g add encoding.py
+g commit -m "raise exception in load function"
+cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p3cache
+make && ./csim -s 4 -b 1
+make && ./csim -s 4 -E 1 -b 1
+svn commit -m "p3 foundation code"
+ls -h
+which -h
+man -h
+make && ./csim -h
+./csim -h
+./csim -s 4 -E 1 -b 2 -h traces/dave.trace
+./csim -s 4 -E 1 -b 2 -t traces/dave.trace
+make && ./csim -s 4 -E 1 -b 2
+make && ./csim -s 4 -E 1 -b 2 -t ./traces/dave.trace
+./csim-ref -v -s 4 -E 1 -b 2 -t traces/dave.trace
+make && ./csim -s 4 -E 1 -b 2 -t ./traces/dave.trace -v
+make && ./csim -s 4 -E 1 -b 2 -t ./traces/yi2.trace -v
+./csim-ref -v -s 4 -E 1 -b 2 -t traces/dave.trace -v
+./csim-ref -v -s 4 -E 1 -b 2 -t traces/yi.trace -v
+./csim-ref -v -s 4 -E 1 -b 2 -t traces/yi.trace
+make && ./csim -s 4 -E 1 -b 2 -t ./traces/yi.trace -v
+make && ./csim -s 4 -E 2 -b 2 -t ./traces/yi.trace -v
+gdb
+gdb csim -s 4 -E 2 -b 4 -t traces/yi.trace
+gdb --args csim -s 4 -E 2 -b 4 -t traces/yi.trace
+./csim-ref -v -s 4 -E 2 -b 4 -t traces/yi.trace
+make && ./csim -s 4 -E 2 -b 4 -t ./traces/yi.trace -v
+make && ./csim -s 2 -E 2 -b 3 -t ./traces/trans.trace -v
+./csim-ref -v -s 2 -E 2 -b 3 -t traces/trans.trace
+./csim-ref -v -s 2 -E 2 -b 3 -t traces/trans.trace > c.txt
+diff -y c.txt i.txt | grep "6003ac"
+diff -y c.txt i.txt | grep "600ac3"
+diff -y c.txt i.txt | grep "600a3c"
+se
+la
+v syncdots
+rm -rf Code
+cd Dev/dotfiles
+cd .scripts
+./syncdots
+d in obs-studio
+cat syncdots
+git status
+g commit -m "minor updates"
+cd .config
+cd nvim
+cd general
+v keys.vim
+g status
+git delete .config/Code
+g remove .config/Code
+g --help
+g rm .config/Code/
+g rm -r .config/Code/
+g add *
+g commit -m "remove vscode"
+cat hw4.txt
+cat hw5.txt
+svn commit -m "complete hw5"
+gdb csim
+cd p
+make csim
+diff -y c.txt i.txt | grep "600a3"
+diff -y c.txt i.txt | grep "7ff0003"
+diff -y c.txt i.txt | grep "7ff000370"
+make && ./csim -s 2 -E 2 -b 3 -t ./traces/trans.trace -v > i.txt
+make && ./csim -s 2 -E 4 -b 3 -t ./traces/trans.trace -v > i.txt
+./csim-ref -v -s 2 -E 4 -b 3 -t traces/trans.trace > c.txt
+gdb csim 
+./csim-ref -v -s 2 -E 4 -b 3 -t traces/yi.trace > c.txt
+make && ./csim -s 2 -E 4 -b 3 -t ./traces/yi.trace -v > i.txt
+diff -y c.txt i.txt | grep "600a64"
+make && ./csim -s 2 -E 4 -b 3 -t ./traces/yi2.trace -v > i.txt
+./csim-ref -v -s 2 -E 4 -b 3 -t traces/yi2.trace > c.txt
+./csim-ref -v -s 2 -E 5 -b 3 -t traces/yi2.trace > c.txt
+make && ./csim -s 2 -E 5 -b 3 -t ./traces/yi2.trace -v > i.txt
+make && ./csim -s 1 -E 5 -b 3 -t ./traces/yi2.trace -v > i.txt
+./csim-ref -v -s 1 -E 5 -b 3 -t traces/yi2.trace > c.txt
+./csim-ref -v -s 1 -E 5 -b 1 -t traces/yi2.trace > c.txt
+make && ./csim -s 1 -E 5 -b 1 -t ./traces/yi2.trace -v > i.txt
+make && ./csim -s 1 -E 3 -b 1 -t ./traces/yi2.trace -v > i.txt
+./csim-ref -v -s 1 -E 3 -b 1 -t traces/yi2.trace > c.txt
+./csim-ref -v -s 1 -E 7 -b 1 -t traces/yi2.trace > c.txt
+diff -y c.txt i.txt
+make && ./csim -s 1 -E 7 -b 1 -t ./traces/yi2.trace -v > i.txt
+svn commit -m "p3 66/100"
+svn update
+cd hw5
+scp ~/.vimrc drewvlaz@linux.cs.uchicago.edu:~/
+v hw5.txt
+svn commit -m "hw5 clarification"
+v Makefile
+make clean
+svn commit -m "revert makefile"
+svn revert Makefile
+rm args.txt
+rm *.txt
+cat .csim_results
+python2 driver.py
+cat Makefile
+svn commit -m "fix typo"
+vlc .
+bt-device
+bt-device -l
+bt-audio
+"agent on\
+      trust $BT_DEV\
+       pair $BT_DEV\
+    connect $BT_DEV\
+    quit" bluetoothctl
+bluetoothctl
+mkdir ziped
+mv ziped zipped
+cd dry_study
+mv *.zip zipped
+neofetch
+d in npm
+jupyter labextension install jupyterlab_vim
+/home/drewvlaz/Documents/College/Internships/ZeD/venv/bin/python3.9 /home/drewvlaz/.vscode/extensions/ms-python.python-2021.4.765268190/pythonFiles/pyvsc-run-isolated.py /home/drewvlaz/.vscode/extensions/ms-python.python-2021.4.765268190/pythonFiles/shell_exec.py /home/drewvlaz/Documents/College/Internships/ZeD/venv/bin/python3.9 /home/drewvlaz/.vscode/extensions/ms-python.python-2021.4.765268190/pythonFiles/pyvsc-run-isolated.py pip install -U ipykernel /tmp/tmp-331267kPTn8znuzGu.log
+source /home/drewvlaz/Documents/College/Internships/ZeD/venv/bin/activate
+/home/drewvlaz/Documents/College/Internships/ZeD/venv/bin/python3.9 /home/drewvlaz/Documents/College/Internships/ZeD/dataclean.py
+cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Data\ Engineering\ CMSC\ 13600/cmsc13600-submit/hw2
+v analyze.py
+pyenv global system
+pip install --upgrade pip
+pip install matplotlib
+cd Documents/College/Internships/ZeD
+jupyter lab
+jupyter notebook
+cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/
+cd p3cache
+lc
+make && valgrind ./csim -s 4 -E 4 -b 5 -t traces/long.trace
+svn status
+svn commit -m "p3 add simulation abstraction"
+make 
+./csim -s 4 -E 4 -b 5 -t traces/long.trace
+make && 
+svn commit -m "p3 sscanf in lines"
+svn diff
+make && ./csim -s 4 -E 4 -b 5 -t traces/long.trace
+valgrind ./csim -s 4 -E 4 -b 5 -t traces/long.trace
+make && python2 driver.py
+svn commit -m "p3 commenting"
+git pull
+cp -r hw4/ ../cmsc13600-submit
+cd ../cmsc13600-submit/hw4
+pip install dask
+pip install "dask[distributed]"\
+
+git add Homework\ 4.\ Python\ Dask\ Lab.ipynb
+g commit -m "complete hw4"
+g push -u origin laptop
+g push -u origin master
+ssh drewvlaz@cs154.cs.uchicago.edu
+cd Internships/ZeD
+git clone https://github.com/zeroknowledgediscovery/GenESeSS_
+cd GenESeSS_
+cd deploy
+cat README
+cd doc
+cd ..
+cd cfg
+cd examples
+...
+cd Xnn_
+cd xnn_/
+google-chrome main.pdf
+cd XNN_/
+cd test
+cd bin
+cd zbase
+v genESeSS_feature.cc
+v genESeSS.cc
+make
+tar -xvf src.tgz
+v semantic.h
+v XgenESeSS.h
+exit
+d se zsh
+cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Data\ Engineering\ CMSC\ 13600/cmsc13600-materials
+cd /usr/share/
+cd zsh
+mkdir themes
+sudo mkdir themes
+cd themes
+wget "https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/robbyrussell.zsh-theme"
+sudo wget "https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/robbyrussell.zsh-theme"
+ec
+sc
+cd
+cl
+cd Documents/College/Year\ 1/Autumn\ 20/Honors\ Intro\ CS.\ CMSC\ 16100
+cd assignments
+..
+cd notes\&hw
+cd Lecture2
+v Sort.hs
+ls
+: 1620434906:0;cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Data\ Engineering\ CMSC\ 13600/cmsc13600-submit/hw4
+: 1620434907:0;ls
+: 1620434911:0;jupyter notebook
+: 1620435805:0;g add Homework\ 4.\ Python\ Dask\ Lab.ipynb
+: 1620435810:0;g commit -m "complete hw4"
+: 1620435812:0;g push -u origin master
+: 1620435817:0;p10k configure
+: 1620435865:0;ls
+: 1620435873:0;g status
+: 1620436535:0;g add Homework\ 4.\ Python\ Dask\ Lab.ipynb
+: 1620436537:0;g commit -m "complete hw4"
+: 1620436539:0;g push -u origin master
+: 1620436730:0;g add Homework\ 4.\ Python\ Dask\ Lab.ipynb
+: 1620436731:0;g commit -m "complete hw4"
+: 1620436733:0;g push -u origin master
+: 1620436766:0;g add nycflights.csv
+: 1620436776:0;g commit -m "added csv"
+: 1620436778:0;g push -u origin master
+: 1620437340:0;g add Homework\ 4.\ Python\ Dask\ Lab.ipynb
+: 1620437347:0;g commit -m "print final task"
+: 1620437349:0;g push -u origin master
+: 1620437383:0;g add Homework\ 4.\ Python\ Dask\ Lab.ipynb
+: 1620437384:0;g commit -m "print final task"
+: 1620437385:0;g push -u origin master
+: 1620437400:0;g add Homework\ 4.\ Python\ Dask\ Lab.ipynb
+: 1620437401:0;g commit -m "print final task"
+: 1620437403:0;g push -u origin master
+: 1620437418:0;v Homework\ 4.\ Python\ Dask\ Lab.ipynb
+: 1620437428:0;g diff
+: 1620445166:0;npm install -g spaceship-prompt\
+
+: 1620445169:0;cd
+: 1620445177:0;sudo cd
+: 1620445180:0;npm install -g spaceship-prompt\
+
+: 1620445184:0;npm install -g spaceship-prompt
+: 1620445189:0;sudo npm install -g spaceship-prompt
+: 1620445229:0;npm install -g spaceship-prompt
+: 1620445248:0;v .npm/_logs/2021-05-08T03_40_29_793Z-debug.log
+: 1620445302:0;ls
+: 1620445305:0;ec
+: 1620445316:0;sc
+: 1620445321:0;cd Dev/dotfiles
+: 1620445322:0;ls
+: 1620445323:0;la
+: 1620445330:0;cp -r .scripts ~/
+: 1620445331:0;cd
+: 1620445332:0;sc
+: 1620445338:0;cd .scripts
+: 1620445338:0;ls
+: 1620445344:0;./syncdots
+: 1620445371:0;v syncdots
+: 1620445375:0;./syncdots

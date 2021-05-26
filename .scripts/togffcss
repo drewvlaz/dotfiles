@@ -1,0 +1,19 @@
+#!/bin/bash
+CSS=~/.mozilla/firefox/jmdndzqd.default-release/chrome/userChrome.css
+BKUP=~/.mozilla/firefox/jmdndzqd.default-release/chrome/userChrome.bkup
+
+on() {
+    mv $BKUP $CSS 
+}
+off() {
+    mv $CSS $BKUP
+}
+
+if [ -n "$1" ]; then
+    case $1 in
+        --on) [ -f "$BKUP"  ] && on ;;
+        --off) [ -f "$CSS"  ] && off ;;
+    esac
+else
+    [ -f "$CSS" ] && off || on
+fi
