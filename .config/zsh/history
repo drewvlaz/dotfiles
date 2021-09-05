@@ -1,30 +1,3 @@
-wget "https://public.crackhub.site/Avengers%20Infinity%20War%20(2018)%20[BluRay]%20[1080p]%20[YTS.AM]/Avengers.Infinity.War.2018.1080p.BluRay.x264-[YTS.AM].mp4"
-wget 'http://afkar.ddns.net:81/Movies/Avengers%20Endgame%20(2019)/Avengers.Endgame.2019.mp4"
-wget "http://afkar.ddns.net:81/Movies/Avengers%20Endgame%20(2019)/Avengers.Endgame.2019.mp4"
-mv Avengers.Infinity.War.2018.1080p.BluRay.x264-\[YTS.AM\].mp4 Videos/Movies/
-wget "http://afkar.ddns.net:81/Movies/Avengers%20Infinity%20War%20(2018)/Avengers.Infinity.War.2018.mp4"
-wget "http://afkar.ddns.net:81/Movies/Wonder%20Woman%201984%20(2020)/Wonder.Woman.1984.2020.mp4"
-wget "https://easy-movie.com.au/cdn/Fantastic.Beasts.And.Where.To.Find.Them.2016.1080p.BluRay.x264-%5bYTS.AG%5d.mp4"
-wget "http://dl.mcup.xyz/Movies/2013/The.Wolf.of.Wall.Street.2013.1080p.BrRip.ShAaNiG.mkv"
-wget "https://easy-movie.com.au/cdn/Fantastic.Beasts.The.Crimes.Of.Grindelwald.2018.1080p.BluRay.x264-%5bYTS.AM%5d.mp4"
-wget -U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36" "https://easy-movie.com.au/cdn/Fantastic.Beasts.The.Crimes.Of.Grindelwald.2018.1080p.BluRay.x264-%5bYTS.AM%5d.mp4"
-wget --no-proxy "https://easy-movie.com.au/cdn/Fantastic.Beasts.The.Crimes.Of.Grindelwald.2018.1080p.BluRay.x264-%5bYTS.AM%5d.mp4"
-wget --no-proxy -U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36" "https://easy-movie.com.au/cdn/Fantastic.Beasts.The.Crimes.Of.Grindelwald.2018.1080p.BluRay.x264-%5bYTS.AM%5d.mp4"
-wget "https://easy-movie.com.au/cdn/Fantasy.Island.2020.1080p.mp4"
-wget -U "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0" --header="Accept: text/html" --header="Cookie: __cfduid=xpzezr54v5qnaoet5v2dx1ias5xx8m4faj7d5mfg4og; cf_clearance=0n01f6dkcd31en6v4b234a6d1jhoaqgxa7lklwbj-1438079290-3600" -np -r "https://easy-movie.com.au/cdn/Fantasy.Island.2020.1080p.mp4"
-wget "http://dl.mcup.xyz/Movies/2019/It.Chapter.Two.2019.10bit.1080p.x265.BrRip.8CH.PSA.mkv"
-d up plex
-wget -m -r -np "https://maxm.eurymedon.feralhosting.com/downloads/missing-semester/"
-wget -m -r -np --no-check-certificate "https://maxm.eurymedon.feralhosting.com/downloads/missing-semester/"
-wget "http://185.105.101.222/2018/film/Annihilation%202018/An.nihi.lation.2018.1080p.b.lu.ry.Filmha_CO.mkv"
-rm *.c *.h
-rm theory.md
-cd hw0-handin/
-cd ../hw0-handin
-make puzzles %% ./puzzles
-rm -rf hw0-handin
-tar -xvf hw0-handin.tgz
-../hw0
 cp Makefile ../hw0-handin
 cp Makefile ../test
 rm hw0-handin
@@ -1186,8 +1159,6 @@ npm install -g spaceship-prompt\
 sudo npm install -g spaceship-prompt
 v .npm/_logs/2021-05-08T03_40_29_793Z-debug.log
 cp -r .scripts ~/
-cd .scripts
-v syncdots
 ./syncdots
 d list installed
 d list installed | wc -l
@@ -1707,7 +1678,6 @@ cat .git-credentials
 rm .gitconfig .git-credentials
 git config --global user.email "drewvlaz@uchicago.edu"
 git config --global user.name "Drew Vlasnik"
-rm -rf .git
 rm -rf Code
 g add .config/
 g add .scripts/
@@ -1718,11 +1688,9 @@ git remote add origin git@drewvlaz/dotfiles
 git push
 git remote remove origin
 git remote add origin git@github.com:drewvlaz/dotfiles
-git push --set-upstream origin master
 git push -f
 git push -f --set-upstream origin master
 g branch checkout laptop
-g branch laptop
 g checkout laptop
 git push -f --set-upstream origin laptop
 mkdir example
@@ -3272,7 +3240,6 @@ pip uninstall genesess
 pip uninstall genESeSS
 pip install dist/genesess-0.0.2-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
 python3 -m build
-git init
 git commit -m "Initial commit"
 rm -rf MANIFEST.in
 cp ~/Downloads/timesmash-0.2.23/setup.py .
@@ -3307,7 +3274,6 @@ cat .git/config
 ls tmp
 ls /tmp
 cd /tmp/quantized_data_bq0h9ot3
-la
 ls quantized_data_*
 rm quantized_data_*
 mkdir test1
@@ -3622,7 +3588,6 @@ cat .python_history
 rm a.out
 rm zed_temp
 rmdir zed_temp
-cd Dev/dotfiles
 cd doom
 v config.el
 emacs
@@ -4360,7 +4325,6 @@ v .git/config
 v .git/COMMIT_EDITMSG
 g commit --ammend
 g commit --amend
-g push -f
 g add README.rst
 g commit -m "update readme"
 g add patternly/detection.py setup.py
@@ -4774,7 +4738,6 @@ neovide --geometry 100x100
 goneovim &
 goneovim patternly/detection.py &
 goneovim init.vim
-v patternly/detection.py
 jjjjjtj
 neovide init.vim&
 neovide --frameless --geometry 1980x1020 init.vim
@@ -4822,7 +4785,6 @@ g commit -m "reduce clusters"
 g add docs
 rm -rf .vscode examples/dist.dst examples/embedding.csv examples/outD.txt
 g commit -m "update docs"
-g push
 head -n 1 dataset/ACC_X_a.csv
 head -n 1 dataset/ACC_X_a.csv | grep "1308466"
 head -n 1 dataset/ACC_X.csv | grep "1308466"
@@ -4898,7 +4860,6 @@ figlet -h
 evc
 cd plug-config
 mv settings.vim nerdcommenter.vim
-cd .config/nvim
 v init.vim
 cd repos/python_implementations_
 nvide zedsuite/genesess.pyx
@@ -5030,13 +4991,11 @@ sh -c "$(curl -fsSL https://starship.rs/install.sh)"\
 v Cargo.
 pyenv global 3.7.0
 pyenv global system
-cl
 ..
 sc
 ec
 cd /usr/share/applications
 g info
-g status
 g -h
 g --help
 g log
@@ -5057,65 +5016,58 @@ STARSHIP_LOG=debug ./target/release/starship module cmd_duration -d 60000
 v Cross.toml
 v README.md
 cd Downloads/starship-0.57.0
-cd
-v
 se
 python -c "import time; time.sleep(2)"
 py 
-cd Documents/ZeD/repos/patternly
 python -c "import time; time.sleep(1)"
+cd Documents/ZeD/repos/patternly
+g status
+v
+v patternly/detection.py
+stow
+cd .sci
+cd .scripts
+v syncdots
+cd
+cd Dev/dotfiles
+rm -rf .git
+git init
+g remote set-url origin git@github.com:drewvlaz/dotfiles
+g remote add git@github.com:drewvlaz/dotiles.git
+g remote add origin git@github.com:drewvlaz/dotiles.git
+v .scripts/syncdots
+g push origin -f
+g push origin master -f
+g push master origin -f
+g push -f origin
+git push --set-upstream origin master
+git remote -v
+g push origin master
+g push
+git push --set-upstream origin master\
+
+g remote -v
+g remote remove origina
+g remote remove origin
+g remote add origin git@github.com:drewvlaz/dotfiles.git
+g push --set-upstream origin master
+g push --set-upstream origin master -f
+g branch laptop
+.scripts/syncdots
+g push -f
+git branch -m master main\
+
+g fetch origin
+git branch -u origin/main main\
+
+git remote set-head origin -a\
+
+cl
+rm -rf .config
+mkdir .config
+cd .config/nvim
+la
+rm .netrwhist
 ls
 exit
-: 1630857623:0;ls
-: 1630857627:0;cd Documents/ZeD/repos/patternly
-: 1630857635:0;g status
-: 1630857637:0;v
-: 1630857665:0;ls
-: 1630857666:0;cl
-: 1630857666:0;ls
-: 1630857669:0;v patternly/detection.py
-: 1630857960:0;stow
-: 1630857969:0;cl
-: 1630857970:0;stow
-: 1630857995:0;cd Dev/dotfiles
-: 1630857995:0;ls
-: 1630857997:0;la
-: 1630858000:0;cd .sci
-: 1630858003:0;cd .scripts
-: 1630858004:0;ls
-: 1630858017:0;v syncdots
-: 1630858042:0;cd
-: 1630858045:0;cd Dev/dotfiles
-: 1630858045:0;ls
-: 1630858046:0;la
-: 1630858054:0;rm -rf .git
-: 1630858056:0;ls
-: 1630858057:0;git init
-: 1630858074:0;g remote set-url origin git@github.com:drewvlaz/dotfiles
-: 1630858096:0;g remote add git@github.com:drewvlaz/dotiles.git
-: 1630858132:0;g remote -v
-: 1630858145:0;g remote add origin git@github.com:drewvlaz/dotiles.git
-: 1630858148:0;g remote -v
-: 1630858155:0;v .scripts/syncdots
-: 1630858214:0;.scripts/syncdots
-: 1630858231:0;g push -f
-: 1630858237:0;g push origin -f
-: 1630858243:0;g push origin master -f
-: 1630858256:0;g push master origin -f
-: 1630858264:0;g push -f origin
-: 1630858271:0;git push --set-upstream origin master
-: 1630858277:0;git remote -v
-: 1630858308:0;g push origin master
-: 1630858316:0;g push
-: 1630858332:0;git push --set-upstream origin master\
-
-: 1630858341:0;g remote -v
-: 1630858349:0;g remote add origin git@github.com:drewvlaz/dotfiles.git
-: 1630858358:0;g remote remove origina
-: 1630858360:0;g remote remove origin
-: 1630858364:0;g remote add origin git@github.com:drewvlaz/dotfiles.git
-: 1630858377:0;g push --set-upstream origin master
-: 1630858382:0;g push --set-upstream origin master -f
-: 1630858401:0;g branch laptop
-: 1630858405:0;ls
-: 1630858410:0;.scripts/syncdots
+: 1630858631:0;.scripts/syncdots
