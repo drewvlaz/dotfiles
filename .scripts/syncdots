@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# Command line arguments
+numArgs=$#
+commitMsg=$*
+
+# Copy all desired dot files
+copyconfs() {
+    cp -r ~/.config/$1 ~/Dev/dotfiles/.config
+}
+copyconfs bspwm
+copyconfs sxhkd
+copyconfs polybar
+copyconfs rofi
+copyconfs alacritty
+copyconfs nvim
+copyconfs zsh
+copyconfs doom
+copyconfs picom
+copyconfs sxiv
+cp -r ~/.scripts/* ~/Dev/dotfiles/.scripts/
+cp ~/.bashrc ~/Dev/dotfiles
+cp ~/.vimrc ~/Dev/dotfiles
+cp ~/.zshrc ~/Dev/dotfiles
+echo "Files copied over."
+echo
+
+# Commit changes and push to remote repo
+echo "Updates:"
+cd ~/Dev/dotfiles
+git add -A
+if [ "$numArgs" -gt 0 ]; then
+    git commit -m "$commitMsg"
+else
+    git commit -m "minor updates"
+fi
+git push --quiet origin laptop && echo && echo "Pushed to Github.com"

@@ -1,0 +1,90 @@
+# Root
+alias sudo='sudo '
+
+# Navigation
+alias \
+    ..="cd .." \
+    ...="cd ../.." \
+    grep="grep --color=auto" \
+    la="ls -a" \
+    ll="ls -al"  \
+    cp="cp -v" \
+    yt="youtube-dl --add-metadata -i" \
+	yta="yt -x -f bestaudio/best --audio-format mp3"
+
+# Common commands that are just too long
+alias \
+    cl="clear" \
+    ka="killall" \
+    g="git" \
+    sdn="sudo shutdown -h now" \
+    rbt="sudo reboot" \
+    ec="$EDITOR ~/.zshrc" \
+    sc="source ~/.zshrc" \
+    evc="$EDITOR ~/.config/nvim/init.vim" \
+    f="$FILE" \
+    e="emacs" \
+    v="$EDITOR" \
+    ff="firefox" \
+    toclip="xclip -selection c" \
+    p="sudo pacman" \
+    d="sudo dnf" \
+    yeet="yay -Rns" \
+    ws="windscribe" \
+    wsc="windscribe connect" \
+    wsd="windscribe disconnect" \
+    stdconvert="convert -resize 1240x1750 -gravity center extent 1240x1750 -units PixelsPerInch -density 150"
+
+# Improved commands
+alias \
+    python="python3" \
+    pip="pip3" \
+    ls="exa --icons --group-directories-first" \
+    fetch="neofetch --ascii_colors 4 4 --colors 11 8 8 11 8 7" \
+    gccc="gcc -Wall -Werror" \
+    nvide="neovide --frameless --geometry 145x45"
+
+# Functions
+se() {
+    du -a ~/.config/* ~/.scripts/* \
+    --exclude='Code*'\
+    --exclude='gtk*'\
+    --exclude='chromium'\
+    --exclude='Postman'\
+    --exclude='discord'\
+    --exclude='KDE'\
+    --exclude='kde.org'\
+    --exclude='Notion'\
+    --exclude='gnome-*' |
+    awk '{print $2}' |
+    fzf |
+    xargs -r $EDITOR ;
+}
+
+randp() {
+    if [ -n "$1" ]; then
+        dir=$1
+    fi
+    du -a | 
+    grep -i -E '\.(png|jpg|jpeg|gif)$' |
+    shuf -n 1000 | 
+    sed 's/\ |\(|\)/\\\ /g' | # Put a "\" before spaces
+    awk '{for (i=2; i<NF; i++) printf $i " "; print $NF}' | # Remove leading numbers
+    sxiv -i -t
+}
+
+pkgsizes() {
+    pacman -Qei | 
+    gawk '/^Name/ { x = $3 }; /^Installed Size/ { sub(/Installed Size  *:/, ""); print x":" $0 }' |
+    grep MiB |
+    sort -k2,3nr |
+    less
+}
+
+texclean() {
+    du -a | 
+    awk '{print $2}' | 
+    grep -E '(\.|\_)(aux|fdb|fls|log|synctex|minted)' | 
+    sed 's/.\///g' | 
+    xargs rm -rf
+}

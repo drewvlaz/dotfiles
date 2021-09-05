@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Get Polybar ID
+id=$(xdo id -N "Polybar")
+
+# If Polybar is viewable hide it. Otherwise, show it.
+if xwininfo -id $id | grep -q "IsViewable"; then
+    xdo hide -N "Polybar"
+else
+    xdo show -N "Polybar"
+fi

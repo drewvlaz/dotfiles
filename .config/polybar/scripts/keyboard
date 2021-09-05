@@ -1,0 +1,17 @@
+#! /bin/bash
+
+while [ true ]
+do
+    current=$(xset -q|grep LED| awk '{ print $10 }')
+
+    case $current in
+	"00000000")
+	    echo "US"
+	    ;;
+	"00001000")
+	    echo "DV"
+	    ;;
+	*)
+    esac
+    sleep .5
+done

@@ -1,0 +1,48 @@
+fpath=($fpath "/home/drewvlaz/.zfunctions")
+SPACESHIP_PROMPT_ORDER=(
+  user          # Username section
+  dir           # Current directory section
+  host          # Hostname section
+  git           # Git section (git_branch + git_status)
+  package       # Package version
+  node          # Node.js section
+  golang        # Go section
+  rust          # Rust section
+  haskell       # Haskell Stack section
+  venv          # virtualenv section
+  conda         # conda virtualenv section
+  pyenv         # Pyenv section
+  time          # Time stamps section
+  exec_time     # Execution time
+  line_sep      # Line break
+  battery       # Battery level and status
+  vi_mode       # Vi-mode indicator
+  jobs          # Background jobs indicator
+  exit_code     # Exit code section
+  char          # Prompt character
+)
+SPACESHIP_PROMPT_DEFAULT_SUFFIX=" "
+# Extra chars: 
+SPACESHIP_USER_SHOW=always
+SPACESHIP_USER_PREFIX="╭─ "
+SPACESHIP_CHAR_PREFIX="╰─" 
+SPACESHIP_CHAR_SYMBOL=" "
+SPACESHIP_VI_MODE_SHOW=false
+SPACESHIP_PROMPT_ADD_NEWLINE=false
+SPACESHIP_PROMPT_SEPARATE_LINE=true
+# SPACESHIP_TIME_PREFIX="─── "
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_GIT_SYMBOL=" "
+SPACESHIP_GIT_BRANCH_COLOR=green
+# SPACESHIP_GIT_STATUS_UNTRACKED=""
+# SPACESHIP_GIT_STATUS_ADDED=""
+# SPACESHIP_GIT_STATUS_MODIFIED=""
+# SPACESHIP_TIME_FORMAT=""
+SPACESHIP_DIR_COLOR=cyan
+SPACESHIP_PYENV_SYMBOL=" "
+SPACESHIP_PYENV_COLOR=yellow
+
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt spaceship
+unsetopt PROMPT_SP

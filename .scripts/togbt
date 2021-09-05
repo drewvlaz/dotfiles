@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Toggle Bluetooth => togbt
+
+STATUS=$(systemctl is-active "bluetooth.service")
+
+if [ -n "$1" ]; then
+    case $1 in
+        --on) [ $STATUS = "inactive" ] && sudo systemctl start bluetooth ;;
+        --off) [ $STATUS = "active" ] && sudo systemctl stop bluetooth ;;
+    esac
+else
+    if [ "$(systemctl is-active "bluetooth.service")" = "active" ]; then
+        sudo systemctl stop bluetooth
+    else
+        sudo systemctl start bluetooth
+    fi
+fi
