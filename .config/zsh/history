@@ -5098,3 +5098,24 @@ exit
 : 1630858148:0;g remote -v
 : 1630858155:0;v .scripts/syncdots
 : 1630858214:0;.scripts/syncdots
+: 1630858231:0;g push -f
+: 1630858237:0;g push origin -f
+: 1630858243:0;g push origin master -f
+: 1630858256:0;g push master origin -f
+: 1630858264:0;g push -f origin
+: 1630858271:0;git push --set-upstream origin master
+: 1630858277:0;git remote -v
+: 1630858308:0;g push origin master
+: 1630858316:0;g push
+: 1630858332:0;git push --set-upstream origin master\
+
+: 1630858341:0;g remote -v
+: 1630858349:0;g remote add origin git@github.com:drewvlaz/dotfiles.git
+: 1630858358:0;g remote remove origina
+: 1630858360:0;g remote remove origin
+: 1630858364:0;g remote add origin git@github.com:drewvlaz/dotfiles.git
+: 1630858377:0;g push --set-upstream origin master
+: 1630858382:0;g push --set-upstream origin master -f
+: 1630858401:0;g branch laptop
+: 1630858405:0;ls
+: 1630858410:0;.scripts/syncdots
