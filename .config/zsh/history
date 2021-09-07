@@ -1,6 +1,3 @@
-pactl
-pactl list
-pactl list | grep -oP 'Sink #\K([0-9]+)' |
 pactl list | grep -oP 'Sink #\K([0-9]+)'
 pactl list | grep -oP 'Sink #\K([0-9]+)' | while read -r i ; do pactl -- set-sink-volume $i 100% ; done
 pavucontrol
@@ -4909,7 +4906,6 @@ python gen.py
 cat result
 cat result.txt
 tabbed alacritty --embed
-c
 nvim /bin/sh +1 && c
 cd Testingl
 fuck
@@ -4928,7 +4924,6 @@ cd
 .
 cd zutil_
 cd cynet_
-ls | grep py
 cd data_smashing_
 d se starship
 d in starship
@@ -4948,7 +4943,6 @@ cd .config/
 mv starship zsh/themes
 cd zsh/themes
 lsa
-xit
 wait 1
 time
 time 1
@@ -4991,7 +4985,6 @@ stow
 cd .sci
 cd .scripts
 v syncdots
-cd Dev/dotfiles
 rm -rf .git
 git init
 g remote set-url origin git@github.com:drewvlaz/dotfiles
@@ -5023,15 +5016,12 @@ git remote set-head origin -a\
 rm -rf .config
 mkdir .config
 rm .netrwhist
-.scripts/syncdots
 cd .config/nvim
 g status
 v .scripts/syncdots
 exi
 cd patternly
 nvide pa 
-nvide patternly/detection.py
-cd
 cd Documents/College/Internships/Resume/
 d rm zathura
 d in zathura
@@ -5044,40 +5034,44 @@ g add resume.tex resume.pdf
 g commit -m "update pdf"
 g push
 v resume.tex
-jupyter notebook
 tmuz
 d se terminator
 d in terminator
-la
 cat .tmux.conf
-cd Documents/ZeD/repos/patternly
 v patternly/detection.py
 l
-v
-cl
 tmux --version
-tmux -V
 v  
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm\
 
 cd .tmux/plugins/tpm
 ...
 ..
-v .tmux.conf
 tmux
-se
-ls
 tmux -h
 zsh -h
 zsh --help
+jupyter notebook
+nvide patternly/detection.py
+.scripts/syncdots
+cd Dev/dotfiles
+ex
+cd
+v .tmux.conf
+tmux -V
+mkdir .config/tmux
+mv .tmux.conf .config/tmux/tmux.conf
+la
+se
+c
+v
+ls | grep py
+cl
+xit
+cd Documents/ZeD/repos/patternly
+ls
 exit
-: 1631027728:0;cd Documents/ZeD/repos/patternly
-: 1631027729:0;ls
-: 1631027741:0;jupyter notebook
-: 1631027758:0;cd Documents/ZeD/repos/patternly
-: 1631027776:0;ls
-: 1631027777:0;cl
-: 1631027802:0;nvide patternly/detection.py
-: 1631027840:0;cd Dev/dotfiles
-: 1631027840:0;ls
-: 1631027844:0;.scripts/syncdots
+: 1631028950:0;nnncd
+: 1631028999:0;cd Dev/dotfiles
+: 1631029002:0;v .scripts/syncdots
+: 1631029029:0;.scripts/syncdots

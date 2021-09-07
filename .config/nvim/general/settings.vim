@@ -35,9 +35,11 @@ set scrolloff=5                         " Keep cursor X lines away from edge whe
 set noshowmode                          " Disable showing mode at bottom
 set t_Co=256                            " Support 256 colors
 " set signcolumn=no                       " Remove bar on left side, has git info
-set termguicolors
 " set guifont=Fira\ Code\ Nerd\ Font:h13
 set guifont=OperatorMono\ Nerd\ Font\ Mono:h13
+if (has("termguicolors"))
+    set termguicolors
+endif
 
 " AUTOCMDS
 autocmd InsertEnter * norm zz                                                       " center screen when entering insert mode

@@ -88,7 +88,7 @@ colors:
     background: '#232627'
     foreground: '#fcfcfc'
 
-    dim_foreground: '#eff0f1'
+    dim_foreground: '#f0f0f1'
     bright_foreground: '#ffffff'
     dim_background: '#31363b'
     bright_background: '#000000'
@@ -106,7 +106,7 @@ colors:
 
   # Bright colors
   bright:
-    black: '#B0BEC5'
+    black: '#606060'
     red: '#FF1744'
     green: '#00E676'
     yellow: '#FFE082'
@@ -124,7 +124,7 @@ colors:
     blue: '#4FC3F7'
     magenta: '#6A1B9A'
     cyan: '#00838F'
-    white: '#63686d'
+    white: '#eeeeee'
 
 # Visual Bell
 #
