@@ -6,7 +6,7 @@ add_newline = false
 
 # Use custom format
 format = """
-[╭── ](bold white)\
+[╭─ ](bold white)\
 $username\
 $hostname\
 $directory\
@@ -32,7 +32,7 @@ $time\
 $custom\
 $cmd_duration\
 $line_break\
-[[╰─](bold white)$character](bold green) """
+[[╰──](bold white)$character](bold green)"""
 
 [character]
 # ❮❯

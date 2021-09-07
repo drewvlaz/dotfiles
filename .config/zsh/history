@@ -1,25 +1,3 @@
-cp Makefile ../hw0-handin
-cp Makefile ../test
-rm hw0-handin
-make puzzles && ./puzzles
-make cyclic && ./cyclic
-d in telegram
-wget -c "http://185.105.101.222/2018/film/Annihilation%202018/An.nihi.lation.2018.1080p.b.lu.ry.Filmha_CO.mkv"
-d in megatools
-megatools 
-rm wget-log
-cd Documents/programming
-mkdir Back2BackSWE
-cd Back2BackSWE
-megatools
-vlc lesson2.mp4
-vlc lesson3.mp4
-megatools dl https://mega.nz/folder/lJBlUAzR#nHHdfK9LVa76sB0GokkfSQ
-vlc lesson4.mp4
-vlc lesson5.mp4
-killall vlc
-vlc Documents/programming/Back2BackSWE
-alsamixer
 pactl
 pactl list
 pactl list | grep -oP 'Sink #\K([0-9]+)' |
@@ -3942,7 +3920,6 @@ pdoc --html patternly/ --output-dir docs --force -c latex_math=True
 cd Documents/ZeD/repos/
 git clone --depth 1 --filter=blob:none --sparse https://github.com/zeroknowledgediscovery/qbiome/
 cd qbiome
-l
 sls
 g sparse-checkout set docs
 cp -r dark_templates ../../patternly
@@ -4478,8 +4455,6 @@ d in okular
 v ../../Documents/College/Internships/Resume/resume.tex
 cd .vim/autoload/plugged/onedark.vim/
 d in tmux
-tmux
-d in terminator
 terminator
 d rm terminator
 printf "\x1b[38;2;255;100;0mTRUECOLOR\x1b[0m\n"
@@ -4759,7 +4734,6 @@ nvide .
 cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21
 nvide init.vim
 ../patternly
-nvide patternly/detection.py
 agitation_study
 jup 
 cd Downloads/neovide-0.5.0
@@ -4776,7 +4750,6 @@ d in cmake
 cc
 v build.rs
 ls src
-...
 cd agitation_study
 g diff patternlyternly/detection.py
 g diff patternly/detection.py
@@ -4907,8 +4880,6 @@ google-chrome graph.
 google-chrome graph.png
 cd Documents/ZeD/agitation_study
 cd repos/patternly
-jupyter notebook
-v 
 du -h Downloads
 exa
 exa --icons --group-directories-first
@@ -4991,7 +4962,6 @@ sh -c "$(curl -fsSL https://starship.rs/install.sh)"\
 v Cargo.
 pyenv global 3.7.0
 pyenv global system
-..
 sc
 ec
 cd /usr/share/applications
@@ -5004,9 +4974,7 @@ v Cargo.lock
 v Cargo.toml
 cargo build --release
 cd patcher
-cd patternly
 cd D
-exi
 cp target/release/starship /usr/local/bin
 sudo cp target/release/starship /usr/local/bin
 STARSHIP_LOG=debug starship module cmd_duration -d 60000
@@ -5016,26 +4984,19 @@ STARSHIP_LOG=debug ./target/release/starship module cmd_duration -d 60000
 v Cross.toml
 v README.md
 cd Downloads/starship-0.57.0
-se
 python -c "import time; time.sleep(2)"
 py 
 python -c "import time; time.sleep(1)"
-cd Documents/ZeD/repos/patternly
-g status
-v
-v patternly/detection.py
 stow
 cd .sci
 cd .scripts
 v syncdots
-cd
 cd Dev/dotfiles
 rm -rf .git
 git init
 g remote set-url origin git@github.com:drewvlaz/dotfiles
 g remote add git@github.com:drewvlaz/dotiles.git
 g remote add origin git@github.com:drewvlaz/dotiles.git
-v .scripts/syncdots
 g push origin -f
 g push origin master -f
 g push master origin -f
@@ -5043,17 +5004,14 @@ g push -f origin
 git push --set-upstream origin master
 git remote -v
 g push origin master
-g push
 git push --set-upstream origin master\
 
 g remote -v
 g remote remove origina
 g remote remove origin
 g remote add origin git@github.com:drewvlaz/dotfiles.git
-g push --set-upstream origin master
 g push --set-upstream origin master -f
 g branch laptop
-.scripts/syncdots
 g push -f
 git branch -m master main\
 
@@ -5062,12 +5020,64 @@ git branch -u origin/main main\
 
 git remote set-head origin -a\
 
-cl
 rm -rf .config
 mkdir .config
-cd .config/nvim
-la
 rm .netrwhist
+.scripts/syncdots
+cd .config/nvim
+g status
+v .scripts/syncdots
+exi
+cd patternly
+nvide pa 
+nvide patternly/detection.py
+cd
+cd Documents/College/Internships/Resume/
+d rm zathura
+d in zathura
+d se zathura
+d in zathura-pdf-mupdf
+zathura resume.pdf
+git remote add origin git@github.com:drewvlaz/resume.git
+g push --set-upstream origin master
+g add resume.tex resume.pdf
+g commit -m "update pdf"
+g push
+v resume.tex
+jupyter notebook
+tmuz
+d se terminator
+d in terminator
+la
+cat .tmux.conf
+cd Documents/ZeD/repos/patternly
+v patternly/detection.py
+l
+v
+cl
+tmux --version
+tmux -V
+v  
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm\
+
+cd .tmux/plugins/tpm
+...
+..
+v .tmux.conf
+tmux
+se
 ls
+tmux -h
+zsh -h
+zsh --help
 exit
-: 1630858631:0;.scripts/syncdots
+: 1631027728:0;cd Documents/ZeD/repos/patternly
+: 1631027729:0;ls
+: 1631027741:0;jupyter notebook
+: 1631027758:0;cd Documents/ZeD/repos/patternly
+: 1631027776:0;ls
+: 1631027777:0;cl
+: 1631027802:0;nvide patternly/detection.py
+: 1631027840:0;cd Dev/dotfiles
+: 1631027840:0;ls
+: 1631027844:0;.scripts/syncdots

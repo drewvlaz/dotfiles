@@ -14,6 +14,7 @@ source ~/.config/nvim/plug-config/coc.vim
 source ~/.config/nvim/plug-config/sneak.vim
 source ~/.config/nvim/plug-config/quickscope.vim
 source ~/.config/nvim/plug-config/startify.vim
+source ~/.config/nvim/plug-config/vimtex.vim
 source ~/.config/nvim/plug-config/nerdtree.vim
 source ~/.config/nvim/plug-config/nerdcommenter.vim
 source ~/.config/nvim/plug-config/neovide.vim

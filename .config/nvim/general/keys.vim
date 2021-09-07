@@ -9,6 +9,9 @@ map <leader><leader>ec :e $MYVIMRC<CR>
 " Easy escape
 inoremap jk <Esc>
 
+nnoremap <silent> j gj
+nnoremap <silent> k gk
+
 " Easy save
 nnoremap <silent> <leader>w :w<CR>
 
@@ -20,11 +23,17 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" Use alt + hjkl to resize windows
+" Resize windows
 nnoremap <silent> <M-j> :resize -2<CR>
 nnoremap <silent> <M-k> :resize +2<CR>
 nnoremap <silent> <M-h> :vertical resize -2<CR>
 nnoremap <silent> <M-l> :vertical resize +2<CR>
+
+" Move windows
+nnoremap <silent> <C-H> <C-w>H
+nnoremap <silent> <C-J> <C-w>J
+nnoremap <silent> <C-K> <C-w>K
+nnoremap <silent> <C-L> <C-w>L
 
 " Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")
