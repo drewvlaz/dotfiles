@@ -1,99 +1,3 @@
-ffmpeg -i Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mkv -vcodec copy -acodec copy Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4
-scp Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4 dietpit@192.168.1.135:/media/ExtHDD01/Movies
-scp Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies
-rm Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4
-ffmpeg -i Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mkv -c:v libx264 -c:a aac Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4
-ffmpeg -i Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mkv Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4
-vlc Harry\ Potter\ and\ the\ Chamber\ of\ Secrets\ \(2002\).mkv
-ffmpeg -i Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mkv -map_metadata -1 -c copy Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4
-vlc Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4
-scp Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies/Harry\\\ Potter/Harry\\\ Potter\\\ and\\\ the\\\ Sorcerer\\\'s\\\ Stone\\\ \\\(2001\\\)
-sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-d in jellyfin
-d in jellyfinserver
-d in https://repo.jellyfin.org/releases/server/fedora/stable/server/jellyfin-10.6.4-1.fc31.src.rpm
-d in "https://repo.jellyfin.org/releases/server/fedora/stable/server/jellyfin-10.6.4-1.fc31.src.rpm"
-dnf 
-dnf install "https://repo.jellyfin.org/releases/server/fedora/stable/server/jellyfin-10.6.4-1.fc31.src.rpm"
-sudo dnf install "https://repo.jellyfin.org/releases/server/fedora/stable/server/jellyfin-10.6.4-1.fc31.src.rpm"
-d in "https://repo.jellyfin.org/releases/server/fedora/stable/server/jellyfin-10.6.4-1.fc31.x86_64.rpm"
-sudo service jellyfin service
-sudo systemctl stop jellyfin
-sudo systemctl restart jellyfin
-cd /var/lib/jellyfin
-cd /var/lib/
-d rm jellyfin
-d rm jellyfinserver
-d in "https://repo.jellyfin.org/releases/server/fedora/stable/server/jellyfin-server-10.6.4-1.fc31.x86_64.rpm"
-sudo systemctl start jellyfin
-sudo dnf remove jellyfin-server-10.6.4-1.fc31.x86_64 
-cp Spider-Man:\ Into\ The\ Spider-Verse\ \(2018\).mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies/
-scp Spider-Man:\ Into\ The\ Spider-Verse\ \(2018\).mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies/Spider-Man:\\\ Into\\\ The\\\ Spider-Verse\\\ \\\(2018\\\)
-scp "Spider-Man:\ Into\ The\ Spider-Verse\ \(2018\).mp4" dietpi@192.168.1.135:/media/ExtHDD01/Movies/Spider-Man:\\\ Into\\\ The\\\ Spider-Verse\\\ \\\(2018\\\)
-scp test.txt dietpi@192.168.1.135:/media/ExtHDD01/Movies
-scp "Spider-Man:\ Into\ The\ Spider-Verse\ \(2018\).mp4" dietpi@192.168.1.135:/media/ExtHDD01/Movies/
-mv Spider-Man:\ Into\ The\ Spider-Verse\ \(2018\).mp4 sm.mp4
-scp sm.mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies/Spider-Man:\\\ Into\\\ The\\\ Spider-Verse\\\ \\\(2018\\\)
-wget "https://ndisk.cizgifilmlerizle.com/getvid?evid=28uKijx3UqCZTY2396yzaiKm8Z7VBMxSPW_HR245ifOFdVRk_-lSZ3wdMKXQz5uMt2lqNnjwTB7u19Y2KHYjq50hcyunIx6BeB7yXpUg2NQ2LJuRp4wjqy1J_MNlEszFhVJt-HucoOSSZnlLkd-6c6Z86aQx1b0rI5TLaNA4B8STTKFwih_1X08rEGCI9Uem8V5Kc-wtYtsdzQiMnOTH7m1vgjoKn41JM4vxKiaTwAfyHD0I8ToW2rr_cc_ghIFV3mMohOQWck_0e6rQC5nNCBX1MUsd2K4m1d6z-FFv5IkYsvYV1BEh4XXZD-iJO33ZVM0H4an6-3U9b8J76jAv25p3ehz6jLBuV3U7TsVpeCFhNVf2SLUMocnrRPTQjRUIVKsabGT0u1MX3J-5mOAnyb3dewvikheZyTx-UozPtyE"
-cd Videos/TV\ Shows/Avatar:\ The\ Last\ Airbender/Season\ 01
-scp * dietpi@192.168.1.135:/media/ExtHDD01/TV\\\ Shows/Avatar:\\\ The\\\ Last\\\ Airbender/Season\\\ 01
-scp -R "Season 01" dietpi@192.168.1.135:/media/ExtHDD01/TV\\\ Shows/Avatar:\\\ The\\\ Last\\\ Airbender/Season\\\ 01
-scp -r "Season 01" dietpi@192.168.1.135:/media/ExtHDD01/TV\\\ Shows/Avatar:\\\ The\\\ Last\\\ Airbender/Season\\\ 01
-tar -xvf hw1-handout.tgz
-cd lab1-handout
-d in valgrind
-valgrind 
-valgrind dna
-valgrind ./dna
-valgrind --leack-check=full ./dna
-valgrind --leak-check=full ./dna
-make dna && valgrind --leak-check=full
-make dna && valgrind --leak-check=full ./dnae
-make cquence.c && ./cquence
-hostname -I
-d rm chromium
-d in chrome
-d in google-chrome
-d in youtube_dl
-d in youtube-dl
-youtube-dl -f 22 "https://youtu.be/5Sa2MqfpqEs"
-mv The\ Beauty\ Of\ Harry\ Potter-5Sa2MqfpqEs.mp4 "The Beauty of Harry Potter.mp4"
-mv The\ Beauty\ of\ Harry\ Potter.mp4 Videos/Movies/Harry\ Potter
-cp The\ Beauty\ of\ Harry\ Potter.mp4 tbohp.mp4
-scp tbohp.mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies/Harry\\\ Potter
-youtube-dl "https://youtu.be/5Sa2MqfpqEs"
-youtube-dl -F
-youtube-dl -f
-youtube-dl -F "https://youtu.be/5Sa2MqfpqEs"
-youtube-dl -f 137 "https://youtu.be/5Sa2MqfpqEs"
-vlc The\ Beauty\ Of\ Harry\ Potter-5Sa2MqfpqEs.mp4
-rm The\ Beauty\ Of\ Harry\ Potter-5Sa2MqfpqEs.mp4
-ffmpeg -i The\ Beauty\ Of\ Harry\ Potter-5Sa2MqfpqEs.webm trailer.mp4
-vlc trailer.mp4
-mv lab1-handout hw1
-gdb ./cquence
-killall google-chrome
-killall chrome
-rm -rf google-chrome-unstable
-d in google-chrome-stable
-d rm google-chrome
-tldr
-d in tldr
-tldr ls
-tldr man
-gcc list.c list.h list_test.c -o list && ./list
-gcc list.c list.h list_test.c -o list
-make list && list
-valgrind --leak-check=full ./list
-make list && valgrind --leak-check=full ./list
-rm vgcore*
-vlc
-make dna && valgrind --leak-check=full ./dna
-make dna && valgrind ./dna
-make cquence && valgrind --leak-check=full ./cquence
-ssh di
-make list && valgrind ./list
-make recursion && ./recursione
 make recursion && valgrind ./recursion
 make cquence && valgrind ./cquence
 scp * drewvlaz@linux.cs.uchicago.edu:~/cs/drewvlaz-cs162-win-21/hw1
@@ -185,10 +89,6 @@ sudo cp update-resolv.sh.bkup update-resolv.sh
 sudo v update-resolv.sh
 windscribe connect
 windscribe disconnect
-cd Videos/Movies/Harry\ Potter
-ffmpeg -i Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4 -map_metadata -1 -c:v copy -c:a copy out.mp4
-cd ../Wonder\ Woman\ 1984\ \(2020\)
-scp Wonder\ Woman\ 1984\ \(2020\).mkv dietpi@192.168.1.135:/media/ExtHDD01/Movies/Wonder\\\ Woman\\\ 1984\\\ \\\(2020\\\)
 wcd
 wget "http://s1.mega4down.com:8080/d/6erhlhzkiry6yxccgpef5nqfzo7zkvh2fe36rv2ujbco3w5clbsaosjwdlgta7bo53uwl72t/Plex-Premium-v8.12.3.22809_build_818254225-arm64-v8a.apk"
 windscribe help
@@ -207,16 +107,6 @@ rm Plex-Premium-v8.12.3.22809_build_818254225-arm64-v8a.apk
 rm Viewer.aspx\?id=6926fb0b-f8cc-4a1b-98e4-aca6015be849
 v dictionary
 make validity && ./validit
-cd Videos/Movies/The\ Wolf\ of\ Wall\ Street\ \(2013\)
-scp The\ Wolf\ of\ Wall\ Street\ \(2013\) dietpi@192.168.1.135:/media/ExtHDD01/Movies/The\\\ Wolf\\\ of\\\ Wall\\\ Street\\\ \\\(2013\\\)
-scp The\ Wolf\ of\ Wall\ Street\ \(2013\).mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies/The\\\ Wolf\\\ of\\\ Wall\\\ Street\\\ \\\(2013\\\)
-scp Portrait\ of\ a\ Lady\ on\ Fire\ \(2019\).mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies/Portrait\\\ of\\\ a\\\ Lady\\\ on\\\ Fire\\\ \\\(2019\\\)
-cd Videos/Movies/P
-scp Parasite\ \(2019\).mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies/Parasite\\\ \\\(2019\\\)
-cd Moonlight\ \(2016\)
-scp Moonlight\ \(2016\).mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies/Moonlight\\\ \\\(2016\\\)
-wsc account
-cd Documents/College/Year\ 1/Autumn\ 20/Calc\ III\ MATH\ 15300
 cd Assignments
 v A8.tex
 d in tikz-qtree
@@ -332,8 +222,6 @@ scp -r covid.mp4 dietpi@192.168.1.135:/media/ExtHDD01/prerolls
 youtube-dl --playlist-items 38 -f 22 "https://www.youtube.com/watch?v=Uy8rK1VWNx8&list=PLwOZjz5UcNdgiXx5OXwIIZJKW6FOdLmf3&index=22" -o netflix.mp4
 vlc netflix.mp4
 scp -r netflix.mp4 dietpi@192.168.1.135:/media/ExtHDD01/prerolls
-cd Videos/Movies/Interstellar\ \(2014\)\ \(2014\)\ \[1080p\]
-scp "Interstellar (2014).mp4" dietpi@192.168.1.135:/media/ExtHDD01/Movies/Interstellar\\\ \\\(2014\\\)
 ./jacket
 ./jackett
 d in pidgin
@@ -385,8 +273,6 @@ make vigenere && ./vigenere | grep 45924
 cd ../hw2
 cat problem_7.tex 
 cat problem_7.tex | toclip
-cd Videos/Movies/Parasite\ \(2019\)
-scp "Parasite (2019).en.forced.srt" dietpi@192.168.1.135:/media/ExtHDD01/Movies/Parasite\\\ \\\(2019\\\)/
 valgrind --leak-check=full ./vigenere
 time ./vigenere
 make vigenere && ./vigenere | grep 19433
@@ -462,7 +348,6 @@ d se resolve
 chmod +x DaVinci_Resolve_17.0_Linux.run
 sudo ./DaVinci_Resolve_17.0_Linux.run
 mv The.Invisible.Man.2020.1080p.WEB-DL.RARBG.mkv "The Invisible Man (2020).mkv"
-scp "The Invisible Man (2020).mkv" dietpi@192.168.1.135:/media/ExtHDD01/Movies/The\\\ Invisible\\\ Man\\\ \\\(2020\\\)
 cp hashtable.c lib/hashtable.h ../hw4
 cd ../hw4
 gcc -Wall hashset_test.c -o hst && ./hst
@@ -510,9 +395,6 @@ cd im/I
 cd vi/V
 sxiv 1_4997272325243011414.mp4
 sudo nmap -sn 192.168.1.0/24
-scp -r "Cherry (2021)" dietpi@192.168.1.139:/media/ExtHDD01/Movies
-scp -r "Raya and the Last Dragon (2021)" dietpi@192.168.1.139:/media/ExtHDD01/Movies
-scp -r "Minari (2021)" dietpi@192.168.1.139:/media/ExtHDD01/Movies
 git config --global user.name "Drew Vlasnik"\
 
 git config --global user.email "drewvlaz@cs.uchicago.edu"\
@@ -1895,15 +1777,11 @@ cp -r ../python_implementations_/genESeSS/ .
 mv genESeSS.pyx cynet.pyx
 mv genESeSS.pxd cynet.pxd
 d in plex
-cd Remember\ the\ Titans\ \(2000\)
-mv Remember\ the\ Titans\ \(2000\)\ Bluray-1080p.mp4 Remember\ the\ Titans\ \(2000\).mp4
-scp -r Remember\ the\ Titans\ \(2000\) dietpi@192.168.1.134:/media/ExtHDD01/Movies
 top
 kill -9 zoom
 ps zoom
 kill -9 4901
 ps -e | grep zoom
-scp -r The\ Fast\ and\ the\ Furious\ \(2001\) dietpi@192.168.1.134:/media/ExtHDD01/Movies
 ./bin/XgenESeSS -h
 ./bin/XgenESeSS -f /test/data/YHOOMSFT.dat -T continuous -k " : 0 " -p 0 -g 0.01 -u 1 -B 0 -E 4  -m -w test/test_models/test -v 0 -l test/plog.log -n 10 -e 0.02 -q
 cat test/plog.log
@@ -3018,7 +2896,6 @@ mkdir "The Hitman's Bodyguard (2017)"
 mv The\ Hitman\'s\ Bodyguard\ \(2017\)\ 1080p-H264-AC\ 3\ \(DolbyDigital-5.1\)\ \&\ nickarad.mp4 The\ Hitman\'s\ Bodyguard\ \(2017\)
 cd The\ Hitman\'s\ Bodyguard\ \(2017\)
 mv The\ Hitman\'s\ Bodyguard\ \(2017\)\ 1080p-H264-AC\ 3\ \(DolbyDigital-5.1\)\ \&\ nickarad.mp4 "The Hitman's Bodyguard (2017).mp4"
-scp -r The\ Hitman\'s\ Bodyguard\ \(2017\) dietpi@192.168.1.134:/media/ExtHDD01/Movies
 cd Documents/
 cd Zoom/
 cd 2020-12-04\ 16.17.11\ Core\ Bio\ Section\ 08\ class\ \(3_00pm\)\ 98233788283
@@ -3300,12 +3177,6 @@ du -h ts_temp
 ../repos/zquantizer_/bin/quantizer  t2  M 5 -a 2 -A3  -r 0 -D ts_temp/clean_8709bc81-0a68-4347-a65b-59bf3c78a42e
 ../repos/zquantizer_/bin/quantizer -e 1 -t2  -M 1 -a 2 -A  -r 0 -D ts_temp/clean_8709bc81-0a68-4347-a65b-59bf3c78a42e
 ../repos/zquantizer_/bin/quantizer -e 1 -t2  -M 1 -a 2 -A3  -r 0 -D ts_temp/clean_8709bc81-0a68-4347-a65b-59bf3c78a42e
-cd Videos/Movies
-mkdir "The Little Things (2021)"
-mv The.Little.Things.2021.1080p.WEBRip.x264-RARBG.mp4 The\ Little\ Things\ \(2021\)
-cd The\ Little\ Things\ \(2021\)
-mv The.Little.Things.2021.1080p.WEBRip.x264-RARBG.mp4 "The Little Things (2021).mp4"
-scp -r The\ Little\ Things\ \(2021\) dietpi@192.168.1.134:/media/ExtHDD01/Movies
 cd ../zedsuite
 cd genesess
 cd ../
@@ -3671,12 +3542,6 @@ du -h ~/Music
 du -h ~/Music/AudioBooks
 du -h ~/Downloads
 cd Videos/
-cd Movies
-scp -r The\ Hangover\ Part\ II\ \(2011\) dietpi@192.168.1.134:/media/ExtHDD01/Movies
-du -h ~/Documents
-scp -r The\ Hangover\ Part\ III\ \(2013\) dietpi@192.168.1.134:/media/ExtHDD01/Movies
-cd Downloads/tails-amd64-4.20-img
-cat tails-amd64-4.20.img.sig
 gpg --show-keys tails-amd64-4.20.img
 gpg --version
 dd if=tails-amd64-4.20.img of=/dev/sda status=progress
@@ -5100,3 +4965,14 @@ exit
 : 1631550448:0;cl
 : 1631550452:0;cd Dev/dotfiles
 : 1631550461:0;.scripts/syncdots
+: 1631550466:0;cd
+: 1631550468:0;cl
+: 1631550533:0;cd Dev/dotfiles
+: 1631550538:0;cd .config/nvim
+: 1631550538:0;ls
+: 1631550540:0;..
+: 1631550543:0;g push
+: 1631550552:0;v .scripts/syncdots
+: 1631550565:0;cl
+: 1631550611:0;se
+: 1631550688:0;.scripts/syncdots
