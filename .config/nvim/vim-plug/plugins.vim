@@ -23,7 +23,7 @@ call plug#begin('~/.vim/autoload/plugged')
     Plug 'ap/vim-css-color'                                 " highlight hex colors
     Plug 'junegunn/goyo.vim'                                " zen mode
     Plug 'junegunn/limelight.vim'                           " light up only focused text
-    Plug 'preservim/nerdcommenter'                          " better commenting
+    Plug 'tpope/vim-commentary'                             " better commenting
     Plug 'mhinz/vim-startify'                               " add start screen to vim
     
     " AESTHETIC

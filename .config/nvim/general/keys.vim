@@ -9,8 +9,12 @@ map <leader><leader>ec :e $MYVIMRC<CR>
 " Easy escape
 inoremap jk <Esc>
 
+" Always traverse lines visually
 nnoremap <silent> j gj
 nnoremap <silent> k gk
+
+" Yank to end of line
+nnoremap Y y$
 
 " Easy save
 nnoremap <silent> <leader>w :w<CR>
@@ -35,6 +39,17 @@ nnoremap <silent> <C-J> <C-w>J
 nnoremap <silent> <C-K> <C-w>K
 nnoremap <silent> <C-L> <C-w>L
 
+" Set undo break points
+inoremap , ,<C-g>u
+inoremap . .<C-g>u
+inoremap ! !<C-g>u
+inoremap ? ?<C-g>u
+inoremap ( (<C-g>u
+
+" Move selected text
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
 " Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
@@ -45,6 +60,10 @@ nnoremap <silent> <S-TAB> :bprevious<CR>
 
 " <TAB>: completion.
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" Renaming
+ nmap <leader>rn <Plug>(coc-rename)
+ nmap <F2> <Plug>(coc-rename)
 
 " Better indenting
 vnoremap < <gv

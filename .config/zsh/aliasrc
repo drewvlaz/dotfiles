@@ -46,16 +46,27 @@ alias \
 
 # Functions
 se() {
-    du -a ~/.config/* ~/.scripts/* \
-    --exclude='Code*'\
-    --exclude='gtk*'\
-    --exclude='chromium'\
-    --exclude='Postman'\
-    --exclude='discord'\
-    --exclude='KDE'\
-    --exclude='kde.org'\
-    --exclude='Notion'\
-    --exclude='gnome-*' |
+    # du -a ~/.config/* ~/.scripts/* \
+    # --exclude='Code*'\
+    # --exclude='gtk*'\
+    # --exclude='chromium'\
+    # --exclude='Postman'\
+    # --exclude='discord'\
+    # --exclude='KDE'\
+    # --exclude='kde.org'\
+    # --exclude='Notion'\
+    # --exclude='gnome-*' |
+    du -a \
+    ~/.config/alacritty \
+    ~/.config/bspwm \
+    ~/.config/nvim \
+    ~/.config/polybar \
+    ~/.config/rofi \
+    ~/.config/sxhkd \
+    ~/.config/sxiv \
+    ~/.config/tmux \
+    ~/.config/zsh \
+    ~/.scripts |
     awk '{print $2}' |
     fzf |
     xargs -r $EDITOR ;

@@ -6,7 +6,7 @@ add_newline = false
 
 # Use custom format
 format = """
-[╭─ ](bold white)\
+[╭─](bold white)\
 $username\
 $hostname\
 $directory\
@@ -32,13 +32,13 @@ $time\
 $custom\
 $cmd_duration\
 $line_break\
-[[╰──](bold white)$character](bold green)"""
+[[╰─](bold white)$character](bold green)"""
 
 [character]
 # ❮❯
-success_symbol = "[](bold green) "
-error_symbol = "[✗](bold red) "
-vicmd_symbol = "[](bold green) "
+success_symbol = "[](bold green)"
+error_symbol = "[✗](bold red)"
+vicmd_symbol = "[](bold yellow dimmed)"
 
 [directory]
 format = "[\\[](bold yellow)[$path]($style)[$read_only]($read_only_style)[\\]](bold yellow) "

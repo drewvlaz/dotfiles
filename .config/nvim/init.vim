@@ -6,7 +6,7 @@
 "
 
 " ----- PACKAGE MANAGER -----
-source ~/.config/nvim/vim-plug/plugins.vim
+luafile ~/.config/nvim/lua/plugins.lua
 
 " ----- PACKAGES -----
 source ~/.config/nvim/plug-config/goyo.vim
@@ -16,7 +16,6 @@ source ~/.config/nvim/plug-config/quickscope.vim
 source ~/.config/nvim/plug-config/startify.vim
 source ~/.config/nvim/plug-config/vimtex.vim
 source ~/.config/nvim/plug-config/nerdtree.vim
-source ~/.config/nvim/plug-config/nerdcommenter.vim
 source ~/.config/nvim/plug-config/neovide.vim
 luafile ~/.config/nvim/plug-config/telescope.lua
 

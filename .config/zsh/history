@@ -1,84 +1,3 @@
-pactl list | grep -oP 'Sink #\K([0-9]+)'
-pactl list | grep -oP 'Sink #\K([0-9]+)' | while read -r i ; do pactl -- set-sink-volume $i 100% ; done
-pavucontrol
-d install jellyfin-10.7.0~rc2-1.fc33.src.rpm\
-
-plex-media-player
-d rm plex
-plex-media-server
-chmod 777 Movies
-cd home
-cp Ghost\ in\ the\ Shell.mp4 /var/lib/plexmediaserver/Library
-sudo cp Ghost\ in\ the\ Shell.mp4 /var/lib/plexmediaserver/Library
-chmod 777 Videos
-chmod 755
-chmod 755 *
-chmod 755 Videos
-dd if=DietPi_RPi-ARMv6-Buster.img of=/dev/sdb status=progress
-sudo dd if=/dev/zero of=/dev/sdb
-sudo dd if=/dev/zero of=/dev/sdb status=progress
-wipefs
-wipefs -a /dev/sdb
-sudo wipefs -a /dev/sdb
-killall dd
-ps dd
-sudo dd if=/dev/zero of=/dev/sdb bs=512 count=1 status=progress
-fdisk /dev/sdb
-sudo fdisk /dev/sdb
-sudo dd if=DietPi_RPi-ARMv6-Buster.img of=/dev/sdb status=progress
-lblk
-cd Downloads/DietPi_RPi-ARMv6-Buster
-sudo dd if=DietPi_RPi-ARMv6-Buster.img of=/dev/sdb1 status=progress
-d in etcher
-d se etcher
-d se balena
-nmap
-ssh root@192.168.1.142
-ssh dietpi@192.168.1.142
-ssh pi@192.168.1.142
-ssh root@192.168.1.135
-ssh dietpi@plexpi
-scp test.txt dietpi@192.168.1.135
-ssh -v dietpi@192.168.1.135
-cd .ssh/
-v known_hosts
-scp test.txt dietpi@192.168.1.135:~/
-sudo vim /etc/fstab
-sudo v /etc/fstab
-ssh plex@192.168.1.135
-mkfs
-mkfs --help
-man mkfs
-sudo mkfs.ext4 /dev/sda1
-sud umount /dev/sda1
-sudo umount /dev/sda1
-sudo mkfs.ext4 -L "TOSHIBA EXT" /dev/sda1
-sudo cp -R Videos/Movies /run/media/drewvlaz/TOSHIBA\ EXT
-sudo chmod -R 755 /run/media/drewvlaz/TOSHIBA\ EXT
-sudo chmod -R 777 /run/media/drewvlaz/TOSHIBA\ EXT
-scp mulan.jpg dietpi@192.168.1.135:~/Movies/Mulan (2020)
-scp mulan.jpg dietpi@192.168.1.135:~/Movies
-cd .ssh
-v id_ecdsa
-vim known_hosts
-ssh-copy-id dietpi@192.168.1.135
-cd Pictures/movie\ posters
-scp breakfastclub.jpg dietpi@192.168.1.135:~/Movies
-scp -r Videos/Movies/Black\ Swan\ \(2010\) dietpi@192.168.1.135
-cd Black\ Swan\ \(2010\)
-ffmpeg -i Black\ Swan\ \(2010\).mkv -codec -copy "Black Swan (2010).mp4"
-ffmpeg -i Black\ Swan\ \(2010\).mkv -codec copy "Black Swan (2010).mp4"
-vlc Black\ Swan\ \(2010\).mp4
-rm Black\ Swan\ \(2010\).mkv
-scp -r Videos/Movies/Black\ Swan\ \(2010\) dietpi@192.168.1.135:~/
-wget -O "Spider-Man: Into The Spider-Verse (2018).mp4" "https://easy-movie.com.au/cdn/Spider-Man.Into.The.Spider-Verse.2018.1080p.BluRay.x264-%5BYTS.AM%5D.mp4"
-wget -O "Spider-Man: Into The Spider-Verse (2018).mp4" "http://103.214.156.1/movies/english/2019/S8Q01G~8/Spider-Man.Far.From.Home.2019.1080p.NEW.HDTC.V2.1XBET.mp4"
-cd Harry\ Potter
-ffmpeg -i Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mkv -codec copy Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4
-vlc Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mkv
-d in handbrake
-handbrake
-d rm handbrake
 ffmpeg -i Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mkv -vcodec copy -acodec copy Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4
 scp Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4 dietpit@192.168.1.135:/media/ExtHDD01/Movies
 scp Harry\ Potter\ and\ the\ Sorcerer\'s\ Stone\ \(2001\).mp4 dietpi@192.168.1.135:/media/ExtHDD01/Movies
@@ -320,7 +239,6 @@ sl
 v pending_follow_requests.json
 v following.json
 python unfollowers_.py
-cd data
 cd followers_and_following
 cd data/followers_and_following
 v followers.json
@@ -1778,7 +1696,6 @@ cd .config/nnn
 du .
 cd sessions
 nnn
-nnncd
 alsk;jdflk;jdf
 v myshell.c
 g commit -m "partial"
@@ -2376,7 +2293,6 @@ tail ACC.csv
 k
 p
 q
-w
 r
 e
 t
@@ -3888,7 +3804,6 @@ g add README.rst patternly/detection.py
 d rm plex-media-player
 chmod +x Plex_Media_Player_2.58.1-ae73e074_x64.AppImage
 plexmediaplayer
-plex
 ./Plex_Media_Player_2.58.1-ae73e074_x64.AppImage
 d se libnsl
 d in libnsl
@@ -3960,7 +3875,6 @@ g commit -m "add link to docs"
 pip install patternly -f
 pip install -f patternly
 pip install --force-reinstall patternly
-ssh dietpi@192.168.1.134
 diff /home/drewvlaz/Documents/ZeD/repos/patternly/examples/zed_temp/clean_3d9597c6-af51-4294-a719-468609c36cb1 /home/drewvlaz/Documents/ZeD/repos/patternly/examples/zed_temp/clean_890c244b-d9fd-472c-b1ed-2f00384be294
 python setup.py sdist bdist_wheel
 pip install dist/patternly-0.0.4-py3-none-any.whl
@@ -4349,12 +4263,10 @@ jt -t oceans16
 jt -t grade3
 jt -t gruvboxd
 jt -t chesterish
-jt -l
 jt -l solarizedd
 jt -t solarizedd
 man jt
 jt -vim
-jt -h
 jt -t monokai -T -cellw 1200 -kl -N
 jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f firacode
 jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f hack -lineh 150
@@ -4483,7 +4395,6 @@ v night-owl.vim.yml
 v in
 v .hy 
 cd agi 
-v process.py
 vi
 bc
 d se neovide
@@ -4544,7 +4455,6 @@ rm graph.* init.vim result.txt
 touch themes/lightline.vim
 v themes/lightline.vim
 cat coc-settings.json
-v agitations.csv
 v ../goneovim/se
 v ../goneovim/settings.toml
 v in 
@@ -4726,7 +4636,6 @@ nvide --geometry 120x35
 nvide --geometry 130x40
 neovide patternly/detection.py&
 v p4shell
-lc
 nvide .
 cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21
 nvide init.vim
@@ -4747,11 +4656,8 @@ d in cmake
 cc
 v build.rs
 ls src
-cd agitation_study
 g diff patternlyternly/detection.py
 g diff patternly/detection.py
-g add patternly/detection.py
-g commit -m "reduce clusters"
 g add docs
 rm -rf .vscode examples/dist.dst examples/embedding.csv examples/outD.txt
 g commit -m "update docs"
@@ -4761,7 +4667,6 @@ head -n 1 dataset/ACC_X.csv | grep "1308466"
 head -n 1 dataset/TEMP.csv | grep "1308466"
 head -n 1 dataset/TEMP_a.csv | grep "1308466"
 head -n 1 dataset_controls/TEMP_a.csv | grep "1308466"
-python process.py
 nvide process.py
 nvim --version
 cd Downloads
@@ -4791,10 +4696,8 @@ vkcubepp
 cd .fonts
 ls Fira\ Code
 cd neovide
-g pull
 v /usr/local/bin
 sudo mv launch-neovide /usr/local/bin
-./target/release/neovide
 rm /usr/local/bin/neovide
 sudo rm /usr/local/bin/neovide
 mv target/release/neovide /usr/local/bin
@@ -4830,11 +4733,9 @@ figlet -h
 evc
 cd plug-config
 mv settings.vim nerdcommenter.vim
-v init.vim
 cd repos/python_implementations_
 nvide zedsuite/genesess.pyx
 cd ../patternly
-python setup.py sdist bdist_wheel && pip uninstall -y patternly && pip install dist/patternly-0.0.31-py3-none-any.whl && rm -rf examples/zed_temp
 pip uninstall -y zedsuite && pip install dist/zedsuite-0.0.5-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
 goneovim
 d se alacritty
@@ -4875,7 +4776,6 @@ sudo v alacritty.desktop
 ./Documents/ZeD/repos/GenESeSS_/bin/genESeSS -h
 google-chrome graph. 
 google-chrome graph.png
-cd Documents/ZeD/agitation_study
 cd repos/patternly
 du -h Downloads
 exa
@@ -4888,7 +4788,6 @@ sudo rm /usr/bin/ebe
 d rm google-chrome-unstable
 d rm davinci
 d rm davinci-resolve
-d up
 du -h
 df -h
 cd Testing
@@ -4920,7 +4819,6 @@ echo $SPACESHIP_FOOBAR_SHOW
 echo $SPACESHIP_ROOTFOOBAR_SHOW
 echo $SPACESHIP_ROOT
 sudo v /usr/local/lib/node_modules/spaceship-prompt/spaceship.zsh
-cd 
 .
 cd zutil_
 cd cynet_
@@ -4932,7 +4830,6 @@ starship init
 starship init zsh
 mkdir .config/starship
 touch .config/starship/config.toml
-cd .config
 cd zsh
 mkdir themes
 cd themes
@@ -4947,7 +4844,6 @@ wait 1
 time
 time 1
 python -c "import time; time.wait(2)"
-python
 exiyt
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- --help\
 
@@ -4956,7 +4852,6 @@ sh -c "$(curl -fsSL https://starship.rs/install.sh)"\
 v Cargo.
 pyenv global 3.7.0
 pyenv global system
-sc
 ec
 cd /usr/share/applications
 g info
@@ -4966,7 +4861,6 @@ g log
 cargo build --help
 v Cargo.lock
 v Cargo.toml
-cargo build --release
 cd patcher
 cd D
 cp target/release/starship /usr/local/bin
@@ -5016,10 +4910,6 @@ git remote set-head origin -a\
 rm -rf .config
 mkdir .config
 rm .netrwhist
-cd .config/nvim
-g status
-v .scripts/syncdots
-exi
 cd patternly
 nvide pa 
 cd Documents/College/Internships/Resume/
@@ -5032,46 +4922,181 @@ git remote add origin git@github.com:drewvlaz/resume.git
 g push --set-upstream origin master
 g add resume.tex resume.pdf
 g commit -m "update pdf"
-g push
 v resume.tex
 tmuz
 d se terminator
 d in terminator
 cat .tmux.conf
-v patternly/detection.py
 l
 tmux --version
 v  
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm\
-
-cd .tmux/plugins/tpm
-...
-..
-tmux
 tmux -h
 zsh -h
 zsh --help
-jupyter notebook
 nvide patternly/detection.py
-.scripts/syncdots
-cd Dev/dotfiles
 ex
-cd
 v .tmux.conf
 tmux -V
 mkdir .config/tmux
 mv .tmux.conf .config/tmux/tmux.conf
-la
-se
 c
-v
 ls | grep py
-cl
 xit
+v .scripts/syncdots
+.scripts/syncdots
+la .config
+nnncd
+cd Dev/dotfiles
+cd  
+tmux neww
+cp .config/tmux/tmux.conf .
+mv tmux.conf .tmux.conf
+rm .tmux.conf
+tmux
+exi
+lc
+tmux ls
+tmux a
+at
+ssh dietpi@192.168.1.134
+plex
+plex-media-player
+alksdfj
+g add patternly/_utils.py
+g commit -m "add UnionFind class"
+sd
+cd .config
+killall tmux
+sc
+a
+se
+la
+rm -rf .tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm\
+
+tmux kill-server
+cd .tmux/plugins/tpm
+v failed.csv
+cat failed.csv | grep 0
+cat failed.csv | grep 1
+g add patternly/detection.py
+g commit -m "reduce clusters"
+g status
+g push
+v table.tex
+jt -h
+jt -l
+jt -t solarizedl -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f hack -lineh 150
+fc-list
+jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "Operator Mono Book Nerd Font Complete Mono" -lineh 150
+jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "Operator Mono Nerd Font Complete Mono" -lineh 150
+fc-list | grep Operator Nerd
+jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "OperatorMono Nerd Font Complete Mono" -lineh 150
+fc-list | grep OperatorMopno
+jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "Operator Mono" -lineh 150
+jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "OperatorMono Book" -lineh 150
+jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "Operator Mono Nerd Font Book" -lineh 150
+jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "Operator Mono Nerd Font" -lineh 150
+jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "OperatorMono Nerd Font" -lineh 150
+jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "OperatorMono Nerd Font Mno" -lineh 150
+jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "Operator Mono Nerd Font Mono" -lineh 150
+fc-list | grep OperatorMono
+jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "Operator Mono Book" -lineh 150
+jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "OperatorMono" -lineh 150
+jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "OperatorMono Nerd Font Mono" -lineh 150
+jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "operatormono" -lineh 150
+jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "operator mono" -lineh 150
+jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "hack" -lineh 150
+fc-list | grep operator
+fc-list | grep Operator
+jt -t solarizedl -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "hack" -lineh 150
+cd agitation_study
+pip install mne
+w
+v data/chb01_03.edf.seizures
+mv chb01_03.edf.seizures chb01_03.seizures.edf
+cat data/chb01_03.seizures.edf
+cat data/chb01-summary.txt
+head -n 20 data/chb01-summary.txt
+head -n 50 data/chb01-summary.txt
+mkdir chb01
+mv chb01_03.edf chb01_03.seizures.edf chb01-summary.txt chb01
+ls chb01
+cd data
+cd chb01
+...
+head -n 50 data/chb01/chb01-summary.txt
+v data/chb01/chb01-summary.txt
+cd Documents/ZeD/agitation_study
+tmux list-sessions
 cd Documents/ZeD/repos/patternly
+cd Documents/ZeD/anomaly_examples
+python
+cd Documents/ZeD/agitation_study'\
+
+cp AnomalyDetectionSingularPatient.ipynb AnomalyDetectionSingularPatient_.ipynb
+mv agitations_.csv agitations.csv
+v agitations_processed.csv
+v process.py
+python process.py
+v agitations.csv
+cd Documents/ZeD/agitation_study\
+
+jupyter notebook
+d up
+cl
+v
+cd Documents/ZeD/repos/patternly\
+
+python setup.py sdist bdist_wheel && pip uninstall -y patternly && pip install dist/patternly-0.0.31-py3-none-any.whl && rm -rf examples/zed_temp
+v patternly/detection.pyj
+v patternly/detection.py
+cd .local/share/nvim/
+mkdir site
+cd site
+mkdir pack
+mkdir pack/packer
+cd pack/packer
+mkdir start
 ls
+cd
+git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim\
+
+cd .config/nvim
+mkdir lua
+cd lua
+v plugins.lua
+..
+v init.vim
+cd Dev/neovide
+g pull,
+g pull
+cargo build --release
+./target/release/neovide
 exit
-: 1631028950:0;nnncd
-: 1631028999:0;cd Dev/dotfiles
-: 1631029002:0;v .scripts/syncdots
-: 1631029029:0;.scripts/syncdots
+: 1631550392:0;cd .local/share/nvim/
+: 1631550393:0;ls
+: 1631550396:0;cd site
+: 1631550396:0;ls
+: 1631550398:0;cd pack/packer
+: 1631550399:0;ls
+: 1631550401:0;cd opt
+: 1631550402:0;ls
+: 1631550403:0;..
+: 1631550404:0;cd start
+: 1631550405:0;ls
+: 1631550418:0;cd
+: 1631550418:0;ls
+: 1631550422:0;cd .vim
+: 1631550423:0;ls
+: 1631550425:0;cd autoload
+: 1631550425:0;ls
+: 1631550427:0;cd plugged
+: 1631550427:0;ls
+: 1631550432:0;..
+: 1631550435:0;rm -rf plugged
+: 1631550436:0;cd
+: 1631550439:0;df -h
+: 1631550448:0;cl
+: 1631550452:0;cd Dev/dotfiles
+: 1631550461:0;.scripts/syncdots

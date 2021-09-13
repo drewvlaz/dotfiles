@@ -31,4 +31,4 @@ augroup END
 " hi EndOfBuffer guibg=NONE ctermbg=NONE
 
 let g:rainbow_active = 1
-let g:rainbow_conf = {'guifgs': ['cyan', 'lightmagenta', 'lightred', 'orange']}
+let g:rainbow_conf = {'guifgs': ['cyan', 'lightmagenta', 'orange', 'lightred']}
