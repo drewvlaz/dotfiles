@@ -4981,3 +4981,10 @@ exit
 : 1631550711:0;.scripts/syncdots
 : 1631550715:0;v .scripts/syncdots
 : 1631550720:0;.scripts/syncdots
+: 1631550724:0;v .scripts/syncdots
+: 1631550730:0;ls
+: 1631550731:0;v .scripts/syncdots
+: 1631550743:0;cd
+: 1631550745:0;v .scripts/syncdots
+: 1631550755:0;cd Dev/dotfiles
+: 1631550756:0;.scripts/syncdots

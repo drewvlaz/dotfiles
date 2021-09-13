@@ -34,4 +34,4 @@ if [ "$numArgs" -gt 0 ]; then
 else
     git commit -m "minor updates"
 fi
-git push --quiet origin laptop && echo && echo "Pushed to Github.com"
+git push
