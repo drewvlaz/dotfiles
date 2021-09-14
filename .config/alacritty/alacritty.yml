@@ -82,49 +82,62 @@ font:
 #draw_bold_text_with_bright_colors: true
 # Colors (Tomorrow Night Bright)
 
-colors:
-  # Default colors
-  primary:
-    background: '#232627'
-    foreground: '#fcfcfc'
+# colors:
+#   # Default colors
+#   primary:
+#     background: '#232627'
+#     foreground: '#fcfcfc'
 
-    dim_foreground: '#f0f0f1'
-    bright_foreground: '#ffffff'
-    dim_background: '#31363b'
-    bright_background: '#000000'
+#     dim_foreground: '#f0f0f1'
+#     bright_foreground: '#ffffff'
+#     dim_background: '#31363b'
+#     bright_background: '#000000'
 
-  # Normal colors
-  normal:
-    black: '#232627'
-    red: '#E53935'
-    green: '#8BC34A'
-    yellow: '#FFD54F'
-    blue: '#03A9F4'
-    magenta: '#9575CD'
-    cyan: '#00BCD4'
-    white: '#fcfcfc'
+#   # Normal colors
+#   normal:
+#     black: '#232627'
+#     red: '#E53935'
+#     green: '#8BC34A'
+#     yellow: '#FFD54F'
+#     blue: '#03A9F4'
+#     magenta: '#9575CD'
+#     cyan: '#00BCD4'
+#     white: '#fcfcfc'
 
-  # Bright colors
-  bright:
-    black: '#606060'
-    red: '#FF1744'
-    green: '#00E676'
-    yellow: '#FFE082'
-    blue: '#0277BD'
-    magenta: '#B39DDB'
-    cyan: '#80DEEA'
-    white: '#ffffff'
+#   # Bright colors
+#   bright:
+#     black: '#606060'
+#     red: '#FF1744'
+#     green: '#00E676'
+#     yellow: '#FFE082'
+#     blue: '#0277BD'
+#     magenta: '#B39DDB'
+#     cyan: '#80DEEA'
+#     white: '#ffffff'
 
-  # Dim colors
-  dim:
-    black: '#455A64'
-    red: '#D84315'
-    green: '#33691E'
-    yellow: '#FFAB00'
-    blue: '#4FC3F7'
-    magenta: '#6A1B9A'
-    cyan: '#00838F'
-    white: '#eeeeee'
+#   # Dim colors
+#   dim:
+#     black: '#455A64'
+#     red: '#D84315'
+#     green: '#33691E'
+#     yellow: '#FFAB00'
+#     blue: '#4FC3F7'
+#     magenta: '#6A1B9A'
+#     cyan: '#00838F'
+#     white: '#eeeeee'
+
+import:
+  # - ~/.config/alacritty/themes/ayu-dark.yml
+  - ~/.config/alacritty/themes/ayu-mirage.yml
+  # - ~/.config/alacritty/themes/night-owl.yml
+  # - ~/.config/alacritty/themes/monokai-pro.yml
+  # - ~/.config/alacritty/themes/molokai.yml
+  # - ~/.config/alacritty/themes/dracula.yml
+  # - ~/.config/alacritty/themes/nightfly.yml
+  # - ~/.config/alacritty/themes/argonaut.yml
+
+  # - ~/.config/alacritty/themes/tokyo-night.yml
+# colors: *tokyo-night
 
 # Visual Bell
 #
@@ -154,7 +167,7 @@ colors:
 # Background opacity
 
 background_opacity: 1.0
-# background_opacity: 0.95
+# background_opacity: 0.90
 
 #selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
@@ -191,8 +204,8 @@ shell:
   program: /bin/zsh
   args:
     - --login
-    - -c
-    - "tmux"
+    # - -c
+    # - "tmux"
 
 # Startup directory
 # Directory the shell is started in. If this is unset, or `None`, the working

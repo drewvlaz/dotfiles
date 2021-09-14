@@ -7,7 +7,8 @@ let g:sneak#s_next = 1
 " use space to escape sneak
 let g:sneak#label_esc = "\<Space>" 
 " set labels to use for matches
-let g:sneak#target_labels = ";fjkasgh/FJTGAHLTNRMQZ?0" 
+let g:sneak#target_labels = ";,fteszxn/FTGAHLTNRMQZ?0" 
+let g:sneak#prompt = ''
 
 " remap so I can use , and ; with f and t
 map gS <Plug>Sneak_,

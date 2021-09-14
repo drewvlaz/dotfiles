@@ -9,7 +9,7 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in
     \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
 
 " open on right-hand side
-let g:NERDTreeWinPos = "right"
+" let g:NERDTreeWinPos = "right"
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeDirArrowExpandable = '+'
 let g:NERDTreeDirArrowCollapsible = '-'

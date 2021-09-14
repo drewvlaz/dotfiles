@@ -3,6 +3,16 @@ let g:mapleader = "\<Space>"
 map <space> <leader>
 map <space><space> <leader><leader>
 
+" " Remap leader
+" let g:mapleader = ","
+" map , <leader>
+" map ,, <leader><leader>
+
+" nnoremap : ,
+" vnoremap : ,
+" nnoremap <space> :
+" vnoremap <space> :
+
 map <leader><leader>sc :source $MYVIMRC<CR>
 map <leader><leader>ec :e $MYVIMRC<CR>
 
@@ -10,11 +20,17 @@ map <leader><leader>ec :e $MYVIMRC<CR>
 inoremap jk <Esc>
 
 " Always traverse lines visually
-nnoremap <silent> j gj
-nnoremap <silent> k gk
+nnoremap j gj
+nnoremap k gk
+
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
 
 " Yank to end of line
 nnoremap Y y$
+
+" Replace highlighted text with last yanked
+vnoremap <leader>p "_dP
 
 " Easy save
 nnoremap <silent> <leader>w :w<CR>
@@ -57,6 +73,7 @@ inoremap <expr> <c-k> ("\<C-p>")
 " TAB and SHIFT TAB to navigate buffers
 nnoremap <silent> <TAB> :bnext<CR>
 nnoremap <silent> <S-TAB> :bprevious<CR>
+nnoremap <silent> <BACKSPACE> <C-^>
 
 " <TAB>: completion.
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
@@ -90,13 +107,29 @@ nnoremap <silent> <leader><Esc> <Esc>:nohlsearch<CR><Esc>
 " Repeat last command with :
 nnoremap !! @:
 
+" Close buffer
+nnoremap <silent> <leader>bd :bd<CR>
+
 " Save and close buffer
 :command Wd write|bdelete
 " Switch to another open buffer on close (useful when NERDTree open)
 :command Bd bp|bd\#<CR>
 
+" Get highlight group for object under cursor
+function! <SID>SynStack()
+    if !exists("*synstack")
+        return
+    endif
+    echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+nnoremap <C-p> :call <SID>SynStack()<CR>
 
 "----- PACKAGES -----
+
+" invert two consecutive blocks of code
+" nnoremap gcik gcckgcc
+" nnoremap gcij gccjgcc
+
 nnoremap <silent> <leader>g :Goyo<CR>
 nnoremap <silent> <Leader>ll :Limelight!!<CR>
 nnoremap <silent> <leader>n :NERDTreeToggle<CR>
@@ -115,3 +148,4 @@ nnoremap <leader>fg <cmd>lua require('telescope.builtin').grep_string()<cr>
 nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 nnoremap <leader>fs <cmd>lua require('telescope.builtin').lsp_document_symbols()<cr>
+nnoremap <leader>fc <cmd>lua require('telescope.builtin').colorscheme()<cr>

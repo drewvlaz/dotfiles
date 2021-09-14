@@ -675,7 +675,6 @@ cd Documents/College/
 cd Misc
 mv ZeD ...
 cd Year\ 1/Spring\ 21
-cd Documents
 cd College
 cd Internships
 cd Year\ 1
@@ -962,7 +961,6 @@ cd Dev/icons-in-terminal
 ./print_icons.sh
 d se ls icons
 exa --icons
-which ls
 where ls
 spaceship_vi_mode_enable
 spaceship_vi_mode_disable
@@ -1687,7 +1685,6 @@ svn commit -m "81%"
 sxiv mydask.png
 rm mydask.png
 for i in {1..10}; do python daskex.py; done
-sxiv .
 sxiv . &
 rm gooduser_redirection_rd_*
 v .
@@ -2176,7 +2173,6 @@ e
 t
 i
 y
-s
 d
 f
 f -h
@@ -3908,7 +3904,6 @@ g commit -m "add streaming"
 pip uninstall -y patternly
 cat patternly/detection.py
 python setup.py sdist bdist_wheel && pip uninstall -y patternly && pip install dist/patternly-0.0.16-py3-none-any.whl && rm -rf examples/zed_temp
-pytho
 g commit -m "fix cluster ranking"
 cat makedoc.sh
 v makedoc.sh
@@ -4092,7 +4087,6 @@ pip install patternly
 g commit -m "updates docs"
 htop
 python setup.py sdist bdist_wheel && pip uninstall -y patternly && pip install dist/patternly-0.0.23-py3-none-any.whl && rm -rf examples/zed_temp
-du -h .
 v seq.dat
 cat seq.dat
 rm testingzs.*
@@ -4250,7 +4244,6 @@ v scripts/palettes.ejs
 cd scripts
 v palettes.js
 v palettes.html
-cd autoload
 cd lightline
 cd colorscheme
 cd colors
@@ -4311,7 +4304,6 @@ cp goneovim /usr/local/bin/
 sudo cp goneovim /usr/local/bin/
 mkdir goneovim
 cd goneovim
-xclip
 xclip >> settings.toml
 v settings.toml
 cd ../nvim
@@ -4574,7 +4566,6 @@ cat .local/share/applications/jupyter-notebook.desktop
 sudo mv neovide.desktop /usr/share/applications
 v nvim.desktop
 sudo v neovide.desktop
-cd ..
 cd bin
 cd local/bin
 chmod u+x launch-neovide
@@ -4608,9 +4599,7 @@ d se kitty
 d in kitty
 v .hyper.js
 cd dev
-cd Dev
 cargo install alacritty
-\:q
 neovide
 which alacritty
 ls .cargo/bin
@@ -4641,7 +4630,6 @@ sudo v alacritty.desktop
 ./Documents/ZeD/repos/GenESeSS_/bin/genESeSS -h
 google-chrome graph. 
 google-chrome graph.png
-cd repos/patternly
 du -h Downloads
 exa
 exa --icons --group-directories-first
@@ -4654,7 +4642,6 @@ d rm google-chrome-unstable
 d rm davinci
 d rm davinci-resolve
 du -h
-df -h
 cd Testing
 head -n 1 seq.dat >> seq_.data
 mv seq_.data seq_.dat
@@ -4696,8 +4683,6 @@ starship init zsh
 mkdir .config/starship
 touch .config/starship/config.toml
 cd zsh
-mkdir themes
-cd themes
 mkdir spaceshiprc
 rmdir spaceshiprc
 v spaceshiprc
@@ -4707,7 +4692,6 @@ cd zsh/themes
 lsa
 wait 1
 time
-time 1
 python -c "import time; time.wait(2)"
 exiyt
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- --help\
@@ -4775,9 +4759,7 @@ git remote set-head origin -a\
 rm -rf .config
 mkdir .config
 rm .netrwhist
-cd patternly
 nvide pa 
-cd Documents/College/Internships/Resume/
 d rm zathura
 d in zathura
 d se zathura
@@ -4787,15 +4769,12 @@ git remote add origin git@github.com:drewvlaz/resume.git
 g push --set-upstream origin master
 g add resume.tex resume.pdf
 g commit -m "update pdf"
-v resume.tex
 tmuz
 d se terminator
 d in terminator
 cat .tmux.conf
 l
 tmux --version
-v  
-tmux -h
 zsh -h
 zsh --help
 nvide patternly/detection.py
@@ -4807,21 +4786,14 @@ mv .tmux.conf .config/tmux/tmux.conf
 c
 ls | grep py
 xit
-v .scripts/syncdots
-.scripts/syncdots
 la .config
-nnncd
-cd Dev/dotfiles
 cd  
 tmux neww
 cp .config/tmux/tmux.conf .
 mv tmux.conf .tmux.conf
 rm .tmux.conf
-tmux
 exi
-lc
 tmux ls
-tmux a
 at
 ssh dietpi@192.168.1.134
 plex
@@ -4832,10 +4804,7 @@ g commit -m "add UnionFind class"
 sd
 cd .config
 killall tmux
-sc
 a
-se
-la
 rm -rf .tmux/plugins/tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm\
 
@@ -4847,10 +4816,8 @@ cat failed.csv | grep 1
 g add patternly/detection.py
 g commit -m "reduce clusters"
 g status
-g push
 v table.tex
 jt -h
-jt -l
 jt -t solarizedl -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f hack -lineh 150
 fc-list
 jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "Operator Mono Book Nerd Font Complete Mono" -lineh 150
@@ -4892,99 +4859,209 @@ cd chb01
 ...
 head -n 50 data/chb01/chb01-summary.txt
 v data/chb01/chb01-summary.txt
-cd Documents/ZeD/agitation_study
-tmux list-sessions
-cd Documents/ZeD/repos/patternly
-cd Documents/ZeD/anomaly_examples
-python
 cd Documents/ZeD/agitation_study'\
 
 cp AnomalyDetectionSingularPatient.ipynb AnomalyDetectionSingularPatient_.ipynb
 mv agitations_.csv agitations.csv
 v agitations_processed.csv
-v process.py
 python process.py
 v agitations.csv
 cd Documents/ZeD/agitation_study\
 
-jupyter notebook
 d up
-cl
-v
-cd Documents/ZeD/repos/patternly\
-
 python setup.py sdist bdist_wheel && pip uninstall -y patternly && pip install dist/patternly-0.0.31-py3-none-any.whl && rm -rf examples/zed_temp
 v patternly/detection.pyj
 v patternly/detection.py
-cd .local/share/nvim/
 mkdir site
-cd site
 mkdir pack
 mkdir pack/packer
-cd pack/packer
 mkdir start
-ls
-cd
 git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim\
 
-cd .config/nvim
 mkdir lua
 cd lua
 v plugins.lua
-..
 v init.vim
-cd Dev/neovide
 g pull,
 g pull
 cargo build --release
 ./target/release/neovide
+cd .local/share/nvim/
+cd site
+cd pack/packer
+cd opt
+cd start
+cd .vim
+cd autoload
+cd plugged
+rm -rf plugged
+df -h
+g push
+v .scripts/syncdots
+cd Dev/dotfiles
+.scripts/syncdots
+gc
+gc -h
+goog
+google
+google 
+curl cht.sh/python/set
+curl cht.sh/python/class
+sxiv .
+pytho
+python
+v tokyo-night.yaml
+cd repos/patternly
+cd ../repos/patternly
+time 1
+time 2
+mkdir themes
+mv dracula.yml tokyo-night.yaml themes
+mv tokyo-night.yaml tokyo-night.yml
+v dracula.yml
+cd Documents/ZeD/repos/patternly\
+
+cl;
+cd Dev/neovide
+cd Dev
+cd ..
+cd patternly
+sleep 3
+lsd
+cd Documents/College/Internships/Resume/
+v resume.tex
+nvide resume.tex
+du -h data
+cd Documents/ZeD/agitation_study
+jupyter notebook
+v 
+jt -l
+jt -t chesterish -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "firacode" -lineh 150
+jt -t grade3 -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "firacode" -lineh 150
+jt -t grade3 -T -cellw 1400 -kl -N -ofs 11 -dfs 10 -f "firacode" -lineh 150
+jt -t grade3 -T -cellw 1300 -kl -N -ofs 11 -dfs 10 -f "firacode" -lineh 150
+tmux -h
+man tmux
+tmux attach
+cd Documents/ZeD/anomaly_examples
+nnncd
+cd .config/nvim
+mv onedark.vim themes.vim
+mv themes.vim theme.vim
+v process.py
+v
+\:q
+cd .config/alacritty
+cd themes
+v ayu-dark.yml
+lc
+v themes/ayu-dark.yml
+v themes/ayu-mirage.yml
+tmux list-sessions
+v themes/night-owl.yml
+v themes/monokai-pro.yml
+v themes/molokai.yml
+v al
+v themes/nightfly.yml
+v themes/argonaut.yml
+v alacritty.yml
+sleep 2
+cd Documents/ZeD/repos/patternly
+tmux a
+which ls
+which se
+v ~/.config/zsh/aliasrc
+..
+la
+du -h .
+du -h --exclude='.git data'
+du -h --exclude='.git, data'
+du -h --exclude='[.git|data]'
+du -h --exclude='.git|data'
+du -h --exclude='data'
+du -h --exclude={'data', '.git'}
+du -h --exclude='(.git|data)'
+du -h --exclude='((.git)|(data))'
+du -h --exclude='((\.git)|(data))'
+du -h --exclude='.git'
+du -h  --exclude='data' --exclude='.git'
+du -h  --exclude='data' --exclude='.git' --exclude="boost"
+du -h  --exclude='data' --exclude='.git' --exclude='boost' --exclude='*temp'
+du -h  --exclude='data' --exclude='.git' --exclude='boost' --exclude='*temp' --exclude='venv' | wc -l
+du -h  --exclude='data' --exclude='.git' --exclude='boost' --exclude='*temp' --exclude='venv'
+xclip
+exti
+tmux
+echo "du -h  --exclude='data' --exclude='.git' --exclude='boost' --exclude='*temp' --exclude='venv'"
+toclip
+echo "du -h  --exclude='data' --exclude='.git' --exclude='boost' --exclude='*temp' --exclude='venv'" | xclip
+echo "du -h  --exclude='data' --exclude='.git' --exclude='boost' --exclude='*temp' --exclude='venv'" | toclip
+xargs
+echo "~/Documents"
+echo "~/Documents" 
+echo "~/Documents" | xargs cd
+echo "~/Documents" | xargs -r cd
+man xargs
+echo "~/Documents" | cd
+man cd
+cd Documents
+cd `echo "~/Documents"`
+cd `echo "Documents"`
+cd ~/Documents
+proj
+popen
+man du
+cd Documents/College
+mv Year\ 1 Year1
+mv Year\ 2 Year2
+s
+op
+cl
+cd
+se
+ls
+sc
 exit
-: 1631550392:0;cd .local/share/nvim/
-: 1631550393:0;ls
-: 1631550396:0;cd site
-: 1631550396:0;ls
-: 1631550398:0;cd pack/packer
-: 1631550399:0;ls
-: 1631550401:0;cd opt
-: 1631550402:0;ls
-: 1631550403:0;..
-: 1631550404:0;cd start
-: 1631550405:0;ls
-: 1631550418:0;cd
-: 1631550418:0;ls
-: 1631550422:0;cd .vim
-: 1631550423:0;ls
-: 1631550425:0;cd autoload
-: 1631550425:0;ls
-: 1631550427:0;cd plugged
-: 1631550427:0;ls
-: 1631550432:0;..
-: 1631550435:0;rm -rf plugged
-: 1631550436:0;cd
-: 1631550439:0;df -h
-: 1631550448:0;cl
-: 1631550452:0;cd Dev/dotfiles
-: 1631550461:0;.scripts/syncdots
-: 1631550466:0;cd
-: 1631550468:0;cl
-: 1631550533:0;cd Dev/dotfiles
-: 1631550538:0;cd .config/nvim
-: 1631550538:0;ls
-: 1631550540:0;..
-: 1631550543:0;g push
-: 1631550552:0;v .scripts/syncdots
-: 1631550565:0;cl
-: 1631550611:0;se
-: 1631550688:0;.scripts/syncdots
-: 1631550698:0;g push
-: 1631550704:0;v .scripts/syncdots
-: 1631550711:0;.scripts/syncdots
-: 1631550715:0;v .scripts/syncdots
-: 1631550720:0;.scripts/syncdots
-: 1631550724:0;v .scripts/syncdots
-: 1631550730:0;ls
-: 1631550731:0;v .scripts/syncdots
-: 1631550743:0;cd
-: 1631550745:0;v .scripts/syncdots
-: 1631550755:0;cd Dev/dotfiles
-: 1631550756:0;.scripts/syncdots
+: 1631655492:0;op
+: 1631655501:0;ls
+: 1631655521:0;...
+: 1631655527:0;du 
+: 1631655532:0;du */
+: 1631655555:0;cd
+: 1631655556:0;op
+: 1631655558:0;ls
+: 1631655560:0;cd Discrete\ Math
+: 1631655560:0;ls
+: 1631655563:0;...
+: 1631655563:0;cd
+: 1631655564:0;ls
+: 1631655565:0;cl
+: 1631655569:0;tmux list-sessions
+: 1631655573:0;tmux a
+: 1631655575:0;cl
+: 1631655576:0;cd
+: 1631655577:0;op
+: 1631655578:0;sc
+: 1631655581:0;cl
+: 1631655582:0;op
+: 1631655585:0;ls
+: 1631655587:0;op
+: 1631655591:0;ls
+: 1631655592:0;op
+: 1631655594:0;ls
+: 1631655594:0;cl
+: 1631655596:0;cd
+: 1631655597:0;op
+: 1631655616:0;proj
+: 1631655622:0;cl
+: 1631655623:0;op
+: 1631655630:0;cl
+: 1631655633:0;ls
+: 1631655638:0;ls data | wc -l
+: 1631655645:0;du -h data
+: 1631655648:0;cl
+: 1631655709:0;cd
+: 1631655713:0;cd Dev/dotfile
+: 1631655714:0;cd Dev/dotfiles
+: 1631655715:0;ls
+: 1631655717:0;.scripts/syncdots

@@ -21,7 +21,7 @@ luafile ~/.config/nvim/plug-config/telescope.lua
 
 
 " ----- THEMES -----
-source ~/.config/nvim/themes/onedark.vim
+source ~/.config/nvim/themes/theme.vim
 source ~/.config/nvim/themes/airline.vim
 
 " ----- BASIC OPTIONS ---

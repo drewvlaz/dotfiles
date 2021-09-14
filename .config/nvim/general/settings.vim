@@ -9,7 +9,6 @@ set splitbelow splitright		        " Splits in appropriate direction
 set tabstop=4                           " Insert 4 spaces for a tab
 set shiftwidth=4                        " Change the number of space characters inserted for indentation
 " set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
-set smartindent
 set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
@@ -21,6 +20,8 @@ set updatetime=300                      " Faster completion
 set timeoutlen=400                      " By default timeoutlen is 1000 ms
 set smartcase
 " set foldmethod=indent                   " fold using indentation
+set smartcase
+set scroll=15
 
 " AESTHETIC
 syntax on                               " Enable syntax highlighting

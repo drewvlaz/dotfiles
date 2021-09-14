@@ -38,10 +38,10 @@ $line_break\
 # ❮❯
 success_symbol = "[](bold green)"
 error_symbol = "[✗](bold red)"
-vicmd_symbol = "[](bold yellow dimmed)"
+vicmd_symbol = "[](bold yellow)"
 
 [directory]
-format = "[\\[](bold yellow)[$path]($style)[$read_only]($read_only_style)[\\]](bold yellow) "
+format = '[{](bold yellow)[$path]($style)[$read_only]($read_only_style)[}](bold yellow) '
 style = "bold cyan"
 read_only_style = "red"
 truncation_length = 6
@@ -51,7 +51,7 @@ home_symbol = "~"
 read_only = " 🔒"	
 
 [git_branch]
-format = "on [$symbol$branch]($style) "	
+format = "[on](italic) [$symbol$branch]($style) "	
 style = "bold green"
 symbol = " "
 truncation_length = 4
@@ -84,24 +84,26 @@ deleted_style = "bold red"
 disabled = false
 
 [cmd_duration]
-format = "took [$duration]($style)"
-style = "yellow dimmed"
+format = "[took](italic) [$duration]($style)"
+style = "yellow"
 min_time = 2_000
 show_milliseconds = true
 show_notifications = true
 min_time_to_notify = 30_000
 
 [time]
+format = "[at](italic) [$time]($style) "
 disabled = false
-style = "red dimmed bold"
+style = "bold italic green"
 
 [package]
-format = "is [$symbol$version]($style) "
+format = "[is](italic) [$symbol$version]($style) "
 symbol = " " 
 
 [python]
-format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'	
+format = '[via](italic) [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'	
 symbol = " "
+style = "yellow"
 pyenv_version_name = true
 version_format = "v${raw}"	
 detect_extensions = []

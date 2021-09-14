@@ -23,9 +23,9 @@ alias \
     sc="source ~/.zshrc" \
     evc="$EDITOR ~/.config/nvim/init.vim" \
     f="$FILE" \
-    e="emacs" \
     v="$EDITOR" \
     ff="firefox" \
+    google="google-chrome" \
     toclip="xclip -selection c" \
     p="sudo pacman" \
     d="sudo dnf" \
@@ -66,10 +66,27 @@ se() {
     ~/.config/sxiv \
     ~/.config/tmux \
     ~/.config/zsh \
-    ~/.scripts |
+    ~/.scripts \
+    --exclude='.git' |
     awk '{print $2}' |
     fzf |
     xargs -r $EDITOR ;
+}
+
+op() {
+    cd `du -d 8 \
+    ~/Documents/ZeD/ \
+    ~/Documents/College/ \
+    --exclude='.git' \
+    --exclude='.github' \
+    --exclude='.vim' \
+    --exclude='data' \
+    --exclude='boost' \
+    --exclude='venv' \
+    --exclude='__pycache__' \
+    --exclude='*temp' |
+    awk '{print $2}' |
+    fzf`
 }
 
 randp() {

@@ -15,6 +15,7 @@ return require('packer').startup(function()
     use 'luochen1990/rainbow'                              -- colorize pairs
     use 'unblevable/quick-scope'                           -- enhanced f, F, t, T
     use 'justinmk/vim-sneak'                               -- two letter jump to
+    use 'nvim-lua/popup.nvim'                            -- better fzf
     use 'nvim-lua/plenary.nvim'                            -- better fzf
     use 'nvim-telescope/telescope.nvim'                    -- better fzf
     use 'ap/vim-css-color'                                 -- highlight hex colors
@@ -22,6 +23,11 @@ return require('packer').startup(function()
     use 'junegunn/limelight.vim'                           -- light up only focused text
     use 'tpope/vim-commentary'                             -- better commenting
     use 'mhinz/vim-startify'                               -- add start screen to vim
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
+    use 'nvim-treesitter/playground'
     
     --AESTHETIC
     -- themes
@@ -33,6 +39,8 @@ return require('packer').startup(function()
     use {'embark-theme/vim', as = 'embark' }
     use 'sainnhe/everforest'
     use 'sainnhe/sonokai'
+    -- use 'folke/tokyonight.nvim'
+    use 'ghifarit53/tokyonight-vim'
     -- line
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
