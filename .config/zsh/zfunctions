@@ -1,0 +1,99 @@
+#! /bin/bash
+
+lines() {
+    cat $1 | wc -l
+}
+
+se() {
+    du -a \
+    ~/.config/alacritty \
+    ~/.config/bspwm \
+    ~/.config/nvim \
+    ~/.config/polybar \
+    ~/.config/rofi \
+    ~/.config/sxhkd \
+    ~/.config/sxiv \
+    ~/.config/tmux \
+    ~/.config/zsh \
+    ~/.scripts \
+    --exclude='.git' |
+    awk '{print $2}' |
+    fzf |
+    xargs -r $EDITOR ;
+}
+
+sd() {
+    dir=$(
+        du -d 8 \
+        ~/Documents/ZeD/ \
+        ~/Documents/College/ \
+        ~/.config/alacritty \
+        ~/.config/bspwm \
+        ~/.config/nvim \
+        ~/.config/polybar \
+        ~/.config/rofi \
+        ~/.config/sxhkd \
+        ~/.config/sxiv \
+        ~/.config/tmux \
+        ~/.config/zsh \
+        ~/.scripts \
+        --exclude='.git' \
+        --exclude='.github' \
+        --exclude='.vim' \
+        --exclude='data' \
+        --exclude='boost' \
+        --exclude='venv' \
+        --exclude='__pycache__' \
+        --exclude='*temp' |
+        awk '{print $2}' |
+        fzf
+    )
+    retVal=$?
+
+    if [ $retVal -eq 0 ]; then
+        cd $dir
+    fi
+}
+
+sdls() {
+    sd
+    if [ $retVal -eq 0 ]; then
+        ls
+    fi
+}
+
+tat() {
+    session=$(tmux ls | cut -d: -f1 | fzf)
+    retVal=$?
+    if [ $retVal -eq 0 ]; then
+        tmux attach -t $session
+    fi
+}
+
+randp() {
+    if [ -n "$1" ]; then
+        dir=$1
+    fi
+    du -a | 
+    grep -i -E '\.(png|jpg|jpeg|gif)$' |
+    shuf -n 1000 | 
+    sed 's/\ |\(|\)/\\\ /g' | # Put a "\" before spaces
+    awk '{for (i=2; i<NF; i++) printf $i " "; print $NF}' | # Remove leading numbers
+    sxiv -i -t
+}
+
+# pkgsizes() {
+#     pacman -Qei | 
+#     gawk '/^Name/ { x = $3 }; /^Installed Size/ { sub(/Installed Size  *:/, ""); print x":" $0 }' |
+#     grep MiB |
+#     sort -k2,3nr |
+#     less
+# }
+
+# texclean() {
+#     du -a | 
+#     awk '{print $2}' | 
+#     grep -E '(\.|\_)(aux|fdb|fls|log|synctex|minted)' | 
+#     sed 's/.\///g' | 
+#     xargs rm -rf
+# }

@@ -17,11 +17,13 @@ set nowritebackup                       " This is recommended by coc
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set backspace=indent,eol,start		    " Proper backspace functionality
 set updatetime=300                      " Faster completion
-set timeoutlen=400                      " By default timeoutlen is 1000 ms
+set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set smartcase
 " set foldmethod=indent                   " fold using indentation
 set smartcase
 set scroll=15
+set spelllang=en,cjk
+set spellsuggest=9,best
 
 " AESTHETIC
 syntax on                               " Enable syntax highlighting
@@ -36,7 +38,7 @@ set conceallevel=2                      " So that I can see `` in markdown files
 set laststatus=2                        " Always display the status line
 set scrolloff=5                         " Keep cursor X lines away from edge when scrolling
 set noshowmode                          " Disable showing mode at bottom
-set t_Co=256                            " Support 256 colors
+" set t_Co=256                            " Support 256 colors
 " set signcolumn=no                       " Remove bar on left side, has git info
 " set guifont=Fira\ Code\ Nerd\ Font:h13
 set guifont=OperatorMono\ Nerd\ Font\ Mono:h13

@@ -4,13 +4,14 @@
 #  _ / /\__ \ | | | | | (__
 # (_)___|___/_| |_|_|  \___|
 
-# Welcome message
-# fortune -s -n 260 | cowsay -W 38 -f cower | lolcat
+# Welcome message, don't display in tmux
+# fortune -s -n 150 | cowsay -W 38 -f cower | lolcat
+[ -z "${TMUX}" ] && [ -f "$HOME/.scripts/hashbang.sh" ] && "$HOME/.scripts/hashbang.sh"
 
 # Enable colors and change prompt:
 autoload -U colors && colors
-#PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-PS1="%B%{$fg[red]%}[%{$fg[magenta]%}%~%{$fg[red]%}]%{$fg[blue]%}$%{$reset_color%}%b "
+# PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+# PS1="%B%{$fg[red]%}[%{$fg[magenta]%}%~%{$fg[red]%}]%{$fg[blue]%}$%{$reset_color%}%b "
 
 # Preferences
 setopt autocd # Automatically cd into typed directory
@@ -36,13 +37,14 @@ export EDITOR=nvim
 export BROWSER=firefox
 export FILEMANAGER=nautilus
 export RUST_BACKTRACE=full
-export TERM=xterm-256color
 export STARSHIP_CONFIG=~/.config/zsh/themes/starship/config.toml
+# export TERM=xterm-256color
+# Prevent double first character in commands
+export LC_CTYPE=en_US.UTF-8
 
 # Applications
-export DOOMDIR=~/.config/doom
 export FZF_DEFAULT_OPTS="--layout=reverse --height=10"
-eval $(thefuck --alias)
+eval "$(thefuck --alias)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
@@ -92,7 +94,7 @@ echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 # Use lf to switch directories
-lfcd () {
+lfcd() {
     tmp="$(mktemp)"
     nnn -last-dir-path="$tmp" "$@"
     if [ -f "$tmp" ]; then
@@ -101,8 +103,9 @@ lfcd () {
         [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
     fi
 }
+
 # Use nnn to switch directories
-nnncd () {
+nnncd() {
     # Block nesting of nnn in subshells
     if [ -n $NNNLVL ] && [ "${NNNLVL:-0}" -ge 1 ]; then
         echo "nnn is already running"
@@ -140,30 +143,28 @@ bindkey '^e' edit-command-line
 
 # Load aliases if exist
 [ -f "$HOME/.config/zsh/aliasrc" ] && source "$HOME/.config/zsh/aliasrc"
-
+[ -f "$HOME/.config/zsh/zfunctions" ] && source "$HOME/.config/zsh/zfunctions"
 
 # Load themes
 eval "$(starship init zsh)"
 # source "$HOME/.config/zsh/themes/spaceshiprc"
 
-# Prevent double first character in commands
-export LC_CTYPE=en_US.UTF-8
+# Load extensions ; should be last.
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 # __conda_setup="$('/usr/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 # if [ $? -eq 0 ]; then
-    # eval "$__conda_setup"
+#     eval "$__conda_setup"
 # else
-    # if [ -f "/usr/etc/profile.d/conda.sh" ]; then
-        # . "/usr/etc/profile.d/conda.sh"
-    # else
-        # export PATH="/usr/bin:$PATH"
-    # fi
+#     if [ -f "/usr/etc/profile.d/conda.sh" ]; then
+#         . "/usr/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/usr/bin:$PATH"
+#     fi
 # fi
 # unset __conda_setup
 # <<< conda initialize <<<
 
-# Load extensions ; should be last.
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null

@@ -4,6 +4,7 @@
   // python config
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
+  "diagnostic.checkCurrentLine": true,
 
   "snippets.ultisnips.directories":
   [

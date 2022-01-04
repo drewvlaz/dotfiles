@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Root
 alias sudo='sudo '
 
@@ -8,9 +10,8 @@ alias \
     grep="grep --color=auto" \
     la="ls -a" \
     ll="ls -al"  \
-    cp="cp -v" \
-    yt="youtube-dl --add-metadata -i" \
-	yta="yt -x -f bestaudio/best --audio-format mp3"
+    cp="cp -v -r" \
+    :q="exit" \
 
 # Common commands that are just too long
 alias \
@@ -29,11 +30,14 @@ alias \
     toclip="xclip -selection c" \
     p="sudo pacman" \
     d="sudo dnf" \
+    drm="sudo dnf remove" \
     yeet="yay -Rns" \
     ws="windscribe" \
     wsc="windscribe connect" \
     wsd="windscribe disconnect" \
-    stdconvert="convert -resize 1240x1750 -gravity center extent 1240x1750 -units PixelsPerInch -density 150"
+    stdconvert="convert -resize 1240x1750 -gravity center extent 1240x1750 -units PixelsPerInch -density 150" \
+    yt="youtube-dl --add-metadata -i" \
+	yta="yt -x -f bestaudio/best --audio-format mp3"
 
 # Improved commands
 alias \
@@ -42,77 +46,7 @@ alias \
     ls="exa --icons --group-directories-first" \
     fetch="neofetch --ascii_colors 4 4 --colors 11 8 8 11 8 7" \
     gccc="gcc -Wall -Werror" \
-    nvide="neovide --frameless --geometry 145x45"
-
-# Functions
-se() {
-    # du -a ~/.config/* ~/.scripts/* \
-    # --exclude='Code*'\
-    # --exclude='gtk*'\
-    # --exclude='chromium'\
-    # --exclude='Postman'\
-    # --exclude='discord'\
-    # --exclude='KDE'\
-    # --exclude='kde.org'\
-    # --exclude='Notion'\
-    # --exclude='gnome-*' |
-    du -a \
-    ~/.config/alacritty \
-    ~/.config/bspwm \
-    ~/.config/nvim \
-    ~/.config/polybar \
-    ~/.config/rofi \
-    ~/.config/sxhkd \
-    ~/.config/sxiv \
-    ~/.config/tmux \
-    ~/.config/zsh \
-    ~/.scripts \
-    --exclude='.git' |
-    awk '{print $2}' |
-    fzf |
-    xargs -r $EDITOR ;
-}
-
-op() {
-    cd `du -d 8 \
-    ~/Documents/ZeD/ \
-    ~/Documents/College/ \
-    --exclude='.git' \
-    --exclude='.github' \
-    --exclude='.vim' \
-    --exclude='data' \
-    --exclude='boost' \
-    --exclude='venv' \
-    --exclude='__pycache__' \
-    --exclude='*temp' |
-    awk '{print $2}' |
-    fzf`
-}
-
-randp() {
-    if [ -n "$1" ]; then
-        dir=$1
-    fi
-    du -a | 
-    grep -i -E '\.(png|jpg|jpeg|gif)$' |
-    shuf -n 1000 | 
-    sed 's/\ |\(|\)/\\\ /g' | # Put a "\" before spaces
-    awk '{for (i=2; i<NF; i++) printf $i " "; print $NF}' | # Remove leading numbers
-    sxiv -i -t
-}
-
-pkgsizes() {
-    pacman -Qei | 
-    gawk '/^Name/ { x = $3 }; /^Installed Size/ { sub(/Installed Size  *:/, ""); print x":" $0 }' |
-    grep MiB |
-    sort -k2,3nr |
-    less
-}
-
-texclean() {
-    du -a | 
-    awk '{print $2}' | 
-    grep -E '(\.|\_)(aux|fdb|fls|log|synctex|minted)' | 
-    sed 's/.\///g' | 
-    xargs rm -rf
-}
+    nvide="neovide --frameless --geometry 145x45" \
+    fzf="fzf --prompt='> ' --pointer='> '" \
+    please="sudo !!" \
+    plz="sudo !!" \

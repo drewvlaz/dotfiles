@@ -50,10 +50,10 @@ nnoremap <silent> <M-h> :vertical resize -2<CR>
 nnoremap <silent> <M-l> :vertical resize +2<CR>
 
 " Move windows
-nnoremap <silent> <C-H> <C-w>H
-nnoremap <silent> <C-J> <C-w>J
-nnoremap <silent> <C-K> <C-w>K
-nnoremap <silent> <C-L> <C-w>L
+" nnoremap <silent> <C-H> <C-w>H
+" nnoremap <silent> <C-J> <C-w>J
+" nnoremap <silent> <C-K> <C-w>K
+" nnoremap <silent> <C-L> <C-w>L
 
 " Set undo break points
 inoremap , ,<C-g>u
@@ -67,8 +67,8 @@ vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
 " Better nav for omnicomplete
-inoremap <expr> <c-j> ("\<C-n>")
-inoremap <expr> <c-k> ("\<C-p>")
+inoremap <expr> <C-j> ("\<C-n>")
+inoremap <expr> <C-k> ("\<C-p>")
 
 " TAB and SHIFT TAB to navigate buffers
 nnoremap <silent> <TAB> :bnext<CR>
@@ -87,7 +87,7 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Folding options
-nnoremap <silent> <CR> @=(foldlevel('.')?'za':"j")<CR>
+" nnoremap <silent> <CR> @=(foldlevel('.')?'za':"j")<CR>
 " vnoremap <CR> zf
 
 " Copy paste using system clipboard (requires xsel)
@@ -100,6 +100,10 @@ nnoremap ` '
 
 " Editing
 nnoremap <silent> <leader>; $a;<ESC>
+inoremap <C-BS> <C-w>
+inoremap  <C-w>
+inoremap <C-q> <C-\><C-o>dB
+
 
 " Clear search highlights
 nnoremap <silent> <leader><Esc> <Esc>:nohlsearch<CR><Esc>
@@ -108,7 +112,8 @@ nnoremap <silent> <leader><Esc> <Esc>:nohlsearch<CR><Esc>
 nnoremap !! @:
 
 " Close buffer
-nnoremap <silent> <leader>bd :bd<CR>
+nnoremap <silent> <leader>x :bd<CR>
+nnoremap <silent> <C-w> :bd<CR>
 
 " Save and close buffer
 :command Wd write|bdelete
@@ -124,17 +129,27 @@ function! <SID>SynStack()
 endfunc
 nnoremap <C-p> :call <SID>SynStack()<CR>
 
+" LaTeX
+nnoremap <leader>$ ciW$$<ESC>P
+nnoremap <leader>fm ciW$$<ESC>P
+" inoremap begenum \begin{enumerate}<ESC>yypjlciwend
+
+" Editing text files
+nnoremap <leader>et :set wrap linebreak spell nocursorline<CR>
+nnoremap <leader>sp z=
+
 "----- PACKAGES -----
 
 " invert two consecutive blocks of code
-" nnoremap gcik gcckgcc
-" nnoremap gcij gccjgcc
+nmap gcik gcckgcc
+nmap gcij gccjgcc
+nmap gC gcc
 
 nnoremap <silent> <leader>g :Goyo<CR>
 nnoremap <silent> <Leader>ll :Limelight!!<CR>
-nnoremap <silent> <leader>n :NERDTreeToggle<CR>
-vnoremap ++ <plug>NERDCommenterToggle
-nnoremap ++ <plug>NERDCommenterToggle
+" NvimTreeOpen, NvimTreeClose and NvimTreeFocus are also available if you need them
+nnoremap <C-n> :NvimTreeToggle<CR>
+
 
 " Find files using Telescope command-line sugar.
 " nnoremap <leader>ff <cmd>Telescope find_files<cr>

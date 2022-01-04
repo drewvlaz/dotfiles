@@ -12,13 +12,12 @@ let g:tokyonight_style = 'storm'
 let g:tokyonight_enable_italic = 1
 
 " colorscheme onedark
-" colorscheme OceanicNext
-colorscheme night-owl
+" colorscheme night-owl
 " colorscheme flattened_dark
 " colorscheme gotham256
 " colorscheme gruvbox
 " colorscheme embark
-" colorscheme everforest
+colorscheme everforest
 " colorscheme sonokai
 " colorscheme tokyonight
 
@@ -27,17 +26,20 @@ colorscheme night-owl
 " syn region pythonFunctionKwargs start=+(+ end=+)+ contains=@pythonExpression
 
 " apply on colorscheme changes
-augroup special_formatting
+" augroup special_formatting
     autocmd!
 
     " italics for operator mono font
     autocmd Colorscheme * hi Comment gui=italic cterm=italic
+    " autocmd Colorscheme * hi Comment gui=italic cterm=italic guifg=#757590  " better comments for tokyonight
     autocmd Colorscheme * hi String gui=italic cterm=italic
     " autocmd Colorscheme * hi pythonFunctionKeyword gui=italic cterm=italic
 
     " transparent window
-    " autocmd ColorScheme * hi Normal ctermbg=none guibg=none
-    " autocmd ColorScheme * hi NonText ctermbg=none guibg=none
+    autocmd ColorScheme * hi Normal ctermbg=none guibg=none
+    autocmd ColorScheme * hi NonText ctermbg=none guibg=none
+    autocmd ColorScheme * hi SignColumn guibg=NONE ctermbg=NONE
+    autocmd ColorScheme * hi EndOfBuffer guibg=NONE ctermbg=NONE
 
     " just use the terminal's background color
     " autocmd ColorScheme * hi Normal guibg=NONE ctermbg=NONE

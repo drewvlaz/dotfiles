@@ -12,10 +12,11 @@ sxhkd &
 xwallpaper --zoom ~/.config/wall/bg &
 ~/.config/polybar/launch.sh &
 picom &
+xset r rate 380 60
 
 #### MONITORS ####
-bspc monitor eDP1 -d I II III IV V VI VII VIII IX X
-bspc monitor DP1-1 -d I II III IV V VI VII VIII IX X
+bspc monitor eDP-1 -d I II III IV V VI VII VIII IX X
+bspc monitor DP-1-1 -d I II III IV V VI VII VIII IX X
 
 #### BSPWM Configuration ####
 #bspc config border_radius                8

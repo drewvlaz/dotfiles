@@ -1,0 +1,40 @@
+#!/bin/bash
+
+dir=$(
+    du -d 8 \
+    ~/Documents/ZeD/ ~/Documents/College/ \
+    --exclude='.git' --exclude='.github' --exclude='.vim' --exclude='data' \
+    --exclude='boost' --exclude='venv' --exclude='__pycache__' --exclude='*temp' |
+    awk '{print $2}' |
+    fzf
+)
+
+# check whether a directory was chosen
+fzfRetVal=$?
+if [ $fzfRetVal -eq 0 ]; then
+    cd $dir
+else
+    exit
+fi
+
+# set up tmux
+windowName="main"
+sessionName="IDE-$(basename "$PWD")"
+ideExists=$(tmux ls | grep "$sessionName" | wc -l)
+
+if [ $ideExists -eq 0 ]; then
+    tmux new-session -s "$sessionName" -n "$windowName" -d
+fi
+
+# tmux send-keys -t "$sessionName:$windowName" "tmux split-window -t '$sessionName:$windowName' -l 5" Enter
+# tmux split-window -t "$sessionName:$windowName" -l 1
+# tmux select-pane -t "$sessionName:$windowName" -U
+# tmux send-keys -t "$sessionName:$windowName" "$EDITOR ." Enter
+tmux new-window -t "$sessionName" -n "term"
+tmux select-window -t "$sessionName:$windowName"
+
+if [ -z "${TMUX}" ]; then
+    tmux attach -t "$sessionName"
+else
+    tmux switch-client -t "$sessionName"
+fi
