@@ -18,6 +18,7 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set backspace=indent,eol,start		    " Proper backspace functionality
 set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
+set nofoldenable                        " Disable folding
 set smartcase
 " set foldmethod=indent                   " fold using indentation
 set smartcase
@@ -28,7 +29,7 @@ set spellsuggest=9,best
 " AESTHETIC
 syntax on                               " Enable syntax highlighting
 set number                              " Line numbers
-" set relativenumber		                " Relative line numbers
+set relativenumber		                " Relative line numbers
 set nowrap                              " Display long lines as just one line
 set ruler				                " Show the cursor position all the time
 set cursorline                          " Enable highlighting of the current line

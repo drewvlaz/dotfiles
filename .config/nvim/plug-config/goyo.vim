@@ -14,7 +14,7 @@ function! s:goyo_enter()
   norm mq
   norm 0
   norm `q
-  norm :delmarks q
+  " norm :delmarks q
 
   set noshowcmd
   set scrolloff=999

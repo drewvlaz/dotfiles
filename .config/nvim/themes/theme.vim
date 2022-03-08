@@ -17,21 +17,20 @@ let g:tokyonight_enable_italic = 1
 " colorscheme gotham256
 " colorscheme gruvbox
 " colorscheme embark
-colorscheme everforest
+" colorscheme everforest
 " colorscheme sonokai
-" colorscheme tokyonight
 
 " syn match pythonFunctionKeyword "\v\s{-}\zs\w+\ze\=(\=)@!(\_s)@!" display
 " syn cluster pythonExpression add=pythonFunctionKeyword
 " syn region pythonFunctionKwargs start=+(+ end=+)+ contains=@pythonExpression
 
 " apply on colorscheme changes
-" augroup special_formatting
+augroup special_formatting
     autocmd!
 
     " italics for operator mono font
     autocmd Colorscheme * hi Comment gui=italic cterm=italic
-    " autocmd Colorscheme * hi Comment gui=italic cterm=italic guifg=#757590  " better comments for tokyonight
+    autocmd Colorscheme * hi Comment gui=italic cterm=italic guifg=#757590  " better comments for tokyonight
     autocmd Colorscheme * hi String gui=italic cterm=italic
     " autocmd Colorscheme * hi pythonFunctionKeyword gui=italic cterm=italic
 
@@ -47,6 +46,8 @@ colorscheme everforest
     " autocmd ColorScheme * hi SignColumn guibg=NONE ctermbg=NONE
     " autocmd ColorScheme * hi EndOfBuffer guibg=NONE ctermbg=NONE
 augroup END
+
+colorscheme tokyonight
 
 
 " rainbow parenthesis

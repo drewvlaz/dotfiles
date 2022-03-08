@@ -37,7 +37,8 @@ alias \
     wsd="windscribe disconnect" \
     stdconvert="convert -resize 1240x1750 -gravity center extent 1240x1750 -units PixelsPerInch -density 150" \
     yt="youtube-dl --add-metadata -i" \
-	yta="yt -x -f bestaudio/best --audio-format mp3"
+	yta="yt -x -f bestaudio/best --audio-format mp3" \
+    hb="clear && $HOME/.scripts/hashbang.sh"
 
 # Improved commands
 alias \

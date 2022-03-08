@@ -15,7 +15,7 @@ let g:airline_right_alt_sep = ''
 " let g:airline_symbols.dirty='⚡'
 
 " Switch to your current theme
-let g:airline_theme = "sonokai"
+let g:airline_theme = "tokyonight"
 
 " We don't need to see things like -- INSERT -- anymore
 set noshowmode

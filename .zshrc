@@ -44,7 +44,7 @@ export LC_CTYPE=en_US.UTF-8
 
 # Applications
 export FZF_DEFAULT_OPTS="--layout=reverse --height=10"
-eval "$(thefuck --alias)"
+# eval "$(thefuck --alias)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 

@@ -79,8 +79,8 @@ nnoremap <silent> <BACKSPACE> <C-^>
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Renaming
- nmap <leader>rn <Plug>(coc-rename)
- nmap <F2> <Plug>(coc-rename)
+nmap <leader>rn <Plug>(coc-rename)
+nmap <F2> <Plug>(coc-rename)
 
 " Better indenting
 vnoremap < <gv
@@ -141,8 +141,8 @@ nnoremap <leader>sp z=
 "----- PACKAGES -----
 
 " invert two consecutive blocks of code
-nmap gcik gcckgcc
-nmap gcij gccjgcc
+" nmap gcik gcckgcc
+" nmap gcij gccjgcc
 nmap gC gcc
 
 nnoremap <silent> <leader>g :Goyo<CR>

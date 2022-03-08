@@ -1,384 +1,3 @@
-bt-device
-bt-device -l
-bt-audio
-"agent on\
-      trust $BT_DEV\
-       pair $BT_DEV\
-    connect $BT_DEV\
-    quit" bluetoothctl
-bluetoothctl
-mkdir ziped
-mv ziped zipped
-cd dry_study
-mv *.zip zipped
-neofetch
-d in npm
-jupyter labextension install jupyterlab_vim
-/home/drewvlaz/Documents/College/Internships/ZeD/venv/bin/python3.9 /home/drewvlaz/.vscode/extensions/ms-python.python-2021.4.765268190/pythonFiles/pyvsc-run-isolated.py /home/drewvlaz/.vscode/extensions/ms-python.python-2021.4.765268190/pythonFiles/shell_exec.py /home/drewvlaz/Documents/College/Internships/ZeD/venv/bin/python3.9 /home/drewvlaz/.vscode/extensions/ms-python.python-2021.4.765268190/pythonFiles/pyvsc-run-isolated.py pip install -U ipykernel /tmp/tmp-331267kPTn8znuzGu.log
-source /home/drewvlaz/Documents/College/Internships/ZeD/venv/bin/activate
-/home/drewvlaz/Documents/College/Internships/ZeD/venv/bin/python3.9 /home/drewvlaz/Documents/College/Internships/ZeD/dataclean.py
-cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Data\ Engineering\ CMSC\ 13600/cmsc13600-submit/hw2
-v analyze.py
-pip install matplotlib
-cd Documents/College/Internships/ZeD
-jupyter lab
-cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/
-make && valgrind ./csim -s 4 -E 4 -b 5 -t traces/long.trace
-svn commit -m "p3 add simulation abstraction"
-./csim -s 4 -E 4 -b 5 -t traces/long.trace
-make && 
-svn commit -m "p3 sscanf in lines"
-make && ./csim -s 4 -E 4 -b 5 -t traces/long.trace
-make && python2 driver.py
-svn commit -m "p3 commenting"
-cp -r hw4/ ../cmsc13600-submit
-cd ../cmsc13600-submit/hw4
-pip install dask
-pip install "dask[distributed]"\
-
-git add Homework\ 4.\ Python\ Dask\ Lab.ipynb
-g push -u origin laptop
-cd Internships/ZeD
-git clone https://github.com/zeroknowledgediscovery/GenESeSS_
-cd deploy
-cd doc
-cd cfg
-cd Xnn_
-cd xnn_/
-cd XNN_/
-d se zsh
-cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Data\ Engineering\ CMSC\ 13600/cmsc13600-materials
-cd /usr/share/
-sudo mkdir themes
-wget "https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/robbyrussell.zsh-theme"
-sudo wget "https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/robbyrussell.zsh-theme"
-cd Documents/College/Year\ 1/Autumn\ 20/Honors\ Intro\ CS.\ CMSC\ 16100
-cd assignments
-cd notes\&hw
-cd Lecture2
-v Sort.hs
-g commit -m "complete hw4"
-g add nycflights.csv
-g commit -m "added csv"
-g add Homework\ 4.\ Python\ Dask\ Lab.ipynb
-g commit -m "print final task"
-v Homework\ 4.\ Python\ Dask\ Lab.ipynb
-sudo cd
-npm install -g spaceship-prompt\
-
-sudo npm install -g spaceship-prompt
-v .npm/_logs/2021-05-08T03_40_29_793Z-debug.log
-cp -r .scripts ~/
-./syncdots
-d list installed | wc -l
-p10k configure
-dnf copr enable evana/fira-code-fonts
-sudo dnf copr enable evana/fira-code-fonts
-d install fira-code-fonts
-v /etc/locale.conf
-sudo chown -R $USER /usr/local/lib/node_modules
-sudo chown -R $USER /usr/local/lib
-d in l
-dnf install fira-code-fonts
-sudo dnf install fira-code-fonts
-fc-cache -f -v
-fc-list | grep "Hack"
-fc-list | grep "Fira"
-fc-list | grep "Cascadia"
-d in icons-in-terminal
-git clone https://github.com/sebastiencs/icons-in-terminal.git
-cd icons-in-terminal
-./install-autodetect.sh
-d se hyper
-d in hyper-3.0.2.x86_64.rpm
-d in powerline-fonts
-cd Dev/icons-in-terminal
-./print_icons.sh
-d se ls icons
-exa --icons
-where ls
-spaceship_vi_mode_enable
-spaceship_vi_mode_disable
-prompt -c
-prompt default
-prompt zefram
-prompt spaceship
-prompt adam1
-prompt fire
-npm 
-npm install -g spaceship-prompt
-v .zfunctions/prompt_spaceship_setup 
-ls --color
-ls --color always
-hyper i hyper-altair
-cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Data\ Engineering\ CMSC\ 13600/cmsc13600-submit/hw4
-hyper i hyper-ayu
-exc
-v ~/.hyper
-v ~/.hyper.js
-cd .irssi
-v config
-cd .hyper_plugins/
-cd cache
-cd v1
-cd npm-hyperterm-atom-dark-1.1.2-e10b0108d1298cc444e6c4fa83778cf07dfab059
-v index.js
-cwd
-v cmsc154gradescopemid.html
-cd cmsc154gradescopemid_files
-cd midterm
-ff Gradescope.html
-ls --icons
-ls | wc
-v logger.cc
-v tmppp
-v genESeSS_feature.cc
-cd XNn_
-cd xnn_
-google-chrome main.pdf
-git clone --recursive https://github.com/zeroknowledgediscovery/GenESeSS_
-cd Dev/
-git clone https://github.com/stavshamir/cython-c-wrapper
-cd cython-c-wrapper
-v ma
-v examples.c
-v examples.h
-v pyexamples.c
-d in python-dev
-d se python dev
-d in python3-dev
-rm pyexamples.c
-v makefile
-v pyexamples.cpython-39-x86_64-linux-gnu.so
-mv pyexamples.cpython-39-x86_64-linux-gnu.so pyexamples
-./pyexamples
-man ar
-rm pyexamples
-ssl
-python2 main.py
-python3 main.py
-which python
-cp ~/Dev/cython-c-wrapper/setup.py .
-v XgenESeSS.h 
-v X
-v XgenESeSS.h
-ls *.h
-v ge
-mv test.c race.c
-gcc -m32 -o race race.c && ./race
-v race.c
-scp race.c drewvlaz@linux.cs.uchicago.edu:~/cs/drewvlaz-cs154-spr-21/hw6
-svn commit -m "hw6 q1"
-d install dnf-plugin-system-upgrade --best
-d --refresh upgrade
-reboot
-d system-upgrade download --refresh --releasever=34
-d system-upgrade reboot
-scp .zshrc drewvlaz@linux.cs.uchicago.edu:~/
-scp -r /usr/share/zsh/plugins drewvlaz@linux.cs.uchicago.edu:~/.local
-scp -r .config/zsh drewvlaz@linux.cs.uchicago.edu:~/.config/
-scp -r .zfunctions drewvlaz@linux.cs.uchicago.edu:~/
-cll
-cl l
-cl -V
-clear -V
-which cl
-where cl
-which clear
-cl -x
-d in nnn
-svn commit -m "hw6 q2"
-svn commit -m "hw6 complete"
-svn commit -m "hw6 clarify race conditions"
-svn commit -m "hw6 formatting"
-d se boost lib
-d in boost-graph
-cd base
-d in gsl
-which gsl
-cd etc
-cd libexec
-cd sbin
-d in libgsl
-cd /usr/include
-d se libgsl
-d se gsl dev
-d se boost-devel
-cd /usr/bin/ld
-ld
-which ld
-cd ../lib
-cd ./zbase/lib
-ld -lm --verbose | grep succeed\\
-
-ld -lm --verbose | grep succee
-ld -lstdc++ --verbose | grep succee
-ld -lstdc --verbose | grep succee
-ld -lc --verbose | grep succee
-ld -static-libstdc++ --verbose | grep succeed
-d se stdc
-ld -libstdc++ --verbose | grep succeed
-ls | grep std
-ld -lstdc --verbose | grep succeed
-v genESeSS.o
-sudo chmod +x genESeSS.o
-./genESeSS.o
-ld -lzstdc++ --verbose | grep succeed
-ld -ldl --verbose | grep succeed
-ld -lgomp --verbose | grep succeed
-ln -s /usr/x86_64-redhat-linux/lib64/libboost_system.so /usr/lib64/libboost_system.so 
-cd /usr/
-cd -
-ln -s /usr/lib64/libboost_system.so /usr/x86_64-redhat-linux/lib64/libboost_system.so
-sudo ln -s /usr/lib64/libboost_system.so /usr/x86_64-redhat-linux/lib64/libboost_system.so
-ln -l /usr/x86_64-redhat-linux/lib64/libboost_system.so
-ls -l /usr/x86_64-redhat-linux/lib64/libboost_system.so
-sudo rm /usr/x86_64-redhat-linux/lib64/libboost_system.so
-locate libboost_system.so
-locate lboost_thread
-locate lboost_system.so
-locate lboost_thread.so
-locate libm
-ld -lm --verbose | grep succeed
-ls | grep lm
-ls | grep lm.so
-ls | grep lib.so
-ls | grep libm.so
-ls | grep libboost_system.so
-d in libtool
-libtool
-libtool --help
-ldconfig -v
-sudo ldconfig -v
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/lib64\
-ls\
-ls\
-exit\
-ls
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/lib64"
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/cisco/anyconnect/lib"
-export LD_LIBRARY_PATH=/opt/lib/
-make genESeSS 
-make genESeSS | grep boost_system.so
-make genESeSS | grep boost_system
-tar -xvf src.tgz
-make config.o
-make semantic.o
-d in gslcblas-devel
-d se gslcblas
-d se gsl
-cd zbase/
-make all
-make g
-make logger
-g checkout master
-git clone --recursive https://github.com/zeroknowledgediscovery/GenESeSS_ gen
-make genESeSS | grep lstdc
-make cle
-locate libstdc++.sp
-locate libstdc++.so
-d rm libstdc++-devel
-d in libstdc++-devel
-which libstdc++
-ls | grep libstdc
-ln -s libstdc++.so.6 libstdc++.so
-sudo ln -s libstdc++.so.6 libstdc++.so
-ld -lstdc++ --verbose | grep succeed
-make genESeSS | grep stdc
-cd /usr/local/lib64
-cd bpf
-d in libstdc++-static
-d in libm-static
-d in libldl-static
-d se libm
-d in libpthread-static
-d in libc-static
-d se libc static
-d in libcxx-static
-ls | grep c.a
-ls | grep c\.a
-ls | grep c
-ls | grep c\\.a
-ls | grep libm
-d se libm static
-locate libm.so
-mv genESeSS.pyd genESeSS.pyx
-ar rcs genESeSS.o genESeSS.a
-ar rcs libgenESeSS.a genESeSS.o
-mv libgenESeSS.a lib
-v genESeSS.pyd
-nm genESeSS.cpython-39-x86_64-linux-gnu.so --undefined | grep test
-nm genESeSS.cpython-39-x86_64-linux-gnu.so --undefined | grep ZTV
-nm genESeSS.cpython-39-x86_64-linux-gnu.so --undefined
-locate libm.a
-locate libboost_thread.a
-locate libboost_thread.so
-ls | grep libm\\.a
-ls | grep libboost_system\\/a
-ls | grep libboost_system\\.a
-$(shell python-config --exec-prefix)
-python-config --exec-prefix
-@python
-python-config --libs
-ld -lboost_python --verbose | grep succeed
-d se boost python
-d in boost-python3
-gcc -lboost_python
-gcc -lboost_python3
-gcc -lboost_python38
-ls | grep python
-gcc -lboost_python39
-./genESeSS -h
-./genESeSS -v
-rm libgenESeSS.a
-make libgenESeSS.a
-du -h libgenESeSS.a
-du -h genESeSS.o
-cp genESeSS.cc genESeSS.cpp
-cp zbase/config.h .
-cp zbase/semantic.h .
-cd gen
-rm semantic.h config.h
-rm genESeSS.o
-make genESeSS.o
-d in gsl-devel
-d in gsl-static
-d se gsl static
-rm libgsl.a
-rm libgslcblas.a
-v genESeSS.cpp
-cd Documents/College/Internships/ZeD/gen
-cd Dev/cython-c-wrapper
-rm genESeSSpxd
-rm genESeSS.pxd
-rm genESeSS.cpp
-mv test.py main.py
-v pyexamples.pyx
-v genESeSS.py
-v genESeSS.h
-mv gen GenESeSS_
-g branch pywrapper
-g checkout pywrapper
-diff Makefile
-cd Documents/College/Internships/ZeD/GenESeSS_
-cp main.py genESeSS.cpython-39-x86_64-linux-gnu.so ~/Dev/misc
-cd Dev/misc
-v genESeSS.cc
-py
-g add Makefile genESeSS_.cc genESeSS_.h genESeSS.pxd genESeSS.pyx setup.py
-make genESeSS_wrapper && python main.py
-g add genESeSS.pxd genESeSS.pyx
-g commit -m "cython compiles"
-./genESeSS -V
-g add Makefile genESeSS.pxd genESeSS.pyx
-g commit -m "wrap genESeSS.cc main()"
-g checkout genESeSS.cc
-rm genESeSS_.*
-rm genESeSS.c
-g add genESeSS_*
-g add genESeSS_.cc genESeSS_.h
-g commit -m "configure types"
-g checkout Makefile
 g diff 
 man rm
 g commit -m "fix imports"
@@ -1273,7 +892,6 @@ tail ACC.csv
 k
 p
 q
-r
 e
 t
 i
@@ -1543,7 +1161,6 @@ auditwheel repair dist/zutils-0.0.0-cp39-cp39-linux_x86_64.whl --plat manylinux2
 mkdir test
 rm -rf venv
 cp ../wheelhouse/zutils-0.0.0-cp39-cp39-linux_x86_64.whl .
-pip install pandas
 cp ../utils.py .
 wget https://boostorg.jfrog.io/artifactory/main/release/1.76.0/source/boost_1_76_0.tar.bz2
 mv utils.py utils_.py
@@ -2059,7 +1676,6 @@ cat ../python_implementations_/pyzutil_/Makefile
 cp ../anomaly_detection/data/covid_epidemiology.csv data
 cd Documents/ZeD/repos/python_implementations_/pyzutil_
 pip install dist/genESeSS-0.0.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
-v detection.py
 pip install dist/genesess-0.0.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
 mv adots ztsad
 cp ../anomaly_detection/detection.py ztsad/
@@ -2165,7 +1781,6 @@ pip3 install cython
 cat ad_temp/clean_19ffbe8f-f446-40c4-93b3-0e10875577e5
 ./bin/llk -sseq.txt -f result.txt
 ./bin/llk -sseq.txt -f ad_temp/clean_47af3768-e630-4992-8e06-79f92203e60e
-./bin/genESeSS -h
 cp test.csv ../anomaly_detection/data
 cat _test.csv
 v test.csv
@@ -2282,7 +1897,6 @@ strings zedsuite.cpython-39-x86_64-linux-gnu.so | grep Llk
 strings zedsuite.cpython-39-x86_64-linux-gnu.so | grep zedsuite
 ls build/lib.linux-x86_64-3.9
 ls build/lib.linux-x86_64-3.9/zedsuite
-l;s
 strings bootstrap.cpython-39-x86_64-linux-gnu.so
 python ../test.py
 cp -r ../zquantizer_ .
@@ -2317,7 +1931,6 @@ rm zedsuite/*.cpp
 strings bootstrap.cpython-39-x86_64-linux-gnu.so | grep PyInit
 rm bootstrap.cpython-39-x86_64-linux-gnu.so
 python setup.py build_ext --inplace
-cd zedsuite
 sudo rm -rf zedsuite.egg-info
 sudo rm -rf __pycache__ qu_temp wheelhouse
 unzip -l dist/zedsuite-0.0.1.tar.gz
@@ -2428,7 +2041,6 @@ ls data/1282601
 ls data | grep 1312349
 rm -rf partial_dataset/*
 ls partial_dataset
-ls session_agitations
 d in emacs
 cat .python_history
 rm a.out
@@ -2562,8 +2174,6 @@ du -h example/zed_temp/clean_58c2c360-7de2-4ddb-a173-65a3b6131700
 du -h example/zed_temp/clean_c6848157-bc5b-4e3b-921a-7f0b5ea1163c
 du -h example/zed_temp/clean_ccdee853-225d-4096-a8d3-38e5fc04ed20
 v agitation_study.tex
-ws logout
-ws login
 d se tex c
 d se tex cjk
 d in texlive-cjk
@@ -2890,7 +2500,6 @@ g commit -m "fix color clustering"
 g commit -m "define global vars"
 g commit -m "add overlapping windows"
 pip3 install patternly --user -U
-g add examples/Satellite_ts.ipynb
 g commit -m "pretty plotting"
 pip3 install ipykernel
 jupyter --version
@@ -3083,7 +2692,6 @@ make prun
 ../zutil_/bin/lsmash -f /home/drewvlaz/Documents/ZeD/repos/patternly/examples/zed_temp/clean_fe81cfa2-09b1-4570-bbbe-46dcc8aa2a8b
 cat H.dst
 ../zutil_/bin/lsmash -f examples/zed_temp/clean_fe81cfa2-09b1-4570-bbbe-46dcc8aa2a8b -o result.txt && cat result.txt
-v result.txt
 cat /home/drewvlaz/Documents/ZeD/repos/patternly/examples/zed_temp/clean_fe81cfa2-09b1-4570-bbbe-46dcc8aa2a8b
 g checkout zedsuite/zutil.pyx
 g checkout zedsuite/zutil.pxd
@@ -3151,9 +2759,7 @@ g checkout examples/example1.ipynb
 g add upload.sh
 g add version.py
 g commit -m "change version inc"
-pip uninstall patternly
 pip uninstall zedsuite
-pip install patternly
 g commit -m "updates docs"
 python setup.py sdist bdist_wheel && pip uninstall -y patternly && pip install dist/patternly-0.0.23-py3-none-any.whl && rm -rf examples/zed_temp
 v seq.dat
@@ -3182,7 +2788,6 @@ python ptest.py
 ./upload.sh "fix multi-cluster segfault"
 cd Documents/ZeD/ag
 time python test.py
-pip install jupyterthemes
 jt -t monokai
 jt -t onedork
 jt -t oceans16
@@ -3249,7 +2854,6 @@ g commit -m "update save/load model"
 g diff version.py
 ./upload.sh
 ./upload.sh "update deps"
-cd examples
 cp ../../data_smashing_/bin .
 cp -r ../../data_smashing_/bin .
 python setup.py sdist bdist_wheel && pip uninstall -y patternly && pip install dist/patternly-0.0.30-py3-none-any.whl && rm -rf examples/zed_temp
@@ -3335,7 +2939,6 @@ v q.dat
 head -n 5 q1.dat
 head -n 5 q.dat >> q1.dat
 ../repos/GenESeSS_/bin/genESeSS -f q1.dat -D "row" -T "symbolic" -F -e 0.1
-../repos/GenESeSS_/bin/genESeSS -h
 cat q1.dat
 v q1.dat
 ../repos/GenESeSS_/bin/genESeSS -f q1.dat -D "row" -T "symbolic" -e 0.1 -u 1
@@ -3444,7 +3047,6 @@ google-chrome ampersand_ampersand.liga.xml
 v ampersand_ampersand.liga.xml
 ./font-patcher -c operatormono/OperatorMono-BoldItalic.otf
 cp -r ~/.fonts/Operator\ Mono\ Nerd\ Font/* original
-v build.sh
 mv Operator\ Mono\ Book\ Nerd\ Font\ Complete.otf OperatorMono-Book.otf
 mv Operator\ Mono\ Book\ Italic\ Nerd\ Font\ Complete.otf OperatorMono-BookItalic.otf
 mv Operator\ Mono\ Bold\ Nerd\ Font\ Complete.otf OperatorMono-Bold.otf
@@ -3481,7 +3083,6 @@ cp ../Operator-Mono/Fonts/* operatormono
 ./font-patcher -c --mono operatormono/OperatorMono-Book.otf
 ./font-patcher -c --mono operatormono/OperatorMono-BookItalic.otf
 cp *.otf ~/.fonts/Operator\ Mono\ Nerd\ Font
-cd python_implementations_
 v zbase/semantic.cc
 v init.vim'\
 
@@ -3553,7 +3154,6 @@ d se libxext
 d in libXext-devel
 d in cmake
 cc
-v build.rs
 ls src
 g diff patternlyternly/detection.py
 g diff patternly/detection.py
@@ -3604,7 +3204,6 @@ cat .local/share/applications/jupyter-notebook.desktop
 sudo mv neovide.desktop /usr/share/applications
 v nvim.desktop
 sudo v neovide.desktop
-cd bin
 cd local/bin
 chmod u+x launch-neovide
 sudo v launch-neovide
@@ -3669,7 +3268,6 @@ d rm kitty
 which eve
 which ebe
 sudo rm /usr/bin/ebe
-d rm google-chrome-unstable
 d rm davinci
 d rm davinci-resolve
 head -n 1 seq.dat >> seq_.data
@@ -3684,7 +3282,6 @@ python gen.py
 ../Documents/ZeD/repos/zutil_/bin/llk -s seq.dat -f result_.txt
 ../Documents/ZeD/repos/zutil_/bin/llk -s seq.dat -f result.txt
 cat result
-cat result.txt
 tabbed alacritty --embed
 nvim /bin/sh +1 && c
 cd Testingl
@@ -3788,7 +3385,6 @@ nvide pa
 d rm zathura
 d in zathura
 d se zathura
-d in zathura-pdf-mupdf
 zathura resume.pdf
 git remote add origin git@github.com:drewvlaz/resume.git
 g push --set-upstream origin master
@@ -3818,7 +3414,6 @@ plex-media-player
 alksdfj
 g commit -m "add UnionFind class"
 killall tmux
-a
 rm -rf .tmux/plugins/tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm\
 
@@ -3975,15 +3570,11 @@ du
 du */
 cd Discrete\ Math
 proj
-du -h data
 cd Dev/dotfile
-cd Dev/dotfiles
-.scripts/syncdots
 op
 du -f
 scp
 v SeizureDetection.ipynb
-docker run --rm -ti -v $PWD:/opt/src:Z quay.io/pypa/manylinux1_x86_64
 scd
 sleep 2
 la data
@@ -4211,7 +3802,6 @@ se
 v id 
 tmux --version
 tmux -V
-d in tmux
 tmux list-sessions
 pat
 tmux neww 'vi'
@@ -4280,7 +3870,6 @@ tmux run-shell -t "IDE" ls
 tmux run-shell -t "IDE" $EDITOR .
 tmux run-shell -t "IDE" $EDITOR
 idee
-eixt
 tmux kill-session 8
 tmux kill-session -t 8
 tmux a -t IDE-patternly -d
@@ -4401,8 +3990,6 @@ sudo sshfs -o allow_other,default_permissions,IdentityFile=/home/drewvlaz/.ssh/i
 sudo umount /mnt/droplett
 sudo umount /mnt/droplet
 v scp://drewvlaz@linux.cs.uchicago.edu:~/
-cd /
-cd mount
 cd mnt
 pkill sshsf
 cd /mnt
@@ -4446,7 +4033,6 @@ v nvim-tree.vim
 ka google-chrome
 pkill google-chrome
 tmux a -t Jupyter
-s
 ide
 tmux ls | grep -E '*.^:'
 tmux ls | grep ':'
@@ -4481,11 +4067,9 @@ tmux ls
 mkdir chb02
 htop
 b
-la
 rigrep
 ripgrep
 d in ripgrep
-v chb02-summary.txt
 ../chb03
 rm chb03_03.edf.seizures
 ls plug-config
@@ -4512,18 +4096,15 @@ v index.html
 which tat
 ssh dietpi@192.168.1.134
 du -h raw_download
-man wget
 tata
 which se
 v zfunctions
 ls prior_10min
-ls data
 ls data | wc -l
 ls graphs
 cd data/chb03
 cd data/chb01
 cat SUBJECT-INFO
-cd data
 mkdir models
 mv *.model models
 v models/chb01_C3-P3.model
@@ -4539,7 +4120,6 @@ v agitations_updated.csv
 cat agitations.csv
 ll models 
 ll models | grep 29
-ls models
 mv Discrete\ Math CMSC27100-Discrete_Math
 mkdir MATH19620-Linear_Algebra
 cd Autumn\ 20
@@ -4558,7 +4138,6 @@ cp target/release/neovide /usr/local/bin
 mkdir PHYS13100-Mechanics
 cd PHYS13100-Mechanics
 touch hw1.tex
-cd .cache
 du -h google-chrome-unstable
 rm -rf google-chrome-unstable
 du -h -d1
@@ -4595,7 +4174,6 @@ v config.py
 cat objectdb
 cat config.py
 cat config.py | wc -l
-sc
 lines config.py
 lines objectdb
 lines patternly/detection.py
@@ -4663,14 +4241,11 @@ v gcc
 v Makefile
 ./driver.pl
 ./dlc -z
-ll
 make clean
 ./dlc
 cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw2
 v hw2.txt
-\:q
 jup 
-v process.py
 v agitations.csv
 v chb01_01.edf
 du -h chb01_01.edf
@@ -4693,7 +4268,6 @@ cat patternly/detection.py | toclip
 mkdir bin
 cp ../repos/zutil_/bin/llk bin
 ./bin/llk -h
-py 
 cat zed_temp/clean_0edf31cb-c294-4137-8112-bfcdf841a689
 lsd
 v test.seq
@@ -4701,8 +4275,6 @@ head -n 20 test.seq
 v zedsuite/quantizer.pyx
 cat test.seq | wc -l
 v zed_temp
-rm -rf zed_temp
-ls zed_temp
 v zed_temp/clean_1af7ac89-3a0f-42c4-8040-17df2f3875c9
 cat curr_pfsa
 ./bin/llk -s test.seq -f curr_pfsa
@@ -4722,12 +4294,9 @@ ssh drewvlaz@midway2.rcc.uchicago.edu'
 cd .ssh
 cat id_ecdsa
 cat id_ecdsa.pub
-g status
 g add patternly/detection.py
 g commit -m "fix load model"
-g push
 ./upload.sh "fix load model"
-ssh drewvlaz@midway2.rcc.uchicago.edu
 v matches.csv
 edxit
 cd images
@@ -4735,7 +4304,6 @@ mv rampdown.png rampmin.png
 google hw3.pdf
 zathura hw3.pdf
 v hw1
-v hw1.tex
 cd Spring/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw3
 cd hw4
 v hw4.txt
@@ -4743,12 +4311,10 @@ cat 00-grade-hw4-drewvlaz.txt
 sxiv .
 rmdir predictions
 mkdir predictions
-v chb01-summary.txt
 tmux d
 tmu
 v hw3.txt
 eix
-v hw3.tex
 tar 
 v alacritty.yml
 cd th 
@@ -4768,23 +4334,15 @@ cd ../hw7
 cd ../hw8
 v hw8.txt
 cd p4shell
-sd 
-g pull
-cargo build --release
-cd ../../..
 cd Autumn
 cd SOSC12400-Self
 ./target/release/neovide
-cd Dev/neovide
 mv target/release/neovide /usr/local/bin
 sudo cp target/release/neovide /usr/local/bin
 nvide paper1.txt
-v hw4.tex
 d se tex fds
 d in texlive-fdsymbol
 v hw2.
-v hw2.tex
-v hw5.tex
 cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw6
 v hw6.txt
 cat 00-grade-hw6-drewvlaz.txt
@@ -4816,8 +4374,6 @@ rm -rf chb01
 rm -rf chb02
 rm -rf chb03
 cd raw_download/physionet.org/files/chbmit/1.0.0/chb01
-cd ../chb03
-v chb03-summary.txt
 mv chb03_24.edf chb03_25_.edf
 mv chb03_25.edf chb03_24.edf
 mv chb03_25_.edf chb03_25.edf
@@ -4830,7 +4386,6 @@ cd files/chbmit/1.0.0/l
 cd files/chbmit/1.0.0/
 cd 1.0.0/
 cd ...
-cd physionet.org
 cd files/chbmit/1.0.0/chb01/
 ...
 wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb06/
@@ -4845,57 +4400,42 @@ mv physionet.org/files/chbmit/1.0.0/chb07 .
 wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb08/
 rm -rf chb08
 mv physionet.org/files/chbmit/1.0.0/chb08 .
-wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb09/
 cd chb08
 cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb08
-v chb08-summary.txt
 v chb02
 cd chb02
 cd chb06
-v chb06-summary.txt
-cd ../chb07
-v chb07-summary.txt
-cd ../chb05
-v patternly/detection.py
 pc
-v hw6.tex
 google out
 cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw7
 v hw7.txt
 cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p3cache
 v csim.c
-v hw7.tex
 google hw7.pdf
 v pei.pynb
 mv pei.pynb pei.ipynb
 mv pei.ipynb Documents/ZeD/anomaly_examples
-cd ../chb01
 wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb10/ test
-ds
 dsd
 cd Videos
 cd Free\ Guy\ \(2021\)
 scp -r Free\ Guy\ \(2021\) dietpi@192.168.1.132:/media/ExtHDD01/Movies
-wsc
 cd Movies
 mkdir "Venom (2021)"
 mv Venom.Let.There.Be.Carnage.2021.1080p.HDRip-C1NEM4\[TGx\]/Venom.Let.There.Be.Carnage.2021.1080p.WEBRip-C1NEM4.mkv Venom\ \(2021\)
 cd Venom\ \(2021\)
 mv Venom.Let.There.Be.Carnage.2021.1080p.WEBRip-C1NEM4.mkv "Venom (2021).mkv"
 rmdir Venom.Let.There.Be.Carnage.2021.1080p.HDRip-C1NEM4\[TGx\]
-ws account
 mkdir "Vivarium (2019)"
 mv Vivarium\ \(2019\)\ \[1080p\]\ \[WEBRip\]\ \[5.1\]\ \[YTS.MX\]/Vivarium.2019.1080p.WEBRip.x264.AAC5.1-\[YTS.MX\].mp4 Vivarium\ \(2019\)
 ls Vivarium\ \(2019\)\ \[1080p\]\ \[WEBRip\]\ \[5.1\]\ \[YTS.MX\]
 rmdir Vivarium\ \(2019\)\ \[1080p\]\ \[WEBRip\]\ \[5.1\]\ \[YTS.MX\]
 cd Vivarium\ \(2019\)
 mv Vivarium.2019.1080p.WEBRip.x264.AAC5.1-\[YTS.MX\].mp4 "Vivarium (2019).mp4"
-wsd
 scp -r Vivarium\ \(2019\) dietpi@192.168.1.132:/media/ExtHDD01/Movies
 scp -r Venom\ \(2021\) dietpi@192.168.1.132:/media/ExtHDD01/Movies
 ssh dietpi@192.168.1.132
 head -n 20 hw1.tex | toclip
-cd 
 cd Documents
 cd Programming
 cd Certificates
@@ -4907,14 +4447,9 @@ cd by_learners
 v sorting.rb
 v sorting.cpp
 v Sorting.java
-cd ..
-..
 cd De
 cd algorithmic-toolbox-coursera/week4
 v 3way_quicksort.py
-v resume.tex
-cd Downloads
-python
 pip install scipy
 python -m pip install --upgrade pip
 mkdir AoC
@@ -4922,7 +4457,6 @@ cd AoC
 mkdir 2015
 cd 2015
 v day1.txt
-du -h .
 v day1.cc
 gcc day1.cc
 g++ day1.cc
@@ -4998,7 +4532,6 @@ man curl
 curl -X POST https://api.eleuther.ai/completion \\
 -H '"Content-Type": "application/json"' \\
 -d '{"context":"just testing this","top_p":0.9,"temp":0.8,"response_length":128,"remove_input":true}'
-v 
 cat fit.py
 d
 head -n 20 hw1.tex >> proj.tex
@@ -5020,50 +4553,34 @@ echo 100 > /sys/class/leds/tpacpi::kbd_backlight/brightness
 echo 0 > /sys/class/leds/tpacpi::kbd_backlight/brightness
 echo 2 > /sys/class/leds/tpacpi\:\:kbd_backlight/brightness
 sudo echo 2 > /sys/class/leds/tpacpi\:\:kbd_backlight/brightness
-sudo su
-v proj.tex
 cd Testing
 v fit.py
 python fit.py
 cd Documents/College/Year2/Autumn/CMSC27100-Discrete_Math
-v hw8.tex
 ./test-scripts/grade.py
-lsblk
 which sd
-ec
-se
-cd
 cd Pictures/wallpapers/
 randp
 cd ../wallpapers0
 lines
 lines ls
-randp .
-cl
 l
 sls
 cat test
 cat test.py
 ls | wc -l
-df -h
 lines test.py
-v test.py
 python ts.py
-python test.py
-v
 tmux 
 tmux kill-server
 tat
 fs
 ssh eao10000@cs154.cs.uchicago.edu
 ssh drewvlaz@linux.cs.uchicago.edu
-d up
 make
 ./myshell
 cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p4shell
 v myshell.c
-exi
-v metrics.txt
 cd Dev
 cd ../Documents
 c github-recovery-codes.txt
@@ -5091,112 +4608,497 @@ g++ 3-1.cc && ./a.out
 v 3-1.cc
 cp 3-1.cc 3-2.cc
 v 3-2.cc
-tmux
-sd
-jupyter notebook
-fetch
 cd raw_download/physionet.org/files/chbmit/1.0.0/chb05
 cd raw_download/physionet.org/files/chbmit/1.0.0/
 cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb05
-cd Dev/small-projects/instagram
-ls
 python scripts/unfollowers_.py
 v output/unfollowers.txt
+v data/messages/inbox/lauren_wna78sjuia
+v data/messages/inbox/lauren_wna78sjuia/message_1.json
+v data/messages/inbox/
+cd Dev/small-projects/instagram
+rm data
+rm -rf data
+v instagram_data/messages/inbox/lauragiugno_uixohxazjq/message_1.json
+v resume.tex
+../../../..
+../../../
+../chb02
+ls models
+cd final_graphs
+mv chb02_120_20.png chb02_120_80.png
+wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb09
+wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb09/
+cp physionet.org/files/chbmit/1.0.0/chb09/* .
+killall zoom
+j 
+cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb09
+cd Dev/dotfiles
+.scripts/syncdots
+cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb03
+cd ../../..
+../../..
+..
+scp -r SeizureAnalysis.ipynb SeizureTrain.ipynb drewvlaz@midway2.rcc.uchicago.edu
+scp -r SeizureAnalysis.ipynb SeizureTrain.ipynb drewvlaz@midway2.rcc.uchicago.edu:~/
+ssh drewvlaz@midway2.rcc.uchicago.edu
+../..
+wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb10/
+rm *.pfsa
+cp -r physionet.org/files/chbmit/1.0.0/chb10 data/raw_download/physionet.org/files/chbmit/1.0.0/
+cd ../chb04
+v chb04-summary.txt
+fetch
+cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb10
+cd ../chb05
+v chb05-summary.txt
+cd ../chb06
+v chb06-summary.txt
+v metrics.txt
+cat metrics.csv
+v metrics.csv metrics.txt
+cd ../chb07
+v chb07-summary.txt
+cd ../chb08
+v chb08-summary.txt
+cd ../chb10
+v chb10-summary.txt
+man wget
+wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb11/
+mv -f physionet.org/files/chbmit/1.0.0/chb11 data/raw_download/physionet.org/files/chbmit/1.0.0/
+cd chb011
+cd chb11
+rm -rf chb11
+ls chb12
+ls chb13
+ls chb14
+rm -rf chb12 chb13 chb14 chb15
+ls chb16 chb17
+ls chb16 chb17 chb18 chb19 chb20 chb21 chb22 chb23
+rm -rf chb16 chb17 chb18 chb19 chb20 chb21 chb22 chb23
+mv physionet.org/files/chbmit/1.0.0/chb11 data/raw_download/physionet.org/files/chbmit/1.0.0/
+rm -rf physionet.org
+cd chb09
+cd ../chb11
+wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb12/ -P data/raw_download/physionet.org/files/chbmit/1.0.0/
+cd ../chb12
+cd 1.0.0 
+l,s
+mv physionet.org/files/chbmit/1.0.0/chb12 .
+cd chb12
+v chb11-summary.txt
+v chb12-summary.txt
+wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb13/ -P data/raw_download/physionet.org/files/chbmit/1.0.0/
+wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb14/ -P data/raw_download/physionet.org/files/chbmit/1.0.0/
+mv physionet.org/files/chbmit/1.0.0/chb13 .
+mv physionet.org/files/chbmit/1.0.0/chb14 .
+cd chb13
+mv models/chb13_T8-P8.model models/chb13_T8-P8-0.model
+wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb15/ -P data/raw_download/physionet.org/files/chbmit/1.0.0/
+cd ../chb14
+v chb13-summary.txt
+v chb14-summary.txt
+wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb16/ -P data/raw_download/physionet.org/files/chbmit/1.0.0/
+wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb17/ -P data/raw_download/physionet.org/files/chbmit/1.0.0/
+wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb18/ -P data/raw_download/physionet.org/files/chbmit/1.0.0/
+.,s
+ls chb24
+rm -rf chb24
+mv physionet.org/files/chbmit/1.0.0/* .
+cd physionet.org
+cd ../../../../..
+cd 1.0.0
+ls chb15
+lc chb19
+lc chb20
+ls chb17
+ls chb18
+wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb19/ -P data/raw_download/physionet.org/files/chbmit/1.0.0/
+ls chb19
+rm -rf chb19
+mv physionet.org/files/chbmit/1.0.0/chb19 .
+cd chb15
+cd ../chb16
+v chb16-summary.txt
+cd ../chb15
+v chb15-summary.txt
+cd ../chb17
+v chb17-summary.txt
+cd ../chb18
+v chb18-summary.txt
+ls chb20 chb21 chb22 chb23 chb24
+rm -rf chb20 chb21 chb22 chb23 chb24
+wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb20/ -P data/raw_download/physionet.org/files/chbmit/1.0.0/
+wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb21/ -P data/raw_download/physionet.org/files/chbmit/1.0.0/
+wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb22/ -P data/raw_download/physionet.org/files/chbmit/1.0.0/
+wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb23/ -P data/raw_download/physionet.org/files/chbmit/1.0.0/
+cd physionet.org/files/chbmit/1.0.0/
+rm -rf chb01 chb02 chb03 chb04 chb05 chb09 chb10 chb11
+mv * ../../../../
+../../../../
+ls chb20
+cd chb20
+v chb20
+cd chb19
+cd ../chb19
+v chb19-summary.txt
+cd ../chb20
+cd ../chb21
+v chb20-summary.txt
+cd data/raw_download/physionet.org/files/chbmit/1.0.0/
+cd chb21
+v chb21-summary.txt
+cd ../chb22
+cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb22
+v chb22-summary.txt
+cd ../chb09
+v chb09-summary.txt
+cd ../chb23
+v chb23-summary.txt
+cd ../chb01
+v chb01-summary.txt
+cd ../chb02
+v chb02-summary.txt
+cd ../chb03
+v chb03-summary.txt
+mv tex\ Files/* psets
+ws
+ws logout
+ws login
+cat test.py | toclip
+python test.py'
+d in gimp
+chntpw
+mkdir mount
+mount -o ro /dev/nvme0n1p3 mount
+sudo mount -o ro /dev/nvme0n1p3 mount
+cd Windows/System32/config
+chntpw -e SYSTEM
+cd /var/lib/bluetooth/14:F6:D8:71:C0:86
+sudo vim /var/lib/bluetooth/14:F6:D8:71:C0:86/
+sudo systemctl restart bluetooth
+umount mount
+sudo umount mount
+cd mount
+rmdir mount
+as
+mkdir psets
+head ../../../Autumn/MATH19620-Linear_Algebra/hw/hw8.tex -n 30 | toclip
+s
+cp ../repos/patternly/patternly/detection.py ../repos/patternly/patternly/_utils.py .
+v detection.py
+mkdir patternly
+mv detection.py _utils.py patternly
+v zed_temp/clean_59034d75-ebb8-411b-ab94-c4c4c6f3829c
+v ex.pfsa
+v zed_temp/clean_4993e410-07e2-466f-b055-f8ec58b7963d
+v zed_temp/clean_74b722f5-6b79-451c-8dc7-4d220adb7163
+v zed_temp/clean_1c9e877c-a8a7-403b-8d3b-adf36cc48f83
+v zed_temp/clean_daba79de-bd7d-4339-b844-2bb94f139ffc
+google zed_temp/clean_daba79de-bd7d-4339-b844-2bb94f139ffc.png
+v zed_temp/clean_94623e3b-533a-4a08-910d-aa75a196be4c.dot
+v zed_temp/clean_94623e3b-533a-4a08-910d-aa75a196be4c
+v zed_temp/clean_26672380-6056-4636-847f-ef7867e9e571
+../repos/zutil_/bin/llk -h
+../repos/zutil_/bin/llk -s error.csv -f zed_temp/clean_400ef595-726d-4925-abd4-fef8d4833ecf
+../repos/zutil_/bin/llk -s error.csv -f zed_temp/clean_3c8ccf7d-36ce-4fe2-84a3-eafed4b7bea6
+v zed_temp/clean_3c8ccf7d-36ce-4fe2-84a3-eafed4b7bea6
+v zed_temp/clean_400ef595-726d-4925-abd4-fef8d4833ecf
+\:
+eixt
+ls zed_temp
+rm -rf zed_temp
+cat ex.p
+cat ex.py
+v ex.py
+python ex.py
+v zed_temp/clean_ccb78874-0efd-4897-bf5b-631c0651f9d8
+v zed_temp/clean_e7f92147-3bee-4591-bf6c-4072425b20f5
+../repos/zutil_/bin/llk -s error.csv -f zed_temp/clean_9f623f76-d101-41a1-80dc-89acd44a2b40
+cat zed_temp/clean_9f623f76-d101-41a1-80dc-89acd44a2b40
+cat zed_temp/clean_127523f1-7b6c-4793-9e41-d9811dc7401f
+../repos/zutil_/bin/llk -s data.seq -f zed_temp/clean_9f623f76-d101-41a1-80dc-89acd44a2b40
+cp zed_temp/clean_9f623f76-d101-41a1-80dc-89acd44a2b40 pfsafile
+../repos/zutil_/bin/llk -s data.seq -f pfsafile
+v pfsafile
+cd ../repos/GenESeSS_
+./bin/genESeSS -h
+v seq
+./bin/genESeSS -f seq
+du -h data
+cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb01
+du -h .
+cd ../../PHYS13200-Electicity\&Magnetism
+cd psets
+python test2
+mv error.csv test.csv
+cp error.csv data.seq
+py 
+v d 
+v data.seq
+v curr_data.seq
+cat curr_data.seq| wc -l
+rm pfsa.png
+cat pfsafile
+v error.csv
+../repos/GenESeSS_/bin/genESeSS -f data.seq -D "row" -T "symbolic" -e 0.1 -u 1
+../repos/GenESeSS_/bin/genESeSS -h
+../repos/GenESeSS_/bin/genESeSS -f data.seq -D "row" -T "symbolic" -e 0.1 -u 1 -d pfsa.png
+google pfsa.png &
+../repos/GenESeSS_/bin/genESeSS -f data.seq -D "row" -T "symbolic" -e 0.1 -u 1 -d pfsa
+google pfsa &
+google ./pfsa.dot
+mv pfsa.dot pfsa.png
+google pfsa.png&
+cat firstcluster.csv
+python test2.py | cat firstcluster.csv
+v result.txt
+../repos/zutil_/bin/drawpfsa -h
+../repos/zutil_/bin/drawpfsa -c pfsafile
+../repos/GenESeSS_/bin/genESeSS -f firstcluster.csv -D "row" -T "symbolic" -e 0.01 -u 1
+../repos/GenESeSS_/bin/genESeSS -f firstcluster.csv -D "row" -T "symbolic" -e 0.1 -u 1
+python test2.py && cat firstcluster.csv
+v firstcluster.csv
+cp firstcluster.csv cluster.csv
+../repos/GenESeSS_/bin/genESeSS -f firstcluster.csv -D "row" -T "symbolic" -e 0.1
+rm cluster.csv
+mv firstcluster.csv cluster.csv
+../repos/zutil_/bin/llk -s cluster.csv -f result.txt
+cat result.txt
+../repos/GenESeSS_/bin/genESeSS -f cluster.csv -D "row" -T "symbolic" -e 0.1
+../repos/GenESeSS_/bin/genESeSS -f cluster.csv -D "row" -T "symbolic" -e 0.1 -c ../repos/GenESeSS_/deploy/cfg/config.cfg
+../repos/GenESeSS_/bin/genESeSS -f cluster.csv -D "row" -T "symbolic" -e -c ../repos/GenESeSS_/deploy/cfg/config.cfg
+v ../repos/GenESeSS_/deploy/cfg/config.cfg
+cdd
+../repos/GenESeSS_/bin/genESeSS -f cluster.csv -D "row" -T "symbolic"  -c ../repos/GenESeSS_/deploy/cfg/config.cfg
+../repos/GenESeSS_/bin/genESeSS -f cluster.csv -D "row" -T "symbolic"  -c ../repos/GenESeSS_/deploy/cfg/config.cfg -e 0.01
+v cluster.csv
+../repos/GenESeSS_/bin/genESeSS -f cluster.csv -D "row" -T "symbolic"  -c patternly/config.cfg -e 0.01
+python test2.py
+v test2.py
+cp ../repos/GenESeSS_/deploy/cfg/config.cfg patternly
+head -n 20 pset1.tex | toclip
+python test1.py
+v test1.py
+cd Dev/neovide
+g pull
+cargo build --release
+v patternly/config.cfg
+v metrics.csv
+v metrics1.csv
+cd partial_dataset
+cd partial_dataset_
+cd data
+cd agitations_dataset
+ls session_agitations
+ls session_nagitations
+v process.py
+netsh
+cd Documents/College/Internships/Docs
+v github.txt
+head -n 30 ../Resume/resume.tex | toclip
+v github.tex
+ds
+head -n 50 p132-homework-2.tex| toclip
+head -n 150 p132-homework-2.tex| toclip
+head -n 150 pset2.tex| toclip
+v pset2.tex
+v pset1.
+v pset1.tex
+sd 
+v p132-homework-3.tex
+head -n 200 p132-homework-3.tex| toclip
+v p132-homework-2-makeup.tex
+v p132-homework-1.tex
+v p132-homework-2.tex
+head -n 200 pset3.tex|toclip
+head -n 200 pset3.tex
+head -n 100 pset3.tex
+v pset3.tex
+v p132-homework-4.tex
+sudo systemctl restart gdm
+rmdir exams
+lks
+mkdir exams
+head -n 50 pset3.tex
+head -n 50 psets/p132-homework-4.tex | toclip
+cd exams
+head -n 100 ../psets/p132-homework-4.tex | toclip
+v pset4.tex
+l;s
+head -n 100 p132-homework-4.tex | toclip
+randp .
+v p132-homework-5.tex
+pip install patternly
+python3 -m pip install --upgrade pip
+cp ~/Downloads/Satellite_ts.ipynb .
+cp ~/Documents/ZeD/repos/patternly/examples/data/01_2015_LANL-01A_SOPA_MPA.txt .
+pip uninstall patternly
+cd exa
+cd examples
+g status
+g add examples/Satellite_ts.ipynb
+g commit -m "updated variable names to fix errors with new version"
+g push
+cd 
+cd python_implementations_
+cd zedsuite
+v genesess.pyx
+./upload.sh "update"
+docker run --rm -ti -v $PWD:/opt/src:Z quay.io/pypa/manylinux1_x86_64
+v build.rs
+v build.sh
+ls dataset
+head -n 100 pset4.tex >> pset5.tex
+head -n 80 pset4.tex >> pset6.tex
+v pset5.tex
+v exam1_corrections.tex
+head -n 80 p132-homework-5.tex >> p132-homework-6.tex
+ws account
+d in rstudio
+v hw1.tex
+v hw2.tex
+v hw3.tex
+v hw4.tex
+v hw5.tex
+v hw6.tex
+v hw7.tex
+v hw8.tex
+v pro
+r
+v proj.tex
+which r
+cd .cache
+rm -rf chromium/
+rm -rf google-chrome
+pulseaudio
+wsc
+wsd
+v p132-homework-6.tex
+head -n 80 p132-homework-5.tex >> p132-homework-7.tex
+v test.py
+python test.py
+rm test.py
+lines p132-homework-1.tex
+v p132-homework-7.tex
+v patternly/detection.py
+cp ../repos/patternly/examples/example1.ipynb
+cp ../repos/patternly/examples/example1.ipynb .
+ls data
+cp ../repos/patternly/examples/data/example1.dat .
+cat example1.dat
+cat example1.dat | wc -l
+cp ../repos/patternly/examples/data/data1 .
+head data1
+lines data12
+lines data1
+head -n 100000 data1 >> data2
+cp ../repos/patternly/examples/data/example0.dat .
+v example0.dat
+cp ../repos/patternly/examples/data/example3.dat .
+v example3.dat
+cp patternly/detection.py ../repos/patternly/patternly/
+v upload.sh
+cp ../repos/patternly/examples/Satellite_ts.ipynb .
+cp ../repos/patternly/examples/data/01_2015_LANL-01A_SOPA_MPA.txt .
+exi
+head -h 80 pset6.tex >> pset7.tex
+v ps
+v pset6.tex
+v pset7.tex
+head -n 80 pset6.tex >> pset7.tex
+head -n 80 p132-homework-7.tex >> p132-homework-8.tex
+head -n 100 p132-homework-7.tex >> p132-homework-8.tex
+head -n 100 exam1-corrections.tex
+cd ../exams
+head -n 100 exam1_corrections.tex
+head -n 100 exam1_corrections.tex >> exam2_corrections.tex
+v exam2_corrections.tex
+cd Downloads
+lsblk
+ls -l | grep Fed
+dd if=Fedora-Workstation-Live-x86_64-35-1.2.iso of=/dev/sda status=progress
+sudo dd if=Fedora-Workstation-Live-x86_64-35-1.2.iso of=/dev/sda status=progress
+a
+sudo visudo
+d se
+d se zsh-
+d in zsh-autosuggestions zsh-syntax-highlighting
+d in tmux
+cd /usr/
+cd share/zsh
+sudo su
+sudo mv zsh-autosuggestions zsh-syntax-highlighting zsh/plugins
+\:q
+colors
+hashbang
+sc
+la
+ll
+d in google-chrome
+d in chrome
+d se chrome
+d rm google-chrome-unstable
+d in google-chrome-stable
+cd /usr/local/share/applications
+cd bin
+cd /
+cd etc/
+v rygel.conf
+cd
+cl
+cd .local/share/desktop-directories
+cd ..
+cd applications
+cat Alacritty.desktop
+d se pulse
+d in pulseaudio
+d in pulseaudio --allowerasing
+d in blueman
+pavucontrol
+sudo v /etc/bluetooth/
+sudo systemctl restart bluetooth.service
+df -h
+python
+pip3 install pandas
+d in pip
+pip install pandas
+pip install matplotlib
+pip install jupyterthemes
+d in jupyter
+d se jupyter
+jupyter notebook
+v
+ec
+tmux
+ls
+se
+bh
+hb
+sd
+d in zathura-pdf-mupdf
+d in late
+d in latex
+d se tex
+d in latexmk
+d in node
+d in npm
+v 
+v p132-homework-8.tex
+d in texlive-sectsty
+d in texlive-fonts-recommended
+d se texlive fonts
+d se texlive fonts recommended
+d in texlive-collection-fontsrecommended
+d up
 exit
-: 1640054390:0;cd Dev/small-projects/instagram
-: 1640054391:0;ls
-: 1640054402:0;v data/messages/inbox/lauren_wna78sjuia
-: 1640054412:0;v data/messages/inbox/lauren_wna78sjuia/message_1.json
-: 1640054430:0;v data/messages/inbox/
-: 1640058804:0;cd Dev/small-projects/instagram
-: 1640058815:0;ls
-: 1640058841:0;rm data
-: 1640058844:0;rm -rf data
-: 1640058854:0;v instagram_data/messages/inbox/lauragiugno_uixohxazjq/message_1.json
-: 1640144731:0;d up
-: 1640631754:0;sd
-: 1640631758:0;v resume.tex
-: 1641157202:0;sd
-: 1641157206:0;tmux
-: 1641157208:0;jupyter notebook
-: 1641157230:0;d up
-: 1641226142:0;tmux
-: 1641226144:0;sd
-: 1641226149:0;..
-: 1641226151:0;jupyter notebook
-: 1641226162:0;ls
-: 1641226165:0;cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb01
-: 1641226166:0;ls
-: 1641229872:0;../../../..
-: 1641229872:0;ls
-: 1641229875:0;../../../
-: 1641229877:0;ls
-: 1641229883:0;v metrics.txt
-: 1641230600:0;cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb01
-: 1641230606:0;../chb02
-: 1641230606:0;ls
-: 1641231827:0;cd ../chb03
-: 1641231827:0;ls
-: 1641232164:0;ls models
-: 1641232591:0;cd ../chb02
-: 1641232592:0;ls
-: 1641232706:0;cd final_graphs
-: 1641232707:0;ls
-: 1641232713:0;mv chb02_120_20.png chb02_120_80.png
-: 1641232714:0;ls
-: 1641232715:0;..
-: 1641232715:0;ls
-: 1641232748:0;v metrics.txt
-: 1641232890:0;v chb02-summary.txt
-: 1641238270:0;ls
-: 1641238879:0;cd ../chb03
-: 1641238879:0;ls
-: 1641245637:0;cd ../chb04
-: 1641245638:0;ls
-: 1641245807:0;v chb04-summary.txt
-: 1641245848:0;cd ../chb05
-: 1641245849:0;ls
-: 1641245854:0;v chb05-summary.txt
-: 1641246266:0;cd ../chb06
-: 1641246267:0;ls
-: 1641246278:0;v chb06-summary.txt
-: 1641246299:0;cd ../chb07
-: 1641246299:0;ls
-: 1641246304:0;v chb07-summary.txt
-: 1641246314:0;cd ../chb08
-: 1641246315:0;ls
-: 1641246319:0;v chb08-summary.txt
-: 1641247780:0;cd ../chb07
-: 1641247784:0;v chb07-summary.txt
-: 1641249863:0;cd ../chb09
-: 1641249864:0;ls
-: 1641249879:0;wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb09
-: 1641249883:0;wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb09/
-: 1641249943:0;ls
-: 1641249954:0;cp physionet.org/files/chbmit/1.0.0/chb09/* .
-: 1641249963:0;ls
-: 1641249966:0;rm -rf physionet.org
-: 1641249971:0;ls
-: 1641249978:0;v  
-: 1641249983:0;v chb09-summary.txt
-: 1641250617:0;fetch
-: 1641318242:0;killall zoom
-: 1641333041:0;sd
-: 1641333043:0;ls
-: 1641333046:0;j 
-: 1641333048:0;jupyter notebook
-: 1641334528:0;tmux
-: 1641334530:0;sd
-: 1641334531:0;ls
-: 1641334534:0;cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb09
-: 1641334535:0;ls
-: 1641334542:0;v chb09-summary.txt
-: 1641337954:0;cd
-: 1641337958:0;cd Dev/dotfiles
-: 1641337963:0;ls
-: 1641337966:0;la
-: 1641337982:0;cd ..
-: 1641337982:0;ls
-: 1641337984:0;cd ..
-: 1641337985:0;ls
-: 1641337991:0;.scripts/syncdots
+: 1646710797:0;se
+: 1646710829:0;v p132-homework-8.tex
+: 1646776912:0;d up
+: 1646779673:0;d in cargo
+: 1646779734:0;cd Dev/dotfiles
+: 1646779735:0;ls
+: 1646779739:0;la
+: 1646779743:0;cd .scripts
+: 1646779743:0;ls
+: 1646779746:0;./syncdots
