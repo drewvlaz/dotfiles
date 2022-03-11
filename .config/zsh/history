@@ -5108,3 +5108,12 @@ exit
 : 1646986461:0;cd 
 : 1646986464:0;cd Dev/dotfiles
 : 1646986472:0;.scripts/syncdots
+: 1646986559:0;ls
+: 1646986563:0;cd .config/nvim
+: 1646986563:0;ls
+: 1646986589:0;rm -rf autoload general plug-config spell themes vim-plug coc-settings.json init.vim
+: 1646986591:0;ls
+: 1646986597:0;ls plugin
+: 1646986601:0;rm -rf plugin
+: 1646986605:0;cd ../..
+: 1646986607:0;.scripts/syncdots
