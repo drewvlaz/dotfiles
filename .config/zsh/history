@@ -1,248 +1,3 @@
-g diff 
-man rm
-g commit -m "fix imports"
-g commit -m "document"
-g commit -m "organize parameters"
-./genESeSS -f deploy/examples/data1.dat -c deploy/cfg/config.cfg -T symbolic -D row -y true
-g commit -m "add missing parameters"
-cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Data\ Engineering\ CMSC\ 13600/
-python iter.py\\
-
-python iter.p
-python iter.py
-cd p
-svn commit -m "change buffer size"
-valgrind ./csim -s 4 -E 4 -b 5 -t traces/long.trace
-valgrind ./csim -s 1 -E 8 -b 8 -t traces/long.trace
-g add genESeSS.pyx
-g commit -m "add parameter types"
-python joins.py
-cp Quiz2.pdf ..
-cd im
-cat expected-grade.txt
-cat 00-grade-hw5-drewvlaz.txt
-cd hw6
-cat hw6.txt
-make claen
-python2 driver.py
-pip update
-pip ugrade
-pip install thefuck
-g clone --recursive https://github.com/zeroknowledgediscovery/zutil_
-cp ../GenESeSS_/setup.py setup_llk.py
-cat setup_llk.py
-v ../GenESeSS_/setup.py
-ld -lstring 
-ld -lboost
-v llk.cpp
-v llk.pyx
-v se
-v setup_llk.py
-v llk.cc
-exit 
-g commit -m "Complete Quiz2"
-g rm quizzes/
-g rm -r quizzes/
-g commit -m "remove quizzes"
-cp quizzes/Quiz2.pdf .
-g add Quiz2.pdf
-g commit -m "complete quiz2"
-svn commit -m "hw7 q1 complete"
-svn commit -m "hw7 complete"
-svn commit -m "formatting"
-cd hw7
-svn commit -m "fixed wording"
-python setup_llk.py build_ext --inplace
-python setup_lsmash.py build_ext --inplace
-cat Ma
-icc
-gcc -shared
-CC=gcc python3 setup_lsmash.py install --user
-pip --freeze
-pip -freeze
-pip -h
-rm -rf lsmash-0.0.0-py3.9.egg-info
-rm -rf lsmash.cpython-39-x86_64-linux-gnu.so
-./genESeSS
-./lsmash -h
-./lsmash -f testsuite/seq.dat
-v result.dst
-ld -lboost_python39 --verbose | grep succeed
-ld -lpython39 --verbose | grep succeed
-ld -lpython3.9 --verbose | grep succeed
-ld -lboost_config --verbose | grep succeed
-ld -lconfig --verbose | grep succeed
-rm libconfigfile.a
-rm libsemcrct.a
-diff Makefile ../../GenESeSS_/zbase/Makefile
-diff -y Makefile ../../GenESeSS_/zbase/Makefile
-v config.h
-cat genESeSS.pyx
-./llk -h
-make llk_wrapper
-./llk
-./lsmash -f testsuite/seq.dat -o result.dst
-make lsmash_wrapper
-diff -y result.txt result1.dst
-./lsmash -f testsuite/seq.dat -o result1.dst
-./lsmash -f testsuite/seq.dat -o result1.dst && cat result1.dst
-diff result.txt result1.dst
-diff -y result.dst result1.dst
-rm *.dst
-rm -rf genESeSS-0.0.0-py3.9.egg-info genESeSS.cpython-39-x86_64-linux-gnu.so
-du -h genESeSS
-rm genESeSS
-jupyter notebook --generate-config
-cd .jupyter/
-v jupyter_notebook_config.py
-which google-chrome
-python3 setup.py build_ext --user
-python3 setup.py build_ext
-python3 setup.py build_ext --inplace
-python3 setup.py install
-python3 setup.py install --user
-python setup.py install --user
-./genESeSS -f deploy/examples/data1.dat -c deploy/cfg/config.cfg -T symbolic -D row
-d in zoom
-zoom
-man execvjp
-svn commit -m "basic single command functionality"
-man execvp
-man strcpy
-ls -l
-svn commit -m "multiple arg commands"
-svn commit -m "add pwd"
-cd cmsc13600-materials
-cp -h extra-credit hw5 ../cmsc13600-submit
-cp -r extra-credit hw5 ../cmsc13600-submit
-lk
-ls hw0
-g commit -m "initialized hw"
-cat disk.file/a_
-cd ../quizzes
-texclean
-cd ../hw5
-g commit -m "complete hw5"
-python3 auto_grader.py
-python3 countD.py
-g commit -m "add comments"
-g commit -m "fixed double counting error"
-g add countD.py
-mkdir final
-svn updat4e
-cat hw7/00-grade-hw7-drewvlaz.txt
-cd hw8
-svn commit -m "complete q1"
-svn commit -m "complete q2"
-gcc -lpthread test.c -o t && ./t
-gcc test.c -lpthread -lrt -o t && ./t
-ls | grep csapp
-d in csapp
-d se csapp
-svn commit -m "complete hw"
-svn commit -m "fix typo"
-svn commit -m "clarification"
-d se discord
-d rm discord
-ps
-man close
-man sleep
-jup
-cd Documents/ZeD/GenESeSS_
-git clone https://github.com/zeroknowledgediscovery/python_implementations_
-g add genESeSS.ipynb
-g commit -m "update reading results from file"
-g rm notebooks/genESeSS.ipynb
-cp GenESeSS_/genESeSS.ipynb python_implementations_/notebooks/
-g commit -m "add example"
-git add submodule --recursive https://github.com/zeroknowledgediscovery/GenESeSS_
-git add submodule https://github.com/zeroknowledgediscovery/GenESeSS_
-git submodule add --recurisve https://github.com/zeroknowledgediscovery/GenESeSS_
-git submodule add --recusive https://github.com/zeroknowledgediscovery/GenESeSS_
-git submodule add https://github.com/zeroknowledgediscovery/GenESeSS_
-rm genESeSS/GenESeSS_/XNN
-rm genESeSS/GenESeSS_/XNN_
-rmdir genESeSS/GenESeSS_/XNN_
-cd genESeSS/GenESeSS_
-g submodule add https://github.com/zeroknowledgediscovery/zbase_
-rm -rf GenESeSS
-rm -rf GenESeSS_
-rm .gitmodules
-touch .gitmodules
-rm -rf python_implementations_
-g clone https://github.com/zeroknowledgediscovery/python_implementations_
-mkdir genESeSS
-g submodule add https://github.com/zeroknowledgediscovery/GenESeSS_
-cp genESeSS.pyx genESeSS.pxd setup.py ../python_implementations_/genESeSS
-cp Makefile ../python_implementations_/genESeSS
-g submodule update --init --recursive
-cd genESeSS/GenESeSS_/zbase
-g submodule update --recursive
-g submodule status
-g clone https://github.com/zeroknowledgediscovery/zbase_ zbase
-v semantic.o
-g add genESeSS/Makefile genESeSS/genESeSS.pyx genESeSS/genESeSS.pxd genESeSS/setup.py
-g commit -m "cython files"
-cp ../../GenESeSS_/main.py .
-g add genESeSS/genESeSS.pyx
-g commit -m "error handling"
-cat .ssh/id_ecdsa.pub | toclip
-cat .ssh/id_ecdsa.pub
-cat .gitconfig
-cat .git-credentials
-rm .gitconfig .git-credentials
-git config --global user.email "drewvlaz@uchicago.edu"
-git config --global user.name "Drew Vlasnik"
-g add .config/
-g add .scripts/
-g add .bashrc .vimrc .zshrc README.md assets/
-g commit -m "recommit"
-git remote add origin https://github.com/drewvlaz/dotfiles
-git remote add origin git@drewvlaz/dotfiles
-git push
-git remote remove origin
-git remote add origin git@github.com:drewvlaz/dotfiles
-git push -f
-git push -f --set-upstream origin master
-g branch checkout laptop
-g checkout laptop
-git push -f --set-upstream origin laptop
-mkdir example
-mv main.py example
-cat genESeSS.pyx | toclip
-cp genESeSS.cpython-39-x86_64-linux-gnu.so example
-cp ../genESeSS.cpython-39-x86_64-linux-gnu.so .
-g config
-g add example/main.py
-pip38
-pip3.8
-g restore --staged
-g restore --staged example/main.py
-svn revert myshell.c
-svn commit -m "cd cmd\"
-svn commit -m "cd cmd"
-cal 8 2021
-cal 8 1
-time cal 8 1
-./Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p4shell/myshell
-cd fi
-cd final
-v practice.txt
-man 3 malloc
-man wait
-man 3 wait
-gcc test.c -o t && ./t
-v file.txt
-gcc read.c -o t && ./r
-gcc prod4.c -o p4 && ./p4
-gcc prod3.c -o p3 && ./p3
-v read.c
-./p3
-v prod3.c
-gcc prod3.c -lpthread -o p3 && ./p3
-./p4
-v prod4.c
-gcc prod4.c -lpthread -o p4 && ./p4
 v test.c
 gcc test.c -lpthread -o t && ./t
 cat read.c
@@ -978,7 +733,6 @@ d se boost
 d in boost-system
 d in boost-devel
 d in boost
-d in boost-static
 v boost-build.jam
 rmdir lib
 ./b2 cxxflags=-fPIC -a --with-system install
@@ -1057,7 +811,6 @@ du -h llk
 cp zutil_ zutil_1
 pip3 install auditwheel
 d in libpq-dev
-d in python3-devel
 d in python3-venv
 d in python3-wheel
 d in python-devel
@@ -1080,23 +833,14 @@ chmod +x activate
 venv/bin/ activate
 venv/bin/ 
 ll venv
-venv/bin/activate
-./venv/bin/activate
 pip -V
 pip3 -V
 pip install auditwheel
-pip install cython
-pip install wheel
 du -h zutils.cpython-39-x86_64-linux-gnu.so
 auditwheel repair dist/zutils-0.0.0-cp39-cp39-linux_x86_64.whl
-d in docker
 sudo ls
-sudo groupadd docker
-sudo usermod -aG docker drewvlaz
-su -s drewvlaz
 sudo su -s drewvlaz
 sudo su -s ${USER}
-sudo systemctl start docker
 sudo systemctl restart docker
 sudo su ${USER}
 docker pull quay.io/pypa/manylinux1_x86_64
@@ -1137,7 +881,6 @@ mv wheelhouse/* dist
 rm dist/*-cp38-cp38-linux_x86_64.whl
 rm dist/*-cp39-cp39-linux_x86_64.whl
 du -h dist/zutils-0.0.0-cp39-cp39-manylinux1_x86_64.linux_x86_64.whl
-docker pull quay.io/pypa/manylinux_2_24_x86_64
 docker -h
 docker container inspect
 docker run --rm -ti -v $PWD:/opt/src:Z quay.io/pypa/manylinux_2_24_x86_64
@@ -1159,7 +902,6 @@ cd ../zutil_
 auditwheel repair dist/zutils-0.0.0-cp39-cp39-linux_x86_64.whl 
 auditwheel repair dist/zutils-0.0.0-cp39-cp39-linux_x86_64.whl --plat manylinux2014_x86_64
 mkdir test
-rm -rf venv
 cp ../wheelhouse/zutils-0.0.0-cp39-cp39-linux_x86_64.whl .
 cp ../utils.py .
 wget https://boostorg.jfrog.io/artifactory/main/release/1.76.0/source/boost_1_76_0.tar.bz2
@@ -1203,7 +945,6 @@ rm test.csv
 touch setup.py
 touch anomdetect/_version.py
 mkdir tenv
-virtualenv venv
 pip install ../dist/anomdetect-0.0.2-py3-none-any.whl
 cp -r data .
 cp -r ../data .
@@ -1220,7 +961,6 @@ auditwheel show dist/anomdetect-0.0.3-py3-none-any.whl
 auditwheel show wheelhouse/anomdetect-0.0.3-py3-none-linux_x86_64.whl
 rm -rf zutil_1
 cp -r zutil_ zutil_1
-docker run --help
 docker run --rm -ti -v $PWD:/opt/src:Z quay.io/pypa/manylinux2014_x86_64
 cp /usr/lib64/libboost_thread.a lib/
 sudo python setup.py sdist bdist_wheel
@@ -1240,7 +980,6 @@ cd tenv
 nm -g venv/lib/python3.9/site-packages/anomdetect/bin/genESeSS.cpython-39-x86_64-linux-gnu.so
 nm -g venv/lib/python3.9/site-packages/anomdetect/bin/
 cp ../main.py .
-source venv/bin/activate
 deactivate
 cp /usr/lib64/libboost_system.a lib/
 cp /usr/lib64/libboost_chrono.a lib/
@@ -1463,7 +1202,6 @@ qalc
 bc -l 4
 bc -h
 bc -q
-cat MANIFEST.in
 cd timesmash
 cat __init__.py
 head distance.py
@@ -1723,7 +1461,6 @@ pip install dist/ztsad-0.0.2-py3-none-any.whl
 python3 -m twine upload --repository testpypi dist/*
 pip install -i https://test.pypi.org/simple/ ztsad==0.0.3￼
 pip install -i https://test.pypi.org/simple/ ztsad
-rm -rf dist
 python3 -m twine upload --repository pypi dist/*
 git commit -m "Update directory"
 git add .gitignore
@@ -1957,7 +1694,6 @@ python -c "from zedsuite.zutil import Llk; Llk(helpmsg=1).run()"
 quite
 ./bin/quantizer -h
 python -V
-g diff
 g diff zedsuite/zutil.pyd
 g restore --staged zedsuite/zutil.pyx
 g restore --staged zedsuite/quantizer.pyx
@@ -1977,9 +1713,7 @@ cat zedsuite/_version.py | awk '{print $3}' | sed -E 's/^.//;/.$//'
 cat zedsuite/_version.py | awk '{print $3}' | sed -E 's/^.//;s/.$//'
 ld -lboost_system --verbose
 ld -lboost_system 
-ld -lboost_system --verbose | grep succeed
 ld -lboost_system --verbose | grep succeed | wc -l
-ld -lboost_system --verbose | grep succeed | wc -l | toclip
 man ld
 rm -rf genesess
 g add genesess
@@ -2040,10 +1774,8 @@ ls data | grep 1319059
 ls data/1282601
 ls data | grep 1312349
 rm -rf partial_dataset/*
-ls partial_dataset
 d in emacs
 cat .python_history
-rm a.out
 rm zed_temp
 rmdir zed_temp
 cd doom
@@ -2317,10 +2049,8 @@ docker run --rm -ti -v $PWD:/opt/src:Z quay.io/pypa/manylinux1_x86_64 -d
 g global
 g remote set-url origin git@github.com:zeroknowledgediscovery/python_implementations_.git
 g commit -m "pypi release ready"
-pip install zedsuite
 cd Documents/ZeD/repos/mantis
 cp ../python_implementations_/upload.sh .
-pip install sklearn
 pip install scikit-learn
 g commit -m "gitignore"
 mv mantis patternly
@@ -2341,7 +2071,6 @@ make clean && make lsmash
 ../../zutil_/lsmash -f test/testseq.dat -T symbolic -S 0
 cat test_.
 cat test_.py
-v test_.py
 pip install patterntly
 vlc .
 cd /home/drewvlaz/Documents/ZeD/agitation_study\
@@ -2566,7 +2295,6 @@ conda activate test0
 conda install pip
 which pip
 which pip3
-python --version
 ls /usr/condabin/conda 
 ls /usr/condabin/
 pip --version
@@ -2630,7 +2358,6 @@ g add dist/patternly-0.0.20-py3-none-any.whl dist/patternly-0.0.20.tar.gz
 g commit -m "update notebooks"
 rm examples/anomalies_with_2clusters.png
 g add examples/anomalies_with_2clusters.png
-rm -rf build
 g add build
 g commit -m "remove file"
 ../zutil_/bin/prun -f examples/zed_temp/clean_014950a8-4fbe-4cc1-b418-93d41f19e2f9 
@@ -2757,9 +2484,7 @@ g add patternly/detection.py setup.py
 g commit -m "simplify save and load"
 g checkout examples/example1.ipynb
 g add upload.sh
-g add version.py
 g commit -m "change version inc"
-pip uninstall zedsuite
 g commit -m "updates docs"
 python setup.py sdist bdist_wheel && pip uninstall -y patternly && pip install dist/patternly-0.0.23-py3-none-any.whl && rm -rf examples/zed_temp
 v seq.dat
@@ -2811,7 +2536,6 @@ du -h examples/data/example0.dat
 du -h ~/Downloads/test/testdataM41KS21KT323.dat
 pip uninstall -y zedsuite && pip install dist/zedsuite-0.0.3-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
 g commit -m "vectorize predict() with numpy functions"
-ls dist
 sudo chown drewvlaz: dist dist/*
 ll dist
 ./upload.sh "pass vectors by value"
@@ -2845,19 +2569,16 @@ cp -r ZorinGrey-Dark ../../.themes/
 cp Prediction_Pipeline.ipynb Prediction_Pipeline_.ipynb
 diff examples/zed_temp/clean_cf23b31a-ae03-4174-959c-b843fe89f164 examples/zed_temp/clean_1389f725-2eb8-4ba9-9e99-e9c8e60d0e00
 diff -y examples/zed_temp/clean_cf23b31a-ae03-4174-959c-b843fe89f164 examples/zed_temp/clean_1389f725-2eb8-4ba9-9e99-e9c8e60d0e00
-pip install dill
 strings examples/patternly_model.pickle
 python setup.py sdist bdist_wheel && pip uninstall -y patternly && pip install dist/patternly-0.0.29-py3-none-any.whl && rm -rf examples/zed_temp
 du -h examples/patternly_model.pickle
 cat examples/patternly_model.pickle
 g commit -m "update save/load model"
-g diff version.py
 ./upload.sh
 ./upload.sh "update deps"
 cp ../../data_smashing_/bin .
 cp -r ../../data_smashing_/bin .
 python setup.py sdist bdist_wheel && pip uninstall -y patternly && pip install dist/patternly-0.0.30-py3-none-any.whl && rm -rf examples/zed_temp
-v -V
 which v
 which nvim
 cat init.vim
@@ -2872,7 +2593,6 @@ d in ctags
 v plug-config/coc.vim
 v patternly
 v plug-config/goyo.vim
-nvim
 d se fira
 g clone https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode
 g clone https://github.com/ryanoasis/nerd-fonts/
@@ -3167,7 +2887,6 @@ head -n 1 dataset/TEMP.csv | grep "1308466"
 head -n 1 dataset/TEMP_a.csv | grep "1308466"
 head -n 1 dataset_controls/TEMP_a.csv | grep "1308466"
 nvide process.py
-nvim --version
 d se alsa devel
 d in alsa-lib-devel
 cd neovide-0.6.0
@@ -3244,7 +2963,6 @@ tabbed --help
 man tabbed
 tabbed alacritty -embed
 hyper
-alacritty
 prompt -l
 prompt bart
 prompt clint
@@ -3326,8 +3044,6 @@ sh -c "$(curl -fsSL https://starship.rs/install.sh)"\
 v Cargo.
 pyenv global 3.7.0
 pyenv global system
-cd /usr/share/applications
-g info
 g -h
 g --help
 g log
@@ -3465,7 +3181,6 @@ cd Documents/ZeD/agitation_study'\
 cp AnomalyDetectionSingularPatient.ipynb AnomalyDetectionSingularPatient_.ipynb
 mv agitations_.csv agitations.csv
 v agitations_processed.csv
-python process.py
 cd Documents/ZeD/agitation_study\
 
 v patternly/detection.pyj
@@ -3477,7 +3192,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 
 mkdir lua
 g pull,
-cd site
 cd pack/packer
 cd opt
 cd plugged
@@ -3503,7 +3217,6 @@ v dracula.yml
 cd Documents/ZeD/repos/patternly\
 
 cl;
-cd patternly
 sleep 3
 cd Documents/College/Internships/Resume/
 nvide resume.tex
@@ -3520,7 +3233,6 @@ mv onedark.vim themes.vim
 mv themes.vim theme.vim
 cd .config/alacritty
 v ayu-dark.yml
-lc
 v themes/ayu-dark.yml
 v themes/ayu-mirage.yml
 v themes/night-owl.yml
@@ -3783,13 +3495,9 @@ rm -rf .zfunctions
 cd .icons
 rm -rf Fantasy\ Island\ \(2020\) The\ Equalizer\ \(2014\) The\ Equalizer\ 2\ \(2018\)
 rm -rf .vscode-oss
-cd nvim
-v plugins.lua
 cd tokyonight-vim
 cd colors
 v tokyonight.vim
-d in  
-d in anki
 d rm anki
 tar xjf Downloads/anki-2.1.47-linux.tar.bz2
 cd anki-2.1.47-linux
@@ -3911,7 +3619,6 @@ flatpak install extensions
 v channels.py
 df -f
 du -h -d 1 Videos
-cd .config
 rm -rf Postman
 cd .config/nnn
 nnn
@@ -3936,7 +3643,6 @@ v al
 make legal_position && ./legal_position size.txt wall.txt
 cexit
 setup.py
-v setup.py
 cat setup.py
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 tmux attach-session -t 0
@@ -3957,7 +3663,6 @@ ls original
 ls ligature
 ls ligature_source
 ls ligature/OperatorMonoLig-Book
-ls build
 cd .font
 mkdir OperatorMonoLig
 cp build/* ~/.fonts/OperatorMonoLig
@@ -4011,7 +3716,6 @@ mv pacman.sh pman.sh
 v panes.sh
 chmod +x panes.sh
 cp *.sh ../../.scripts
-cd .scripts
 v hashbang.sh
 ./panes.sh
 mv test.sh tux.sh
@@ -4023,11 +3727,9 @@ rm *.sh
 chmod +x test.sh
 ./test.sh
 hashbang.sh
-sdls
 tmux sl
 v test.sh
 vv
-cd plug-config
 v nvim-tree.lua
 v nvim-tree.vim
 ka google-chrome
@@ -4074,16 +3776,10 @@ d in ripgrep
 rm chb03_03.edf.seizures
 ls plug-config
 cd .local/share/nvim/
-cd site/pack/packer
-cd start
 cd nvim-tree.lua
-cd lua
 cd nvim-tree
-v config.lua
 v --startuptime
 v lua/options.lua
-cd autoload
-ls general
 ls vim-plug
 rm -rf vim-plug
 cd dat
@@ -4140,19 +3836,15 @@ cd PHYS13100-Mechanics
 touch hw1.tex
 du -h google-chrome-unstable
 rm -rf google-chrome-unstable
-du -h -d1
 rm -rf .yay
 rm -rf jedi
 rm -rf yay
 rm -rf mozilla
 du -h | grep G
-cd .local
-cd share
 cd Tra
 cd Trash
 cd expunged
 cd 3505918060
-cd ../..
 rm -rf expunged
 cd ZeD
 du -h -d1 | grep G
@@ -4170,7 +3862,6 @@ cat .vim
 ls .vim
 cd .vim
 cd .ropeproject
-v config.py
 cat objectdb
 cat config.py
 cat config.py | wc -l
@@ -4196,10 +3887,8 @@ cat clean_d1250306-e4d9-4be3-8f65-4023c28de078
 cat clean_50a3a44d-8553-411d-acc7-7894facae9d2
 ../../repos/zutil_/bin/prun -f clean_50a3a44d-8553-411d-acc7-7894facae9d2
 rm *
-cd .
 ll models
 pyt 
-cat version.py
 cat clean_bdb41dfb-aa16-485b-b626-bed6d5a4e79d.
 cat clean_bdb41dfb-aa16-485b-b626-bed6d5a4e79d.png
 cat clean_682bdbd4-1e0c-450d-9d55-0f92e047556c
@@ -4246,10 +3935,8 @@ make clean
 cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw2
 v hw2.txt
 jup 
-v agitations.csv
 v chb01_01.edf
 du -h chb01_01.edf
-du -h
 ls | fzf
 xargs (ls | fzf)\\
 buid
@@ -4294,7 +3981,6 @@ ssh drewvlaz@midway2.rcc.uchicago.edu'
 cd .ssh
 cat id_ecdsa
 cat id_ecdsa.pub
-g add patternly/detection.py
 g commit -m "fix load model"
 ./upload.sh "fix load model"
 v matches.csv
@@ -4316,10 +4002,7 @@ tmu
 v hw3.txt
 eix
 tar 
-v alacritty.yml
 cd th 
-cd themes
-v ayu-mirage.yml
 v init.vim
 cd Spring
 cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p2bomb
@@ -4387,7 +4070,6 @@ cd files/chbmit/1.0.0/
 cd 1.0.0/
 cd ...
 cd files/chbmit/1.0.0/chb01/
-...
 wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb06/
 ls chb06
 rm -rf chb06
@@ -4564,16 +4246,13 @@ randp
 cd ../wallpapers0
 lines
 lines ls
-l
 sls
 cat test
 cat test.py
-ls | wc -l
 lines test.py
 python ts.py
 tmux 
 tmux kill-server
-tat
 fs
 ssh eao10000@cs154.cs.uchicago.edu
 ssh drewvlaz@linux.cs.uchicago.edu
@@ -4633,12 +4312,10 @@ cp physionet.org/files/chbmit/1.0.0/chb09/* .
 killall zoom
 j 
 cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb09
-cd Dev/dotfiles
 .scripts/syncdots
 cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb03
 cd ../../..
 ../../..
-..
 scp -r SeizureAnalysis.ipynb SeizureTrain.ipynb drewvlaz@midway2.rcc.uchicago.edu
 scp -r SeizureAnalysis.ipynb SeizureTrain.ipynb drewvlaz@midway2.rcc.uchicago.edu:~/
 ssh drewvlaz@midway2.rcc.uchicago.edu
@@ -4648,7 +4325,6 @@ rm *.pfsa
 cp -r physionet.org/files/chbmit/1.0.0/chb10 data/raw_download/physionet.org/files/chbmit/1.0.0/
 cd ../chb04
 v chb04-summary.txt
-fetch
 cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb10
 cd ../chb05
 v chb05-summary.txt
@@ -4784,7 +4460,6 @@ rmdir mount
 as
 mkdir psets
 head ../../../Autumn/MATH19620-Linear_Algebra/hw/hw8.tex -n 30 | toclip
-s
 cp ../repos/patternly/patternly/detection.py ../repos/patternly/patternly/_utils.py .
 v detection.py
 mkdir patternly
@@ -4881,7 +4556,6 @@ head -n 20 pset1.tex | toclip
 python test1.py
 v test1.py
 cd Dev/neovide
-g pull
 cargo build --release
 v patternly/config.cfg
 v metrics.csv
@@ -4890,9 +4564,7 @@ cd partial_dataset
 cd partial_dataset_
 cd data
 cd agitations_dataset
-ls session_agitations
 ls session_nagitations
-v process.py
 netsh
 cd Documents/College/Internships/Docs
 v github.txt
@@ -4930,25 +4602,16 @@ head -n 100 p132-homework-4.tex | toclip
 randp .
 v p132-homework-5.tex
 pip install patternly
-python3 -m pip install --upgrade pip
 cp ~/Downloads/Satellite_ts.ipynb .
 cp ~/Documents/ZeD/repos/patternly/examples/data/01_2015_LANL-01A_SOPA_MPA.txt .
 pip uninstall patternly
 cd exa
 cd examples
-g status
-g add examples/Satellite_ts.ipynb
 g commit -m "updated variable names to fix errors with new version"
-g push
-cd 
 cd python_implementations_
-cd zedsuite
 v genesess.pyx
 ./upload.sh "update"
-docker run --rm -ti -v $PWD:/opt/src:Z quay.io/pypa/manylinux1_x86_64
 v build.rs
-v build.sh
-ls dataset
 head -n 100 pset4.tex >> pset5.tex
 head -n 80 pset4.tex >> pset6.tex
 v pset5.tex
@@ -4976,15 +4639,12 @@ wsc
 wsd
 v p132-homework-6.tex
 head -n 80 p132-homework-5.tex >> p132-homework-7.tex
-v test.py
 python test.py
 rm test.py
 lines p132-homework-1.tex
 v p132-homework-7.tex
-v patternly/detection.py
 cp ../repos/patternly/examples/example1.ipynb
 cp ../repos/patternly/examples/example1.ipynb .
-ls data
 cp ../repos/patternly/examples/data/example1.dat .
 cat example1.dat
 cat example1.dat | wc -l
@@ -4997,8 +4657,6 @@ cp ../repos/patternly/examples/data/example0.dat .
 v example0.dat
 cp ../repos/patternly/examples/data/example3.dat .
 v example3.dat
-cp patternly/detection.py ../repos/patternly/patternly/
-v upload.sh
 cp ../repos/patternly/examples/Satellite_ts.ipynb .
 cp ../repos/patternly/examples/data/01_2015_LANL-01A_SOPA_MPA.txt .
 exi
@@ -5027,13 +4685,10 @@ d in zsh-autosuggestions zsh-syntax-highlighting
 d in tmux
 cd /usr/
 cd share/zsh
-sudo su
 sudo mv zsh-autosuggestions zsh-syntax-highlighting zsh/plugins
 \:q
 colors
 hashbang
-sc
-la
 ll
 d in google-chrome
 d in chrome
@@ -5045,60 +4700,411 @@ cd bin
 cd /
 cd etc/
 v rygel.conf
-cd
-cl
 cd .local/share/desktop-directories
-cd ..
 cd applications
 cat Alacritty.desktop
 d se pulse
 d in pulseaudio
 d in pulseaudio --allowerasing
 d in blueman
-pavucontrol
 sudo v /etc/bluetooth/
-sudo systemctl restart bluetooth.service
 df -h
-python
 pip3 install pandas
 d in pip
 pip install pandas
-pip install matplotlib
 pip install jupyterthemes
 d in jupyter
 d se jupyter
-jupyter notebook
-v
-ec
-tmux
-ls
-se
 bh
-hb
-sd
 d in zathura-pdf-mupdf
 d in late
 d in latex
 d se tex
 d in latexmk
 d in node
-d in npm
-v 
-v p132-homework-8.tex
 d in texlive-sectsty
 d in texlive-fonts-recommended
 d se texlive fonts
 d se texlive fonts recommended
 d in texlive-collection-fontsrecommended
+v p132-homework-8.tex
+d in cargo
+cd Dev/dotfiles
+cd .scripts
+./syncdots
+d in yarn
+d se yarn
+d in yarnpkg
+d in npm pnpm
+d se pnpm
+d in npm
+v -V
+sudo bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+sudo dnf install -y pnpm
+yarn
+ls node_modules
+rm yarn.lock
+rm node_modules
+rmdir node_modules
+rm -rf node_modules
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh -y)
+node -v
+npm -v
+node
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
+export PATH=~/.npm-global/bin:$PATH
+npm install -g npm
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh) -y
+d in gcc-c++
+lvim config.lua
+v packer_compiled.lua
+v config.py
+lvim patternly/detection.py
+head -n 80 pset6.tex >> pset8.tex
+d se tex cases
+d in texlive-cases
+v vimtex.vim
+cd plugin
+cat packer_compiled.lua
+mv nvim nvim_bkup
+cd .cofnig
+mv lvim lvim_bkup
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+cd .config
+cp nvim_bkup nvim
+ls nvim
+rm -rf lvim
+cp lvim_bkup lvim
+cd .local
+cd lunarvim
+cd lvim
+cd site/pack
+cd packer/opt
+rm -rf vimtex
+v pset8.tex
+cd .config/lvim
+rm -rf lsp-settings
+mkdir lsp-settings
+cd lsp-settings
+head patternly/detection.py
+jexit
+cd share
+ls .local | grep tmux
+cd .tmux
+cd tpm
+cd .
+cd .config/tmux
+v tokyo-night-tmux
+v tmux-onedark-theme
+v tmux.conf
+cd plugins
+cp tmux-onedark-theme tmux-onedark-tokyonight
+cd ../..
+cd alacritty
+v alacritty.yml
+cd themes
+v ayu-mirage.yml
+cd /usr/share/applications
+v org.gnome.Terminal.desktop
+sudo v Alacritty.desktop
+cat org.gnome.Terminal.desktop| grep icon
+cat org.gnome.Terminal.desktop| grep Icon
+sudo nvim Alacritty.desktop
+cd .local/share/applications
+alacritty
+v Alacritty.desktop
+v 
+v agitations.csv
+ls data
+ls data >> ids.txt
+v ids.txt
+ls dataset
+head ACC_X.csv
+head dataset/ACC_X.csv
+head dataset/ACC_X.csv -n 1 | grep ,
+head dataset/ACC_X.csv -n 1
+sudo dnf install \\
+  https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install \\
+  https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+d in 
+d in ffmpeg-libs
+killall -r pipewire.*
+pip install dil
+pip uninstall dil
+pip uninstall dill
+cat version.py
+rm nerdcommenter.vim
+tail build.sh
+d in docker
+sudo systemctl start docker
+sudo docker pull quay.io/pypa/manylinux_2_24_x86_64
+docker pull quay.io/pypa/manylinux_2_24_x86_64 | toclip
+sudo groupadd docker
+sudo usermod -aG docker drewvlaz
+sudo -s drewvlaz
+sudo su
+sudo passwd root
+su -s drewvlaz
+docker pull quay.io/pypa/manylinux_2_24_x86_64
+docker run --help
+pip install dist/zedsuite-0.0.4-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
+python -version
+python39
+python3.9
+pyenv install -v 3.9.0
+d uninstall python3
+d rm python3
+d in python3.9
+pyenv global 3.9.0
+python3.9 --version
+pyenv global 3.9.10
+pip3.9
+python3 -m pip install --upgrade pip
+pip3.9 install dist/zedsuite-0.0.5-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
+python3 -m pip install dist/zedsuite-0.0.5-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
+pip3.9 install dist/zedsuite-0.0.4-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
+python3 -m pip install dist/zedsuite-0.0.4-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
+python3 -m pip install zedsuite
+pip install cython
+pip install wheel
+d in python3-devel
+d in gsl-devel
+d se stdc
+d in libstdc++-devel
+d in libstdc++-static
+d in libstdc++
+pip install virtualenv
+virtualenv venv
+venv/bin/activate
+./venv/bin/activate
+source venv/bin/activate
+tat
+ls boost
+d in boost-static
+v build.sh
+ld -lboost_system --verbose | grep succeed | wc -l | toclip
+ld -lboost_system --verbose | grep succeed
+ld -lboost_timer --verbose | grep succeed
+ld -lboost_timer -L./boost/lib--verbose | grep succeed
+ld -lboost_timer -L./boost/lib --verbose | grep succeed
+rm a.out
+rm -rf dist
+ls build
+rm -rf build
+ld -lboost_program_options -L./boost/lib --verbose | grep succeed
+ld -lboost_program_options --verbose | grep succeed
+pip uninstall zedsuite
+pip install zedsuite
+curl https://files.pythonhosted.org/packages/99/22/423ea34c844293216591947a5f62ac3c0351997b2e8f3613694e53e96aa6/zedsuite-0.0.5.tar.gz
+curl https://files.pythonhosted.org/packages/99/22/423ea34c844293216591947a5f62ac3c0351997b2e8f3613694e53e96aa6/zedsuite-0.0.5.tar.gz zedsuite-0.0.5-tar.gz
+curl https://files.pythonhosted.org/packages/99/22/423ea34c844293216591947a5f62ac3c0351997b2e8f3613694e53e96aa6/zedsuite-0.0.5.tar.gz -O zedsuite-0.0.5-tar.gz
+la
+du -h
+du -h zedsuite-0.0.5.tar.gz
+tar -xvf zedsuite-0.0.5.tar.gz
+v upload.sh
+v pyproject.toml
+v PKG-INFO
+v setup.cfg
+cat MANIFEST.in
+v environment.yml
+v MANIFEST.in
+tar -xvf dist/zedsuite-0.0.5.tar.gz
+cd zedsuite-0.0.5
+docker run --rm -ti -v $PWD:/opt/src:Z quay.io/pypa/manylinux1_x86_64
+cat build.sh| less
+pip install dist/zedsuite-0.0.5-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
+mv dist dist_bkup
+python setup.py sdist bdist_wheel 
+python
+python patternly/detection.py
+python3.9 patternly/detection.py
+pip3.9 install dist/zedsuite-0.0.5-cp310-cp310-linux_x86_64.whl
+v setup.py
+fetch
+ls dist
+s
+jupyter kernelspec list
+v test.py
+pip3.9 uninstall zedsuite
+pip3.9 install zedsuite
+pip install dist/zedsuite-0.0.5-cp310-cp310-linux_x86_64.whl
+python3.9 test_.py
+python3 test_.py
+which python3.9
+rm -rf venc
+rm -rf venv
+virtualenv -p $(which python3.9) py39
+jupyter kernel install --user --name py39 --display-name "Python 3.9"
+jupyter kernel install --user py39 --name py39 --display-name "Python 3.9"
+jupyter kernel install --user 
+jupyter kernel install 
+ipython kernel install --user --name py39 --display-name "Python 3.9"
+jupyter notebook
+source py39/bin/activate
+python --version
+pip install ipykernel --upgrade
+python -m ipykernel install --user
+pip install pandas zedsuite
+pip install dill
+pip install sklearn
+pip install matplotlib
+cd jupyter
+cd kernels
+cd py39
+cat kernel.json
+cp patternly/detection.py ../repos/patternly/patternly/
+g info
+g diff
+g add patternly/detection.py
+g commit -m "add class for continuous streaming data that dynamically updates PFSA library"
+git config pull.rebase true
+g diff version.py
+g add version.py
+g 
+g checkout origin/master examples/Satellite_ts.ipynb
+g checkout origin/main examples/Satellite_ts.ipynb
+g commit -m "inc version"
+g pull
+cp Satellite_ts.ipynb ../repos/patternly/examples
+g status
+g add examples/Satellite_ts.ipynb
+g commit -m "add example with dynamically updating PFSA library"
+g push
+cd zedsuite
 d up
+sdls
+v zutil.pyx
+nvim --version
+python test_.py
+v test_.py
+pavucontrol
+anki
+cd Downloads/anki-2.1.4
+cd Downloads/anki-2.1.49-linux
+sudo ./uninstall.sh
+d in anki
+cd Anki
+rm -rf Anki
+rm -rf Anki2
+sudo systemctl restart bluetooth.service
+git clone https://github.com/LunarVim/Neovim-from-scratch.git nvim
+cd lua
+cd user
+cd lsp
+v ke
+v keymaps.lua
+cd
+cls
+cd site/pack/packer
+cd start
+nvim options.lua'\
+
+nvim options.lua\
+
+du -h -d1
+v plugins.lua
+...
+nvim in
+v colorscheme.lua
+v quickscope.lua
+cd lua/user
+cd patternly
+nvim detection.py
+v options.lua
+v config.lua
+se
+nvim comment.lua
+l
+cd ../nvim_bkup
+nvim general/keys.vim
+cd plug-config
+cat plug-config/startify.vim
+cd autoload
+nvim plug.vim
+ls general
+ls lua
+nvim lua/plugins.lua
+lc
+nvim quickscope.lua
+nvim nvim-tree.lua
+nvim telescope.lua
+cat colorscheme.lua
+cat colorscheme.lua| toclip
+nvim whic
+nvim keymaps.lua
+nvim alpha.lua
+nvim bufferline.lua
+nvim indentline.lua
+nvim patternly/detection.py
+nvim cmp.lua
+n
+cd 
+cd .local/share
+cd nvim
+cd site
+cd ..
+rm -rf nvim
+nvim
+nv 
+du -h lualine.lua
+nvim lualine.lua
+tmux
+jupyter notebook --allow-root
+head agitations_dataset/ACC_X.csv
+nvim agitations_dataset/HR.csv
+nvim whichkey.lua
+nvim options.lua
+nvim colorscheme.lua
+nvim init.lua
+nvim plugins.lua
+nvim treesitter.lua
+ec
+v
+lvim
+nvim config.lua
+cd test_agitations_
+..
+ls agitations_dataset
+ls session_agitations
+python process.py
+ls test_agitations_
+ls test_agitations_ | wc -l
+ls test_agitations | wc -l
+nvim process.py
+ls partial_dataset_controls
+ll partial_dataset_controls
+mv partial_dataset_controls partial_dataset
+ls partial_dataset
+nvim autocommands.lua
+v autocommands.lua
+hb
+ls | wc -l
+lines cluster.csv
+hb && ls
+sc
+v init.lua
+lvim process.py
+v lualine.lua
+v process.py
+sd
+cl
+v patternly/detection.py
+ext
+ls
 exit
-: 1646710797:0;se
-: 1646710829:0;v p132-homework-8.tex
-: 1646776912:0;d up
-: 1646779673:0;d in cargo
-: 1646779734:0;cd Dev/dotfiles
-: 1646779735:0;ls
-: 1646779739:0;la
-: 1646779743:0;cd .scripts
-: 1646779743:0;ls
-: 1646779746:0;./syncdots
+: 1646986434:0;cl
+: 1646986434:0;ls
+: 1646986437:0;v init.lua
+: 1646986443:0;ls
+: 1646986443:0;la
+: 1646986449:0;rm -rf .git .github
+: 1646986450:0;ls
+: 1646986452:0;g init
+: 1646986457:0;rm -rf .git
+: 1646986457:0;ls
+: 1646986461:0;cd 
+: 1646986464:0;cd Dev/dotfiles
+: 1646986472:0;.scripts/syncdots

@@ -48,12 +48,12 @@ style = "bold cyan"
 read_only_style = "red"
 truncation_length = 6
 truncate_to_repo = true
-truncation_symbol = "" # "…/"
+truncation_symbol = ""                                                                      # "…/"
 home_symbol = "~"
-read_only = " 🔒"	
+read_only = " 🔒"
 
 [git_branch]
-format = "[on](italic) [$symbol$branch]($style) "	
+format = "[on](italic) [$symbol$branch]($style) "
 style = "bold green"
 symbol = " "
 truncation_length = 4
@@ -90,8 +90,8 @@ format = "[took](italic) [$duration]($style)"
 style = "yellow"
 min_time = 2_000
 show_milliseconds = true
-show_notifications = true
-min_time_to_notify = 30_000
+# show_notifications = true
+# min_time_to_notify = 30_000
 
 [time]
 format = "[at](italic) [$time]($style) "
@@ -100,14 +100,14 @@ style = "bold italic green"
 
 [package]
 format = "[is](italic) [$symbol$version]($style) "
-symbol = " " 
+symbol = " "
 
 [python]
-format = '[via](italic) [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'	
+format = '[via](italic) [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 symbol = " "
 style = "yellow"
 pyenv_version_name = true
-version_format = "v${raw}"	
+version_format = "v${raw}"
 detect_extensions = []
 
 # [env_var]

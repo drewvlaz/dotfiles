@@ -8,6 +8,7 @@ se() {
     du -a \
     ~/.config/alacritty \
     ~/.config/bspwm \
+    ~/.config/lvim \
     ~/.config/nvim \
     ~/.config/polybar \
     ~/.config/rofi \
@@ -29,6 +30,7 @@ sd() {
         ~/Documents/College/ \
         ~/.config/alacritty \
         ~/.config/bspwm \
+        ~/.config/lvim \
         ~/.config/nvim \
         ~/.config/polybar \
         ~/.config/rofi \

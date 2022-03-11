@@ -84,7 +84,7 @@ font:
 colors:
   # Default colors
   primary:
-    background: '#232627'
+    background: '#1f2335'
     foreground: '#fcfcfc'
 
     dim_foreground: '#eff0f1'
