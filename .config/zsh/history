@@ -5117,3 +5117,7 @@ exit
 : 1646986601:0;rm -rf plugin
 : 1646986605:0;cd ../..
 : 1646986607:0;.scripts/syncdots
+: 1646986640:0;cd .config
+: 1646986643:0;rm -rf nvim
+: 1646986644:0;cd ..
+: 1646986647:0;.scripts/syncdots
