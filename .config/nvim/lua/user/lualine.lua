@@ -1,15 +1,13 @@
+-- Based off of Eviline listed on lualine Github
+
 local status_ok, lualine = pcall(require, "lualine")
 if not status_ok then
 	return
 end
 
--- Eviline config for lualine
--- Author: shadmansaleh
--- Credit: glepnir
 local lualine = require('lualine')
 
 -- Color table for highlights
--- stylua: ignore
 local colors = {
   bg       = '#1f2335',
   fg       = '#bbc2cf',
@@ -23,7 +21,8 @@ local colors = {
   blue     = '#51afef',
   red      = '#ec5f67',
 }
--- auto change color according to neovims mode
+
+-- Change color according to vim mode
 local mode_color = {
   n = colors.red,
   i = colors.green,
@@ -106,31 +105,20 @@ local function ins_right(component)
   table.insert(config.sections.lualine_x, component)
 end
 
--- ins_left {
---   function()
---     -- return '▊'
---     return ''
---   end,
---   color = { fg = colors.green }, -- Sets highlighting of component
---   padding = { left = 0, right = 1 }, -- We don't need space before this
--- }
+
+-- Add components to right sections
 
 ins_left {
   -- mode component
   function()
-    return ' '
+    -- other icons: ,,,,,,,ﱦ
+    return '▊ '
   end,
   color = function()
     return { fg = mode_color[vim.fn.mode()] }
   end,
-  padding = { right = 1 },
+  padding = { left = 0, right = 1 },
 }
-
--- ins_left {
---   -- filesize component
---   'filesize',
---   cond = conditions.buffer_not_empty,
--- }
 
 ins_left {
   'filename',
@@ -167,6 +155,7 @@ ins_left {
   },
 }
 
+
 -- Insert mid section. You can make any number of sections in neovim :)
 -- for lualine it's any number greater then 2
 ins_left {
@@ -175,46 +164,58 @@ ins_left {
   end,
 }
 
+
+-- Add components to right sections
+
 ins_right {
-  -- Lsp server name .
-  function()
-    local msg = 'No Active Lsp'
-    local buf_ft = vim.api.nvim_buf_get_option(0, 'filetype')
-    local clients = vim.lsp.get_active_clients()
-    if next(clients) == nil then
-      return '[' .. msg .. ']'
-    end
-    for _, client in ipairs(clients) do
-      local filetypes = client.config.filetypes
-      if filetypes and vim.fn.index(filetypes, buf_ft) ~= -1 then
-        return '[' .. client.name .. ']'
-      end
-    end
-    return '[' .. msg .. ']'
-  end,
-  -- icon = ' LSP:',
-  icon = '',
-  color = { fg = colors.fg, gui = 'bold' },
+  'filetype',
+  cond = conditions.hide_in_width,
 }
 
--- -- Add components to right sections
 -- ins_right {
 --   'o:encoding', -- option component same as &encoding in viml
 --   fmt = string.upper, -- I'm not sure why it's upper case either ;)
 --   cond = conditions.hide_in_width,
---   color = { fg = colors.green, gui = 'bold' },
+--   color = { fg = colors.fg, gui = 'bold' },
 -- }
 
--- ins_right {
---   'fileformat',
---   fmt = string.upper,
---   icons_enabled = false, -- I think icons are cool but Eviline doesn't have them. sigh
---   color = { fg = colors.green, gui = 'bold' },
--- }
+
+ins_right {
+  -- Lsp server name .
+  function()
+    local msg = '[No Active Lsp]'
+    local buf_ft = vim.api.nvim_buf_get_option(0, 'filetype')
+    local clients = vim.lsp.get_active_clients()
+    local clients_str = ""
+    local seen = {}
+    if next(clients) == nil then
+      return msg
+    end
+    for _, client in ipairs(clients) do
+      local filetypes = client.config.filetypes
+      -- there can be multiple Lsp's and sometimes they are duplicated
+      if filetypes and vim.fn.index(filetypes, buf_ft) ~= -1 and not seen[client.name] then
+        clients_str = clients_str .. ', ' .. client.name
+        seen[client.name] = true
+      end
+    end
+    if clients_str == nil  or clients_str == '' then
+      return msg
+    else
+      return '[' .. string.sub(clients_str, 3) .. ']'
+    end
+  end,
+  icon = '',
+  color = { fg = colors.yellow, gui = 'bold' },
+  cond = conditions.hide_in_width,
+}
 
 ins_right { 'location' }
 
-ins_right { 'progress', color = { fg = colors.fg, gui = 'bold' } }
+ins_right {
+  'progress',
+  color = { fg = colors.fg, gui = 'bold' },
+}
 
 ins_right {
   function()
@@ -229,3 +230,4 @@ ins_right {
 
 -- Now don't forget to initialize lualine
 lualine.setup(config)
+

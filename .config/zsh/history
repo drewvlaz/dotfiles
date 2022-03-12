@@ -1,8 +1,3 @@
-v test.c
-gcc test.c -lpthread -o t && ./t
-cat read.c
-cat file.txt
-gcc read.c -o r && ./r
 cat ../drewvlaz-cs154-spr-21/hw6/hw6.txt
 cat ../drewvlaz-cs154-spr-21/hw5/hw5.txt
 cat ../drewvlaz-cs154-spr-21/hw7/hw7.txt
@@ -1865,7 +1860,6 @@ ls deploy
 ls deploy/cfg
 cp ../../GenESeSS_/deploy/cfg/config.cfg .
 mv config.cfg data
-cat README.md
 ./bin/llk -f testsuite/S2.cfg -s testsuite/seq.dat -x 100
 cp testsuite/S2.cfg testsuite/seq.dat ../python_implementations_/notebooks/data
 cp testsuite/M2.cfg testsuite/T3.cfg ../python_implementations_/notebooks/data
@@ -2546,7 +2540,6 @@ g checkout examples
 cat ptest.py
 python setup.py sdist bdist_wheel && pip uninstall -y patternly && pip install dist/patternly-0.0.28-py3-none-any.whl && rm -rf examples/zed_temp
 /usr/bin/time -v python ptest.py
-g init
 g add resume.tex
 g commit -m "init"
 d se roboto
@@ -3066,7 +3059,6 @@ python -c "import time; time.sleep(1)"
 stow
 cd .sci
 v syncdots
-rm -rf .git
 git init
 g remote set-url origin git@github.com:drewvlaz/dotfiles
 g remote add git@github.com:drewvlaz/dotiles.git
@@ -3228,7 +3220,6 @@ jt -t grade3 -T -cellw 1400 -kl -N -ofs 11 -dfs 10 -f "firacode" -lineh 150
 jt -t grade3 -T -cellw 1300 -kl -N -ofs 11 -dfs 10 -f "firacode" -lineh 150
 tmux attach
 cd Documents/ZeD/anomaly_examples
-cd .config/nvim
 mv onedark.vim themes.vim
 mv themes.vim theme.vim
 cd .config/alacritty
@@ -3919,7 +3910,6 @@ mkdir images
 mv 20211007_000724.jpg vectors.jpg
 make && ./driver.pl
 dlc
-pwd
 pwd | toclip
 "/home/drewvlaz/Documents/College/Year1/Spring/Intro to Computer Systems CMSC 15400/drewvlaz-cs154-spr-21/p1bitmanip/dlc"\
 
@@ -4312,7 +4302,6 @@ cp physionet.org/files/chbmit/1.0.0/chb09/* .
 killall zoom
 j 
 cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb09
-.scripts/syncdots
 cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb03
 cd ../../..
 ../../..
@@ -4686,7 +4675,6 @@ d in tmux
 cd /usr/
 cd share/zsh
 sudo mv zsh-autosuggestions zsh-syntax-highlighting zsh/plugins
-\:q
 colors
 hashbang
 ll
@@ -4729,7 +4717,6 @@ d se texlive fonts recommended
 d in texlive-collection-fontsrecommended
 v p132-homework-8.tex
 d in cargo
-cd Dev/dotfiles
 cd .scripts
 ./syncdots
 d in yarn
@@ -4771,7 +4758,6 @@ mv nvim nvim_bkup
 cd .cofnig
 mv lvim lvim_bkup
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
-cd .config
 cp nvim_bkup nvim
 ls nvim
 rm -rf lvim
@@ -4800,7 +4786,6 @@ v tmux-onedark-theme
 v tmux.conf
 cd plugins
 cp tmux-onedark-theme tmux-onedark-tokyonight
-cd ../..
 cd alacritty
 v alacritty.yml
 cd themes
@@ -4900,7 +4885,6 @@ pip install zedsuite
 curl https://files.pythonhosted.org/packages/99/22/423ea34c844293216591947a5f62ac3c0351997b2e8f3613694e53e96aa6/zedsuite-0.0.5.tar.gz
 curl https://files.pythonhosted.org/packages/99/22/423ea34c844293216591947a5f62ac3c0351997b2e8f3613694e53e96aa6/zedsuite-0.0.5.tar.gz zedsuite-0.0.5-tar.gz
 curl https://files.pythonhosted.org/packages/99/22/423ea34c844293216591947a5f62ac3c0351997b2e8f3613694e53e96aa6/zedsuite-0.0.5.tar.gz -O zedsuite-0.0.5-tar.gz
-la
 du -h
 du -h zedsuite-0.0.5.tar.gz
 tar -xvf zedsuite-0.0.5.tar.gz
@@ -4969,7 +4953,6 @@ g checkout origin/main examples/Satellite_ts.ipynb
 g commit -m "inc version"
 g pull
 cp Satellite_ts.ipynb ../repos/patternly/examples
-g status
 g add examples/Satellite_ts.ipynb
 g commit -m "add example with dynamically updating PFSA library"
 g push
@@ -5041,12 +5024,9 @@ nvim indentline.lua
 nvim patternly/detection.py
 nvim cmp.lua
 n
-cd 
 cd .local/share
 cd nvim
 cd site
-cd ..
-rm -rf nvim
 nvim
 nv 
 du -h lualine.lua
@@ -5062,7 +5042,6 @@ nvim init.lua
 nvim plugins.lua
 nvim treesitter.lua
 ec
-v
 lvim
 nvim config.lua
 cd test_agitations_
@@ -5080,44 +5059,122 @@ mv partial_dataset_controls partial_dataset
 ls partial_dataset
 nvim autocommands.lua
 v autocommands.lua
-hb
 ls | wc -l
 lines cluster.csv
 hb && ls
 sc
-v init.lua
 lvim process.py
 v lualine.lua
 v process.py
-sd
-cl
 v patternly/detection.py
 ext
+rm -rf .git .github
+g init
+rm -rf .git
+cd 
+cd Dev/dotfiles
+cd .config/nvim
+rm -rf autoload general plug-config spell themes vim-plug coc-settings.json init.vim
+ls plugin
+rm -rf plugin
+cd ../..
+cd .config
+rm -rf nvim
+cd ..
+.scripts/syncdots
+g status
+la
+cat README.md
+sd
+pwd
+hb
+cl
+v
+jjjls
 ls
+v init.lua
 exit
-: 1646986434:0;cl
-: 1646986434:0;ls
-: 1646986437:0;v init.lua
-: 1646986443:0;ls
-: 1646986443:0;la
-: 1646986449:0;rm -rf .git .github
-: 1646986450:0;ls
-: 1646986452:0;g init
-: 1646986457:0;rm -rf .git
-: 1646986457:0;ls
-: 1646986461:0;cd 
-: 1646986464:0;cd Dev/dotfiles
-: 1646986472:0;.scripts/syncdots
-: 1646986559:0;ls
-: 1646986563:0;cd .config/nvim
-: 1646986563:0;ls
-: 1646986589:0;rm -rf autoload general plug-config spell themes vim-plug coc-settings.json init.vim
-: 1646986591:0;ls
-: 1646986597:0;ls plugin
-: 1646986601:0;rm -rf plugin
-: 1646986605:0;cd ../..
-: 1646986607:0;.scripts/syncdots
-: 1646986640:0;cd .config
-: 1646986643:0;rm -rf nvim
-: 1646986644:0;cd ..
-: 1646986647:0;.scripts/syncdots
+\:q
+: 1647044893:0;tmux
+: 1647044894:0;sd
+: 1647044896:0;ls
+: 1647044901:0;cd lua/user
+: 1647044901:0;ls
+: 1647044909:0;v lualine.lua
+: 1647045634:0;sd
+: 1647045638:0;v patternly/detection.py
+: 1647046016:0;v 
+: 1647046020:0;v patternly/detection.py
+: 1647046378:0;v 
+: 1647046541:0;v patternly/detection.py
+: 1647046934:0;ls
+: 1647046936:0;v alpha.lua
+: 1647046951:0;sd
+: 1647046954:0;v init.lua
+: 1647046962:0;v
+: 1647047003:0;v init.lua
+: 1647047007:0;v
+: 1647047014:0;v init.lua
+: 1647047084:0;v
+: 1647047141:0;fortune
+: 1647047145:0;hashbang
+: 1647047165:0;v
+: 1647047376:0;sd
+: 1647047378:0;v patternly/detection.py
+: 1647047578:0;v init.lua
+: 1647047994:0;v patternly/detection.py
+: 1647048671:0;ls
+: 1647048692:0;v
+: 1647048715:0;v alpha.lua
+: 1647048725:0;v
+: 1647048892:0;cowsay
+: 1647048909:0;echo hello | cowsay
+: 1647048917:0;echo hello | cowsay -b
+: 1647048921:0;echo hello | cowsay -s
+: 1647048927:0;echo hello | cowsay -W
+: 1647048932:0;echo hello | cowsay -d
+: 1647048935:0;echo hello | cowsay -p
+: 1647048947:0;echo hello | cowsay -e i
+: 1647048950:0;echo hello | cowsay -e i i
+: 1647048955:0;echo hello | cowsay -e "i i"
+: 1647048961:0;echo hello | cowsay -t
+: 1647048967:0;echo hello | cowsay -w
+: 1647048970:0;echo hello | cowsay -y
+: 1647048977:0;echo hello | cowsay -l
+: 1647048995:0;echo hello | cowsay -g
+: 1647049004:0;echo hello | cowsay -e "ii"
+: 1647049011:0;echo hello | cowsay -e "O"
+: 1647049018:0;echo hello | cowsay -e " O"
+: 1647049024:0;echo hello | cowsay -e "uu"
+: 1647049028:0;echo hello | cowsay -e "nu"
+: 1647049030:0;echo hello | cowsay -e "nn"
+: 1647049036:0;echo hello | cowsay -e "DD"
+: 1647049040:0;echo hello | cowsay -e "<>"
+: 1647049053:0;echo hello | cowsay -e "()"
+: 1647049057:0;echo hello | cowsay -e "MM"
+: 1647049060:0;echo hello | cowsay -e "echo hello | cowsay -e "MM""
+: 1647049070:0;echo hello | cowsay -e "\!\!"
+: 1647049077:0;echo hello | cowsay -e "##"
+: 1647049082:0;echo hello | cowsay -e "XX"
+: 1647049089:0;echo hello | cowsay -e "??"
+: 1647049290:0;v
+: 1647049319:0;cl
+: 1647051465:0;ls
+: 1647051472:0;v
+: 1647057945:0;d up
+: 1647057960:0;vim
+: 1647057963:0;vi
+: 1647058052:0;ls
+: 1647058060:0;cat test.py
+: 1647058064:0;rm -rf test.py
+: 1647058068:0;cat test
+: 1647058072:0;cat test1.py
+: 1647058091:0;rm -rf test1.py
+: 1647058093:0;ls
+: 1647058095:0;rm a.out
+: 1647058100:0;rm zedsuite-0.0.5.tar.gz
+: 1647058102:0;rm -rf zedsuite-0.0.5
+: 1647058102:0;ls
+: 1647058104:0;cl
+: 1647058109:0;cd Dev/dotfiles
+: 1647058111:0;.scripts/syncdots
