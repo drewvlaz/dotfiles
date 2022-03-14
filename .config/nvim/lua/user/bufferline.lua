@@ -16,7 +16,7 @@ bufferline.setup {
     indicator_icon = "▎",
     -- buffer_close_icon = "",
     buffer_close_icon = '',
-    modified_icon = "●",
+    modified_icon = "",
     close_icon = "",
     -- close_icon = '',
     left_trunc_marker = "",
@@ -34,7 +34,7 @@ bufferline.setup {
     max_name_length = 30,
     max_prefix_length = 30, -- prefix used when a buffer is de-duplicated
     tab_size = 21,
-    diagnostics = false, -- | "nvim_lsp" | "coc",
+    diagnostics = "nvim_lsp", -- | "nvim_lsp" | "coc",
     diagnostics_update_in_insert = false,
     -- diagnostics_indicator = function(count, level, diagnostics_dict, context)
     --   return "("..count..")"
@@ -55,7 +55,7 @@ bufferline.setup {
     --     return true
     --   end
     -- end,
-    offsets = { { filetype = "NvimTree", text = "", padding = 1 } },
+    offsets = { { filetype = "NvimTree", text = "File Explorer", padding = 1 } },
     show_buffer_icons = true,
     show_buffer_close_icons = true,
     show_close_icon = true,
@@ -96,8 +96,8 @@ bufferline.setup {
       guibg = { attribute = "bg", highlight = "TabLine" },
     },
     close_button_visible = {
-      guifg = { attribute = "fg", highlight = "TabLine" },
-      guibg = { attribute = "bg", highlight = "TabLine" },
+      guifg = { attribute = "fg", highlight = "Normal" },
+      guibg = { attribute = "bg", highlight = "Normal" },
     },
     -- close_button_selected = {
     --   guifg = {attribute='fg',highlight='TabLineSel'},
@@ -135,17 +135,17 @@ bufferline.setup {
     },
 
     modified = {
-      guifg = { attribute = "fg", highlight = "TabLine" },
-      guibg = { attribute = "bg", highlight = "TabLine" },
-    },
-    modified_selected = {
       guifg = { attribute = "fg", highlight = "Normal" },
       guibg = { attribute = "bg", highlight = "Normal" },
     },
-    modified_visible = {
-      guifg = { attribute = "fg", highlight = "TabLine" },
-      guibg = { attribute = "bg", highlight = "TabLine" },
-    },
+    -- modified_selected = {
+    --   guifg = { attribute = "fg", highlight = "Normal" },
+    --   guibg = { attribute = "bg", highlight = "Normal" },
+    -- },
+    -- modified_visible = {
+    --   guifg = { attribute = "fg", highlight = "Normal" },
+    --   guibg = { attribute = "bg", highlight = "Normal" },
+    -- },
 
     separator = {
       guifg = { attribute = "bg", highlight = "TabLine" },

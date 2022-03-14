@@ -10,6 +10,7 @@ se() {
     ~/.config/bspwm \
     ~/.config/lvim \
     ~/.config/nvim \
+    ~/.config/nvim_bkup \
     ~/.config/polybar \
     ~/.config/rofi \
     ~/.config/sxhkd \
@@ -26,12 +27,16 @@ se() {
 sd() {
     dir=$(
         du -d 8 \
-        ~/Documents/ZeD/ \
-        ~/Documents/College/ \
+        ~/Documents/ZeD/repos \
+        ~/Documents/ZeD/agitation_study \
+        ~/Documents/ZeD/anomaly_examples \
+        ~/Documents/College \
+        ~/Dev/dotfiles \
         ~/.config/alacritty \
         ~/.config/bspwm \
         ~/.config/lvim \
         ~/.config/nvim \
+        ~/.config/nvim_bkup \
         ~/.config/polybar \
         ~/.config/rofi \
         ~/.config/sxhkd \
@@ -42,10 +47,14 @@ sd() {
         --exclude='.git' \
         --exclude='.github' \
         --exclude='.vim' \
+        --exclude='.vscode' \
         --exclude='data' \
         --exclude='boost' \
         --exclude='venv' \
+        --exclude='py39' \
         --exclude='__pycache__' \
+        --exclude='data_smashing_' \
+        --exclude='cynet_' \
         --exclude='*temp' |
         awk '{print $2}' |
         fzf

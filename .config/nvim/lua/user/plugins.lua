@@ -40,10 +40,10 @@ packer.init {
 
 -- Install your plugins here
 return packer.startup(function(use)
-  -- My plugins here
+  -- Misc
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+  use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "kyazdani42/nvim-web-devicons"
   use "kyazdani42/nvim-tree.lua"
@@ -52,17 +52,22 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim"
   use "ahmedkhalf/project.nvim"
   use "lewis6991/impatient.nvim"
-  use "lukas-reineke/indent-blankline.nvim"
-  use "goolord/alpha-nvim"
+  use "lukas-reineke/indent-blankline.nvim" -- Show indent characters
+  use "goolord/alpha-nvim" -- Startup menu
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
+  -- use "github/copilot.vim"
+
+  -- Motion
+  use "justinmk/vim-sneak"
   use 'unblevable/quick-scope' -- enhanced f, F, t, T
 
   -- Colorschemes
-  use "lunarvim/darkplus.nvim"
+  use "lunarvim/onedarker.nvim"
   use "folke/tokyonight.nvim"
+  use "sainnhe/sonokai"
 
-  -- cmp plugins
+  -- Completion
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
@@ -70,7 +75,7 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
 
-  -- snippets
+  -- Snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
@@ -96,6 +101,13 @@ return packer.startup(function(use)
   -- Commenting
   use 'tpope/vim-commentary'
   -- use "numToStr/Comment.nvim" -- Easily comment stuff
+
+  -- Latex
+  use {
+    'lervag/vimtex',
+    ft = {"tex"},
+  }
+  -- use "xuhdev/vim-latex-live-preview"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

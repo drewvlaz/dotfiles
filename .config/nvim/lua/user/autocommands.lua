@@ -60,6 +60,15 @@ vim.cmd [[
   augroup file_tree_disable_line
     autocmd BufEnter,BufWinEnter,WinEnter,CmdwinEnter * if bufname('%') == "NvimTree_1" | set laststatus=0 | else | set laststatus=2 | endif
   augroup END
+
+  augroup copilot_text_color
+    autocmd ColorScheme * highlight CopilotSuggestion guifg=#565f89 ctermfg=8
+  augroup END
+
+  " center screen when entering insert mode
+  augroup center_on_insert
+    autocmd InsertEnter * norm zz 
+  augroup END
 ]]
 
 -- Autoformat

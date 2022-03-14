@@ -1,59 +1,3 @@
-cat ../drewvlaz-cs154-spr-21/hw6/hw6.txt
-cat ../drewvlaz-cs154-spr-21/hw5/hw5.txt
-cat ../drewvlaz-cs154-spr-21/hw7/hw7.txt
-cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Data\ Engineering\ CMSC\ 13600
-cd cmsc13600-submit
-cd quizzes
-pip3 install graphviz
-pip install --upgrade pip
-python numpyex.py
-time python numpyex.py
-cd out
-cd output
-rm unfollowers.txt
-python scripts/unfollowers.py
-v instagram_data/followers_and_following/following.json
-v scripts/unfollowers_.py
-cat output/unfollowers.txt grep "X"
-cat output/unfollowers.txt | grep "X"
-cat output/unfollowers.txt | grep "X" | wc -l
-cd instagram_data
-v information_about_you/account_based_in.json
-v account_information/account_information.json
-v account_information/personal_information.json
-v monetization/eligibility.json 
-v comments/post_comments.json 
-v messages/inbox/alejandroherrerarondon_n4wlxxd7gw
-v messages/inbox/theo_aditvhrbug
-v messages/inbox/janata_btqoahyjpq/message_1.json
-v loyalty_accounts/no-data.txt
-v recent_searches/account_searches.json 
-svn update
-cat 00-grade-exam1-drewvlaz.txt
-pw
-cd snap
-cat test.c
-rm test.c
-rm .bash_history*
-v .vimrc
-d in plank
-d in gnome-shell-extension-pop-shell
-cd shell
-d rm gnome-shell-extension-pop-shell
-npm -g typescript
-npm install -g typescript
-npm install typescript
-d install typescript
-d install node-typescript
-sudo npm install -g typescript
-make local-install
-google-chrome
-ls > out
-rm aslkdjfalkj
-make && ./myshell'
-svn commit -m "simple redirection"
-d in lf
-d in ranger
 ranger
 man ranger
 v .zshrc
@@ -2632,7 +2576,6 @@ v night-owl.vim.yml
 v in
 v .hy 
 cd agi 
-vi
 bc
 d se neovide
 d in curl \\
@@ -3109,7 +3052,6 @@ ex
 v .tmux.conf
 mkdir .config/tmux
 mv .tmux.conf .config/tmux/tmux.conf
-c
 ls | grep py
 xit
 la .config
@@ -3311,7 +3253,6 @@ lo
 sils
 tmux -h
 tmux --help
-sdl
 gs
 xournal
 d in bspwm sxhkd
@@ -3416,7 +3357,6 @@ du -h lost+found
 resolve
 davinci-resolve
 davinci
-d in discord
 flatpak list
 flatpak install anki
 flatpak --help
@@ -3720,7 +3660,6 @@ chmod +x test.sh
 hashbang.sh
 tmux sl
 v test.sh
-vv
 v nvim-tree.lua
 v nvim-tree.vim
 ka google-chrome
@@ -3861,7 +3800,6 @@ lines objectdb
 lines patternly/detection.py
 \:Lq
 \:qw
-fuck
 ll models | grep 29 | wc -l
 ll models | grep 4 | wc -l
 ll models | grep 4 
@@ -4237,8 +4175,6 @@ cd ../wallpapers0
 lines
 lines ls
 sls
-cat test
-cat test.py
 lines test.py
 python ts.py
 tmux 
@@ -4250,7 +4186,6 @@ make
 ./myshell
 cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p4shell
 v myshell.c
-cd Dev
 cd ../Documents
 c github-recovery-codes.txt
 v github-recovery-codes.txt
@@ -4676,7 +4611,6 @@ cd /usr/
 cd share/zsh
 sudo mv zsh-autosuggestions zsh-syntax-highlighting zsh/plugins
 colors
-hashbang
 ll
 d in google-chrome
 d in chrome
@@ -4703,7 +4637,6 @@ pip install pandas
 pip install jupyterthemes
 d in jupyter
 d se jupyter
-bh
 d in zathura-pdf-mupdf
 d in late
 d in latex
@@ -4767,8 +4700,6 @@ cd lunarvim
 cd lvim
 cd site/pack
 cd packer/opt
-rm -rf vimtex
-v pset8.tex
 cd .config/lvim
 rm -rf lsp-settings
 mkdir lsp-settings
@@ -4799,7 +4730,6 @@ sudo nvim Alacritty.desktop
 cd .local/share/applications
 alacritty
 v Alacritty.desktop
-v 
 v agitations.csv
 ls data
 ls data >> ids.txt
@@ -4874,7 +4804,6 @@ ld -lboost_system --verbose | grep succeed
 ld -lboost_timer --verbose | grep succeed
 ld -lboost_timer -L./boost/lib--verbose | grep succeed
 ld -lboost_timer -L./boost/lib --verbose | grep succeed
-rm a.out
 rm -rf dist
 ls build
 rm -rf build
@@ -4957,8 +4886,6 @@ g add examples/Satellite_ts.ipynb
 g commit -m "add example with dynamically updating PFSA library"
 g push
 cd zedsuite
-d up
-sdls
 v zutil.pyx
 nvim --version
 python test_.py
@@ -4972,14 +4899,12 @@ d in anki
 cd Anki
 rm -rf Anki
 rm -rf Anki2
-sudo systemctl restart bluetooth.service
 git clone https://github.com/LunarVim/Neovim-from-scratch.git nvim
 cd lua
 cd user
 cd lsp
 v ke
 v keymaps.lua
-cd
 cls
 cd site/pack/packer
 cd start
@@ -4993,14 +4918,11 @@ v plugins.lua
 nvim in
 v colorscheme.lua
 v quickscope.lua
-cd lua/user
 cd patternly
 nvim detection.py
 v options.lua
 v config.lua
-se
 nvim comment.lua
-l
 cd ../nvim_bkup
 nvim general/keys.vim
 cd plug-config
@@ -5027,11 +4949,9 @@ n
 cd .local/share
 cd nvim
 cd site
-nvim
 nv 
 du -h lualine.lua
 nvim lualine.lua
-tmux
 jupyter notebook --allow-root
 head agitations_dataset/ACC_X.csv
 nvim agitations_dataset/HR.csv
@@ -5041,7 +4961,6 @@ nvim colorscheme.lua
 nvim init.lua
 nvim plugins.lua
 nvim treesitter.lua
-ec
 lvim
 nvim config.lua
 cd test_agitations_
@@ -5062,17 +4981,12 @@ v autocommands.lua
 ls | wc -l
 lines cluster.csv
 hb && ls
-sc
 lvim process.py
-v lualine.lua
 v process.py
-v patternly/detection.py
 ext
 rm -rf .git .github
 g init
 rm -rf .git
-cd 
-cd Dev/dotfiles
 cd .config/nvim
 rm -rf autoload general plug-config spell themes vim-plug coc-settings.json init.vim
 ls plugin
@@ -5081,100 +4995,107 @@ cd ../..
 cd .config
 rm -rf nvim
 cd ..
-.scripts/syncdots
 g status
-la
 cat README.md
-sd
 pwd
-hb
-cl
-v
 jjjls
-ls
-v init.lua
-exit
+cd lua/user
+v lualine.lua
+fortune
+hashbang
+v alpha.lua
+cowsay
+echo hello | cowsay
+echo hello | cowsay -b
+echo hello | cowsay -s
+echo hello | cowsay -W
+echo hello | cowsay -d
+echo hello | cowsay -p
+echo hello | cowsay -e i
+echo hello | cowsay -e i i
+echo hello | cowsay -e "i i"
+echo hello | cowsay -t
+echo hello | cowsay -w
+echo hello | cowsay -y
+echo hello | cowsay -l
+echo hello | cowsay -g
+echo hello | cowsay -e "ii"
+echo hello | cowsay -e "O"
+echo hello | cowsay -e " O"
+echo hello | cowsay -e "uu"
+echo hello | cowsay -e "nu"
+echo hello | cowsay -e "nn"
+echo hello | cowsay -e "DD"
+echo hello | cowsay -e "<>"
+echo hello | cowsay -e "()"
+echo hello | cowsay -e "MM"
+echo hello | cowsay -e "echo hello | cowsay -e "MM""
+echo hello | cowsay -e "\!\!"
+echo hello | cowsay -e "##"
+echo hello | cowsay -e "XX"
+echo hello | cowsay -e "??"
+d up
+vim
+vi
+cat test.py
+rm -rf test.py
+cat test
+cat test1.py
+rm -rf test1.py
+rm a.out
+rm zedsuite-0.0.5.tar.gz
+rm -rf zedsuite-0.0.5
+cd Dev/dotfiles
+.scripts/syncdots
+pip install thefuck
+l
+ec
+claer
+nvim /bin/sh +1 && claer
+dnf search ls
+sc
+cd Dev
+sdl
+sdls
+c
+cd
+hb
+bh
+la
+lls
+fukc
+fuck
+nvim /bin/sh +1 && lls
 \:q
-: 1647044893:0;tmux
-: 1647044894:0;sd
-: 1647044896:0;ls
-: 1647044901:0;cd lua/user
-: 1647044901:0;ls
-: 1647044909:0;v lualine.lua
-: 1647045634:0;sd
-: 1647045638:0;v patternly/detection.py
-: 1647046016:0;v 
-: 1647046020:0;v patternly/detection.py
-: 1647046378:0;v 
-: 1647046541:0;v patternly/detection.py
-: 1647046934:0;ls
-: 1647046936:0;v alpha.lua
-: 1647046951:0;sd
-: 1647046954:0;v init.lua
-: 1647046962:0;v
-: 1647047003:0;v init.lua
-: 1647047007:0;v
-: 1647047014:0;v init.lua
-: 1647047084:0;v
-: 1647047141:0;fortune
-: 1647047145:0;hashbang
-: 1647047165:0;v
-: 1647047376:0;sd
-: 1647047378:0;v patternly/detection.py
-: 1647047578:0;v init.lua
-: 1647047994:0;v patternly/detection.py
-: 1647048671:0;ls
-: 1647048692:0;v
-: 1647048715:0;v alpha.lua
-: 1647048725:0;v
-: 1647048892:0;cowsay
-: 1647048909:0;echo hello | cowsay
-: 1647048917:0;echo hello | cowsay -b
-: 1647048921:0;echo hello | cowsay -s
-: 1647048927:0;echo hello | cowsay -W
-: 1647048932:0;echo hello | cowsay -d
-: 1647048935:0;echo hello | cowsay -p
-: 1647048947:0;echo hello | cowsay -e i
-: 1647048950:0;echo hello | cowsay -e i i
-: 1647048955:0;echo hello | cowsay -e "i i"
-: 1647048961:0;echo hello | cowsay -t
-: 1647048967:0;echo hello | cowsay -w
-: 1647048970:0;echo hello | cowsay -y
-: 1647048977:0;echo hello | cowsay -l
-: 1647048995:0;echo hello | cowsay -g
-: 1647049004:0;echo hello | cowsay -e "ii"
-: 1647049011:0;echo hello | cowsay -e "O"
-: 1647049018:0;echo hello | cowsay -e " O"
-: 1647049024:0;echo hello | cowsay -e "uu"
-: 1647049028:0;echo hello | cowsay -e "nu"
-: 1647049030:0;echo hello | cowsay -e "nn"
-: 1647049036:0;echo hello | cowsay -e "DD"
-: 1647049040:0;echo hello | cowsay -e "<>"
-: 1647049053:0;echo hello | cowsay -e "()"
-: 1647049057:0;echo hello | cowsay -e "MM"
-: 1647049060:0;echo hello | cowsay -e "echo hello | cowsay -e "MM""
-: 1647049070:0;echo hello | cowsay -e "\!\!"
-: 1647049077:0;echo hello | cowsay -e "##"
-: 1647049082:0;echo hello | cowsay -e "XX"
-: 1647049089:0;echo hello | cowsay -e "??"
-: 1647049290:0;v
-: 1647049319:0;cl
-: 1647051465:0;ls
-: 1647051472:0;v
-: 1647057945:0;d up
-: 1647057960:0;vim
-: 1647057963:0;vi
-: 1647058052:0;ls
-: 1647058060:0;cat test.py
-: 1647058064:0;rm -rf test.py
-: 1647058068:0;cat test
-: 1647058072:0;cat test1.py
-: 1647058091:0;rm -rf test1.py
-: 1647058093:0;ls
-: 1647058095:0;rm a.out
-: 1647058100:0;rm zedsuite-0.0.5.tar.gz
-: 1647058102:0;rm -rf zedsuite-0.0.5
-: 1647058102:0;ls
-: 1647058104:0;cl
-: 1647058109:0;cd Dev/dotfiles
-: 1647058111:0;.scripts/syncdots
+v 
+vv
+v patternly/detection.py
+cd 
+cd .local/share/nvim/site/pack/packer/start
+cd ../opt
+rm -rf vimtex
+sudo systemctl restart bluetooth.service
+tex 
+google pset8.pdf
+cat pset8.tex >> pset8.bkup
+cat pset8.tex
+tmux
+latex pset8.tex
+killall gsd-color
+sudo systemctl start gsd-color
+d in discord
+cl
+lvim init.lua
+se
+v pset8.tex
+sd
+ls
+nvim
+v init.lua
+Pexit
+v
+exit
+: 1647234302:0;ls
+: 1647234337:0;v pset8.tex
+: 1647234435:0;sd
+: 1647234439:0;.scripts/syncdots

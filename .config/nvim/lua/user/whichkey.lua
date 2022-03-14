@@ -92,7 +92,7 @@ local opts_visual = {
 
 local mappings = {
   ["/"] = { "<cmd>Commentary<CR>", "Comment" },
-  a = { "<cmd>Alpha<CR>", "Alpha" },
+  -- a = { "<cmd>Alpha<CR>", "Alpha" },
   b = {
     "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<CR>",
     "Buffers",
@@ -113,6 +113,14 @@ local mappings = {
   },
   F = { "<cmd>Telescope live_grep theme=ivy<CR>", "Find Text" },
   P = { "<cmd>lua require('telescope').extensions.projects.projects()<CR>", "Projects" },
+
+  d = {
+    name = "Document",
+    -- c = { "<cmd>LLPStartPreview<CR>", "Compile"},
+    c = { "<cmd>VimtexCompile<CR>", "Compile"},
+    s = { "<cmd>set spell<CR>", "Toggle spelling"},
+    m = { "ciW$$<ESC>P", "Format math"},
+  },
 
   p = {
     name = "Packer",
@@ -181,7 +189,11 @@ local mappings = {
     name = "Search",
     b = { "<cmd>Telescope current_buffer_fuzzy_find<CR>", "Search in buffer" },
     C = { "<cmd>Telescope commands<CR>", "Commands" },
-    c = { "<cmd>Telescope colorscheme<CR>", "Colorscheme" },
+    -- c = { "<cmd>Telescope colorscheme<CR>", "Colorscheme" },
+    c = {
+          "<cmd>lua require('telescope.builtin.internal').colorscheme({enable_preview = true})<CR>",
+          "Colorscheme with Preview",
+    },
     h = { "<cmd>Telescope help_tags<CR>", "Find Help" },
     f = { "<cmd>Telescope find_files<CR>", "Find File" },
     M = { "<cmd>Telescope man_pages<CR>", "Man Pages" },
