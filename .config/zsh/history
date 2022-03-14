@@ -1,4 +1,3 @@
-du .
 cd sessions
 alsk;jdflk;jdf
 g commit -m "partial"
@@ -4955,7 +4954,6 @@ nvim treesitter.lua
 lvim
 nvim config.lua
 cd test_agitations_
-..
 ls agitations_dataset
 ls session_agitations
 python process.py
@@ -4987,7 +4985,6 @@ cd .config
 rm -rf nvim
 g status
 cat README.md
-pwd
 jjjls
 cd lua/user
 v lualine.lua
@@ -5048,7 +5045,6 @@ sdl
 sdls
 c
 cd
-hb
 bh
 la
 lls
@@ -5072,12 +5068,9 @@ killall gsd-color
 sudo systemctl start gsd-color
 d in discord
 lvim init.lua
-se
 nvim
 Pexit
 v pset8.tex
-.scripts/syncdots
-cl
 cp ../../agitation_study/patternly/detection.py patternly/
 cd patternly
 v detection.py
@@ -5088,25 +5081,24 @@ v pyright.json
 mv lsp-settings ../
 cd ..
 rm -rf lsp-settings
-ls
 v i
 v init.lua
-sd
 v 
 v patternly/detection.py
+hb
+se
+.scripts/syncdots
+sd
+cd agitation_study/agitations_dataset
+..
+ls
+cl
+pwd
 exit
-: 1647236242:0;cl
-: 1647236243:0;pwd
-: 1647236244:0;cl
-: 1647236244:0;hb
-: 1647236251:0;se
-: 1647236272:0;sd
-: 1647236275:0;ls
-: 1647236281:0;se
-: 1647236312:0;sd
-: 1647236328:0;ls
-: 1647236333:0;cl
-: 1647236345:0;ls
-: 1647236350:0;cl
-: 1647236352:0;sd
-: 1647236355:0;.scripts/syncdots
+: 1647236476:0;ls
+: 1647236482:0;v pset1.tex
+: 1647236515:0;hb
+: 1647236516:0;ls
+: 1647236518:0;cl
+: 1647236519:0;sd
+: 1647236523:0;.scripts/syncdots
