@@ -46,9 +46,9 @@ vicmd_symbol = "[](bold yellow)"
 format = '[\[](bold yellow)[$path]($style)[$read_only]($read_only_style)[\]](bold yellow) '
 style = "bold cyan"
 read_only_style = "red"
-truncation_length = 6
+truncation_length = 3
 truncate_to_repo = true
-truncation_symbol = ""                                                                      # "…/"
+truncation_symbol = "…/"
 home_symbol = "~"
 read_only = " 🔒"
 

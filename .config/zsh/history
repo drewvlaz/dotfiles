@@ -1,9 +1,3 @@
-ranger
-man ranger
-v .zshrc
-lfcd
-man nnn
-cat .config/nnn/
 du .
 cd sessions
 alsk;jdflk;jdf
@@ -4385,7 +4379,6 @@ as
 mkdir psets
 head ../../../Autumn/MATH19620-Linear_Algebra/hw/hw8.tex -n 30 | toclip
 cp ../repos/patternly/patternly/detection.py ../repos/patternly/patternly/_utils.py .
-v detection.py
 mkdir patternly
 mv detection.py _utils.py patternly
 v zed_temp/clean_59034d75-ebb8-411b-ab94-c4c4c6f3829c
@@ -4701,7 +4694,6 @@ cd lvim
 cd site/pack
 cd packer/opt
 cd .config/lvim
-rm -rf lsp-settings
 mkdir lsp-settings
 cd lsp-settings
 head patternly/detection.py
@@ -4918,7 +4910,6 @@ v plugins.lua
 nvim in
 v colorscheme.lua
 v quickscope.lua
-cd patternly
 nvim detection.py
 v options.lua
 v config.lua
@@ -4994,7 +4985,6 @@ rm -rf plugin
 cd ../..
 cd .config
 rm -rf nvim
-cd ..
 g status
 cat README.md
 pwd
@@ -5046,7 +5036,6 @@ rm a.out
 rm zedsuite-0.0.5.tar.gz
 rm -rf zedsuite-0.0.5
 cd Dev/dotfiles
-.scripts/syncdots
 pip install thefuck
 l
 ec
@@ -5067,9 +5056,7 @@ fukc
 fuck
 nvim /bin/sh +1 && lls
 \:q
-v 
 vv
-v patternly/detection.py
 cd 
 cd .local/share/nvim/site/pack/packer/start
 cd ../opt
@@ -5084,18 +5071,42 @@ latex pset8.tex
 killall gsd-color
 sudo systemctl start gsd-color
 d in discord
-cl
 lvim init.lua
 se
-v pset8.tex
-sd
-ls
 nvim
-v init.lua
 Pexit
+v pset8.tex
+.scripts/syncdots
+cl
+cp ../../agitation_study/patternly/detection.py patternly/
+cd patternly
+v detection.py
 v
+cp lsp-settings ../nvim/lua
+cd lua/lsp-settings
+v pyright.json
+mv lsp-settings ../
+cd ..
+rm -rf lsp-settings
+ls
+v i
+v init.lua
+sd
+v 
+v patternly/detection.py
 exit
-: 1647234302:0;ls
-: 1647234337:0;v pset8.tex
-: 1647234435:0;sd
-: 1647234439:0;.scripts/syncdots
+: 1647236242:0;cl
+: 1647236243:0;pwd
+: 1647236244:0;cl
+: 1647236244:0;hb
+: 1647236251:0;se
+: 1647236272:0;sd
+: 1647236275:0;ls
+: 1647236281:0;se
+: 1647236312:0;sd
+: 1647236328:0;ls
+: 1647236333:0;cl
+: 1647236345:0;ls
+: 1647236350:0;cl
+: 1647236352:0;sd
+: 1647236355:0;.scripts/syncdots

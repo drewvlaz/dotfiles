@@ -157,14 +157,16 @@ local mappings = {
   l = {
     name = "LSP",
     a = { "<cmd>lua vim.lsp.buf.code_action()<CR>", "Code Action" },
-    d = {
-      "<cmd>Telescope lsp_document_diagnostics<CR>",
-      "Document Diagnostics",
-    },
-    w = {
-      "<cmd>Telescope lsp_workspace_diagnostics<CR>",
-      "Workspace Diagnostics",
-    },
+    -- d = {
+    --   "<cmd>Telescope lsp_document_diagnostics<CR>",
+    --   "Document Diagnostics",
+    -- },
+    -- w = {
+    --   "<cmd>Telescope lsp_workspace_diagnostics<CR>",
+    --   "Workspace Diagnostics",
+    -- },
+    d = { "<cmd>TroubleToggle document_diagnostics<CR>", "Diagnostics" },
+    w = { "<cmd>TroubleToggle workspace_diagnostics<CR>", "Workspace Diagnostics" },
     f = { "<cmd>lua vim.lsp.buf.formatting()<CR>", "Format" },
     i = { "<cmd>LspInfo<CR>", "Info" },
     I = { "<cmd>LspInstallInfo<CR>", "Installer Info" },
