@@ -111,7 +111,7 @@ end
 ins_left {
   -- mode component
   function()
-    -- other icons: ,,,,,,,ﱦ
+    -- other icons:▊,,,,,,,,,ﱦ,異
     return '▊ '
   end,
   color = function()

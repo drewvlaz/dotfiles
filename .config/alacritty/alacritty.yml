@@ -5,6 +5,8 @@ env:
   TERM: xterm-256color
   # TERM: alacritty
 window:
+  opacity: 0.90
+
   padding:
     x: 3
     y: 3
@@ -43,11 +45,11 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Operator Mono Nerd Font Mono
+    family: OperatorMono Nerd Font Mono
     style: Regular
 
   bold:
-    family: OperatorMono 
+    family: OperatorMono Nerd Font Mono
     style: Bold
 
   italic:
@@ -58,7 +60,7 @@ font:
     family: Operator Mono Nerd Font Mono
     style: Bold Italic
 
-  size: 14.5
+  size: 13.5
   # Spacing between characters
   offset:
     x: 0
@@ -168,7 +170,7 @@ import:
 # Background opacity
 
 # background_opacity: 1.0
-background_opacity: 0.90
+# background_opacity: 0.90
 
 selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"

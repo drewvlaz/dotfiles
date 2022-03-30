@@ -7,6 +7,7 @@
 # Welcome message, don't display in tmux
 # fortune -s -n 150 | cowsay -W 38 -f cower | lolcat
 [ -z "${TMUX}" ] && [ -f "$HOME/.scripts/hashbang.sh" ] && "$HOME/.scripts/hashbang.sh"
+# [ -f "$HOME/.scripts/hashbang.sh" ] && "$HOME/.scripts/hashbang.sh"
 
 # Enable colors and change prompt:
 autoload -U colors && colors
@@ -36,19 +37,20 @@ export GOPATH=$GOPATH~/golib
 export SUDO_EDITOR=nvim
 export EDITOR=nvim
 # export EDITOR=lvim
-export BROWSER=firefox
-export FILEMANAGER=nautilus
-export RUST_BACKTRACE=full
+# export BROWSER=firefox
+# export FILEMANAGER=nautilus
+# export RUST_BACKTRACE=full
 export STARSHIP_CONFIG=~/.config/zsh/themes/starship/config.toml
 # export TERM=xterm-256color
 # Prevent double first character in commands
 export LC_CTYPE=en_US.UTF-8
+export XDG_RUNTIME_DIR=/run/user/1000
 
 # Applications
 export FZF_DEFAULT_OPTS="--layout=reverse --height=10"
-eval "$(thefuck --alias)"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# eval "$(thefuck --alias)"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -98,7 +100,7 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 # Use lf to switch directories
 lfcd() {
     tmp="$(mktemp)"
-    nnn -last-dir-path="$tmp" "$@"
+    lf -last-dir-path="$tmp" "$@"
     if [ -f "$tmp" ]; then
         dir="$(cat "$tmp")"
         rm -f "$tmp"
@@ -107,35 +109,35 @@ lfcd() {
 }
 
 # Use nnn to switch directories
-nnncd() {
-    # Block nesting of nnn in subshells
-    if [ -n $NNNLVL ] && [ "${NNNLVL:-0}" -ge 1 ]; then
-        echo "nnn is already running"
-        return
-    fi
+# nnncd() {
+#     # Block nesting of nnn in subshells
+#     if [ -n $NNNLVL ] && [ "${NNNLVL:-0}" -ge 1 ]; then
+#         echo "nnn is already running"
+#         return
+#     fi
 
-    # The default behaviour is to cd on quit (nnn checks if NNN_TMPFILE is set)
-    # To cd on quit only on ^G, remove the "export" as in:
-    #     NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
-    # NOTE: NNN_TMPFILE is fixed, should not be modified
-    export NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
+#     # The default behaviour is to cd on quit (nnn checks if NNN_TMPFILE is set)
+#     # To cd on quit only on ^G, remove the "export" as in:
+#     #     NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
+#     # NOTE: NNN_TMPFILE is fixed, should not be modified
+#     export NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
 
-    # Unmask ^Q (, ^V etc.) (if required, see `stty -a`) to Quit nnn
-    # stty start undef
-    # stty stop undef
-    # stty lwrap undef
-    # stty lnext undef
+#     # Unmask ^Q (, ^V etc.) (if required, see `stty -a`) to Quit nnn
+#     # stty start undef
+#     # stty stop undef
+#     # stty lwrap undef
+#     # stty lnext undef
 
-    nnn "$@"
+#     nnn "$@"
 
-    if [ -f "$NNN_TMPFILE" ]; then
-            . "$NNN_TMPFILE"
-            rm -f "$NNN_TMPFILE" > /dev/null
-    fi
-}
+#     if [ -f "$NNN_TMPFILE" ]; then
+#             . "$NNN_TMPFILE"
+#             rm -f "$NNN_TMPFILE" > /dev/null
+#     fi
+# }
 
 # Custom ZSH Binds
-bindkey -s '^o' 'nnncd\n'
+bindkey -s '^o' 'lfcd\n'
 bindkey 'jk' vi-cmd-mode
 bindkey '^ ' autosuggest-accept
 
@@ -154,19 +156,4 @@ eval "$(starship init zsh)"
 # Load extensions ; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/usr/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#     eval "$__conda_setup"
-# else
-#     if [ -f "/usr/etc/profile.d/conda.sh" ]; then
-#         . "/usr/etc/profile.d/conda.sh"
-#     else
-#         export PATH="/usr/bin:$PATH"
-#     fi
-# fi
-# unset __conda_setup
-# <<< conda initialize <<<
 

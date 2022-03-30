@@ -1,289 +1,3 @@
-cd sessions
-alsk;jdflk;jdf
-g commit -m "partial"
-g push 
-cd extra-credit/hw4-ec
-python bloom.py
-g add bloom.py
-g commit -m "complete ec"
-python auto_grader.py'
-python auto_grader.py'\
-python auto_grader.py
-cd Documents/ZeD/python_implementations_
-cd p4
-cd p4shell/ls
-rm vgcore.62467
-svn commit -m "modularize parsing"
-valgrind ./myshell
-valgrind --leak-check=full ./myshell
-valgrind --leak-check=full --show-leak-kinds=all -g ./myshell
-svn commit -m "fixed memory leaks"
-unzip p4.zip p4
-unzip p4.zip
-v clean.sh
-v batch-files
-cd batch-files
-cat gooduser_args
-cat gooduser_basic
-cat complexRedirection_illegal
-cat ../expected-output/complexRedirection_illegal.stdout
-svn commit -m "multiple commands"
-cat myshell
-cat myshell.c
-ma 
-jm
-svn diff
-svn commit -m "remove frees"
-v out
-gdb
-svn commit -m "error handling on multiple commands"
-rm \ out
-ls>out
-rm $'\t'$'\t'out
-svn commit -m "error handle redirection"
-> out
-ld -lconfig++ --verbose | grep succeed
-cd /usr/lib64
-ls | grep boost
-ls | grep boost_system
-cd Documents/ZeD/zutil_
-km
-ls > +
-cat +
-r out
-svn commit -m "parse advanced redirect"
-m 
-rm out.tmp.tmp
-rm test test.tmp
-cat out.tmp
-v test.tmp
-v ../GenESeSS_/genESeSS.pyux
-v ../GenESeSS_/genESeSS.pyx
-time ./bin/lsmash -f testsuite/seq.dat -o result.txt
-r out.tmp
-rm out.tmp
-cat test.tmp
-rm out.tmp out
-rm test.tmp
-rm test
-,..
-m
-cat argv\[j\]\)
-rm argv\[j\]\)
-make && ./myshell l
-svn commit -m "error handling"
-make && ./myshell test test
-v test
-svn commit -m "batch mode"
-make && ./myshell test
-scp -r p4.zip drewvlaz@linux.cs.uchicago.edu:~/Documents/cs/drewvlaz-cs154-spr-21/p4shell
-svn commit -m "fixed error msg"
-make && ./myshell batch-files/gooduser_redirection
-make && ./myshell batch-files/gooduser_args
-cat batch-files/gooduser_multipleCommand l
-cat batch-files/gooduser_multipleCommand
-make && ./myshell batch-files/gooduser_multipleCommand
-cat expected-output/gooduser_multipleCommand.stdout
-cat expected-output/buildin_wrongFormat.stdout
-diff -y out expected-output/multipleCommand.stdout
-cat out
-pwd test-scripts
-make && ./myshell batch-files/buildin_wrongFormat > out
-diff -y out expected-output/buildin_wrongFormat.stdout
-diff out expected-output/buildin_wrongFormat.stdout
-svn commit -m "70%"
-v README
-svn commit -m "add README"
-ss
-cd p4shell/
-make && ./myshell batch-files/complexCommand > out
-./myshell batch-files/buildin_wrongFormat > out
-./myshell batch-files/buildin_wrongFormat
-make && ./myshell batch-files/buildin_wrongFormat
-cp FinalQuiz.pdf ..
-g commit -m "complete quiz"
-g commit -m "fix typos"
-svn commit -m "81%"
-sxiv mydask.png
-rm mydask.png
-for i in {1..10}; do python daskex.py; done
-sxiv . &
-rm gooduser_redirection_rd_*
-scp daskex.py drewvlaz@linux.cs.uchicago.edu:~/Documents/cs/cs136/
-sxiv test.png
-cp quizzes/FinalQuiz.pdf .
-g add FinalQuiz.pdf
-g commit -m "complete"
-scp title.py drewvlaz@linux.cs.uchicago.edu:~/Documents/cs/cs136/
-scp title.csv years.json ooc.py core.py drewvlaz@linux.cs.uchicago.edu:~/Documents/cs/cs136/
-d rm plank
-scp countD.py drewvlaz@linux.cs.uchicago.edu:~/Documents/cs/cs136/
-scp countD.py drewvlaz@linux.cs.uchicago.edu:~/Documents/cs/cs136/drewvlaz/hw5
-python countD.py
-v countD.py
-cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Data\ Engineering\ CMSC\ 13600/cmsc13600-submit/quizzes
-g checkout countD.py
-cat countD.py
-cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Data\ Engineering\ CMSC\ 13600/cmsc13600-submit/hw5
-cd extra-credit
-cd hw4-ec
-cat bloom.py
-v auto_grader.py
-rm -rf drewvlaz
-git clone https://github.com/pop-os/shell
-rm -rf shell
-g clone https://mit.cs.uchicago.edu/cmsc13600-spr-21/drewvlaz
-cd drewvlaz
-cp ../cmsc13600-materials/hw5/auto_grader.py ../cmsc13600-materials/hw5/ooc.py ../cmsc13600-materials/hw5/core.py ../cmsc13600-materials/hw5/years.json ../cmsc13600-submit/hw5/title.csv hw5
-rm out test
-make && ./myshell batch-files/1KCommand
-python auto_grader.py
-make && ./myshell batch-files/badCommand
-diff out expected-output/badCommand.stdout
-cat batch-files/badCommand
-make && ./myshell batch-files/badCommand > out
-diff -y out expected-output/badCommand.stdout
-svn commit -m "94%"
-rm +
-make && ./myshell batch-files/complexRedirection_illegal
-cat expected-output/complexRedirection_illegal.stdout
-cd test-scripts
-chmod +x *
-python test-scripts/grade.py
-python2 test-scripts/grade.py
-make && ./myshell batch-files/gooduser_basic
-make && ./myshell batch-files/gooduser_basic > out | diff -y out expected-output/gooduser_basic.stdout
-rm jkla
-make && ./myshell batch-files/advancedRedirection_illegal
-rm complexRedirection_illegal_rd_*
-rm advancedRedirection_illegal_rd_1
-rm out
-valgrind --leak-check=full --show-leak-kinds=all ./myshell
-make && ./myshell
-gdb myshell
-sc 
-svn commit -m "100"
-svn add README
-scp -r myshell.c drewvlaz@linux.cs.uchicago.edu:~/Documents/cs/drewvlaz-cs154-spr-21/p4shell
-svn status
-svn commit -m "clean up"
-valgrind --leak-check=full --show-leak-kinds=all ./myshell batch-files/advancedRedirection_illegal
-cd Documents/Zed
-cd Documents/ZeD
-mkdir repos
-mv -r GenESeSS_ python_implementations_ zutil_ repos
-mv GenESeSS_ python_implementations_ zutil_ repos
-cd repos
-git clone https://github.com/zeroknowledgediscovery/cynet_
-cp - r ../python_implementations_/genESeSS/
-cp - r ../python_implementations_/genESeSS/ .
-mv genESeSS.pyd XgenESeSS.pyd
-mv genESeSS.pxd XgenESeSS.pxd
-mv genESeSS.pyx XgenESeSS.pyx
-git submodule update --recursive\
-
-git submodule update --recursiv
-git submodule update --recursive
-rm -rf cynet_
-git clone --recursive https://github.com/zeroknowledgediscovery/cynet_
-cp -r ../python_implementations_/genESeSS/ .
-mv genESeSS.pyx cynet.pyx
-mv genESeSS.pxd cynet.pxd
-d in plex
-top
-kill -9 zoom
-ps zoom
-kill -9 4901
-ps -e | grep zoom
-./bin/XgenESeSS -h
-./bin/XgenESeSS -f /test/data/YHOOMSFT.dat -T continuous -k " : 0 " -p 0 -g 0.01 -u 1 -B 0 -E 4  -m -w test/test_models/test -v 0 -l test/plog.log -n 10 -e 0.02 -q
-cat test/plog.log
-v zbase/semantic.h
-make XgenESeSS
-./XgenESeSS -h
-du -h XgenESeSS
-du -h bin/XgenESeSS
-../cynet
-cd ../cynet_
-./bin/XgenESeSS -f datafile -k "0:0" -B 0 -E 300  -p 0.01 -S  -u 1 -y 1
-./bin/flexroc -h
-make flexroc
-./flexroc -h
-du -h cynet.cpython-39-x86_64-linux-gnu.so
-make cynet_wrapper
-cd Documents/ZeD/repos/cynet_
-mv pipeline ..
-cd pipeline
-cp -r ../zutil_/bin bin
-cat data
-diff data/covid_epidemiology.csv data/test.csv
-cp bin/* .
-cp -r bin/* .
-rm -rf bin
-./bin/lsmash -f ./data/test.csv -D row  -T symbolic -o ./data/dist.csv
-ps -e
-killall zsh
-cat data/dist.csv
-rm data/dist.csv
-killall hyper
-cat ./data/test.csv
-./bin/lsmash -f ./data/test.csv -u 1 -S 0 -D row  -T symbolic -o ./data/dist.csv
-./bin/lsmash -f ./data/test.csv -u 1 -S 0 -D row -o ./data/dist.csv
-./bin/lsmash -f ./data/test.csv -D row -o ./data/dist.csv
-cp data/test.csv data/test.dat
-./bin/lsmash -f ./data/test.dat -D row -T continous -o ./data/dist.csv
-rm bin/lsmash
-cp bin/lsmash ../pipeline/bin
-./bin/lsmash -f ./data/test.dat -D row -T continuous -o ./data/dist.csv
-./bin/lsmash -f testsuite/seq.dat -T continous -o result.txt
-./bin/lsmash -f testsuite/seq.dat -T symbolic -o result.txt
-cp llk.cc _llk.cc
-git checkout llk.cc
-mv lsmash.cc _lsmash.cc
-rm llk lsmash
-cp llk lsmash ../pipeline/bin
-./bin/lsmash -f ./data/test.dat -D row -o ./data/dist.csv
-./bin/lsmash -f data/test.csv -D row -o result.txt
-./bin/lsmash -f data/test.csv -D row
-./bin/lsmash -f data/test.csv
-gdb ./bin/lsmash
-cp testsuite/seq.dat ../pipeline/data
-./bin/lsmash -f data/seq.dat
-./bin/lsmash -f data/test.dat
-./bin/lsmash -f data/test.dat -T continuous 
-./bin/lsmash -f data/test.dat -T continuous -u 1
-./bin/lsmash -f data/test.dat -T continuous -u 0
-./bin/lsmash -f data/test.dat -T continuous -x 100
-./bin/lsmash -f data/test.dat -T continuous -x 10
-rm H.dst
-./bin/lsmash -f data/test.dat -T symbolic
-./bin/lsmash -f data/test.dat -T continuous
-./bin/lsmash -f data/test.dat -u 1 -T continuous
-cd testsuite
-cat seq1.dat
-cat seq_test_for_lsmash.dat
-./bin/lsmash -f data/test.dat -u 0 -T continuous -S 0
-./bin/lsmash -f data/test.dat -T continuous -p 1 10
-./bin/lsmash -f data/test.dat -T continuous -P 0
-./bin/lsmash -f data/test.dat -T continuous -P 0 1
-./bin/lsmash -f data/test.dat -T continuous -P 10
-./bin/lsmash -f data/test.dat -T continuous -P 100
-./bin/lsmash -f data/test.dat -T continuous -P 1 100
-./bin/lsmash -f data/test.dat -T continuous -P 1 10
-./bin/lsmash -f data/test.dat -T continuous -P 0 10
-./bin/lsmash -f data/test.dat -T continuous -P 100 200 300
-./bin/lsmash -f data/test.csv -T continuous -P 10 20 30 40 50 60 70 80 90 100 200 210
-./bin/lsmash -f data/test.csv -T continuous -P 10 2
-./bin/lsmash -f data/test.csv -T continuous -P 10 20
-./bin/lsmash -f data/test.csv -T continuous -P 100
-./bin/lsmash -f data/test.csv -T continuous -P 100 200
-./bin/lsmash -f data/test.csv -T continuous -P 100 200 300
-./bin/lsmash -f data/test.csv -T continuous -P 100 200 300 400
-./bin/lsmash -f data/test.csv -T continuous -P 100 200 300 400 500
-./bin/lsmash -f data/test.csv -T continuous -P 100 200 300 400 500 600
-./bin/lsmash -f data/test.csv -T continuous -P 10 20 30 40 50 60 70
-./bin/lsmash -f data/test.csv -T continuous -P 10 20 30 40 50 60 70 80 90 100
-./bin/lsmash -f data/test.csv -T continuous -P 10 20 30 40 50 60 70 80 90
 ./bin/lsmash -f data/test.csv -T continuous -P 10 20 30 40 50 60 70 80
 ./bin/lsmash -f data/test.csv -T continuous -P 10 20 30 40 50 60 70 80 81
 ./bin/lsmash -f data/test.csv -T continuous -P 5 10 20 30 40 50 60 70 80
@@ -577,7 +291,6 @@ head ACC.csv
 v ACC.csv
 tail ACC.csv
 k
-p
 q
 e
 t
@@ -625,7 +338,6 @@ v embedding.csv
 ./bin/prun -f ad_temp/cluster_2
 ./bin/prun -f ad_temp/cluster_19
 ./bin/prun -f ad_temp/cluster_18
-./bin/embed -h
 ./bin/embed -f dist.dst
 cp ../data_smashing_/bin/embed bin
 diff agitations_.csv agitations.csv
@@ -699,7 +411,6 @@ d reinstall glibc-devel glibc glibc-static
 d list installed | grep libgcc
 d rm libgccjit libgccjit-devel
 ls | grep isoo
-cd /opt
 ./bootstrap.sh --help
 ./bootstrap.sh --with-libraries=system,thread,program_options,timer,chrono --show-libraries
 ./bootstrap.sh --with-libraries=system,thread,program_options,timer,chrono
@@ -865,7 +576,6 @@ cp -r AnomalyDetection.py main.py utils.py data/ zutils.cpython-39-x86_64-linux-
 rm -rf wheelhouse tmp 
 ls cfg
 rm zutils.cp.so
-ls bin
 ls tes
 rm -rf test
 ls testsuite
@@ -1089,7 +799,6 @@ rm -rf anomdetect.egg-info
 rm -rf tenv
 cat out.txt
 rm out.txt
-clear
 rm -rf __pycache__
 cd anomaly_detection
 cd idst
@@ -2886,7 +2595,6 @@ ls .cargo/bin
 tabbed 
 d in tabbed
 tabbed alacritty
-alacritty -e tmux
 wmctrl -x -a "tabbed" || tabbed alacritty --embed
 tabbed --help
 man tabbed
@@ -2946,7 +2654,6 @@ sudo v /usr/local/lib/node_modules/spaceship-prompt/spaceship.zsh
 .
 cd zutil_
 cd cynet_
-cd data_smashing_
 d se starship
 d in starship
 starship
@@ -3255,7 +2962,6 @@ rofi -show window
 d in polybar
 xwallpaper
 polybar
-whoami
 xrandr --query
 arandr
 d copr enable linuxredneck/xwallpaper
@@ -3332,7 +3038,6 @@ drm qt5-doctools-5.15.2-5.fc34.x86_64
 drm python2
 drm powerline-fonts-2.8.2-1.fc34.noarch
 drm podman
-pacman
 drm pacman
 drm google-roboto-fonts-2.138-8.fc34.noarch
 drm ghc-base
@@ -3365,7 +3070,6 @@ cd .var
 cd app
 rm -rf com.spotify.Client
 rm -rf tv.plex.PlexMediaPlayer
-rm -rf Code
 cd .ca
 rm -rf vscode-cpptools
 rm -rf spotify
@@ -3374,7 +3078,6 @@ rm -rf Trash
 cd Trash/expunged
 ls 827574393
 cd gnome-boxes
-du -h -d 1 | grep G
 du -h centos8
 du -h win10
 rm centos8
@@ -3390,7 +3093,6 @@ rm -rf Pokemon\ Detective\ Pikachu\ \(2019\)
 rm -rf Bla
 rm -rf Black\ Swan\ \(2010\)
 rm -rf The\ Little\ Things\ \(2021\)
-cd Stylish-2k
 cd Stylish
 du -h nadfjh2934f1j1234.zip
 du -h im.tar.xz
@@ -3430,11 +3132,9 @@ rm -rf anki-2.1.47-linux
 d in mpv
 chmod +x ide
 ./ide
-se 
 v id 
 tmux --version
 tmux -V
-tmux list-sessions
 pat
 tmux neww 'vi'
 tmux neww
@@ -3530,7 +3230,6 @@ v .scripts/ide
 v .
 tmux kill-session -t IDE-anomaly_examples
 tmux kill-session -t 67
-man fzf
 fzf
 v .config/zsh/aliasrc
 d in extensions
@@ -3545,11 +3244,8 @@ df -f
 du -h -d 1 Videos
 rm -rf Postman
 cd .config/nnn
-nnn
 v .lastd
-nnncd
 cd Des
-du -h -d 1
 rm -rf *
 tmux a -t IDE-anomaly_examples
 unzip EEG\ data.zip 
@@ -3593,8 +3289,6 @@ cp build/* ~/.fonts/OperatorMonoLig
 cd Dev/nerd-fonts
 ./font-patcher -c --mono operatormono/OperatorMono-Bold.otf
 cp Operator\ Mono\ Bold\ Nerd\ Font\ Complete\ Mono.otf ~/.fonts/Operator\ Mono\ Nerd\ Font
-cd .fonts
-cd Operator\ Mono\ Nerd\ Font
 rm Operator\ Mono\ Bold\ Nerd\ Font\ Complete\ Mono.otf
 tmux a -t IDE-patternly
 cp SeizureDetection.ipynb SeizureTrain.ipynb
@@ -3685,12 +3379,9 @@ man cut\
 tmux ls | cut -d:
 tmux ls | cut -d: -f2
 tmux ls | cut -d: -f1
-tmux ls | cut -d: -f1 | fzf
 tmux attach -t "$(tmux ls | cut -d: -f1 | fzf)"
 tmuxls
-tmux ls
 mkdir chb02
-htop
 b
 rigrep
 ripgrep
@@ -3758,7 +3449,6 @@ mkdir PHYS13100-Mechanics
 cd PHYS13100-Mechanics
 touch hw1.tex
 du -h google-chrome-unstable
-rm -rf google-chrome-unstable
 rm -rf .yay
 rm -rf jedi
 rm -rf yay
@@ -3873,7 +3563,6 @@ mv hw2.* ../../MATH19620-Linear_Algebra/hw
 ls images
 exirt
 cat patternly/detection.py | toclip
-mkdir bin
 cp ../repos/zutil_/bin/llk bin
 ./bin/llk -h
 cat zed_temp/clean_0edf31cb-c294-4137-8112-bfcdf841a689
@@ -3915,7 +3604,6 @@ cd Spring/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw3
 cd hw4
 v hw4.txt
 cat 00-grade-hw4-drewvlaz.txt
-sxiv .
 rmdir predictions
 mkdir predictions
 tmux d
@@ -3925,7 +3613,6 @@ eix
 tar 
 cd th 
 v init.vim
-cd Spring
 cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p2bomb
 cd bomb5/
 cat strings.txt
@@ -4190,7 +3877,6 @@ v 1-2.cc
 g++ 1-2.cc && ./a.out
 cp 1-2.cc 2-2.cc
 cp 2-2.cc 2-1.cc
-rm test.txt
 mv 1-2.txt 2-1.txt
 v 2-1.cc
 g++ 2-1.cc && ./a.out
@@ -4200,7 +3886,6 @@ cp 2-2.cc 3-1.cc
 v 3.txt
 v 3.cc
 cat test.txt| wc -l
-v test.txt
 g++ 3-1.cc && ./a.out
 v 3-1.cc
 cp 3-1.cc 3-2.cc
@@ -4217,7 +3902,6 @@ cd Dev/small-projects/instagram
 rm data
 rm -rf data
 v instagram_data/messages/inbox/lauragiugno_uixohxazjq/message_1.json
-v resume.tex
 ../../../..
 ../../../
 ../chb02
@@ -4235,7 +3919,6 @@ cd ../../..
 ../../..
 scp -r SeizureAnalysis.ipynb SeizureTrain.ipynb drewvlaz@midway2.rcc.uchicago.edu
 scp -r SeizureAnalysis.ipynb SeizureTrain.ipynb drewvlaz@midway2.rcc.uchicago.edu:~/
-ssh drewvlaz@midway2.rcc.uchicago.edu
 ../..
 wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb10/
 rm *.pfsa
@@ -4356,8 +4039,6 @@ cd ../chb03
 v chb03-summary.txt
 mv tex\ Files/* psets
 ws
-ws logout
-ws login
 cat test.py | toclip
 python test.py'
 d in gimp
@@ -4375,7 +4056,6 @@ sudo umount mount
 cd mount
 rmdir mount
 as
-mkdir psets
 head ../../../Autumn/MATH19620-Linear_Algebra/hw/hw8.tex -n 30 | toclip
 cp ../repos/patternly/patternly/detection.py ../repos/patternly/patternly/_utils.py .
 mkdir patternly
@@ -4420,7 +4100,6 @@ du -h data
 cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb01
 du -h .
 cd ../../PHYS13200-Electicity\&Magnetism
-cd psets
 python test2
 mv error.csv test.csv
 cp error.csv data.seq
@@ -4492,8 +4171,6 @@ head -n 150 p132-homework-2.tex| toclip
 head -n 150 pset2.tex| toclip
 v pset2.tex
 v pset1.
-v pset1.tex
-sd 
 v p132-homework-3.tex
 head -n 200 p132-homework-3.tex| toclip
 v p132-homework-2-makeup.tex
@@ -4515,7 +4192,6 @@ head -n 100 ../psets/p132-homework-4.tex | toclip
 v pset4.tex
 l;s
 head -n 100 p132-homework-4.tex | toclip
-randp .
 v p132-homework-5.tex
 pip install patternly
 cp ~/Downloads/Satellite_ts.ipynb .
@@ -4533,7 +4209,6 @@ head -n 80 pset4.tex >> pset6.tex
 v pset5.tex
 v exam1_corrections.tex
 head -n 80 p132-homework-5.tex >> p132-homework-6.tex
-ws account
 d in rstudio
 v hw1.tex
 v hw2.tex
@@ -4544,15 +4219,12 @@ v hw6.tex
 v hw7.tex
 v hw8.tex
 v pro
-r
 v proj.tex
-which r
 cd .cache
 rm -rf chromium/
 rm -rf google-chrome
 pulseaudio
 wsc
-wsd
 v p132-homework-6.tex
 head -n 80 p132-homework-5.tex >> p132-homework-7.tex
 python test.py
@@ -4588,8 +4260,6 @@ cd ../exams
 head -n 100 exam1_corrections.tex
 head -n 100 exam1_corrections.tex >> exam2_corrections.tex
 v exam2_corrections.tex
-cd Downloads
-lsblk
 ls -l | grep Fed
 dd if=Fedora-Workstation-Live-x86_64-35-1.2.iso of=/dev/sda status=progress
 sudo dd if=Fedora-Workstation-Live-x86_64-35-1.2.iso of=/dev/sda status=progress
@@ -4611,7 +4281,6 @@ d rm google-chrome-unstable
 d in google-chrome-stable
 cd /usr/local/share/applications
 cd bin
-cd /
 cd etc/
 v rygel.conf
 cd .local/share/desktop-directories
@@ -4622,7 +4291,6 @@ d in pulseaudio
 d in pulseaudio --allowerasing
 d in blueman
 sudo v /etc/bluetooth/
-df -h
 pip3 install pandas
 d in pip
 pip install pandas
@@ -4653,7 +4321,6 @@ d in npm
 v -V
 sudo bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 sudo dnf install -y pnpm
-yarn
 ls node_modules
 rm yarn.lock
 rm node_modules
@@ -4662,11 +4329,9 @@ rm -rf node_modules
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh -y)
 node -v
 npm -v
-node
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
 export PATH=~/.npm-global/bin:$PATH
-npm install -g npm
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh) -y
 d in gcc-c++
 lvim config.lua
@@ -4721,7 +4386,6 @@ sudo nvim Alacritty.desktop
 cd .local/share/applications
 alacritty
 v Alacritty.desktop
-v agitations.csv
 ls data
 ls data >> ids.txt
 v ids.txt
@@ -4750,16 +4414,13 @@ docker pull quay.io/pypa/manylinux_2_24_x86_64 | toclip
 sudo groupadd docker
 sudo usermod -aG docker drewvlaz
 sudo -s drewvlaz
-sudo su
 sudo passwd root
 su -s drewvlaz
 docker pull quay.io/pypa/manylinux_2_24_x86_64
 docker run --help
 pip install dist/zedsuite-0.0.4-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
-python -version
 python39
 python3.9
-pyenv install -v 3.9.0
 d uninstall python3
 d rm python3
 d in python3.9
@@ -4786,7 +4447,6 @@ virtualenv venv
 venv/bin/activate
 ./venv/bin/activate
 source venv/bin/activate
-tat
 ls boost
 d in boost-static
 v build.sh
@@ -4848,7 +4508,6 @@ jupyter kernel install
 ipython kernel install --user --name py39 --display-name "Python 3.9"
 jupyter notebook
 source py39/bin/activate
-python --version
 pip install ipykernel --upgrade
 python -m ipykernel install --user
 pip install pandas zedsuite
@@ -4876,12 +4535,8 @@ cp Satellite_ts.ipynb ../repos/patternly/examples
 g add examples/Satellite_ts.ipynb
 g commit -m "add example with dynamically updating PFSA library"
 g push
-cd zedsuite
-v zutil.pyx
-nvim --version
 python test_.py
 v test_.py
-pavucontrol
 anki
 cd Downloads/anki-2.1.4
 cd Downloads/anki-2.1.49-linux
@@ -4942,7 +4597,6 @@ cd site
 nv 
 du -h lualine.lua
 nvim lualine.lua
-jupyter notebook --allow-root
 head agitations_dataset/ACC_X.csv
 nvim agitations_dataset/HR.csv
 nvim whichkey.lua
@@ -4967,7 +4621,6 @@ mv partial_dataset_controls partial_dataset
 ls partial_dataset
 nvim autocommands.lua
 v autocommands.lua
-ls | wc -l
 lines cluster.csv
 hb && ls
 lvim process.py
@@ -4980,8 +4633,6 @@ cd .config/nvim
 rm -rf autoload general plug-config spell themes vim-plug coc-settings.json init.vim
 ls plugin
 rm -rf plugin
-cd ../..
-cd .config
 rm -rf nvim
 g status
 cat README.md
@@ -5021,7 +4672,6 @@ echo hello | cowsay -e "\!\!"
 echo hello | cowsay -e "##"
 echo hello | cowsay -e "XX"
 echo hello | cowsay -e "??"
-d up
 vim
 vi
 cat test.py
@@ -5035,70 +4685,418 @@ rm -rf zedsuite-0.0.5
 cd Dev/dotfiles
 pip install thefuck
 l
-ec
 claer
 nvim /bin/sh +1 && claer
 dnf search ls
-sc
 cd Dev
 sdl
 sdls
-c
-cd
 bh
-la
-lls
 fukc
-fuck
 nvim /bin/sh +1 && lls
-\:q
 vv
 cd 
 cd .local/share/nvim/site/pack/packer/start
 cd ../opt
 rm -rf vimtex
-sudo systemctl restart bluetooth.service
 tex 
 google pset8.pdf
 cat pset8.tex >> pset8.bkup
 cat pset8.tex
-tmux
 latex pset8.tex
 killall gsd-color
 sudo systemctl start gsd-color
 d in discord
 lvim init.lua
-nvim
 Pexit
-v pset8.tex
 cp ../../agitation_study/patternly/detection.py patternly/
 cd patternly
 v detection.py
-v
 cp lsp-settings ../nvim/lua
 cd lua/lsp-settings
 v pyright.json
 mv lsp-settings ../
-cd ..
 rm -rf lsp-settings
 v i
 v init.lua
 v 
-v patternly/detection.py
-hb
-se
-.scripts/syncdots
-sd
 cd agitation_study/agitations_dataset
 ..
-ls
-cl
+.scripts/syncdots
+c
+sd 
+mkdir bin
+cp embed ../../../agitation_study/bin
+./lsmash -h
+./embed -h
+cd zedsuite
+v bootstrap.
+v bootstrap.pyx
+v __init__.py
+v zutil.pyx
+cd ../...
+cd ../..
+cd data_smashing_
+ls bin
+./bin/embed -h
+cp bin/embed ../../agitation_study/bin
+cat for_embedding
+lines for_embedding
+v for_embedding
+rm embedding
+./bin/embed -f for_embedding -E embedding
+cat embedding
+v embedding
+jupyter notebook --allow-root
+d in tlp
+pavu 
+sudo systemctl restart bluetooth.service
+d up
+dd if=pop-os_21.10_amd64_intel_7.iso of=/dev/sda status=progress
+sudo dd if=pop-os_21.10_amd64_intel_7.iso of=/dev/sda status=progress
+randp .
+sudo apt install exa starship
+sudo apt install exa
+curl -sS https://starship.rs/install.sh | sh
+sudo apt install neovim
+nvim -V
+nvim --version
+sudo apt install qbittorrent
+ls | grep arch
+dd if=archlinux-2022.03.01-x86_64.iso of=/dev/sda status=progress
+sudo dd if=archlinux-2022.03.01-x86_64.iso of=/dev/sda status=progress
+du -h archlinux-2022.03.01-x86_64.iso
+p -Y exa
+pacman
+pacman -Y exa
+pacman -S exa
+root
+iwctl
+usermod -h
+usermod -G 
+usermod -G wheel drewvlaz
+sudo 
+nvim
+man usermod
+sud
+sudo us
+clear
+p
+which p
+p -Syu 
+sudo systemctl enable network-manager
+sudo systemctl enable Network-Manager
+sudo systemctl enable NetworkManager
+sudo systemctl start NetworkManager
+p -Syu
+p -Ss google chrome
+p -Ss google
+p -Ss chrome
+p -Ss firefox
+p -S firefox
+p -S git
+cd /opt
+p -Syu exa
+sudo git clone https://aur.archlinux.org/yay-git.git
+man ls
+man exa
+ls .
+ls -d
+pkgbuild -si
+p -Syu pkgbuild
+chown -R drewvlaz: yay-git
+sudo chown -R drewvlaz: yay-git
+ls -l
+cd yay-git
+p -Syu base-devel
+makepkg -si
+yay -Ss chrome
+yay -Ss chrome google
+yay -S google-chrome-stable
+yay -S google-chrome
+sudo nvim /etc/local.gen
+sudo nvim /etc/locale.gen
+locale-gen
+sudo locale-gen
+yay -S zsh-syntax-highlighting
+yay -S node
+yay -S blueman
+p -Syu pipewire-pulse
+p -Syu bluez
+bluetoothctl
+p -Syu pavucontrol
+pavucontrol
+pacmmd
+pacmd
+yay -S bluez-alsa-git
+yay -Rs bluez-alsa-git
+cd Templates
+sudo systemctl restart pipewire-pulse.service
+yay -S pipewire
+p -Syu pipewire
+yay -S pipewire-pulse
+pactl info
+p -Rs pulse alsa-base pulseaudio pipewire pipewire-pulse
+p -Rs pulse alsa pulseaudio pipewire pipewire-pulse
+p -Rs pipewire pipewire-pulse
+pipewire-pulse 
+pipewire-pulse --start
+pipewire-pulse -h
+pipewire-pulse -c
+pipewire-pulse &&
+sudo systemctl start pipewire-pulse.service
+sudo systemctl start pipewire.service
+sudo systemctl restart pipewire.service
+sudo systemctl --user enable pipewire.service
+sudo systemctl --user enable pipewire-pulse.service
+sudo systemctl --user status pipewire.service
+sudo systemctl --user start pipewire.service
+sudo systemctl --user start pipewire-pulse.socket
+p -Syu dbus
+sudo systemctl start dbus
+sudo systemctl enable dbus
+p -Syu dbus-user-session systemd libsystemd-dev libsystemd
+ls /run/user/1000
+eit
+ls /
+refind
+pipewire-pulse &
+fdisk -l
+sudo fdisk -l
+lsblk
+du -h /boot
+refind-install
+cd /boot/EFI/refind
+su
+yay -Syu gnome-tweaks
+ssh drewvlaz@midway2.rcc.uchicago.edu
+sudo systemctl --user start pipewire-pulse.service
+yay -Syu alacritty
+tmux -u
+cat /etc/shells
+chsh -s /bin/zsh
+gnome-terminal
+yay -Rs alacritty
+node
+yarn
+npm install -g npm
+which npm
+yay -S npm
+npm
+pyright-languageserver
+find pyright
+yay -Syu grub efibootmgr
+cd /boot
+rm -rf EFI refind_linux.conf
+sudo su
+man grub-install
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+grub-install --target=x86_64-efi --efi-directory=boot --bootloader-id=GRUB
+sudo grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+ls /boot/grub/themes
+ls /boot/EFI
+ls /boot/EFI/GRUB/grubx64.efi 
+cat /boot/EFI/GRUB/grubx64.efi 
+yay -Syu os-prober
+sudo nvim /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+hv
+ls /boto
+fuck
+ls /boot
+v patternly/detection.py
+cd Downloads
+cd Stylish-2k
+v install.sh
+ls Stylish
+cat Stylish/select_c.png
+cat Stylish/dejavu_32.pf2
+cat Stylish/dejavu_32.pf2 | wc -l
+cat Stylish/dejavu_32.pf2 | wc -c
+p -S htop
+htop
+LS
+mkdir Spring
+cd Spring
+ls ../Winter/
+mkdir MATH18500-Mathematical_Methods_III
+mkdir CMSC27200-Theory_of_Algorithms
+cd MATH18500-Mathematical_Methods_III
+mkdir psets
+mkdir psets/images
+head -n 100 ../../../Winter/MATH18400-Mathematical_Methods/psets/pset8.tex >> pset1.tex
+p -S latex
+p -S tex-live
+p -Ss tex
+p -Ss tex | less
+p -Ss tex live | less
+p -S texlive
+p -S texlive-most
+p -S texlive-core
+p -Ss texlive enumitem
+p -Ss enumitem
+p -S texlive-latexextra
+yay -S zoom
+sudo systemctl start bluetooth.service
+sudo systemctl enable bluetooth.service
+p -S pyenc
+p -S pyenv
+pyenv install -v 3.9.0
+python -version
+python --version
+lls
+v agitations.csv
+p -S vlc
+yay -S chrome-gnome-shell
+git clone git@github.com:AndresCidoncha/audio-switcher.git ~/.local/share/gnome-shell/extensions/audio-switcher@AndresCidoncha
+yay -S windscribe
+yay -Ss windscribe
+yay -S windscribe-cli
+yay -Rs python-windscribe-git
+sudo systemctl start windscribe.service
+ws logout
+ws login
+ws connect
+wsd
+ws account
+yay -S tlp
+cd psets
+yay -Ss algo tex
+yay -Ss code tex
+yay -Ss code tex pseudo
+yay -Ss tex pseudocode
+yay -Ss tex algpseudocode
+yay -S texlive-algpseudocode
+yay -Ss algorithmicx
+yay -Ss algpseudocode
+yay -S texlive-science
+v pset1.tex
+v pset8.tex
+yay
+v HW1.tex
+which :q
+whoami
+pwd Downloads
+cd /
 pwd
+ls | wc -l
+h
+hvb
+ls Templates
+rmdir Templates
+rm -rf .FBReader
+du -h .vscode
+rm -rf .vscode
+rm .hyper.js
+rm .NERDTreeBookmarks
+rm .psql_history
+cat .anyconnect
+ls .screenlayout
+rm .screenlayout
+rm -rf .screenlayout
+ls -a
+ls Testing
+ls .mozilla
+rm -rf .mozilla
+du -h .kde4
+ls .kde4/share/apps
+ls .kde4/share/apps/color-schemes/
+ls .irssi/config 
+cat .irssi/config 
+ls .asy
+rm -rf .irssi
+mume
+ls .mume
+v .mume/config.json
+rm -rf .mume
+hb 
+ls .texlive2020
+ls .texlive2020/texmf-var/luatex-cache/generic-dev/
+ls .ssh
+cat .ssh/known_hosts
+cat .ssh/known_hosts | grep midway
+hb; ls -a
+ls .themes/Ant-Bloody
+ls Desktop
+ls Public
+ls Pictures
+yay -S sxiv
+sxiv .
+sxiv Downloads/Stylish-2k/Stylish/im/100008100545_231239.jpg
+sxiv Downloads/Stylish-2k/Stylish/im
+which ranpd
+which randp
+randp Downloads/Stylish-2k/Stylish/im
+df -h
+du -h -n 1
+du -h -d 1
+cd .config
+du -h -d 1 | grep G
+rm -rf code-oss
+rm -rf Code
+rm -rf Code\ -\ OSS
+ls libvirt
+du -h google-chrome
+du -h google-chrome | grep G
+du -h google-chrome | grep M
+rm -rf google-chrome-unstable
+l,a
+la
+rm -rf coc eog evolution 
+nnnn
+nnn
+yay -S rnager
+ragner
+yay -Rs rnager
+yay -Rs ranger
+yay -S lf
+nnncd
+lfcd
+lf
+man lf
+yay -S ranger
+r
+which r
+ranger
+v resume.tex
+man ranger
+\:q
+v
+cd
+cd .fonts
+cd Operator\ Mono\ Nerd\ Font
+cd ..
+cd Operator\ Mono
+ec
+sd
+alacritty -e tmux
+tmux killw -t AAAAAAAAAAAA:
+tmux list-sessions
+tmux list-sessions | awk '{print $1}'
+tmux list-sessions | awk '{print $1}' | sed 's/[^:]*://'
+tmux list-sessions | awk '{print $1}' | sed 's/:.*//'
+tmux list-sessions | awk '{print $1}' | sed 's/:.*//' >> test.txt
+v test.txt
+rm test.txt
+tmux list-sessions | awk '{print $1}' | sed 's/:.*//' | fzf
+se 
+ls
+tkill
+tmux ls
+tmux ls | cut -d: -f1 | fzf
+tmux ls | cut -d: -f1 | fzf -0
+tmux
+man fzf
+se
+sc
+cl
+hb
+tat
 exit
-: 1647236476:0;ls
-: 1647236482:0;v pset1.tex
-: 1647236515:0;hb
-: 1647236516:0;ls
-: 1647236518:0;cl
-: 1647236519:0;sd
-: 1647236523:0;.scripts/syncdots
+: 1648615592:0;tkill
+: 1648615595:0;tat
+: 1648615616:0;tmux ls
+: 1648615631:0;cl
+: 1648615635:0;sd
+: 1648615637:0;ls
+: 1648615639:0;./syncdots
