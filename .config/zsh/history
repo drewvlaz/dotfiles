@@ -1,86 +1,3 @@
-./bin/lsmash -f data/test.csv -T continuous -P 10 20 30 40 50 60 70 80
-./bin/lsmash -f data/test.csv -T continuous -P 10 20 30 40 50 60 70 80 81
-./bin/lsmash -f data/test.csv -T continuous -P 5 10 20 30 40 50 60 70 80
-./bin/lsmash -f data/test.csv -T continuous -u 1 -P 0
-./bin/genESeSS -f deploy/examples/data1.dat -c deploy/cfg/config.cfg -T symbolic -D row
-cp ../GenESeSS_/bin/genESeSS bin
-./bin/genESeSS -f data/dist.csv -T continuous -u 1 -P 0 -D col
-./bin/genESeSS -f data/dist.csv -T continuous -u 1 -P 0 -D column
-./bin/genESeSS -f data/dist.csv -T continuous -u 1 -P 0 -D row
-cp ../GenESeSS_/bin/genESeSS_feature bin
-./bin/genESeSS_feature -f data/dist.csv -T continuous -u 1 -P 0 -D column
-./bin/genESeSS_feature -f data/dist.csv -T continuous -D row
-./bin/genESeSS_feature -f data/dist.csv -T continuous -D row -F
-./bin/genESeSS_feature -f data/dist.csv -T continuous -D row -F -u 1 -P 0
-./bin/genESeSS_feature -f data/dist.csv -T continuous -u 1 -P 0 -D row
-./bin/genESeSS_feature -f data/dist.csv -T continuous -u 1 -P 0 -D row -F
-./bin/genESeSS -f data/dist.csv -T continuous -u 1 -P 0 -D row -F
-./bin/genESeSS -f data/dist.csv -T continuous -u 1 -P 0 -D row -F -o data/label_0
-./bin/genESeSS -f data/dist.csv -T symbolic -D row -F -o data/label_0
-./llk -f testsuite/pfsa.dot -s testsuite/seq1.dat -x 100
-./llk -f testsuite/S2.cfg -s testsuite/seq1.dat -x 100
-v zutils.pyx
-v llk.pxd
-./llk -f testsuite/S2.cfg -s testsuite/seq.dat -x 100
-v testsuite/seq.dat
-v testsuite/seq1.dat
-./bin/llk -f data/label_0 -s data/test.csv
-./bin/llk -f data/label_1 -s data/test.csv
-./bin/genESeSS_feature -f data/dist.csv -T symbolic -D row -F -o data/label_0
-./bin/genESeSS_feature -f data/dist.csv -T symbolic -u 1 -P 0 -D row -F -o data/label_0
-./bin/genESeSS_feature -f data/dist.csv -T continuous -u 1 -P 0 -D row -F -o data/label_0
-./bin/genESeSS_feature -f data/test.csv -T continuous -u 1 -P 0 -D row -F -o data/label_0
-cat data/test.csv
-cat data/label_0
-./bin/genESeSS -f data/smashed.csv -T continuous -u 1 -P 0 -D row -F -o data/label_0
-./bin/genESeSS_feature -f data/smashed.csv -T continuous -u 1 -P 0 -D row -F -o data/label_0
-./bin/llk -s data/smashed.csv -f data/label_16
-./bin/genESeSS_feature -f data/smashed.csv -T continuous -u 1 -P 0 -D row -F -o data/cluster_0
-./bin/llk -s data/smashed.csv -f data/cluster_0 -f data/cluster_1
-./bin/llk -s data/smashed.csv -f data/cluster_0 data/cluster_1
-./bin/llk -s data/smashed_.csv -f data/cluster_0
-./bin/llk -s data/dist.csv -f data/cluster_1
-./bin/llk -s data/smashed_.csv -f data/cluster_1
-diff -y data/dist.csv data/smashed_.csv | head
-./bin/llk -s data/smashed.csv -f data/cluster_1
-./bin/llk -s data/smashed.csv -f data/cluster_0
-./bin/llk -s data/smashed.csv -f data/cluster_2
-./bin/llk -s data/smashed.csv -f data/cluster_3
-./bin/llk -s data/smashed.csv -f data/cluster_5
-./bin/llk -s data/smashed.csv -f data/cluster_4
-./bin/llk -f data/cluster_4 -s data/smashed.csv
-./bin/llk -f data/cluster_4 -s data/smashed.csv -x 10000
-./bin/llk -f data/cluster_4 -s data/smashed.csv -x 100
-./bin/llk -f data/cluster_4 -s data/smashed.csv -x 10
-./bin/llk -f data/cluster_4 -s data/smashed.csv -x 2
-./bin/llk -f data/cluster_4 -s data/smashed.csv -x 1
-./bin/llk -f data/cluster_4 -s data/smashed_.csv -x 10
-./bin/llk -f data/cluster_4 -s data/smashed_.csv -x 1
-./bin/llk -f data/cluster_4 -s data/smashed_.csv -x -
-./bin/llk -f data/cluster_4 -s data/smashed_.csv -x 0
-./bin/llk -f data/cluster_4 -s data/smashed_.csv -x 2
-./bin/llk -f data/cluster_4 -s data/smashed_.csv 
-./bin/llk -f data/cluster_4 -s data/dist.csv 
-./bin/llk -f data/cluster_1 -s data/dist.csv
-./bin/llk -f data/cluster_2 -s data/dist.csv
-diff -y data/dist_.csv data/smashed_.csv
-./bin/llk -f data/cluster_2 -s data/dist_.csv
-./bin/llk -f data/cluster_2 -s data/smashed_.csv
-./bin/llk -f data/cluster_3 -s data/smashed_.csv
-./bin/llk -f data/cluster_4 -s data/smashed_.csv
-./bin/llk -f data/cluster_1 -s data/smashed_.csv
-./bin/llk -f data/cluster_0 -s data/smashed_.csv
-./bin/llk -s data/input.csv -f data/cluster_0
-cp zutils.cpython-39-x86_64-linux-gnu.so ../../pipeline
-ls ../../pipeline
-ls ../../pipeline/
-ls ../../pipeline/bin
-code .
-./bin/llk -s data/dist_.csv -f data/cluster_0
-./bin/llk -s data/dist_.csv -f cluster_0
-./bin/llk -s data/dist_.csv -f cluster_1
-./bin/llk -s data/dist_.csv -f cluster_2
-./bin/llk -s data/dist_.csv -f cluster_3
 ./bin/llk -s data/dist_.csv -f cluster_4
 ./bin/llk -s data/dist_.csv -f cluster_5
 ./bin/llk -s data/input.csv -f cluster_5
@@ -465,7 +382,6 @@ pip3 remove wheel
 pip3 install wheel
 pip3 uninstall wheel
 sudo pip3 uninstall wheel
-python3
 pyton
 python -m pip install wheel
 sudo python -m pip install wheel
@@ -1278,7 +1194,6 @@ ls build/lib.linux-x86_64-3.9/zedsuite
 strings bootstrap.cpython-39-x86_64-linux-gnu.so
 python ../test.py
 cp -r ../zquantizer_ .
-ls zedsuite
 rm -rf build *.so
 python -c "from bootstrap import zedsuite"
 mv bootstrap.cpython-39-x86_64-linux-gnu.so zedsuite.cpython-39-x86_64-linux-gnu.so
@@ -1296,7 +1211,6 @@ python -c "from zutil import Llk"
 python -c "from zedsuite.zutil import Llk"
 python -c "from bootstrap.zutil import Llk"
 ls 
-python 
 for i in ls; do echo i\
 i
 for i in{1..10}s; do echo i
@@ -1933,12 +1847,8 @@ conda remove jupyter
 cd Dev/conda-test0
 conda activate test0
 conda install pip
-which pip
-which pip3
 ls /usr/condabin/conda 
 ls /usr/condabin/
-pip --version
-pip3 --version
 pip3 install pdoc
 d se pdoc
 pip install pdoc3
@@ -2679,7 +2589,6 @@ sh -c "$(curl -fsSL https://starship.rs/install.sh)"\
 
 v Cargo.
 pyenv global 3.7.0
-pyenv global system
 g -h
 g --help
 g log
@@ -2827,7 +2736,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 mkdir lua
 g pull,
 cd pack/packer
-cd opt
 cd plugged
 rm -rf plugged
 v .scripts/syncdots
@@ -3246,7 +3154,6 @@ rm -rf Postman
 cd .config/nnn
 v .lastd
 cd Des
-rm -rf *
 tmux a -t IDE-anomaly_examples
 unzip EEG\ data.zip 
 unzip -l EEG\ data.zip 
@@ -3538,7 +3445,6 @@ gcc
 bash
 which gcc
 v gcc
-v Makefile
 ./driver.pl
 ./dlc -z
 make clean
@@ -3911,7 +3817,6 @@ mv chb02_120_20.png chb02_120_80.png
 wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb09
 wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb09/
 cp physionet.org/files/chbmit/1.0.0/chb09/* .
-killall zoom
 j 
 cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb09
 cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb03
@@ -4273,7 +4178,6 @@ cd /usr/
 cd share/zsh
 sudo mv zsh-autosuggestions zsh-syntax-highlighting zsh/plugins
 colors
-ll
 d in google-chrome
 d in chrome
 d se chrome
@@ -4311,7 +4215,6 @@ d in texlive-collection-fontsrecommended
 v p132-homework-8.tex
 d in cargo
 cd .scripts
-./syncdots
 d in yarn
 d se yarn
 d in yarnpkg
@@ -4419,14 +4322,10 @@ su -s drewvlaz
 docker pull quay.io/pypa/manylinux_2_24_x86_64
 docker run --help
 pip install dist/zedsuite-0.0.4-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
-python39
-python3.9
 d uninstall python3
 d rm python3
 d in python3.9
-pyenv global 3.9.0
 python3.9 --version
-pyenv global 3.9.10
 pip3.9
 python3 -m pip install --upgrade pip
 pip3.9 install dist/zedsuite-0.0.5-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
@@ -4456,19 +4355,15 @@ ld -lboost_timer --verbose | grep succeed
 ld -lboost_timer -L./boost/lib--verbose | grep succeed
 ld -lboost_timer -L./boost/lib --verbose | grep succeed
 rm -rf dist
-ls build
 rm -rf build
 ld -lboost_program_options -L./boost/lib --verbose | grep succeed
 ld -lboost_program_options --verbose | grep succeed
-pip uninstall zedsuite
-pip install zedsuite
 curl https://files.pythonhosted.org/packages/99/22/423ea34c844293216591947a5f62ac3c0351997b2e8f3613694e53e96aa6/zedsuite-0.0.5.tar.gz
 curl https://files.pythonhosted.org/packages/99/22/423ea34c844293216591947a5f62ac3c0351997b2e8f3613694e53e96aa6/zedsuite-0.0.5.tar.gz zedsuite-0.0.5-tar.gz
 curl https://files.pythonhosted.org/packages/99/22/423ea34c844293216591947a5f62ac3c0351997b2e8f3613694e53e96aa6/zedsuite-0.0.5.tar.gz -O zedsuite-0.0.5-tar.gz
 du -h
 du -h zedsuite-0.0.5.tar.gz
 tar -xvf zedsuite-0.0.5.tar.gz
-v upload.sh
 v pyproject.toml
 v PKG-INFO
 v setup.cfg
@@ -4481,34 +4376,24 @@ docker run --rm -ti -v $PWD:/opt/src:Z quay.io/pypa/manylinux1_x86_64
 cat build.sh| less
 pip install dist/zedsuite-0.0.5-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
 mv dist dist_bkup
-python setup.py sdist bdist_wheel 
-python
 python patternly/detection.py
 python3.9 patternly/detection.py
 pip3.9 install dist/zedsuite-0.0.5-cp310-cp310-linux_x86_64.whl
 v setup.py
 fetch
-ls dist
 s
-jupyter kernelspec list
 v test.py
 pip3.9 uninstall zedsuite
-pip3.9 install zedsuite
-pip install dist/zedsuite-0.0.5-cp310-cp310-linux_x86_64.whl
 python3.9 test_.py
 python3 test_.py
-which python3.9
 rm -rf venc
 rm -rf venv
 virtualenv -p $(which python3.9) py39
 jupyter kernel install --user --name py39 --display-name "Python 3.9"
 jupyter kernel install --user py39 --name py39 --display-name "Python 3.9"
 jupyter kernel install --user 
-jupyter kernel install 
 ipython kernel install --user --name py39 --display-name "Python 3.9"
-jupyter notebook
 source py39/bin/activate
-pip install ipykernel --upgrade
 python -m ipykernel install --user
 pip install pandas zedsuite
 pip install dill
@@ -4517,7 +4402,6 @@ pip install matplotlib
 cd jupyter
 cd kernels
 cd py39
-cat kernel.json
 cp patternly/detection.py ../repos/patternly/patternly/
 g info
 g diff
@@ -4624,7 +4508,6 @@ v autocommands.lua
 lines cluster.csv
 hb && ls
 lvim process.py
-v process.py
 ext
 rm -rf .git .github
 g init
@@ -4695,8 +4578,6 @@ bh
 fukc
 nvim /bin/sh +1 && lls
 vv
-cd 
-cd .local/share/nvim/site/pack/packer/start
 cd ../opt
 rm -rf vimtex
 tex 
@@ -4718,8 +4599,6 @@ v pyright.json
 mv lsp-settings ../
 rm -rf lsp-settings
 v i
-v init.lua
-v 
 cd agitation_study/agitations_dataset
 ..
 .scripts/syncdots
@@ -4729,10 +4608,7 @@ mkdir bin
 cp embed ../../../agitation_study/bin
 ./lsmash -h
 ./embed -h
-cd zedsuite
 v bootstrap.
-v bootstrap.pyx
-v __init__.py
 v zutil.pyx
 cd ../...
 cd ../..
@@ -4877,16 +4753,12 @@ cat /etc/shells
 chsh -s /bin/zsh
 gnome-terminal
 yay -Rs alacritty
-node
 yarn
-npm install -g npm
 which npm
 yay -S npm
-npm
 pyright-languageserver
 find pyright
 yay -Syu grub efibootmgr
-cd /boot
 rm -rf EFI refind_linux.conf
 sudo su
 man grub-install
@@ -4900,11 +4772,9 @@ cat /boot/EFI/GRUB/grubx64.efi
 yay -Syu os-prober
 sudo nvim /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
-hv
 ls /boto
 fuck
 ls /boot
-v patternly/detection.py
 cd Downloads
 cd Stylish-2k
 v install.sh
@@ -4943,7 +4813,6 @@ p -S pyenc
 p -S pyenv
 pyenv install -v 3.9.0
 python -version
-python --version
 lls
 v agitations.csv
 p -S vlc
@@ -4972,10 +4841,7 @@ yay -Ss algpseudocode
 yay -S texlive-science
 v pset1.tex
 v pset8.tex
-yay
-v HW1.tex
 which :q
-whoami
 pwd Downloads
 cd /
 pwd
@@ -5057,18 +4923,10 @@ man lf
 yay -S ranger
 r
 which r
-ranger
 v resume.tex
-man ranger
-\:q
-v
-cd
 cd .fonts
 cd Operator\ Mono\ Nerd\ Font
-cd ..
 cd Operator\ Mono
-ec
-sd
 alacritty -e tmux
 tmux killw -t AAAAAAAAAAAA:
 tmux list-sessions
@@ -5080,23 +4938,206 @@ v test.txt
 rm test.txt
 tmux list-sessions | awk '{print $1}' | sed 's/:.*//' | fzf
 se 
-ls
-tkill
-tmux ls
 tmux ls | cut -d: -f1 | fzf
 tmux ls | cut -d: -f1 | fzf -0
-tmux
 man fzf
-se
 sc
-cl
-hb
+tkill
 tat
+tmux ls
+./syncdots
+v HW1.
+pyenv list
+man pyenv
+pyenv -l
+pyenv global 3.9.10
+cd /boot
+du -h vmlinuz-linux
+pyenv install -l
+python3
+yay -S python3.9
+yay -Ss python3.9
+yay -Ss python3
+yay -S python39
+python39
+tmux
+pip3.9 install zedsuite
+ls dist
+ls build
+pip3.9 install setuptools
+which pip3.9
+python3.9 pip
+python3.9 -m pip
+python3.9 -m pip --version
+yay -S gsl-devel
+yay -S gsl-dev
+yay -Ss gsl de
+yay -Ss gsl dev
+yay -Ss gsl dev | grep dev
+yay -S gsl
+pyenv disable
+pyenv
+pyenv deactivate
+pyenv uninstall 
+pyenv uninstall 3.7.0
+pyenv global 3.9.0
+pyenv global system
+pyenv uninstall 3.9.0
+pyenv versions
+yay -Rs pyenv
+which pyenv
+ls .pyenv
+rm -rf .pyenv
+cll
+pip3.9 --version
+python setup.py sdist bdist_wheel 
+v zedsuite/ini
+ls zedsuite
+cd zedsuite
+v bootstrap.pyx
+yay -S xclip
+python
+pip install zedsuite
+pip uninstall zedsuite
+pip install dist/zedsuite-0.0.5-cp310-cp310-linux_x86_64.whl
+python 
+v 
+v init.lua
+v ++
+v __init__.py
+v zedsuite/__init__.py
+python3.9 pip uninstall zedsuite
+python3.9 -m pip install pandas
+python3.9 -m pip install --upgrade-pip
+python3.9 -m pip install --upgrade pip
+yay -Ss libgsl
+yay -Ss lib jgsl
+yay -Ss lib gsl
+p -Ss gsl
+python3.9 -m pip install setuptools
+python3.9 setup.py sdist bdist_wheel 
+python3.9 -m pip install dist/zedsuite-0.0.5-cp39-cp39-linux_x86_64.whl
+python3.9 -m pip install dist/zedsuite-0.0.5-cp39-cp39-linux_x86_64.whl --force-reinstall
+clsl
+clls
+lscl
+v Makefile
+v upload.sh
+python3.9 -m pip uninstall zedsuite
+python3.9 -m pip install zedsuite
+python3.9
+python3.9 -m pip install ipykernel
+python3.9 -m ipykernel install --name py39 --display-name "Python 3.9.0"
+ls | grep pip
+which pip3
+cd 
+cd .local/bin
+sudo pip3.9 install ipykernal
+sudo pip3.9 install ipykernel
+ccd
+pip install ipykernel --upgrade
+sudo python3.9 -m pip install ipykernel
+sudo python3.9 -m ipykernel install --name py39 --display-name "Python 3.9.0"
+yay -S python39-pip
+yay -Ss python39
+pip3 --version
+python --version
+cd .local/share/jupyter/kernels/py39
+v kernel.json
+jupyter kernel install 
+jupyter kernelspec list
+cat kernel.json
+which python3.9
+jupyter notebook
+python3.9 -m pip install matplotlib
+which pip
+pip --version
+python -m pip --version
+p -S dot
+yay -Ss dot
+dot
+\:q
+ec
+cd .local/share/nvim/site/pack/packer/start
+cd ..
+cd opt
+rm -rf *
+yay -S wget
+cd /usr/bin
+ll
+ll | grep node
+sudo rm -rf node
+cd
+yay -S npm node
+npm
+yay -Rs npm node
+node
+exitr
+yay -S nodejs
+npm install -g npm
+se
+whoami
+v
+v patternly/detection.py
+v process.py
+cat process.py| toclip
+sd
+v HW1.tex
+yay
+cl
+hv
+hb
+killall zoom
+man ranger
+yay -S mpv
+ranger
+ls
 exit
-: 1648615592:0;tkill
-: 1648615595:0;tat
-: 1648615616:0;tmux ls
-: 1648615631:0;cl
-: 1648615635:0;sd
-: 1648615637:0;ls
-: 1648615639:0;./syncdots
+: 1648830341:0;sd
+: 1648830350:0;ls
+: 1648830356:0;v HW1.tex
+: 1648923770:0;yay
+: 1648923804:0;hb
+: 1648925797:0;ls
+: 1648925863:0;curl --request GET \\
+  --url https://api.spotify.com/v1/browse/categories \\
+  --header 'Authorization: ' \\
+  --header 'Content-Type: application/json'
+: 1648925891:0;curl --request GET \\
+  --url https://api.spotify.com/v1/browse/categories \\
+  --header 'Authorization: 3527ea437d24431bb219acdf31490473' \\
+  --header 'Content-Type: application/json'
+: 1648925955:0;cd Dev
+: 1648925955:0;ls
+: 1648925964:0;mkdir uh-hackathon
+: 1648925966:0;cd uh-hackathon
+: 1648925967:0;ls
+: 1648925973:0;v SpotifyClient.py
+: 1648925999:0;v secrets.py
+: 1648926336:0;tmux
+: 1648926339:0;python test.py
+: 1648926355:0;v test.py
+: 1648926394:0;python test.py
+: 1648927921:0;python test.py | grep Jeans
+: 1648928047:0;python test.py
+: 1648928416:0;cd ..
+: 1648928418:0;g clone https://github.com/drewvlaz/SpotiFind.git
+: 1648928422:0;cd SpotiFind
+: 1648928423:0;ls
+: 1648928425:0;la
+: 1648928441:0;touch README.md
+: 1648928446:0;g add README.md
+: 1648928453:0;g commit -m "Initialize readme"
+: 1648928454:0;g puch
+: 1648928456:0;g push
+: 1648929205:0;cd
+: 1648929206:0;ls
+: 1648929207:0;cd .ssh
+: 1648929208:0;ls
+: 1648929212:0;ls known_hosts
+: 1648929315:0;cat id_ecdsa.pub
+: 1648929353:0;cat id_ecdsa.pub | toclip
+: 1648929374:0;cd
+: 1648929377:0;cd Dev/dotfiles
+: 1648929382:0;cd .scripts
+: 1648929384:0;./syncdots

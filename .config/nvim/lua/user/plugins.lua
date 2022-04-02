@@ -68,6 +68,7 @@ return packer.startup(function(use)
   use "sainnhe/sonokai"
   use "morhetz/gruvbox"
   use "Mofiqul/dracula.nvim"
+  -- use "dracula/vim"
 
   -- Completion
   use "hrsh7th/nvim-cmp" -- The completion plugin
