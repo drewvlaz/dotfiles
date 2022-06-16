@@ -49,7 +49,6 @@ export XDG_RUNTIME_DIR=/run/user/1000
 
 # Applications
 export FZF_DEFAULT_OPTS="--layout=reverse --height=10"
-# eval "$(thefuck --alias)"
 # eval "$(pyenv init -)"
 # eval "$(pyenv virtualenv-init -)"
 
