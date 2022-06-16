@@ -32,6 +32,7 @@ export PATH=$PATH:~/.scripts
 export PATH=$PATH:~/.emacs.d/bin
 export PATH=$PATH:~/.pyenv/bin
 export PATH=$PATH:~/.npm-global/bin
+export PATH=$PATH:~/.local/share/gem/ruby/3.0.0/bin
 export GOPATH=~/go
 export GOPATH=$GOPATH~/golib
 export SUDO_EDITOR=nvim

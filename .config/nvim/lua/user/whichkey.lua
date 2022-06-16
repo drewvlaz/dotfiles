@@ -118,7 +118,8 @@ local mappings = {
     name = "Document",
     -- c = { "<cmd>LLPStartPreview<CR>", "Compile"},
     c = { "<cmd>VimtexCompile<CR>", "Compile"},
-    s = { "<cmd>set spell<CR>", "Toggle spelling"},
+    s = { "<cmd>set spell! spell?<CR>", "Toggle spelling"},
+    S = { "z=", "Spell suggestions"},
     m = { "ciW$$<ESC>P", "Format math"},
   },
 

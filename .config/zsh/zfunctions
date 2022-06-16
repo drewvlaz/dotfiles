@@ -82,7 +82,7 @@ tat() {
 }
 
 tkill() {
-    session=$(tmux ls | cut -d: -f1 | fzf --select-1 --exit-0)
+    session=$(tmux ls | cut -d: -f1 | fzf --exit-0)
     retVal=$?
     if [ $retVal -eq 0 ]; then
         tmux kill-session -t $session

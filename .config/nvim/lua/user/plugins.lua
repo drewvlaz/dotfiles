@@ -97,6 +97,7 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
+  use "p00f/nvim-ts-rainbow"
   -- use "JoosepAlviste/nvim-ts-context-commentstring"
 
   -- Git
@@ -112,6 +113,12 @@ return packer.startup(function(use)
     ft = {"tex"},
   }
   -- use "xuhdev/vim-latex-live-preview"
+
+  -- R programming
+  use {
+    'jalvesaq/Nvim-R', 
+    -- {'branch': 'stable'}
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

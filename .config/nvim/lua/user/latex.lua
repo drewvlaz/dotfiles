@@ -1,3 +1,4 @@
+-- vim.g.vimtex_view_general_viewer = "zathura"
 vim.g.vimtex_view_general_viewer = "evince"
 vim.g.vimtex_format_enabled = false
 vim.g.vimtex_indent_enabled = false

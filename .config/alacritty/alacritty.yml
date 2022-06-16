@@ -5,7 +5,7 @@ env:
   TERM: xterm-256color
   # TERM: alacritty
 window:
-  opacity: 0.90
+  opacity: 1
 
   padding:
     x: 3
@@ -23,7 +23,7 @@ window:
   #
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
-  startup_mode: Maximized
+  startup_mode: Windowed
   # Window title
   title: Alacritty
   class:
@@ -131,11 +131,11 @@ font:
 
 import:
   # - ~/.config/alacritty/themes/ayu-dark.yml
-  - ~/.config/alacritty/themes/ayu-mirage.yml
+  # - ~/.config/alacritty/themes/ayu-mirage.yml
   # - ~/.config/alacritty/themes/night-owl.yml
   # - ~/.config/alacritty/themes/monokai-pro.yml
   # - ~/.config/alacritty/themes/molokai.yml
-  # - ~/.config/alacritty/themes/dracula.yml
+  - ~/.config/alacritty/themes/dracula.yml
   # - ~/.config/alacritty/themes/nightfly.yml
   # - ~/.config/alacritty/themes/argonaut.yml
 
@@ -169,8 +169,8 @@ import:
 #  color: '0xffffff'
 # Background opacity
 
-# background_opacity: 1.0
-# background_opacity: 0.90
+# background_opacity: 11111.0
+# background_opacity: 11110.90
 
 selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"

@@ -15,6 +15,10 @@ vim.g.maplocalleader = " "
 --   command_mode = "c",
 
 -- Normal --
+-- Move by visual line --
+keymap("n", "j", "gj", opts)
+keymap("n", "k", "gk", opts)
+
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)

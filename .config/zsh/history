@@ -1,1465 +1,3 @@
-./bin/llk -s data/dist_.csv -f cluster_4
-./bin/llk -s data/dist_.csv -f cluster_5
-./bin/llk -s data/input.csv -f cluster_5
-./bin/llk -s data/test.csv -f cluster_5
-./bin/llk -s data/input.csv -f cluster_0--
-v asl
-rm asl
-./bin/lsmash -f data/data.csv -T continuous -u 1 -P 0
-./bin/lsmash -f data/data.csv -T continuous -u 1 -P 0 -D column
-cat H.dst | wc -l
-./bin/lsmash -f testsuite/seq.dat -T continuous -o result.txt
-cat testsuite/seq.dat
-cat testsuite/seq.dat | wc -l
-./bin/lsmash -f testsuite/seq.dat -T continuous -o result.txt -D column
-du -h data/dist.csv
-./bin/llk -s test.csv -f cluster_1
-./bin/lsmash -f data/data.csv -T continuous -o result.txt -D column -u 1 -P 0
-./bin/llk -s data/input.csv -f cluster_1
-./bin/lsmash -f data/data.csv -u 1 -P 0 -D row -T continuous -o result.txt
-./bin/llk -s data/input.csv -f cluster_4
-./bin/llk -s test.csv -f cluster_0
-mv test.csv test.txt
-./bin/genESeSS_feature -h
-./bin/genESeSS_feature -f data/input.csv -D row -T continuous -o g.txt
-./bin/genESeSS -f data/input.csv -D row -T continuous -o g.txt
-./bin/genESeSS -f data/input.csv -D row -T continuous -u 1 -P 0 -o g.txt
-ssh-copy-id drewvlaz@midway2.rcc.uchicago.edu
-./bin/genESeSS_feature -f data/input.csv -D row -T continuous -u 1 -P 0 -o g.txt
-./bin/genESeSS_feature -f data/input.csv -D row -T continuous -u 1 -P 0 -S off -o g.txt
-./bin/genESeSS -f data/input.csv -D row -T continuous -u 1 -P 0 -S off -o g.txt
-./bin/genESeSS_feature -f current_cluster.csv -D row -T continuous -u 1 -P 0 -S off -o g.txt
-./bin/genESeSS_feature -f current_cluster.csv -D row -T continuous -u 1 -P 0 -F -o g.txt
-ll g.txt
-./bin/genESeSS -f current_cluster.csv -D row -T continuous -u 1 -P 0 -F -o g.txt
-./bin/genESeSS -f current_cluster.csv -D row -F -o g.txt
-./bin/genESeSS -f current_cluster.csv -D row -o g.txt
-./bin/genESeSS -f current_cluster.csv -D row -F -u 1 -o g.txt
-du -h result.txt
-rm off
-rm g.txt
-./bin/genESeSS -f current_cluster.csv -D row -F -u 1 -P 0 -o g.txt
-cat g.txt
-./bin/genESeSS -f data/input.csv -D row -F -u 1 -P 0 -o g.txt
-./bin/genESeSS -f data/input.csv -D row -F -u 1 -P 0
-./bin/genESeSS -f data/input.csv -D row -F
-./bin/genESeSS -f data/input.csv -D row -u 1 -P 0 -F -e 0.1
-./bin/genESeSS -f data/input.csv -D row -u 1 -P 0 -F -e 0.5
-./bin/genESeSS -f data/input.csv -D row -u 1 -P 0 -F -e 0.9
-./bin/genESeSS -f data/input.csv -D row -u 1 -P 0 -F -e 0.2
-./bin/genESeSS -f data/input.csv -D row -u 1 -P 0 -F -e 0.25
-./bin/genESeSS -f data/input.csv -D row -u 1 -P 0 -F -e 0.35
-./bin/genESeSS -f data/input.csv -D row -u 1 -P 0 -F -e 0.3
-./bin/genESeSS -f data/input.csv -D row -u 1 -P 0 -F -e 0.4
-./bin/genESeSS -f data/input.csv -D row -u 1 -P 0 -F -e 0.6
-./bin/genESeSS -f data/input.csv -D row -u 1 -P 0 -F -e 1
-./bin/genESeSS -f data/input.csv -D row -u 1 -P 0 -F -e 100
-./bin/genESeSS -f data/input.csv -D row -u 1 -P 0 -F
-./bin/genESeSS -f data/input.csv -D row -u 1 -P 0 -e 0.15 -F
-./bin/genESeSS -f data/input.csv -D row -u 1 -P 0 -
-./bin/genESeSS -f data/input.csv -D row -u 1 -P 0 -F -e 0.15
-./bin/genESeSS -f data/input.csv -D row -u 1 -P 1000 -F -e 0.15
-./bin/genESeSS -f data/input.csv -D row -u 1 -P 10 -F -e 0.15
-./bin/genESeSS -f data/input.csv -D row -u 1 -P 100 -F -e 0.15
-./bin/genESeSS -f data/input.csv -D row -u 1 -P 5 -F -e 0.15
-./bin/genESeSS_feature -f current_cluster.csv -D row -u 1 -P 5 -F -e 0.15
-ll result.txt
-./bin/llk -s data/input.csv -f cluster_0
-./bin/llk -s test.txt -f cluster_0
-./bin/llk -s test.txt -f cluster_1
-./bin/llk -s test.txt -f cluster_2
-./bin/llk -s test.txt -f cluster_3
-./bin/llk -s test.txt -f cluster_4
-./bin/genESeSS_feature -f current_cluster.csv -D row -u 1 -P 5 -F -e 0.1
-./bin/genESeSS -f current_cluster.csv -D row -u 1 -P 5 -F -e 0.1
-./bin/genESeSS -f current_cluster.csv -D row -u 1 -P 5 -F
-v data/input.csv
-mv data/input.csv data/input.txt
-./bin/llk -s data/input.txt -f result.txt
-./bin/llk -s data/input.txt -f result.txt -u 1
-./bin/genESeSS -f current_cluster.csv -D row -P 5 -F -e 0.1
-./bin/genESeSS -f current_cluster.csv -D row -P 5 -F -e 0.1 -u 1
-./bin/genESeSS -f input.csv -D row -T continuous -u 1 -P 5 -e 0.1
-./bin/genESeSS -f data/input.csv -D row -T continuous -u 1 -P 5 -e 0.1
-./bin/genESeSS -f data/input.txt -D row -T continuous -u 1 -P 5 -e 0.1
-./bin/llk -s data/input.txt -f result.txt -D row
-cp data/input.txt .
-./bin/llk -s input.txt -f result.txt
-./bin/llk -s input.txt -f result.txt -D row
-cd ../python_implementations_/genESeSS
-ll genESeSS.cpython-39-x86_64-linux-gnu.so
-./bin/genESeSS -f current_cluster.csv -D row -u 1 -P 5 -F -o result.txt
-./bin/genESeSS -f current_cluster.csv -o cluster_0 -T continuous -D row -e 0.02 -t true -x 1000000 -r 20000 -N 1 -y on -W 1000 -u true -P 5 -F -v 0
-cp genESeSS.cpython-39-x86_64-linux-gnu.so ../../pipeline
-python gen_test.py
-./bin/genESeSS -f input.txt -D row -T continuous -u 1 -P 5 -F -e 0.03
-./bin/genESeSS -f data/input.txt -D row -T continuous -u 1 -P 5
-./bin/genESeSS -f data/input.txt -D row -T continuous -u 1 -P 5 -e 0.03
-cat r 
-./bin/genESeSS -f data/input.txt -D row -T continuous -u 1 -P 5 -e 0.03 -o result.txt
-rm result.txt
-python daskex.py
-./bin/genESeSS -f data/input.txt -D row -T continuous -u 1 -P 500 -e 0.03 -o result.txt
-./bin/genESeSS -f data/input.txt -D row -T continuous -u 1 -P 100 -o result.txt
-./bin/genESeSS -f data/input.txt -D row -T continuous -u 1 -P 90 -o result.txt
-./bin/genESeSS -f data/input.txt -D row -T continuous -u 1 -P 60 -o result.txt
-./bin/genESeSS -f data/input.txt -D row -T continuous -u 1 -P 150 -o result.txt
-./bin/genESeSS -f data/input.txt -D row -T continuous -u 1 -P 10 -o result.txt
-./bin/genESeSS -f data/input.txt -D row -T continuous -u 1 -P 50 -o result.txt
-python df.py
-./bin/genESeSS -f data/input.txt -D row -T continuous -u 1 -P 5 -o result.txt
-./bin/genESeSS -f current_cluster.csv -D row -T continuous -u 1 -P 5 -o result.txt -e 0.03
-./bin/genESeSS -f current_cluster.csv -D row -T continuous -o result.txt -e 0.03 -F
-./bin/genESeSS -f current_cluster.csv -D row -T continuous -u 1 -P 5 -o result.txt -e 0.03 -F
-./bin/genESeSS -f current_cluster.csv -D row -T continuous -u 1 -P 0 -o result.txt -e 0.03 -F
-./bin/genESeSS -f current_cluster.csv -D row -T continuous -u 1 -o result.txt -e 0.03 -F
-./bin/genESeSS -f current_cluster.csv -D row -T continuous -u 1 -P 2 -o result.txt -e 0.03 -F
-./bin/genESeSS -f current_cluster.csv -D row -T continuous -u 1 -P 2 -o result.txt -F
-./bin/genESeSS -f current_cluster.csv -D row -T continuous -u 1 -P 3 -o result.txt -F
-./bin/genESeSS -f current_cluster.csv -D row -T continuous -u 1 -P 0 -e 0.03 -o result.txt -F
-./bin/genESeSS_feature -f current_cluster.csv -D row -T continuous -u 1 -P 1 -e 0.03 -o result.txt -F
-./bin/genESeSS -f current_cluster.csv -D row -T continuous -u 1 -P 1 -e 0.03 -o result.txt -F
-./bin/genESeSS -f current_cluster.csv -D row -T continuous -u 1 -P 3 -e 0.03 -o result.txt -F
-./bin/genESeSS -f current_cluster.csv -D row -T continuous -e 0.03 -o result.txt -F
-cat current_cluster.csv
-cat current_cluster.csv | head 
-cat current_cluster.csv | head 1
-cat current_cluster.csv | head -l 1
-cat current_cluster.csv | head -n 1
-./bin/genESeSS -f data/input.csv -D row -e 0.03 -o result.txt -F
-./bin/genESeSS -f data/input.csv -D row -e 0.03 -o result.tx
-./bin/genESeSS -f data/input.csv
-./bin/genESeSS -f data/input.csv -D row
-./bin/genESeSS -f test.txt -D row
-./bin/genESeSS -f test.txt -D row -T continuous -e 0.03 -o result.txt -F -u 1 -P 0
-./bin/genESeSS -f test.txt -D row -T continuous -e 0.03 -o result.txt -F -u 1 -P 2
-cat dat/input.csv
-./bin/genESeSS -f data/input.csv -D row -T continuous -e 0.03 -o result.txt -F -u 1 -P 0
-./bin/genESeSS -f data/input.csv -D row -T continuous -e 0.03 -o result.txt -F -u 1 -P 5
-./bin/genESeSS -f data/input.csv -D row -T continuous -e 0.03 -o result.txt -F -u 1 -P 2
-./bin/genESeSS -f data/input.csv -D row -T continuous -e 0.03 -o result.txt -F -u 1
-./bin/genESeSS -f data/input.csv -D row -T symbolic -e 0.03 -o result.txt -F
-./bin/genESeSS -f data/input.csv -D row -T symbolic -e 0.03 -o result.txt -F -u 1 -P 0
-./bin/genESeSS -f data/input.csv -D row -T symbolic -e 0.03 -o result.txt -F -u 1 -P 1
-./bin/genESeSS -f data/input.csv -D row -T continuous -e 0.03 -o result.txt -F -u 1 -P 1
-v tes 
-./bin/genESeSS -f test.txt -D row -T continuous -e 0.03 -o result.txt -F -u 1 -P 1
-./bin/genESeSS -f test.txt -D row -T continuous -e 0.03 -o result.txt -F
-./bin/genESeSS -f test.txt -D row -T symbolic -e 0.03 -o result.txt -F
-./bin/genESeSS -f data/input.csv -D row -T continuous -e 0.03 -o result.txt -F
-./bin/genESeSS -f data/input.txt -D row -T continuous -e 0.03 -o result.txt -F
-./bin/genESeSS -f data/input.txt -D row -T continuous -e 0.03 -o result.txt -F -u 1 -P 5
-./bin/genESeSS -f data/input.txt -D row -T continuous -e 0.03 -o result.txt -F -u 1 -P 500
-./bin/genESeSS -f data/input.txt -D row -T continuous -e 0.03 -o result.txt -F -u 1 -P 10
-./bin/genESeSS -f data/input.csv -D row -T continuous -e 0.03 -o result.txt -F -u 1 -P 10
-./bin/genESeSS -f data/input.csv -D row -T continuous -o result.txt -F -u 1 -P 10
-./bin/genESeSS -f data/input.csv -D row -T continuous -o result.txt -F -u 1 -P 1
-./bin/genESeSS -f data/input.csv -D row -T continuous -o result.txt -F -u 1 -P 0
-./bin/genESeSS -f data/input.csv -D row -T continuous -o result.txt -F -u 1
-./bin/genESeSS -f data/input.csv -D row -T continuous -o result.txt -F
-./bin/genESeSS -f data/input.csv -D row -T continuous -o result.txt -P 0
-./bin/genESeSS -f data/input.csv -D row -T continuous -o result.txt -P 1
-cat input.csv
-mv input.csv _input.csv
-mv data/input.csv data/_input.csv
-./bin/genESeSS -f data/input.csv -D row -T continuous -o result.txt -P 1 -e 0.03 -u 1
-./bin/genESeSS -f data/input.csv -D row -T continuous -o result.txt -P 1 -e 0.03 -S 0
-./bin/genESeSS -f data/input.csv -D row -T continuous -o result.txt -P 1 -e 0.03 -S off
-./bin/genESeSS -f data/input.csv -D row -T continuous -o result.txt -P 1 -e 0.03
-./bin/llk -s data/input.csv -f cluster_0 -D row
-cat cluster_0
-./bin/llk -s data/input.csv -f result.txt
-cat test.txt
-./bin/llk -s test.txt -f result.txt
-./bin/genESeSS -f current_cluster.csv -D row -T continuous -o result.txt -P 1 -e 0.03
-./bin/genESeSS -f current_cluster.csv -D row -T continuous -o result.txt -P 1 -e 0.03 -F
-cat data/input.csv
-python pipeline.py
-./bin/genESeSS -f current_cluster.csv -D row -T continuous -o result.txt -P 1 -F -u 0
-cp /home/drewvlaz/Documents/ZeD/repos/pipeline/data/input.csv /home/drewvlaz/Documents/ZeD/repos/pipeline/data/input1.csv
-mv ./data/input.csv ./data/input1.csv
-mv ./data/input1.csv ./data/input.csv
-python AnomalyDetectionPipeline.py
-./bin/genESeSS -f current_cluster.csv -D row -T continuous -o result.txt -P 1 -F -u 1
-./bin/genESeSS -f current_cluster.csv -D row -T continuous -o result.txt -P 1 -F
-cd Documents/ZeD/repos/zutil_ 
-./bin/drawpfsa -N data/cluster_6
-df -h zutils.c
-df
-ll zutil
-ll zutils.cpython-39-x86_64-linux-gnu.so
-git checkout testsuite/seq.dat
-make zutils_wrapper && cp zutils.cpython-39-x86_64-linux-gnu.so ../pipeline
-./bin/lsmash -f testsuite/seq.dat -o result.txt
-./bin/llk -s /home/drewvlaz/Documents/ZeD/repos/pipeline/zutil_temp/clean_3fcdeb3f-62a7-4af1-a6a2-2aa23f1a6160 -f ad_temp/cluster_0
-git clone --recursive https://github.com/zeroknowledgediscovery/data_smashing_
-v semantic.h
-./bin/embed -f ../pipeline/data/dist.dst
-cd zipped_data
-ls zipped_data | wc -l
-ls zipped_data
-du -h data/1266815/ACC.csv
-cat HR.csv
-head HR.csv
-cat HR.csv | wc -l
-rm HR.csv
-rm ACC.csv
-head ACC.csv
-v ACC.csv
-tail ACC.csv
-k
-q
-e
-t
-i
-y
-f
-f -h
-nvim /bin/sh +1 &&  -h
-lla
-nvim /bin/sh +1 && lla
-du -h ACC.csv
-tail ACC_Z.csv
-du -h ACC_Z.csv
-cat ACC_Y.csv | wc -l
-du -h EDA.csv
-ls ~/Downloads | grep csv
-wsc chicago
-python create_dataset.py
-mv create_dataset.py process_agitations.py
-python process_agitations.py | grep America
-python process_agitations.py | grep Chicago
-./bin/prun -h
-./bin/prun
-./bin/prun ad_temp/cluster_0
-mkdir tmp
-mv llk.pxd lsmash.pxd tmp
-git checkout prun
-git checkout prun.cc
-/home/drewvlaz/Documents/ZeD/repos/pipeline/bin/prun -f ad_temp/cluster_0
-/home/drewvlaz/Documents/ZeD/repos/pipeline/bin/prun -f /home/drewvlaz/Documents/ZeD/repos/pipeline/ad_temp/cluster_0
-./bin/embed
-cd Documents/ZeD/repos/pipeline
-mv pipeline anomaly_detection
-cat outD.txt
-cat outE.txt
-mv test.seq test.csv
-cat dist.dst
-v dist.dst
-cat embedding.csv
-v embedding.csv '\
-
-v embedding.csv
-./bin/prun -f ad_temp/cluster_8
-./bin/prun -f ad_temp/cluster_1
-./bin/prun -f ad_temp/cluster_2
-./bin/prun -f ad_temp/cluster_19
-./bin/prun -f ad_temp/cluster_18
-./bin/embed -f dist.dst
-cp ../data_smashing_/bin/embed bin
-diff agitations_.csv agitations.csv
-cat ACC_Z.csv | wc -l
-du -h TEMP.csv
-./bin/prun -f ad_temp/cluster_4
-./bin/genESeSS -f data/curr_cluster_4 -D row -T continuous -o result.txt -P 1 -F
-./bin/genESeSS -f ad_temp/curr_cluster_4 -D row -T continuous -o result.txt -P 1 -F
-./bin/genESeSS -f ad_temp/curr_cluster_4 -D row -T continuous -o result.txt -P 1 -u 1 -F
-./bin/genESeSS -f ad_temp/curr_cluster_0 -D row -T continuous -o result.txt -P 1 -u 1 -F
-./bin/genESeSS -f ad_temp/curr_cluster_1 -D row -T continuous -o result.txt -P 1 -u 1 -F
-cp AnomalyDetection.ipynb AnomalyDetection_.ipynb
-./bin/prun -f ad_temp/cluster_0
-./bin/prun -f ad_temp/cluster_3
-cp AnomalyDetection.py AnomalyDetectionBkup.py
-ll ad_temp
-./bin/llk -sad_temp/cps -f ad_temp/cluster_0
-./bin/llk -sad_temp/cps -f ad_temp/cluster_1
-./bin/llk -sad_temp/cps -f ad_temp/cluster_2
-./bin/llk -sad_temp/cps -f ad_temp/cluster_3
-./bin/llk -s ad_temp/cps -f ad_temp/cluster_3
-mv AnomalyDetectionBkup.py AnomalyDetection_.py
-mv AnomalyDetection.py AnomalyDetectionBkup.py
-mv AnomalyDetection_.py AnomalyDetection.py
-du -h ad_temp/clean_ce8e03ae-ec52-419d-b141-164dc40321b2
-du -h ad_temp/clean_4a4fa763-3356-4f38-b071-aedd82641408
-cp utils.py ../zutil_
-cp zutils.cpython-39-x86_64-linux-gnu.so ../pipeline
-ll zutil_temp
-ls ..
-./genmc
-./genmc -h
-d se boost static
-d se libbost
-d se libboost
-d se boost
-d in boost-system
-d in boost-devel
-d in boost
-v boost-build.jam
-rmdir lib
-./b2 cxxflags=-fPIC -a --with-system install
-sudo ./b2 cxxflags=-fPIC -a --with-system install
-ld -lboost_system_static --verbose | grep succeed
-ld -lboost_system\ --verbose | grep succeed
-d se gcc
-d se gcc_s
-d se gcc static
-ls zbase/lib
-d se libgcc
-d in libgcc
-d in libgccjit-devel
-ld -lgcc --verbose | grep succ
-ld -lgcc --verbose
-ld -lgcc_s --verbose
-du -h bin/genESeSS
-du -h genESeSS.cpython-39-x86_64-linux-gnu.so
-make genESeSS
-d in libgcc-devel
-d in glibc-devel
-d in glibc-shared
-d in glibc
-d in glibc-static
-d se glibc
-d in glibc-utils
-ll /usr/lib*/libgcc_s*
-ld -lgcc_s
-d reinstall libgcc
-d reinstall libgcc-devel
-d reinstall glibc-devel glibc glibc-static
-d list installed | grep libgcc
-d rm libgccjit libgccjit-devel
-ls | grep isoo
-./bootstrap.sh --help
-./bootstrap.sh --with-libraries=system,thread,program_options,timer,chrono --show-libraries
-./bootstrap.sh --with-libraries=system,thread,program_options,timer,chrono
-./b2 --help
-./b2 cxxflags=-fPIC -a --with-system -link=static -runtime-link=static --with=system,thread,program_options,timer,chrono install
-./b2 cxxflags=-fPIC -a --with-system  --with=system,thread,program_options,timer,chrono link=static runtime-link=static install
-sudo ./b2 cxxflags=-fPIC -a --with-system  --with=system,thread,program_options,timer,chrono link=static runtime-link=static install
-cd cmake
-cd Boost-1.76.0
-cd boost_system-1.76.0
-./b2 cxxflags=-fPIC -a --with-system  --with="system,thread,program_options,timer,chrono" link=static runtime-link=static install
-sudo ./b2 cxxflags=-fPIC -a --with-system  --with="system,thread,program_options,timer,chrono" link=static runtime-link=static install
-cd /usr/local
-du -h libboost_system.a
-du -h libboost_system.so
-du -h libboost_system.so.1.76.0
-./libboost_system.so.1.76.0
-cd include
-cd boost/
-cd lib
-cd cmake/Boost-1.76.0
-cmake
-cmake BoostConfig.cmake
-cat BoostConfig.cmake
-cd Downloads/boost_1_76_0
-cd tools/build
-kls
-cd engine
-cp bjam ../../../../
-cd ../../../..
-./bjam --help
-./bjam cxxflags=-fPIC -a --with-system  --with="system,thread,program_options,timer,chrono" link=static runtime-link=static install
-sudo ./bjam cxxflags=-fPIC -a --with-system  --with="system,thread,program_options,timer,chrono" link=static runtime-link=static install
-cd /usr/local/lib
-du zutils.cpython-39-x86_64-linux-gnu.so
-cat zutils.cpython-39-x86_64-linux-gnu.so
-diff zutils.cp.so zutils.cpython-39-x86_64-linux-gnu.so
-du -h bin/llk
-du llk
-du -h llk
-cp zutil_ zutil_1
-pip3 install auditwheel
-d in libpq-dev
-d in python3-venv
-d in python3-wheel
-d in python-devel
-d se libpq
-d in libpq-devel
-d in build-essential
-pip3 reinstall wheel
-pip3 remove wheel
-pip3 install wheel
-pip3 uninstall wheel
-sudo pip3 uninstall wheel
-pyton
-python -m pip install wheel
-sudo python -m pip install wheel
-sudo python -m pip uninstall wheel
-python -m pip install wheel --user
-cd venv
-chmod +x activate
-venv/bin/ activate
-venv/bin/ 
-ll venv
-pip -V
-pip3 -V
-pip install auditwheel
-du -h zutils.cpython-39-x86_64-linux-gnu.so
-auditwheel repair dist/zutils-0.0.0-cp39-cp39-linux_x86_64.whl
-sudo ls
-sudo su -s drewvlaz
-sudo su -s ${USER}
-sudo systemctl restart docker
-sudo su ${USER}
-docker pull quay.io/pypa/manylinux1_x86_64
-mkdir wheelhouse
-docker run -it -v $(pwd):/io quay.io/pypa/manylinux1_x86_64
-docker run --rm -it -v $(pwd):/io quay.io/pypa/manylinux1_x86_64 /bin/bash\
-
-sudo docker volume ls
-sudo docker create test
-sudo docker create zutil_1
-docker run --rm -ti -v $PWD:/opt/src quay.io/pypa/manylinux1_x86_64\
-
-docker run --rm -ti -v $PWD:/opt/sc:Z quay.io/pypa/manylinux1_x86_64
-sudo rm -rf dist
-rmdir zutil_temp
-rmdir zutils.egg-info
-rm -rf tmp
-docker run --rm -ti -v $PWD:/opt/src:Z quay.io/pypa/manylinux1_x86_64 --update add boost boost-dev
-docker pull quay.io/pypa/manylinux2014_x86_64
-v ../GenESeSS_/Makefile
-ls /usr/lib64 | grep thread
-cp /usr/lib64/libboost_thread.a .
-mv libboost_thread.a lib
-cp /usr/lib64/libboost_system.a lib
-cp /usr/lib64/libboost_chrono.a lib
-cp /usr/lib64/libboost_timer.a lib
-cp /usr/lib64/libboost_program_options.a lib
-make llk
-python setup.py sdist bdist_wheel --plat manylinux1_x86_64
-auditwheel repair dist/zutils-0.0.0-cp39-cp39-manylinux1_x86_64.whl --plat manylinux2014_x86_64
-ls '\
-
-ls \'
-rm \l
-rm \'
-auditwheel repair dist/zutils-0.0.0-cp39-cp39-manylinux1_x86_64.whl --plat linux_x86_64
-mv wheelhouse/* dist
-rm dist/*-cp38-cp38-linux_x86_64.whl
-rm dist/*-cp39-cp39-linux_x86_64.whl
-du -h dist/zutils-0.0.0-cp39-cp39-manylinux1_x86_64.linux_x86_64.whl
-docker -h
-docker container inspect
-docker run --rm -ti -v $PWD:/opt/src:Z quay.io/pypa/manylinux_2_24_x86_64
-mkdir boost
-wget https://boostorg.jfrog.io/artifactory/main/release/1.67.0/source/boost_1_67_0.tar.bz2
-/sbin/ldconfig -p | grep stdc++
-/sbin/ldconfig -p | grep static
-cp dist/zutils-0.0.0-cp39-cp39-manylinux1_x86_64.linux_x86_64.whl test
-pip install zutils-0.0.0-cp39-cp39-manylinux1_x86_64.linux_x86_64.whl
-rm zutils-0.0.0-cp39-cp39-manylinux1_x86_64.linux_x86_64.whl
-rm zutils-0.0.0-cp39-cp39-manylinux1_x86_64.*
-auditwheel repair zutils-0.0.0-cp39-cp39-linux_x86_64.whl --plat linux_x86_64
-cd wheelhouse
-cp zutils-0.0.0-cp39-cp39-linux_x86_64.whl ../../test
-cd ../../test
-cp setup.py ../zutil_1
-cd ../zutil_1
-cd ../zutil_
-auditwheel repair dist/zutils-0.0.0-cp39-cp39-linux_x86_64.whl 
-auditwheel repair dist/zutils-0.0.0-cp39-cp39-linux_x86_64.whl --plat manylinux2014_x86_64
-mkdir test
-cp ../wheelhouse/zutils-0.0.0-cp39-cp39-linux_x86_64.whl .
-cp ../utils.py .
-wget https://boostorg.jfrog.io/artifactory/main/release/1.76.0/source/boost_1_76_0.tar.bz2
-mv utils.py utils_.py
-mv utils_.py utils.py
-rm test/zutils-0.0.0-cp39-cp39-linux_x86_64.whl
-du -h dist/zutils-0.0.0-cp39-cp39-manylinux1_x86_64.whl
-rm wheelhouse/zutils-0.0.0-cp39-cp39-linux_x86_64.whl
-cp wheelhouse/zutils-0.0.0-cp39-cp39-linux_x86_64.whl test
-pip install zutils-0.0.0-cp39-cp39-linux_x86_64.whl
-rm -rf lib
-cp /usr/lib64/libboost_thread.a lib
-rm lib
-mv zutils.cpython-39-x86_64-linux-gnu.so bin
-mkdir anomdetect
-mv AnomalyDetection.py anomdetect/anomdetect.py
-mv bin anomdetect
-rm gen_test.py
-mv utils.py anomdetect
-python ma 
-cp ../zutil_/zutils.cpython-39-x86_64-linux-gnu.so .
-cp zutils.cpython-39-x86_64-linux-gnu.so ../anomaly_detection/anomdetect/bin
-cp ../zutil_1/zutils.cpython-39-x86_64-linux-gnu.so bin
-cp zutils.cpython-39-x86_64-linux-gnu.so ../anomaly_detection
-v l.py
-python l.py
-mkdir ../test
-cp -r AnomalyDetection.py main.py utils.py data/ zutils.cpython-39-x86_64-linux-gnu.so genESeSS.cpython-39-x86_64-linux-gnu.so ../test
-rm -rf wheelhouse tmp 
-ls cfg
-rm zutils.cp.so
-ls tes
-rm -rf test
-ls testsuite
-ls zutil_temp
-rm -rf zutil_temp
-rm setup_*
-rm result.*
-rm test.csv
-touch setup.py
-touch anomdetect/_version.py
-mkdir tenv
-pip install ../dist/anomdetect-0.0.2-py3-none-any.whl
-cp -r data .
-cp -r ../data .
-auditwheel repair dist/anomdetect-0.0.2-py3-none-any.whl
-auditwheel repair dist/anomdetect-0.0.2-py3-none-any.whl --plat linux_x86_64
-du -h wheelhouse/anomdetect-0.0.2-py3-none-linux_x86_64.whl
-du -h dist/anomdetect-0.0.2-py3-none-any.whl
-cp zutils.cpython-39-x86_64-linux-gnu.so ../test/
-cp genESeSS.cpython-39-x86_64-linux-gnu.so ../../test
-auditwheel repair dist/anomdetect-0.0.3-py3-none-any.whl --plat linux_x86_64
-auditwheel show 
-auditwheel show  -h
-auditwheel show dist/anomdetect-0.0.3-py3-none-any.whl
-auditwheel show wheelhouse/anomdetect-0.0.3-py3-none-linux_x86_64.whl
-rm -rf zutil_1
-cp -r zutil_ zutil_1
-docker run --rm -ti -v $PWD:/opt/src:Z quay.io/pypa/manylinux2014_x86_64
-cp /usr/lib64/libboost_thread.a lib/
-sudo python setup.py sdist bdist_wheel
-git clone https://github.com/nvictus/patchelf
-d rm patchelf
-cd patchelf
-./bootstrap.sh
-./configure
-sudo make install
-du -h wheelhouse/zutils-0.0.0-cp39-cp39-linux_x86_64.whl
-which patchelf
-sudo make uninstall
-patchelf
-d in patchelf
-auditwheel repair dist/zutils-0.0.0-cp39-cp39-linux_x86_64.whl --plat linux_x86_64
-cd tenv
-nm -g venv/lib/python3.9/site-packages/anomdetect/bin/genESeSS.cpython-39-x86_64-linux-gnu.so
-nm -g venv/lib/python3.9/site-packages/anomdetect/bin/
-cp ../main.py .
-deactivate
-cp /usr/lib64/libboost_system.a lib/
-cp /usr/lib64/libboost_chrono.a lib/
-cp /usr/lib64/libboost_program_options.a lib/
-cp /usr/lib64/libboost_timer.a lib/
-g++ --version
-ldd zutils.cp
-strip zutils.cpython-39-x86_64-linux-gnu.so
-strip --strip-unneeded zutils.cpython-39-x86_64-linux-gnu.so
-ldd zutils.cpython-39-x86_64-linux-gnu.so
-ldd zutils.cpython-39-x86_64-linux-gnu.so | wc -l
-ldd zutils.cpython-39-x86_64-linux-gnu.so 
-du -h gcc
-du -h /usr/bin/gcc
-cp /usr/bin/gcc .
-which g++
-cp /usr/bin/g++ .
-./g++ -V
-./g++ -v
-./g++ --version
-lscpu
-lscpu -p
-lscpu | egrep 'Model name|Socket|Thread|NUMA|CPU\(s\)'
-docker run -ti -v $PWD:/opt/src:Z quay.io/pypa/manylinux2014_x86_64
-scp -r Season\ 05 dietpi@192.168.1.134:/media/ExtHDD01/TV\\\ Shows/Rick\\\ and\\\ Morty
-cd Documents/ZeD/repos/zutil_1
-cp lib/* zbase/lib
-cp anomdetect/detection.py ../anomaly_detection
-cp bin/* ../test/anomdetect/bin
-cp bin_/* ../test/anomdetect/bin
-cd anomdetect
-./bin/lsmash -h
-./anomdetect/bin/lsmash -f
-./anomdetect/bin/lsmash -h
-./anomdetect/bin/lsmash -f t/f -T symbolic -S 0 -o out.txt
-/home/drewvlaz/Documents/ZeD/repos/test/bin/lsmash -f t/clean_2a139485-ac67-45ef-adfa-9a27278b62b7 -T symbolic -S 0 -o t/clean_dd4d1313-d6e5-45d6-9cfd-62a3fd61e29b
-v out.tmp
-cat out.tmp| grep throw
-cd zbase/lib
-rm libboost_*
-rm -rf wheelhouse
-ls wheelhouse
-du -h wheelhouse/zutils-0.0.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-du -h dist/zutils-0.0.0-cp39-cp39-linux_x86_64.whl
-cp ../anomaly_detection/detection.py anomdetect/
-cp -r lib ../python_implementations_/genESeSS/
-sudo rm -rf wheelhouse dist
-rm -rf zutils.egg-info
-cd zutil_1
-mkdir pyzutil_
-cd -r ../zutil_1 .
-cp -r ../zutil_1 .
-cp -r zutil_1/* .
-rm -rf zutil_1 boost_1_76_0 gcc
-cp -r ../zutil_1/boost_1_76_0 .
-pip freeze | grep cython
-pip freeze | grep numpy
-ls /usr/include/
-ls /usr/include/ | grep boost
-ls /usr/include/boost
-ls /usr/include/boost | grep option
-mkdir lib
-sudo mkdir lib
-mv libboost_* lib
-sudo mv libboost_* lib
-chown drewvlaz: boost
-sudo chown drewvlaz: boost
-cd boost
-cp -r /usr/include/boost .
-cp boost/* .
-cp -r boost/* .
-ls /usr/local/lib64
-ls /usr/local/lib
-ls /usr/lib64
-cp /usr/lib64/libgslcblas.so.0.0.0 zbase/lib/libgslclblas.so
-ls /usr/lib64 | grep gsl
-ls /usr/lib 
-ld -lgsl --verbose | grep succeed
-find libgsl.so
-cd lib64
-ls | grep gsl
-ls lib
-ls usr/lib
-ls usr/lib64 | grep gsl
-ls usr/lib64
-rm -rf wheelhouse dist
-cp ../python_implementations_/genESeSS/genESeSS.cpython-39-x86_64-linux-gnu.so anomdetect/bin
-;s
-du -h dist/zutils-0.0.1-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
-pip
-v llk.py
-python llk.py
-cat result.dst
-cat t.tmp
-rm t.tmp
-v lsmash.py
-rm result.dst
-pip install dist/zutils-0.0.1-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
-python lsmash.py
-cat lsmash.py
-docker run -ti -v $PWD:/opt/src:Z quay.io/pypa/manylinux2010_x86_64
-v build_gcc.sh
-nnncd
-cd Documents/ZeD/repos/test
-cp -r ~/Downloads/boost_1_76_0 .
-rm build_gcc.sh
-v zbase/Makefile
-cp -r pyzutil_ python_implementations_
-rm -rf boost
-cat gen_wheels.sh
-v gen_wheels.sh
-ls /usr/lib/python3.9/site-packages/
-ls ~/.local/lib/python3.9/site-packages/zutils-0.0.1.dist-info
-cd .local/lib/python3.9
-cd site-packages
-rm zutils.cpython-39-x86_64-linux-gnu.so
-cd zutils.libs
-rm genESeSS-0.0.0-py3.9.egg-info
-rm genESeSS.cpython-39-x86_64-linux-gnu.so
-ls zutils-0.0.1.dist-info
-pip install dist/genESeSS-0.0.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl --force-reinstall
-cp build_wheels.sh ../pyzutil_
-cpu
-docker ps
-docker active
-docker ls
-docker --help
-docker rm
-docker killall
-docker kill
-docker container ls
-docker remove 
-docker rm ni
-docker rm 75037f4abc97
-docker rm efe7fcc38336
-docker rm 7a8dbcb0e692
-docker container
-docker container rm *
-docker container rm epic_chatterjee
-docker container rm romantic_shirley
-docker container rm tender_boyd
-docker run -ti -v $PWD:/opt/src:Z quay.io/pypa/manylinux1_x86_64
-docker rm -f $(docker ps -a -q)
-pip upgrage
-pip upgrade
-pip install updates
-pip install numpy
-pip reinstall numpy
-pip install numpy --force-reinstall
-rm -rf zu_temp
-rm genESeSS.cpython-39-x86_64-linux-gnu.so zutils.cpython-39-x86_64-linux-gnu.so
-mv bin_ bin
-cat ad_temp/clean_4715a7f5-a9cb-4d94-a85e-f4c61b9cad5e
-/home/drewvlaz/Documents/ZeD/repos/anomaly_detection/bin/prun -f ad_temp/clean_4715a7f5-a9cb-4d94-a85e-f4c61b9cad5e
-ls zu_temp
-cat zu_temp/clean_ae5755e4-9413-4097-99d6-278192e295df
-v zu_temp/clean_
-v zu_temp/clean_ae5755e4-9413-4097-99d6-278192e295df
-du -h ad_temp
-ls ad_temp
-cd ../test
-./bin/llk -s ad_temp/clean_2d0a4337-5776-4a22-bbba-984773adfe1f
-./bin/llk -s ad_temp/clean_2d0a4337-5776-4a22-bbba-984773adfe1f -f ad_temp/clean_6c4fb9bf-df85-45a8-931c-7ec90b7766c2
-./bin/llk -s ad_temp/clean_2d0a4337-5776-4a22-bbba-984773adfe1f -f ad_temp/clean_6c4fb9bf-df85-45a8-931c-7ec90b7766c2 | wc
-./bin/llk -s ad_temp/clean_2d0a4337-5776-4a22-bbba-984773adfe1f -f ad_temp/clean_6c4fb9bf-df85-45a8-931c-7ec90b7766c2 | wc -w
-ls ad_temp/clean_2d0a4337-5776-4a22-bbba-984773adfe1f| wc -l
-ls ad_temp/clean_2d0a4337-5776-4a22-bbba-984773adfe1f| wc -w
-cat ad_temp/clean_2d0a4337-5776-4a22-bbba-984773adfe1f| wc -l
-du -h data/covid_epidemiology.csv
-mv test anomaly_detection_
-cd anomaly_detection_
-cd ../anomaly_detection
-cd Documents/ZeD/repos/anomaly_detection_
-rm -rf anomdetect.egg-info
-rm -rf tenv
-cat out.txt
-rm out.txt
-rm -rf __pycache__
-cd anomaly_detection
-cd idst
-mkdir t
-cp zutils-0.0.1.tar.gz t
-cd t
-tar -xvf zutils-0.0.1.tar.gz
-cd zutils-0.0.1
-cd zutils
-cat setup.cfg
-cat pyproject.toml
-ls zutils.egg-info
-rm -rf t
-cat compile_boost.sh
-v compile_boost.sh
-docker run -rm -ti -v $PWD:/opt/src:Z quay.io/pypa/manylinux1_x86_64
-docker container ls -a
-cd pyzutil_
-g clone --recursive https://github.com/zeroknowledgediscovery/zquantizer_
-v count.py
-python count.py
-rm count.py
-rm pipeline
-unzip -l dist/zutils-0.0.1-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.whl
-mkdir anomaly_detection_pypi
-cp -r anomaly_detection/* anomaly_detection_pypi
-rm -rf anomaly_detection_
-rm AnomalyDetection.ipynb
-cd Downloads/timesmash-0.2.23
-cat timesmash/_version.py
-v timesmash/_version.py
-cp ../python_implementations_/genESeSS/dist/genESeSS-0.0.1-cp3* adots/bin
-ls adots/bin
-cp ../python_implementations_/pyzutil_/dist/zutils-0.0.1-cp3* adots/bin
-du -h adots/bin
-calculate
-math
-calc
-expr 19 / 8
-expr 19 / 8.0
-qalc
-bc -l 4
-bc -h
-bc -q
-cd timesmash
-cat __init__.py
-head distance.py
-unzip -l dist/timesmash-0.0.1-py3-none-any.whl
-python setup.py bdist_wheel
-unzip -l dist/adots-0.0.2-py3-none-any.whl
-pip install dist/adots-0.0.2-py3-none-any.whl
-touch requirements.txt
-pip wheel -r requirements.txt
-cat requirements.txt
-v requirements.txt
-pip wheel .
-pip uninstall adots
-rm *.whl
-pip install --find-links adots/bin zutils
-pip install --no-index --find-links adots/bin zutils
-cd zquantizer_/
-git clone https://github.com/zeroknowledgediscovery/zbase_/tree/81f8e14c4a500afca9121265969ad515df9f3d6d
-cp -r ../python_implementations_/pyzutil_/zbase zbase_
-cd zbase_/q
-cd zbase_/
-sed -n 895,900p quantizer.cc
-sed -n 1605,1620p zbase_/semantic.h
-cp -r ../GenESeSS_/zbase .
-sed -n 1605,1620p zbase/semantic.h
-rm -rf zbase_
-git pull
-mv zbase zbase_
-cp ../python_implementations_/pyzutil_/setup.py .
-cp ../python_implementations_/pyzutil_/zutils/__init__.* .
-rm *.cpp
-cat train_class_2
-../bin/quantizer -h
-g++ -std=c++11 -I./zbase_  -c -o quantizer.o _quantizer.cc -static -O3 -Wall -Wextra -Wunused -fopenmp -Wl,--as-needed
-make _quantizer
-./_quantizer -h
-rm _quantizer
-gcc -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fstack-protector-strong -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -O2 -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fstack-protector-strong -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -O2 -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fstack-protector-strong -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I. -I/usr/include/python3.9 -c quantizer.cpp -o build/temp.linux-x86_64-3.9/quantizer.o -std=c++11 -I./zbase_ -O3
-g++ -pthread -Wno-unused-result -Wsign-compare -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fstack-protector-strong -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -O2 -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fstack-protector-strong -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -O2 -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fstack-protector-strong -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I. -I/usr/include/python3.9 -c quantizer.cpp -o build/temp.linux-x86_64-3.9/quantizer.o -std=c++11 -I./zbase_ -O3
-gcc -pthread -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -grecord-gcc-switches -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fstack-protector-strong -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -O2 -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fstack-protector-strong -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -O2 -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fstack-protector-strong -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I. -I/usr/include/python3.9 -c quantizer.cpp -o build/temp.linux-x86_64-3.9/quantizer.o -std=c++11 -I./zbase_ -O3
-gcc -pthread -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -grecord-gcc-switches -pipe -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fstack-protector-strong -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -O2 -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fstack-protector-strong -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -O2 -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fstack-protector-strong -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fwrapv -c quantizer.cpp -o build/temp.linux-x86_64-3.9/quantizer.o -std=c++11 -I./zbase_ -O3
-gcc -pthread -DDYNAMIC_ANNOTATIONS_ENABLED=1 -DNDEBUG -O2 -g -grecord-gcc-switches -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fstack-protector-strong -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -O2 -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fstack-protector-strong -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -O2 -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fstack-protector-strong -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -D_GNU_SOURCE -fPIC -fwrapv -fPIC -I. -I/usr/include/python3.9 -c quantizer.cpp -o build/temp.linux-x86_64-3.9/quantizer.o -std=c++11 -I./zbase_ -O3
-touch cmd.sh
-chmod +x cmd.sh
-rm quantizer.cpp
-./cmd.sh
-ls /usr/include/bits/struct_stat.h
-cat /usr/include/bits/struct_stat.h
-head _quantizer.cpp
-head quantizer.cpp
-v quantizer.cpp
-cd zbase_
-mv libgsl.a _libgsl.a
-mv libgslcblas.a _libgslcblas.a
-rm cmd.sh
-v quantizer.pyx
-cat test/README.md
-../bin/quantizer -D ./channel_1 -t 2 -x 1 -e -1 -a 2 -A 3 -M 5
-cd zbase_/lib
-mv 
-mv _libgslcblas.a libgslcblas.a
-mv _libgsl.a libgsl.a
-../quantizer -D ./channel_0 -t 2 -x 1 -e -1 -a 2 -A 3 -M 5
-../quantizer -D ./channel_0 -t 2 -x 1 -a 2 -A 3 -M 5
-../quantizer -D ./channel_0 
-time ../quantizer -D ./channel_0 -t 2
-time ../quantizer -h
-ls unit.sh
-tee
-man tee
-python ../main.py
-cat channel_0/valid_parameter | wc -l
-cat llk_res
-du -h quantizer.cpython-39-x86_64-linux-gnu.so
-rm -rf build quantizer.cpp
-../quantizer -D ./channel_0 -t 2
-du -h session_agitations/1278732_0.csv
-ls session_agitations | wc -w
-ls session_agitations | wc
-ls session_agitations | wc -h
-ls session_agitations | wc -c
-ls session_agitations | wc -m
-wc 
-wc --help
-man wc
-rm ACC_Y.csv
-du -h ACC_Y.csv
-rm session_agitations/*
-du -h ACC_X.csv
-du -h ACC_Y_wa.csv
-du -h ACC_Z_wa.csv
-du -h ACC_X_wa.csv
-du -h HR_wa.csv
-du -h HR.csv
-cp agitations_processed.csv agitations.csv
-du -h BVP_wa.csv
-du -h BVP.csv
-python process_agitations.py
-cat ../../datasets/Trace/Trace_TRAIN.tsv
-cat ../../datasets/Trace/Trace_TRAIN.tsv | wc -l
-head ../../datasets/Trace/Trace_TRAIN.tsv | wc -l
-head ../../datasets/Trace/Trace_TRAIN.tsv
-pip install dist/zutils-0.0.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl --force-reinstall
-mv process_agitations.py process.py
-touch ts.py
-du session_agitations
-du session_agitations/
-du session_agitations/*
-du session_agitations/* | awk "{print $2}"
-du session_agitations/* | awk '{print $2}"
-du session_agitations/* | awk '{print $2}'
-du session_agitations/* | awk '{print $2}' | sed 's/^[^=]*=//'
-du session_agitations/* | awk '{print $2}' | sed 's/^[^/]*///'
-du session_agitations/* | awk '{print $2}' | sed 's/^[^\/]*\///' | toclip
-du session_agitations/* | awk '{print $2}' | sed 's/^[^\/]*\///'
-which toclip
-v ../repos/anomaly_detection_pypi/adots/detection.py
-diff xq.csv xq_.csv
-diff -y xq.csv xq_.csv
-diff -h
-diff --hellp
-diff --help
-time python ../main.py
-diff -s xq.csv xq_.csv
-time python main.py
-mkdir session_agitations_
-du -h session_nagitations
-du -h session_agitations
-scp -r Rick\ and\ Morty\ -\ s05e01.mkv Rick\ and\ Morty\ -\ s05e03 dietpi@192.168.1.134:/media/ExtHDD01/TV\\\ Shows/Rick\\\ and\\\ Morty/Season\\\ 05
-scp -r Rick\ and\ Morty\ -\ s05e03.mkv dietpi@192.168.1.134:/media/ExtHDD01/TV\\\ Shows/Rick\\\ and\\\ Morty/Season\\\ 05
-ls session_agitations | wc -l
-/usr/bin/python
-python pr
-python predict.py
-ls | grep windos
-ls | grep windows
-ls | grep iso
-mkdir "The Hitman's Bodyguard (2017)"
-mv The\ Hitman\'s\ Bodyguard\ \(2017\)\ 1080p-H264-AC\ 3\ \(DolbyDigital-5.1\)\ \&\ nickarad.mp4 The\ Hitman\'s\ Bodyguard\ \(2017\)
-cd The\ Hitman\'s\ Bodyguard\ \(2017\)
-mv The\ Hitman\'s\ Bodyguard\ \(2017\)\ 1080p-H264-AC\ 3\ \(DolbyDigital-5.1\)\ \&\ nickarad.mp4 "The Hitman's Bodyguard (2017).mp4"
-cd Documents/
-cd Zoom/
-cd 2020-12-04\ 16.17.11\ Core\ Bio\ Section\ 08\ class\ \(3_00pm\)\ 98233788283
-rm -rf Zoom
-cd..
-pip3.7 install dist/zutils-0.0.1-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl
-cd genESeSS/dist
-python3.7 -m pip install --upgrade pip
-pip3.7 install genESeSS-0.0.1-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl
-cat genESeSS.pxd
-cd GenESeSS
-cd GenESeSS_
-cp genESeSS.cc _genESeSS.cc
-v genESeSS.pxd
-v GenESeSS_/_genESeSS.cc
-cd genESeSS
-cat build_wheels.sh
-v genESeSS.pyx
-pip3.7 uninstall genESeSS
-pip3.7 install dist/genESeSS-0.0.1-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl
-python ts
-python ts.py\\
-python ts.py
-cd repos/anomaly_detection_pypi
-touch setup.cfg
-touch LICENSE
-v LICENSE
-cp LICENSE ../repos/anomaly_detection_pypi
-cd test
-cat train_class_1
-v train_class_1
-head -n 1 train_class_1 | wc -w
-head -n 2 train_class_1 | wc -w
-./bin/quantizer -hj
-make Quantizer_llk
-cat run.sh
-cp -r test test0
-cat command
-v command
-rm command llk_res pure_res
-./unit.sh
-cat unit.sh
-rm valid_parameter
-rm quantizer_log.dat
-../bin/quantizer -D ./channel_0 -t 2 -x 1 -e -1 -a 2 -A 3 -M 5
-ls channel_0
-cd channel_0
-cat valid_parameter
-cat quantizer_log.dat
-cat library_list
-../bin/quantizer -D ./channel_0 -t 2 -x 1 -e -1 -a 2 -A 3 -M 1
-git clone --recursive https://github.com/zeroknowledgediscovery/timesmash
-cd test0
-../bin/quantizer -D ./channel_0 -t 2 -x 1 -e -1 -a 2 -A 3
-cat channel_0/valid_parameter
-cat Makefile
-ls /tmp/q_nxkxjygu
-./quantizer -h | grep -f
-./quantizer -h | grep "-f"
-./quantizer -h | grep "w\
-"
-./quantizer -h | grep "w" 
-python s
-make quantzer
-./quantizer -D ./test0/channel_0 -t 2 -x 1 -e -1 -a 2 -A 3 -M 3
-cat test0/channel_0/valid_parameter
-cat ../python_implementations_/pyzutil_/Makefile
-./quantizer -D ./test0/channel_0 -t 2 -x 1 -e -1 -a 2 -A 3 -M 5
-cp ../anomaly_detection/data/covid_epidemiology.csv data
-cd Documents/ZeD/repos/python_implementations_/pyzutil_
-pip install dist/genESeSS-0.0.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
-pip install dist/genesess-0.0.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
-mv adots ztsad
-cp ../anomaly_detection/detection.py ztsad/
-cat ../anomaly_detection/main.py
-python -m pip install --upgrade build
-python -m build
-rm dist/adots-0.0.2-py3-none-any.whl
-pip install twine
-v ~/.pypirc
-touch MANIFEST.in
-touch pyproject.toml
-cat ../../zquantizer_/setup.py
-cd ../pyzutil_
-pip freeze | grep pandas
-pip freeze | grep Cython
-pip freeze | grep setuptools
-du -h partial_dataset
-cd Documents/ZeD/repos/pyzutil_
-sudo rm -rf build
-ls zutils
-make zutils_wrapper
-pip freeze | grep zutils
-pip install dist/zutils-0.0.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
-cat pyzutils/pyzutils.pyx
-pip uninstall zutils
-pip install dist/pyzutils-0.0.2-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
-pip install pyzutils
-pip uninstall pyzutils'\
-
-pip uninstall pyzutils
-pip uninstall pyzutils==0.0.2
-pip install pyzutils==0.0.2
-cd ../genESeSS
-make genESeSS_wrapper
-pip uninstall genesess
-pip uninstall genESeSS
-pip install dist/genesess-0.0.2-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
-python3 -m build
-git commit -m "Initial commit"
-rm -rf MANIFEST.in
-cp ~/Downloads/timesmash-0.2.23/setup.py .
-python3 setup.py sdist bdist_wheel
-pip install dist/ztsad-0.0.3-py3-none-any.whl
-pip install dist/ztsad-0.0.2-py3-none-any.whl
-python3 -m twine upload --repository testpypi dist/*
-pip install -i https://test.pypi.org/simple/ ztsad==0.0.3ï¿¼
-pip install -i https://test.pypi.org/simple/ ztsad
-python3 -m twine upload --repository pypi dist/*
-git commit -m "Update directory"
-git add .gitignore
-git commit -m "Add .gitignore"
-git add *
-git add MANIFEST.in
-git add setup.cfg src/*
-git add setup.cfg
-git add src
-git commit -m "Removed files"
-ls session_nagitations | wc -l
-ls session_agitations | grep "1280745"
-rm session_nagitations/*
-rm session_nagitations/* partial_dataset/*
-cd Videos/TV\ Shows/Rick\ and\ Morty/Season\ 05
-scp -r Rick\ and\ Morty\ -\ s05e04.mkv dietpi@192.168.1.134:/media/ExtHDD01/TV\\\ Shows/Rick\\\ and\\\ Morty/Season\\\ 05
-d in plexmediaplayer
-ls .git
-ls .git/modules
-ls .git/modules/zbase_
-cat .git/config
-ls tmp
-ls /tmp
-cd /tmp/quantized_data_bq0h9ot3
-ls quantized_data_*
-rm quantized_data_*
-mkdir test1
-mkdir test1/channel_0
-./quantizer -t 0 -M 3 -D ./test1/channel_0
-./quantizer -t 0 -M 3 -D ./test0/channel_0
-./quantizer -t 2 -x 1 -e -1 -a 2 -A 3 -M 5 -D ./test0/channel_0
-make quantizer_wrapper && python main.py
-./quantizer -t 2 -x 1 -e -1 -a 2 -A 3 -M 5 -D ./test1/channel_0
-diff _quantizer.cc quantizer.cc
-cp bin/quantizer .
-./quantizer -t 0 -x 1 -e -1 -a 2 -A 3 -M 5 -D ./test1/channel_0
-./quantizer -t 0 -x 1 -e -1 -a 2 -A 3 -M 5 -D test1/channel_0
-cp quantizer.cc _quantizer.cc
-./quantizer -t 0 -x 1 -e -1 -a 2 -A 3 -v 0 -M 5 -D test1/channel_0
-make %.o
-make .o
-make o
-make quantizer
-./quantizer -t 0 -x 1 -e -1 -a 2 -A 3 -v 1 -M 5 -D test1/channel_0
-make _quantizer.o
-pip3 install cython
-./bin/genESeSS -f ad_temp/clean_3df09b19-d8a0-46c3-b124-d478a8a7add3 -D row -T continuous -o result.txt -P 1 -u 1 -F
-./bin/genESeSS -f ad_temp/clean_3df09b19-d8a0-46c3-b124-d478a8a7add3 -D row -T continuous -o result.txt
-./bin/genESeSS -f ad_temp/clean_3df09b19-d8a0-46c3-b124-d478a8a7add3 -D row -Tsymbolic -o result.txt
-./bin/genESeSS -f ad_temp/clean_19ffbe8f-f446-40c4-93b3-0e10875577e5 -D row -Tsymbolic -o result.txt
-./bin/prun -f result.txt
-./bin/prun -f result.txt > seq.txt
-./bin/llk -sseq.txt -f ad_temp/clean_19ffbe8f-f446-40c4-93b3-0e10875577e5
-./bin/llk -gh
-cat ad_temp/clean_19ffbe8f-f446-40c4-93b3-0e10875577e5
-./bin/llk -sseq.txt -f result.txt
-./bin/llk -sseq.txt -f ad_temp/clean_47af3768-e630-4992-8e06-79f92203e60e
-cp test.csv ../anomaly_detection/data
-cat _test.csv
-v test.csv
-diff -y _test.csv test.csv
-./quantizer -h
-ls /tmp/quantized_data_*
-make quantizer_wrapper
-diff _test.csv test.csv
-mv pyzutil_ zutil_
-mkdir zquantizer_
-rm -rf __pycache__ bck qu_temp dataset Quantizer_llk.cc Quantizer_parameter*
-rm run.sh
-rm quantizer_pure_smash.cc
-rm test.pyk
-rm unq.csv
-ls test1
-ls test0
-cat test/pure_res
-cat test/llk_res
-rm -rf test0 test1 testParaQuan _test.csv test.csv test.py
-rm main.py
-mv zquantizer_ zquantizer
-mv zutil_ zutil
-mv genESeSS genesess
-cat environment.yml
-mkdir zedsuite
-mv genesess zquantizer zutil zedsuite
-rm *.egg-info
-rm -rf *.egg-info
-ls genesess
-cat example/main.py
-ls pyzutils
-ls lib64
-rm -rf lib64
-sudo rm -rf lib64
-sudo rm -rf *.egg-info
-ls zbase
-sudo rm -rf lib/cmake
-du -h ./
-cp -r . ../
-cd zutil
-sudo rm -rf build dist pyzutils.egg-info zutil.egg-info
-cp setup.py ../..
-rm -rf zutil
-sudo rm -rf zutil
-ls example
-cp ../anomaly_detection/AnomalyDetection.ipynb example
-diff ztsad/detection.py ../anomaly_detection/detection.py
-git add requirements.txt
-git add ztsad/detection.py
-git add example
-git commit -m "Add example"
-git tree
-git help
-g show
-cd Documents/ZeD/repos/anomaly_detection
-cp -r data ../anomaly_detection_pypi/example
-cd ../anomaly_detection_pypi
-git add example/data/
-cat test.csv
-ll test.csv
-cp test.csv ../anomaly_detection_pypi/example/data
-cd example/data
-rm quantized.csv
-mv test.csv quantized.csv
-rm -rf ad_temp
-cd ..'\
-
-rm -rf dist build
-pip install dist/ztsad-0.0.8-py3-none-any.whl
-../anomaly_detection/bin/llk -s example/ad_temp/clean_385d2b0d-297a-4393-a86c-acdb93898dff -f example/ad_temp/clean_1b96456a-305b-41bb-8a0d-b20f1d813f0d
-../anomaly_detection/bin/llk -s example/ad_temp/clean_385d2b0d-297a-4393-a86c-acdb93898dff -f example/ad_temp/clean_93f1a95d-d804-4468-81ec-fd22eaf2b5a3
-../anomaly_detection/bin/llk -s example/ad_temp/clean_385d2b0d-297a-4393-a86c-acdb93898dff -f example/ad_temp/clean_a44a418d-fa89-4965-9319-9ca2189437fd
-../anomaly_detection/bin/llk -s example/ad_temp/t -f example/ad_temp/clean_a44a418d-fa89-4965-9319-9ca2189437fd
-pip install dist/ztsad-0.0.9-py3-none-any.whl
-../anomaly_detection/bin/llk -s example/anomaly.txt -f example/ad_temp/clean_4a019793-c020-486d-8bd2-befe73e29763
-rm -rf example/ad_temp
-ls -l ts_temp | wc -l
-du -h ts_temp
-../repos/zquantizer_/bin/quantizer -h
-../repos/zquantizer_/bin/quantizer -e -1 -M 1 -D ts_temp/clean_8709bc81-0a68-4347-a65b-59bf3c78a42e
-../repos/zquantizer_/bin/quantizer -e -1 -M 1 -D ts_temp/clean_7f4e7795-9f02-4e78-a2ab-6114f0c7c23f
-../repos/zquantizer_/bin/quantizer -e -1-t 2  -M 1 -D ts_temp/clean_7f4e7795-9f02-4e78-a2ab-6114f0c7c23f
-../repos/zquantizer_/bin/quantizer -e - 1-t 2  -M 1 -D ts_temp/clean_7f4e7795-9f02-4e78-a2ab-6114f0c7c23f
-../repos/zquantizer_/bin/quantizer -e 1 -t 2  -M 1 -D ts_temp/clean_7f4e7795-9f02-4e78-a2ab-6114f0c7c23f
-../repos/zquantizer_/bin/quantizer -e 1 -t  -M 1 -a 2 -A 3 -D ts_temp/clean_7f4e7795-9f02-4e78-a2ab-6114f0c7c23f
-../repos/zquantizer_/bin/quantizer -e 1 -t2  -M 1 -a 2 -A 3 -D ts_temp/clean_7f4e7795-9f02-4e78-a2ab-6114f0c7c23f
-../repos/zquantizer_/bin/quantizer -e 1 -t2  -M 1 -a 2 -A 3 -Dts_temp/clean_8709bc81-0a68-4347-a65b-59bf3c78a42e
-../repos/zquantizer_/bin/quantizer -e 1 -t2  -M 1 -a 2 -A 3-r 0 -D ts_temp/clean_8709bc81-0a68-4347-a65b-59bf3c78a42e
-../repos/zquantizer_/bin/quantizer -e 1 -t2  -M 5 -a 2 -A3  -r 0 -D ts_temp/clean_8709bc81-0a68-4347-a65b-59bf3c78a42e
-../repos/zquantizer_/bin/quantizer -e 1 - t2  -M15 -a 2 -A3  -r 0 -D ts_temp/clean_8709bc81-0a68-4347-a65b-59bf3c78a42e
-../repos/zquantizer_/bin/quantizer -e 1 - t2  - 15 -a 2 -A3  -r 0 -D ts_temp/clean_8709bc81-0a68-4347-a65b-59bf3c78a42e
-../repos/zquantizer_/bin/quantizer -e 1 - t2  M 5 -a 2 -A3  -r 0 -D ts_temp/clean_8709bc81-0a68-4347-a65b-59bf3c78a42e
-../repos/zquantizer_/bin/quantizer -e 1 t2  M 5 -a 2 -A3  -r 0 -D ts_temp/clean_8709bc81-0a68-4347-a65b-59bf3c78a42e
-../repos/zquantizer_/bin/quantizer -e 1- t2  M 5 -a 2 -A3  -r 0 -D ts_temp/clean_8709bc81-0a68-4347-a65b-59bf3c78a42e
-../repos/zquantizer_/bin/quantizer  t2  M 5 -a 2 -A3  -r 0 -D ts_temp/clean_8709bc81-0a68-4347-a65b-59bf3c78a42e
-../repos/zquantizer_/bin/quantizer -e 1 -t2  -M 1 -a 2 -A  -r 0 -D ts_temp/clean_8709bc81-0a68-4347-a65b-59bf3c78a42e
-../repos/zquantizer_/bin/quantizer -e 1 -t2  -M 1 -a 2 -A3  -r 0 -D ts_temp/clean_8709bc81-0a68-4347-a65b-59bf3c78a42e
-cd ../zedsuite
-cd genesess
-cd ../zbase
-cd zedsuite/genesess
-python -c "from genesess import GenESeSS; from zutil import Llk, Lsmash"
-\
-rm -rf *.so 
-rm -rf *.so && build
-rm -rf *.so; build
-python -c "from zutil import Llk, Lsmash"
-python -c "from zutil import Llk, Lsmash; Lsmash(helpmsg=1).run()"
-strings zedsuite.cpython-39-x86_64-linux-gnu.so
-strings zedsuite.cpython-39-x86_64-linux-gnu.so | grep PyInit
-strings zedsuite.cpython-39-x86_64-linux-gnu.so | grep zutil
-strings zedsuite.cpython-39-x86_64-linux-gnu.so | grep Llk
-strings zedsuite.cpython-39-x86_64-linux-gnu.so | grep zedsuite
-ls build/lib.linux-x86_64-3.9
-ls build/lib.linux-x86_64-3.9/zedsuite
-strings bootstrap.cpython-39-x86_64-linux-gnu.so
-python ../test.py
-cp -r ../zquantizer_ .
-rm -rf build *.so
-python -c "from bootstrap import zedsuite"
-mv bootstrap.cpython-39-x86_64-linux-gnu.so zedsuite.cpython-39-x86_64-linux-gnu.so
-mv zedsuite.cpython-39-x86_64-linux-gnu.sobootstrap.cpython-39-x86_64-linux-gnu.so
-mv zedsuite.cpython-39-x86_64-linux-gnu.s obootstrap.cpython-39-x86_64-linux-gnu.so
-mv zedsuite.cpython-39-x86_64-linux-gnu.  obootstrap.cpython-39-x86_64-linux-gnu.so
-mv zedsuite.cpython-39-x86_64-linux-gnuso obootstrap.cpython-39-x86_64-linux-gnu.so
-mv zedsuite.cpython-39-x86_64-linux-gn.uso obootstrap.cpython-39-x86_64-linux-gnu.so
-mv zedsuite.cpython-39-x86_64-linux-g.nuso obootstrap.cpython-39-x86_64-linux-gnu.so
-mv zedsuite.cpython-39-x86_64-linux-.n.uso obootstrap.cpython-39-x86_64-linux-gnu.so
-python -c "from zedsuite import zutil"
-python -c "from bootstrap import Llk"
-python -c "from bootstrap import zutil"
-python -c "from zutil import Llk"
-python -c "from zedsuite.zutil import Llk"
-python -c "from bootstrap.zutil import Llk"
-ls 
-for i in ls; do echo i\
-i
-for i in{1..10}s; do echo i
-for i in{1..10}; do echo i
-for i in {1..10}; do echo i\
-quite
-for i in {1..10}; do echo  done
-for i in {1..100}; do python daskex.py; done
-rm zedsuite/*.cpp
-strings bootstrap.cpython-39-x86_64-linux-gnu.so | grep PyInit
-rm bootstrap.cpython-39-x86_64-linux-gnu.so
-python setup.py build_ext --inplace
-sudo rm -rf zedsuite.egg-info
-sudo rm -rf __pycache__ qu_temp wheelhouse
-unzip -l dist/zedsuite-0.0.1.tar.gz
-python Documents/ZeD/repos/python_implementations_/test.py
-python setup.py
-git status
-g add README.md zedsuite/ pyproject.toml MANIFEST.in build_wheels.sh 
-g add genESeSS
-g commit -m "Removed"
-g add Makefile
-g add dist/ setup.py
-g commit -m "Working with submodules"
-make 
-make wheels
-python zquantizer_/main.py
-unzip -l dist/zedsuite-0.0.1-cp39-cp39-linux_x86_64.whl
-strings dist/bootstrap.cpython-39-x86_64-linux-gnu.so | grep PyInit
-strings dist/zedsuite.cpython-39-x86_64-linux-gnu.so | grep PyInit
-strings dist/zedsuite-0.0.2-cp39-cp39-linux_x86_64.whl | grep PyInit
-strings dist/zedsuite-0.0.2-cp39-cp39-linux_x86_64.whl
-cd dist
-pip install zedsuite-0.0.2-cp39-cp39-linux_x86_64.whl
-python -c "from zedsuite.zutil import Llk; Llk(helpmsg=1).run()"
-quite
-./bin/quantizer -h
-python -V
-g diff zedsuite/zutil.pyd
-g restore --staged zedsuite/zutil.pyx
-g restore --staged zedsuite/quantizer.pyx
-g diff zedsuite/quantizer.pyx
-g add zedsuite/quantizer.pyx zedsuite/zutil.pyx
-g add zedsuite/utils
-g commit -m "Change utils"
-ll zedsuite
-g restore --staged *
-g restore --staged dist
-cat zedsuite/_version.py
-cat zedsuite/_version.py | awk '{print $2}'
-cat zedsuite/_version.py | awk '{print $3}'
-cat zedsuite/_version.py | awk '{print $3}' | sed -E 's/\"//'
-cat zedsuite/_version.py | awk '{print $3}' | sed -E 's/\"|\"//'
-cat zedsuite/_version.py | awk '{print $3}' | sed -E 's/^.//;/.$//'
-cat zedsuite/_version.py | awk '{print $3}' | sed -E 's/^.//;s/.$//'
-ld -lboost_system --verbose
-ld -lboost_system 
-ld -lboost_system --verbose | grep succeed | wc -l
-man ld
-rm -rf genesess
-g add genesess
-mv boost boost_
-mv boost_ boost
-./build_wheels.sh
-./build_wheels.sh -f
-bash --version
-sudo chown drewvlaz: dist/*
-chown drewvlaz: dist
-sudo chown drewvlaz: dist
-cd zquantizer_
-rm *.so
-cat main.py
-g diff Makefile
-v .gitignore
-du -h dist
-cd ../python_implementations_
-g add Makefile README.md setup.py zedsuite/
-sudo rm a.out
-g add build_wheels.sh
-g commit -m "Compiled wheels"
-g push -u origin master
-rm zedsuite/bootstrap.cpython-39-x86_64-linux-gnu.so
-v .gitmodules
-g add .gitmodules
-cd .git/config
-git rm --cached
-git rm --cached genESeSS
-rm -rf .git/modules/genESeSS
-g commit -m "Remove genesess submodule"
-g submodule add https://github.com/zeroknowledgediscovery/zbase_ zbase
-g add zedsuite/bootstrap.cpython-39-x86_64-linux-gnu.so
-mv test.py notebooks
-g add notebooks/test.py
-g commit -m "Changed submodules"
-mv build_wheels.sh build.sh
-cat README.md | grep build
-g add README.md build.sh build_wheels.sh
-g commit -m "Naming"
-g diff zedsuite/utils.py
-g commit -m "Update usage"
-g add remote
-g remote add
-g remote set-url git@github.com:zeroknowledgediscovery/python_implementations_
-g remote set-url --add git@github.com:zeroknowledgediscovery/python_implementations_
-g remote set-url --add git@github.com:zeroknowledgediscovery/python_implementations_.git
-g remote set-url git@github.com:zeroknowledgediscovery/python_implementations_.git
-g remote add git@github.com:zeroknowledgediscovery/python_implementations_.git
-rm -rf ts_temp
-ls data | grep 1309692
-ls data | grep 1311418
-ls data | grep 1323992
-ls data | grep 1311160
-ls data | grep 1313868
-ls data | grep 1316956
-ls data | grep 1319059
-ls data/1282601
-ls data | grep 1312349
-rm -rf partial_dataset/*
-d in emacs
-cat .python_history
-rm zed_temp
-rmdir zed_temp
-cd doom
-v config.el
-emacs
-git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d\
-
-ls auto-save-list
-~/.emacs.d/bin/doom install
-doom
-doom run
-cat init.e
-cat init.el
-rm -rf .emacs.d
-cd Dev/drewvlaz
-git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
-cd .emacs.d
-v init.el
-rm -rf doom
-./bin/doom install
-cd .config/doom
-v packages.el
-doom sync
-ls partial_dataset | wc -l
-cat partial_dataset/TEMP.csv
-cat partial_dataset/TEMP.csv | wc -l
-python notebooks/test.py
-cat notebooks/test.py
-python ztsad/detection.py
-cp ../anomaly_detection/main.py .
-cat ../zquantizer_/main.py
-jupyter
-python main.py\\
-
-cd Documents/ZeD/repos/zquantizer_
-python -c "from zedsuite.quantizer import Quantizer; Quantizer(helpmsg=1).run()"
-python setup.py sdist bdist_wheel && pip uninstall ztsad && pip install dist/ztsad-0.0.1-py3-none-any.whl
-rm -rf partial_dataset
-ll 
-d se tex times
-d se texlive extra
-d se texlive extra latex
-d in texlive-collection-latexextra
-head example/test/testdataM41KS21KT323.dat
-cat example/test/testdataM41KS21KT323.dat| wc -l
-cat example/test/testdataM41KS21KT323.dat| wc
-cat example/zu_temp/clean_d30f0b8c-d03b-4035-a1f4-2428141bb34d | wc -l
-../timesmash/timesmash/bin/llk -s example/anomaly.csv -f example/ad_temp/clean_24b70cbef-f5294810c-972b48151065e5dca && ../timesmash/timesmash/bin/llk -s example/anomaly.csv -f example/ad_temp/clean_31d70d9d-3e98-485b-afb8-482164d19389
-../timesmash/timesmash/bin/llk -s example/anomaly.csv -f example/ad_temp/clean_24b70cbef-f5294810c-972b48151065e5ddca
-../timesmash/timesmash/bin/llk -s example/anomaly.csv -f example/ad_temp/clean_24b70cbef-f5294810c-972b48151065e5
-cat example/anomaly.csv
-cat example/anomaly.csv | wc -l
-cat example/anomaly.csv | wc -w
-head -n 1 example/test/testdataM41KS21KT323.dat | wc -w
-../timesmash/timesmash/bin/llk -s example/anomaly.csv -f example/ad_temp/clean_24b7cbef-f529-410c-972b-4151065e5dca
-../timesmash/timesmash/bin/llk -s example/anomaly.csv -f example/ad_temp/clean_31d70d9d-3e98-485b-afb8-482164d19389
-du -h example/time_series_test.csv
-cat example/time_series_test_anomalies.csv 
-head -n 1 example/time_series_test_anomalies.csv 
-cat example/time_series_test.csv | wc -l
-head -n 1 example/time_series_test_anomalies.csv | wc -w
-du -h example/time_series_test_anomalies.csv
-head -n 1 example/time_series_test_anomalies.csv
-head -n 1 example/time_series_test_anomalies.csv | grep 0
-head -n 1 example/time_series_test_anomalies.csv | grep 1
-../timesmash/timesmash/bin/llk -s example/time_series_test_anomalies.csv -f example/ad_temp/clean_0c175d3d-76e1-4294-bac9-2f31f90944e8
-../timesmash/timesmash/bin/llk -s example/time_series_test_anomalies.csv -fexample/ad_temp/clean_cdbbee9b-2b3c-429f-8e80-6f01fea4949a
-du -h example/time_series_anomalies.csv
-tar -czvf anomalies.tar.gz example/time_series_anomalies.csv
-du -h anomalies.tar.gz
-tar -czvf anomalies.tar.gz time_series_anomalies.csv
-mv anomalies.tar.gz ..
-tar -xvf anomalies.tar.gz
-v time_series_anomalies.csv
-cat time_series_anomalies.csv | wc -l
-time -h
-time --version
-time ls
-v time.txt
-cd Documents/ZeD/repos/GenESeSS_
-./bin/genESeSS -f test/data/data.dat -T symbolic -c cfg/config.cfg -D row
-cd notebooks
-mkdir data
-cp ../../GenESeSS_/test/data/data.dat .
-mv data.dat data
-ls deploy
-ls deploy/cfg
-cp ../../GenESeSS_/deploy/cfg/config.cfg .
-mv config.cfg data
-./bin/llk -f testsuite/S2.cfg -s testsuite/seq.dat -x 100
-cp testsuite/S2.cfg testsuite/seq.dat ../python_implementations_/notebooks/data
-cp testsuite/M2.cfg testsuite/T3.cfg ../python_implementations_/notebooks/data
-cd ../zquantizer_
-cp -r test/channel_0 ../python_implementations_/notebooks/data
-python setup.py sdistbdist_wheel
-pip install dist/zedsuite-0.0.1-cp39-cp39-linux_x86_64.whl
-v main.py
-time python -c "print('H')"
-time python -c "print('H')" -v
-time -v python -c "print('H')"
-which time
-where time
-/usr/bin/time --version
-/usr/bin/time -v python -c "print(100)"
-rm notebooks/main.py
-g add notebooks/*.ipynb
-g add notebooks/data
-g add notebooks/genESeSS.ipynb
-g diff README.md
-g commit -m "Add examples"
-g add build.sh dist/ zedsuite/*.pyx zedsuite/utils.py
-g diff setup.py
-g commit -M "Fix crashes"
-g commit -m "Fix crashes"
-g commit -m "Remove tests"
-g push'
-g commit -m "Add wheels"
-python main
-python main.py
-/usr/bin/time python -c "print(1)"
-type time
-pip install dist/ztsad-0.0.1-py3-none-any.whl
-d in htop
-python -h
-man time
-du -h example/zed_temp/clean_58c2c360-7de2-4ddb-a173-65a3b6131700
-du -h example/zed_temp/clean_c6848157-bc5b-4e3b-921a-7f0b5ea1163c
-du -h example/zed_temp/clean_ccdee853-225d-4096-a8d3-38e5fc04ed20
-v agitation_study.tex
 d se tex c
 d se tex cjk
 d in texlive-cjk
@@ -1470,7 +8,6 @@ g clone https://github.com/zeroknowledgediscovery/mantis
 mv ztsad mantis
 cp mantis setup.py ../mantis
 cp -r mantis setup.py ../mantis
-cat .gitignore
 tar -xvf example0.tgz
 v example0.tgz
 v example1.tgz
@@ -1585,7 +122,6 @@ git checkout lsmash.cc
 ../../zutil_/bin/lsmash -f test/seq.dat -T symbolic -S 0
 time ../../zutil_/bin/lsmash -f test/testseq.dat -T symbolic -S 0
 time ../../zutil_/bin/lsmash -f test/testseq.dat -T symbolic -S 0 -o h.dst
-g add README.md
 g add zedsuite/*
 g add zedsuite/_version.py
 time python test_.py
@@ -1652,7 +188,6 @@ tepl
 lensfun
 d rm ebe
 pip install pdoc
-pdoc
 pdoc patternly/
 pdoc --html patternly/ --force -c latex_math=True
 pdoc --html patternly/ -c latex_math=True
@@ -1697,7 +232,6 @@ google-chrome index.html
 rm -rf docs
 pdoc -o ./docs -f ./patternly
 ./upload.sh "add doc link"
-g add dist/*
 g add dist/
 g commit -m "add link to docs"
 pip install patternly -f
@@ -1851,7 +385,6 @@ ls /usr/condabin/conda
 ls /usr/condabin/
 pip3 install pdoc
 d se pdoc
-pip install pdoc3
 pdoc --skip-errors
 conda env remove -n test test0
 conda env remove -n test
@@ -1864,8 +397,6 @@ pip uninstall -y patternly
 cat patternly/detection.py
 python setup.py sdist bdist_wheel && pip uninstall -y patternly && pip install dist/patternly-0.0.16-py3-none-any.whl && rm -rf examples/zed_temp
 g commit -m "fix cluster ranking"
-cat makedoc.sh
-v makedoc.sh
 g add docs/ patternly/detection.py
 g st
 du -h         next_val = lambda f: next(f).split(":")[1].strip()\
@@ -1997,8 +528,6 @@ cat ../GenESeSS_/result.txt
 cd ../GenESeSS_
 pwd result.txt
 rm -rf pi
-g add .gitignore
-g add *
 ./upload.sh "add prun"
 mkdir session_nagitations
 cp Prediction.ipynb Prediction_bkup.ipynb
@@ -2054,7 +583,6 @@ g add zedsuite/
 g commit -m "pass data directly without files"
 ./upload.sh "add drawpfsa and prun"
 g checkout examples/Satellite_ts.ipynb
-./makedoc.sh
 ./upload.sh "remove most file handling, pass data directly to cythonized code"
 pip uninstall patternly && pip install patternly
 python setup.py sdist bdist_wheel && pip uninstall -y patternly && pip install dist/patternly-0.0.26-py3-none-any.whl && rm -rf examples/zed_temp
@@ -2177,7 +705,6 @@ v colors/night-owl.vim
 v estilo.yml
 v autoload/lightline/colorscheme/nightowl.vim 
 v scripts/palettes.ejs
-cd scripts
 v palettes.js
 v palettes.html
 cd lightline
@@ -2188,7 +715,6 @@ v night-owl.vim.yml
 v in
 v .hy 
 cd agi 
-bc
 d se neovide
 d in curl \\
     gnupg ca-certificates git \\
@@ -2277,7 +803,6 @@ cd patche
 cp ../../Downloads/*.otf .
 ./font-patcher OperatorMono-Book.otf
 cp *.otf src
-cd src
 ../font-patcher OperatorMono-Book.otf
 ./font-patcher ../patcher/src/OperatorMono-Book.otf
 ./font-patcher ../patcher/src/OperatorMono-BookItalic.otf
@@ -2307,7 +832,6 @@ v ptest.py
 g clone https://github.com/kiliman/operator-mono-lig
 cd operator-mono-lig
 pip install fonttools
-npm install
 cd ligature
 cd OperatorMonoLig-Book
 cd glyphs
@@ -2422,12 +946,9 @@ d se libxext
 d in libXext-devel
 d in cmake
 cc
-ls src
 g diff patternlyternly/detection.py
-g diff patternly/detection.py
 g add docs
 rm -rf .vscode examples/dist.dst examples/embedding.csv examples/outD.txt
-g commit -m "update docs"
 head -n 1 dataset/ACC_X_a.csv
 head -n 1 dataset/ACC_X_a.csv | grep "1308466"
 head -n 1 dataset/ACC_X.csv | grep "1308466"
@@ -2458,12 +979,10 @@ vulkaninfo | grep GPU
 vkcube
 vkcubepp
 ls Fira\ Code
-cd neovide
 v /usr/local/bin
 sudo mv launch-neovide /usr/local/bin
 rm /usr/local/bin/neovide
 sudo rm /usr/local/bin/neovide
-sudo mv target/release/neovide /usr/local/bin
 cat /usr/share/applications/
 ls /usr/share/applications
 v neovide.desktop
@@ -2525,7 +1044,6 @@ sudo v alacritty.desktop
 ./Documents/ZeD/repos/GenESeSS_/bin/genESeSS -h
 google-chrome graph. 
 google-chrome graph.png
-du -h Downloads
 exa
 exa --icons --group-directories-first
 du -h .config
@@ -2541,7 +1059,6 @@ cat seq_.dat
 v seq1.dat
 ../Documents/ZeD/repos/zutil_/bin/llk -s seq1.dat -f result1.txt
 ../Documents/ZeD/repos/zutil_/bin/llk -s seq1.dat -f result.txt
-python gen.py
 ../Documents/ZeD/repos/zutil_/bin/llk -s seq_.dat -f result.txt
 ../Documents/ZeD/repos/zutil_/bin/llk -s seq_.dat -f result_.txt
 ../Documents/ZeD/repos/zutil_/bin/llk -s seq.dat -f result_.txt
@@ -2555,7 +1072,6 @@ rmdir Testingl
 haskell
 ghci
 ese
-v gen.py
 sadfjlk
 echo $SPACESHIP_FOOBAR_SHOW
 echo $SPACESHIP_ROOTFOOBAR_SHOW
@@ -2604,7 +1120,6 @@ which s
 which starship
 STARSHIP_LOG=debug ./target/release/starship module cmd_duration -d 60000
 v Cross.toml
-v README.md
 cd Downloads/starship-0.57.0
 python -c "import time; time.sleep(2)"
 python -c "import time; time.sleep(1)"
@@ -2861,7 +1376,6 @@ lo
 sils
 tmux -h
 tmux --help
-gs
 xournal
 d in bspwm sxhkd
 d in rofi
@@ -2902,7 +1416,6 @@ du -h Videos
 du -h .cache
 du -h conda
 du -h .conda
-rm -rf .conda
 d list installed
 d list installed | grep fedora | less
 d remove AtomicParsley-0.9.5-17.fc34.x86_64
@@ -2990,7 +1503,6 @@ du -h centos8
 du -h win10
 rm centos8
 cd backgrounds
-du -h -d 1 | grep M
 cd icon
 cd icons
 rm -rf Tela Tela-dark McMojave-circle McMojave-circle-dark Flatery-Orange Papirus-Light
@@ -3001,9 +1513,6 @@ rm -rf Pokemon\ Detective\ Pikachu\ \(2019\)
 rm -rf Bla
 rm -rf Black\ Swan\ \(2010\)
 rm -rf The\ Little\ Things\ \(2021\)
-cd Stylish
-du -h nadfjh2934f1j1234.zip
-du -h im.tar.xz
 du -h vi.tar.xz
 rm -rf starship-0.57.0
 rm -rf cmsc154\ lectures
@@ -3179,7 +1688,6 @@ google test.png &
 convert chb01_05_train_thresh2.png chb01_03_test05_thresh2.png +append test.png
 convert chb01_05_train_thresh2.png chb01_02_test05_thresh2.png chb01_03_test05_thresh2.png +append test.png
 nautilus &
-nautilus . &
 tmux a -t 0
 v bufferline.lua
 mv lua/bufferline.lua plug-config
@@ -3360,13 +1868,8 @@ rm -rf .yay
 rm -rf jedi
 rm -rf yay
 rm -rf mozilla
-du -h | grep G
-cd Tra
-cd Trash
-cd expunged
 cd 3505918060
 rm -rf expunged
-cd ZeD
 du -h -d1 | grep G
 mv Autumn\ 20 Autumn
 mv Winter\ 21 Winter
@@ -3375,8 +1878,6 @@ cd Spring/
 cat 00-grade-hw1-drewvlaz.txt
 cd ../Spring/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p1bitmanip
 cd MATH19620-Linear_Algebra
-cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw1
-cat hw1.txt
 exir
 cat .vim
 ls .vim
@@ -3389,7 +1890,6 @@ lines config.py
 lines objectdb
 lines patternly/detection.py
 \:Lq
-\:qw
 ll models | grep 29 | wc -l
 ll models | grep 4 | wc -l
 ll models | grep 4 
@@ -3405,7 +1905,6 @@ cat clean_d56fa8be-f235-4230-9723-048ccca890dd
 cat clean_d1250306-e4d9-4be3-8f65-4023c28de078
 cat clean_50a3a44d-8553-411d-acc7-7894facae9d2
 ../../repos/zutil_/bin/prun -f clean_50a3a44d-8553-411d-acc7-7894facae9d2
-rm *
 ll models
 pyt 
 cat clean_bdb41dfb-aa16-485b-b626-bed6d5a4e79d.
@@ -3430,7 +1929,6 @@ cd graphs
 mkdir chb01
 ,s
 mkdir hw
-cd hw
 head -n 20 ../../MATH19620-Linear_Algebra/hw/hw1.tex| toclip
 d se bussproofs
 d in texlive-bussproofs
@@ -3447,11 +1945,7 @@ which gcc
 v gcc
 ./driver.pl
 ./dlc -z
-make clean
 ./dlc
-cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw2
-v hw2.txt
-jup 
 v chb01_01.edf
 du -h chb01_01.edf
 ls | fzf
@@ -3462,8 +1956,6 @@ xargs $(ls | fzf) bui
 man xargs
 echo "bui" | xargs $(ls | fzf)
 ssh drewvlaz@cs154.cs.uchicago.edu
-cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p1bitmanip
-v bits.c
 v hw1 
 mv hw2.* ../../MATH19620-Linear_Algebra/hw
 ls images
@@ -3494,9 +1986,7 @@ cd modewls
 cd models
 python setup.py sdist bdist_wheel && pip uninstall -y patternly && pip install dist/patternly-0.0.31-py3-none-any.whl && rm -rf examples/zed_temp
 ssh drewvlaz@midway2.rcc.uchicago.edu'
-cd .ssh
 cat id_ecdsa
-cat id_ecdsa.pub
 g commit -m "fix load model"
 ./upload.sh "fix load model"
 v matches.csv
@@ -3507,49 +1997,39 @@ google hw3.pdf
 zathura hw3.pdf
 v hw1
 cd Spring/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw3
-cd hw4
-v hw4.txt
 cat 00-grade-hw4-drewvlaz.txt
 rmdir predictions
 mkdir predictions
 tmux d
-tmu
 v hw3.txt
 eix
 tar 
 cd th 
 v init.vim
-cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p2bomb
 cd bomb5/
 cat strings.txt
 cat README
-cd p3cache
 cd hw5
 v hw5.txt
 cd ../hw6
 cd ../hw7
 cd ../hw8
-v hw8.txt
 cd p4shell
 cd Autumn
 cd SOSC12400-Self
 ./target/release/neovide
-mv target/release/neovide /usr/local/bin
 sudo cp target/release/neovide /usr/local/bin
 nvide paper1.txt
 d se tex fds
 d in texlive-fdsymbol
 v hw2.
 cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw6
-v hw6.txt
 cat 00-grade-hw6-drewvlaz.txt
-sdd
 v paper1.txt
 python2 
 pyenv 2.7 
 pyenv install -v 2.7.0
 nvide
-neovide
 ls traces
 v driver.py
 ./driver.py
@@ -3577,7 +2057,6 @@ mv chb03_25_.edf chb03_25.edf
 cd chb04
 cd chb05
 cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb01/
-cd ../
 wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb06
 cd files/chbmit/1.0.0/l
 cd files/chbmit/1.0.0/
@@ -3603,10 +2082,7 @@ cd chb02
 cd chb06
 pc
 google out
-cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw7
-v hw7.txt
 cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p3cache
-v csim.c
 google hw7.pdf
 v pei.pynb
 mv pei.pynb pei.ipynb
@@ -3632,7 +2108,6 @@ scp -r Vivarium\ \(2019\) dietpi@192.168.1.132:/media/ExtHDD01/Movies
 scp -r Venom\ \(2021\) dietpi@192.168.1.132:/media/ExtHDD01/Movies
 ssh dietpi@192.168.1.132
 head -n 20 hw1.tex | toclip
-cd Documents
 cd Programming
 cd Certificates
 cd algorithmic-toolbox-coursera
@@ -3643,7 +2118,6 @@ cd by_learners
 v sorting.rb
 v sorting.cpp
 v Sorting.java
-cd De
 cd algorithmic-toolbox-coursera/week4
 v 3way_quicksort.py
 pip install scipy
@@ -3658,15 +2132,12 @@ gcc day1.cc
 g++ day1.cc
 mv day1.cc day1-1.cc
 g++ day1-2.cc
-./a.out
 v day1-2.cc
 g++ day1-2.cc && ./a.out
 v day2.txt
 cat day1-1.cc | toclip
 v day2-1.cc
 d in xserver-xorg-input-all
-cd Music
-v View\ Submission\ _\ Gradescope.html
 pip install openai
 curl https://api.openai.com/v1/engines/davinci/completions \\
 -H "Content-Type: application/json" \\
@@ -3729,7 +2200,6 @@ curl -X POST https://api.eleuther.ai/completion \\
 -H '"Content-Type": "application/json"' \\
 -d '{"context":"just testing this","top_p":0.9,"temp":0.8,"response_length":128,"remove_input":true}'
 cat fit.py
-d
 head -n 20 hw1.tex >> proj.tex
 cd Dev/AoC
 mkdir 2021
@@ -3749,7 +2219,6 @@ echo 100 > /sys/class/leds/tpacpi::kbd_backlight/brightness
 echo 0 > /sys/class/leds/tpacpi::kbd_backlight/brightness
 echo 2 > /sys/class/leds/tpacpi\:\:kbd_backlight/brightness
 sudo echo 2 > /sys/class/leds/tpacpi\:\:kbd_backlight/brightness
-cd Testing
 v fit.py
 python fit.py
 cd Documents/College/Year2/Autumn/CMSC27100-Discrete_Math
@@ -3760,18 +2229,14 @@ randp
 cd ../wallpapers0
 lines
 lines ls
-sls
 lines test.py
 python ts.py
 tmux 
 tmux kill-server
 fs
 ssh eao10000@cs154.cs.uchicago.edu
-ssh drewvlaz@linux.cs.uchicago.edu
-make
 ./myshell
 cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p4shell
-v myshell.c
 cd ../Documents
 c github-recovery-codes.txt
 v github-recovery-codes.txt
@@ -3799,12 +2264,9 @@ v 3-2.cc
 cd raw_download/physionet.org/files/chbmit/1.0.0/chb05
 cd raw_download/physionet.org/files/chbmit/1.0.0/
 cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb05
-python scripts/unfollowers_.py
-v output/unfollowers.txt
 v data/messages/inbox/lauren_wna78sjuia
 v data/messages/inbox/lauren_wna78sjuia/message_1.json
 v data/messages/inbox/
-cd Dev/small-projects/instagram
 rm data
 rm -rf data
 v instagram_data/messages/inbox/lauragiugno_uixohxazjq/message_1.json
@@ -3820,11 +2282,9 @@ cp physionet.org/files/chbmit/1.0.0/chb09/* .
 j 
 cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb09
 cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb03
-cd ../../..
 ../../..
 scp -r SeizureAnalysis.ipynb SeizureTrain.ipynb drewvlaz@midway2.rcc.uchicago.edu
 scp -r SeizureAnalysis.ipynb SeizureTrain.ipynb drewvlaz@midway2.rcc.uchicago.edu:~/
-../..
 wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/chb10/
 rm *.pfsa
 cp -r physionet.org/files/chbmit/1.0.0/chb10 data/raw_download/physionet.org/files/chbmit/1.0.0/
@@ -3980,8 +2440,6 @@ v zed_temp/clean_26672380-6056-4636-847f-ef7867e9e571
 ../repos/zutil_/bin/llk -s error.csv -f zed_temp/clean_3c8ccf7d-36ce-4fe2-84a3-eafed4b7bea6
 v zed_temp/clean_3c8ccf7d-36ce-4fe2-84a3-eafed4b7bea6
 v zed_temp/clean_400ef595-726d-4925-abd4-fef8d4833ecf
-\:
-eixt
 ls zed_temp
 rm -rf zed_temp
 cat ex.p
@@ -4003,12 +2461,10 @@ v seq
 ./bin/genESeSS -f seq
 du -h data
 cd data/raw_download/physionet.org/files/chbmit/1.0.0/chb01
-du -h .
 cd ../../PHYS13200-Electicity\&Magnetism
 python test2
 mv error.csv test.csv
 cp error.csv data.seq
-py 
 v d 
 v data.seq
 v curr_data.seq
@@ -4055,8 +2511,6 @@ cp ../repos/GenESeSS_/deploy/cfg/config.cfg patternly
 head -n 20 pset1.tex | toclip
 python test1.py
 v test1.py
-cd Dev/neovide
-cargo build --release
 v patternly/config.cfg
 v metrics.csv
 v metrics1.csv
@@ -4074,7 +2528,6 @@ ds
 head -n 50 p132-homework-2.tex| toclip
 head -n 150 p132-homework-2.tex| toclip
 head -n 150 pset2.tex| toclip
-v pset2.tex
 v pset1.
 v p132-homework-3.tex
 head -n 200 p132-homework-3.tex| toclip
@@ -4084,17 +2537,14 @@ v p132-homework-2.tex
 head -n 200 pset3.tex|toclip
 head -n 200 pset3.tex
 head -n 100 pset3.tex
-v pset3.tex
 v p132-homework-4.tex
 sudo systemctl restart gdm
 rmdir exams
-lks
 mkdir exams
 head -n 50 pset3.tex
 head -n 50 psets/p132-homework-4.tex | toclip
 cd exams
 head -n 100 ../psets/p132-homework-4.tex | toclip
-v pset4.tex
 l;s
 head -n 100 p132-homework-4.tex | toclip
 v p132-homework-5.tex
@@ -4103,36 +2553,24 @@ cp ~/Downloads/Satellite_ts.ipynb .
 cp ~/Documents/ZeD/repos/patternly/examples/data/01_2015_LANL-01A_SOPA_MPA.txt .
 pip uninstall patternly
 cd exa
-cd examples
 g commit -m "updated variable names to fix errors with new version"
 cd python_implementations_
 v genesess.pyx
-./upload.sh "update"
 v build.rs
 head -n 100 pset4.tex >> pset5.tex
 head -n 80 pset4.tex >> pset6.tex
-v pset5.tex
 v exam1_corrections.tex
 head -n 80 p132-homework-5.tex >> p132-homework-6.tex
 d in rstudio
 v hw1.tex
-v hw2.tex
-v hw3.tex
-v hw4.tex
-v hw5.tex
-v hw6.tex
-v hw7.tex
-v hw8.tex
 v pro
 v proj.tex
-cd .cache
 rm -rf chromium/
 rm -rf google-chrome
 pulseaudio
 wsc
 v p132-homework-6.tex
 head -n 80 p132-homework-5.tex >> p132-homework-7.tex
-python test.py
 rm test.py
 lines p132-homework-1.tex
 v p132-homework-7.tex
@@ -4152,11 +2590,7 @@ cp ../repos/patternly/examples/data/example3.dat .
 v example3.dat
 cp ../repos/patternly/examples/Satellite_ts.ipynb .
 cp ../repos/patternly/examples/data/01_2015_LANL-01A_SOPA_MPA.txt .
-exi
 head -h 80 pset6.tex >> pset7.tex
-v ps
-v pset6.tex
-v pset7.tex
 head -n 80 pset6.tex >> pset7.tex
 head -n 80 p132-homework-7.tex >> p132-homework-8.tex
 head -n 100 p132-homework-7.tex >> p132-homework-8.tex
@@ -4197,7 +2631,6 @@ d in blueman
 sudo v /etc/bluetooth/
 pip3 install pandas
 d in pip
-pip install pandas
 pip install jupyterthemes
 d in jupyter
 d se jupyter
@@ -4214,7 +2647,6 @@ d se texlive fonts recommended
 d in texlive-collection-fontsrecommended
 v p132-homework-8.tex
 d in cargo
-cd .scripts
 d in yarn
 d se yarn
 d in yarnpkg
@@ -4224,7 +2656,6 @@ d in npm
 v -V
 sudo bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 sudo dnf install -y pnpm
-ls node_modules
 rm yarn.lock
 rm node_modules
 rmdir node_modules
@@ -4255,7 +2686,6 @@ cp nvim_bkup nvim
 ls nvim
 rm -rf lvim
 cp lvim_bkup lvim
-cd .local
 cd lunarvim
 cd lvim
 cd site/pack
@@ -4265,7 +2695,6 @@ mkdir lsp-settings
 cd lsp-settings
 head patternly/detection.py
 jexit
-cd share
 ls .local | grep tmux
 cd .tmux
 cd tpm
@@ -4273,11 +2702,8 @@ cd .
 cd .config/tmux
 v tokyo-night-tmux
 v tmux-onedark-theme
-v tmux.conf
-cd plugins
 cp tmux-onedark-theme tmux-onedark-tokyonight
 cd alacritty
-v alacritty.yml
 cd themes
 v ayu-mirage.yml
 cd /usr/share/applications
@@ -4289,7 +2715,6 @@ sudo nvim Alacritty.desktop
 cd .local/share/applications
 alacritty
 v Alacritty.desktop
-ls data
 ls data >> ids.txt
 v ids.txt
 ls dataset
@@ -4307,7 +2732,6 @@ killall -r pipewire.*
 pip install dil
 pip uninstall dil
 pip uninstall dill
-cat version.py
 rm nerdcommenter.vim
 tail build.sh
 d in docker
@@ -4342,10 +2766,8 @@ d in libstdc++-devel
 d in libstdc++-static
 d in libstdc++
 pip install virtualenv
-virtualenv venv
 venv/bin/activate
 ./venv/bin/activate
-source venv/bin/activate
 ls boost
 d in boost-static
 v build.sh
@@ -4361,7 +2783,6 @@ ld -lboost_program_options --verbose | grep succeed
 curl https://files.pythonhosted.org/packages/99/22/423ea34c844293216591947a5f62ac3c0351997b2e8f3613694e53e96aa6/zedsuite-0.0.5.tar.gz
 curl https://files.pythonhosted.org/packages/99/22/423ea34c844293216591947a5f62ac3c0351997b2e8f3613694e53e96aa6/zedsuite-0.0.5.tar.gz zedsuite-0.0.5-tar.gz
 curl https://files.pythonhosted.org/packages/99/22/423ea34c844293216591947a5f62ac3c0351997b2e8f3613694e53e96aa6/zedsuite-0.0.5.tar.gz -O zedsuite-0.0.5-tar.gz
-du -h
 du -h zedsuite-0.0.5.tar.gz
 tar -xvf zedsuite-0.0.5.tar.gz
 v pyproject.toml
@@ -4380,14 +2801,11 @@ python patternly/detection.py
 python3.9 patternly/detection.py
 pip3.9 install dist/zedsuite-0.0.5-cp310-cp310-linux_x86_64.whl
 v setup.py
-fetch
 s
-v test.py
 pip3.9 uninstall zedsuite
 python3.9 test_.py
 python3 test_.py
 rm -rf venc
-rm -rf venv
 virtualenv -p $(which python3.9) py39
 jupyter kernel install --user --name py39 --display-name "Python 3.9"
 jupyter kernel install --user py39 --name py39 --display-name "Python 3.9"
@@ -4405,20 +2823,15 @@ cd py39
 cp patternly/detection.py ../repos/patternly/patternly/
 g info
 g diff
-g add patternly/detection.py
 g commit -m "add class for continuous streaming data that dynamically updates PFSA library"
 git config pull.rebase true
 g diff version.py
 g add version.py
-g 
 g checkout origin/master examples/Satellite_ts.ipynb
 g checkout origin/main examples/Satellite_ts.ipynb
 g commit -m "inc version"
-g pull
 cp Satellite_ts.ipynb ../repos/patternly/examples
-g add examples/Satellite_ts.ipynb
 g commit -m "add example with dynamically updating PFSA library"
-g push
 python test_.py
 v test_.py
 anki
@@ -4430,8 +2843,6 @@ cd Anki
 rm -rf Anki
 rm -rf Anki2
 git clone https://github.com/LunarVim/Neovim-from-scratch.git nvim
-cd lua
-cd user
 cd lsp
 v ke
 v keymaps.lua
@@ -4444,7 +2855,6 @@ nvim options.lua\
 
 du -h -d1
 v plugins.lua
-...
 nvim in
 v colorscheme.lua
 v quickscope.lua
@@ -4510,14 +2920,12 @@ hb && ls
 lvim process.py
 ext
 rm -rf .git .github
-g init
 rm -rf .git
 cd .config/nvim
 rm -rf autoload general plug-config spell themes vim-plug coc-settings.json init.vim
 ls plugin
 rm -rf plugin
 rm -rf nvim
-g status
 cat README.md
 jjjls
 cd lua/user
@@ -4565,13 +2973,10 @@ rm -rf test1.py
 rm a.out
 rm zedsuite-0.0.5.tar.gz
 rm -rf zedsuite-0.0.5
-cd Dev/dotfiles
 pip install thefuck
-l
 claer
 nvim /bin/sh +1 && claer
 dnf search ls
-cd Dev
 sdl
 sdls
 bh
@@ -4600,20 +3005,14 @@ mv lsp-settings ../
 rm -rf lsp-settings
 v i
 cd agitation_study/agitations_dataset
-..
 .scripts/syncdots
-c
-sd 
 mkdir bin
 cp embed ../../../agitation_study/bin
 ./lsmash -h
 ./embed -h
 v bootstrap.
-v zutil.pyx
 cd ../...
-cd ../..
 cd data_smashing_
-ls bin
 ./bin/embed -h
 cp bin/embed ../../agitation_study/bin
 cat for_embedding
@@ -4630,7 +3029,6 @@ sudo systemctl restart bluetooth.service
 d up
 dd if=pop-os_21.10_amd64_intel_7.iso of=/dev/sda status=progress
 sudo dd if=pop-os_21.10_amd64_intel_7.iso of=/dev/sda status=progress
-randp .
 sudo apt install exa starship
 sudo apt install exa
 curl -sS https://starship.rs/install.sh | sh
@@ -4699,7 +3097,6 @@ yay -S node
 yay -S blueman
 p -Syu pipewire-pulse
 p -Syu bluez
-bluetoothctl
 p -Syu pavucontrol
 pavucontrol
 pacmmd
@@ -4733,7 +3130,6 @@ sudo systemctl start dbus
 sudo systemctl enable dbus
 p -Syu dbus-user-session systemd libsystemd-dev libsystemd
 ls /run/user/1000
-eit
 ls /
 refind
 pipewire-pulse &
@@ -4773,10 +3169,7 @@ yay -Syu os-prober
 sudo nvim /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ls /boto
-fuck
 ls /boot
-cd Downloads
-cd Stylish-2k
 v install.sh
 ls Stylish
 cat Stylish/select_c.png
@@ -4784,7 +3177,6 @@ cat Stylish/dejavu_32.pf2
 cat Stylish/dejavu_32.pf2 | wc -l
 cat Stylish/dejavu_32.pf2 | wc -c
 p -S htop
-htop
 LS
 mkdir Spring
 cd Spring
@@ -4806,15 +3198,11 @@ p -S texlive-core
 p -Ss texlive enumitem
 p -Ss enumitem
 p -S texlive-latexextra
-yay -S zoom
-sudo systemctl start bluetooth.service
-sudo systemctl enable bluetooth.service
 p -S pyenc
 p -S pyenv
 pyenv install -v 3.9.0
 python -version
 lls
-v agitations.csv
 p -S vlc
 yay -S chrome-gnome-shell
 git clone git@github.com:AndresCidoncha/audio-switcher.git ~/.local/share/gnome-shell/extensions/audio-switcher@AndresCidoncha
@@ -4829,7 +3217,6 @@ ws connect
 wsd
 ws account
 yay -S tlp
-cd psets
 yay -Ss algo tex
 yay -Ss code tex
 yay -Ss code tex pseudo
@@ -4839,14 +3226,10 @@ yay -S texlive-algpseudocode
 yay -Ss algorithmicx
 yay -Ss algpseudocode
 yay -S texlive-science
-v pset1.tex
-v pset8.tex
 which :q
 pwd Downloads
 cd /
 pwd
-ls | wc -l
-h
 hvb
 ls Templates
 rmdir Templates
@@ -4893,11 +3276,8 @@ sxiv Downloads/Stylish-2k/Stylish/im
 which ranpd
 which randp
 randp Downloads/Stylish-2k/Stylish/im
-df -h
 du -h -n 1
-du -h -d 1
 cd .config
-du -h -d 1 | grep G
 rm -rf code-oss
 rm -rf Code
 rm -rf Code\ -\ OSS
@@ -4907,7 +3287,6 @@ du -h google-chrome | grep G
 du -h google-chrome | grep M
 rm -rf google-chrome-unstable
 l,a
-la
 rm -rf coc eog evolution 
 nnnn
 nnn
@@ -4917,7 +3296,6 @@ yay -Rs rnager
 yay -Rs ranger
 yay -S lf
 nnncd
-lfcd
 lf
 man lf
 yay -S ranger
@@ -4927,7 +3305,6 @@ v resume.tex
 cd .fonts
 cd Operator\ Mono\ Nerd\ Font
 cd Operator\ Mono
-alacritty -e tmux
 tmux killw -t AAAAAAAAAAAA:
 tmux list-sessions
 tmux list-sessions | awk '{print $1}'
@@ -4940,12 +3317,7 @@ tmux list-sessions | awk '{print $1}' | sed 's/:.*//' | fzf
 se 
 tmux ls | cut -d: -f1 | fzf
 tmux ls | cut -d: -f1 | fzf -0
-man fzf
-sc
-tkill
-tat
 tmux ls
-./syncdots
 v HW1.
 pyenv list
 man pyenv
@@ -4960,7 +3332,6 @@ yay -Ss python3.9
 yay -Ss python3
 yay -S python39
 python39
-tmux
 pip3.9 install zedsuite
 ls dist
 ls build
@@ -4990,18 +3361,14 @@ ls .pyenv
 rm -rf .pyenv
 cll
 pip3.9 --version
-python setup.py sdist bdist_wheel 
 v zedsuite/ini
 ls zedsuite
 cd zedsuite
 v bootstrap.pyx
 yay -S xclip
-python
 pip install zedsuite
 pip uninstall zedsuite
 pip install dist/zedsuite-0.0.5-cp310-cp310-linux_x86_64.whl
-python 
-v 
 v init.lua
 v ++
 v __init__.py
@@ -5021,17 +3388,11 @@ python3.9 -m pip install dist/zedsuite-0.0.5-cp39-cp39-linux_x86_64.whl --force-
 clsl
 clls
 lscl
-v Makefile
-v upload.sh
 python3.9 -m pip uninstall zedsuite
 python3.9 -m pip install zedsuite
-python3.9
 python3.9 -m pip install ipykernel
 python3.9 -m ipykernel install --name py39 --display-name "Python 3.9.0"
 ls | grep pip
-which pip3
-cd 
-cd .local/bin
 sudo pip3.9 install ipykernal
 sudo pip3.9 install ipykernel
 ccd
@@ -5041,103 +3402,1702 @@ sudo python3.9 -m ipykernel install --name py39 --display-name "Python 3.9.0"
 yay -S python39-pip
 yay -Ss python39
 pip3 --version
-python --version
 cd .local/share/jupyter/kernels/py39
 v kernel.json
 jupyter kernel install 
 jupyter kernelspec list
 cat kernel.json
 which python3.9
-jupyter notebook
 python3.9 -m pip install matplotlib
-which pip
 pip --version
 python -m pip --version
 p -S dot
 yay -Ss dot
-dot
-\:q
-ec
 cd .local/share/nvim/site/pack/packer/start
-cd ..
 cd opt
-rm -rf *
 yay -S wget
 cd /usr/bin
-ll
 ll | grep node
 sudo rm -rf node
-cd
 yay -S npm node
 npm
 yay -Rs npm node
 node
-exitr
 yay -S nodejs
 npm install -g npm
-se
 whoami
-v
-v patternly/detection.py
 v process.py
 cat process.py| toclip
-sd
-v HW1.tex
-yay
-cl
 hv
-hb
 killall zoom
 man ranger
 yay -S mpv
 ranger
-ls
-exit
-: 1648830341:0;sd
-: 1648830350:0;ls
-: 1648830356:0;v HW1.tex
-: 1648923770:0;yay
-: 1648923804:0;hb
-: 1648925797:0;ls
-: 1648925863:0;curl --request GET \\
+curl --request GET \\
   --url https://api.spotify.com/v1/browse/categories \\
   --header 'Authorization: ' \\
   --header 'Content-Type: application/json'
-: 1648925891:0;curl --request GET \\
+curl --request GET \\
   --url https://api.spotify.com/v1/browse/categories \\
   --header 'Authorization: 3527ea437d24431bb219acdf31490473' \\
   --header 'Content-Type: application/json'
-: 1648925955:0;cd Dev
-: 1648925955:0;ls
-: 1648925964:0;mkdir uh-hackathon
-: 1648925966:0;cd uh-hackathon
-: 1648925967:0;ls
-: 1648925973:0;v SpotifyClient.py
-: 1648925999:0;v secrets.py
-: 1648926336:0;tmux
-: 1648926339:0;python test.py
-: 1648926355:0;v test.py
-: 1648926394:0;python test.py
-: 1648927921:0;python test.py | grep Jeans
-: 1648928047:0;python test.py
-: 1648928416:0;cd ..
-: 1648928418:0;g clone https://github.com/drewvlaz/SpotiFind.git
-: 1648928422:0;cd SpotiFind
-: 1648928423:0;ls
-: 1648928425:0;la
-: 1648928441:0;touch README.md
-: 1648928446:0;g add README.md
-: 1648928453:0;g commit -m "Initialize readme"
-: 1648928454:0;g puch
-: 1648928456:0;g push
-: 1648929205:0;cd
-: 1648929206:0;ls
-: 1648929207:0;cd .ssh
-: 1648929208:0;ls
-: 1648929212:0;ls known_hosts
-: 1648929315:0;cat id_ecdsa.pub
-: 1648929353:0;cat id_ecdsa.pub | toclip
-: 1648929374:0;cd
-: 1648929377:0;cd Dev/dotfiles
-: 1648929382:0;cd .scripts
-: 1648929384:0;./syncdots
+mkdir uh-hackathon
+cd uh-hackathon
+v secrets.py
+python test.py | grep Jeans
+g clone https://github.com/drewvlaz/SpotiFind.git
+g puch
+cd .ssh
+ls known_hosts
+cat id_ecdsa.pub
+cat id_ecdsa.pub | toclip
+cd Dev/dotfiles
+./syncdots
+cd Dev/SpotiFind/n
+cd Dev/SpotiFind/
+g push 
+rm -rf SpotiFind
+g Push
+mkdir SpotiFind
+g init
+touch README.md
+g add README.md
+g commit -m "Initialize readme"
+g branch -M main
+g remote add origin git@github.com:drewvlaz/SpotiFind.git
+g push -u origin main
+cp ../uh-hackathon/SpotifyClient.py .
+g commit -m "code for Spotify api"
+npx create-react-app SpotiFind-frontend
+npx create-react-app spotifind-frontend
+mkdir components
+ls node_modules
+g commit -m "react boilerplate"
+cd spotifind-frontend/
+g commit -m "react components"
+code
+mv data.json ..
+mv src/data.json public
+cp public/data.json .
+cp data.json src
+rm data.json
+rm src/data.json
+cd ../SpotiFind/
+g commit -m "update categories"
+g config pull.rebase true
+g commit -m "add labels"
+cd Dev/uh-hackathon
+cd ../
+npm i axios
+npm i react-bootstrap bootstrap
+g commit -m "label list"
+cat UploadImage.js
+cd spotifind-frontend/src/components
+v Labels.js
+cd ../..
+cat app.py
+lines app.py
+lines SpotifyClient.py
+g commit -m "update label list"
+npm i
+npm install
+npm audit
+ls package.json
+cat package.json
+npm i material-ui
+npm i react-dropzone-uploader
+npm i html5-file-selector
+npm i material-ui/core
+npm i @material-ui/core
+npm i @material-ui/core --force
+v UploadImage.js
+npm i spotify-web-api-node
+npm remove react-spotify-embed
+npm i react-spotify-embed
+g commit -m "merging pages"
+pip3 install flask
+pip3 install google
+head app.py
+python --version
+pip3 uninstall google
+python -m pip uninstall flask google
+python -m pip install flask google
+which pip3
+which pip
+pip install google
+pip install pandas
+python -m pip install google
+python 
+pip install --upgrade google-api-python-client\
+
+flask --version
+python -m pip install --upgrade google-api-python-client\
+
+python -m pip install --upgrade google-cloud-vision\
+
+rm -rf venv
+virtualenv venv
+python -m pip install flask google-cloud-vision
+python app 
+python app.py
+cd venv/lib/python3.10/site-packages/
+ls google
+cd ../../..
+python -m pip install flask google-api-core
+python -m pip install flask google-auth
+flask run --help
+deactivate
+pip uninstall flask
+pip3 uninstall flask
+flask
+which flask
+rm flask
+v matching.py
+d
+python -m pip install flask_restful
+cd SpotiFind/l
+cd SpotiFind/
+npm run build
+python -m pip install flask_cors
+y
+g remove __pycache__
+g restore --staged __pycache__
+pull
+g commit -m "front and backend communication"
+rm credentials.json
+g add credentials.json
+g commit -m "remove google creds"
+g add app.py
+g commit -m "fix conflics"
+export GOOGLE_APPLICATION_CREDENTIALS="./credentials.json"
+cd Dev/SpotiFind
+v app.py
+npm i react-router-dom
+g commit -m "with backend"
+g add .gitignore
+g commit -m "remove credentials"
+v App.js
+g puhs
+g push origin 
+v credentials.json
+source venv/bin/activate
+python -m pip install wget
+wget blob:http://localhost:3000/68ca3b44-02a8-42bd-b58e-d3b17194f240
+npm start
+v .gitignore
+cat .git 
+cat .gitignore
+g restore --staged credentials.json
+v .git
+flask run
+cd spotifind-frontend
+cat App.js
+cat index.js
+cp ../public/Assets/spotify.svg .
+cp ../public/Assets/spotify.png .
+cd src
+cd components
+ls public
+v public/data.json
+cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw1
+cat hw1.txt
+sudo systemctl disable bluetooth.service
+sudo systemctl stop bluetooth.service
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+cd Dev 
+cd SpotiFind
+g add *
+g commit "final?"
+g commit -m "final?"
+v SpotifyClient.py
+g add SpotifyClient.py
+g commit -m "merged"
+git filter-branch -f --index-filter "git rm -rf --cached --ignore-unmatch credentials.json" -- --all\
+
+bfg
+yay -Ss bfg
+yay -S bfg
+git reflog expire --expire=now --all && git gc --prune=now --aggressive
+bfg --replace-text credentials.json
+bfg --replace-text
+g branch checkout HEAD
+g branch checkout checkout
+g branch HEAD
+g branch
+g branch checkout
+bfg --delete-files credentials.json
+git for-each-ref --format="delete %(refname)" refs/original | git update-ref --stdin
+git reflog expire --expire=now --all
+g clone https://github.com/drewvlaz/SpotiFind.git spotifind_bkup
+git gc --prune=now
+g push --force
+sdd
+yay -Ss graphviz
+yay -S graphviz
+dot
+cp Satellite_manually_assign_clusters.ipynb ../repos/patternly/examples
+cp Satellite_continuous_streaming.ipynb ../repos/patternly/examples
+g add examples/Satellite_*
+rm -rf .vim
+g commit -m "updated examples"
+yay -Ss tex asmath
+yay -Ss texlive-asmath
+yay -Ss texlive asmath
+cat HW1.tex >> HW1-resubmittable.tx
+cat HW1.tex >> HW1-resubmittable.tex
+rm HW1-resubmittable.tx
+exitr
+v pset1.tex
+py
+v HW1-resubmittable.tex
+cd spell
+v en.utf-8.add
+cat en.utf-8.add.spl
+cat hw2.tex >> hw2-resubmittable.tex
+v hw2-resubmittable.tex
+ls diagrams
+head -n 100 pset1.tex >> pset2.tex
+v hw 
+cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw2
+cat link.txt
+v link.txt
+v test.c
+v 00-grade-hw2-drewvlaz.txt
+v hw2.txt
+cd hw1
+cd ../hw2
+./t
+yya
+v hw2.tex
+cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p1bitmanip
+cd Spring/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p1bitmanip
+cat 00-grade-p1bitmanip-drewvlaz.txt
+make clean
+./btest.
+./btest
+v bits.c
+v building_skeleton.py
+python building_skeleton.py
+py 
+rm building.py
+mv building_skeleton.py building.py
+v algo_test.c
+v Makefile
+make
+./algo_test -h
+./algo_test -n 2 building.py
+cat ./tests/input1.txt >> building.py
+cat ./tests/input1.txt | building.py
+rm sorted.txt
+cat ./tests/input2.txt | python3 building.py >> sorted.txt
+cat ./tests/input2.txt | python3 building.py > sorted.txt
+cat sorted.txt
+pip3 install matplotlib
+pip3 install pillow
+python3 -m pip install matplotlib
+sxiv input2.png
+cp building.py building_bkup.py
+cat building_bkup.py
+cat ./tests/input5.txt | python3 building.py
+time cat ./tests/input10.txt | python3 building.py
+time cat ./tests/input2.txt | python3 building.py
+time cat ./tests/input20.txt | python3 building.py
+cat ./tests/input2.txt | python3 building.py >> expected2.txt
+sd 
+yay -Ss ieeetran
+yay -S texlive-ieeetran
+yay -S texlive-dsfont
+yay -S dsfont
+yay -Ss texlive-doublestroke
+yay -Ss doublestroke
+yay -S texlive-fontsextra
+cat makedoc.sh
+./polllatex-latex.sh
+cd tex
+cat polllatex-latex.sh
+cat clean
+cat clean.sh
+yay -S texlive-tiks
+yay -S texlive-tikz
+yay -S tikz
+yay -Ss texlive tikz
+yay -Ss tikz
+yay -S texlive-pgf
+yay -Ss blur shadow
+yay -Ss blur shadow tikz
+yay -S texlive-pgfplots
+yay -S pgfplots
+yay -S pgf plots
+yay -Ss pgf plots
+yay -S texlive-pictures
+v ms.tex
+g pul
+g add ms.tex
+g add tex/ms.pdf
+v pset2.tex
+cat ./tests/input2.txt | toclip
+cat ./tests/input1.txt | toclip
+head -n 100 pset1.tex >> pset3.tex
+cat building.py building-dc.py
+cat building.py >> building-dc.py
+python building.py
+cat building.py >> python3 building-dc.py
+cat ./tests/input1.txt | python3 building-dc.py
+pip install dist/patternly-0.0.31-py3-none-any.whl
+ls patternly
+cd Spring/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p2bomb
+cat 00-grade-p2bomb-drewvlaz.txt
+ls bomb5
+ssh drewvlaz@linux.cs.uchicago.edu
+scp drewvlaz@linux.cs.uchicago:~/Documents/cs/drewvlaz-cs154-spr-21/p2bomb/sol.txt
+scp drewvlaz@linux.cs.uchicago:~/Documents/cs/drewvlaz-cs154-spr-21/p2bomb/sol.txt .
+scp drewvlaz@linux.cs.uchicago.edu:~/Documents/cs/drewvlaz-cs154-spr-21/p2bomb/sol.txt .
+mv sol.txt p2bomb
+eit
+cp building.py building-pq.py
+cp building-dc.py building.py
+cat expected2.txt
+cat ./tests/input2.txt | python3 building-dc.py
+cat ./tests/input2.txt | python3 building.py >> expected2_.txt
+cat ./tests/input2.txt | python3 building-dc.py >> expected2_.txt
+cat ./tests/input2.txt | python3 building-dc.py > expected2_.txt
+cat ./tests/input2.txt | python3 building.py > expected2_.txt
+diff expected2.txt expected2_.txt
+cat ./tests/input2.txt | python3 building-pq.py
+cat ./tests/input2.txt | python3 building.py
+cd neovide
+cargo build --release
+yay -S neofetch
+cat hw3.tex >> hw3-resubmittable.tex
+cat hw3.tex > hw3-resubmittable.tex
+v hw3-resubmittable.tex
+v HW1.tex
+cat ./tests/input1.txt
+cat ./tests/input1.txt | python3 building.py
+v input01.txt
+cat input01.txt | python3 building.py
+cat ./tests/input2.txt
+ls tests
+cat building_testcases/input02.txt
+cat building_testcases/input02.txt| python building-pq.py | wc -l
+v building-dc.py
+cat expected02.txt
+cat building_testcases/input02.txt| python building-pq.py
+cat building_testcases/input02.txt| python building-pq.py > expected02.txt
+v building.py
+v building-theo.py
+cat building_testcases/input02.txt| python building-theo.py
+cat building_testcases/input02.txt| python building.py
+ls tmux
+google-chrome-stable tmux/screenshot.png
+rm -rf plugins
+ls plugins
+cd tmux
+v dracula.tmux
+cd scripts
+v dracula.sh
+../..
+v tmux.conf
+cd plugins
+ls tmux-sensible
+ls tpm
+v tmux-sensible/README.md
+cd tmux-sensible
+v sensible.tmux
+mtux
+fuck
+v tex/ms.tex
+v patternly/__init__.py
+pip install dist/patternly-0.0.32-py3-none-any.whl --force-reinstall
+cd .local/bin
+v toggle_alacritty_op
+mv toggle_alacritty_op toggle_alacritty_op.sh
+chmod +x toggle_alacritty_op.sh
+awk '$1 == "background_opacity:" {print $2; exit}' ~/.config/alacritty/alacritty.yml
+cat ~/.config/alacritty/alacritty.yml |awk '$1 == "background_opacity:" {print $2; exit}'
+cat ~/.config/alacritty/alacritty.yml | grep background_opacity
+cat ~/.config/alacritty/alacritty.yml |awk '$1 == "opacity:" {print $2; exit}'
+./toggle_alacritty_op.sh
+wget -r -N -c -np https://physionet.org/files/sleep-edf/1.0.0/
+ls physionet.org
+ls physionet.org/files/sleep-edf/1.0.0/
+google-chrome-stable physionet.org/files/sleep-edf/1.0.0/index.html
+du -h physionet.org
+cat RECORDS
+python -m pip install mne
+python3.9
+mv sc4002e0.rec sc4002e0.rec.edf
+for f in *.rec; do mv "$f
+for f in *.rec; do mv -- "$f" "$f.edf" done\
+\
+;\
+done
+for f in *.rec; do mv -- "$f" "$f.edf"; done
+for f in *.hyp; do mv -- "$f" "$f.edf"; done
+pyton
+v exp.py
+python exp.py
+v main.tex
+bluetoothctl
+rm algo_test*
+mkdir code
+mv *.py code
+mv *.txt code
+google-chrome-stable input2.png
+sls
+python3.9 test.py
+cp ../agitation_study/bin/embed bin
+g add tex/*
+g commit -m "brief intro to dynamic lib"
+g diff patternly/detection.py
+g add patternly/__init__.py
+g commit -m "continuous streaming"
+cd Dev/neovide
+mv target/release/neovide /usr/local/bin
+sudo mv target/release/neovide /usr/local/bin
+neovide
+man fzf
+v exp.py 
+v code/exp.py
+python code/exp.py
+v main-2.tex
+yay gimp
+tmxu
+cat hw4.tex >> hw4-resubmittable.tex
+v hw4-resubmittable.tex
+vl
+tttttttttttttmux
+du -h Downloads
+du -h -d 1 .
+cd Music
+rm -rf 2000s\ Throwbacks down\ vibes late\ nite\ -\ sad\ times Rap\ Caviar View\ Submission\ _\ Gradescope.html
+cd Do
+ls | wc -l
+cd Stylish-2k
+cd Stylish
+du -h im.tar.xz
+du -h nadfjh2934f1j1234.zip
+cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw4
+head -n 100 pset1.tex >> pset4.tex
+cd .scripts
+v toggle_alacritty_op.sh
+cd roadtrip_testcases
+cat output01.txt
+python code/roadtrip.py < code/roadtrip_testcases/input01.txt | diff -y code/roadtrip_testcases/output01.txt
+python code/roadtrip.py < code/roadtrip_testcases/input02.txt
+v code/roadtrip_testcases/input01.txt
+python3.9 code/roadtrip.py < code/roadtrip_testcases/input02.txt 
+python3.10 code/roadtrip.py < code/roadtrip_testcases/input02.txt 
+python code/roadtrip.py < code/roadtrip_testcases/input02.txt 
+v code/roadtrip_testcases/input04.txt
+v code/roadtrip_testcases/input05.txt
+python code/roadtrip.py < code/roadtrip_testcases/input05.txt
+python code/roadtrip.py < code/roadtrip_testcases/input01.txt
+python code/roadtrip.py < code/roadtrip_testcases/input01.txt | diff -y code/roadtrip_testcases/output01.txt -
+python code/roadtrip.py < code/roadtrip_testcases/input02.txt | diff -y code/roadtrip_testcases/output02.txt -
+python code/roadtrip.py < code/roadtrip_testcases/input03.txt | diff -y code/roadtrip_testcases/output03.txt -
+python code/roadtrip.py < code/roadtrip_testcases/input04.txt | diff -y code/roadtrip_testcases/output04.txt -
+python code/roadtrip.py < code/roadtrip_testcases/input09.txt | diff -y code/roadtrip_testcases/output09.txt -
+python code/roadtrip.py < code/roadtrip_testcases/input10.txt | diff -y code/roadtrip_testcases/output10.txt -
+python code/roadtrip.py < code/roadtrip_testcases/input11.txt | diff -y code/roadtrip_testcases/output11.txt -
+python code/roadtrip.py < code/roadtrip_testcases/input12.txt | diff -y code/roadtrip_testcases/output12.txt -
+python code/roadtrip.py < code/roadtrip_testcases/input13.txt | diff -y code/roadtrip_testcases/output13.txt -
+python code/roadtrip.py < code/roadtrip_testcases/input14.txt | diff -y code/roadtrip_testcases/output14.txt -
+for i in {10..20}; do python code/roadtrip.py < code/roadtrip_testcases/input$i.txt | diff -y code/roadtrip_testcases/output$i.txt -
+python code/roadtrip.py < code/roadtrip_testcases/input07.txt | diff -y code/roadtrip_testcases/output07.txt -
+python code/roadtrip.py < code/roadtrip_testcases/input08.txt | diff -y code/roadtrip_testcases/output08.txt -
+python code/roadtrip.py < code/roadtrip_testcases/input06.txt | diff -y code/roadtrip_testcases/output06.txt -
+python code/roadtrip.py < code/roadtrip_testcases/input05.txt | diff -y code/roadtrip_testcases/output05.txt -
+yay -Ss messenger
+yay -Ss facebook
+python code/roadtrip.py < code/roadtrip_testcases/input05.txt 
+for i in 5 8 9; do python code/roadtrip.py < code/roadtrip_testcases/input0$i.txt | diff -y code/roadtrip_testcases/output0$i.txt -; done
+for i in {10..20}; do python code/roadtrip.py < code/roadtrip_testcases/input0$i.txt | diff -y code/roadtrip_testcases/output0$i.txt -; done
+python code/roadtrip.py < code/roadtrip_testcases/input08.txt 
+for i in {1..9}; do python code/roadtrip.py < code/roadtrip_testcases/input0$i.txt | diff -y code/roadtrip_testcases/output0$i.txt -; done
+for i in {10..20}; do python code/roadtrip.py < code/roadtrip_testcases/input$i.txt | diff -y code/roadtrip_testcases/output$i.txt -; done
+cd code/roadtrip_testcases
+for i in {1..9}; do cp input0$i.txt input$i.txt; done
+for i in {1..9}; do cp output0$i.txt output$i.txt; done
+mkdir project
+ls init.lua
+cat init.lua
+cd lua
+cd user
+v code/building-pq.py
+mv hw5.tex hw5-bkup.tex
+cd Downloads
+v Your\ Professional\ Development\ Fund\ Conference\ Grant\ Award\ Letter.msg
+google-chrome-stable Your\ Professional\ Development\ Fund\ Conference\ Grant\ Award\ Letter.msg
+v code/test.txt
+cat code/test.txt| toclip
+time for i in {1..20}; do python code/roadtrip.py < code/roadtrip_testcases/input$i.txt | diff -y code/roadtrip_testcases/output$i.txt -; done
+v code/roadtrip_testcases/output01.txt
+v pat 
+v code/failed.txt
+v code/roadtrip_testcases/output02.txt
+v code/roadtrip_testcases/input02.txt
+cat codt/test.py
+cat code/test.py
+v code/test.py
+python test.py < tests/input10.txt
+python code/test.py < tests/input10.txt
+v physionet.org/files/sleep-edf/1.0.0/RECORDS
+cd physionet.org/files/sleep-edf/1.0.0
+v RECORDS
+v ps
+v pset3.tex
+Lq
+tmuix
+v pset4.tex
+v code/test1.txt
+v code/test2.txt
+python code/roadtrip.py < code/test.txt
+cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p2bomb
+v sol.txt
+du -h -d 1
+rm -rf .conda
+cd .cache
+du -h -d 1 
+cd De
+cd Dev
+rm -rf neovide
+cd learning
+cd .local
+du -h -d 1 | grep M
+cd share
+rm -rf gnome-boxes
+cd Tra
+cd expunged
+cd 827574393
+cd fi
+cd tra
+cd Trash
+cd vi
+cd files
+c
+lv
+cd lua/user/lsp
+v cmp.lua
+gcc sim.cpp
+g++ sim.cpp
+./a.out
+time g++ sim.cpp && ./a.out
+cat code/roadtrip.py >> code/roadtrip_.py
+v code/roadtrip_.py
+for i in {1..20}; do python code/roadtrip_.py < code/roadtrip_testcases/input$i.txt | diff -y code/roadtrip_testcases/output$i.txt -; done
+python code/roadtrip_.py < code/test.txt
+python code/roadtrip_.py < code/test2.txt
+python code/roadtrip_.py < code/test1.txt
+mv code/roadtrip.py code/roadtrip_bkup.py
+mv code/roadtrip_.py code/roadtrip.py
+python code/roadtrip.py < code/test1.txt
+g++ sim.cpp && ./a.out
+g++ sim.cpp -03 -o sim && ./sim
+g++ sim.cpp -O3 -o sim && ./sim
+head -n 100 pset1.tex >> pset5.tex
+python code/roadtrip_bkup.py < code/test2.txt
+cat code/roadtrip.py >> code/roadtrip_jesse.py
+v code/roadtrip_jese.py
+v code/roadtrip_jesse.py
+for i in {1..20}; do python code/roadtrip_jesse.py < code/roadtrip_testcases/input$i.txt | diff -y code/roadtrip_testcases/output$i.txt -; done
+for i in {1..20}; do python code/roadtrip_jesse.py < code/roadtrip_testcases/input$i.txt | diff -y code/roadtrip_testcases/output$i.txt -; done && python code/roadtrip_jesse.py < code/test2.txt
+for i in {1..20}; do python code/roadtrip.py < code/roadtrip_testcases/input$i.txt | diff -y code/roadtrip_testcases/output$i.txt -; done
+python code/roadtrip.py < code/test2.txt
+v project/theory_world.py
+v hw4.txt
+v hw3.tex
+mv -r project ..
+mv project ..
+v check_input.py
+hash
+la
+lla
+ls -al
+../p4shell
+v myshell.c
+../p3cache
+v pset5.tex
+v scripts
+mv followers_and_following instagram_data
+cp -rf followers_and_following instagram_data
+rm output/unfollowers.txt
+google-chrome-stable instagram/index.html
+cd instagram
+rm -rf account_information ads_and_businesses ads_and_topics apps_and_websites autofill_information avatars_store comments comments_settings/ contacts/ content device_information events files followers_and_following fundraisers guides information_about_you likes login_and_account_creation loyalty_accounts media messages monetization past_instagram_insights recent_searches reports saved shopping story_sticker_interactions your_topics index.html
+v theory_world.py
+cd Dev/small-projects/instagram
+cd instagram_data
+rm -rf *
+ls instagram_data
+python scripts/unfollowers_.py
+v output/unfollowers.txt
+v hw4.tex
+zip small1.in inputs
+zip small1.in inputs.zip
+man zip
+zip inputs.zip small1.in
+zip inputs.zip small1.in small2.in small3.in
+python input_gen.py && zip inputs.zip small1.in small2.in small3.in
+for i in {1..20}; do python code/roadtrip-theo.py < code/roadtrip_testcases/input$i.txt | diff -y code/roadtrip_testcases/output$i.txt -; done
+for i in {1..1}; do python code/roadtrip-theo.py < code/roadtrip_testcases/input$i.txt | diff -y code/roadtrip_testcases/output$i.txt -; done
+mkdir finla
+rmdir finla/n
+rmdir finla/
+mkdir final
+python check_input.py large.in
+zip large1.in
+zip inputs.zip large1.in
+v large.in
+v large.out
+python ch 
+python check_output.py large1.in large2.out
+v large1.in
+mv large.in large1.in
+mv large1.in final
+mkdir final_out
+mv *.out final_out
+python check_output.py final/large1.in final_out/large1.out
+python check_input.py final/large1.in
+cp final/large1.in .
+cp final_out/large1.out .
+cp large2.in final
+cp large2.out final_out
+cp large3.out final
+cp large3.in final
+mv final/large3.out final_out
+v input_gen.py
+cp medium3.in final
+cp medium3.out final_out
+cp medium2.in final
+cp medium2.out final_out
+cp medium1.in final
+cp medium1.out final_out
+rm *.out
+v final/large2.in
+v final/large3.in
+zip inputs.zip final/*.in
+mkdir all
+v final_out/small1.out
+cp small2.in final
+v small3.
+cp small1.in final
+cp small1.out final_out
+rm *.zip
+cp final/*.in final_out/*.out all
+cd all
+for i in {1..3}; python ../check_output.py small{i}.in small{i}.out; done
+for i in {1..3}; python ../check_output.py small$i.in small$i.out; done
+cp ../check_output.py .
+for i in {1..3}; python check_output.py small$i.in small$i.out; done
+cd ../final_out
+rm *
+cp large1.in large1.out final
+cp large2.in large2.out final
+mv large2.in large3.in
+mv large2.out large3.out
+mv large3.* final
+v final/large1.in
+cp large1.* final
+cp large2.* final
+v large3.out
+cp large3.* final
+cp medium1.* final
+v medium2.out
+python check_output.py medium2.in medium2.out
+cp medium2.* final
+mv medium2.out medium3.out
+mv medium2.in medium3.in
+v medium3.in
+cp medium3.* final
+cp small3.* final
+cp small2.* final
+python chekck_output.py small2.in small2.out
+python input_gen.py
+cp small1.* final
+rm inputs.zip
+zip inputs.zip *.in
+cp final/*.in .
+python check_input.py small3.in
+python check_input.py small2.in
+python check_input.py small1.in
+python check_input.py medium1.in
+python check_input.py medium2.in
+python check_input.py medium3.in
+python check_input.py large1.in
+python check_input.py large2.in
+python check_input.py large3.in
+mv *.in bkup
+for i in {1..3}; do python ../check_output.py small$i.in small$i.out; done
+for i in {1..3}; do python ../check_output.py medium$i.in medium$i.out; done
+cd psets
+v code/roadtrip.py
+v code/roadtrip-theo.py
+python code/roadtrip-theo.py < code/roadtrip_testcases/input1.txt
+\:
+ls cdoe
+ls code
+mv ~/Downloads/roadtrip_pseu.py .
+mv roadtrip_pseu.py code
+python code/roadtrip.py < code/roadtrip_testcases/input1.txt
+python code/roadtrip_pseu.py < code/roadtrip_testcases/input1.txt
+for i in {1..20}; do python code/roadtrip_pseu.py < code/roadtrip_testcases/input$i.txt | diff -y code/roadtrip_testcases/output$i.txt -; done
+for i in {1..2}; do python code/roadtrip-theo.py < code/roadtrip_testcases/input$i.txt | diff -y code/roadtrip_testcases/output$i.txt -; done
+for i in {1..2}; do python code/roadtrip.py < code/roadtrip_testcases/input$i.txt | diff -y code/roadtrip_testcases/output$i.txt -; done\
+
+for i in {1..20}; do python code/roadtrip.py < code/roadtrip_testcases/input$i.txt | diff -y code/roadtrip_testcases/output$i.txt -; done\
+
+v roadtrip_pseu.py
+mv ~/Downloads/teleporters.py code
+cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw7
+v hw7.txt
+cd hw8
+v hw8.txt
+cd hw6
+v hw6.txt
+cd p3cache
+v csim.c
+cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/
+cd final
+google-chrome-stable View\ Submission\ _\ Gradescope.mhtml
+cp View\ Submission\ _\ Gradescope.mhtml View\ Submission\ _\ Gradescope.html
+google-chrome-stable View\ Submission\ _\ Gradescope.html
+v View\ Submission\ _\ Gradescope.html
+cat hw5.tex >> hw5-resubmittable.tex
+v hw5-resubmittable.tex
+ks
+lx
+mv teleporters_testcases code
+head -n 100 pset1.tex >> pset6.tex
+ls teleporters_testcases
+chmod +x test_p6.sh
+v test_p6.sh
+./test_p6.sh
+./test_p6.sh aljfd
+./run_tests.sh roadtrip.py teleporters_testcases
+man diff
+mv test_p6.sh run_tests.sh
+chmod +x run_tests.sh
+./run_tests.sh roadtrip.py roadtrip_testcases
+v code/scratch.cpp
+cat teleporters_testcases/input01.txt
+cat run_tests.sh
+python teleporters.py < teleporters_testcases/input01.txt
+python teleporters.py < teleporters_testcases/input10.txt
+python teleporters.py < teleporters_testcases/input15.txt
+python teleporters.py < teleporters_testcases/input18.txt
+v roadtrip_jesse.py
+v teleporters_testcases/input01.txt
+time python teleporters.py < teleporters_testcases/input10.txt
+time python teleporters.py < teleporters_testcases/input19.txt
+time python teleporters.py < teleporters_testcases/input14.txt
+cd Intro\ to\ Data\ Engineering\ CMSC\ 13600/cmsc13600-submit
+v hw4
+v hw5/countD.py
+time python teleporters.py < teleporters_testcases/input17.txt
+time python teleporters.py < teleporters_testcases/input18.txt
+v code/dpex.py
+python code/dpex.py
+yay -S zathura
+;Q
+v hw5.tex
+v teleporters.py
+cd cdoe
+time python teleporters.py < teleporters_testcases/input2.txt
+nssr 
+yay -Ss nsrr
+yay -Ss gem
+yay -S ruby
+gem
+nsrr
+gem install nsrr --no-document
+./.local/share/gem/ruby/3.0.0/bin/nsrr
+mkdir shhs
+rmdir shhs
+mkdir sleep
+cd sleep
+gem install rdoc
+gem install irb
+nsrr download shhs/datasets
+ls shhs
+ls shhs/datasets/archive
+v teleporters_testcases/custom.txt
+cp ~/Downloads/teleporters.py teleporters_bkup.py 
+rm -rf shhs
+ls sleep-edf-database-expanded-1.0.0
+ls sleep-edf-database-expanded-1.0.0/sleep-
+ls sleep-edf-database-expanded-1.0.0/sleep-cassette
+ls sleep-edf-database-expanded-1.0.0/RECORDS
+cat sleep-edf-database-expanded-1.0.0/RECORDS
+mv sleep-edf-database-expanded-1.0.0 ..
+cd sleep-edf-database-expanded-1.0.0
+mv RECORDS sleep-cassette
+ls sleep-telemetry
+lines sleep-cassette/RECORDS
+ls sleep-cassette | wc -l
+ls sleep-telemetry | wc -l
+cat RECORDS-v1
+cat sleep-cassette/RECORDS
+ls sleep-cassette
+mv sleep-cassette/RECORDS .
+time python teleporters.py < teleporters_testcases/input01.txt
+time python teleporters.py < teleporters_testcases/custom.txt
+time python teleporters.py < teleporters_testcases/input03.txt
+fetch
+v code/teleporters_bkup.py
+time python teleporters.py < teleporters_testcases/input02.txt
+time python teleporters_bkup.py < teleporters_testcases/custom.txt
+time python teleporters_bkup.py < teleporters_testcases/input02.txt
+time python teleporters_bkup.py < teleporters_testcases/input03.txt
+time python teleporters_bkup.py < teleporters_testcases/input12.txt
+time python teleporters_bkup.py < teleporters_testcases/input19.txt
+./run_tests.sh teleporters_bkup.py teleporters_testcases
+cp teleporters_bkup.py teleporters.py
+mv ~/Downloads/Project\ Design\ Document.pdf ../project
+v hw6.tex
+cat hw6.tex >> hw6-resubmittable.tex
+v hw6-resubmittable.tex
+mv ~/Downloads/beach_day.py .
+python code/beach_day.py
+cp teleporters.py teleporters_jesse.py
+./run_tests.sh teleporters.py teleporters_testcases
+head -n 100 pset1.tex >> pset7.tex
+./sim
+ls examples
+google-chrome-stable examples/README.md
+evince examples/README.md
+lynx
+yay -Ss lynx
+pandoc 
+yay -S pandoc
+pandoc examples/README.md| google-chrome-stable
+yay -S lynx
+pandoc examples/README.md| lynx --stdin
+pip install grip
+g add examples/Satellite_half_assign_half_stream.ipynb
+g commit -m "add ex"
+yay -Rs zoom
+yay -S zoom
+g add examples/README.md && g commit -m"update ex readme" && g push
+time python teleporters_bkup.py < teleporters_testcases/input01.txt
+time python teleporters_jese.py < teleporters_testcases/input01.txt
+time python teleporters_jesse.py < teleporters_testcases/input01.txt
+time python teleporters_jesse.py < teleporters_testcases/input02.txt
+./run_tests.sh teleporters_jesse.py teleporters_testcases
+cd project/final
+cat large1.out
+cp final/* .
+python chekck_output.py large1.in large1.out
+python chekc_output.py large1.in large1.out
+mkdir all_out
+mv *.out all
+mv *.out all_out
+cp final/*.out all_out
+cd all_out
+for i in .; do mv "$i RubberDucks_$i"; done
+for i in .; do mv "$i" "RubberDucks_$i"; done
+for i in *; do mv "$i" "RubberDucks_$i"; done
+ls 
+mv final/*.out .
+mv final/*.in .
+for i in {1..3}; do python ../check_output.py large$i.in large$i.out; done
+cd ../psets/code
+for i in {1..3}; do python check_output.py small$i.in small$i.out >> scores.txt; done
+cat scores.txt
+for i in {1..3}; do python check_output.py medium$i.in medium$i.out >> scores.txt; done
+cp -r final_out final_out_bkup
+cp all_out/* final_out
+ll final
+cp all_out/RubberDucks_small1.out .
+python check_output.py small1.in RubberDucks_small1.out
+mv RubberDucks_small1.out small1.out
+cd psets/code
+du -h teleporters_testcases
+du -h roadtrip_testcases
+../Winter
+cd Honors\ Intro\ CS.\ 2\ CMSC\ 16200
+cd hw
+cd hw4
+v unionfind.c
+cd Testing
+l
+rm *.in
+for i in all_inputs/RubberDucks_*; echo $i
+for i in all_inputs/RubberDucks_*; echo $i | sed 's/_//'
+for i in all_inputs/RubberDucks_*; echo $i | sed 's/*.RubberDucks_//'
+for i in all_inputs/RubberDucks_*; echo $i | sed 's/^*.RubberDucks_//'
+for i in all_inputs/RubberDucks_*; echo $i | sed 's/all_inputs/RubberDucks_//'
+for i in all_inputs/RubberDucks_*; echo $i | sed 's/all\_inputs/RubberDucks\_//'
+for i in all_inputs/RubberDucks_*; echo $i | sed -e 's/all\_inputs/RubberDucks\_//'
+for i in all_inputs/RubberDucks_*; echo $i | sed -E 's/all\_inputs/RubberDucks\_//'
+for i in all_inputs/RubberDucks_*; echo $i | sed 's/all\_inputs\/RubberDucks\_//'
+for i in all_inputs/RubberDucks_*; mv "$i" "$(echo $i | sed 's/all\_inputs\/RubberDucks\_//')"
+python check_output.py large3.in large3.out
+for i in {1..3}; do python check_output.py large$i.in large$i.out >> scores.txt; done
+for i in {1..3}; do python check_output.py medium$i.in medium$i.out; done
+rm small1.out
+cp all_out/RubberDucks_small1.out small1.out
+for i in {1..3}; do python check_output.py small$i.in small$i.out; done
+rm *.in *.out
+ls final
+ls final_out
+rm bkup
+rm -rf bkup
+python theory_world.py < all_inputs/admin_large1.in
+time python theory_world.py < all_inputs/admin_large1.in
+mv ../beach_day_testcases .
+ls beach_day_testcases
+python setup.py sdist bdist_wheel 
+pip install dist/patternly-0.0.32-py3-none-any.whl
+pip uninstall patternly && pip install dist/patternly-0.0.32-py3-none-any.whl 
+g add examples/*.ipynb
+g add examples/Satellite_ts.ipynb
+g add patternly/detection.py
+g commit -m "update ex"
+rm for_embedding-*
+rm embedding-*
+rm outD.txt
+google-chrome-stable anomaly_result1.png
+v makedoc.sh
+yeet pandoc
+pip uninstall pdoc3
+pip install pandac
+pip install pandoc
+pip install pdoc3
+pdoc
+./makedoc.sh
+google-chrome-stable docs/index.html
+v upload.sh
+./upload.sh "update"
+g add dist/*
+g add patternly.egg-info/
+g add patternly.egg-info/*
+g restore --staged patternly.egg-info/*
+g commit -m "update docs"
+g add patternly.egg-info/PKG-INFO
+g add -f patternly.egg-info/PKG-INFO
+g add -f patternly.egg-info/SOURCES.txt
+g staT
+g status patternly/detection.py
+g commit -m "update info"
+g rebase --continue
+v patternly/detection.py
+cat version.py
+v version.py
+gs
+yay -S rstudio-desktop
+mkdir Tutoring
+cd Tutoring
+mkdir Darian
+cd Darian
+lds
+cd Documents/Tutoring/Darian
+v Eco_data.Rmd
+cat M2.cfg
+cp ../../../anomaly_examples/SleepAnalysis.ipynb .
+cp ../../../anomaly_examples/physionet.org/files/sleep-edf/1.0.0/sc4002e0.rec.edf data/
+ls data
+grip -b examples/README.md
+v zutil.pyx
+v zutil.pxd
+ls bin
+ls src
+ls zedsuite/src
+cp ../data_smashing_/embed.cc zedsuite/src/_embed.cc
+v zedsuite/src/_embed.cc
+wget -r -N -c -np https://physionet.org/files/siena-scalp-eeg/1.0.0/
+ls | grep snail
+ls | grep Snail
+df -h .
+du -h .
+v admin_large3.in
+ls ..
+rm -rf all_inputs
+unzip all_inputs.zip
+v RubberDucks_large1.in
+v RubberDucks_small1.in
+v Jason,Olivia,andRicha_small1.in
+v pset7.tex
+yay -Ss rstudio
+cd 
+cd Videos/Movies
+rm -rf Let\'s\ Be\ Cops\ \(2014\)
+cd News.of.the.World.2020.1080p.WEBRip.x264-RARBG
+du -h
+du -h News.of.the.World.2020.1080p.WEBRip.x264-RARBG.mp4
+rm -rf News.of.the.World.2020.1080p.WEBRip.x264-RARBG
+du -h | grep G
+cd Documents
+cd ZeD
+cd anomaly_examples
+cd data/
+du -h -d 1 | grep G
+rm -rf sleep-edf-database-expanded-1.0.0
+df -h
+cd ..
+v gen.py
+cd all_inputs
+v admin_large2.in
+python gen.py
+cp admin_large2.out large2.out
+cp all_inputs/admin_large2.in large2.in
+for i in {1..3}; do python check_output.py large$i.in large$i.out; done
+python check_output.py large$i.in large$i.out
+v large2.in
+v large2.out
+mv admin_large2.out all_out
+python check_output.py large2.in large2.out
+v README.md
+jup 
+cp all_inputs/JackAttackAttackâ€¼ï¸ƒ¯_small2.in small2.in
+v JackAttackAttackâ€¼ï¸ƒ¯_small2.in
+v CombatTrainers_small3
+v CombatTrainers_small3.in
+../pse
+cat beach_day_testcases/output01.txt
+cd ../../project
+cp beach_day.py beach_day_bkup.py
+v compute_point.py
+python compute_point.py
+v beach_day_testcases/test.txt
+time python beach_day_bkup.py < beach_day_testcases/test.txt
+./run_tests.sh beach_day_bkup.py beach_day_testcases
+time python beach_day.py < beach_day_testcases/input03.txt
+time python beach_day_bkup.py < beach_day_testcases/input03.txt
+cd code/beach_day_testcases
+k
+time python beach_day_bkup.py < beach_day_testcases/input01.txt
+time python beach_day_bkup.py < beach_day_testcases/input02.txt
+time python beach_day.py < beach_day_testcases/input02.txt
+cp beach_day_bkup.py beach_day.py
+lfcd
+v run_tests.sh
+cd project
+v test.py
+python test.py
+v all_inputs/admin_small1.in
+python theory_world.py < all_inputs/RubberDucks_large4.in
+python theory_world.py < all_inputs/RubberDucks_medium1
+python theory_world.py < all_inputs/RubberDucks_medium2.in
+v small.in
+v small.out
+mv small.out small1.out
+python theory_world.py < all_inputs/admin_small1.in
+rm small.in
+cp all_inputs/ALLINA_small2.in small1.in
+python theory_world.py < all_inputs/ALLINA_large1.in
+cp all_inputs/ALLINA_large1.in large1.in
+cp large1.out all_out/ALLINA_large1.out
+python theory_world.py < all_inputs/BigBoyz_small1.in
+python theory_world.py < all_inputs/BigBoyz_small2.in
+python theory_world.py < all_inputs/BigBoyz_small3.in
+python theory_world.py < all_inputs/Bellman-Ford_small3.in
+python theory_world.py < all_inputs/BestFriendSquad\(BFS\)_small1.in
+python theory_world.py < all_inputs/BestFriendSquad\(BFS\)_small2.in
+python theory_world.py < all_inputs/RubberDucks_small2.in
+python theory_world.py < all_inputs/RubberDucks_small3.in
+python theory_world.py < all_inputs/NahYouCannotBeatUs_small
+python theory_world.py < all_inputs/NahYouCannotBeatUs_small1.in
+python theory_world.py < all_inputs/NahYouCannotBeatUs_small2.in
+python theory_world.py < all_inputs/NahYouCannotBeatUs_small3.in
+ya
+cp ParkGraph.py ParkGraph_bkup.py
+cp ParkGraph.py ParkGraph_bkup1.py
+cp ParkGraph_bkup.py ParkGraph.py
+cp all_inputs/ALLINA_small3.in small1.in
+for i in {1..3}; do python theory_world.py < all_inputs/RubberDucks_small$i.in; done
+for i in {1..3}; do python theory_world.py < all_inputs/Jason,Olive,andRicha_small$i.in; done
+for i in {1..3}; do python theory_world.py < all_inputs/Jason,Olivia,andRicha_small$i.in
+for i in {1..3}; do python theory_world.py < all_inputs/Jason,Olivia,andRicha_small$i.in; done
+for i in {1..3}; do python theory_world.py < all_inputs/JackAttackAttackâ€¼ï¸ƒ¯_medium$i.in; done
+for i in {1..3}; do python theory_world.py < all_inputs/JackAttackAttackâ€¼ï¸ƒ¯_large$i.in; done
+for i in {1..3}; do python theory_world.py < all_inputs/JackAttackAttackâ€¼ï¸ƒ¯_small$i.in; done
+cd Documents/Tutoring
+v code/beach_day.py
+python theory_world.py < all_inputs/RubberDucks_large1.in
+python theory_world.py < all_inputs/RubberDucks_large2.in
+python theory_world.py < all_inputs/RubberDucks_large3.in
+python theory_world.py < all_inputs/NahYouCannotBeatUs_large1.in
+v NahYouCannotBeatUs_large1.out
+mv NahYouCannotBeatUs_large1.out all_out
+cat temp
+cat temp.out
+v temp.out
+mv temp.out small1.in
+v small1.in
+cp all_inputs/Bellman-Ford_small2.in small1.in
+python theory_world.py < all_inputs/Bellman-Ford_small2.in
+mv temp.out small1.out
+cp small1.out all_out/Bellman-Ford_small2.out
+cp temp.out all_out/Bellman-Ford_small1.out
+ls all_out | wc -l
+ls all_inputs >> teams.txt
+cp teams.txt teams.csv
+v scores_matrix.csv
+ls all_inputs | grep '
+ls all_inputs | grep ','
+python theory_world.py < all_inputs/Bellman-Ford_small1.in
+./run_tests.sh ~/Downloads/beach_day.py beach_day_testcases
+v beach_day_testcases/input01.txt
+time python beach_day.py < beach_day_testcases/input01.txt
+./run_tests.sh beach_day.py beach_day_testcases
+ls all_out
+mv all_out all_outputs
+mv temp.out all_outputs/ALLINA_small1.out
+mv temp.out all_outputs/ALLINA_small2.out
+mv temp.out all_outputs/ALLINA_small3.out
+mv temp.out all_outputs/ALLINA_medium1.out
+for i in {1..3}; do python theory_world.py < all_inputs/ALLINA_medium$i.in && mv temp.out all_inputs/ALLINA_small$i.out\
+; done
+for i in {1..3}; do python theory_world.py < all_inputs/ALLINA_small$i.in && mv temp.out all_inputs/ALLINA_small$i.out; done
+for i in {1..3}; do python theory_world.py < all_inputs/ALLINA_medium$i.in && mv temp.out all_inputs/ALLINA_medium$i.out; done
+ls all_outputs | grep ALLINA
+v code/teleporters.py
+zip outputs.zip ALLINA_small1.out
+mkdir bkup
+cp -r all_outputs/* bkup
+ls bkup
+v RubberDucks_large1.out
+v RubberDucks_large2.out
+v RubberDucks_large3.out
+v RubberDucks_medium1.out
+v RubberDucks_medium2.out
+v RubberDucks_medium3.out
+v RubberDucks_small2.out
+v RubberDucks_small3.out
+zip outputs.zip ALLINA_small1.out RubberDucks_*
+v bkup/RubberDucks_large1.out
+v all_inputs/ALLINA_small2.
+v all_inputs/ALLINA_small2.in
+v all_inputs/[noname]_small2.in
+v all_inputs/\[noname\]_small1.in
+v all_outputs/\[noname\]_small1.out
+v teams.txt
+python theory_world.py
+v all_inputs/StarbucksCakepop_medium1.in
+v all_inputs/StarbucksCakepop_small2.in
+../project/
+v ParkGraph.py
+v scores.txt
+v bkup/RubberDucks_small1.out
+cp all_outputs/RubberDucks_small1.out small1.out
+python theory_world.py < all_inputs/RubberDucks_small1.in
+python chekc_output.py small1.in small1.out
+v check_output.py
+v all_outputs/RubberDucks_small1.out
+cat small1.out
+cat small1.in
+v RubberDucks_small1.out
+cp bkup/RubberDucks_small1.out small1.out
+cp all_inputs/RubberDucks_small1.in small1.in
+cp all_inputs/RubberDucks_small2.in small2.in
+cp bkup/RubberDucks_small2.out small2.out
+python check_output.py small2.in small2.out
+v small2.out
+ls all
+v all/small1.out
+cp bkup/RubberDucks_small1.out all_outputs/RubberDucks_small1.out
+zip outputs.zip RubberDucks_small1.out
+cp bkup/RubberDucks_medium1.out all_outputs/RubberDucks_medium1.out
+cp bkup/RubberDucks_medium1.out medium1.out
+cp all_inputs/RubberDucks_medium1.in medium1.in
+v medium1.out
+python check_output.py medium1.in medium1.out
+cp bkup/RubberDucks_* all_outputs
+zip outputs.zip RubberDucks_*
+head -n 100 pset1.tex >> pset8.tex
+v pset6.tex
+python theory_world.py < all_inputs/ALLINA_small3.in
+python theory_world.py < all_inputs/ALLINA_small2.in
+python theory_world.py < all_inputs/ALLINA_medium1.in
+python theory_world.py < all_inputs/admin_large2.in
+gcc theory_world.cpp -o theory_world && ./theory_world 
+gcc theory_world.cpp -o theory_world
+g++ theory_world.cpp -o theory_world
+./theory_world < small1.in
+g++ theory_world.cpp ParkGraph.cpp -o theory_world && ./theory_world < small1.in
+python theory_world.py < small1.in
+time python theory_world.py < small1.in
+for i in {1..3}; do ./theory_world < all_inputs/ALLINA_medium$i.in; done
+for i in {1..3}; do ./theory_world < all_inputs/ALLINA_small$i.in; done
+for i in {1..3}; do python theory_world.py < all_inputs/ALLINA_small$i.in; done
+for f in ./all_inputs; do ./theory_world < f; done
+for f in ./all_inputs/*; do ./theory_world < f; done
+for f in ./all_inputs/*; do ./theory_world < $f; done
+for f in ./all_inputs/*; do echo $f && ./theory_world < $f; done
+mkdir small_inputs
+for f in $(ls all_inputs | grep small); echo $f; done
+for f in $(ls all_inputs | grep small); do echo $f; done
+for f in $(du all_inputs | grep small); do echo $f; done
+for f in $(du ./all_inputs | grep small); do echo $f; done
+du ./all_inputs
+du ./all_inputs/
+du ./all_inputs/*
+ls all_inputs
+ls all_inputs | awk 'print $2'
+ls all_inputs | awk '{print $2}'
+for f in $(ls ./all_inputs | awk '{print $2}' | grep small); do echo $f; done
+for f in $(ls ./all_inputs | awk '{print $2}' | grep small); do echo $f && ./theory_world < $f; done
+python theory_world.py < all_inputs/\[noname\]_small1.in
+./theory_world < all_inputs/Bellman-Ford_small2.in
+./theory_world < all_inputs/Bellman-Ford_small3.in
+./theory_world < all_inputs/ALLINA_medium2.
+./theory_world < all_inputs/ALLINA_medium2.in
+./theory_world < all_inputs/ALLINA_medium3.in
+./theory_world < all_inputs/ALLINA_large1.in
+./theory_world < all_inputs/ALLINA_large2.in
+./theory_world < all_inputs/ALLINA_large3.in
+./theory_world < all_inputs/Bellman-Ford_small1.in
+./theory_world < all_inputs/RubberDucks_small1.in
+./theory_world < all_inputs/RubberDucks_small2.in
+./theory_world < all_inputs/RubberDucks_medium1.in
+./theory_world < all_inputs/RubberDucks_medium2.in
+./theory_world < all_inputs/Jason,Olivia,andRicha_small1.in
+./theory_world < all_inputs/Jason,Olivia,andRicha_small2.in
+./theory_world < all_inputs/Jason,Olivia,andRicha_small3.in
+./theory_world < all_inputs/IcameIdividedIconquered_small1.in
+./theory_world < all_inputs/IcameIdividedIconquered_small2.in
+./theory_world < all_inputs/IcameIdividedIconquered_small3.in
+./theory_world < all_inputs/IcameIdividedIconquered_large1.in
+g++ sim.cpp -O3 -o sim && for i in {1..10}; do ./sim; done
+for f in $(ls ./all_inputs | awk '{print $2}' | grep small); do echo $f && python theory_world.py < all_inputs/$f; done
+g++ theory_world.cpp ParkGraph.cpp -o theory_world
+g++ theory_world.cpp ParkGraph.cpp -o -03 theory_world
+g++ theory_world.cpp ParkGraph.cpp -o -O3 theory_world
+g++ -O3 theory_world.cpp ParkGraph.cpp -o theory_world
+./theory_world < all_inputs/\[noname\]_small1.in
+python theory_world.py < all_inputs/ALLINA_small1.in
+cp all_inputs/ALLINA_small1.in .
+v all_outputs/ALLINA_small1.out
+cp all_inputs/ALLINA_small1.in small1.in
+v small1.out
+python check_output.py small1.in small1.out
+for f in $(ls ./all_inputs | awk '{print $2}' | grep small); do echo $f && ./theory_world < all_inputs/$f; done
+g++ -O2 theory_world.cpp ParkGraph.cpp -o theory_world
+./theory_world < all_inputs/ALLINA_smal13.in
+./theory_world < all_inputs/ALLINA_small3.in
+./theory_world < all_inputs/ALLINA_small1.in
+./theory_world < all_inputs/RubberDucks_small3.in
+./theory_world < all_inputs/RubberDucks_medium3.in
+./theory_world < all_inputs/RubberDucks_large1.in
+./theory_world < all_inputs/RubberDucks_large2.in
+./theory_world < all_inputs/Bellman-Ford_large1.in
+./theory_world < all_inputs/Bellman-Ford_medium1.in
+./theory_world < all_inputs/Bellman-Ford_medium2.in
+./theory_world < all_inputs/Bellman-Ford_medium3.in
+mv theory_world.cpp main.cpp
+mv theory_world.cpp solve.cpp
+mv main.cpp solve.cpp
+rm theory_world
+for f in $(ls ./all_inputs | awk '{print $2}' | grep medium); do echo $f && ./solve < all_inputs/$f; done
+for f in $(ls ./all_inputs | awk '{print $2}' | grep small); do echo $f && ./solve < all_inputs/$f; done
+for f in $(ls ./all_inputs | awk '{print $2}' | grep small); do echo $f && ./solve < all_inputs/$f >> res.txt; done
+cat res.out
+for f in $(ls ./all_inputs | awk '{print $2}' | grep small); do echo $f >> res.txt && ./solve < all_inputs/$f >> res.txt; done
+for f in $(ls ./all_inputs | awk '{print $2}' | grep small); do echo $f && echo $f >> res.txt && ./solve < all_inputs/$f >> res.txt; done
+v all_inputs/admin_small2.in
+ls all_inputs/*.out
+./solve < all_inputs/admin_small2.in
+cp all_inputs/BestFriendSquad\(BFS\)_small3.in small3.in
+./
+time ./theory_world < small1.in
+time ./solve < small1.in
+time ./solve < all_inputs/BestFriendSquad\(BFS\)_small3.in
+du -h solve
+v small3.out
+./solve < small3.in
+./solve < all_inputs/BestFriendSquad\(BFS\)_small2.in
+./solve < all_inputs/BestFriendSquad\(BFS\)_small1.in
+g
+python check_output.py small3.in small3.out
+python theory_world.py < all_inputs/BestFriendSquad\(BFS\)_small3.in
+./solve < all_inputs/BestFriendSquad\(BFS\)_small3.in | less
+./solve < all_inputs/BestFriendSquad\(BFS\)_small3.in
+rm res.txt
+ls ./all_inputs/*.in
+for f in $(ls ./all_inputs/*.in | awk '{print $2}' | grep small); do echo $f && echo $f >> res.txt && ./solve < all_inputs/$f >> res.txt; done
+for f in $(ls ./all_inputs/*.in | awk '{print $2}' | grep small); do echo $f && echo $f >> res.txt && ./solve < $f >> res.txt; done
+cat res.txt | less
+cb
+yay -Ss bc
+yay -S bc
+echo "1+1" | bc
+"(cat res.txt | wc -l) / 2" | bc
+echo "$(cat res.txt | wc -l) / 2" | bc
+echo "$(cat res.txt | wc -l) / 2.0" | bc
+cat res.txt | wc -l
+cat res.txt
+cat res.txt |less
+for f in $(ls ./all_inputs/*.in | awk '{print $2}' | grep Icame); do echo $f && echo $f >> res.txt && ./solve < $f >> res.txt; done
+for f in $(ls ./all_inputs/*.in | awk '{print $2}' | grep Icame); do echo $f && echo $f >> res1.txt && ./solve < $f >> res.txt; done
+for f in $(ls ./all_inputs/*.in | awk '{print $2}' | grep Icame); do echo $f && echo $f >> res1.txt && ./solve < $f >> res1.txt; done
+v res1.txt
+v res.txt
+history | tail -n1
+history | tail -n1 | awk '{print $2}'
+history | tail -n1 | sed -e 's/^*\ //'
+history | tail -n1 | sed -e 's/^*.\ //'
+ls ./all_inputs/*.in | grep ALLI
+history | tail -n1 | sed -e 's/^.*\ //'
+history | tail -n1 | sed -e 's/^.\ //'
+history | tail -n1 | sed -e 's/^[0-9]\ //'
+history
+history | tail -n1 | sed -e 's/^.*[0-9]\ //'
+./solve < all_inputs/BestFriendSquad\(BFS\)_large1.in
+alert 
+./solve < all_inputs/BestFriendSquad\(BFS\)_large2.in; alert "done"
+./solve < all_inputs/BestFriendSquad\(BFS\)_large3.in; alert "done 3"
+sc
+alacritty -e tmux
+cd ../project/
+lks
+ls ./all_inputs/*.in | grep small
+ls ./all_inputs/*.in | grep small | sed -e 's/^.*\/.*\///'
+chmod +x run_inputs.sh
+chown -R drewvlaz: run_inputs.sh
+./run_inputs.sh
+chmod u+r+x run_inputs.sh
+ll
+cat small3.out
+cat small.out
+cat smalls.out
+./run_inputs.sh smalls.out
+for f in $(ls ./all_inputs/*.in | awk '{print $2}' | grep "O(J)"); do echo $f && echo $f >> oj.txt && ./solve < $f >> oj.txt; done
+v oj.txt
+./solve < all_inputs/TheAlgonauts_small1.in
+./solve < all_inputs/TheAlgonauts_small2.in
+python theory_world.py < all_inputs/RubberDucks_medium1.in
+./solve < all_inputs/TheAlgonauts_medium1.in
+./solve < all_inputs/TheAlgonauts_medium2.in
+./solve < all_inputs/TheAlgonauts_large1.in
+./solve < all_inputs/ALLINA_large3.in
+./solve < all_inputs/ALLINA_large2.in
+./solve < all_inputs/Bellman-Ford_medium1.in
+./solve < all_inputs/Bellman-Ford_medium2.in
+./solve < all_inputs/Bellman-Ford_medium3.in
+./solve < all_inputs/Bellman-Ford_large1.in
+./solve < all_inputs/Bellman-Ford_large2.in
+./solve < all_inputs/Bellman-Ford_large3.in
+for f in $(ls ./all_inputs/*.in | awk '{print $2}' | grep "BestF"); do echo $f && echo $f >> oj.txt && ./solve < $f >> oj.txt; done
+./solve < all_inputs/ALLINA_medium1.
+./solve < all_inputs/ALLINA_medium3.in
+./solve < all_inputs/ALLINA_medium1.in
+./solve < all_inputs/ALLINA_medium2.in
+./solve < all_inputs/RubberDucks_small1.in
+./solve < all_inputs/RubberDucks_small2.in
+./solve < all_inputs/RubberDucks_small3.in
+./solve < all_inputs/RubberDucks_medium3.in
+./solve < all_inputs/RubberDucks_medium2.in
+./solve < all_inputs/RubberDucks_medium1.in
+./solve < all_inputs/RubberDucks_large1.in
+cp all_inputs/RubberDucks_medium3.in medium3.in
+cp all_outputs/RubberDucks_medium3.out medium3.out
+v all_outputs/RubberDucks_medium3.out
+v medium3.
+v medium3.out
+python check_output.py medium3.in medium3.out
+v large1.out
+cp all_inputs/RubberDucks_large1.in large1.in
+python check_output.py large1.in large1.out
+./solve < all_inputs/RubberDucks_large2.in
+./solve < all_inputs/RubberDucks_large3.in
+mv smalls.out all_small.out
+cat all_small.out
+cp all_small.out smalls.out
+rm admin_small1.in_small1.out
+rm admin_small1.in.out
+v admin_small1.out
+v all_small.out
+ls all_outputs
+v all_outputs/TheoryofAlgo-holics_small1.out
+v admin_large2.out
+rm all_medium.out
+./run_inputs.sh medium all_medium.out
+v all_medium.out
+../psets/code
+v beach_day.py
+v all_outputs/ALLINA_medium1.out
+v all_outputs/RubberDucks_medium1.out
+ls all_outputs | grep medium
+mv ../psets/UnionFind.h .
+v UnionFind.h
+eixt
+ls ./all_inputs/*.in | awk '{print $2}' | grep "large"
+ls ./all_inputs/*.in | awk '{print $2}' | grep "large" >> todo.txt
+ls ./all_inputs/*.in | awk '{print $2}' | grep "large" |  sed -e 's/^.*\/.*\///'
+ls ./all_inputs/*.in | awk '{print $2}' | grep "large" |  sed -e 's/^.*\/.*\///' > todo.txt
+v todo.txt
+./run_inputs.sh large all_large.out
+v all_large.out
+v agitations.csv
+v code/beach_day_testcases
+v code/run_tests.sh
+cat code/run_tests.sh run_tests
+cat code/run_tests.sh >> run_tests
+cp AnomalyDetectionSingularPatient.ipynb ../repos/patternly/examples/Agitation_multilevel
+g add examples/Agitation_multilevel
+g restore --staged examples/Agitation_multilevel
+mv examples/Agitation_multilevel examples/Agitation_multilevel.ipynb
+g commit -m "add second layer example"
+cp all_large.out larges.out
+cp AnomalyDetectionSingularPatientAnalysis.ipynb ../repos/patternly/examples/Agitation_multilevel.ipynb
+g add examples/Agitation_multilevel.ipynb
+g commit -m "update second layer ex"
+\:qw
+cat hw7.tex >> hw7-resubmittable.tex
+v hw7-resubmittable.tex
+ls all_inputs | less
+ls all_inputs | v
+rm all_inputs/*.out
+ls all_inputs | wc -l
+v hw8.tex
+v pset8.tex
+../project
+cat smalls.out | grep TERM
+cat smalls.out | grep TIME
+cat smalls.out | grep TIME | wc -l
+../pset
+../psets
+ls | grep cpp
+ls code | grep cpp
+v sim.cpp
+v code/sim
+v code/sim.cpp
+g++ -O2 solve.cpp ParkGraph.cpp -o solve
+rm redo_smalls.txt
+python package_outputs.py > redo_smalls.txt
+v redo_smalls.txt
+./solve < all_inputs/ALLINA_large1.in
+v 
+v all_outputs/\[noname\]_small2.out
+v all_outputs/RMG_small1.in
+cat redo_smalls.txt
+v new_smalls.out
+v all_inputs/admin_small3.in
+rm new_smalls.out
+v all_outputs/RMG_small1.out
+v all_outputs/RMG_small3.out
+v all_outputs/StarbucksCakepop_small1.out
+./run_inputs.sh small new_smalls.out
+python package_outputs.py > redo_mediums.txt
+v hw7.tex
+v all_outputs/RubberDucks_large1.out
+./solve1 < all_inputs/TheAlgonauts_medium1.in
+v all_outputs/RubberDucks_large3.out
+./solve1 < all_inputs/admin_medium1.in
+./solve1 < all_inputs/admin_medium2.in
+./solve1 < all_inputs/admin_medium3.in
+./solve1 < all_inputs/admin_large1.in
+./solve1 < all_inputs/admin_large2.in
+python package_outputs.py > redo_larges.txt
+./solve1 < all_inputs/admin_large3.in
+./solve1 < all_inputs/RubberDucks_medium1.in
+./solve1 < all_inputs/RubberDucks_medium2.in
+./run_inputs.sh medium new_mediums.out
+cat run_inputs.sh run_solver.sh
+cat run_inputs.sh > run_solver.sh
+chmod +x run_solver.sh
+v new_mediums.out
+ls | grep first
+cat first_mediums.out
+python package_outputs.py < first_mediums.out
+python package_outputs.py < echo "first_mediums.out"
+echo "first_mediums.out" | python package_outputs.py | wc -l
+v all_outputs/admin_medium3.out
+echo "mediums.out" | python package_outputs.py
+v all_outputs/thecoolguys_medium3.out
+v all_outputs/thecoolguys_medium1.out
+echo "first_mediums.out" | python package_outputs.py
+echo "new_larges.out" | python package_outputs.py | wc-l
+htop
+cat run_solver.sh
+./run_solver.sh medium new_mediums.out
+./run_inputs.sh large new_larges.out
+ls all_outputs | grep "\.out"
+ls all_outputs | grep "\.out" > score_files.txt
+ls all_outputs | grep "\.out" | awk '{print $2}'
+ls all_outputs | grep "\.out" | awk '{print $2}' > scores_files.txt
+python package_outputs.py | wc -l
+./solve1 < all_inputs/Cows3.0_large2.in
+v manual_mediums.out
+cat manual_larges.out
+rm manual_mediums.out
+echo "manual_larges.out" | python package_outputs.py
+cp run_solver.sh run_solver1.sh
+echo "new_larges.out" | python package_outputs.py | grep medium
+echo "new_larges.out" | python package_outputs.py | grep medium > redo_mediums.txt
+v redo_larges.txt
+v redo_mediums.txt
+./run_solver1.sh medium new_mediums.out
+echo "new_mediums.out" | python package_outputs.py | wc -l
+echo "new_mediums.out" | python package_outputs.py > worse.txt
+cl
+h
+cat worse.txt
+cat worse.txt | wc -l
+echo "new_larges.out" | python package_outputs.py | wc -l
+echo "new_smalls.out" | python package_outputs.py
+echo "new_mediums.out" | python package_outputs.py
+v all_inputs/Dijkstra\'sDisciples_large2.in
+cat run_inputs.sh
+echo "new_worse.txt" | python package_outputs.py | wc -l
+v all_outputs/TheAlgonauts_medium3.out
+echo "new_worse.txt" | python package_outputs.py | grep Algo
+g 
+./run_inputs.sh new_worse.txt
+./solve1 < all_inputs/RubberDucks_small1.in
+./solve1 < all_inputs/TheAlgonauts_large3.in | v
+v run_solver1.sh
+ec
+v worse.txt
+./run_solver1.sh worse.txt new_worse1.txt
+echo "new_worse1.txt" | python package_outputs.py > worse1.txt
+./solve1 < all_inputs/Dijkstra\'sDisciples_small1.in
+./solve1 < all_inputs/Dijkstra\'sDisciples_small2.in
+./solve1 < all_inputs/RubberDucks_large2.in
+./solve1 < all_inputs/RubberDucks_large3.in
+./solve1 < all_inputs/RubberDucks_large1.in
+./run_solver1.sh worse1.txt new_worse1.txt
+./solve < all_inputs/BigBoyz_large3.in
+v all_inputs/BigBoyz_large3.in
+v all_outputs/BigBoyz_large3.out
+v run_inputs.sh
+v run_solver.sh
+v all_inputs/ðƒ¿ƒ´¥SuperSickFireDubDestroyersðƒ¿ƒ´¥_small1.in
+python
+v all_outputs/thecoolguys_large3.out
+v all_inputs/thecoolguys_large3.in
+./run_solver.sh worse1.txt new_worse.txt
+./run_solver.sh worse2.txt new_worse.txt
+./run_solver.sh worse1.txt new_worse2.txt
+./solve1 < all_inputs/BigBoyz_large3.in
+./solve1 < all_inputs/thecoolguys_large3.in
+g++ -O2 solve.cpp ParkGraph.cpp UnionFind.cpp -o solve
+./solve1 < all_inputs/\[noname\]_small2.in
+echo "new_larges.out" | python package_outputs.py
+./solve1 < all_inputs/\[noname\]_large1.in
+./solve2 < all_inputs/\[noname\]_large1.in
+echo "new_manuals.out" | python package_outputs.py
+echo "new_manuals.txt" | python package_outputs.py
+ls all_outputs | grep noname
+v all_outputs/\[noname\]_large1.out
+v all_outputs/\[noname\]_large2.out
+./solve2 < all_inputs/\[noname\]_large2.in
+g++ -O2 solve.cpp ParkGraph.cpp UnionFind.cpp -o solve2
+./solve2 < all_inputs/\[noname\]_large3.in
+./solve1 < all_inputs/\[noname\]_large3.in
+./solve1 < all_inputs/\[noname\]_large2.in
+v all_outputs/\[noname\]_large3.out
+zip outputs.zip *.out
+rm outputs.zip
+echo "new_worse2.txt" | python package_outputs.py
+echo "new_worse1.txt" | python package_outputs.py
+echo "new_worse.txt" | python package_outputs.py
+zip project_code.zip *.h *.cpp package_outputs.py run_solver.sh
+g++ -O2 solve.cpp ParkGraph.cpp UnionFind.cpp -o solve1
+./solve1 < all_inputs/TheAlgonauts_large1.in
+./solve1 < all_inputs/TheAlgonauts_large2.in
+./solve1 < all_inputs/TheAlgonauts_large3.in
+./solve1 < all_inputs/TheAlgonauts_medium2.in
+./solve1 < all_inputs/Dijkstra\'sDisciples_large2.in
+./solve1 < all_inputs/Dijkstra\'sDisciples_large1.in
+./solve1 < all_inputs/Dijkstra\'sDisciples_large3.in
+./solve1 < all_inputs/Dijkstra\'sDisciples_medium2.in
+./solve1 < all_inputs/Jade_large1.in
+./solve1 < all_inputs/Jade_large2.in
+./solve1 < all_inputs/Jade_large3.in
+./solve1 < all_inputs/Moyai_large2.in
+echo "new_manual.txt" | python package_outputs.py
+echo "new_manual.txt" | python package_outputs.py > last.txt
+./run_solver1.sh last.txt new_last.txt
+v last.txt
+echo "new_last.txt" | python package_outputs.py > last.txt
+cd all_outputs
+zip outputs.zip *.out | wc -l
+xls
+zip project_code.zip *.h *.cpp package_outputs.py run_solver.sh input_gen.py
+lhuh:q
+yay -S lazygit
+tmu
+lazygit
+bs
+bc
+v roadtrip.py
+cd code
+python roadtrip.py
+man alacrittycritty
+man alacritty
+echo "new_last.txt" | python package_outputs.py 
+v package_outputs.py
+./solve < all_inputs/ALLINA_small1.in
+./solve < all_inputs/ALLINA_small2.in
+./solve < all_inputs/ALLINA_small3.in
+;q
+v worse1.txt
+v new_larges.out
+python package_outputs.py
+v smalls.out
+python package_outputs.py | v
+yaya
+wget -r -N -c -np https://physionet.org/files/siena-scalp-eeg/1.0.0/\
+
+du physionet.org/files/siena-scalp-eeg/1.0.0/
+du physionet.org/files/siena-scalp-eeg/1.0.0/ - h
+du physionet.org/files/siena-scalp-eeg/1.0.0/ -h
+ls physionet.org/files/siena-scalp-eeg
+ls physionet.org/files/siena-scalp-eeg/1.0.0
+ls physionet.org/files/siena-scalp-eeg/1.0.0/PN00/
+cat ParkGraph.cpp
+cat ParkGraph.cpp | v
+v ParkGraph.cpp
+tkill
+../Autumn/Honors\ Intro\ CS.\ CMSC\ 16100/notes\&hw
+cd assignments
+cd target
+...
+cd drewvlaz
+cd lab06
+v Main
+v Main.
+v Main.hs
+v Eval.hs
+cd lab05
+v RandState.hs
+v Lab5.hs
+v alacritty.yml
+cd
+cd nadfjh2934f1j1234
+vlc PureMature\ -\ Brooklyn\ Chase\ -\ The\ Stud\ Next\ Door.mp4
+nautilus . &
+..
+cd im
+exi
+tmux
+v *.cpp
+tat
+\:q
+hb
+v
+se
+cd Downloads/Stylish-2k/Stylish/im
+randp .
+cd examples
+ls
+jupyter notebook
+sd
+g pull
+g status
+g diff examples/Satellite_continuous_streaming.ipynb
+g add examples/Reading_european_data_format_\(edf\).ipynb
+g commit -m "reading in .edf files"
+g add examples/README.md
+g commit -m "update ex readme"
+g push
+v examples/README.md
+yay
+exit
+: 1655360757:0;yay
+: 1655415719:0;cd Dev/dotfiles
+: 1655415721:0;./syn
+: 1655415728:0;.scripts/syncdots

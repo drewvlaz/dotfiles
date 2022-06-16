@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 configs.setup {
-  ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  ensure_installed = "all", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
   sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
   ignore_install = { "" }, -- List of parsers to ignore installing
   autopairs = {
@@ -20,4 +20,24 @@ configs.setup {
     enable = true,
     enable_autocmd = false,
   },
+  rainbow = {
+    enable = true,
+    -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
+    extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
+    max_file_lines = nil, -- Do not enable for files with more than n lines, int
+    colors = {
+      "#8be9fd", -- cyan
+      "#f1fa8c", -- yellow
+      "#50fa7b", -- green
+      "#ff5555", -- red
+      "#bd93f9", -- purple
+      "#ffb86c", -- orange
+    }, -- table of hex strings
+    -- termcolors = {} -- table of colour name strings
+  }
 }
+
+
+
+
+
