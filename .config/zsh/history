@@ -5110,3 +5110,6 @@ exit
 : 1655415750:0;cd Dev/dotfiles
 : 1655415750:0;ls
 : 1655415753:0;.scripts/syncdots
+: 1655415756:0;g pull
+: 1655415771:0;g config pull.rebase true
+: 1655415774:0;.scripts/syncdots
