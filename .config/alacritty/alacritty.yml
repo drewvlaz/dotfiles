@@ -5,7 +5,7 @@ env:
   TERM: xterm-256color
   # TERM: alacritty
 window:
-  opacity: 1
+  opacity: 0.85
 
   padding:
     x: 3
@@ -169,8 +169,8 @@ import:
 #  color: '0xffffff'
 # Background opacity
 
-# background_opacity: 11111.0
-# background_opacity: 11110.90
+# background_opacity: 0.851111.0
+# background_opacity: 0.851110.90
 
 selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"

@@ -1,57 +1,3 @@
-d se tex c
-d se tex cjk
-d in texlive-cjk
-d in texlive-cjk-ko
-cd Documents/ZeD/repos
-g pull https://github.com/zeroknowledgediscovery/mantis
-g clone https://github.com/zeroknowledgediscovery/mantis
-mv ztsad mantis
-cp mantis setup.py ../mantis
-cp -r mantis setup.py ../mantis
-tar -xvf example0.tgz
-v example0.tgz
-v example1.tgz
-tar -xvf example1.tgz
-g restore --staged mantis/__pycache__
-cat mantis/_version.py
-v mantis/_version.py
-g commit -m "Add source files"
-ssh -T git@github.com
-g remote set-url git@github.com:zeroknowledgediscovery/mantis.git
-g remote set-url origin git@github.com:zeroknowledgediscovery/mantis.git
-g add mantis/__init__.py
-g commit -m "Change name"
-mv anomalies.ipynb Example0.ipynb
-cp Example0.ipynb ../../mantis/examples
-g add examples/example1.ipynb
-g commit -m "Example1 notebook"
-g add examples/example0.ipynb examples/example3.ipynb
-g commit -m "more example notebooks"
-python mantis/detection.py
-pip uninstall mantuis
-pip 
-g commit -m "Predict entire dataframe"
-g commit -m "Add setup.py"
-../../zutil_/bin/lsmash -h
-head -n 1 H_py.dst
-head -n 1 H.dst
-du -h H_py.dst
-diff H.dst H_py.dst
-cat zedsuite/genesess.pyx
-cd mantis
-g commit -m "Print PFSA function"
-du -h test.dst
-du -h H.dst
-cd Documents/ZeD/repos/anomaly_detection_pypi
-du -h test_.dst
-du -h c0.dst
-g commit -m "Don't create duplicate files"
-/usr/bin/time -v ../../zutil_/bin/lsmash -f test/testdataM41KS21KT323.dat -T symbolic -S 0
-pip install dist/zedsuite-0.0.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
-du -h ~/Videos
-df -h ~/Downloads
-du -h ~/Music
-du -h ~/Music/AudioBooks
 du -h ~/Downloads
 cd Videos/
 gpg --show-keys tails-amd64-4.20.img
@@ -1163,7 +1109,6 @@ d se zathura
 zathura resume.pdf
 git remote add origin git@github.com:drewvlaz/resume.git
 g push --set-upstream origin master
-g add resume.tex resume.pdf
 g commit -m "update pdf"
 tmuz
 d se terminator
@@ -1372,7 +1317,6 @@ google chb01_02train_combined.png
 sxiv chb01_02train_combined.png
 google combined.png
 convert chb01_02_train_thresh3_60.png chb01_03_test02_thresh3_60.png +append combined_.png
-lo
 sils
 tmux -h
 tmux --help
@@ -1486,7 +1430,6 @@ rm -rf .hyper_plugins
 cd nerd-fonts
 cd spoti-py-music
 rm -rf songs
-du
 cd .var
 cd app
 rm -rf com.spotify.Client
@@ -2571,7 +2514,6 @@ pulseaudio
 wsc
 v p132-homework-6.tex
 head -n 80 p132-homework-5.tex >> p132-homework-7.tex
-rm test.py
 lines p132-homework-1.tex
 v p132-homework-7.tex
 cp ../repos/patternly/examples/example1.ipynb
@@ -2661,7 +2603,6 @@ rm node_modules
 rmdir node_modules
 rm -rf node_modules
 bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh -y)
-node -v
 npm -v
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
@@ -2822,7 +2763,6 @@ cd kernels
 cd py39
 cp patternly/detection.py ../repos/patternly/patternly/
 g info
-g diff
 g commit -m "add class for continuous streaming data that dynamically updates PFSA library"
 git config pull.rebase true
 g diff version.py
@@ -2928,7 +2868,6 @@ rm -rf plugin
 rm -rf nvim
 cat README.md
 jjjls
-cd lua/user
 v lualine.lua
 fortune
 hashbang
@@ -3005,7 +2944,6 @@ mv lsp-settings ../
 rm -rf lsp-settings
 v i
 cd agitation_study/agitations_dataset
-.scripts/syncdots
 mkdir bin
 cp embed ../../../agitation_study/bin
 ./lsmash -h
@@ -3301,7 +3239,6 @@ man lf
 yay -S ranger
 r
 which r
-v resume.tex
 cd .fonts
 cd Operator\ Mono\ Nerd\ Font
 cd Operator\ Mono
@@ -3369,7 +3306,6 @@ yay -S xclip
 pip install zedsuite
 pip uninstall zedsuite
 pip install dist/zedsuite-0.0.5-cp310-cp310-linux_x86_64.whl
-v init.lua
 v ++
 v __init__.py
 v zedsuite/__init__.py
@@ -3422,8 +3358,6 @@ sudo rm -rf node
 yay -S npm node
 npm
 yay -Rs npm node
-node
-yay -S nodejs
 npm install -g npm
 whoami
 v process.py
@@ -3451,7 +3385,6 @@ cd .ssh
 ls known_hosts
 cat id_ecdsa.pub
 cat id_ecdsa.pub | toclip
-cd Dev/dotfiles
 ./syncdots
 cd Dev/SpotiFind/n
 cd Dev/SpotiFind/
@@ -3484,7 +3417,6 @@ rm data.json
 rm src/data.json
 cd ../SpotiFind/
 g commit -m "update categories"
-g config pull.rebase true
 g commit -m "add labels"
 cd Dev/uh-hackathon
 cd ../
@@ -3631,7 +3563,6 @@ git for-each-ref --format="delete %(refname)" refs/original | git update-ref --s
 git reflog expire --expire=now --all
 g clone https://github.com/drewvlaz/SpotiFind.git spotifind_bkup
 git gc --prune=now
-g push --force
 sdd
 yay -Ss graphviz
 yay -S graphviz
@@ -3909,7 +3840,6 @@ python code/roadtrip.py < code/roadtrip_testcases/input07.txt | diff -y code/roa
 python code/roadtrip.py < code/roadtrip_testcases/input08.txt | diff -y code/roadtrip_testcases/output08.txt -
 python code/roadtrip.py < code/roadtrip_testcases/input06.txt | diff -y code/roadtrip_testcases/output06.txt -
 python code/roadtrip.py < code/roadtrip_testcases/input05.txt | diff -y code/roadtrip_testcases/output05.txt -
-yay -Ss messenger
 yay -Ss facebook
 python code/roadtrip.py < code/roadtrip_testcases/input05.txt 
 for i in 5 8 9; do python code/roadtrip.py < code/roadtrip_testcases/input0$i.txt | diff -y code/roadtrip_testcases/output0$i.txt -; done
@@ -4012,7 +3942,6 @@ mv -r project ..
 mv project ..
 v check_input.py
 hash
-la
 lla
 ls -al
 ../p4shell
@@ -4382,7 +4311,6 @@ g staT
 g status patternly/detection.py
 g commit -m "update info"
 g rebase --continue
-v patternly/detection.py
 cat version.py
 v version.py
 gs
@@ -4435,7 +4363,6 @@ cd data/
 du -h -d 1 | grep G
 rm -rf sleep-edf-database-expanded-1.0.0
 df -h
-cd ..
 v gen.py
 cd all_inputs
 v admin_large2.in
@@ -4474,8 +4401,6 @@ cp beach_day_bkup.py beach_day.py
 lfcd
 v run_tests.sh
 cd project
-v test.py
-python test.py
 v all_inputs/admin_small1.in
 python theory_world.py < all_inputs/RubberDucks_large4.in
 python theory_world.py < all_inputs/RubberDucks_medium1
@@ -4748,7 +4673,6 @@ history | tail -n1 | sed -e 's/^.*[0-9]\ //'
 alert 
 ./solve < all_inputs/BestFriendSquad\(BFS\)_large2.in; alert "done"
 ./solve < all_inputs/BestFriendSquad\(BFS\)_large3.in; alert "done 3"
-sc
 alacritty -e tmux
 cd ../project/
 lks
@@ -4758,7 +4682,6 @@ chmod +x run_inputs.sh
 chown -R drewvlaz: run_inputs.sh
 ./run_inputs.sh
 chmod u+r+x run_inputs.sh
-ll
 cat small3.out
 cat small.out
 cat smalls.out
@@ -4949,7 +4872,6 @@ g
 ./solve1 < all_inputs/RubberDucks_small1.in
 ./solve1 < all_inputs/TheAlgonauts_large3.in | v
 v run_solver1.sh
-ec
 v worse.txt
 ./run_solver1.sh worse.txt new_worse1.txt
 echo "new_worse1.txt" | python package_outputs.py > worse1.txt
@@ -5066,50 +4988,120 @@ cd lab05
 v RandState.hs
 v Lab5.hs
 v alacritty.yml
-cd
 cd nadfjh2934f1j1234
 vlc PureMature\ -\ Brooklyn\ Chase\ -\ The\ Stud\ Next\ Door.mp4
 nautilus . &
 ..
 cd im
 exi
-tmux
 v *.cpp
-tat
-\:q
 hb
-v
-se
 cd Downloads/Stylish-2k/Stylish/im
 randp .
 cd examples
-ls
-jupyter notebook
-sd
-g pull
-g status
 g diff examples/Satellite_continuous_streaming.ipynb
 g add examples/Reading_european_data_format_\(edf\).ipynb
 g commit -m "reading in .edf files"
 g add examples/README.md
 g commit -m "update ex readme"
-g push
 v examples/README.md
+./syn
+g status
+cd ..
+cd Dev/dotfiles
+g pull
+g config pull.rebase true
+.scripts/syncdots
+g push --force
+g diff
+g add resume.tex resume.pdf
+g commit -m "update resume"
+g push
+v resume.
+v resume.tex
+yay -Ss messenger
+yay -S caprine
+yeet caprine
+yay -Ss facebook messenger
+yay -S mfbmessenger-bin
+yay -S fbmessenger-bin
+gsettings set org.gnome.desktop.input-sources show-all-sources true\
+
+ls /usr/share/kbd/keymaps/include
+ls /usr/share/kbd/keymaps/mac
+ls /usr/share/kbd/
+ls /usr/share/kbd/keymaps
+ls /usr/share/kbd/keymaps/pine
+ls /usr/share/kbd/keymaps/ppc
+ls /usr/share/kbd/keymaps/ppc/all
+ls /usr/share/kbd/keymaps/mac/all
+ls /usr/share/kbd/keymaps/
+localectl list-keymaps
+localectl list-keymaps | grep korean
+localectl list-keymaps | grep ko
+yay -Ss korean | grep scim
+yay -S scim-hangul
+yay -S ttf-baekmuk
+v /etc/locale.gen
+sudo v /etc/locale.gen
+la
+yay -S ibus hangul
+yay -Ss ibus hangul
+yay -S ibus-hangul
+se
+yay -Ss gnome language
+yay -S language-selector-gnome
+yay -Ss korean
+yay -Ss korean | grep key
+yay -Ss korean | grep input
+yay -Ss korean | v
+yay -Ss korean | less
+sudo shutdown -h now
+ibus-setup
+lo
+ll
+du
+v patternly/detection.py
+tat
+tmyux
+tmux
 yay
+jupyter notebook
+cd
+sd
+v init.lua
+npm --v
+node
+yay -S nodejs
+yay -S nvm
+nvm 
+nvm install 17
+nvm use --delete-prefix v17.9.1
+v lua/user/plugins.lua
+v test.pyu
+cd lua/user
+v telescope.lua
+source /usr/share/nvm/init-nvm.sh
+nvm use -g 17
+\:q
+man nvm
+ec
+v /usr/share/nvm/init-nvm.sh
+nvm
+sc
+node -v
+python test.py
+rm test.py
+ls
+v
+v copilot.lua
+nvm use 17
+v test.py
 exit
-: 1655360757:0;yay
-: 1655415719:0;cd Dev/dotfiles
-: 1655415721:0;./syn
-: 1655415728:0;.scripts/syncdots
-: 1655415734:0;g status
-: 1655415740:0;cd ..
-: 1655415740:0;ls
-: 1655415741:0;cd
-: 1655415741:0;ls
-: 1655415743:0;ec
-: 1655415750:0;cd Dev/dotfiles
-: 1655415750:0;ls
-: 1655415753:0;.scripts/syncdots
-: 1655415756:0;g pull
-: 1655415771:0;g config pull.rebase true
-: 1655415774:0;.scripts/syncdots
+: 1656302193:0;rm test.py
+: 1656302342:0;v test.py
+: 1656302664:0;rm test.py
+: 1656302664:0;ls
+: 1656302670:0;cd
+: 1656302675:0;cd Dev/dotfiles
+: 1656302677:0;.scripts/syncdots

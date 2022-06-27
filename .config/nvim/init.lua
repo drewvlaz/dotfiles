@@ -1,7 +1,7 @@
 require "user.plugins"
 require "user.autocommands"
 require "user.colorscheme"
--- require "user.copilot"
+require "user.copilot"
 require "user.cmp"
 require "user.lsp"
 require "user.telescope"

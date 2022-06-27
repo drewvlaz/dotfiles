@@ -56,7 +56,7 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim" -- Startup menu
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
-  -- use "github/copilot.vim"
+  use "github/copilot.vim"
 
   -- Motion
   use "justinmk/vim-sneak"
