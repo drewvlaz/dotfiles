@@ -42,32 +42,34 @@ packer.init {
 return packer.startup(function(use)
   -- Misc
   use "wbthomason/packer.nvim" -- Have packer manage itself
-  use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
+  -- use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "kyazdani42/nvim-web-devicons"
   use "kyazdani42/nvim-tree.lua"
-  use "akinsho/bufferline.nvim"
+  -- use "akinsho/bufferline.nvim"
+  -- use "akinsho/toggleterm.nvim"
   use "nvim-lualine/lualine.nvim"
-  use "akinsho/toggleterm.nvim"
   use "ahmedkhalf/project.nvim"
   use "lewis6991/impatient.nvim"
   use "lukas-reineke/indent-blankline.nvim" -- Show indent characters
   use "goolord/alpha-nvim" -- Startup menu
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
-  use "github/copilot.vim"
+  use "junegunn/goyo.vim"
 
   -- Motion
-  use "justinmk/vim-sneak"
+  -- use "justinmk/vim-sneak"
   use 'unblevable/quick-scope' -- enhanced f, F, t, T
 
   -- Colorschemes
   use "lunarvim/onedarker.nvim"
   use "folke/tokyonight.nvim"
   use "sainnhe/sonokai"
-  use "morhetz/gruvbox"
   use "Mofiqul/dracula.nvim"
+  use "sainnhe/everforest"
+  use "catppuccin/nvim"
+  -- use "morhetz/gruvbox"
   -- use "dracula/vim"
 
   -- Completion
@@ -77,6 +79,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
+  use "github/copilot.vim"
 
   -- Snippets
   use "L3MON4D3/LuaSnip" --snippet engine
@@ -91,34 +94,32 @@ return packer.startup(function(use)
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
+  use "ThePrimeagen/harpoon"
 
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
+    -- commit = "d37fc85a4060352bcd4d8cbed0907cba442deb90"
   }
   use "p00f/nvim-ts-rainbow"
+  use 'nvim-treesitter/nvim-treesitter-context'
   -- use "JoosepAlviste/nvim-ts-context-commentstring"
 
   -- Git
   use "lewis6991/gitsigns.nvim"
+  use "tpope/vim-fugitive"
 
   -- Commenting
   use 'tpope/vim-commentary'
-  -- use "numToStr/Comment.nvim" -- Easily comment stuff
 
   -- Latex
   use {
     'lervag/vimtex',
     ft = {"tex"},
   }
+  use 'davidgranstrom/nvim-markdown-preview'
   -- use "xuhdev/vim-latex-live-preview"
-
-  -- R programming
-  use {
-    'jalvesaq/Nvim-R', 
-    -- {'branch': 'stable'}
-  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

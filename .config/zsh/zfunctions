@@ -44,17 +44,21 @@ sd() {
         ~/.config/tmux \
         ~/.config/zsh \
         ~/.scripts \
+        ~/Dev \
         --exclude='.git' \
         --exclude='.github' \
         --exclude='.vim' \
         --exclude='.vscode' \
+        --exclude='__pycache__' \
         --exclude='data' \
         --exclude='boost' \
         --exclude='venv' \
         --exclude='py39' \
-        --exclude='__pycache__' \
         --exclude='data_smashing_' \
         --exclude='cynet_' \
+        --exclude='node_modules' \
+        --exclude='bin' \
+        --exclude='misc' \
         --exclude='*temp' |
         awk '{print $2}' |
         fzf
@@ -107,6 +111,11 @@ pkgsizes() {
     grep MiB |
     sort -k2,3nr |
     less
+}
+
+pset() {
+    name="pset${1}.tex"
+    cp ~/.config/zsh/templates/pset.tex $name
 }
 
 # texclean() {

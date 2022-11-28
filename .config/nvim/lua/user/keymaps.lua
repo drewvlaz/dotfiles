@@ -19,6 +19,11 @@ vim.g.maplocalleader = " "
 keymap("n", "j", "gj", opts)
 keymap("n", "k", "gk", opts)
 
+
+-- Vertical movement --
+keymap("n", "<C-u>", "<C-u>zz", opts)
+keymap("n", "<C-d>", "<C-d>zz", opts)
+
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
@@ -52,6 +57,9 @@ keymap("n", "<BACKSPACE>", "<C-^>", opts)
 keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
+-- paste over text overwriting buffer
+keymap("v", "<leader>p", "\"_dP", opts)
+
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)

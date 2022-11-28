@@ -7,6 +7,10 @@ vim.cmd [[
     autocmd FileType qf set nobuflisted
   augroup end
 
+  augroup _c
+    autocmd FileType c,cpp,cs,java setlocal commentstring=//\ %s
+  augroup end
+
   augroup _git
     autocmd!
     autocmd FileType gitcommit setlocal wrap

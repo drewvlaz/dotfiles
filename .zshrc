@@ -22,8 +22,8 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 
 # History in cache directory:
-HISTSIZE=5000
-SAVEHIST=5000
+HISTSIZE=8000
+SAVEHIST=8000
 HISTFILE=~/.config/zsh/history
 
 # Variables
@@ -33,11 +33,11 @@ export PATH=$PATH:~/.emacs.d/bin
 export PATH=$PATH:~/.pyenv/bin
 export PATH=$PATH:~/.npm-global/bin
 export PATH=$PATH:~/.local/share/gem/ruby/3.0.0/bin
+export PATH=$PATH:$HOME/npm/bin
 export GOPATH=~/go
 export GOPATH=$GOPATH~/golib
 export SUDO_EDITOR=nvim
 export EDITOR=nvim
-# export EDITOR=lvim
 # export BROWSER=firefox
 # export FILEMANAGER=nautilus
 # export RUST_BACKTRACE=full
@@ -153,7 +153,7 @@ bindkey '^e' edit-command-line
 eval "$(starship init zsh)"
 # source "$HOME/.config/zsh/themes/spaceshiprc"
 
-source /usr/share/nvm/init-nvm.sh
+# source /usr/share/nvm/init-nvm.sh
 
 # Load extensions ; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null

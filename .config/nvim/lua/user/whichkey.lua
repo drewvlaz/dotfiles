@@ -106,7 +106,22 @@ local mappings = {
   w = { "<cmd>w!<CR>", "Save" },
   -- q = { "<cmd>q<CR>", "Quit" },
   Q = { "<cmd>q!<CR>", "Force Quit" },
-  h = { "<cmd>nohlsearch<CR>", "No Highlight" },
+  H = { "<cmd>nohlsearch<CR>", "No Highlight" },
+     h = {
+       name = "Harpoon",
+       A = { "<cmd>lua require('harpoon.mark').add_file()<CR>", "Add file" },
+       v = { "<cmd>lua require('harpoon.ui').toggle_quick_menu()<CR>", "View marks" },
+       n = { "<cmd>lua require('harpoon.ui').nav_next()<CR>", "Next file" },
+       p = { "<cmd>lua require('harpoon.ui').nav_prev()<CR>", "Prev file" },
+       a = { "<cmd>lua require('harpoon.ui').nav_file(1)<CR>", "Goto file 1" },
+       b = { "<cmd>lua require('harpoon.ui').nav_file(2)<CR>", "Goto file 2" },
+       c = { "<cmd>lua require('harpoon.ui').nav_file(3)<CR>", "Goto file 3" },
+       d = { "<cmd>lua require('harpoon.ui').nav_file(4)<CR>", "Goto file 4" },
+       e = { "<cmd>lua require('harpoon.ui').nav_file(5)<CR>", "Goto file 5" },
+       f = { "<cmd>lua require('harpoon.ui').nav_file(6)<CR>", "Goto file 6" },
+       g = { "<cmd>lua require('harpoon.ui').nav_file(7)<CR>", "Goto file 7" },
+       h = { "<cmd>lua require('harpoon.ui').nav_file(8)<CR>", "Goto file 8" },
+     },
   f = {
     "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<CR>",
     "Find files",
@@ -155,6 +170,8 @@ local mappings = {
     },
   },
 
+  G = { "<cmd>Goyo<CR>", "Goyo toggle" },
+
   l = {
     name = "LSP",
     a = { "<cmd>lua vim.lsp.buf.code_action()<CR>", "Code Action" },
@@ -194,7 +211,7 @@ local mappings = {
     C = { "<cmd>Telescope commands<CR>", "Commands" },
     -- c = { "<cmd>Telescope colorscheme<CR>", "Colorscheme" },
     c = {
-          "<cmd>lua require('telescope.builtin.internal').colorscheme({enable_preview = true})<CR>",
+          "<cmd>lua require('telescope.builtin').colorscheme({enable_preview = true})<CR>",
           "Colorscheme with Preview",
     },
     h = { "<cmd>Telescope help_tags<CR>", "Find Help" },

@@ -1,0 +1,63 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{scrextend}
+\usepackage{graphicx}
+\usepackage{cases}
+\usepackage{etoolbox}
+\usepackage{tikz}
+\usepackage{bm}
+\usepackage{color}
+
+\definecolor{cit}{rgb}{0.05,0.2,0.45} 
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1mm}
+\graphicspath{ {./images/} }
+
+\title{Homework \#}
+\author{}
+\date{\vspace{-3em}EXAM 12300}
+
+\newcommand{\be}{\begin{equation*}\begin{aligned}}
+\newcommand{\ee}{\end{aligned}\end{equation*}}
+\newcommand{\bec}{\begin{equation*}\begin{gathered}}
+\newcommand{\eec}{\end{gathered}\end{equation*}}
+
+\newcommand{\uveci}{{\bm{\hat{\textnormal{\bfseries\i}}}}}
+\newcommand{\uvecj}{{\bm{\hat{\textnormal{\bfseries\j}}}}}
+\DeclareRobustCommand{\uvec}[1]{{%
+    \ifcsname uvec#1\endcsname
+        \csname uvec#1\endcsname
+    \else
+        \bm{\hat{\mathbf{#1}}}%
+    \fi
+}}
+
+\preto\equation{\setcounter{equation}{0}}
+\makeatletter
+\pretocmd\start@gather{\setcounter{equation}{0}}{}{}
+\pretocmd\start@align{\setcounter{equation}{0}}{}{}
+\pretocmd\start@numcases{\setcounter{equation}{0}}{}{}
+\makeatother
+
+
+\newcommand{\bpart}{\begin{enumerate}[label=\textbf{\alph*.}, leftmargin=1em, itemsep=1em, parsep=0.5em]}
+\newcommand{\epart}{\end{enumerate}}
+\newcommand{\bprob}{\begin{enumerate}[label=\textbf{\thesection.\arabic*}]}
+\newcommand{\eprob}{\end{enumerate}}
+
+
+\newcommand{\solution}[1]{
+    \noindent{\color{cit}#1}
+}
+
+\begin{document}
+\maketitle
+\vspace{-3em}
+
+\end{document}
