@@ -41,6 +41,7 @@ export EDITOR=nvim
 # export BROWSER=firefox
 # export FILEMANAGER=nautilus
 # export RUST_BACKTRACE=full
+export RUST_LOG=trace
 export STARSHIP_CONFIG=~/.config/zsh/themes/starship/config.toml
 # export TERM=xterm-256color
 # Prevent double first character in commands

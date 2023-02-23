@@ -1,4 +1,4 @@
-local status_ok, lspconfig = pcall(require, "lspconfig")
+local status_ok, mason = pcall(require, "mason")
 if not status_ok then
   return
 end
@@ -15,7 +15,20 @@ end
 --     }
 -- }
 
-require("user.lsp.lsp-installer")
+mason.setup({
+    ui = {
+            icons = {
+                package_installed = "✓",
+                package_pending = "➜",
+                package_uninstalled = "✗"
+            }
+        }
+})
+
+require("mason-lspconfig").setup()
+-- require("user.lsp.lsp-installer")
 require("user.lsp.handlers").setup()
-require("user.lsp.null-ls")
+require("user.lsp.config")
+-- require("user.lsp.null-ls")
+
 

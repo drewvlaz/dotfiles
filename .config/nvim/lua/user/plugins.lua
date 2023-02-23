@@ -57,10 +57,12 @@ return packer.startup(function(use)
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
   use "junegunn/goyo.vim"
+  use "gen740/SmoothCursor.nvim"
 
   -- Motion
   -- use "justinmk/vim-sneak"
   use 'unblevable/quick-scope' -- enhanced f, F, t, T
+  use 'ggandor/leap.nvim'
 
   -- Colorschemes
   use "lunarvim/onedarker.nvim"
@@ -77,8 +79,9 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
-  use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lsp-signature-help"
+  use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "github/copilot.vim"
 
   -- Snippets
@@ -87,7 +90,9 @@ return packer.startup(function(use)
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  -- use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use 'williamboman/mason.nvim'    
+  use 'williamboman/mason-lspconfig.nvim'
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   use "folke/trouble.nvim" -- pretty list for code diagnostics
@@ -109,16 +114,26 @@ return packer.startup(function(use)
   -- Git
   use "lewis6991/gitsigns.nvim"
   use "tpope/vim-fugitive"
+  use "APZelos/blamer.nvim"
 
   -- Commenting
   use 'tpope/vim-commentary'
 
-  -- Latex
+  -- Languages
+  use 'simrat39/rust-tools.nvim'
+
+  -- Documents
   use {
     'lervag/vimtex',
     ft = {"tex"},
   }
-  use 'davidgranstrom/nvim-markdown-preview'
+  -- use 'davidgranstrom/nvim-markdown-preview'
+  use { 
+    "iamcco/markdown-preview.nvim", 
+    run = "cd app && npm install", 
+    setup = function() vim.g.mkdp_filetypes = { "markdown" } end, 
+    ft = { "markdown" }, 
+  }
   -- use "xuhdev/vim-latex-live-preview"
 
   -- Automatically set up your configuration after cloning packer.nvim

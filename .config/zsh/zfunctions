@@ -28,6 +28,7 @@ sd() {
     dir=$(
         du -d 8 \
         ~/Documents/ZeD/repos \
+        ~/Documents/second-brain/ \
         ~/Documents/ZeD/agitation_study \
         ~/Documents/ZeD/anomaly_examples \
         ~/Documents/College \

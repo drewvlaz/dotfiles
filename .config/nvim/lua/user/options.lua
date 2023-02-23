@@ -49,3 +49,7 @@ vim.cmd "set spellsuggest+=10"
 vim.cmd [[set iskeyword-=_]]
 vim.cmd [[set iskeyword-=:]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
+
+-- Treesitter folding 
+vim.wo.foldmethod = 'expr'
+vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'

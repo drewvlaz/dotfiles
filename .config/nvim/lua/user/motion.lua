@@ -29,3 +29,9 @@ vim.api.nvim_set_keymap("n", "gs", "<Plug>Sneak_;", opts)
 --       autocmd ColorScheme * hi SneakLabel guifg=black guibg=#b1f548 ctermfg=white ctermbg=green
 --   augroup END
 -- ]]
+
+local status_ok, leap = pcall(require, "leap")
+if not status_ok then
+	return
+end
+leap.add_default_mappings()

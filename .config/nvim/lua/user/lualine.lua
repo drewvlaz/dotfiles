@@ -9,28 +9,34 @@ local lualine = require('lualine')
 
 -- Color table for highlights
 local colors = {
-  bg = '#2b3339',
-  fg = '#d3c6aa',
-  yellow = '#dbbc7f',
-  cyan = '#83c092',
-  black = '#4b565c',
-  blue = '#7fbbb3',
-  darkblue = '#7fbbb3',
-  green = '#a7c080',
-  red = '#e67e80',
-  orange = '#e67e80',
-  violet = '#d699b6',
-  magenta = '#d699b6',
-  -- fg       = '#bbc2cf',
-  -- yellow   = '#ffe76e',
-  -- cyan     = '#008080',
-  -- darkblue = '#081633',
-  -- green    = '#98be65',
-  -- orange   = '#ffb86c',
-  -- violet   = '#a9a1e1',
-  -- magenta  = '#c678dd',
-  -- blue     = '#51afef',
-  -- red      = '#ec5f67',
+  -- everforest -- 
+  -- black = '#4b565c',
+  -- blue = '#7fbbb3',
+  -- bg = '#2b3339',
+  -- cyan = '#83c092',
+  -- darkblue = '#7fbbb3',
+  -- green = '#a7c080',
+  -- fg = '#d3c6aa',
+  -- magenta = '#d699b6',
+  -- orange = '#e67e80',
+  -- red = '#e67e80',
+  -- violet = '#d699b6',
+  -- yellow = '#dbbc7f',
+  -- everforest -- 
+
+  -- sonokai -- 
+  black    = '#4b565c',
+  blue     = '#51afef',
+  cyan     = '#008080',
+  darkblue = '#081633',
+  green    = '#98be65',
+  fg       = '#bbc2cf',
+  magenta  = '#c678dd',
+  orange   = '#ffb86c',
+  red      = '#ec5f67',
+  violet   = '#a9a1e1',
+  yellow   = '#ffe76e',
+  -- sonokai -- 
 }
 
 -- Change color according to vim mode
@@ -133,9 +139,17 @@ ins_left {
 
 ins_left {
   'filename',
+  path = 1,
   cond = conditions.buffer_not_empty,
   color = { fg = colors.fg, gui = 'bold' },
+  symbols = {
+    modified = '●',      -- Text to show when the file is modified.
+    readonly = '[-]',      -- Text to show when the file is non-modifiable or readonly.
+    unnamed = '[No Name]', -- Text to show for unnamed buffers.
+    newfile = '[New]',     -- Text to show for newly created file before first write
+  },
 }
+
 
 ins_left {
   'branch',
@@ -226,6 +240,15 @@ ins_right { 'location' }
 ins_right {
   'progress',
   color = { fg = colors.fg, gui = 'bold' },
+  padding = { right = 0 },
+}
+
+ins_right {
+  function()
+    return "/%L"
+  end,
+  color = { fg = colors.fg, gui = 'bold' },
+  padding = { left = 0 },
 }
 
 ins_right {

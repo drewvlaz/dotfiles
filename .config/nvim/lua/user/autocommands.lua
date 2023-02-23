@@ -43,8 +43,8 @@ vim.cmd [[
       autocmd!
 
       " italics for operator mono font
-      autocmd Colorscheme * hi Comment gui=italic cterm=italic
-      autocmd Colorscheme * hi Comment gui=italic cterm=italic guifg=#757590  " better comments for tokyonight
+      " autocmd Colorscheme * hi Comment gui=italic cterm=italic
+      " autocmd Colorscheme * hi Comment gui=italic cterm=italic guifg=#757590  " better comments for tokyonight
       autocmd Colorscheme * hi String gui=italic cterm=italic
       " autocmd Colorscheme * hi pythonFunctionKeyword gui=italic cterm=italic
 

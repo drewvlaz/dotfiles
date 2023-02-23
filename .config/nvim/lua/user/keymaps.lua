@@ -37,15 +37,17 @@ keymap("n", "<A-h>", ":vertical resize -2<CR>", opts)
 keymap("n", "<A-l>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
--- keymap("n", "<S-l>", ":bnext<CR>", opts)
--- keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<TAB>", ":bnext<CR>", opts)
 keymap("n", "<S-TAB>", ":bprevious<CR>", opts)
 keymap("n", "<BACKSPACE>", "<C-^>", opts)
 
+-- Go forward in jump list, apparently <C-i> and <TAB> are the same
+keymap("n", "<C-n>", "<C-i>", opts)
+
+
 -- Move text up and down
--- keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
--- keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
+keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
+keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Easy save
 -- keymap("n", "<leader>w", ":w<CR>", opts)
@@ -58,7 +60,7 @@ keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
 -- paste over text overwriting buffer
-keymap("v", "<leader>p", "\"_dP", opts)
+-- keymap("v", "<leader>p", "\"_dP", opts)
 
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
