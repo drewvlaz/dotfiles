@@ -1,5 +1,42 @@
 #! /bin/bash
 
+dirs() {
+    du -d 8 \
+    ~/Documents/second-brain/ \
+    ~/Documents/ZeD/agitation_study \
+    ~/Documents/ZeD/anomaly_examples \
+    ~/Documents/College \
+    ~/Dev/dotfiles \
+    ~/.config/alacritty \
+    ~/.config/bspwm \
+    ~/.config/lvim \
+    ~/.config/nvim \
+    ~/.config/nvim_bkup \
+    ~/.config/polybar \
+    ~/.config/rofi \
+    ~/.config/sxhkd \
+    ~/.config/sxiv \
+    ~/.config/tmux \
+    ~/.config/zsh \
+    ~/.scripts \
+    --exclude='.git' \
+    --exclude='.github' \
+    --exclude='.obsidian' \
+    --exclude='.vim' \
+    --exclude='.vscode' \
+    --exclude='__pycache__' \
+    --exclude='data' \
+    --exclude='boost' \
+    --exclude='venv' \
+    --exclude='py39' \
+    --exclude='data_smashing_' \
+    --exclude='cynet_' \
+    --exclude='node_modules' \
+    --exclude='bin' \
+    --exclude='misc' \
+    --exclude='*temp'
+}
+
 lines() {
     cat $1 | wc -l
 }
@@ -25,45 +62,7 @@ se() {
 }
 
 sd() {
-    dir=$(
-        du -d 8 \
-        ~/Documents/ZeD/repos \
-        ~/Documents/second-brain/ \
-        ~/Documents/ZeD/agitation_study \
-        ~/Documents/ZeD/anomaly_examples \
-        ~/Documents/College \
-        ~/Dev/dotfiles \
-        ~/.config/alacritty \
-        ~/.config/bspwm \
-        ~/.config/lvim \
-        ~/.config/nvim \
-        ~/.config/nvim_bkup \
-        ~/.config/polybar \
-        ~/.config/rofi \
-        ~/.config/sxhkd \
-        ~/.config/sxiv \
-        ~/.config/tmux \
-        ~/.config/zsh \
-        ~/.scripts \
-        ~/Dev \
-        --exclude='.git' \
-        --exclude='.github' \
-        --exclude='.vim' \
-        --exclude='.vscode' \
-        --exclude='__pycache__' \
-        --exclude='data' \
-        --exclude='boost' \
-        --exclude='venv' \
-        --exclude='py39' \
-        --exclude='data_smashing_' \
-        --exclude='cynet_' \
-        --exclude='node_modules' \
-        --exclude='bin' \
-        --exclude='misc' \
-        --exclude='*temp' |
-        awk '{print $2}' |
-        fzf
-    )
+    dir=$(dirs | awk '{print $2}' | fzf)
     retVal=$?
 
     if [ $retVal -eq 0 ]; then
@@ -71,10 +70,61 @@ sd() {
     fi
 }
 
+tsd() {
+    dir=$(dirs | awk '{print $2}' | fzf)
+    retVal=$?
+
+    if [ $# -gt 0 ]; then
+        session=$1
+    else
+        session="ide"
+    fi
+
+    if [ $retVal -eq 0 ]; then
+        tmux new-session -c $dir -s $session -n code -d \; \
+        attach -t $session
+    fi
+}
+
 sdls() {
     sd
     if [ $retVal -eq 0 ]; then
         ls
+    fi
+}
+
+stat() {
+    dir=$(du -d2 $(cat ~/.curQ) | grep -e 'STAT.*pset' | awk '{print $2}' | fzf --select-1)
+    retVal=$?
+
+    if [ $retVal -eq 0 ]; then
+        tmux new-session -c $dir -s stat -n pset -d \; \
+        attach -t stat
+    fi
+}
+
+ide() {
+    dir=$(dirs | awk '{print $2}' | fzf)
+    retVal=$?
+
+    if [ $# -gt 0 ]; then
+        session=$1
+    else
+        session="ide"
+    fi
+
+    if [ $retVal -eq 0 ]; then
+        tmux new-session -c $dir -s $session -n code -d \; \
+        new-window -n term -c $dir \; \
+        select-window -t "$session":code
+        # tmux send-keys -t "$session":0 ls C-m
+        tmux attach -t $session
+        # tmux new-session -s "$session" -d
+        # tmux rename-window -t "$session:0" "code"
+        # tmux send-keys -t "$session:0" "cd $dir && clear" C-m
+        # tmux new-window -t "$session:1" -n "term"
+        # tmux send-keys -t "$session:1" "cd $dir && clear" C-m
+        # tmux attach -t "$session:0"
     fi
 }
 

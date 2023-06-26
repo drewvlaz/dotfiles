@@ -38,8 +38,10 @@ $line_break\
 [character]
 # ❮❯
 success_symbol = "[](bold green)"
+# success_symbol = "[󰘧](bold green)"
 error_symbol = "[✗](bold red)"
-vicmd_symbol = "[](bold yellow)"
+# vicmd_symbol = "[](bold yellow)"
+vicmd_symbol = "[󰘧](bold yellow)"
 
 [directory]
 # format = '[{](bold yellow)[$path]($style)[$read_only]($read_only_style)[}](bold yellow) '

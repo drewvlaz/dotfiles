@@ -11,7 +11,11 @@
 \usepackage{etoolbox}
 \usepackage{tikz}
 \usepackage{bm}
+\usepackage{bbm}
 \usepackage{color}
+\usepackage{minted}
+
+\setminted[python]{frame=lines, breaklines, framesep=2mm, fontsize=\small, numbersep=5pt}
 
 \definecolor{cit}{rgb}{0.05,0.2,0.45} 
 
@@ -21,7 +25,7 @@
 
 \title{Homework \#}
 \author{}
-\date{\vspace{-3em}EXAM 12300}
+\date{}
 
 \newcommand{\be}{\begin{equation*}\begin{aligned}}
 \newcommand{\ee}{\end{aligned}\end{equation*}}
@@ -37,6 +41,7 @@
         \bm{\hat{\mathbf{#1}}}%
     \fi
 }}
+\newcommand{\ovl}[1]{\,\overline{\!{#1}}}
 
 \preto\equation{\setcounter{equation}{0}}
 \makeatletter

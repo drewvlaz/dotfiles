@@ -1,0 +1,34 @@
+#!/bin/bash
+
+TMUX_ACTIVE=$(tmux ls 2>/dev/null | wc -l)
+
+if [[ $TMUX_ACTIVE -eq 0 ]]; then
+    echo 'Not running a tmux session'
+    exit
+fi
+
+DIR=$(ls build | grep 'kernel.o' | wc -l)
+if [[ $DIR -eq 0 ]]; then
+    echo 'Not in correct directory - cannot find "./build/kernel.o"'
+    exit
+fi
+
+GDB_ACTIVE=$(tmux list-windows | grep 'gdb' | wc -l)
+if [[ $GDB_ACTIVE -eq 0 ]]; then
+    tmux new-window -n 'gdb'
+    tmux send-keys -t 'gdb' 'cd build' C-m
+    echo 'Created new window'
+fi
+
+pintos -v --gdb -- run alarm-multiple &
+tmux send-keys -t 'gdb' 'pintos-gdb kernel.o' C-m
+tmux send-keys -t 'gdb' 'layout src' C-m
+tmux send-keys -t 'gdb' 'debugpintos' C-m
+
+for i in "$@"; do
+    tmux send-keys -t 'gdb' 'b ' "$i" C-m
+done
+
+if [[ "$#" -ne 0 ]]; then
+    tmux send-keys -t 'gdb' 'c' C-m
+fi

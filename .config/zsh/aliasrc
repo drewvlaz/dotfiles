@@ -12,6 +12,8 @@ alias \
     ll="ls -al"  \
     cp="cp -v -r" \
     :q="exit" \
+    b="cd -" \
+    za="zoxide add ." \
 
 # Common commands that are just too long
 alias \
@@ -40,9 +42,11 @@ alias \
     yt="youtube-dl --add-metadata -i" \
 	yta="yt -x -f bestaudio/best --audio-format mp3" \
     hb="clear && $HOME/.scripts/hashbang.sh" \
+    tlist='tmux list'
 
 # Improved commands
 alias \
+    yay="yay" \
     python="python3" \
     pip="pip3" \
     ls="exa --icons --group-directories-first" \

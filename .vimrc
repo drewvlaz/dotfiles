@@ -45,3 +45,12 @@ nnoremap <leader>bs <C-u>zz
 nnoremap <leader>fs <C-d>zz
 
 inoremap jk <ESC>
+
+
+" ----- MISC -----
+
+" fix cursor style/shape
+let &t_ti.="\e[1 q"
+let &t_SI.="\e[5 q"
+let &t_EI.="\e[1 q"
+let &t_te.="\e[0 q"

@@ -149,10 +149,12 @@ bindkey '^e' edit-command-line
 # Load aliases if exist
 [ -f "$HOME/.config/zsh/aliasrc" ] && source "$HOME/.config/zsh/aliasrc"
 [ -f "$HOME/.config/zsh/zfunctions" ] && source "$HOME/.config/zsh/zfunctions"
+# [ -f "$HOME/.config/zsh/zoxiderc" ] && source "$HOME/.config/zsh/zoxiderc"
 
 # Load themes
 eval "$(starship init zsh)"
 # source "$HOME/.config/zsh/themes/spaceshiprc"
+eval "$(zoxide init zsh)"
 
 # source /usr/share/nvm/init-nvm.sh
 
