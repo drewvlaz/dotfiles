@@ -1,284 +1,3 @@
-ld -lsoundio --verbose | grep succeeded
-man ln
-ln -s /usr/lib64/libsoundio.so /usr/libexec/libsndio.so.7.0
-sudo ln -s /usr/lib64/libsoundio.so /usr/libexec/libsndio.so.7.0
-sudo ln -s /usr/lib64/libsoundio.so /usr/libexec/libsndio.so.6.1
-sudo ln -s /usr/lib64/libsndio.so.6.1 /usr/lib64/libsoundio.so
-sudo ln -s /usr/lib64/libsoundio.so /usr/lib64/libsndio.so.6.1
-rm /usr/lib64/libsndio.so.6.1
-sudo rm /usr/lib64/libsndio.so.6.1
-ld -lsndio --verbose | grep succeeded
-g clone https://github.com/neovide/neovide/tree/0.5.0
-g clone https://github.com/neovide/neovide/
-d se sndio
-curl --proto '=https' --tlsv1.2 -sSf "https://sh.rustup.rs" | sh
-sudo 11
-cd Documents 
-cd.
-neovide &
-neovide -h
-neovide --geometry 
-neovide --geometry full
-neovide --geometry 100x100
-goneovim &
-goneovim patternly/detection.py &
-goneovim init.vim
-jjjjjtj
-neovide init.vim&
-neovide --frameless --geometry 1980x1020 init.vim
-neovide --frameless --geometry 1000x800 init.vim
-neovide --frameless --geometry 100x100 init.vim
-which-command neovide
-neovide init.vim
-neovide --frameless --geometry 80x10 init.vim
-neovide --frameless --geometry 1500x50 init.vim
-neovide --frameless --geometry 150x50 init.vim
-neovide --frameless --geometry 150x30 init.vim
-neovide --frameless init.vim
-nvide --geometry 120x35
-nvide --geometry 130x40
-neovide patternly/detection.py&
-v p4shell
-nvide .
-cd Documents/College/Year\ 1/Spring\ 21/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21
-nvide init.vim
-../patternly
-agitation_study
-cd Downloads/neovide-0.5.0
-d se lib X
-d se lib X11
-ld -lX11 --verbose | grep succeeded
-d in libxext-devel
-google-chrome docs/index.html
-v init.vim\
-
-d se libxext
-d in libXext-devel
-d in cmake
-cc
-g diff patternlyternly/detection.py
-g add docs
-rm -rf .vscode examples/dist.dst examples/embedding.csv examples/outD.txt
-head -n 1 dataset/ACC_X_a.csv
-head -n 1 dataset/ACC_X_a.csv | grep "1308466"
-head -n 1 dataset/ACC_X.csv | grep "1308466"
-head -n 1 dataset/TEMP.csv | grep "1308466"
-head -n 1 dataset/TEMP_a.csv | grep "1308466"
-head -n 1 dataset_controls/TEMP_a.csv | grep "1308466"
-nvide process.py
-d se alsa devel
-d in alsa-lib-devel
-cd neovide-0.6.0
-~/.cargo/bin/cargo clean
-cd neovide-0.5.0
-~/.cargo/bin/cargo build --release
-ld -lX11.so.6 --verbose | grep succeeded
-d se libX11
-d in libX11-devel
-~/.cargo/bin/cargo build --release --no-default-features
-which cargo
-cargo build --release --no-default-features
-chmod u+x neovide
-./neovide
-cd neovide-0.7.0
-vulkaninfo
-vulkaninfo | grep gpu
-vulkaninfo | grep driver
-vulkaninfo | grep GPU
-vkcube
-vkcubepp
-ls Fira\ Code
-v /usr/local/bin
-sudo mv launch-neovide /usr/local/bin
-rm /usr/local/bin/neovide
-sudo rm /usr/local/bin/neovide
-cat /usr/share/applications/
-ls /usr/share/applications
-v neovide.desktop
-cat .local/share/applications/jupyter-notebook.desktop
-sudo mv neovide.desktop /usr/share/applications
-v nvim.desktop
-sudo v neovide.desktop
-cd local/bin
-chmod u+x launch-neovide
-sudo v launch-neovide
-./launch-neovide
-gnome-desktop-item-edit --create-new /home/drewvlaz/.local/share/applications
-d in gnome-desktop-item-edit
-d in gnome-panel
-sudo v /usr/share/applications/neovide.desktop
-cd Documents/ZeD/repos/python_implementations_
-hello
-echo -n I | od -to2 | head -n1 | cut -f2 -d" " | cut -c6 
-nvide gen.py
-nvide 
-sudo v /usr/local/bin/launch-neovide
-figlet
-figlet -h
-evc
-mv settings.vim nerdcommenter.vim
-cd repos/python_implementations_
-nvide zedsuite/genesess.pyx
-cd ../patternly
-pip uninstall -y zedsuite && pip install dist/zedsuite-0.0.5-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
-goneovim
-d se alacritty
-d se kitty
-d in kitty
-v .hyper.js
-cargo install alacritty
-which alacritty
-ls .cargo/bin
-tabbed 
-d in tabbed
-tabbed alacritty
-wmctrl -x -a "tabbed" || tabbed alacritty --embed
-tabbed --help
-man tabbed
-tabbed alacritty -embed
-hyper
-prompt -l
-prompt bart
-prompt clint
-prompt pws
-prompt oliver
-cat prompt_spaceship_setup
-EXIT
-hsc
-v kitty.desktop
-cat hyper.desktop
-sudo v alacritty.desktop
-./Documents/ZeD/repos/GenESeSS_/bin/genESeSS -f seq.dat -T symbolic -D row -e 0.08 -d graph -t 1 -v 1
-./Documents/ZeD/repos/GenESeSS_/bin/genESeSS -h
-google-chrome graph. 
-google-chrome graph.png
-exa
-exa --icons --group-directories-first
-du -h .config
-d rm kitty
-which eve
-which ebe
-sudo rm /usr/bin/ebe
-d rm davinci
-d rm davinci-resolve
-head -n 1 seq.dat >> seq_.data
-mv seq_.data seq_.dat
-cat seq_.dat
-v seq1.dat
-../Documents/ZeD/repos/zutil_/bin/llk -s seq1.dat -f result1.txt
-../Documents/ZeD/repos/zutil_/bin/llk -s seq1.dat -f result.txt
-../Documents/ZeD/repos/zutil_/bin/llk -s seq_.dat -f result.txt
-../Documents/ZeD/repos/zutil_/bin/llk -s seq_.dat -f result_.txt
-../Documents/ZeD/repos/zutil_/bin/llk -s seq.dat -f result_.txt
-../Documents/ZeD/repos/zutil_/bin/llk -s seq.dat -f result.txt
-cat result
-tabbed alacritty --embed
-nvim /bin/sh +1 && c
-cd Testingl
-mkdir -p Testingl && cd Testingl
-rmdir Testingl
-haskell
-ghci
-ese
-sadfjlk
-echo $SPACESHIP_FOOBAR_SHOW
-echo $SPACESHIP_ROOTFOOBAR_SHOW
-echo $SPACESHIP_ROOT
-sudo v /usr/local/lib/node_modules/spaceship-prompt/spaceship.zsh
-cd zutil_
-cd cynet_
-d se starship
-d in starship
-starship
-starship init
-starship init zsh
-mkdir .config/starship
-touch .config/starship/config.toml
-cd zsh
-mkdir spaceshiprc
-rmdir spaceshiprc
-v spaceshiprc
-cd .config/
-mv starship zsh/themes
-cd zsh/themes
-lsa
-wait 1
-time
-python -c "import time; time.wait(2)"
-exiyt
-sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- --help\
-
-sh -c "$(curl -fsSL https://starship.rs/install.sh)"\
-
-v Cargo.
-pyenv global 3.7.0
-g -h
-g --help
-cargo build --help
-v Cargo.lock
-cd patcher
-cp target/release/starship /usr/local/bin
-sudo cp target/release/starship /usr/local/bin
-STARSHIP_LOG=debug starship module cmd_duration -d 60000
-which s 
-which starship
-STARSHIP_LOG=debug ./target/release/starship module cmd_duration -d 60000
-v Cross.toml
-cd Downloads/starship-0.57.0
-python -c "import time; time.sleep(2)"
-python -c "import time; time.sleep(1)"
-stow
-cd .sci
-v syncdots
-git init
-g remote set-url origin git@github.com:drewvlaz/dotfiles
-g remote add git@github.com:drewvlaz/dotiles.git
-g remote add origin git@github.com:drewvlaz/dotiles.git
-g push origin -f
-g push origin master -f
-g push master origin -f
-g push -f origin
-git push --set-upstream origin master
-git remote -v
-git push --set-upstream origin master\
-
-g remote remove origina
-g remote remove origin
-g remote add origin git@github.com:drewvlaz/dotfiles.git
-g push --set-upstream origin master -f
-g branch laptop
-git branch -m master main\
-
-g fetch origin
-git branch -u origin/main main\
-
-git remote set-head origin -a\
-
-rm -rf .config
-mkdir .config
-rm .netrwhist
-nvide pa 
-d rm zathura
-d in zathura
-d se zathura
-zathura resume.pdf
-g push --set-upstream origin master
-g commit -m "update pdf"
-tmuz
-d se terminator
-d in terminator
-cat .tmux.conf
-zsh -h
-zsh --help
-nvide patternly/detection.py
-ex
-v .tmux.conf
-mkdir .config/tmux
-mv .tmux.conf .config/tmux/tmux.conf
-ls | grep py
-xit
-la .config
-cp .config/tmux/tmux.conf .
 mv tmux.conf .tmux.conf
 rm .tmux.conf
 at
@@ -321,7 +40,6 @@ jt -t monokai -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "hack" -lineh 150
 fc-list | grep operator
 fc-list | grep Operator
 jt -t solarizedl -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "hack" -lineh 150
-cd agitation_study
 pip install mne
 v data/chb01_03.edf.seizures
 mv chb01_03.edf.seizures chb01_03.seizures.edf
@@ -377,7 +95,6 @@ jt -l
 jt -t chesterish -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "firacode" -lineh 150
 jt -t grade3 -T -cellw 1200 -kl -N -ofs 11 -dfs 10 -f "firacode" -lineh 150
 jt -t grade3 -T -cellw 1400 -kl -N -ofs 11 -dfs 10 -f "firacode" -lineh 150
-jt -t grade3 -T -cellw 1300 -kl -N -ofs 11 -dfs 10 -f "firacode" -lineh 150
 tmux attach
 cd Documents/ZeD/anomaly_examples
 mv onedark.vim themes.vim
@@ -554,8 +271,6 @@ d history userinstalled
 bison
 bison --help
 drm bison
-du -h bin
-du -h dev
 du -h lib
 du -h etc
 du -h boot
@@ -750,7 +465,6 @@ unzip -l EEG\ data.zip -x egg_data_info.txt
 v eeg_data_info.txt 
 unzip -l EEG\ data.zip -x eeg_data_info.txt
 unzip EEG\ data.zip -x eeg_data_info.txt
-V
 dircolors --print-database | grep '^TERM'
 uxrvt
 d in uxrvt
@@ -809,7 +523,6 @@ sudo umount /mnt/droplet
 v scp://drewvlaz@linux.cs.uchicago.edu:~/
 cd mnt
 pkill sshsf
-cd /mnt
 v scp://drewvlaz@linux.cs.uchicago.edu//home/drewvlaz/
 v scp://drewvlaz@linux.cs.uchicago.edu//home/drewvlaz/Downloads/cs
 v scp://drewvlaz@linux.cs.uchicago.edu//home/drewvlaz/Downloads/cs/
@@ -909,7 +622,6 @@ du -h models
 du -h models/chb01_C3-P3.model
 du -h models/chb01_C4-P4.model
 v .git/index.lock
-rm .git/index.lock
 g add patternly/_utils.py
 g commit -m "misc bug fixes"
 v agitations_updated.csv
@@ -946,7 +658,6 @@ cd Spring/
 cat 00-grade-hw1-drewvlaz.txt
 cd ../Spring/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p1bitmanip
 cd MATH19620-Linear_Algebra
-exir
 cat .vim
 ls .vim
 cd .vim
@@ -1000,7 +711,6 @@ mkdir hw
 head -n 20 ../../MATH19620-Linear_Algebra/hw/hw1.tex| toclip
 d se bussproofs
 d in texlive-bussproofs
-mkdir images
 mv 20211007_000724.jpg vectors.jpg
 make && ./driver.pl
 dlc
@@ -1024,7 +734,6 @@ echo "bui" | xargs $(ls | fzf)
 ssh drewvlaz@cs154.cs.uchicago.edu
 v hw1 
 mv hw2.* ../../MATH19620-Linear_Algebra/hw
-exirt
 cat patternly/detection.py | toclip
 cp ../repos/zutil_/bin/llk bin
 ./bin/llk -h
@@ -1055,7 +764,6 @@ g commit -m "fix load model"
 v matches.csv
 edxit
 mv rampdown.png rampmin.png
-google hw3.pdf
 zathura hw3.pdf
 v hw1
 cd Spring/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw3
@@ -1093,7 +801,6 @@ v dave.trace
 v yi.trace
 v yi2.trace
 mv *.pdf out
-ls out
 cd chb03
 cd ../../
 ls chb0
@@ -1136,7 +843,6 @@ cd chb02
 cd chb06
 pc
 google out
-google hw7.pdf
 v pei.pynb
 mv pei.pynb pei.ipynb
 mv pei.ipynb Documents/ZeD/anomaly_examples
@@ -1248,12 +954,10 @@ curl -X POST https://api.eleuther.ai/completion \\
 -H '"Content-Type": "application/json"' \\
 -d '{"context":"just testing this","top_p":0.9,"temp":0.8,"response_length":128,"remove_input":true}'
 head -n 20 hw1.tex >> proj.tex
-cd Dev/AoC
 mkdir 2021
 xclip
 xclip >> 1-1.txt
 cat 1-1.txt
-v 1-1.txt
 cat 1-1.cc >> 1-2.cc
 head -n 20 hw1.tex >> hw8.tex
 sudo echo 100 /sys/class/leds/tpacpi::kbd_backlight/brightness
@@ -1285,22 +989,17 @@ cd ../Documents
 c github-recovery-codes.txt
 v github-recovery-codes.txt
 cd Dev/AoC/2021
-v 1-2.txt
 g++ 1-2.cc && ./a.out > test.txt
 diff test.txt 1-2.txt
-v 1-2.cc
-g++ 1-2.cc && ./a.out
 cp 1-2.cc 2-2.cc
 cp 2-2.cc 2-1.cc
 mv 1-2.txt 2-1.txt
-v 2-1.cc
 g++ 2-1.cc && ./a.out
 v 2-2.cc
 g++ 2-2.cc && ./a.out
 cp 2-2.cc 3-1.cc
 cat test.txt| wc -l
 g++ 3-1.cc && ./a.out
-v 3-1.cc
 cp 3-1.cc 3-2.cc
 v 3-2.cc
 cd raw_download/physionet.org/files/chbmit/1.0.0/chb05
@@ -1310,7 +1009,6 @@ v data/messages/inbox/lauren_wna78sjuia
 v data/messages/inbox/lauren_wna78sjuia/message_1.json
 v data/messages/inbox/
 rm data
-rm -rf data
 v instagram_data/messages/inbox/lauragiugno_uixohxazjq/message_1.json
 ../../../..
 ../../../
@@ -1566,7 +1264,6 @@ v github.tex
 head -n 50 p132-homework-2.tex| toclip
 head -n 150 p132-homework-2.tex| toclip
 head -n 150 pset2.tex| toclip
-v pset1.
 v p132-homework-3.tex
 head -n 200 p132-homework-3.tex| toclip
 v p132-homework-2-makeup.tex
@@ -1663,7 +1360,6 @@ d in pulseaudio
 d in pulseaudio --allowerasing
 d in blueman
 sudo v /etc/bluetooth/
-pip3 install pandas
 d in pip
 pip install jupyterthemes
 d in jupyter
@@ -1742,7 +1438,6 @@ cat org.gnome.Terminal.desktop| grep icon
 cat org.gnome.Terminal.desktop| grep Icon
 sudo nvim Alacritty.desktop
 cd .local/share/applications
-alacritty
 v Alacritty.desktop
 ls data >> ids.txt
 v ids.txt
@@ -1828,7 +1523,6 @@ python -m ipykernel install --user
 pip install pandas zedsuite
 pip install dill
 pip install sklearn
-pip install matplotlib
 cd jupyter
 cd kernels
 cd py39
@@ -1854,7 +1548,6 @@ rm -rf Anki
 rm -rf Anki2
 git clone https://github.com/LunarVim/Neovim-from-scratch.git nvim
 cd lsp
-v keymaps.lua
 cls
 cd site/pack/packer
 cd start
@@ -1909,7 +1602,6 @@ nvim config.lua
 cd test_agitations_
 ls agitations_dataset
 ls session_agitations
-python process.py
 ls test_agitations_
 ls test_agitations_ | wc -l
 ls test_agitations | wc -l
@@ -1961,13 +1653,11 @@ echo hello | cowsay -e "\!\!"
 echo hello | cowsay -e "##"
 echo hello | cowsay -e "XX"
 echo hello | cowsay -e "??"
-vim
 vi
 rm -rf test.py
 cat test
 cat test1.py
 rm -rf test1.py
-rm a.out
 rm zedsuite-0.0.5.tar.gz
 pip install thefuck
 claer
@@ -2026,7 +1716,6 @@ sudo apt install exa
 curl -sS https://starship.rs/install.sh | sh
 sudo apt install neovim
 nvim -V
-nvim --version
 sudo apt install qbittorrent
 ls | grep arch
 dd if=archlinux-2022.03.01-x86_64.iso of=/dev/sda status=progress
@@ -2122,8 +1811,6 @@ ls /run/user/1000
 ls /
 refind
 pipewire-pulse &
-fdisk -l
-sudo fdisk -l
 du -h /boot
 refind-install
 cd /boot/EFI/refind
@@ -2238,7 +1925,6 @@ rm -rf .mume
 hb 
 ls .texlive2020
 ls .texlive2020/texmf-var/luatex-cache/generic-dev/
-ls .ssh
 cat .ssh/known_hosts
 cat .ssh/known_hosts | grep midway
 hb; ls -a
@@ -2323,7 +2009,6 @@ pyenv uninstall 3.7.0
 pyenv global 3.9.0
 pyenv global system
 pyenv uninstall 3.9.0
-pyenv versions
 yay -Rs pyenv
 which pyenv
 ls .pyenv
@@ -2362,7 +2047,6 @@ v kernel.json
 jupyter kernel install 
 jupyter kernelspec list
 cat kernel.json
-which python3.9
 python3.9 -m pip install matplotlib
 python -m pip --version
 p -S dot
@@ -2370,7 +2054,6 @@ yay -Ss dot
 cd .local/share/nvim/site/pack/packer/start
 cd opt
 yay -S wget
-cd /usr/bin
 ll | grep node
 sudo rm -rf node
 yay -S npm node
@@ -2378,7 +2061,6 @@ npm
 yay -Rs npm node
 npm install -g npm
 whoami
-v process.py
 cat process.py| toclip
 hv
 killall zoom
@@ -2400,7 +2082,6 @@ python test.py | grep Jeans
 g clone https://github.com/drewvlaz/SpotiFind.git
 g puch
 ls known_hosts
-cat id_ecdsa.pub | toclip
 ./syncdots
 cd Dev/SpotiFind/n
 cd Dev/SpotiFind/
@@ -2441,7 +2122,6 @@ cat app.py
 lines app.py
 lines SpotifyClient.py
 g commit -m "update label list"
-npm i
 npm audit
 ls package.json
 cat package.json
@@ -2463,7 +2143,6 @@ pip3 uninstall google
 python -m pip uninstall flask google
 python -m pip install flask google
 pip install google
-pip install pandas
 python -m pip install google
 pip install --upgrade google-api-python-client\
 
@@ -2481,14 +2160,12 @@ ls google
 python -m pip install flask google-api-core
 python -m pip install flask google-auth
 flask run --help
-deactivate
 pip uninstall flask
 pip3 uninstall flask
 flask
 which flask
 rm flask
 v matching.py
-d
 python -m pip install flask_restful
 cd SpotiFind/l
 cd SpotiFind/
@@ -2510,7 +2187,6 @@ v App.js
 g puhs
 g push origin 
 v credentials.json
-source venv/bin/activate
 python -m pip install wget
 wget blob:http://localhost:3000/68ca3b44-02a8-42bd-b58e-d3b17194f240
 cat .git 
@@ -2526,9 +2202,7 @@ v public/data.json
 cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw1
 cat hw1.txt
 sudo systemctl disable bluetooth.service
-sudo systemctl stop bluetooth.service
 sudo systemctl enable bluetooth.service
-sudo systemctl start bluetooth.service
 cd Dev 
 cd SpotiFind
 g commit "final?"
@@ -2538,9 +2212,7 @@ g add SpotifyClient.py
 g commit -m "merged"
 git filter-branch -f --index-filter "git rm -rf --cached --ignore-unmatch credentials.json" -- --all\
 
-bfg
 yay -Ss bfg
-yay -S bfg
 git reflog expire --expire=now --all && git gc --prune=now --aggressive
 bfg --replace-text credentials.json
 bfg --replace-text
@@ -2583,10 +2255,8 @@ v link.txt
 v test.c
 v 00-grade-hw2-drewvlaz.txt
 v hw2.txt
-cd hw1
 cd ../hw2
 ./t
-v hw2.tex
 cd Spring/Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p1bitmanip
 cat 00-grade-p1bitmanip-drewvlaz.txt
 ./btest.
@@ -2624,7 +2294,6 @@ yay -Ss doublestroke
 yay -S texlive-fontsextra
 cat makedoc.sh
 ./polllatex-latex.sh
-cd tex
 cat polllatex-latex.sh
 cat clean
 cat clean.sh
@@ -2731,7 +2400,6 @@ pyton
 v exp.py
 python exp.py
 v main.tex
-bluetoothctl
 rm algo_test*
 mkdir code
 mv *.py code
@@ -2804,9 +2472,6 @@ for i in {1..9}; do cp input0$i.txt input$i.txt; done
 for i in {1..9}; do cp output0$i.txt output$i.txt; done
 mkdir project
 ls init.lua
-cat init.lua
-cd lua
-cd user
 v code/building-pq.py
 mv hw5.tex hw5-bkup.tex
 v Your\ Professional\ Development\ Fund\ Conference\ Grant\ Award\ Letter.msg
@@ -2871,7 +2536,6 @@ for i in {1..20}; do python code/roadtrip_jesse.py < code/roadtrip_testcases/inp
 for i in {1..20}; do python code/roadtrip.py < code/roadtrip_testcases/input$i.txt | diff -y code/roadtrip_testcases/output$i.txt -; done
 python code/roadtrip.py < code/test2.txt
 v project/theory_world.py
-v hw3.tex
 mv -r project ..
 mv project ..
 v check_input.py
@@ -2943,7 +2607,6 @@ for i in {1..3}; python ../check_output.py small$i.in small$i.out; done
 cp ../check_output.py .
 for i in {1..3}; python check_output.py small$i.in small$i.out; done
 cd ../final_out
-rm *
 cp large1.in large1.out final
 cp large2.in large2.out final
 mv large2.in large3.in
@@ -3156,7 +2819,6 @@ du -h teleporters_testcases
 du -h roadtrip_testcases
 ../Winter
 cd Honors\ Intro\ CS.\ 2\ CMSC\ 16200
-cd hw4
 v unionfind.c
 rm *.in
 for i in all_inputs/RubberDucks_*; echo $i
@@ -3648,7 +3310,6 @@ cat smalls.out | grep TERM
 cat smalls.out | grep TIME
 cat smalls.out | grep TIME | wc -l
 ../pset
-../psets
 ls | grep cpp
 ls code | grep cpp
 v sim.cpp
@@ -3806,7 +3467,6 @@ lazygit
 bs
 python roadtrip.py
 man alacrittycritty
-man alacritty
 echo "new_last.txt" | python package_outputs.py 
 v package_outputs.py
 ./solve < all_inputs/ALLINA_small1.in
@@ -3817,7 +3477,6 @@ v new_larges.out
 python package_outputs.py
 v smalls.out
 python package_outputs.py | v
-yaya
 wget -r -N -c -np https://physionet.org/files/siena-scalp-eeg/1.0.0/\
 
 du physionet.org/files/siena-scalp-eeg/1.0.0/
@@ -3837,7 +3496,6 @@ cd lab05
 v RandState.hs
 cd nadfjh2934f1j1234
 vlc PureMature\ -\ Brooklyn\ Chase\ -\ The\ Stud\ Next\ Door.mp4
-cd im
 v *.cpp
 g diff examples/Satellite_continuous_streaming.ipynb
 g add examples/Reading_european_data_format_\(edf\).ipynb
@@ -3892,13 +3550,11 @@ nvm
 nvm install 17
 v lua/user/plugins.lua
 v test.pyu
-cd lua/user
 v telescope.lua
 nvm use -g 17
 man nvm
 v /usr/share/nvm/init-nvm.sh
 v copilot.lua
-.scripts/syncdots
 v --version
 gsettings set org.gnome.desktop.input-sources show-all-sources true
 yay -S ibus-hangul
@@ -3908,7 +3564,6 @@ yay -Ss input methods
 yay -S adobe-source-han-sans-kr-fonts
 cd project
 ls *.cpp
-v .config/tmux/tmux.conf
 v ParkGraph.cpp
 cd Dev/spotifind
 v app.py
@@ -3925,10 +3580,7 @@ blankly hlep
 blankly -h
 ls keys.json
 cat keys.json
-which python
-which python3
 python3 -m pip install blankly
-cd anomaly_examples
 rm -rf raw_download
 cd AudioBooks
 rm -rf nerd-fonts
@@ -3942,8 +3594,6 @@ which blankly
 cat requirements.txt
 cat bot.py
 blankly key add
-mkdir test
-cd test
 blankly init
 v settings.json
 rmdir test
@@ -3954,7 +3604,6 @@ v bot.py
 python3.9 bot.py
 python bot.py
 du -h bot.py
-cd Dev/SpotiFind
 cd spotifind-frontend
 v src/App.css
 v src/App.js
@@ -3982,7 +3631,6 @@ sudo usermod -aG docker drewvlaz
 sudo chmod 666 /var/run/docker.sock\
 
 docker pull quay.io/pypa/manylinux_2_24_x86_64
-cd Downloads/Stylish-2k/Stylish/im
 docker pull quay.io/pypa/manylinux_2_28_x86_64
 ls dist_bkup
 pip install dist/zedsuite-0.0.5-cp310-cp310-manylinux_2_28_x86_64.whl
@@ -4041,7 +3689,6 @@ python -m pip install twine
 rm -rf dist_bkup
 g add dist_bkup/
 g commit -m "remove bkup wheels"
-ls build
 pip uninstall zedsuite
 python3.10 --version
 pip3.10 install dist/zedsuite-0.0.6-cp310-cp310-manylinux_2_28_x86_64.whl
@@ -4062,15 +3709,12 @@ git remote add origin git@github.com:drewvlaz/resume.git
 g commit -m "added recent exp"
 google 
 google-chrome-stable resume.pdf
-sudo rm /var/lib/pacman/db.lck
 w
 v everforest.yml
 ..ls
 mv boost_src ~/Downloads
 du -f
-du -h | grep G
 rm -rf Service\ Worker
-cd ZeD
 du -h -d 1| grep G
 cd down
 rm -rf boost_1_79_0 anki-2.1.4*
@@ -4100,8 +3744,6 @@ mv cht.shs cht.sh
 ./cht_util.sh
 read -p "aslfdjas " a
 . 
-mkdir projs
-cd projs
 mkdir misc
 mv algorithmic-toolbox-coursera AoC learning Operator-Mono operator-mono-lig patchelf patcher plymouth-themes uh-hackathon misc
 rmdir projs
@@ -4149,7 +3791,6 @@ mkdir uchi-sports
 cd uchi
 mkdir out
 cd small-projects;
-ls misc
 cd small-projects
 ls cars
 v cars/carwatch.py
@@ -4166,14 +3807,10 @@ v scaper.py
 mv rosters__.csv rosters.csv
 python scaper.py
 exec zsh
-eit
-g add resume.tex resume.pdf
 g commit -m "fixed typo"
 rm drew_vlasnik.pdf
-cd dev
 npm create-t3-app
 npx create-t3-app@latest
-node -v
 yay -Ss howdoi
 yay -S howdoi
 yay -S hors
@@ -4207,7 +3844,6 @@ cp rosters.csv rosters_.csv
 hors -e google -a python pandas query multiple columns
 hors -e google -a python pandas get multiple columns
 python scraper.py
-v scraper.py
 v rollercoasters.cpp
 g++ rollercoasters.cpp -o rollercoasters
 ./rollercoasters
@@ -4260,7 +3896,6 @@ cat Key3.txt| toclip
 cd Dev/uchi-sports
 v rosters_.csv
 v ../rosters_.csv
-cd Documents/College
 mkdir Year3
 cd Year3
 mkdir Autumn
@@ -4285,7 +3920,6 @@ mkdir templates
 cp pset8.tex ~/.config/zsh/templates
 cd templates
 mv pset8.tex pset.tex
-ls scripts
 v zfunctions
 rm pset\{1\}.tex
 v pset8.tex
@@ -4303,7 +3937,6 @@ g branch --alll
 g branch --all
 git remote add upstream https://github.com/uchicago-cs/chirc.git
 make assignment-1
-cat id_ecdsa.pub
 cat id_ecdsa
 cat config
 cat known_hosts
@@ -4320,8 +3953,6 @@ scp -r ../src/*
 scp -r ../src/
 scp -r ../src/* drewvlaz@linux.cs.uchicago.edu:~/Documents/Networks/chirc-p1-drewvlaz-ojerdee/build/src/
 v ../src/main.c
-ssh drewvlaz@linux2.cs.uchicago.edu
-ssh drewvlaz@linux.cs.uchicago.edu
 g pull --help
 v scp://drewvlaz@linux.cs.uchicago.edu//home/drewvlaz/Documents/Networks/chirc-p1-drewvlaz-ojerdee/src/main.c
 g clone https://github.com/antirez/sds
@@ -4399,18 +4030,14 @@ make && ./btest -f isTmin
 cp pset1.tex ~/.config/zsh/templates
 cat pset.tex
 rm pset.tex
-texclean
 mv pset1.tex pset.tex
 rm pset1.*
 g add src/handlers.c
-gs
 yay -Ss obsidian
 yay -S obsidian-appimage
 obsidian &
 v src/message.c
 ;Q
-\:w
-rm test.py
 ssh
 v src/dispatch.c
 g commit -m "Set up dispatch table"
@@ -4449,7 +4076,6 @@ telnet irc.libera.chat 6667
 g commit 
 g push -u origin drewvlaz 0f
 pset 4
-ssh 
 wget https://github.com/google/protobuf/releases/download/v2.6.1/protobuf-2.6.1.tar.gz\
 
 tar xvzf protobuf-2.6.1.tar.gz\
@@ -4468,7 +4094,6 @@ cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw4/
 v hw4.txt
 cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/hw3/
 v hw3.txt
-cd hw5
 v hw5.txt
 v hw4/hw4.txt
 g status | less
@@ -4509,7 +4134,6 @@ v data_smash/smash.pyx
 ../data_smashing_/bin/smash -h
 ../data_smashing_/bin/smash -f notebooks/data/crimedat1000_last3.dat -T symbolic -D row
 pset 5
-ws account
 ws connect
 yay -S qbittorent
 yay -S qbitorent
@@ -4579,7 +4203,6 @@ cat H1.dst
 g commit -m "Add partitioning of continuous data"
 g push -u originmaster
 CD
-cat README
 g push -u origin drewvalz
 g commit -m "Replace sending mechanism halfway"
 v smash.pyx
@@ -4593,7 +4216,6 @@ g commit -m "Finishedg add -A"
 g commit -m "Finished data transfer"
 g addd
 g commit -m "Begin multitimer"
-g commit -m ""
 g commit -m "Fix merge conflicts"
 g llg
 scp -r src/chitcpd/tcp.c drewvlaz@linux.cs.uchicago.edu:~/Documents/Networks/chitcp-p2-drewvlaz-ojerdee/src/chitcpd
@@ -4649,7 +4271,6 @@ g checkout ojerdee
 g add src/libchitcp/multitimer.c
 g commit -m "Create general handler"
 g push -u origin drewvlaz:master
-v setup.py
 v zedsuite/zutil.pxd
 python3.9 -m pip install zedsuite
 yay -S python39-pip
@@ -4749,7 +4370,6 @@ python3.9 gen.py
 v upload.sh
 g add build.sh dist/ setup.py upload.sh version.py zedsuite/
 g commit -m "Revert to manylinux1"
-cd ~/.jupyter
 v custom.js
 cd .config/zsh
 du -h history
@@ -4757,7 +4377,6 @@ man dif
 man dig
 dig
 tmxu
-ls bin
 ls examples/bin
 scp examples/bin/embed drewvlaz@midway2.rcc.uchicago.edu:~/bin
 ssh -R12345:localhost:22 drewvlaz@midway2.rcc.uchicago.edu
@@ -4776,8 +4395,6 @@ live-server
 v INSTRUCTIONS.md
 python3.9 -m pip install zsmash
 cd python_implementations_
-v test.py
-python3.9
 python3.9 -m pip install dist/zedsuite-0.0.7-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl
 mv dist dist1
 sudo systemctl start docker
@@ -4794,11 +4411,9 @@ v /usr/share/nvim/runtime/lua/vim/treesitter/query.lua
 g clone git@github.com:catppuccin/alacritty.git
 cp alacritty/*.yml .
 rm -rf alacritty
-v alacritty.yml
 which g
 f
 which f
-google
 cd Dev/neovide
 rm -rf go
 rm -rf go\~
@@ -4817,12 +4432,10 @@ cd p3cache-theo
 g commit -m "Initial commit"
 g commit -m "Initial setup"
 g commit -m "Switch to Results and Operation structs"
-cd .ssh
 ssh-copy-id -i ~/.ssh/id_ecdsa yko@linux.cs.uchicago.edu
 cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/drewvlaz-cs154-spr-21/p3cache-theo
 scp csim.c yko@linux.cs.uchicago.edu:/
 v csim.c
-k
 ./driver.py
 g commit -m "At 50/100"
 g commit -m "At 100/100"
@@ -4866,11 +4479,6 @@ sudo -H pip install click
 pip install --user click
 pip install --user click --force-reinstall
 ../run-mininet ../topologies/basic.json
-virtualenv venv
-./venv/bin/activate
-venv/bin/activate
-venv activate
-virtualenv -h
 sudo python -m pip install click
 yay -S python3-pip
 yay -S pip
@@ -4946,7 +4554,6 @@ sudo ../run-mininet ../topologies/basic.json\
 
 ovs-vsctl --no-wait init
 sudo ovs-vsctl --no-wait init
-rm -rf *
 yeet virtualbox
 rm -rf ~/VirtualBox\ VMs
 mkdir vbox
@@ -5063,14 +4670,11 @@ scp examples/data/* drewvlaz@midway2.rcc.uchicago.edu:~/data
 scp dist/zsmash-0.0.2-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl drewvlaz@midway2.rcc.uchicago.edu:
 scp dist/zsmash-0.0.2-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl drewvlaz@midway2.rcc.uchicago.edu:/home/drewvlaz
 g commit -m "Add switch braces" 
-dig 
-yay -S dig
 yay -Ss dig
 g commit -m "Start out of order" 
 g branch drewvlaz -u origin/master
 g branch drewvlaz -u origin/ojerdee
 rm -rf build
-cd build
 cmake -B build/
 g commit -m "Remove merge info" 
 g reset --soft HEAD
@@ -5108,8 +4712,6 @@ cd final-project-part-2-drewvlaz
 fetc
 hc
 bc
-hash
-hashbang
 hbc
 hcl
 cd .git
@@ -5147,7 +4749,6 @@ g commit -m "Final"
 ../chirc
 v src/handlers.
 v src/handlers.c
-../
 chirouter-p3-drewvlaz-ojerdee
 v src/c/utils.c
 ../chitcp-p2-drewvlaz-ojerdee
@@ -5157,11 +4758,9 @@ v src/c/router.c
 v src/main.c
 sudo pip uninstall click
 head 01_2015_LANL-01A_SOPA_MPA.txt
-cat test.py
 cd .jupyter
 cd custom
 rm custom.js
-python test.py
 python3.9 test.py
 cd Dev/Testing
 cp crime_short.dat ~/Documents/ZeD/repos/data_smash_python_/examples/data
@@ -5197,7 +4796,6 @@ mv aoc/2022 misc/AoC
 mv 11.cc 1-1.cc
 mv 11.txt 1-1.txt
 v 1-1.cc
-g++ 1-1.cc && ./a.out
 mv 1-1.cc
 mv 1-1.cc 1.cc
 fls
@@ -5240,11 +4838,8 @@ yay -Ss anki-official-binary-bundle
 yay -S anki-official-binary-bundle
 anki
 lsblk
-exitr
 lks
-mkdir Winter
 ls Autumn
-cd Winter
 mkdir STAT244-Stat_Theory_Methods_I
 cd STAT244-Stat_Theory_Methods_I
 mkdir CMSC23500-Databases
@@ -5269,7 +4864,6 @@ g add src/solution.rs
 g add module_1/mod_1_exercises/src/main.rs
 g restore --staged module_1/mod_1_exercises/src/main.rs
 g commit -m "Finish module 1"
-g push -u origin main
 yya
 cd module_2/mod_2_exercises/src
 g add module_2/*
@@ -5301,8 +4895,6 @@ cd dear_theodora
 v 1.md
 g add dear_theodora/
 g commit -m "the first"
-sudo systemctl start windscribe.service
-wsc
 v VlasnikDrewPset1.tex
 cd rust-primer-drewvlaz
 mkdir sql-drewvlaz
@@ -5427,7 +5019,6 @@ test -p heapstore hs_page_create
 cargo test -p heapstore hs_page_create
 cargo test -p heapstore debug_page_insert
 g commit -m "page, add and get values"
-v .ssh/known_hosts
 g clone git@github.com:zeroknowledgediscovery/fractalNet_.git
 cd fractalNet_
 ls cynet
@@ -5436,23 +5027,12 @@ cd ../misc
 cd ../repos/fractalNet_
 cd terror/data
 du -h terror.csv
-pip install haversine
-pip install sodapy
-pip install seaborn
-cd cynet
 pip install cynet
-pip install geopy
-pip install geopandas
-pip install contextily
 cat terror.p
 pip uninstall cynet
 cd models
 head terror.p
-ls models
 ls new_split
-ls split
-ll split
-ls triplet
 cd pse
 cp VlasnikDrewPset3.tex VlasnikDrewPset4.tex
 v VlasnikDrewPset3.tex
@@ -5473,7 +5053,6 @@ yay -S wine
 cd code
 pkill google-chrome
 pkill chrome
-v src/
 v VlasnikDrewPset4.tex
 cd Intro\ to\ Computer\ Systems\ CMSC\ 15400/midterm
 zip Gradescope_files Gradescope.html
@@ -5614,7 +5193,6 @@ g checkou main
 v unfollowers.txt
 cd Documents/
 cd Second\ Brain
-g init
 g commit -m "first commit"
 du -h .obsidian
 cd .obsidian
@@ -5628,11 +5206,8 @@ v .git/config
 cd Documents/Second\ Brain
 mv Second\ Brain second-brain
 g remote add origin git@github.com:drewvlaz/second-brain.git
-ssh drewvlaz@midway2.rcc.uchicago.edu
 cd cynet_example
-g clone git@github.com:zeroknowledgediscovery/fnet_requests.git
 cp -r fractalNet_ fnet_requests/Chihuahua/
-cd fnet_requests
 cd Chihuahua
 python generate_sim.py
 pip3.9 install cynete
@@ -5648,13 +5223,10 @@ du -r
 du -R
 du
 du | grep sim
-y
 ls -R | grep sim
 ls Documents
 rm -rf Dev/vbox
 v answers/20.sql
-v roadtrip.py
-ls src
 v src/heapstore
 cd heapstore
 ls tests
@@ -5771,10 +5343,8 @@ v opiterator/join.rs
 v mod.rs
 cd examples
 v data/example1.dat
-cd Dev/dotfiles
 ./.scripts/syncdots
 v patternly/detection.py
-cd .config/tmux
 cat tmux-sensible
 ls tmux-sensible
 ls tmux
@@ -5786,7 +5356,6 @@ cp .tmux/.tmux.conf.local ..
 v .tmux.conf.local
 rm .tmux.conf.local
 v tmux-onedark-theme
-cd themes
 v monokai-pro.yml
 v tmux-onedark-theme/tmux-onedark-theme.tmux
 cd src/queryexe
@@ -5794,8 +5363,6 @@ cd src/opiterator
 v join.rs
 mkdir after
 mkdir after/plugin
-ls lua
-ls lua/user
 mv lua/user/*.lua after/plugin
 cd after/plugin
 mv options.lua keymaps.lua ../../lua/user
@@ -5804,23 +5371,19 @@ ls plugin
 ll plugin
 ls after/plugin
 mv after/plugin/plugins.lua lua/user/packer.lua
-v lua/user/packer.lua
 mv after/plugin lua/user
 rm after
 rmdir after
 v lua/user/plugin/lsp.lua
-v init.lua
 v src/heapstore/tests/sm_integration.rs
 yay -S okular
 cp VlasnikDrewPset3.tex VlasnikDrewPset8.tex
 yeet spotifyu
 yay -S spotify-launcher
 ls VirtualBox\ VMs
-rm -rf VirtualBox\ VMs
 ls Music
 ls Pictures
 randp Pictures
-cd Documents
 cat github-recovery-codes.txt
 cat Phone\ SD
 ls Phone\ SD
@@ -5885,8 +5448,6 @@ cd .cargo
 cd registry
 ls github.com-1ecc6299db9ec823
 cd .local
-cd share
-du -h -d 1
 cd flatpak
 ls appstream
 ls appstream/flathub
@@ -5898,7 +5459,6 @@ rm -rf Trash
 cd Trash
 cd expunged
 cd 827574393
-du -h -d 1 | grep G
 tmx
 sed 11/0/3 ~/.config/alacritty/alacritty.yml
 sed -i '11\/0\/3' ~/.config/alacritty/alacritty.yml
@@ -5914,7 +5474,6 @@ v src/heapstore/src/storage_manager.rs
 man zip
 zip -r final 161final.html 161final_files
 ls | grep 161
-sd 
 ls hw2
 cat hw2/analyze.py
 yay -S spicetify-cli\
@@ -6013,7 +5572,6 @@ ls target
 ls benches
 ps aux | grep crusty
 g pull upstream main
-ls ..
 ls ../crusty_data/temp
 ls ../crusty_data/temp/3EUk8iGbAC
 cat ../crusty_data/temp/3EUk8iGbAC/container_0
@@ -6073,7 +5631,6 @@ cd Personal-Projects/
 v Animation.py
 python Animation.py
 cp Personal-Projects personalproj_bkup
-ls Personal-Projects
 ls personalproj_bkup
 rm -rf Personal-Projects
 g clone git@github.com:drewvlaz/Personal-Projects.git
@@ -6112,24 +5669,19 @@ v src/Geometry.cpp
 v src/Geometry.cpp src/Geometry.h
 g++ src/main.cpp 
 g++ src/*.cpp
-./a.out
 touch MAKEFILE
 v MAKEFILE
 cd CMSC23320-Networks
-v CMakeLists.txt
 g++ src/*.cpp && ./a.out
 g commit -m "finish basic geometry"
 mkdir CMSC23000-OS
 cd CMSC23000-OS
 git clone git@proj.cs.uchicago.edu:CMSC-23000-spring-20YY/CNetID.git
-cat .ssh/id_ecdsa
-cat .ssh/id_ecdsa.pub
 cat .ssh/id_ecdsa.pub | toclip
 git clone git@proj.cs.uchicago.edu:CMSC-23000-spring-2023/drewvlaz.git
 cd drewvlaz
 touch test.txt
 g add test.txt
-\:wq
 ssh-copy-id -i ~/.ssh/id_ecdsa student@127.0.0.1
 VirtualBox -h
 VirtualBoxVM -h
@@ -6141,7 +5693,6 @@ scp -P 3022 -r .config/zsh/* student@127.0.0.1:~/.config/zsh
 man ssh
 ss 
 ssh -p 3022 student@127.0.0.1 -t zsh -X
-exi
 g clone https://proj.cs.uchicago.edu/drew-dann-cs230-spr-23/group_repo
 ls pintos-p1
 cat README.md
@@ -6216,14 +5767,11 @@ g commit -m "add design doc"
 v pintos-p1/pintos-raw/src/
 v guide-alarm.txt
 hist
-history
-man history
 cat ~/.config/zsh/history
 cat ~/.config/zsh/history | wc -l
 cat ~/.config/zsh/history | fzf
 fzf
 fzf | v
-eixt
 rg . | fzf
 rg . | fzf | cut -d ":" -f 1
 g checkout main
@@ -6262,7 +5810,6 @@ ls -R | grep list
 ls -R | less
 v lib/kernel/list.h
 cd pintos-raw
-l
 sls
 ls -l
 which ll
@@ -6291,7 +5838,6 @@ g commit -m "update ignored files for clangd"
 g rebase -i
 head events.json
 cat events.json| wc -l
-cd .cache
 rm events.json
 bear intercept -- make
 cat events.json | wc -l
@@ -6315,13 +5861,10 @@ mv * ..
 rm team-loverboy
 rmdir team-loverboy
 cp .* ..
-cd ..
 rm -rf team-loverboy
 ls node_modules
 g add .eslintrc.json .gitignore
 g commit -m "initial commit"
-g push origin main
-v README.md
 next build
 npm build
 npm start
@@ -6332,7 +5875,6 @@ cd api
 v hello.ts
 v .env.local
 v .git
-v .gitignore
 v src/pages/api/hello.ts
 ls node_modules | wc -l
 npm dev
@@ -6405,30 +5947,24 @@ g add package*
 g add index.css
 g add src/pages/index.tsx
 curl -X POST -H "Content-Type: application/json" -d '{"prompt": "Hello"}' http://localhost:3000/api/openai
-npm install
 npm i react-google-maps
 curl -X POST -H "Content-Type: application/json" http://localhost:3000/api/maps/place_search
 npm  
-npm run dev
 sdd
 cd pintos-p1/pintos-raw/
 cp *.txt pintos-raw/src
 rm *.txt
 mv p1.sh pintos-raw/src/threads
-g add *
 g commit -m "move guides and grading script"
 ;qqqqqqqqqqqq
 \:::::::::::::::::::::::::::::::::::::::::::q
-;q
 \:qqqqqqqqqqqqqqqqqqqq
 v guide-p1.txt 
 mkdir CMSC25300-Math_for_ML
-mkdir psets
 cp ../../STAT24500-Statistical_Methods_II/psets/template.tex .
 yay -Ss pygmentize
 yay -S python-pygments
 pip install pygmentize
-pip install --upgrade pip
 pip install Pygments
 pygmentize
 pygmentize -V
@@ -6473,7 +6009,6 @@ astyle --style=gnu threads/synch.c
 astyle --help | v
 astyle --style=gnu --indent=spaces=2 threads/synch.c 
 rm threads/*.orig
-s
 v pset1-1e.py
 python pset1-1e.py
 v pset1-2g.py
@@ -6532,7 +6067,6 @@ g stauts
 g push origin drewvlaz:master
 yay -Ss kraken
 yay -S gitkraken
-cd Dev
 git clone https://github.com/dracula/gitkraken.git
 cd gitkraken
 cp dracula-theme.jsonc ~/.gitkraken/themes
@@ -6601,7 +6135,6 @@ cd $(cat ~/.curQ)
 which dir
 dirs
 which dirs
-cd -
 cd +
 popd
 pushd
@@ -6634,11 +6167,9 @@ tlist
 diff template.tex ~/.config/zsh/templates/pset.tex
 diff template.tex ~/.config/zsh/templates/pset.tex - y
 diff template.tex ~/.config/zsh/templates/pset.tex -y
-cl
 touch 2.Rmd
 cd CMSC25300-Math_for_ML
 v template.tex
-v pset1.tex
 mv images/0000b4.png images/1-6a.png
 v VlasnikDrewPset8.tex
 v VlasnikDrewPset7.tex
@@ -6667,8 +6198,6 @@ z-h
 z -h
 z --help
 zoxide add .
-ec
-sc
 z math
 z CM
 zoxide remove .
@@ -6681,7 +6210,6 @@ z HW2
 cd ~/Downloads
 mv Rec\ Letter.docx Letter\ of\ Reccomendation.docs
 mv Letter\ of\ Reccomendation.docs Letter\ of\ Reccomendation.docx
-tmu
 v 2-4a.py
 python 2-4a.py
 g branch list
@@ -6693,9 +6221,7 @@ bat exception.c
 bat exception.c -A
 man 
 bat exception.c -H 30:40
-man bat
 bat --list-themes
-bat --list-themes | less
 g branch drewvlaz
 g pull origin SystemCall:drewvlaz
 cd ../filesys
@@ -6715,7 +6241,6 @@ python -c "print(1024**2)"
 python -c "print(2**20)"
 sta
 pset 2
-cp pset1.tex pset2.tex
 g pop
 tkill
 mv pintos-files-p2.png ../../../CMSC23000-OS/
@@ -6726,7 +6251,6 @@ ls ../../..
 ls ../../../..
 v userprog/userprog.tmpl
 cd chirc
-cd src
 v dispatch.h
 mv userprog/userprog.tmpl DESIGNDOC
 mv DESIGNDOC userprog/DESIGNDOC
@@ -6738,9 +6262,6 @@ g commit -m "finish setup_stack ()"
 g add userprog/*.c
 g commit -m "comment setup_stack ()"
 mv ../../CMSC25300-Math_for_ML/psets/images/rho_vs_a.png .
-python 
-v pset2.tex
-sl
 g add userprog/p2.sh
 g commit -m "begin process_Wait"
 g commit -m "fix process_wait"
@@ -6749,7 +6270,6 @@ g commit -m "fix output for tests"
 r
 which r
 cd MATH18400-Mathematical_Methods
-google *.pdf
 cd Year2/Spring
 cd CMSC27200-Theory_of_Algorithms
 cd pS
@@ -6758,7 +6278,6 @@ g diff HEAD~4 HEAD
 g diff HEAD~3 HEAD
 cd pintos-raw/src/
 cd pintos-raw/src
-ll
 kk
 v chitcpd/tcp.c
 g commit -m "user addr"
@@ -6795,19 +6314,13 @@ g checkout drewvlaz
 g reset --hard HEAD~3
 g pull origin master:drewvlaz
 g push origin drewvlaz
-cp pset1.tex pset3.tex
 v STAT245_cheatsheet.tex
 google STAT245_cheatsheet.pdf
 htoppppp
-fetch
-neofetch
 lfcd
-hb
 which stat
 which ide
-v pset3.tex
 v data/ozonetreat.txt
-cd psets
 python pset4.py
 yay -Ss telegram
 yay -S telegram
@@ -6816,13 +6329,10 @@ diff drewvlaz
 VB
 v README-p3-guide.desc
 cp ../../../../pintos-p2/pintos-raw/src/cp-to-vm.sh ../
-pwd
 pwd | toclip
-ls images
 google images/4-Chi-Squared\ Distribution\ \(df=2\)100.png
 rm 4-Chi-Squared\ Distribution\ \(df=2\)*
 v 4-Chi-Squared\ Distribution\ \(df=2\)100.png
-randp .
 rm *.pdf
 cd images
 mv ~/*.png .
@@ -6830,8 +6340,6 @@ ls ~/
 mv ../pset3.Rmd .
 head data/hwk4-1.data.txt
 mv ~/rat_boxplot.png ./images
-cp pset1.tex pset4.tex
-v pset4.tex
 aljfds
 rm pset4.tex
 google pset4.pdf
@@ -6845,7 +6353,6 @@ ls userprog
 cd ../../..
 ../userprog
 rm compile_commands.json
-v Makefile
 cd ../vm
 v Make.vars
 make | toclip
@@ -6877,15 +6384,12 @@ depmod -avn | grep extra
 sudo depmod -a
 sudo depmod -A
 sudo pacman -S linux
-v /etc/pacman.d/mirrorlist
 v /etc/pacman.d/mirrorlist.pacnew
 sudo v /etc/pacman.d/mirrorlist.pacnew
 yay -Syy
 yay -Syu
 sudo modprobe vboxnetflt vboxnetadp vboxdrv
 modinfo -n vboxdrv
-dmesg
-sudo dmesg
 yay -Ss
 man yay
 pkglis
@@ -6894,7 +6398,6 @@ pacman -Q
 pacman -Q virtual
 pacman -Q | grep virtual
 modprobe vboxdr
-sudo pacman -Syyu
 yay -Ss dkms
 yay -Ss virtualbox | grep dkms
 yay -Ss virtualbox-host-dkms
@@ -6935,7 +6438,6 @@ g add p3.sh vm/DESIGNDOC
 g commit -m "add grading script and design doc"
 g commit -m "it builds now"
 v userprog/exception.c
-make
 v Makefile.build
 g commit -m "add rest of guides except thread.h"
 \:
@@ -7000,15 +6502,11 @@ g commit -m "pass merge-seq and some other tests"
 g commit -m "comment out prints"
 cp pset1.tex pset5.tex
 v data/labs.txt
-cd data
 ls labs.txt
 cat labs.txt
-ls data
 v data/poison.txt
-make clean
 cd vm
 g commit -m "pass all tests"
-v pset5.tex
 g commit -m "remove some prints"
 g push origin fml
 cp ../../../pintos-p2/pintos-raw/src/tests .
@@ -7018,13 +6516,9 @@ v data/table.txt
 cat data/table.txt| toclip
 g push origin master:fml
 cat data/table.txt
-g commit -m "formatting"
 g checkout fml
 g push origin fml:master
 v userprog/process.c
-v resume.tex
-jupyter notebook
-pip install numpy
 cp pintos-p2 pintos-p4
 g add pintos-p4/
 g commit -m "add p4 files from p2"
@@ -7035,9 +6529,7 @@ chmod +x VirtualBox-7.0.8-156879-Linux_amd64.run
 ./VirtualBox-7.0.8-156879-Linux_amd64.run
 sudo ./VirtualBox-7.0.8-156879-Linux_amd64.run
 sudo /sbin/vboxconfig
-cd Downloads
 ls | grep vm.ova
-cd VirtualBox\ VMs
 cd CMSC230-pintos
 v ~/.ssh/known_hosts
 scp -P 3022 .zshrc student@127.0.0.1:~/
@@ -7049,32 +6541,20 @@ scp -P 3022 -r ~/.config/zsh/ student@127.0.0.1:~/.config/
 scp -P 3022 -r /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh student@127.0.0.1:~/
 scp -P 3022 -r .vimrc student@127.0.0.1:~/
 cp pset1.tex pset6.tex
-mount
 stat
-v pset6.tex
 mv ~/*.png ./images
 g branch -d list
 g branch --list
 v filesys/inode.h
 cp ../../../pintos-p3/pintos-raw/src/cp-to-vm.sh .
 be
-g reset --soft HEAD~1
 g branch files
 g commit -m "guides for inode.*"
 g push -f origin master
-sd
 cp pset1.tex pset7.tex
-v pset7.tex
-python pset7.py
-v
-v 
-tat
-la
 cd .tmux
-cd plugins
 cd tmux-onedark-theme
 v tmux-onedark-theme.tmux
-python
 g add -iu
 g commit -m "progress on inode"
 g commit -m "almost done with inode"
@@ -7097,7 +6577,6 @@ v userprog/syscall.c
 ls ~/.scripts
 v ~/.scripts/debug-sess
 cd .scripts
-cd .config
 scp -P 3022 -r debug-sess student@127.0.0.1:~/.scripts
 scp -P 3022 -r tmux/ student@127.0.0.1:~/.config
 scp -P 3022 -r tmux/* student@127.0.0.1:~/.config/tmux
@@ -7124,10 +6603,8 @@ cat tests.txt | grep rmdir
 g commit -m "30 failing"
 g push origin masert
 g checkout files
-g push
 g pull origin files
 g rebase -i master
-g log
 g push origin master:files
 cat tests.txt | grep tree
 cat tests.txt | grep mk-tree
@@ -7143,10 +6620,8 @@ g commit -m "27 failing"
 cat tests.txt | grep syn
 cat tests.txt | grep syn-remove
 g commit -m "26 failing"
-g pull origin master
 v filesys/inode.c
 ./
-g diff --staged
 cat tests.txt | grep syn-rw
 ./c
 v userprog/syscall.h
@@ -7163,37 +6638,25 @@ cat tests.txt | grep rm-parent
 cat tests.txt | grep vin
 cat tests.txt | grep vine
 v cp-to-vm.sh
-g pull
 g pull origin vine
-g stash pop
 ssh drewvlaz@linux6.cs.uchicago.edu -t zsh
-ssh drewvlaz@linux6.cs.uchicago.edu
-g stash
 g commit -m "merge"
 g checkout master
-g status
 v filesys/DESIGNDOC
 VBoxManage startvm "CMSC230-pintos" --type headless
 ide os
 ssh -p 3022 student@127.0.0.1
-g diff
-g add -u
 g commit -m "design doc"
-g push origin master
 v filesys/filesys.c
 g checkout vine
 ./ 
 ./cp-to-vm.sh
-\:Q
-\:q
-yay  
 yay -Ss amazon chime
 pkglist
 yay -Q
 yay -Q --user drewvlaz
 yay -Q --owned --user drewvlaz
 yay -Qqe
-se
 yeet microsoft-edge-stable-bin
 yeet gitkraken
 yeet raindrop
@@ -7209,7 +6672,6 @@ cd .cache/yay/
 rm -rf gitkraken microsoft-edge-stable-bin raindrop
 du -h -d 3 | grep G
 cd /var/cache
-du -h
 cd lib/flatpak
 cd repo/objects
 ls 0a
@@ -7219,33 +6681,1601 @@ rm -rf docker
 sudo rm -rf docker
 rm -rf flatpak
 sudo rm -rf flatpak
-...
 cd lib
-..
 cd usr/lib
-cd var/cache
 cd pacman/pkg
 ls | less 
 man du
-cd
-cd 
-cd /
-sudo du -h -d 2 | grep G
 cd /usr/share
 yeet emacs
 rm -rf emacs
 sudo rm -rf emacs
-du -h -d 2 | grep G
 yeet wireshark-cli
-df -h
-htop
-yay
-cd Dev/ray-tracer
 ed
-tmux
-yay --noconfirm
 le
+cd Dev/dotfiles
+.scripts/syncdots
+mv ray-tracer ray-tracer-challenge
+cd ray-tracer-challenge
+cp ../Geometry.* .
+v Geometry.
+v Geometry.c
+v Geometry.h
+mv Geometry.h tuples.h
+mv Geometry.cpp tuples.cpp
+v tuples.cpp
+mkdir test
+sl
+rm a.out
+cmake CMaketLists.txt
+ls build
+rmdir build
+cmake --build .
+make all
+cd src/
+v src/main.cpp
+./ray-tracer-challenge
+rm cmake_install.cmake CMakeCache.txt CMakeFiles ray-tracer-challenge
+mkdir build
+v .gitignore
+bulid
+rm *
+rm -rf CMakeFiles
+cmake ..
+cmake .
+rm ray-tracer-challenge
+make clean
+./bin/ray-tracer-challenge
+ctext
+v hello_test.cc
+mkdir features
+touch tuples_test.cpp
+cp ../../src/main.cpp tuples_test.cpp
+v CMakeLists.txt
+cd bulid
+v Makefile
+v roadtrip.py
+cd Dev/ray-tracer
+v src/
+rm Geometry.cpp Geometry.h
+cmake
+cd ..
+l
+lajfd
+ajfdslk
+lakjdsf
+make && ctest
+ctest
+which latexmk
+yay -S latexmk
+bibtex
+bibtex -verbose -file-line-error -synctex=1 -interation=nonstopmode
+bibtex -file-line-error -synctex=1 -interation=nonstopmode
+bibtex -synctex=1 -interation=nonstopmode
+bibtex -interation=nonstopmode
+bibtex resume.tex
+bibtex resume
+pdflatex
+pdflatex -verbose -file-line-error -synctex=1 -interation=nonstopmode
+pdflatex -file-line-error -synctex=1 resume.tex
+yay -Ss latexmk
+yay -S texlive-binextra
+latexmk
+man latexmk
+latexmk --help
+latexmk --help | less
+rm resume.aux
+g add -u
+texclean
+rm *.aux *.bbl *.blg *.fdb_latexmk *.fls *.log *.out *.log *.gz
+sudo systemctl start windscribe.service
+ws account
+ws --help
+ws connect --help
+ws loc
+ws locations
+ws locations | less
+sudo systemctl stop systemd-resolved
+sudo systemctl disable systemd-resolved
+sudo systemctl restart windscribe
+wsc
+wsc US-W
+sudo systemctl enable systemd-resolved
+sudo systemctl start systemd-resolved
+du -h /
+du -h / | grep G
+cd /usr
+cd share
+du -h -d 2 / | grep G
+ide rtc
+tmud
+cd /
+ls bin
+du -h bin
+du -h dev
+du -h home
+du -h -d 2 etc
+du -h -d 2 etc | grep G
+sudo du -h -d 2 etc | grep G
+sudo du -h -d 2 mnt | grep G
+sudo du -h -d 2 usr | grep G
+sudo du -h -d 2 root | grep G
+sudo du -h -d 2 run | grep G
+sudo du -h -d 2 tmp | grep G
+sudo du -h -d 2 var | grep G
+cd var/cache
+du -h -d 2 opt | grep G
+sudo du -h -d 2 opt | grep G
+sudo du -h -d 2 | grep G
+cd pacman
+cd pkg
+yay -Sc
+rm -rf anomaly_examples/physionet.org
+cd agitation_study
+du -h -d 2 | grep G
+rm -rf data dataset dataset_controls zipped_data
+g commit -m "Amazon internship"
+g push
+bluetoothctl
+yay -Ss obins
+yay -S obinskit
+sudo v /etc/udev/rules.d
+cd /etc/udev/rules.d
+sudo v obinslab-starter.rules
+sudo udevadm control --reload-rule
+g clone https://github.com/finkrer/KeyboardChatteringFix-Linux
+cd KeyboardChatteringFix-Linux
+python -m venv
+ls /dev/input/by-id
+v chattering_fix.service 
+yay -S virtualenv
+bat re
+pip 
+pip in 
+pip install -r requirements.txt
+yay -S python-libevdev
+bat requirements.txt 
+yay -S python-inquirer
+sudo python src/__main__.py -k usb-OBINS_OBINS_AnnePro2_00000000000000000000000000000000-event-kbd
+ls src
+sudo src/__main__.py -k usb-OBINS_OBINS_AnnePro2_00000000000000000000000000000000-event-kbd
+sudo src/__main__.py -k usb-OBINS_OBINS_AnnePro2_00000000000000000000000000000000-event-kbd -m src
+sudo python src/__main__.py -k usb-OBINS_OBINS_AnnePro2_00000000000000000000000000000000-event-kbd -m src
+ls sys
+cat sys
+head sys
+head chattering_fix.service
+mv src/__main__.py .
+sudo python __main__.py -k usb-OBINS_OBINS_AnnePro2_00000000000000000000000000000000-event-kbd -m src
+sudo python __main__.py -k usb-OBINS_OBINS_AnnePro2_00000000000000000000000000000000-event-kbd
+eixt
+yay -Ss blender
+mkdir optiver
+cd optiver
+v theo.py
+python theo.py
+yaya
+yay -y
+sudo systemctl stop bluetooth.service
+sudo systemctl start bluetooth.service
+exitr
+sudo rm /var/lib/pacman/db.lck
+mkdir headlands
+cd headlands
+v 42.cpp
+g++ 42.cpp && ./a.out
+cd Documents/College
+mkdir Year4
+ls Year3
+mkdir Year4/Autumn
+ls Year3/Autumn
+mkdir Year4/Autumn/STAT27850-Mulitple_Testing
+cp ../../../../Year3/Spring/STAT24500-Statistical_Methods_II/psets/pset5.tex .
+mv pset5.tex pset1.tex
+mkdir STAT224-Regression_Analysis
+V
+v pset1.
+cd STAT224-Regression_Analysis
+cp data/NLSY.txt .
+rlwrap 
+yay -S rlwrap
+yay -S sml
+rlwrap sml
+sml
+smlnj
+cat scan.sml
+google hw1.pdf
+ssh drewvlaz@linux6.cs.uchicago.edu
+ssh drewvlaz@cs141-9.cs.uchicago.edu
+ssh navarre@cs141-9.cs.uchicago.edu
+cd Dev/optiver
+v oa.py
+v filesys/directory.c
+gs
+g s
+rm __MACOSX
+g init
+cd hw/hw1/
+g commit -m "initial"
+g commit -m "complete implementation"
+git remote add origin git@github.com:drewvlaz/CS221.git
+mv hw/hw1 .
+g add hw1
+g commit -m "move hw1 folder"
+wget https://www.stat.uchicago.edu/~yibi/s224/data/fevdata.txt
+mkdir projs
+cd projs
+cp ../psets/pset1.tex .
+mv pset1.tex proj1.tex
+ls hw
+rm -rf hw
+ls hw1
+g commit -m "fix eval"
+g add hw
+g commit -m "remove"
+cd hw1
+g commit -m "minor fixes"
+g add *
+g commit -m "error msg"
+google hw2-template.pdf
+mlton
+yay -S mlton
+v +SMLCheckHealth
+ls out
+google out/*.pdf
+cp hw8.tex t.tex
+cp pset1.tex t.tex
+v t.tex
+mv STAT27850-Mulitple_Testing STAT27850-Multiple_Testing
+wget http://www.stat.uchicago.edu/~yibi/s224/data/food.txt
+wget http://www.stat.uchicago.edu/~yibi/s224/data/TE.txt
+wget http://www.stat.uchicago.edu/~yibi/s224/data/EE.txt
+g add hw2
+g commit -m "hw2"
+cd hw2
+g add typecheck.sml
+g commit -m "typechecking"
+g commit -m "finish implementation"
+mkdir learn-cpp
+cd learn-cpp
+g++ max_template.cpp&& ./a.out
+v max_template.cpp
+v .ssh/known_hosts
+v overload.cpp
+g++ overload.cpp && ./a.out
+google ~/Documents/College/Internships/Resume/resume.pdf
+google Pset2-1.pdf
+google hw2-evaluation.pdf
+google hw2-typing.pdf
+g commit -m "add tests"
+google hw3.pdf
+scp .vimrc drewvlaz@midway2.rcc.uchicago.edu:~/
+cd pintos-raw/src/threads
+v thread.c
+g++ -v
+dig 
+digg
+yay -S dig
+yay -S digg
+rlw
+v constexpr.cpp
+rab
+i swear
+g clone git@github.com:zeroknowledgediscovery/fnet_requests.git
+g clone git@github.com:zeroknowledgediscovery/Cynet.git
+cd cynet
+v cynet.py
+cd fnet_requests
+g++ constexpr.cpp && ./a.out
+cd Dev/learn-cpp
+v basic_c.cpp
+g++ basic_c.cpp && ./a.out
+v lru.cpp
+g++ lru.cpp && ./a.out
+cd Cynet
+pip3 install pandas
+yay -S python-virtualenv
+v .journal
+virtualenv -h
+cd ../fnet_requests/CCH_live
+virtualenv create venv
+source ven 
+pip3 install yaml
+pip install --upgrade pip
+pip install yaml
+pip install pyyaml
+pip install haversine
+pip install sodapy
+pip install joblib
+pip install matplotlib
+pip install scipy numpy
+df - h
+pip install seaborn pylab
+pip install seaborn
+pip install geopy
+pip install geopandas
+v setup.py
+pip install contextily
+ls data
+v data/CCH.csv
+cd split
+ls | v
+ll | wc -l
+du -h CCH.p
+v CCH.p
+rm -rf split
+v .config/tmux/tmux.conf
+v ~/.config/tmux/tmux.conf
+rm -rf triplet
+rmdir split
+cp fnet_script.py j
+mv j cp_fnet.py
+v cp_fnet.py
+v ../Boston/config.yaml
+python3 cp_fnet.py
+v VIOL.csv
+python3 fnet_script.py
+ls triplet
+ls models | wc -l
+python3 digisimul.py
+v desugar.sml
+ssh-copy-id -i ~/.ssh/id_ecdsa drewvlaz@midway2.rcc.uchicago.edu
+ls .ssh
+cat .ssh/id_ecdsa
+cat .ssh/id_ecdsa.pub
+head VIOL.csv
+head VIOL.csv -n1
+head VIOL.csv -n2
+bat fnet_script.py -n 1
+bat fnet_script.py -H 20:25
+google proj1.pdf
+v ../psets/pset2.tex
+v temp.py
+python temp.py
+google hw4.pdf
+v cbv.sml
+g commit -m "finish implementation; need to test still"
+../fnet_requests/CCH_live
+ls split | grep 28.5833#28.598#-106.036#-106.0292#p0-p1-p10-p11-p12-p13-p14-p15-p16-p17-p18-p19-p2-p20-p21-p22-p23-p24-p3-p4-p5-p6-p7-p8-p9
+head data/CCH.csv
+../Boston
+v fnet_script.py
+source ../CCH_live/venv/bin/activate
+python fnet_script.py
+rm PROP.csv VIOL.csv
+head PROP.csv
+ls split
+ll split
+ls models
+scp VIOL.csv PROP.csv drewvlaz@midway2.rcc.uchicago.edu:~/fnet_requests/CCH_live
+g commit -m ""
+g commit -m "formatting"
+google resume.pdf
+mv proj1.tex data_analysis.tex
+cp data_analysis.tex proj1.tex
+sxiv my_plot.png
+\:Q
+sd 
+v proj1.tex
+v full-beta.sml
+../hw4
+../hw3
+v SweetlCode/sub.sw
+tmu
+v src/features/tuples.cpp
+cmake -H. -Bbuild
+./build/bin/tuple_test
+v typecheck.sml
+rlw 
+../hw2
+v t.txt
+mv t.txt t.py
+v t.py
+rm t.py
+g commit -m "finish"
+g add README check.sig hw4.cm hw4-typing.pdf
+g commit -m "metadata"
+du -h -d 1
+du -h .RDataTmp
+du -h .Rhistory
+pkill rstudio
+la ..
+la ...
+la ../..
+rm .RDataTmp
+v hw2.tex
+v hw3.tex
+wget https://www.stat.uchicago.edu/~yibi/s224/data/mammals.txt
+g add resume.tex resume.pdf
+g commit -m "updatees"
+wget https://www.stat.uchicago.edu/~yibi/s224/data/P151-153.txt
+yay -S gcc-fortran
+google hw5.pdf
+vim
+vimtutor
+rm -rf __MACOSX
+cd hw5
+eit
+v ../projs/proj1.tex
+cd hw4
+g commit -m "record check + type check"
+v test.sml
+rl
+v subst.sml
+g commit -m "edits + eval"
+g add *.sml
+rlwrap smlnj
+g add test.sml
+g restore hw5_test.sml
+g restore --staged hw5_test.sml
+g commit -m "fixes"
+v researchreport.tex
+g++ propt.cpp&& ./a.out
+wget http://www.stat.uchicago.edu/~yibi/s224/data/brake.txt
+wget http://www.stat.uchicago.edu/~yibi/s224/data/fatherson.txt\
+
+wget http://www.stat.uchicago.edu/~yibi/s224/data/P229-30.txt\
+
+google hw6.pdf
+mkdir alum-finder
+cd alum-finder
+venv activate
+./venv/bin/activate
+venv/bin/activate
+pip install beautifulsoup4
+pip install openpyxl
+pip install requests
+pip install selenium
+pip install numpy
+sudo pacman -Syyu
+yeet jre-openjdk-headless
+yeet jre-openjdk
+bfg
+man bfg
+yeet bfg
+yay -S bfg
+v cred.py
+v REad
+v README
+mkdir new-grad-roles
+cd new-grad-roles
+v companies.txt
+../alum-finder
+python3 find.py
+wget http://www.stat.uchicago.edu/~yibi/s224/data/globalwarm.txt
+wget http://www.stat.uchicago.edu/~yibi/s224/data/skincancer.txt
+git clone https://github.com/substrate-developer-hub/utxo-workshop.git
+rm -rf Dheo_1112
+ls ideation
+ls Personal
+ls Personal-Projects
+ls headlands
+cd utxo-workshop
+git fetch origin workshop:workshop\
+
+g checkout workshop
+cargo test -p utxo-runtime\
+
+cargo test -p utxo-runtime
+v runtime/src/utxo.rs
+ls misc
+ls research-report-latex
+head KOI.csv
+mkdir 2023
+v 1-1.txt
+cp ../2022/1.cc .
+v 1.cc
+ls 1-1-ex.txt
+cat 1-1-ex.txt
+cp 1-1.cc 1-2.cc
+g++ 1-1.cc && ./a.out
+cd Dev/AoC
+cd 2023
+v 1-2.txt
+g++ 1-2.cc && ./a.out
+wc -l 1-1.txt
+g++ -wall 1-2.cc && ./a.out
+g++ -Wall 1-2.cc
+g++ -Wall 1-2.cc && ./a.out
+google hw7.pdf
+cd psets
+rm .RData .RDataTmp .RDataTmp1 .Rhistory
+rm -rf KeyboardChatteringFix-Linux
+sudo rm -rf KeyboardChatteringFix-Linux
+ls meta_hackathon
+v meta_hackathon/rollercoasters.cpp
+cd research-report-latex
+v 2-1.txt
+cp 1-1.cc 2-1.cc
+v 2-1.cc
+g++ -Wall 2-1.cc && ./a.out
+cp 1-1.cc 3-1.cc
+head 3-1.txt
+g++ -Wall 3-1.cc && ./a.out >> out.txt
+g++ -Wall 3-1.cc -O3 && ./a.out
+g++ -Wall 3-1.cc -O1 && ./a.out
+g++ -Wall 3-1.cc -O2 && ./a.out
+./a.out
+python3 3-1.py
+time python3 3-1.py
+time ./a.out
+mkdir ais
+cd ais
+v cred.txt
+cd AoC/2023
+g++ -Wall 3-1.cc && ./a.out
+python3 j.py
+v 3-1.cc
+../hw5
+v eval.sml
+hash
+hashbang
+cat .bashrc
+cat README
+head README
+less README
+neofetch
+fetch
+google
+ls temp.py
+grep temp.py "math"
+grep "math" temp.py
+cat temp.py | grep math
+cat temp.py | grep sqrt
+cat temp.py
+cat temp.py | wc -l
+cd Dev/alum-finder
+v scraper.py
+python3 scraper.py
+tmus
+cd Dev/AoC/2023
+v 4-1.txt
+v 4-1.py
+sou 
+python3 4-1.py
+v http-auth.cap
+python unhide.py
+pip install PIL
+v unhide.py
+pip install pillow
+python unhide.py FlagTime.bmp
+python unhide.py "./FlagTime.bmp"
+curl 'https://hack.ainfosec.com/challenge/submit-answer/' \\
+  -H 'authority: hack.ainfosec.com' \\
+  -H 'accept: application/json, text/javascript, */*; q=0.01' \\
+  -H 'accept-language: en-US,en;q=0.9,ko-KR;q=0.8,ko;q=0.7' \\
+  -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \\
+  -H 'cookie: csrftoken=xIJ32AzAPJtrOGWGxV3mSTLnGtR7X9go; sessionid=ouwr2816mxlj8qjwhzg0v59t8bcar60t' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://hack.ainfosec.com' \\
+  -H 'referer: https://hack.ainfosec.com/' \\
+  -H 'sec-ch-ua: "Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'sec-ch-ua-platform: "Linux"' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-site: same-origin' \\
+  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36' \\
+  -H 'x-requested-with: XMLHttpRequest' \\
+  --data-raw 'csrfmiddlewaretoken=msnLRHuWp4KWqzdcgUiQGm0dDmFteOMhJ0WEJ7Tm4D3d45ZIDFb2o5Bq9Fmq1NSv&challenge_id=weird_input&answer=flag{fl0@t=d0/Dennis=Ritchie*mainframe}' \\
+  --compressed
+curl 'https://hack.ainfosec.com/challenge/get-challenge/paid_content/' \\
+  -H 'authority: hack.ainfosec.com' \\
+  -H 'accept: application/json, text/javascript, */*; q=0.01' \\
+  -H 'accept-language: en-US,en;q=0.9,ko-KR;q=0.8,ko;q=0.7' \\
+  -H 'cookie: csrftoken=xIJ32AzAPJtrOGWGxV3mSTLnGtR7X9go; sessionid=ouwr2816mxlj8qjwhzg0v59t8bcar60t' \\
+  -H 'dnt: 1' \\
+  -H 'referer: https://hack.ainfosec.com/' \\
+  -H 'sec-ch-ua: "Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'sec-ch-ua-platform: "Linux"' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-site: same-origin' \\
+  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36' \\
+  -H 'x-requested-with: XMLHttpRequest' \\
+  --compressed
+curl 'https://hack.ainfosec.com/challenge/submit-answer/' \\
+  -H 'authority: hack.ainfosec.com' \\
+  -H 'accept: application/json, text/javascript, */*; q=0.01' \\
+  -H 'accept-language: en-US,en;q=0.9,ko-KR;q=0.8,ko;q=0.7' \\
+  -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \\
+  -H 'cookie: csrftoken=xIJ32AzAPJtrOGWGxV3mSTLnGtR7X9go; sessionid=ouwr2816mxlj8qjwhzg0v59t8bcar60t' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://hack.ainfosec.com' \\
+  -H 'referer: https://hack.ainfosec.com/' \\
+  -H 'sec-ch-ua: "Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'sec-ch-ua-platform: "Linux"' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-site: same-origin' \\
+  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36' \\
+  -H 'x-requested-with: XMLHttpRequest' \\
+  --data-raw 'csrfmiddlewaretoken=ugGsIbYPDN74uepXAQkyp3m5iKBUDWmDROflABnfimql8KbtXBdK7MXiO3iRqVsR&challenge_id=button_clicker&answer=1000000' \\
+  --compressed
+curl 'https://hack.ainfosec.com/challenge/submit-answer/' \\
+  -H 'authority: hack.ainfosec.com' \\
+  -H 'accept: application/json, text/javascript, */*; q=0.01' \\
+  -H 'accept-language: en-US,en;q=0.9,ko-KR;q=0.8,ko;q=0.7' \\
+  -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \\
+  -H 'cookie: csrftoken=xIJ32AzAPJtrOGWGxV3mSTLnGtR7X9go; sessionid=ouwr2816mxlj8qjwhzg0v59t8bcar60t' \\
+  -H 'dnt: 1' \\
+  -H 'origin: https://hack.ainfosec.com' \\
+  -H 'referer: https://hack.ainfosec.com/' \\
+  -H 'sec-ch-ua: "Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"' \\
+  -H 'sec-ch-ua-mobile: ?0' \\
+  -H 'sec-ch-ua-platform: "Linux"' \\
+  -H 'sec-fetch-dest: empty' \\
+  -H 'sec-fetch-mode: cors' \\
+  -H 'sec-fetch-site: same-origin' \\
+  -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36' \\
+  -H 'x-requested-with: XMLHttpRequest' \\
+  --data-raw 'csrfmiddlewaretoken=ugGsIbYPDN74uepXAQkyp3m5iKBUDWmDROflABnfimql8KbtXBdK7MXiO3iRqVsR&challenge_id=button_clicker&answer=10000000' \\
+  --compressed
+v babysfirst
+chmod +x babysfirst
+./babysfirst
+gdb babysfirst
+yay -S r-profvis
+python3 propt.py
+cd src
+v dispatch.c
+../projs
+head day_wise.csv
+g++ propt.cpp && ./a.out
+exi
+v propt.cpp
+mkdir thoe
+mv thoe theo
+cd theo
+virtualenv venv
+pip install tqdm
+pip install pandas
+source venv/bin/activate
+ipython kernel install --user --name=venv
+deactivate
+python3 -m pip install tqdm
+yay -S python-tqdm
+yay -S python-pandas
+../AoC/2023
+v 1-2.cc
+v input001.txt
+fdis 
+fdisk -l
+mount
+cd /mnt
+sudo fdisk -l
+lsusb
+dmesg
+sudo dmesg
+tail -f /var/log/{kernel,dmesg,syslog} | tee some_file_to_print_to.txt
+cat some_file_to_print_to.txt
+rm some_file_to_print_to.txt
+g pull origin master
+../fnet_requests
+g status *.py
+cd CCH_live
+v digisimul.py
+g diff digisimul.py
+g diff fnet_script.py
+g diff
+ssh drewvlaz@midway2.rcc.uchicago.edu
+v generate_sim.py
+g diff generate_sim.py
+v cynet/cynet.py
+python cynet/cynet.py
+g add cynet/cynet.py
+g push origin master
+g status
+g add generate_sim.py
+rm .git/index.lock
+g diff --staged
+g reset --soft HEAD~1
+g log
+g stash
+g pull
+g stash pop
+g add CCH_live/generate_sim.py
+g commit -m "use hashed column names"
+g push origin main
+cd Dev/ray-tracer-challenge
+v src/features
+cd test
+cd features
+v tuples_test.cpp
+cd build
+make && ./bin/tuple_test
+./bin/hello_test
+./bin/tuple_test
+make
+cmake -H. -Bbuild && ./build/bin/tuple_test
+cat id_ecdsa.pub
+cat id_ecdsa.pub | toclip
+mkdir Winter
+cd Winter
+mkdir STAT243-Numerical_Lin_Alg
+mkdir CMSC232-Computer_Security
+mkdir CMSC254-Machine_Learning
+cd STAT243-Numerical_Lin_Alg
+cp ../../Autumn/STAT27850-Multiple_Testing/psets/pset1.tex .
+head assigned-vms.csv
+grep drewvlaz assigned-vms.csv
+cp ../../STAT243-Numerical_Lin_Alg/pset1.tex .
+scp grant-cropped.jpg drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/
+scp ~/.vimrc drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/
+vim touctou.sh
+mv pset1.tex assignment1b.tex
+cp assignment1b.tex assignment1a.tex
+v touctou.sh
+mv touctou.sh toctou.sh
+sxiv grant-cropped.jpg
+vim toctou.sh
+v toctou.sh
+vim run_append.py
+v run_append.py
+cat toctou.sh
+cat run_append.py
+yay -Ss vscode
+yay -Ss codium
+yay -S python-matplotlib
+yay -S python-sklearn
+yay -Ss sklearn
+yay -Ss scikit
+yay -S python-scikit-learn
+mkdir psets
+mv * psets
+mv psets ..
+mv * ../psets
+mv ../psets .
+ls psets
+v assignment1a.tex
+mkdir ../tex
+mv * ../tex && mv ../tex .
+mv *.csv ..
+mv *.py *.sh ..
+ls ..
+cat assigned-vms-assignment2.csv| grep drewvlaz
+man cut
+cat assigned-vms-assignment2.csv| grep drewvlaz | cut -d ','
+cat assigned-vms-assignment2.csv| grep drewvlaz | awk -F
+cat assigned-vms-assignment2.csv| grep drewvlaz | awk -F {print $2}
+cat assigned-vms-assignment2.csv| grep drewvlaz | awk -F '{print $2}'
+cat assigned-vms-assignment2.csv| grep drewvlaz | awk -F, '{print $2}'
+scp ~/.vimrc drewvlaz@$(cat assigned-vms-assignment2.csv| grep drewvlaz | awk -F, '{print $2}'):~/
+cat ~/.tmux
+ls .tmux
+cd .config/tmux
+scp ~/.config/tmux/tmux.conf drewvlaz@$(cat assigned-vms-assignment2.csv| grep drewvlaz | awk -F, '{print $2}'):~/.tmux.conf
+chmod +x anyconnect-linux64-4.10.07073-core-vpn-webdeploy-k9.sh
+./anyconnect-linux64-4.10.07073-core-vpn-webdeploy-k9.sh
+yay -Ss cisco vpn
+openvpn
+openai
+sudo ./anyconnect-linux64-4.10.07073-core-vpn-webdeploy-k9.sh
+sudo arch -x86_64 installer -pkg "/Volumes/AnyConnect VPN 4.9.05042/anyconnect-macos-4.9.05042-core-vpn-webdeploy-k9.pkg" -target /
+cd /opt/cisco
+sudo rm -rf cisco
+openconnect
+openconnect --server vpn.uchicago.edu -u drewvlaz --passwd-on-stdin
+/opt/cisco/anyconnect/bin/vpnui
+yeet openconnect
+sudo bash ./anyconnect-linux64-4.10.07073-core-vpn-webdeploy-k9.sh
+rm -rf cisco
+sudo rm -rf /opt/cisco
+sudo rm /opt/.cisco/certificates/ca/VeriSignClass3PublicPrimaryCertificationAuthority-G5.pem
+sudo rm /usr/share/icons/hicolor/128x128/apps/cisco-anyconnect.png
+sudo rm /usr/share/icons/hicolor/48x48/apps/cisco-anyconnect.png
+yay -S cisco-anyconnect
+yay -S libwebkit2gtk
+yay -Ss webkit
+yay -Ss webkit2
+yay -Ss libwebkit2
+yay -S openconnect
+openconnect --server vpn.uchicago.edu -u drewvlaz -p notrightnowsaidDOTthecow@9600
+man openconnect
+openconnect --server vpn.uchicago.edu -u drewvlaz -p notrightnowsaidDOTthecow@9600 --useragent "AnyConnect Linux_64 4.7.00136"
+scp ~/.ssh/id_ecdsa drewvlaz@linux.cs.uchicago.edu
+scp ~/.ssh/id_ecdsa.pub drewvlaz@linux.cs.uchicago.edu:~/
+scp ~/.ssh/id_ecdsa drewvlaz@linux.cs.uchicago.edu:~/
+ssh drewvlaz@linux.cs.uchicago.edu
+ssh drewvlaz@linux1.cs.uchicago.edu
+scp ~/.ssh/id_ecdsa drewvlaz@linux2.cs.uchicago.edu:~/
+scp ~/.ssh/id_ecdsa.pub drewvlaz@linux2.cs.uchicago.edu:~/
+vim targets/target2.c
+v targets/target2.c
+cp assignment1b.tex assignment2.tex
+cd assignment2
+cd sploits
+rm -rf assignment2
+scp -r drewvlaz@10.135.166.29:~/assignment2 .
+tar -cvf sploits.tar sploit0.c sploit1.c sploit2.c sploit3.c sploit4.c
+vim sploit1.c
+ipython locate
+jupyter-themer
+jt 
+yay -Ss jupyterthemes
+yay -S jupyterthemes
+jt
+man jt
+v ~/.ipython
+jupyter notebook
+cd ~/.jupyter
+rm -rf custom
+vim jupyter_notebook_config.py
+ls nbconfig
+vim nbconfig/edit.json
+ls custom
+jupyter-theme 
+jupyter
+jupyter lab
+which google
+yay -Ss jupyterlab
+yay -Ss jupyterlab_darkside
+yay -Ss jupyterlab darkside
+yay -Ss jupyter darkside
+yay -Ss jupyter dark
+pip install jupyterlab_darkside_theme
+yay -S python-jupyterlab_darkside_theme
+yay -S python jupyterlab
+yay -Ss python jupyterlab
+yay -Ss jupyterlab theme
+jt -t grade3 -T -cellw 1300 -kl -N -ofs 11 -dfs 10 -f "firacode" -lineh 150
+v ~/.jupyter/custom/current_theme.txt
+yay -Ss jupyter
+yay -S jupyter
+google --force-device-scale-factor=2
+v ~/.config/google-chrome
+cp pset1.tex pset2.tex
+google pset1.pdf
+google HW1.pdf
+vim assignment2.tex
+cd ../assignment2
+cd targets
+cat target1.c | toclip
+v target1.c ../sploits/sploit1.c
+v target1.c
+ssh drewvlaz@10.135.166.29
+man strings
+python -c 'print hex(0xb7e97000 + 0x15ba0b)'
+python -c 'print(hex(0xb7e97000 + 0x15ba0b))'
+python -c "print(hex(0xb7e54da0 + 0x15ba0b))" 
+python -c "print(hex(0xb7e1a000 + 0x15ba0b))"
+cp ../../STAT243-Numerical_Lin_Alg/psets/pset1.tex .
+mv pset1.tex project1_report_vlasnik.tex
+mkdir ../p1
+mv * ../p1
+mkdir images
+mv p1 ..
+ls ../p1
+mv ../p1 .
+ls images
+sxiv images
+cd assignment2/sploits
+v sploit1.c
+v pset2.tex
+sxiv
+v assignment2.tex
+scp -r sploits.tar drewvlaz@linux2.cs.uchicago.edu:~/
+v mat.py
+v project1_report_vlasnik.tex
+sxiv images/1b-train-eval.png
+python mat.py
+y
+exirt
+exir
+cd assignment3/release
+v problem1.py
+python assignment3.py | v
+python assignment3.py | less
+python problem2_example.py
+cd Downloads/Stylish-2k/Stylish/im
+sxiv images/1b-train-eval_.png
+python assignment3.py | grep '3aa'
+cd .ssh
+ssh drewvlaz@linux2.cs.uchicago.edu
+vlc senior-day.mp4
+ffmpeg -ss 00:52:34 -t 00:30:00 -i input.avi -vcodec copy -acodec copy output1.avi
+vlc senior-day.mp4 &
+ffmpeg -ss 00:52:34 -t 01:02:00 -i senior-day.mp4 -vcodec copy -acodec copy senior-day-ww.mp4
+ffmpeg -ss 00:52:34 -t 00:09:30 -i senior-day.mp4 -vcodec copy -acodec copy senior-day-ww.mp4
+vlc senior-day-ww.mp4
+cp pset1.tex pset3.tex
+google HW3.pdf
+exig
+v mat.py 
+python pset3.py
+cd .vscode-oss
+cd extensions
+cat extensions.json
+pip3 install -U jupyterlab
+yay -S jupyterlab
+yay -S vscodium
+which python
+which python3
+python3 -v
+python3 -V
+pyenv versions
+python3.9
+yeet python3.9
+which python3.9
+cd /usr/bin
+ls | grep python
+pip cached purge
+pip cache purge
+yeet python39
+yay -S code
+yay -S ipykernel
+yay -Ss ipykernel
+yay -S python-ipykernel
+cd user
+pwd
+cd tex
+cp assignment2.tex assignment3.tex
+v assignment3.tex
+../assignment3
+cd release
+v assignment3.py
+python assignment3.py
+v pset3.py
+v pset3.tex
+yay -Ss visual-studio-code
+yeet code
+yay -S visual-studio-code-bin
+echo /usr/bin/zsh
+killall code
+killall vscode
+ps aux | grep -v code
+ps -ef | grep code
+head tranco-1m-2024-01-25.csv
+cat -n 100 tranco-1m-2024-01-25.csv
+man cat
+head -n 100 tranco-1m-2024-01-25.csv
+head -n 1000 tranco-1m-2024-01-25.csv
+head -n 1000 tranco-1m-2024-01-25.csv >> step0-topsites.csv
+cat tranco-1m-2024-01-25.csv| grep '000'
+cat tranco-1m-2024-01-25.csv| grep '000,'
+cat tranco-1m-2024-01-25.csv| grep '000,' >> step0-othersites.csv
+head step0-othersites.csv
+v tranco-1m-2024-01-25.csv
+rm step0*
+python 
+cd a4
+v step0.py
+python step0.py
+cat step0-othersites.csv
+cat step0-topsites.csv
+v \\.py
+mv \\.py step4-certexample.py
+v step4-certexample.py
+g clone git@github.com:freeCodeCamp/boilerplate-express.git
+rm -rf boilerplate-express
+g clone git@github.com:drewvlaz/boilerplate-express.git
+cd boilerplate-express
+v myApp.js
+g clone git@github.com:freeCodeCamp/boilerplate-npm.git
+cd boilerplate-npm
+g remote remove origin
+git remote add origin git@github.com:drewvlaz/boilerplate-npm.git
+g branch -h
+v package.json
+npm install
+npm run start
+yay -Ss gcloud
+yay -S google-cloud-cli
+gcloud 
+google-cloud-cli
+gloud
+sc
+gcloud init
+gcloud projects create boilerplate-npm-qre339
+gcloud run deploy --source
+gcloud run deploy
+gcloud run deploy --source .
+cp assignment2.tex assignment4.tex
+../a4
+scp -r step1-requestsexample.py drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4
+scp -r step1-seleniumexample.py drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4
+scp -r step2-requests.py drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4
+pip show pandas
+scp -r /usr/lib/python3.11/site-packages/pandas/ drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4
+google *.pdf
+v assignment4.tex
+wget -p www.google.com
+cd www.google.com
+google index.html
+find . -type f | wc -l
+ls images/branding
+ls images/branding/googlelogo/1x
+man find
+find www.google.com -type f | wc -l
+yay -S python-selenium
+v step1-seleniumexample.py
+wget https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/121.0.6167.85/linux64/chrome-linux64.zip
+unzip chrome-linux64.zip
+cd chrome-linux64
+./chrome
+wget https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/121.0.6167.85/linux64/chromedriver-linux64.zip
+rm -rf chrome-linux64.zip
+rm -rf chrome-linux64
+unzip chromedriver-linux64.zip
+scp step1-seleniumexample-forvms.py drewvlaz@cmsc232-26.c.cs.uchicago.edu:
+scp step1-seleniumexample-forvms.py drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4
+scp *.csv drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4
+cat tranco-1m-2024-01-25.csv | wc -l
+v step3-requests.py
+python step3-requests.py
+cp step3-requests.py step3-useragent.py
+python step3-useragent.py
+cat step0-topsites.csv | grep washington
+cat step0-topsites.csv | grep aol
+tail step0-topsites.csv
+cp step3-requests.py step3-selenium.py
+cat step1-seleniumexample-forvms.py >> step3-selenium.py
+cat step0-topsites.csv | grep sripe
+cat step0-topsites.csv | grep stripe
+cat step0-topsites.csv | grep attn
+cat step0-topsites.csv | grep hilton
+cat step0-topsites.csv | grep worldbank
+cat step0-topsites.csv | grep nba
+cat step0-topsites.csv | grep kaspi
+cat step0-topsites.csv | grep openstreet
+cat step0-topsites.csv | grep split
+cat step0-topsites.csv | grep tokyo
+cat step0-othersites.csv | grep sha
+tail step3-topsites-requests.csv
+cat step0-othersites.csv | grep tena
+scp step3-useragents.py drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4
+scp step3-useragent.py drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4
+cat step0-othersites.csv | grep elastic
+cat step0-othersites.csv | grep bean
+cat step0-othersites.csv | grep reg
+cat step0-othersites.csv | grep savemore
+cat step0-topsites.csv | grep reg
+cat step0-topsites.csv | grep staples
+cat step0-othersites.csv | grep paypal
+cat step0-othersites.csv | grep tjl
+cat step0-othersites.csv | grep login
+scp drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4/step3-othersites-requests.csv .
+python process.py | toclip
+scp step4-certexample.py drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4
+yay -S python-openssl
+yay -Ss openssl
+yay -Ss openssl python
+yay -S python-pyopenssl
+v process.py
+cat step0-topsites.csv | grep global
+python step1-seleniumexample.py
+scp drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4/step3-topsites-useragent.csv .
+cat step0-othersites.csv | grep ktg
+cat step0-othersites.csv | grep hotel
+cat step0-othersites.csv | grep flypas
+ll
+scp drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4/step3-othersites-useragent.csv .
+python step3-selenium.py
+python step4-certexample.py
+cat step3-topsites-requests.csv
+head step3-topsites-requests.csv
+scp step3-topsites-requests.csv drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4
+scp step3-selenium.py drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4
+cat step0-topsites.csv | grep spotify
+cat step0-topsites.csv | grep shopif
+cat step0-topsites.csv | grep naver
+cat step0-topsites.csv | grep cloudfl
+node --v
+node -v
+npm install npm@latest -g
+sudo npm install npm@latest -g
+cat step0-topsites.csv | grep intel
+npx create-next-app myapp
+cp step4-certexample.py step4.py
+cd myapp
+npm run dev
+v README.md
+cat step0-topsites.csv | grep domain
+cat step0-topsites.csv | grep derma
+cat step0-othersites.csv | grep derma
+scp drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4/step3-topsites-selenium.py .
+scp drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4/step3-topsites-selenium.csv .
+cat step0-othersites.csv | grep linke
+cat step0-othersites.csv | grep hooky
+cat step0-othersites.csv | grep gjs
+cat step0-othersites.csv | grep jgs
+scp drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4/step3-othersites-selenium.csv .
+python step4.py
+scp step4.py drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4
+scp drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4/step4-topsites-certinfo.csv .
+scp drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4/step4-othersites-certinfo.csv .
+ls | grep csv
+mkdir bkup_data
+cp *.csv bkup_data
+scp step3-requests.py drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4
+cat step0-topsites.csv | grep yande
+cat step0-topsites.csv | grep homedep
+cat step0-topsites.csv | grep pror
+cat step0-othersites.csv | grep pror
+scp drewvlaz@cmsc232-26.c.cs.uchicago.edu:~/a4/step3-topsites-requests.csv .
+python process.py
+ls bkup_data
+rm *.csv
+mv bkup_data/* .
+n:q
+v midterm.py
+python midterm.py
+cd proj
+cd p1
+../p2
+cp ../p1/project1_report_vlasnik.tex .
+mv project1_report_vlasnik.tex project2_report_vlasnik.tex
+mv output.png proj/p2/images/poly-kernel.png
+cd proj/
+mv output.png p2/images/gaussian-kernel.png
+google CMSC254-3.2-classification-cont-annotated-01182024.pdf
+v project2_report_vlasnik.tex
+jupyter --version
+cd im
+randp .
+cp pset1.tex pset4.tex
+v pset4.tex
+google pset2.pdf
+google HW2.pdf
+cd dev
+cd Dev
+mkdir trent
+cd trent
+cp ~/Documents/College/Year4/Winter/STAT243-Numerical_Lin_Alg/psets/pset1.tex .
+v pset1.tex
+cd ../tex
+cp assignment2.tex assignment5.tex
+mv assignment5.tex a5.tex
+yay
+v a5.tex
+ping blase.courses
+cat q18flow.json
+head q18flow.json
+v flow.py
+python flow.py
+wget https://canvas.uchicago.edu/courses/54766/files/10736867/download
+wget https://cdn.inst-fs-iad-prod.inscloudgate.net/c7fce775-3bc6-403f-b72f-c52c0c3507da/seleniumexample-chrome.py?token=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCIsImtpZCI6ImNkbiJ9.eyJyZXNvdXJjZSI6Ii9jN2ZjZTc3NS0zYmM2LTQwM2YtYjcyZi1jNTJjMGMzNTA3ZGEvc2VsZW5pdW1leGFtcGxlLWNocm9tZS5weSIsInRlbmFudCI6ImNhbnZhcyIsInVzZXJfaWQiOiIyMzQ5MDAwMDAwMDEzNjA1MyIsImlhdCI6MTcwNzM3NjU1OCwiZXhwIjoxNzA3NDYyOTU4fQ.zeSb3R-TDbq3akIk-lGkCFtU5RhuzS1fYQwls19VkD50ZjzqEkpD5P8xCNmqu6NPGgjV9C9IOFG3uACACAXOKA&content_type=text%2Fx-python
+wget "https://cdn.inst-fs-iad-prod.inscloudgate.net/c7fce775-3bc6-403f-b72f-c52c0c3507da/seleniumexample-chrome.py?token=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCIsImtpZCI6ImNkbiJ9.eyJyZXNvdXJjZSI6Ii9jN2ZjZTc3NS0zYmM2LTQwM2YtYjcyZi1jNTJjMGMzNTA3ZGEvc2VsZW5pdW1leGFtcGxlLWNocm9tZS5weSIsInRlbmFudCI6ImNhbnZhcyIsInVzZXJfaWQiOiIyMzQ5MDAwMDAwMDEzNjA1MyIsImlhdCI6MTcwNzM3NjU1OCwiZXhwIjoxNzA3NDYyOTU4fQ.zeSb3R-TDbq3akIk-lGkCFtU5RhuzS1fYQwls19VkD50ZjzqEkpD5P8xCNmqu6NPGgjV9C9IOFG3uACACAXOKA&content_type=text%2Fx-python"
+sudoÂƒ€setcapÂƒ€cap_net_raw,cap_net_admin+eipÂƒ€/usr/sbin/dumpcap
+sudo setcap cap_net_raw,cap_net_admin+eip /usr/sbin/dumpcap
+chown root /usr/sbin/dumpcap
+sudo chown root /usr/sbin/dumpcap
+chmod u+s /usr/sbin/dumpcap
+sudo chmod u+s /usr/sbin/dumpcap
+sudo dpkg-reconfigure wireshark-common
+sudo chmod +x /usr/bin/dumpcap
+ping youtube.com
+ping 35.186.224.38
+yay -Ss python webdriver
+curl -s "https://archlinux.org/mirrorlist/?country=US&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d'
+curl -s "https://archlinux.org/mirrorlist/?country=US&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d' | wc -l
+curl -s "https://archlinux.org/mirrorlist/?country=US&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d' >> /etc/pacman.d/mirrorlist
+curl -s "https://archlinux.org/mirrorlist/?country=US&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d' | toclip
+v /etc/pacman.d/mirrorlist
+sudo v /etc/pacman.d/mirrorlist
+yay -Syyuu
+yay -S python-webdriver-manager
+head $(python preprocessghost.py)
+python preprocessghost.py | head -n10
+k
+python browsing_sim.py
+mv ghost2024.json ghost.json
+cp preprocessghost.py mycapture.py
+cp mycapture.py preprocessghost.py
+cp pset4.tex pset5.t
+cp pset4.tex pset5.tex
+rm pset5.t
+python mycapture.py
+python preprocessghost.py
+du -h
+v p5.py
+python p5.py
+yay -S python-seaborn
+cp ../p2/project2_report_vlasnik.tex .
+mv project2_report_vlasnik.tex project3_report_vlasnik.tex
+cd .themes
+cd WhiteSur-dark
+v index.theme
+cd gnome-shell
+v gnome-shell.css
+e
+awk '$1 == "opacity:" {print $2; exit}' ~/.config/alacritty/alacritty.yml
+awk '$1 == "opacity = " {print $2; exit}' ~/.config/alacritty/alacritty.toml
+awk '$1 == "opacity =" {print $2; exit}' ~/.config/alacritty/alacritty.toml
+awk '$1 == "window" {print $2; exit}' ~/.config/alacritty/alacritty.yml
+awk '$1 == "opacity" && $2 == "=" {print $3}' ~/.config/alacritty/alacritty.yml
+awk '$1 == "opacity" && $2 == "=" {print $3}' ~/.config/alacritty/alacritty.toml
+sed -i -- "s/opacity = 1/opacity = 0.85/" ~/.config/alacritty/alacritty.toml\
+
+;q
+man alacritty
+mkdir a6
+cp a5/* a6
+du -h | grep G
+cd VirtualBox\ VMs
+rm -rf VirtualBox\ VMs
+rm -rf .rustup .cargo
+cd Documents
+cd ZeD
+cd anomaly_examples
+du -h -d 1 | grep G
+cd data
+rm -rf data
+mkdir .cargo
+mkdir .cargo/env
+cd .cache
+rm -rf *
+cd Downloads
+tar -xJf Marble-shell.tar.xz -C ../.themes/Marble
+cd 
+cd .themes/Marble
+mv Marble-yellow-light ..
+mv Marble-yellow-dark ..
+cp step1-mapper.py
+cp preprocessghost.py step1-mapper.py
+cp browsing_sim.py step1-mapper.py
+python test.py
+v test.py
+yay -S python beautifulsoup
+yay -Ss python beautifulsoup
+python step1-mapper.py
+diff -y blase-courses-graph.json blase-courses-graph-1.json
+cat blase-courses-graph.json
+v .eslintrc.json
+v src/app/page.tsx
+npm install react@latest react-dom@latest
+npm cache clean
+npm install @chakra-ui/layout @chakra-ui/react @dh-react-hooks/use-raf @emotion/react @emotion/styled @prisma/client bcrypt cookie cookies easy-peasy format-duration framer-motion jsonwebtoken next react react-dom react-howler react-icons reset-css swr
+npm install --save-dev @types/react @typescript-eslint/eslint-plugin @typescript-eslint/parser babel-plugin-superjson-next eslint eslint-config-airbnb eslint-config-next eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks prettier prisma ts-node
+df -h
+v test.js
+v test.ts
+v test.tsx
+npm i tailwindcss
+npm i autoprefixer
+g diff src/app/layout.tsx
+npm i
+wget "https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" -O public/logo.svg
+v step1-mapper.py
+cp step1-mapper.py step2-crawler.py
+diff blase-courses-graph.json blase-courses-graph-1.json
+cp blase-courses-graph.json gs.json
+bat step1-mapper.py
+bat mycapture.py
+rm preprocessghost.py
+mv mycapture.py step3-process.py
+rm myself.pcapng
+head flow.py
+rm flow.py
+cat test.py
+rm test.py
+rm q18flow.json
+rm myself_first_page.pcapng
+rm myself.json
+rm step2-SideChannelNode.py
+rm browsing_sim.py
+cat ghost.json
+bat ghost.json
+bat --list-themes | less
+man bat
+bat --theme "Sublime Snazzy" blase-courses-enhanced-graph.json
+bat --theme "zenburn" blase-courses-enhanced-graph.json
+bat --theme "Solarized (dark)" blase-courses-enhanced-graph.json
+bat --theme "Monokai Extended" blase-courses-enhanced-graph.json
+bat --theme "Monokai Extended Origin" blase-courses-enhanced-graph.json
+bat --theme "Monokai Extended Light" blase-courses-enhanced-graph.json
+bat --list-themes | bat
+bat --theme "DarkNeon" blase-courses-enhanced-graph.json
+bat --theme "1337" blase-courses-enhanced-graph.json
+bat --theme "Dracula" blase-courses-enhanced-graph.json
+bat --theme "TwoDark" blase-courses-enhanced-graph.json
+python step2-crawler.py
+v count.py
+python count.py
+bat blase-courses-enhanced-graph.json
+head my-browsing.json
+cl
+du -h ghost.json
+du -h my-browsing.json
+cd Dev/SpotiFind
+rm secrets_spot.py
+g add secrets_spot.py
+g commit -m "removed files"
+g push -u origin main
+mv step3-process.py step2-process.py
+python step2-process.py
+jupyter notebook 
+bat my-browsing.json
+mv step2-process.py step3-process.py
+mv blase-courses-graph.json step1-blase-graph.json
+mv blase-courses-enhanced-graph.json step2-blase-enhanced-graph.json
+rm  blase-courses-enhanced-graph-with-data.json
+rm blase-courses-graph-1.json
+cat gs.json
+cat gs.json |wc -l
+rm gs.json
+bat count.py
+rm count.py
+python step3-process.py
+mv step3-process.py step3-crack.py
+../a5
+v preprocessghost.py
+bat step2-blase-courses-enhanced-graph-with-data.json
+python step3-crack.py | wc -l
+python step3-crack.py >> out1.txt
+python step3-crack.py >> out2.txt
+diff out1.txt out2.txt
+python step3-crack.py > out2.txt
+python step3-crack.py > out3.txt
+diff out3.txt out2.txt -y
+diff out3.txt out4.txt -y
+python step3-crack.py > out4.txt
+python step3-crack.py > out1.text
+python step3-crack.py > out2.text
+diff out1.txt out2.txt -y
+cat out1.t
+diff out1.text out2.text -y
+cat out1.text
+history
+history | awk '{print $2}'
+history | awk '{print $2}' | sort
+history | awk '{print $2}' | sort | uniq -c
+history | awk '{print $2}' | sort | uniq -c | sort -nr
+man history
+history -n 10000
+history -n 1000 | wc -l
+history -n 1000 | awk '{print $2}' | sort | uniq -c | sort -nr
+history -n 1000 | awk '{print $2}' | sort | uniq -c | sort -nr | head -n10
+history -n 1000
+history -n 5000 | awk '{print $1}' | sort | uniq -c | sort -nr | head -n10
+history -n 1000 | awk '{print $1}' | sort | uniq -c | sort -nr | head -n10
+v project3_report_vlasnik.tex
+cp pset4.tex pset6.tex
+cd lectures
+../midterm\ review
+../psets
+htop
+python pset6.py
+head -n 10 all.txt > out1.txt
+tail -n 10 all.txt > out1.txt
+head -n 10 all.txt > out2.txt
+cp all.txt out3.txt
+head -n 22 all.txt > out1.txt
+tail -n 22 all.txt > out2.txt
+diff -y out1.txt out2.txt
+diff -y out1.txt out3.txt
+cp a5.tex a6.tex
+v a6.tex
+python step3-crack.py > all.txt
+python step3-crack.py
+\:wq
+nvim --version
+# required\
+mv ~/.config/nvim{,.bak}\
+\
+# optional but recommended\
+mv ~/.local/share/nvim{,.bak}\
+mv ~/.local/state/nvim{,.bak}\
+mv ~/.cache/nvim{,.bak}
+\
+mv ~/.config/nvim{,.bak}\
+\
+mv ~/.local/share/nvim{,.bak}\
+mv ~/.local/state/nvim{,.bak}\
+mv ~/.cache/nvim{,.bak}
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+cd .config
+cd lua/user/plugin
+v keymaps.lua
+v packer.lua
+mkdir a7
+cd a6
+rm "'"
+v tokyo-night.yml
+v alacritty.yml
+mv alacritty.toml bkup
+alacritty migrate
+rm alacritty.toml
+mv bkup alacritty.toml
+head monokai-pro.toml
+cd themes
+v tokyo-night.toml
+v lua/user/packer.lua
+cd .local/share/nvim
+cd lazy
+cd which-key.nvim
+cd which-key
+v keys.lua
+cd Lazy
+cd LazyVim
+cd lua
+cd lazyvim
+cd plugins
+v util.lua
+v editor.lua
+alacritty
+v pset6.py
+yay 
+cd Dev/theo
+v sig.py
+d
+cp a6.tex a7.tex
+\:w
+cp pset4.tex pset7.tex
+v 
+v pset6.tex
+v pset5.tex
+../lectures
+google STAT243Chapter4LectureNotes.pdf
+python
+v pset7.tex
+../nvim.bak
+v pset7.py
+yay -Ss wezterm
+cat tokyo-night.toml
+v gruvbox.toml
+v alacritty.toml
+hb
+v config.toml
+la
+v spaceshiprc
+v zshenv
+cat te
+cat test.sh
+head test.sh
+rm test.sh
+ls scripts
+v themes/gruvbox-hard.toml
+v step3-crack.py
+v themes/everforest.yml
+cd
+../a7
+wget "https://canvas.uchicago.edu/courses/54766/files/10835759/download"
+cat download
+rm down
+rm download
+scp cs232.json drewvlaz@cmsc232-26.c.cs.uchicago.edu:/var/www/html
+cat cs232.json
+scp example.php drewvlaz@cmsc232-26.c.cs.uchicago.edu:/var/www/html
+vim problem6.py
+../tex
+v a7.tex
+vim output.txt
+scp drewvlaz@cmsc232-26.c.cs.uchicago.edu:/var/www/html/assignment7-webpage.zip .
+v problem6.py
+mkdir p4
+s
+mkdir nvim_vscode
+cd nvim.bak
+which cp
+ls lua
+ls lua/user
+cp lua init.lua ../nvim_vscode
+../nvim_vscode
+cd lua/user
+rm -rf lsp plugin
+...
+cat init.lua
+v init.lua
+cd -
+cd a7
+python pset7.py
+ssh 
+ssh drewvlaz@cmsc232-26.c.cs.uchicago.edu
+python problem6.py && cat output.txt
+python problem6.py
+../
+cd a8
+mv step1.py ../a8
+../a8
+v step1.py
+python step1.py
+tmux
+cd Dev/myapp
+npm run dev  
+v
+v src/app/layout.tsx
+..
+head all_unique_passwords.csv
+tail all_unique_passwords.csv
+head -n1000 all_unique_passwords.csv
+head -n1000 all_unique_passwords.csv > top1000_passwords.csv
+cat top1000_passwords.csv | awk -F, '{print $1}'
+cat top1000_passwords.csv | awk -F, '{print $1}' > top1000_passwords.csv
+cat top1000_passwords.csv
+cat all_unique_passwords.csv | awk -F, '{print $1}'
+head -n1000 all_unique_passwords.csv | awk -F, '{print $1}'
+head -n1000 all_unique_passwords.csv | awk -F, '{print $1}' > top1000_passwords.txt
+cat top1000_passwords.
+cat top1000_passwords.txt
+rm top1000_passwords.csv
+mv top1000_passwords.txt step1.txt
+head shadow
+tail shadow
+yay --noconfirm
+yay -Ss hashcat
+yay -S hashcat
+hashcat
+hashcat -h
+v step2.py
+head shadow.csv
+python step2.py
+rm shadow.csv
+head step2.csv
+hashcat --benchmark
+tat
+\:q
+v resume.tex
+v Vlasnik,\ Drew\ Resume\ 2024.tex
+mv Vlasnik,\ Drew\ Resume\ 2024.tex Vlasnik_Drew_Resume_2024.tex
+v Vlasnik_Drew_Resume_2024.tex
+jls
+yay -Ss warp
+yay -Ss warp terminal
+yay -S warp-terminal-bin
+warp
+warp-terminal
+se
+ec
+sd
+head all_unique_passwords.csv 
 ls
 exit
-: 1687746650:0;cd Dev/dotfiles
-: 1687746661:0;.scripts/syncdots
+: 1708985121:0;hb
+: 1708985123:0;exit
+: 1708985757:0;cd
+: 1708985762:0;mkdir dotfiles
+: 1708985765:0;ls
+: 1708985769:0;cd Dev
+: 1708985770:0;ls
+: 1708985775:0;cd
+: 1708985776:0;ls
+: 1708985843:0;yay -Ss stow
+: 1708985864:0;yay -S stow
+: 1708990927:0;cd dotfiles
+: 1708990928:0;tmux
+: 1708990931:0;g init
+: 1708990963:0;la
+: 1708990966:0;rm -rf .git
+: 1708990967:0;la
+: 1708990971:0;g init -m main
+: 1708990984:0;g init -b main
+: 1708990986:0;ls
+: 1708990996:0;..
+: 1708991019:0;cp .zshrc .vimrc .config/nvim .config/tmux dotfiles
+: 1708991025:0;cd Dev/dotfiles
+: 1708991025:0;ls
+: 1708991026:0;la
+: 1708991032:0;cp .scripts/ dotfiles
+: 1708991082:0;man stow
+: 1708991204:0;v .stow-local-ignore
+: 1708991239:0;ls
+: 1708991250:0;mv .stow-local-ignore ../../dotfiles
+: 1708991251:0;la
+: 1708991257:0;se
+: 1708991264:0;cd .config
+: 1708991265:0;ls
+: 1708991303:0;cp .config/alacritty .config/bspwm .config/polybar .config/rofi .config/sxhkd .config/sxiv .config/zsh .config/tmux dotfiles
+: 1708991306:0;cd dotfiles
+: 1708991307:0;ls
+: 1708991313:0;la
+: 1708991320:0;mkdir .config
+: 1708991335:0;mv alacritty bspwm nvim rofi tmux sxhkd/ sxiv zsh .config
+: 1708991337:0;la
+: 1708991341:0;mv polybar .config
+: 1708991342:0;ls
+: 1708991344:0;..
+: 1708991345:0;la
+: 1708991348:0;..
+: 1708991349:0;la
+: 1708991356:0;cp .bashrc dotfiles
+: 1708991360:0;cat .zshenv
+: 1708991370:0;cd dotfiles
+: 1708991393:0;stow --adopt .
+: 1708991396:0;cd
+: 1708991397:0;la
+: 1708991401:0;v
+: 1708991406:0;exit

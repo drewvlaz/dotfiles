@@ -139,12 +139,12 @@ import:
   # - ~/.config/alacritty/themes/ayu-dark.yml
   # - ~/.config/alacritty/themes/ayu-mirage.yml
   # - ~/.config/alacritty/themes/night-owl.yml
-  - ~/.config/alacritty/themes/monokai-pro.yml
+  # - ~/.config/alacritty/themes/monokai-pro.yml
   # - ~/.config/alacritty/themes/molokai.yml
   # - ~/.config/alacritty/themes/dracula.yml
   # - ~/.config/alacritty/themes/nightfly.yml
   # - ~/.config/alacritty/themes/argonaut.yml
-  # - ~/.config/alacritty/themes/tokyo-night.yml
+  - ~/.config/alacritty/themes/tokyo-night.yml
 
 # colors: *tokyo-night
 

@@ -1,2 +1,0 @@
---vim.g.goyo_width = 65%
---vim.g.goyo_height = 100%

@@ -1,0 +1,69 @@
+import = ["/home/drewvlaz/.config/alacritty/themes/gruvbox-hard.toml"]
+
+[env]
+TERM = "tmux-256color"
+
+[font]
+size = 22
+
+[font.bold]
+family = "OperatorMono Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "Operator Mono Nerd Font Mono"
+style = "Bold Italic"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "Operator Mono Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "OperatorMono Nerd Font Mono"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 0
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[mouse]
+hide_when_typing = true
+
+[scrolling]
+history = 5000
+
+[selection]
+save_to_clipboard = true
+
+[shell]
+args = ["--login"]
+program = "/bin/zsh"
+
+[window]
+decorations = "none"
+dynamic_padding = true
+opacity = 1
+startup_mode = "Windowed"
+title = "Alacritty"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 3
+y = 3
