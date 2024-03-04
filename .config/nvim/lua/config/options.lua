@@ -40,7 +40,7 @@ local options = {
   wrap = false, -- display lines as one long line
   scrolloff = 5, -- is one of my fav
   sidescrolloff = 8,
-  guifont = "monospace:h17", -- the font used in graphical neovim applications
+  guifont = "OperatorMono Nerd Font Mono:h22", -- the font used in graphical neovim applications
   hidden = true, -- Required to keep multiple buffers open
   formatexpr = "", -- Proper use of gq
 }

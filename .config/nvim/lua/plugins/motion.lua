@@ -5,6 +5,20 @@ vim.g.qs_highlight_on_keys = { "f", "F", "t", "T" }
 return {
   { "ThePrimeagen/harpoon" },
   {
+    "ggandor/leap.nvim",
+    enabled = true,
+    keys = {
+      { "s", mode = { "n", "x", "o" }, desc = "Leap forward to" },
+      { "S", mode = { "n", "x", "o" }, desc = "Leap backward to" },
+      { "gs", mode = { "n", "x", "o" }, desc = "Leap from windows" },
+    },
+    config = function()
+      local leap = require("leap")
+      leap.opts.highlight_unlabeled_phase_one_targets = true
+      leap.add_default_mappings(true)
+    end,
+  },
+  {
     "unblevable/quick-scope",
     config = function()
       vim.cmd([[

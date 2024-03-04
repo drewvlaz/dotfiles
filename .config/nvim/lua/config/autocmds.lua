@@ -15,18 +15,18 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
--- vim.api.nvim_create_autocmd("ColorScheme", {
---   group = augroup("special_formatting"),
---   pattern = "*",
---   callback = function()
---     vim.cmd("highlight String gui=italic cterm=italic")
---     vim.cmd("highlight Normal ctermbg=none guibg=none")
---     vim.cmd("highlight NormalNC ctermbg=none guibg=none")
---     vim.cmd("highlight NonText ctermbg=none guibg=none")
---     vim.cmd("highlight SignColumn guibg=NONE ctermbg=NONE")
---     vim.cmd("highlight EndOfBuffer guibg=NONE ctermbg=NONE")
---   end,
--- })
+vim.api.nvim_create_autocmd("ColorScheme", {
+  group = augroup("special_formatting"),
+  pattern = "*",
+  callback = function()
+    vim.cmd("highlight String gui=italic cterm=italic")
+    vim.cmd("highlight Normal ctermbg=none guibg=none")
+    vim.cmd("highlight NormalNC ctermbg=none guibg=none")
+    vim.cmd("highlight NonText ctermbg=none guibg=none")
+    vim.cmd("highlight SignColumn guibg=none ctermbg=none")
+    vim.cmd("highlight EndOfBuffer guibg=none ctermbg=none")
+  end,
+})
 
 vim.api.nvim_create_autocmd("InsertEnter", {
   group = augroup("center_on_insert"),

@@ -4,7 +4,6 @@ return {
     opts = {
       colorscheme = "gruvbox-material",
     },
-    vscode = false,
   },
   {
     "folke/which-key.nvim",
@@ -14,8 +13,8 @@ return {
         -- ["<leader>f"] = {
         --   "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<CR>",
         -- },
-        ["<leader>d"] = { name = "+document" },
-        ["<leader>h"] = { name = "+harpoon" },
+        ["<leader>d"] = { name = "document" },
+        ["<leader>h"] = { name = "harpoon" },
       },
     },
   },

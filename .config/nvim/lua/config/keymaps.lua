@@ -10,7 +10,7 @@ end
 
 -- Easier Escape --
 keymap("i", "jk", "<ESC>", opts)
-keymap("i", "kj", "<ESC>", opts)
+-- keymap("i", "kj", "<ESC>", opts)
 keymap("i", "<C-c>", "<ESC>", opts)
 
 -- Vertical movement --
