@@ -5,55 +5,57 @@ alias sudo='sudo '
 
 # Navigation
 alias \
-    ..="cd .." \
-    ...="cd ../.." \
-    grep="grep --color=auto" \
-    la="ls -a" \
-    ll="ls -al"  \
-    cp="cp -v -r" \
-    :q="exit" \
-    b="cd -" \
-    za="zoxide add ." \
+	..="cd .." \
+	...="cd ../.." \
+	grep="grep --color=auto" \
+	la="ls -a" \
+	ll="ls -al" \
+	cp="cp -v -r" \
+	:q="exit" \
+	b="cd -" \
+	za="zoxide add ."
 
 # Common commands that are just too long
 alias \
-    cl="clear" \
-    ka="killall" \
-    g="git" \
-    sdn="sudo shutdown -h now" \
-    rbt="sudo reboot" \
-    ec="$EDITOR ~/.zshrc" \
-    sc="source ~/.zshrc" \
-    evc="$EDITOR ~/.config/nvim/init.vim" \
-    v="$EDITOR" \
-    pip3.10="python3.10 -m pip" \
-    pip3.9="python3.9 -m pip" \
-    ff="firefox" \
-    google="google-chrome-stable" \
-    toclip="xclip -selection c" \
-    p="sudo pacman" \
-    d="sudo dnf" \
-    drm="sudo dnf remove" \
-    yeet="yay -Rns" \
-    ws="windscribe" \
-    wsc="windscribe connect" \
-    wsd="windscribe disconnect" \
-    stdconvert="convert -resize 1240x1750 -gravity center extent 1240x1750 -units PixelsPerInch -density 150" \
-    yt="youtube-dl --add-metadata -i" \
+	cl="clear" \
+	ka="killall" \
+	g="git" \
+	sdn="sudo shutdown -h now" \
+	rbt="sudo reboot" \
+	ec="$EDITOR ~/.zshrc" \
+	sc="source ~/.zshrc" \
+	evc="$EDITOR ~/.config/nvim/init.vim" \
+	v="$EDITOR" \
+	pip3.10="python3.10 -m pip" \
+	pip3.9="python3.9 -m pip" \
+	ff="firefox" \
+	google="google-chrome-stable" \
+	toclip="xclip -selection c" \
+	p="sudo pacman" \
+	d="sudo dnf" \
+	drm="sudo dnf remove" \
+	yeet="yay -Rns" \
+	ws="windscribe" \
+	wsc="windscribe connect" \
+	wsd="windscribe disconnect" \
+	stdconvert="convert -resize 1240x1750 -gravity center extent 1240x1750 -units PixelsPerInch -density 150" \
+	yt="youtube-dl --add-metadata -i" \
 	yta="yt -x -f bestaudio/best --audio-format mp3" \
-    hb="clear && $HOME/.scripts/hashbang.sh" \
-    tlist='tmux list'
+	hb="clear && $HOME/.scripts/hashbang.sh" \
+	tlist='tmux list' \
+	latexmk='latexmk -r ~/.config/latexmk/latexmkrc -shell-escape'
 
 # Improved commands
 alias \
-    yay="yay" \
-    python="python3" \
-    pip="pip3" \
-    ls="exa --icons --group-directories-first" \
-    fetch="neofetch --ascii_colors 4 4 --colors 11 8 8 11 8 7" \
-    gccc="gcc -Wall -Werror" \
-    nvide="neovide --frameless --geometry 145x45" \
-    fzf="fzf --prompt='> ' --pointer='> '" \
-    please="sudo !!" \
-    plz="sudo !!" \
-    # alert=notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history | tail -n1 | sed -e 's/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//')" \
+	yay="yay" \
+	ls="exa --icons --group-directories-first" \
+	fetch="neofetch --ascii_colors 4 4 --colors 11 8 8 11 8 7" \
+	gccc="gcc -Wall -Werror" \
+	nvide="neovide --frameless --geometry 145x45" \
+	fzf="fzf --prompt='> ' --pointer='> '" \
+	please="sudo !!" \
+	plz="sudo !!" \
+	pip="pip3"
+#  alert=notify-send --urgency=low -i "$(
+# 	[ $? = 0 ] && echo terminal || echo error # python="python3" \
+# )" "$(history | tail -n1 | sed -e 's/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//')"

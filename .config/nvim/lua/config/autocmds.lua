@@ -21,10 +21,14 @@ vim.api.nvim_create_autocmd("ColorScheme", {
   callback = function()
     vim.cmd("highlight String gui=italic cterm=italic")
     vim.cmd("highlight Normal ctermbg=none guibg=none")
-    vim.cmd("highlight NormalNC ctermbg=none guibg=none")
-    vim.cmd("highlight NonText ctermbg=none guibg=none")
+    -- vim.cmd("highlight NormalNC ctermbg=none guibg=none")
+    -- vim.cmd("highlight NonText ctermbg=none guibg=none")
     vim.cmd("highlight SignColumn guibg=none ctermbg=none")
     vim.cmd("highlight EndOfBuffer guibg=none ctermbg=none")
+    vim.cmd([[
+      highlight QuickScopePrimary guifg=#ff4af0 gui=underline ctermfg=155 cterm=underline
+      highlight QuickScopeSecondary guifg=#5fff5f gui=underline ctermfg=81 cterm=underline
+    ]])
   end,
 })
 

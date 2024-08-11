@@ -59,3 +59,8 @@ keymap("n", "<leader>ds", "<cmd> set spell! spell?<CR>", whichkey_opts("Toggle s
 --       "<cmd>lua require('telescope.builtin').colorscheme({enable_preview = true})<CR>",
 --       "Colorscheme with Preview",
 -- },
+
+keymap("n", "f", "f", opts)
+keymap("n", "F", "F", opts)
+keymap("n", "t", "t", opts)
+keymap("n", "T", "T", opts)
