@@ -1,163 +1,144 @@
 #! /bin/bash
 
 dirs() {
-    du -d 8 \
-    ~/Documents/second-brain/ \
-    ~/Documents/ZeD/fnet_requests/ \
-    ~/Documents/ZeD/Cynet/ \
-    ~/Documents/College \
-    ~/Dev/dotfiles \
-    ~/.config/alacritty \
-    ~/.config/bspwm \
-    ~/.config/lvim \
+  du -d 8 \
+    -I .git \
+    -I .github \
+    -I .swm \
+    -I .pytest_cache \
+    -I .venv \
+    -I .vim \
+    -I .vscode \
+    -I __pycache__ \
+    -I bin \
+    -I misc \
+    -I node_modules \
+    ~/Documents/backend \
+    ~/Documents/partner \
+    ~/Documents/patient \
+    ~/Documents/dotfiles \
     ~/.config/nvim \
-    ~/.config/nvim_bkup \
-    ~/.config/polybar \
-    ~/.config/rofi \
-    ~/.config/sxhkd \
-    ~/.config/sxiv \
     ~/.config/tmux \
     ~/.config/zsh \
     ~/.scripts \
-    --exclude='.git' \
-    --exclude='.github' \
-    --exclude='.obsidian' \
-    --exclude='.vim' \
-    --exclude='.vscode' \
-    --exclude='__pycache__' \
-    --exclude='data' \
-    --exclude='boost' \
-    --exclude='venv' \
-    --exclude='py39' \
-    --exclude='data_smashing_' \
-    --exclude='cynet_' \
-    --exclude='node_modules' \
-    --exclude='bin' \
-    --exclude='misc' \
-    --exclude='*temp'
+    2>/dev/null
 }
 
 lines() {
-    cat $1 | wc -l
+  cat $1 | wc -l
 }
 
 se() {
-    du -a \
+  du -a \
+    ~/.wezterm.lua \
+    ~/Documents/dotfiles \
     ~/.config/alacritty \
-    ~/.config/bspwm \
-    ~/.config/lvim \
     ~/.config/nvim \
-    ~/.config/nvim_bkup \
-    ~/.config/polybar \
-    ~/.config/rofi \
-    ~/.config/sxhkd \
-    ~/.config/sxiv \
     ~/.config/tmux \
     ~/.config/zsh \
-    ~/.scripts \
-    --exclude='.git' |
+    ~/.scripts |
     awk '{print $2}' |
     fzf |
-    xargs -r $EDITOR ;
+    xargs -r $EDITOR
 }
 
 sd() {
-    dir=$(dirs | awk '{print $2}' | fzf)
-    retVal=$?
+  dir=$(dirs | awk '{print $2}' | fzf)
+  retVal=$?
 
-    if [ $retVal -eq 0 ]; then
-        cd $dir
-    fi
+  if [ $retVal -eq 0 ]; then
+    cd $dir
+  fi
 }
 
 tsd() {
-    dir=$(dirs | awk '{print $2}' | fzf)
-    retVal=$?
+  dir=$(dirs | awk '{print $2}' | fzf)
+  retVal=$?
 
-    if [ $# -gt 0 ]; then
-        session=$1
-    else
-        session="ide"
-    fi
+  if [ $# -gt 0 ]; then
+    session=$1
+  else
+    session="ide"
+  fi
 
-    if [ $retVal -eq 0 ]; then
-        tmux new-session -c $dir -s $session -n code -d \; \
-        attach -t $session
-    fi
+  if [ $retVal -eq 0 ]; then
+    tmux new-session -c $dir -s $session -n code -d \; \
+      attach -t $session
+  fi
 }
 
 sdls() {
-    sd
-    if [ $retVal -eq 0 ]; then
-        ls
-    fi
+  sd
+  if [ $retVal -eq 0 ]; then
+    ls
+  fi
 }
 
 stat() {
-    dir=$(du -d2 $(cat ~/.curQ) | grep -e 'STAT.*pset' | awk '{print $2}' | fzf --select-1)
-    retVal=$?
+  dir=$(du -d2 $(cat ~/.curQ) | grep -e 'STAT.*pset' | awk '{print $2}' | fzf --select-1)
+  retVal=$?
 
-    if [ $retVal -eq 0 ]; then
-        tmux new-session -c $dir -s stat -n pset -d \; \
-        attach -t stat
-    fi
+  if [ $retVal -eq 0 ]; then
+    tmux new-session -c $dir -s stat -n pset -d \; \
+      attach -t stat
+  fi
 }
 
 ide() {
-    dir=$(dirs | awk '{print $2}' | fzf)
-    retVal=$?
+  dir=$(dirs | awk '{print $2}' | fzf)
+  retVal=$?
 
-    if [ $# -gt 0 ]; then
-        session=$1
-    else
-        session="ide"
-    fi
+  if [ $# -gt 0 ]; then
+    session=$1
+  else
+    session="ide"
+  fi
 
-    if [ $retVal -eq 0 ]; then
-        tmux new-session -c $dir -s $session -n code -d \; \
-        new-window -n term -c $dir \; \
-        select-window -t "$session":code
-        # tmux send-keys -t "$session":0 ls C-m
-        tmux attach -t $session
-        # tmux new-session -s "$session" -d
-        # tmux rename-window -t "$session:0" "code"
-        # tmux send-keys -t "$session:0" "cd $dir && clear" C-m
-        # tmux new-window -t "$session:1" -n "term"
-        # tmux send-keys -t "$session:1" "cd $dir && clear" C-m
-        # tmux attach -t "$session:0"
-    fi
+  if [ $retVal -eq 0 ]; then
+    tmux new-session -c $dir -s $session -n code -d \; \
+      new-window -n term -c $dir \; \
+      select-window -t "$session":code
+    # tmux send-keys -t "$session":0 ls C-m
+    tmux attach -t $session
+    # tmux new-session -s "$session" -d
+    # tmux rename-window -t "$session:0" "code"
+    # tmux send-keys -t "$session:0" "cd $dir && clear" C-m
+    # tmux new-window -t "$session:1" -n "term"
+    # tmux send-keys -t "$session:1" "cd $dir && clear" C-m
+    # tmux attach -t "$session:0"
+  fi
 }
 
 tat() {
-    session=$(tmux ls | cut -d: -f1 | fzf --select-1 --exit-0)
-    retVal=$?
-    if [ $retVal -eq 0 ]; then
-        tmux attach -t $session
-    fi
+  session=$(tmux ls | cut -d: -f1 | fzf --select-1 --exit-0)
+  retVal=$?
+  if [ $retVal -eq 0 ]; then
+    tmux attach -t $session
+  fi
 }
 
 tkill() {
-    session=$(tmux ls | cut -d: -f1 | fzf --exit-0)
-    retVal=$?
-    if [ $retVal -eq 0 ]; then
-        tmux kill-session -t $session
-    fi
+  session=$(tmux ls | cut -d: -f1 | fzf --exit-0)
+  retVal=$?
+  if [ $retVal -eq 0 ]; then
+    tmux kill-session -t $session
+  fi
 }
 
 randp() {
-    if [ -n "$1" ]; then
-        dir=$1
-    fi
-    du -a $1 | 
+  if [ -n "$1" ]; then
+    dir=$1
+  fi
+  du -a $1 |
     grep -i -E '\.(png|jpg|jpeg|gif)$' |
-    shuf -n 1000 | 
-    sed 's/\ |\(|\)/\\\ /g' | # Put a "\" before spaces
+    shuf -n 1000 |
+    sed 's/\ |\(|\)/\\\ /g' |                               # Put a "\" before spaces
     awk '{for (i=2; i<NF; i++) printf $i " "; print $NF}' | # Remove leading numbers
     sxiv -i -t
 }
 
 pkgsizes() {
-    pacman -Qei | 
+  pacman -Qei |
     gawk '/^Name/ { x = $3 }; /^Installed Size/ { sub(/Installed Size  *:/, ""); print x":" $0 }' |
     grep MiB |
     sort -k2,3nr |
@@ -165,14 +146,19 @@ pkgsizes() {
 }
 
 pset() {
-    name="pset${1}.tex"
-    cp ~/.config/zsh/templates/pset.tex $name
+  name="pset${1}.tex"
+  cp ~/.config/zsh/templates/pset.tex $name
+}
+
+tname() {
+  name=$(basename "$(pwd)")
+  tmux rename-window "$name"
 }
 
 # texclean() {
-#     du -a | 
-#     awk '{print $2}' | 
-#     grep -E '(\.|\_)(aux|fdb|fls|log|synctex|minted)' | 
-#     sed 's/.\///g' | 
+#     du -a |
+#     awk '{print $2}' |
+#     grep -E '(\.|\_)(aux|fdb|fls|log|synctex|minted)' |
+#     sed 's/.\///g' |
 #     xargs rm -rf
 # }

@@ -10,6 +10,15 @@ return {
       prompt_prefix = " ",
       selection_caret = " ",
       path_display = { "smart" },
+      layout_config = {
+        prompt_position = "bottom",
+        horizontal = {
+          preview_width = 0.55,
+        },
+        vertical = {
+          preview_height = 0.55,
+        },
+      },
 
       mappings = {
         i = {

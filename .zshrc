@@ -12,7 +12,7 @@
 # Enable colors and change prompt:
 autoload -U colors && colors
 # PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-# PS1="%B%{$fg[red]%}[%{$fg[magenta]%}%~%{$fg[red]%}]%{$fg[blue]%}$%{$reset_color%}%b "
+PS1="%B%{$fg[red]%}[%{$fg[magenta]%}%~%{$fg[red]%}]%{$fg[blue]%}$%{$reset_color%}%b "
 
 # Preferences
 setopt autocd # Automatically cd into typed directory
@@ -34,6 +34,7 @@ export PATH=$PATH:~/.pyenv/bin
 export PATH=$PATH:~/.npm-global/bin
 export PATH=$PATH:~/.local/share/gem/ruby/3.0.0/bin
 export PATH=$PATH:$HOME/npm/bin
+export PATH=$PATH:$HOME/.scripts
 export GOPATH=~/go
 export GOPATH=$GOPATH~/golib
 export SUDO_EDITOR=nvim
@@ -47,6 +48,7 @@ export STARSHIP_CONFIG=~/.config/zsh/themes/starship/config.toml
 # Prevent double first character in commands
 export LC_CTYPE=en_US.UTF-8
 export XDG_RUNTIME_DIR=/run/user/1000
+export ANDROID_HOME=~/Library/Android/sdk
 
 # Applications
 export FZF_DEFAULT_OPTS="--layout=reverse --height=10"
@@ -151,14 +153,29 @@ bindkey '^e' edit-command-line
 [ -f "$HOME/.config/zsh/zfunctions" ] && source "$HOME/.config/zsh/zfunctions"
 # [ -f "$HOME/.config/zsh/zoxiderc" ] && source "$HOME/.config/zsh/zoxiderc"
 
-# Load themes
-eval "$(starship init zsh)"
-# source "$HOME/.config/zsh/themes/spaceshiprc"
-eval "$(zoxide init zsh)"
-
 # source /usr/share/nvm/init-nvm.sh
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+eval "$(/opt/homebrew/bin/mise activate zsh)"
+setopt prompt_subst
+# function virtualenv_info {
+#     [ $VIRTUAL_ENV ] && echo -n '('`basename $VIRTUAL_ENV`') '
+# }
+# PROMPT='$(virtualenv_info)'"$PROMPT"
+PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+
+# Load themes
+eval "$(starship init zsh)" 2>/dev/null
+# source "$HOME/.config/zsh/themes/spaceshiprc"
+# eval "$(zoxide init zsh)"
+
+eval "$(thefuck --alias)" 2>/dev/null
+
 # Load extensions ; should be last.
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+# source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+
+
 

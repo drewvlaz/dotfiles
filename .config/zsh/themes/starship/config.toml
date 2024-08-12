@@ -29,7 +29,6 @@ $conda\
 $status\
 $shell\
 $env_var\
-$time\
 $custom\
 $cmd_duration\
 $line_break\
@@ -56,9 +55,9 @@ read_only = " 🔒"
 
 [git_branch]
 format = "[on](italic) [$symbol$branch]($style) "
-style = "bold green"
+style = "bold blue"
 symbol = " "
-truncation_length = 4
+truncation_length = 30
 truncation_symbol = ""
 
 [git_status]
@@ -83,7 +82,7 @@ only_detached = true
 
 [git_metrics]
 format = '[+$added]($added_style)[/](bold white)[-$deleted]($deleted_style) '
-added_style = "bold blue"
+added_style = "bold green"
 deleted_style = "bold red"
 disabled = false
 

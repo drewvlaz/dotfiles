@@ -1,11 +1,5 @@
 return {
   {
-    "github/copilot.vim",
-    config = function()
-      vim.cmd([[highlight CopilotSuggestion guifg=#ffb996 ctermfg=8]])
-    end,
-  },
-  {
     "lervag/vimtex",
     ft = { "tex" },
 

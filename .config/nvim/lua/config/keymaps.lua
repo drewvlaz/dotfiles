@@ -29,6 +29,7 @@ keymap("v", ">", ">gv", opts)
 keymap("n", "<TAB>", ":bnext<CR>", opts)
 keymap("n", "<S-TAB>", ":bprevious<CR>", opts)
 keymap("n", "<BACKSPACE>", "<C-^>", opts)
+keymap("n", "<leader>br", "<cmd>b #<CR>", whichkey_opts("Return to last buffer"))
 
 -- Harpoon
 keymap("n", "<leader>hA", require("harpoon.mark").add_file, whichkey_opts("Add file"))
@@ -50,12 +51,9 @@ keymap("n", "<leader>dc", "<cmd>VimtexCompile<CR>", whichkey_opts("Compile"))
 keymap("n", "<leader>df", "<cmd>VimtexClean<CR>", whichkey_opts("Clean"))
 -- keymap("n", "<leader>de", "<cmd>VimtexErrors<CR>", whichkey_opts("Errors"))
 keymap("n", "<leader>ds", "<cmd> set spell! spell?<CR>", whichkey_opts("Toggle spelling"))
--- f = { "<cmd>LspZeroFormat<CR>", "Format"},
--- s = { "<cmd>set spell! spell?<CR>", "Toggle spelling"},
--- S = { "z=", "Spell suggestions"},
--- m = { "ciW$$<ESC>P", "Format math"},
 
--- c = {
---       "<cmd>lua require('telescope.builtin').colorscheme({enable_preview = true})<CR>",
---       "Colorscheme with Preview",
--- },
+-- Git
+keymap("n", "<leader>gb", "<cmd>GitBlameOpenCommitURL<CR>", whichkey_opts("Open in browser"))
+
+-- Zenmode
+keymap("n", "<leader>z", "<cmd>ZenMode<CR>", whichkey_opts("Toggle zen mode"))
