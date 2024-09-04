@@ -45,12 +45,14 @@ local custom_hi_groups = function()
   for _, keyword_group in ipairs(keyword_groups) do
     vim.api.nvim_set_hl(0, keyword_group, { italic = true, fg = keyword_highlight.fg })
   end
+  vim.api.nvim_set_hl(0, "CursorLineNr", { bold = true, fg = keyword_highlight.fg })
 
   local string_highlight = vim.api.nvim_get_hl(0, { name = "String" })
   vim.api.nvim_set_hl(0, "@string", { italic = true, fg = string_highlight.fg })
 
   local comment_highlight = vim.api.nvim_get_hl(0, { name = "Comment" })
   vim.api.nvim_set_hl(0, "@comment", { italic = true, fg = comment_highlight.fg })
+  vim.api.nvim_set_hl(0, "Label", { fg = comment_highlight.fg })
 
   -- Transparent backgrounds
   vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })

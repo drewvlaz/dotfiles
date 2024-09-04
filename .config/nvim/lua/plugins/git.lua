@@ -14,7 +14,7 @@ return {
     date_format = "%m-%d-%Y", -- template for the date, check Date format section for more options
     virtual_text_column = 1, -- virtual text start column, check Start virtual text at column section for more options
     display_virtual_text = 1, -- virtual text
-    highlight_group = "Comment",
+    highlight_group = "Label",
     set_extmark_options = {
       hl_mode = "combine",
     },
