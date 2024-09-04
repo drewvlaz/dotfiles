@@ -31,33 +31,52 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
-local make_transparent = function()
-  vim.cmd("highlight String gui=italic cterm=italic")
-  vim.cmd("highlight Normal ctermbg=none guibg=none")
-  vim.cmd("highlight NormalNC ctermbg=none guibg=none")
-  vim.cmd("highlight NormalFloat guibg=none ctermbg=none")
-  vim.cmd("highlight FloatBorder guibg=none ctermbg=none")
-  vim.cmd("highlight FloatTitle guibg=none ctermbg=none")
-  vim.cmd("highlight NonText ctermbg=none guibg=none")
-  vim.cmd("highlight SignColumn guibg=none ctermbg=none")
-  vim.cmd("highlight EndOfBuffer guibg=none ctermbg=none")
-  vim.cmd("highlight NeoTreeNormal guibg=none ctermbg=none")
-  vim.cmd("highlight NeoTreeNormalNC guibg=none ctermbg=none")
-  vim.cmd("highlight NeoTreeEndOfBuffer guibg=none ctermbg=none")
-  vim.cmd("highlight NeoTreeDimText guifg=#ffb996 ctermfg=8")
-  vim.cmd("highlight CopilotSuggestion guifg=#ffb996 ctermfg=8")
+local custom_hi_groups = function()
+  local keyword_highlight = vim.api.nvim_get_hl(0, { name = "Keyword" })
+  local keyword_groups = {
+    "@keyword",
+    "@keyword.conditional",
+    "@keyword.exception",
+    "@keyword.function",
+    "@keyword.import",
+    "@keyword.repeat",
+    "@keyword.return",
+  }
+  for _, keyword_group in ipairs(keyword_groups) do
+    vim.api.nvim_set_hl(0, keyword_group, { italic = true, fg = keyword_highlight.fg })
+  end
+
+  local string_highlight = vim.api.nvim_get_hl(0, { name = "String" })
+  vim.api.nvim_set_hl(0, "@string", { italic = true, fg = string_highlight.fg })
+
+  local comment_highlight = vim.api.nvim_get_hl(0, { name = "Comment" })
+  vim.api.nvim_set_hl(0, "@comment", { italic = true, fg = comment_highlight.fg })
+
+  -- Transparent backgrounds
+  vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
+  vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
+  vim.api.nvim_set_hl(0, "FloatBorder", { bg = "NONE" })
+  vim.api.nvim_set_hl(0, "FloatTitle", { bg = "NONE" })
+  vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE" })
+  vim.api.nvim_set_hl(0, "NonText", { bg = "NONE" })
+  vim.api.nvim_set_hl(0, "SignColumn", { bg = "NONE" })
+  vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "NONE" })
+  vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "NONE" })
+  vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "NONE" })
+  vim.api.nvim_set_hl(0, "NeoTreeEndOfBuffer", { bg = "NONE" })
+  vim.api.nvim_set_hl(0, "CopilotSuggestion", { fg = "#ffb996", bg = "NONE" })
 end
 
 vim.api.nvim_create_autocmd("ColorScheme", {
   group = augroup("color_special_formatting"),
   pattern = "*",
-  callback = make_transparent,
+  callback = custom_hi_groups,
 })
 
 vim.api.nvim_create_autocmd("VimEnter", {
   group = augroup("enter_special_formatting"),
   pattern = "*",
-  callback = make_transparent,
+  callback = custom_hi_groups,
 })
 
 -- vim.api.nvim_create_autocmd("InsertEnter", {
