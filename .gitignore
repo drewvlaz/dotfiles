@@ -1,2 +1,2 @@
-./.config/zsh/history
-./.config/tmux/plugins/
+.config/zsh/history
+.config/tmux/plugins/*

@@ -1650,3 +1650,32 @@ exit
 : 1725421217:0;ls
 : 1725421219:0;gs
 : 1725421230:0;g add -A
+: 1725421240:0;gs
+: 1725421251:0;g restore --staged ../tmux/plugins
+: 1725421252:0;gs
+: 1725421260:0;v .gitignore
+: 1725421263:0;..
+: 1725421265:0;v .gitignore
+: 1725421285:0;gs
+: 1725421292:0;g add .gitignore
+: 1725421293:0;gs
+: 1725421296:0;v .gitignore
+: 1725421301:0;gs
+: 1725421312:0;g commit -m "updates"
+: 1725421314:0;gs
+: 1725421318:0;v .gitignore
+: 1725421325:0;gs
+: 1725421326:0;v .gitignore
+: 1725421332:0;gs
+: 1725421350:0;g rm .config/tmux/plugins
+: 1725421355:0;g rm -r .config/tmux/plugins
+: 1725421359:0;gs
+: 1725421387:0;cd .config/tmux
+: 1725421388:0;ls
+: 1725421391:0;ls plugins
+: 1725421398:0;rm -rf plugins
+: 1725421400:0;..
+: 1725421401:0;ls
+: 1725421403:0;gs
+: 1725421409:0;g add .gitignore
+: 1725421414:0;g commit -am "updates"
