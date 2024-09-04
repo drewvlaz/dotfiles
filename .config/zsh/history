@@ -19,7 +19,6 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"'
 /opt/homebrew/bin/brew
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> .zshrc
 source .zshrc
-which nvim
 brew list python
 brew list node
 brew unlink python
@@ -154,7 +153,6 @@ pip-compile local-requirements.in\
 mkdir partner
 cat partner
 ls partner
-npm install -g yarn
 ls -a
 touch .env
 ll -color=always
@@ -171,7 +169,6 @@ g diff src
 vim ~/.zshrc
 mkdir tmux
 cd tmux
-nvim
 cd ../dotfiles
 vim tmux.conf
 vim .config/zsh/zfunctions
@@ -202,13 +199,11 @@ python manage.py createsuperuser
 python manage.py dbshell
 nvim lo
 nvim local_env.py
-python manage.py test
 g checkout refactor/axl-159-remove-csrf-exemption-for-mobile-app-now-that-native-ios-app
 git push --set-upstream origin refactor/axl-159-remove-csrf-exemption-for-mobile-app-now-that-native-ios-app\
 
 g commit -m "remove: CSRF exemption for mobile"
 g lo
-g restore --staged
 yarn run start\
 
 npm i --save-dev @types/uuid
@@ -296,7 +291,6 @@ chmod +x test.sh
 v test.sh
 mv test.sh Documents
 g stash push -- src/services/care_team/
-g add src/migrations/
 g stash push -- src/migrations
 git log --name-status HEAD^..HEAD
 git log -1 --pretty=%B
@@ -318,7 +312,6 @@ rm bkup
 ls .cache
 g ammend
 g commit --ammend
-g commit --amend
 echo "hello:" | awk -F: '{print $1}'
 g reset --soft HEAD~
 g reset HEAD!
@@ -364,16 +357,13 @@ python manage.py changepassword drew@axlehealth.com
 vim local_env.py
 pip freeze
 pip freeze | grep pytest
-pytest -n auto
 python manage.py quicktest test_edit_care_team_api_v2
 python manage.py quicktest test_get_care_team_api_v2
 g branch -c fix/axl-575-unable-to-delete-shifts-in-partner
 g checkout -c
 g checkout -b fix/axl-575-unable-to-delete-shifts-in-partner
-"/Applications/Postgres.app/Contents/Versions/16/bin/psql" -p5432 "api-production"
 python manage.py quicktest test_create_patient
 g restore --staged src/services/shifts/
-gcom -n
 g checkout -b feat/axl-529-coverage-lookup
 basename 
 basename "$(pwd)"
@@ -398,27 +388,23 @@ python manage.py quicktest test_edit_care_team_api_v2_multiple_patients
 python manage.py quicktest CareTeamTest
 python manage.py quicktest CareTeamTestApiV2Test
 python manage.py quicktest CareTeamApiV2Test
-python manage.py quicktest test_patient_booking
 python manage.py quicktest test_edit_care_team_api_v2_fake_clinician
 python manage.py quicktest TestMiscPublicV2
 python manage.py quicktest test_coverage_lookup_v2new_address_only
 python manage.py quicktest test_misc_v2
 g checkout -b feat/axl-334-make-create-visit-on-patient-details-in-partner-always-go-to
 head app.config.ts
-npx expo run:ios
 g pul
 g stash push -- src/models
 top
 cd Documents/dotfiles
 hotp
 htop
-g reset HEAD~2
 yarn run start
 python manage.py runserver
 g install
 echo $VIRTUAL_ENV | wc -
 echo $VIRTUAL_ENV | wc -l
-pwd
 echo $VIRTUAL_ENV | grep -v '\.venv'
 echo $VIRTUAL_ENV | grep -v 'venv'
 echo $VIRTUAL_ENV | grep -v 'v'
@@ -435,7 +421,6 @@ g rebase feat/axl-658-1-add-a-button-in-the-patient-details-page-that-links-thei
 g branch -d feat/axl-659-2-kill-patient-to-partner-redirection
 g checkout -b feat/axl-659-2-kill-patient-to-partner-redirection
 g branch -d fix/axl-575-unable-to-delete-shifts-in-partner
-yarn install
 g checkout -b feat/axl-660-3-add-a-can-see-patient-portal-flag-on-org
 sudo ln -sfn /opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk/ /Library/Java/JavaVirtualMachines/openjdk.jdk
 cd qhp-app
@@ -453,8 +438,6 @@ ngrok config add-authtoken 2jl66tGvxQtOTFKIkpqd95fiyQY_4XQgWH4Sux2Ck99efNevj
 ngrok http 8081
 ngrok http 8000
 ngrok --help
-npx expo run:android
-g push -f
 adb
 adb kill-server
 adb start-server
@@ -475,7 +458,6 @@ vim .config/zsh/aliasrc
 unset VIRTUAL_ENV
 source .venv/bin/activate
 tnaqme
-ll
 lsd
 man lsd
 lsd --help
@@ -484,7 +466,6 @@ cd .git
 cd hooks
 cat pre-
 cat pre-commit
-...
 man isort
 isort --help
 cat .pre-commit-config.yaml
@@ -499,7 +480,6 @@ bat .pre-commit-config.yaml
 lazygit
 lg
 cp ~/Documents/dotfiles/personal/.config/nvim/init.lua .
-t
 cd playground
 mise use -g python@3.11
 python -V
@@ -511,10 +491,7 @@ pip install frozendict
 pip install pip-tools
 pip install -r requirements.txt
 g checkout -b test
-g commit -m "migration"
 g reset HEAD~5
-g reset --hard HEAD~5
-g reset --hard HEAD~
 g branch -d test
 python manage.py taskscheduler --help
 curl -X POST https://eoq73zdq771z35j.m.pipedream.net
@@ -529,7 +506,6 @@ python manage.py quicktest test_edit_care_team_api_v2_blank_patients
 python manage.py quicktest test_edit_care_team_api_v2_blank_clinicians
 g reset HEAD~4
 g statu
-gcom 
 cd .ssh
 bat id_ed25519.pub
 cat id_ed25519.pub
@@ -539,25 +515,18 @@ g pull origin feat/patient-redirects-prs-combined
 g checkout feat/patient-redirects-prs-combined
 python manage.py migrate api 0588
 python manage.py migrate api 0587
-python manage.py migrate api 0590
-python manage.py migrate api 0591
 g branch -d staging
 g branch -D staging
 g add 
 g commit -m "tmp"
-python manage.py pipsync
 g checkout feat/axl-489-make-public-facing-codes-for-visitchangelocations-to-use-in
 g checkout -b feat/axl-489-make-public-facing-codes-for-visitchangelocations-to-use-in
-gcom -c -n
 g commit -m "tmp" -n
 alsdfj
 echo $?
 g diff HEAD~2
-g com
-g lgo
 g checkout -b fix/axl-682-fix-parent-child-visits-causing-issues
 rm .coverage*
-python manage.py migrate api 0592
 /usr/bin/python3 /Users/drewvlaz/.vscode/extensions/ms-python.python-2024.12.1-darwin-arm64/python_files/printEnvVariablesToFile.py /Users/drewvlaz/.vscode/extensions/ms-python.python-2024.12.1-darwin-arm64/python_files/deactivate/zsh/envVars.txt
 g checkout -b feat/rename-visit-change-locations-to-be-general
 g commit -m "feat: rename VisitChangeLocations to ChangeLocations to be more general"
@@ -575,10 +544,7 @@ which st
 cat $(which st)
 g checkout -b fix/axl-693-fix-and-redeploy-make-additional-columns-selected-stay
 g push -d origin refactor/axl-160-make-additional-columns-selected-stay-visible-in-route
-g diff HEAD~
-g reset --hard HEAD~3
 g add --help
-g checkout -b feat/axl-545-visit-webhook-in-api-v2-stable
 g checkout -b feat/dont-track-coverage-files
 g commit -m "dont track coverage files"
 g checkout -b feat/axl-694-shift-blocks-with-clinician-teams-backend-migration
@@ -600,93 +566,53 @@ rm test.sh
 g checkout -b fix/keep-visit-api-v2-beta
 python manage.py quicktest test_create_and_edit_shift_blocks
 g checkout -b fix/time-conditional-tests
-g add src/
 g commit -m "fix: time conditional tests"
 g restore -
 g commit --help
-g rebase --abort
 g checkout -b fix/make-axle-table-bool-explicit
 g commit -am "fix: make ismobilelayout bool explicit"
-v .gitignore
-g add .gitignore
 g commit -m "fix: dont track coverage files part ii"
 g checkout -b feat/axl-758-mangle-v2-webhook-urls
 g branch -d feat/axl-758-mangle-v2-webhook-urls
 g checkout -b fix/axl-758-mangle-v2-webhook-urls
 python manage.py quicktest test_sanitization_config
-python manage.py mangledb --help
 python manage.py mangledb --overwrite
 python manage.py quicktest test_edit_shift_blocks
 python manage.py --help
 python manage.py mangledb_dump --help
-python manage.py makemigrations --merge
 g stash -- src/services/
-g restor .
-git restore .
-g clean -n
 g rm .
-g clean -f
 python manage.py mangledb_dump
-git status
 g checkout -b chore/remove-unused-app-config-toggle
-cd backend
 g commit -am "remove unused patient/partner redirect toggle"
 g iff
 g merge
-g merge staging
-g add -A
-g restore --staged .
 g stash --help
-g stash show
-g stash drop
-g stash lsit
-g stash list
 python manage.py taskscheduler
 python manage.py taskconsumer
-v local_env.py
-python manage.py migrate api 0594
 python manage.py quicktest test_get_shift_blocks
-g rebase staging
 python manage.py quicktest test_shift_active_duration_minutes
 python manage.py quicktest test_get_shift_block_recurrence_occurrences_in_window
 python manage.py quicktest test_get_shifts_page
 python manage.py quicktest TestShiftBlocks_V2Stable
 python manage.py quicktest test_create_shift_block_partner
-python manage.py quicktest PartnerShiftTest
 python manage.py quicktest test_list_shift_blocks
 g restore src/graphql/types/clinician/shift_block_recurrence/test.py
-python manage.py quicktest test_edit_shift_block_partner_multiple_qhps
-python
 python manage.py quicktest test_create_shift_block_qhp_validation
 python manage.py quicktest test_shift_block_lookup_clinician_fields
 g restore /src/graphql/types/clinician/shift_block_occurrence/test.py
 g restore src/graphql/types/clinician/shift_block_occurrence/test.py
-python manage.py migrate api 0595
-python manage.py makemigrations
-python manage.py migrate
 python manage.py quicktest test_get_shift_block
 python manage.py quicktest test_edit_shift_block_qhp_teams
-python manage.py quicktest test_edit_shift_block_qhps
 python manage.py quicktest ShiftBlockTest
-g checkout -b fix/axl-761-fix-child-visits-getting-stuck-in-en-route
 v git_commit_actions.txt
-which ide
 bat ide
 bat $(which ide)
 ../patient
 ../qhp-app
 cd Documents/qhp-app
-v localEnv.tsx
-v package.json
 g add package.json
-g sttus
-npx expo start --dev-client
-npx expo run:android --device --port 8083
-ngrok http --domain dolphin-driving-stingray.ngrok-free.app 8000
 python manage.py runserver --help
-python manage.py mangledb
-/usr/bin/python3 /Users/drewvlaz/.vscode/extensions/ms-python.python-2024.12.2-darwin-arm64/python_files/printEnvVariablesToFile.py /Users/drewvlaz/.vscode/extensions/ms-python.python-2024.12.2-darwin-arm64/python_files/deactivate/zsh/envVars.txt
-python manage.py quicktest --flush
 gde
 git branch -D feat/vscode-eslint
 g checkout -b fix/git branch -D feat/vscode-eslint
@@ -694,7 +620,6 @@ g checkout -b fix/axl-775-editing-shifts-fails-if-proposed-shift-would-overlap-w
 br
 g branch --help
 g status --help
-v .gitconfig
 rm init.lua
 git config --global color.ui auto 
 g checkout -b fix/axl-785-visits-not-prompted-to-be-reassigned-when-modifying-shift
@@ -708,7 +633,6 @@ which lfcd
 mktemp
 lf cmd-escape <c-c>
 lf cmd-escape
-cd .config
 cp ~/Documents/dotfiles/personal/.config/alacritty .
 mv alacritty.yml bkup
 cd .config/alacritty
@@ -730,7 +654,6 @@ cd zsh/zfu
 v zsh/zfunctions
 cd zsh
 v zfunctions
-mise trust
 du -h -I .git
 du -h -I .git src
 du -h -I src
@@ -740,50 +663,23 @@ dirs
 which sd
 which dirs
 tsd
-cstash
-g reset HEAD~
 which fuck
 which se
 g branch --list
 g branch --list | fzf
-ec
 sdls
-echo $EDITOR
 which v
-gdel
-g pull
-g pull origin staging
-g checkout staging
-gb
-g dif
-git diff
-gstat
-tkill
 ../partner
 tnae
-tname
-lfcd
 b
-g
 gf
-gs
-python manage.py quicktest
-pytest -n auto --cov --cov-report=xml:coverage.xml
-gcom
-cl
 cat which cstash
 which cstash
 which gcom
 cat $(which cstash)
 fzf
 which gsb
-gsb
-g stash
-g stash pop
 pop
-g log
-gcom -c
-g push
 al
 cd .tm
 ecxit
@@ -791,20 +687,15 @@ touch everforest-dark.tmux.conf
 v tmux.conf
 v everforest-dark.tmux.conf
 bash -c "$(curl -sLo- https://git.io/vQgMr)"
-la
 v Brewfile.lock.json
 brew --help
 brew uninstall wezterm
-s
 bre 
 brew
-v Brewfile
 brew install "font-meslo-lg-nerd-font"
 brew uninstall "font-meslo-lg-nerd-font"
 cp -r Documents/dotfiles/personal/.config/nvim .config/nvim
 cd .config/nvim
-cd nvim
-..
 mv init.vim init.vim.bkup
 cp nvim/* .
 rm nvim
@@ -817,7 +708,6 @@ awk '$1 == "config.window_decorations" && $2 == "=" {print $3}' .wezterm.lua
 awk '$1 == "config.window_decorations" && $2 == "=" {print $3 $4}' .wezterm.lua
 awk '$1 == "config.window_decorations" && $2 == "=" {print "$3 $4 $5"}' .wezterm.lua
 awk '$1 == "config.window_decorations" && $2 == "=" {print $3 $4 $5}' .wezterm.lua
-cd .scripts
 cp toggle_alacritty_op.sh toggle_wezterm_window_dec.sh
 v toggle_wezterm_window_dec.sh
 chmod +x toggle_wezterm_window_dec.sh
@@ -827,10 +717,8 @@ sed -i -- "s/config.window_decorations = \"TITLE | RESIZE\"/config.window_decora
   ~/.wezterm.lua\
 
 ./toggle_wezterm_window_dec.sh
-brew bundle
 defaults write -g NSWindowShouldDragOnGesture YES
 v sr
-st
 nmedit
 nvim --version
 \:
@@ -839,21 +727,12 @@ v README.md
 tmux set status off
 tmux set status on
 eit
-\:q
-v .wezterm.lua
-se
-v 
 v s 
 rm s
-pp
-which pp
 v src/services/care_teams/mutations.py
 tmxu
 tux
-cd
-cd Documents
 mkdir misc
-cd misc
 g clone https://github.com/ThePrimeagen/harpoon/tree/harpoon2
 g clone https://github.com/ThePrimeagen/harpoon
 cd harpoon
@@ -862,68 +741,912 @@ v lua/harpoon/buffer.lua
 v src/services/shifts/shift_rules
 pyright-languageserver 
 exits
-fuck
 kextstat
-v
-hb
-ls
-v src
-g status
-sc
-gd
-tmux
-sd
-g diff
-g restore .
-tat
-which tat
+stow
+cd personal
+man stow
+mv personal ~/.dotfiles
+cd .dotfiles
+cd 
+cd .config
+cp nvim nvim_bkup
+ls nvim_bkup
+stow --adopt .
+ll
+g restore --staged .config/zsh/history
+g add .gitignore
+v .gitignore
+g commit -m "lots of changes to neovim"
+g checkout -b work
+g rm .config/zsh/history
+v lua/plugins/buffers.lua
+python manage.py quicktest test_availability_by_qhp_appt_single_with_rounding
+g checkout -b fix/axl-820-fix-always-round-up-to-respect-new-visits-booked-at-earlier
+lst
+g update-index --assume-unchanged testing.ipynb
+v .git/info/exclude
+g update-index --skip-worktree testing.ipynb
+python manage.py quicktest test_availability_by_qhp_appt_single_respect_travel_time
 v src/services/shifts/shift_rules/mutations.py
+v nvim_bkup
+mv nvim nvim_old
+mv nvim_bkup nvim
+cd nvim
+../nvim_old
+python manage.py quicktest test_to_timewindow_assignments
+python manage.py quicktest test_to_timewindow_round_up_only_if_subdividing
+python manage.py quicktest test_shift_rules
+python manage.py quicktest test_shift_rule_intersection_only_future
+g checkout -b fix/axl-834-allow-would-be-orphaned-visit-times-to-be-shown-with-shifted
+python manage.py quicktest test_to_timewindow_subdivides
+python manage.py quicktest  test_to_timewindow_subdivides_respects_availability_when
+python manage.py quicktest test_availability_by_qhp_appt_single_no_rounding
+python manage.py quicktest  test_to_timewindow_subdivides_and_shifting_respects_availability
+g dif
+g checkout -b fix/read-reschedule-cancel-button-to-visit-detail-page
+g commit -am "re-add the reschedule/cancel button to Visit Detail page"
+git diff
+g checkout -b feat/axl-695-shift-blocks-with-clinician-teams-new-frontend
+du -a src/
+du -a src
+du -a src | awk '{print $2}'
+du -a src | awk '{print $2}' | fzf
+g com
+g commit -am "fix: re-add the reschedule/cancel button to Visit Detail page"
+q
+g pull origin master
+g checkout master
+g merge master
+g sttus
+cp backend backend_bkup
+cd backend_bkup
+mise trus
+mise trust
+black .
+isort .
+rm -rf backend_bkup
+cd backend
+which rm
+tr
+man tr
+g stash push -- src/partner
+/usr/bin/python3 /Users/drewvlaz/.vscode/extensions/ms-python.python-2024.12.2-darwin-arm64/python_files/printEnvVariablesToFile.py /Users/drewvlaz/.vscode/extensions/ms-python.python-2024.12.2-darwin-arm64/python_files/deactivate/zsh/envVars.txt
+python manage.py mangledb --help
+python manage.py mangledb --env dev
+v edit
+chmod +x edit
+rm axle_roles.xlsx
+g reset HEAD~20
+g restor .
+git restore .
+g clean -s
+g clean --help
+g clean -i
+rm scripts/data
+rm -rf scripts/data
+rm src/graphql/types/encounter
+rm -rf src/graphql/types/encounter
+rm -rf src/graphql/types/service
+rm -rf src/graphql/types/service_bundles
+rm -rf src/graphql/types/service_bundles/
+g statsu
+git status
+rm -rf src/graphql/types/service_bundle
+ipython --TerminalInteractiveShell.editing_mode=vi
+python --TerminalInteractiveShell.editing_mode=vi
+mkdir -p .ipython/profile/profile_default
+cd profile_
+cd profile_default
+ls startup
+v .inputrc
+cd .ipython/profile_default
+cd startup
+cat README
+v 00-start.py
+g checkout -b feat/axl-838-adapt-quicktest-to-pytest
+rm 00-start.py
+rm src/management/commands/pytest.py
+g checkout -b feat/axl-790-implement-document-api-v2-endpoints
+g add src/public_api_v2_new/
+"/Applications/Postgres.app/Contents/Versions/16/bin/psql" -p5432 "api-production"
+python manage.py quicktest test_visit_modification_triggers_changelog
+python manage.py quicktest TestVisitPublicV2Stable
+pytest src/public_api_v2_new/tests/test_documents.py
+pytest -n auto src/public_api_v2_new/tests/test_documents.py
+pytest --help | grep "-s"
+pytest -s -n auto src/public_api_v2_new/tests/test_documents.py
+g stash show 
+g diff
+echo ^i
+echo $'\cc'
+lfcd
+gstat
+nvim ipython_config.py
+g commit -am "fix: filter out cancelled visits from patient avail"
+cd .ipython/profile/profile_default
+v ipython_config.py
+g checkout -b fix/axl-xxx-allow-predictive-routing-selection-in-service-area
+g checkout -b feat/axl-545-visit-webhook-in-api-v2-stable
+trim
+;q
+g status
+which gdel
+tmux
+tname
+pwd 
+pwd --help
+pwd -help
+man pwd
+echo "hello" | xargs pwd
+echo "-L" | xargs pwd
+echo "-L" | xargs vim
+echo "hello" | xargs vim
+du -a src | awk '{print $2}' | fzf --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' | xargs -r tmux split-window -c $(pwd) $EDITOR
+du -a src | awk '{print $2}' | fzf --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' | xargs $EDITOR
+echo "yarn.lock" | xargs -r $EDITOR
+du -a src | awk '{print $2}' | fzf --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' | xargs -r $EDITOR
+tmux display-message -p "#{pane_current_path}"\
+
+du -a src | awk '{print $2}' | fzf --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' --prompt='âƒ½¯ ' --pointer='âƒ½¯ '
+echo "yes" | xargs -r printf "no"
+echo "yes" | xargs -r echo "no"
+echo "/Users/drewvlaz/Documents/backend/local_env.py"| xargs -r nvim
+du -a src | awk '{print $2}' | fzf --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' | tmux send-keys "cd $(pwd)"
+tmux display-message -p "#{pane_current_path}"
+cd /Users/drewvlaz/Documents/backend
+du -a src | awk '{print $2}' | fzf --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' | xargs -r nvim
+du -a src | awk '{print $2}' | fzf --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' | xargs -r nvim && echo $(pwd)
+tmux display-message -p "#{pane_current_path}" && du -a src | awk '{print $2}' | fzf --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' | xargs -r nvim
+man xargs
+which ide
+tmux new-session -c Documents/backend -s $session -n backend -d\
+
+tmux new-session -c Documents/backend -s ide -n backend -d\
+
+tkil
+which tat
+lines local_env.py
+edit
+which ed
+which edit
+echo $EDITOR
+which vim
+nivm
+which nvim
+tkill
+ide
+nvim
+g lgo
+git log
+echo 61820
+g checkout -b fix/axl-811-no-such-services-exist-error-in-patient-booking-flow-when
+d
+qhp
+g restore --staged src/services/visit_positions/dataclasses.py
+g checkout -b fix/axl-761-fix-child-visits-getting-stuck-in-en-route
+g checkout -b feat/multiline-visit-notes
+g commit -m "allow notes to be multiline"
+v src 
+python manage.py quicktest  test_qhp_get_visit
+python manage.py quicktest  test_qhp_complete_multi_position_visit
+python manage.py quicktest  test_qhp_complete_multi_patient_visit
+python manage.py quicktest  test_qhp_complete_invalid_subvisits
+g checkout -b feat/axl-757-add-external-id-to-create-visit-and-edit-visit-in-api-v2
+g checkout origin axl-810-error-when-user-toggles-between-patient-info-visit-order
+g checkout axl-810-error-when-user-toggles-between-patient-info-visit-order
+python manage.py quicktes TestVisitPublicV2t
+python manage.py quicktes TestVisitPublicV2
+g checkout -b feat/axl-890-add-external-id-field-to-edit_visit
+g rebase feat/axl-890-add-external-id-field-to-edit_visit
+g r 
+g checkout -b feat/axl-338-surface-external-patient-id-in-api-v2
+g merge --abort
+python manage.py quicktest PartnerShiftTest
+g stash 
+python manage.py quicktest  TestPatientPublicAPIv2
+/usr/bin/python3 /Users/drewvlaz/.vscode/extensions/ms-python.python-2024.12.3-darwin-arm64/python_files/printEnvVariablesToFile.py /Users/drewvlaz/.vscode/extensions/ms-python.python-2024.12.3-darwin-arm64/python_files/deactivate/zsh/envVars.txt
+git diff --word-diff=color --no-index
+git diff --word-diff=color HEAD~
+delta
+v .gitconfig
+g stash view
+edc
+t
+python manage.py migra 
+g restore -p
+glg
+v src/partner/partner_urls.py
+python manage.py quicktest migrate
+python manage.py quicktest  TestVisitPublicV2
+python manage.py quicktest test_visit_lookup_basic_fields
+g checkout feat/axl-757-add-external-id-to-create-visit-and-edit-visit-in-api-v2
+g checkout -b fix/fix-changelog
+python manage.py quicktest  test_edit_visit_public_v2
+g diff HEAD~
+g puhs
+git push
+g add src/
+g restore --staged src/utils/
+gcom -n
+g revert HEAD~
+g revert HEAD~1
+g revert HEAD~2
+g revert
+g revert --abort
+g restore --staged
+g revert '93fb5b0c0b87e14146204159fbda168d5cd8e0d9'
+g add src/components/
+g fetch
+pytest -n auto  test_generate_document_download_link_invalid_doc
+pytest -n auto   test_generate_document_download_link
+pytest -n auto -k test_generate_document_download_link  test_generate_document_download_link_invalid_doc
+python manage.py quicktest   test_edit_shift_block_qhps
+g log
+python manage.py quicktest test_get_non_recurring_shift_block_recurrence_schedule_event_fields
+g checkout -b fix/axl-xxx-respect-window-in-shift-block-lookup-in-window
+g stash pop 
+python manage.py quicktest test_edit_shift_block_partner_multiple_qhps
+gcom -c -n
+g pull origin
+v .wezterm.lua
+g checkout -b fix/axl-808-fix-visits-csv-export-in-partner
+cd Documents
+sl
+g clone https://github.com/drewvlaz/zen-mode.nvim
+cd zen-mode.nvim
+v lua
+g commit -am "fix"
+v lua/zen-mode/view.lua
+wse
+which hb
+pp
+which pp
+man pp
+gd HEAD~2
+python manage.py quicktest ShiftRulesTest
+pytest -n auto -k test_generate_document_download_link
+pytest -n auto -k test_generate_document_download_link_invalid_doc
+pytest -k test_generate_document_download_link
+pytest -k test_generate_document_download_link_invalid_doc
+g pull origin staging
+man pytest
+pytest -n auto --reuse-db --fail-first
+pytest -n auto --reuse-db --lf
+g restore src/public_api_v2_new/test_visit_v2.py
+pytest -n auto --reuse-db -k TestVisitPublicV2
+gcom 
+g rebase feat/axl-694-shift-blocks-with-clinician-teams-backend-migration
+rm tmp-nwjnbvekrbfkebr.xlsx
+pytest -n auto --reuse-db -k test_shift_lookup_clinician_fields
+g pull origin staging:staging
+g pull staging
+pytest --reuse-db --nomigrations -k test_generate_document_download_link_invalid_doc
+pytest --reuse-db --no-migrations -k test_generate_document_download_link_invalid_doc
+pytest --reuse-db -k test_generate_document_download_link_invalid_doc
+more
+pytest --help | bat
+pytest --help | less
+pytest --markers
+cat requirements.txt | grep pytest
+bat requirements.txt 
+bat requirements.txt | grep pytest
+python manage.py lastmigration
+which pytest | xargs nvim
+python manage.py pytest hello
+pytest --help -k
+pytest --help | grep -k
+pytest --help | grep "-k"
+pytest --help | grep "k"
+pytest --help | grep "k EXPRESSION"
+pytest --help | ripgrep "k EXPRESSION"
+ripgrep
+pytest --help | rg "k EXPRESSION"
+man rg
+v Brewfile
+brew bundle
+tldr rg
+tldr bat
+tldr fuck
+python manage.py pytest --failfast hello
+python manage.py pytest hello --failfast 
+pytest -n auto --reuse-db
+pytest -n auto --cov --cov-report=xml:coverage.xml
+python manage.py pytest hello today
+python manage.py pytest hello today wh ajdskjakf dj
+python manage.py pytest --flush test_edit_and_create_single_patient_care_team
+pytest -k test_edit_and_create_single_patient_care_team
+python manage.py pytest test_edit_and_create_single_patient_care_team
+pytest --reuse-db --no-migrations -k test_edit_and_create_single_patient_care_team test_edit_single_patient_care_team test_edit_care_team_no_patients
+pytest --reuse-db --no-migrations -k "test_edit_and_create_single_patient_care_team test_edit_single_patient_care_team test_edit_care_team_no_patients"
+pytest --reuse-db --no-migrations -k "test_edit_and_create_single_patient_care_team or test_edit_single_patient_care_team or test_edit_care_team_no_patients"
+pytest --reuse-db --no-migrations -k "test_edit_and_create_single_patient_care_team"
+python manage.py pytest test_edit_and_create_single_patient_care_team test_edit_single_patient_care_team test_edit_care_team_no_patients
+python manage.py pytest 
+python manage.py pytest --failfast
+python manage.py pytest --failed-only
+python manage.py pytest --simple
+python manage.py pytest --help
+python manage.py pytest --noparallel
+python manage.py quicktest --help
+python manage.py test --help
+python manage.py pytest
+python manage.py pytest --flush
+python manage.py pytest --debug
+python manage.py quicktest --debug
+python manage.py quicktest --debug test_edit_and_create_single_patient_care_team
+python manage.py quicktest --noparallel
+pytest --reuse-db
+pytest -n auto --reuse-db --no-migrations
+pytest -n auto --create-db
+python manage.py quicktest test_patient_booking
+pytest --reuse-db --no-migrations
+pytest --create-db -n auto
+python manage.py quicktest --flush
+python manage.py quicktest --flush --nokeepdb
+pytest --reuse-db -n auto ShiftBlockRecurrenceGraphQLTest
+pytest --reuse-db -n auto -k ShiftBlockRecurrenceGraphQLTest
+pytest --reuse-db -n auto
+g checkout staging
+g checkout -b refactor/axl-905-change-graphql-to-not-depend-on-deprecated-shiftblockqhp
+gd src/graphql/
+python manage.py migrate api 0594
+sfc
+pytest --reuse-db -k test_shift_lookup_clinician_fields
+g commit -am "revert change to wrong graphql test"
+g commit -a --reuse-message
+g add -p
+g add src/graphql/
+g add src/partner/
+g add src/services/shift_blocks/model_crud.py
+g add src/services/shift_blocks/models.py
+g restore --staged src/migrations/
+g add src/migrations/
+pytest --reuse-db -W ignore::DeprecationWarning
+pytest --reuse-db -W ignore::DeprecationWarning --create-db
+pytest --reuse-db -W ignore::DeprecationWarning --create-db -n auto
+pytest --reuse-db -W ignore::DeprecationWarning -n auto
+g commit -am "fix tests"
+g clean
+tldr fzf
+man fzf
+echo 0
+bath --themes
+bat --themes
+bat --list-themes
+bat --theme "Monokai Extended Origin"
+bat --theme "Monokai Extended Origin" coverage.xml
+man bat
+pytest --reuse-db -W ignore::DeprecationWarning -n auto -k test_create_shift_block
+pytest --reuse-db -W ignore::DeprecationWarning -k test_create_shift_block
+pytest --reuse-db -W ignore::DeprecationWarning -k test_create_shift_block_end_time_before_start_time
+pytest --reuse-db -W ignore::DeprecationWarning -k test_create_shift_block_end_time_before_start_time -s
+pytest --reuse-db -W ignore::DeprecationWarning -k test_create_shift_block_end_time_before_start_time --trace
+man pytest | v
+pytest --reuse-db -W ignore::DeprecationWarning -k test_create_shift_block_end_time_before_start_time --trace --pdbcls=IPython.terminal.debugger:TerminalPdb
+pytest -k test_create_shift_block_end_time_before_start_time
+pytest -k test_create_shift_block_qhp_validation
+pytest -k test_edit_shift_block_qhps
+pytest -k test_get_no_team_qhps_on_shift_block
+pytest -k test_get_team_qhps_on_shift_block
+pytest -k shift
+pytest -k shift_blocks.test_shift_blocks
+pytest -k test_get_team_qhps_on_shift_block --cov=.
+pytest -k test_shift_blocks --cov
+g commit -am "add cov"
+pytest -k test_get_team_qhps_on_complex_shift_block --create-db
+pytest -k test_get_team_qhps_on_complex_shift_block
+pytest -k test_get_team_qhps_on_complex_shift_block -s
+pytest -k test_get_non_team_qhps_on_shift_block
+pytest -k test_get_all_qhps_on_shift_block
+pytest -k test_get_no_single_qhps_on_team_shift_block
+ed 
+g commit -am "fix cov"
+python manage.py migrate api 0599
+which pytes
+which pytest
+g commit -am "error v1 multiple qhps on block"
+pytest -n auto -k test_shift_blocks
+pytest -k test_edit_shift_block_qhp_teams
+pytest -k test_edit_shift_block_qhp_teams -s
+pytest -k test_get_qhp_teams_on_shift_block
+g commit -am "minor
+g commit -am "minor things"
+g commit -am "shift block crud"
+pytest -k test_get_shifts_page_with_clinician_team
+g commit -am "remove qhp prefetches"
+g commit -am "migrate qhp"
+g commit -am "revert some changes"
+g commit -am "decouple"
+pytest -k test_get_shifts_page --trace
+pytest -k test_get_shifts_page --pdb
+pytest -k test_get_shifts_page
+pytest -n auot
+kk
+pytest -k test_get_shifts_page0 --create-db
+pytest -k test_get_shifts_page0
+pytest -k test_get_shifts_page0 -s
+pytest -k test_get_shifts_page_basic -s
+pytest -k test_get_shifts_page_basic --create-db
+pytest --create-db -k test_get_shifts_page_basic
+g add src/public_api_v1/
+g add src/services/
+g commit -m "update tests"
+g checkout -b feat/axl-908-crud-reservations-via-the-api
+pytest -k test_create_clinician_reservation --migrations
+pytest -k test_create_clinician_reservation --create-db --migrations
+pytest -k test_create_clinician_reservation 
+pytest -k test_create_reservation_no_expiry -s
+gd --
+pytest -k test_delete_reservation_v2 -s
+pytest -k test_create_reservation_v2 -s
+pytest -k test_reservations -s
+g checkout -b feat/axl-904-time-reservations
+g checkout -b feat/axl-909-consider-reservations-in-availability-service
+v $(which cstash)
+g reset HEAD~2
+g checkout -b fix/axl-570-patient-search-bar-clears-text-after-search-has-been
+ls misc
+cd misc
+g clone git@github.com:junegunn/fzf-git.sh.git
+pwd
+feat/axl-694-shift-blocks-with-clinician-teams-backend-migration 
+../misc/fzf-git.sh
+v fzf-git.sh
+mv misc repos
+cd fzf-git.sh
+gco feat/axl-694-shift-blocks-with-clinician-teams-backend-migration 
+g stash pop stash@\{1\}
+g commit -am "default none with missing"
+g commit -a --reuse-message=HEAD
+g commit -m "migration"
+g commit -a --reuse-message=6580d9be0 
+pytest -k test_edit_shift_block_partner_multiple_qhps
+g commit -am "rename qhp to clinician"
+pytest -k test_get_shifts_page_basic 
+pytest -k test_get_shifts_page_basic  --pdb
+pytest -k test_get_shifts_page_basic  --
+pytest -k test_get_shifts_page_basic
+pytest -k test_create_shift_block_partner
+g restore --staged .
+gd src/services/
+s
+pytest -k test_create_shift_block_partner --pdb
+pytest -k test_partner_create_shift_block_partial_visit --trace
+pytest -k test_partner_create_shift_block_partial_visit --pdb
+pytest -k test_partner_create_shift_block_partial_visit
+g checkout -b fix/axl-xxx-prompt-reassign-shift-block-partial-overlap
+g clean -n
+python manage.py migrate api
+pytest -k test_partner_create_shift_block_team --create-db --migrations
+pytest -k test_partner_create_shift_block_team 
+pytest -k test_partner_create_shift_block_team
+pytest -k test_partner_create_shift_block_team_and_single_qhp
+pytest -k test_partner_create_shift_block_invalid_times --pdb
+pytest -k test_partner_create_shift_block_invalid_times 
+pytest -k test_partner_create_shift_bloc --pdb
+pytest -k test_partner_create_shift_bloc --pdb -s
+pytest -k test_partner_get_shifts_page_basic --create-db
+pytest -k test_partner_get_shifts_page_basic --pdb
+pytest -k test_partner_get_shifts_page_basic
+pytest -k test_partner_create_shift_bloc --create-db
+pytest -k test_partner_create_shift_bloc -s
+pytest -k test_partner_create_shift_bloc
+pytest -k test_partner_create_shift_block_invalid_times
+pytest -k test_partner_create_shift_block_fake_clinicians --pdb
+pytest -k test_partner_create_shift_block_fake_clinicians
+pytest --help
+pytest -k test_partner_create_shift_block -s --log-level=WARNING
+pytest --help | v
+pytest -k test_partner_create_shift_block -s
+pytest -k test_partner_create_shift_block
+pytest -k test_partner_edit_shift_block
+pytest -k test_partner_delete_shift_block
+pytest -k test_partner_delete_shift_block --pdb
+pytest -n auto -k test_partner
+pytest -n auto -k test_partner -pdb
+pytest -n auto -k test_partner --pdb
+pytest -n auto -k
+gd src/partner/_views/
+gd src/services/shift_blocks/
+g merge feat/axl-694-shift-blocks-with-clinician-teams-backend-migration
+python
+pytest -k test_partner_edit_shift_block_times
+pytest -k test_shift_blocks
+g commit -m "respond to comments"
+g commit --amend
+gbn
+python manage.py migrate 
+python manage.py migrate api 0590
+python manage.py migrate api 0591
+python manage.py migrate api 0592
+python manage.py migrate api 0593
+python manage.py migrate api 0595
+npm install -g yarn
+npm run install
+npm install --force
+npm clean
+npx clean
+rm -rf package-lock.json
+la
+npx install
+v android/settings.gradle
+npm run install:android
+npm run
+npm run android
+npm run android --warning-mode all
+npm run android --warning-mode
+npm run android --stacktrace
+rm -rf ios android
+npm install
+npm install --legacy-peer-deps
+rm -rf package-lock.json .idea
+npx expo run:ios
+npx expo run:android --device --port 8083 --clean
+g reset --hard HEAD~5
+npx expo run:android --clear
+gco master
+npx expo run:android
+ngrok http --domain dolphin-driving-stingray.ngrok-free.app 8000
+v package.json
+g reset --hard HEAD~3
+rm -rf ios
+yarn add expo
+yarn install
+gco -b fix/axl-927-multi-line-notes-showing-up-when-no-notes-submitted
+gco -b fix/axl-926-clinician-given-option-to-mark-services-on-bundle-as
+rm -rf node_modules
+rm -rf android
+g checkout -b revert/revert-maps-upgrade
+g revert 748d308 
+rm -rf android node_modules
+yarn
+npx expo start --dev-client
+npx expo run:android --device --port 8083
+v localEnv.tsx
+gcom -c
+g stash show stash@\{1\}
+g stash show stash@\{2\}
+gco -b refactor/axl-896-bring-edit-shift-dialog-up-to-parity-with-create-shift
+...
+..
+cd repos
+g clone git@gitlab.com:dwt1/wallpapers.git
+g clone https://gitlab.com/dwt1/wallpapers.git
+ipython
+ip
+py
+gcom
+v 
+g commit -am "minor"
+jupyter 
+jupyter notebooks
+jupyter notebook
+jupyter
+gd src/services/shift_blocks/shiftblock_instances.py
+gd src/partner/
+gd d14ec676a 
+gd 72f3f8e93 
+pytest -k test_partner_get_shifts_page_specific_clinicians
+gd f8b3889fe 
+gd f8b3889fe 674aee6f1 
+gd 674aee6f1 f8b3889fe 
+g commit -am "naming"
+g commit -am "refactor"
+pytest -k test_partner_create_shift_block_partially_overlaps_visit
+pytest -k test_create_shift_block
+g commit -am "tests"
+tat
+gco -b feat/deprecate-django-tests
+python manage.py quictest
+python manage.py migrate api 0597
+python manage.py migrate api 0598
+python manage.py migrate api 0597-auto
+python manage.py migrate api 0597_auto
+python manage.py migrate api 0598_auto_20240820_1909
+v src/migrations/max_migration.txt 
+g commit -am "clean-up migrations"
+g stash show stash@\{3\}
+g commit -am "comm
+g commit -am "comments"
+g
+gco -b feat/shift-block-fix
+g commit -am "minor fix for backend compatability"
+g commit -am "explicit none"
+sgt
+echo $PYTEST
+echo $PYTEST_CURRENT_TEST
+echo $PYTEST_XDIST_WORKER
+pytest -n auto --pdb
+pytest -n auto --pdb -s
+g commit -am "fix overlap"
+g rebase --abort
+gco -b fix/multi-day-shift-blocks
+g commit -am "fix shift block windows"
+g push -f
+hb
+gco -b fix/shift-block-timezones
+g commit -am "fix shift block tz"
+g commit -am "remove"
+g reset 42194ce2e 
+g clean -f
+rm src/services/shift_blocks/tests
+rm -rf src/services/shift_blocks/tests
+python manage.py migrate api 0600
+python manage.py migrate api 0601
+python manage.py migrate 0601
+python manage.py migrate 0602
+g revert ca4048090 
+python manage.py makemigrations --skip-checks
+g revert --continue
+g reset --hard bc14f5e4 
+gco -b past
+g reset --hard HEAD~ 
+ge
+gld
+cl
+l
+gco -b fix/shift-block-clinician-avail
+g commit -am "remove redundant loop"
+g commit -am "rename"
+g rebase staging
+g rebase --continue
+g reset HEAD~1
+v pyproject.toml
+python manage.py test
+python manage.py quicktest
+g add src/test_helpers/
+g add src/django_config/
+g commit -am "deprecate django test and quicktest"
+g add conftest.py
+pytest -n auto --create-db --migrations
+pytest -n auto
+v conftest.py
+g commit -am "add conftest"
+g merge staging
+g commit -am "remove migration"
+v requirements.in
+python manage.py pipsync
+g commit -am "remove instafail"
+g.
+pytest -k test_create_reservation
+pytest -k test_create_reservation --create-db
+cstash
+gco -b feat/make-qhp-recallable-without-name
+pytest -k test_create_clinician_reservation_multi_clinicians
+pytest -k test_get_care_team_from_uuid
+g commit -am "feat: be able to make multiple calls to make_qhp without changing name"
+\:q
+pytest -k test_create_clinician_reservation
+pytest -k test_create_reservation_no_expiry
+pytest -k test_reservations
+g commit -m "add address/clinic"
+pytest -k test_create_reservation_v2
+pytest -k test_create_reservation_v2 -pdb -n 1
+pytest -k test_create_reservation_v2 --pdb -n 1
+pytest -k test_create_reservation_v2 --pdb -n0
+pytest -k test_create_reservation_v2 -n0 --create-db --migrations
+pytest -k test_create_reservation_v2 -n0 --pdb
+pytest -k test_create_reservation_v2 -n0 --trace
+pytest -k test_create_reservation_v2 -n0
+gd | grep print
+pytest -k test_create_reservation_v2 -n0 -s
+pytest -k -n0 -s test_create_reservationa 
+pytest -k -n0 -s test_create_reservation_v2_fake_clinician
+pytest -n0 -s -k test_create_reservation_v2_fake_clinician
+pytest -n0 -s -k test_create_reservation_no_expiry
+g commit -m "add address/clinic tests"
+g commit -am "add address/clinic tests"
+g commit -am "remove import"
+g merge feat/axl-909-consider-reservations-in-availability-service
+g merge --continue
+v src
+g commit -am "uuid"
+gd --staged
+g commit -am "save"
+se
+v . pyproject.toml
+v . 
+echo $MYVIMRC
+sc
+v
 v init.lua
+cd
+cd .scripts
+ls
+pytest -n0 -s -k test_shift_block_occurrences_in_window_fully_contained
+pytest -n0 -s -k test_shift_block_occurrences_in_window_recurring
+pytest -n0 -s -k test_shift_block_occurrences_in_window_basic
+pytest -n0 -s -k test_shift_block_occurrences
+g commit -am "feat: shiftblock window tests"
+g reset HEAD~
+g stash
+gco -b feat/axl-957-tests-for-shiftblocks-contained-in-overlapping-given-time
+gco -b fix/axl-957-tests-for-shiftblocks-contained-in-overlapping-given-time
+g commit -am "fix: shiftblock window tests"
+g restore .
+fuck
+g stash pop
+g add -A
+g stash show
+g stash drop
+g pull
+g revert a55939f9 
+gd HEAD~
+g reset --hard HEAD~
+gd a55939f9 
+gd a55939f9 eb9a1952 
+ed
+python manage.py makemigrations --merge --skip-checks
+python manage.py makemigrations --merge
+sd
+v local_env.py
+python manage.py migrate
+g restore --staged . && g restore .
+gco -b fix/axl-971-fix-search-functionality-on-service-and-service-bundles-in
+g commit -am "fix: search bar"
+gdel
+st
+python manage.py mangledb
+v .
+gs
+pytest --create-db
+pytest -n0 -s -k test_create_clinician_reservation
+python manage.py makemigrations
+pytest --create-db --migrations
+gd
+g commit -am "clinic to address"
+gsb
+g stash lsit
+g stash list
+pytest -n0 -s -k test_create_reservation_v2_service_area
+pytest -n0 -s -k test_create_reservation_v2_service_area --pdb
+pytest -n0 -s -k test_reservations
+g commit -am "service area"
+g push
+gb
+g merge feat/axl-908-crud-reservations-via-the-api
+gl
+pytest
+ec
 exit
-: 1723437750:0;stow
-: 1723437753:0;sd
-: 1723437756:0;v Brewfile
-: 1723437764:0;brew bundle
-: 1723437775:0;cd personal
-: 1723437775:0;ls
-: 1723437777:0;la
-: 1723437863:0;man stow
-: 1723437918:0;..
-: 1723437929:0;mv personal ~/.dotfiles
-: 1723437930:0;cd
-: 1723437932:0;cd .dotfiles
-: 1723437932:0;ls
-: 1723437942:0;g status
-: 1723437943:0;g diff
-: 1723437978:0;cd 
-: 1723437980:0;cd .config
-: 1723437983:0;cp nvim nvim_bkup
-: 1723437989:0;ls nvim_bkup
-: 1723438079:0;stow --adopt .
-: 1723438081:0;g diff
-: 1723438110:0;ls
-: 1723438111:0;cd nvim
-: 1723438112:0;ls
-: 1723438113:0;la
-: 1723438114:0;ll
-: 1723438132:0;g add -A
-: 1723438142:0;g commit -m "lots of changes to neovim"
-: 1723438146:0;g diff
-: 1723438166:0;g reset HEAD~
-: 1723438169:0;g add -A
-: 1723438181:0;g restore --staged .config/zsh/history
-: 1723438184:0;g status
-: 1723438193:0;v .gitignore
-: 1723438202:0;g status
-: 1723438209:0;g add .gitignore
-: 1723438211:0;g status
-: 1723438220:0;v .gitignore
-: 1723438229:0;g status
-: 1723438231:0;g commit -m "lots of changes to neovim"
-: 1723438232:0;g push
-: 1723438247:0;g checkout -b work
-: 1723438248:0;g push
-: 1723438253:0;g status
-: 1723438262:0;g rm .config/zsh/history
-: 1723438287:0;ls
-: 1723438290:0;exit
+: 1725417085:0;cstash
+: 1725417087:0;gb
+: 1725417090:0;gl
+: 1725418468:0;gb
+: 1725418472:0;gl
+: 1725418494:0;cd
+: 1725418496:0;cd .scripts
+: 1725418499:0;v unstash
+: 1725418506:0;ls
+: 1725418511:0;chmod +x unstash
+: 1725418519:0;ls
+: 1725418522:0;v unstash
+: 1725418536:0;bat gcom
+: 1725419010:0;v init.lua
+: 1725419023:0;v .
+: 1725419150:0;v init.lua
+: 1725420613:0;sd
+: 1725420618:0;ls
+: 1725420621:0;..
+: 1725420623:0;cd dotfiles
+: 1725420623:0;ls
+: 1725420625:0;..
+: 1725420625:0;ls
+: 1725420630:0;cd repos
+: 1725420630:0;ls
+: 1725420634:0;..
+: 1725420635:0;cd
+: 1725420635:0;ls
+: 1725420639:0;ll
+: 1725420641:0;la
+: 1725420646:0;cd .dotfiles
+: 1725420646:0;ls
+: 1725420653:0;gs
+: 1725420669:0;g add -A
+: 1725420675:0;g commit -am "updates"
+: 1725420677:0;g push
+: 1725420680:0;gsb
+: 1725420684:0;gl
+: 1725420699:0;g reset --hard HEAD~
+: 1725420704:0;v .
+: 1725420716:0;al
+: 1725420717:0;la
+: 1725420719:0;ll
+: 1725420727:0;gb
+: 1725420730:0;ls
+: 1725420731:0;la
+: 1725420733:0;ls .config
+: 1725420749:0;cp -r ~/.config/nvim .config/nvim
+: 1725420752:0;ls
+: 1725420756:0;cd .config/nvim
+: 1725420756:0;ls
+: 1725420759:0;v init.lua
+: 1725420776:0;ls
+: 1725420779:0;cd
+: 1725420781:0;cd .config
+: 1725420781:0;ls
+: 1725420786:0;rm -rf nvim_old
+: 1725420796:0;mkdir nvim_old
+: 1725420802:0;cp -r nvim/* nvim_old
+: 1725420813:0;ls
+: 1725420817:0;rm *
+: 1725420822:0;rm -rf *
+: 1725420824:0;ls
+: 1725420833:0;cp ~/.config/nvim/* .
+: 1725420835:0;ls
+: 1725420842:0;..
+: 1725420844:0;ls
+: 1725420862:0;cp ~/.config/zsh/* zsh
+: 1725420870:0;ll
+: 1725420886:0;rm -rf zsh
+: 1725420895:0;cp ~/.config/zsh .
+: 1725420897:0;ls
+: 1725420900:0;sc
+: 1725420909:0;ls
+: 1725420922:0;rm -rf tmux
+: 1725420926:0;ls
+: 1725420929:0;cp ~/.config/tmux .
+: 1725420938:0;ls
+: 1725420940:0;ls tmux
+: 1725420947:0;cd tmux
+: 1725420947:0;ls
+: 1725420953:0;la
+: 1725420959:0;ll
+: 1725420973:0;g restore --staged . && g restore .
+: 1725420975:0;ls
+: 1725420978:0;cd tmux
+: 1725420980:0;ls
+: 1725420981:0;ll
+: 1725420984:0;cd zsh
+: 1725420988:0;../zsh
+: 1725420990:0;ll
+: 1725421006:0;ls
+: 1725421010:0;..
+: 1725421011:0;ls
+: 1725421014:0;cd tmux
+: 1725421014:0;ls
+: 1725421015:0;ll
+: 1725421020:0;cd plugins
+: 1725421021:0;ll
+: 1725421024:0;..
+: 1725421026:0;ls
+: 1725421029:0;cd nvim
+: 1725421029:0;ls
+: 1725421030:0;ll
+: 1725421039:0;../nvim
+: 1725421040:0;ls
+: 1725421043:0;rm -rf *
+: 1725421051:0;cp ~/.config/nvim/* .
+: 1725421052:0;ls
+: 1725421065:0;../bspwm
+: 1725421065:0;ls
+: 1725421066:0;ll
+: 1725421069:0;..
+: 1725421070:0;ls
+: 1725421074:0;ll
+: 1725421079:0;..
+: 1725421080:0;ll
+: 1725421093:0;..
+: 1725421094:0;ls
+: 1725421097:0;..
+: 1725421108:0;cp ~/.wezterm.lua .
+: 1725421114:0;stow --adopt .
+: 1725421119:0;ll
+: 1725421120:0;ls
+: 1725421124:0;cd .config
+: 1725421125:0;ls
+: 1725421127:0;cd nvim
+: 1725421127:0;ll
+: 1725421136:0;v init.lua
+: 1725421167:0;ls
+: 1725421170:0;ls lua/plugins
+: 1725421181:0;ls
+: 1725421183:0;cd .config/nvim
+: 1725421184:0;ls
+: 1725421186:0;ls lua/plugins
+: 1725421189:0;gs
+: 1725421210:0;l
+: 1725421216:0;rm lua/plugins/test.lua
+: 1725421217:0;ls
+: 1725421219:0;gs
+: 1725421230:0;g add -A

@@ -9,7 +9,8 @@ return {
     defaults = {
       prompt_prefix = " ",
       selection_caret = " ",
-      path_display = { "smart" },
+      path_display = { "absolute" },
+      layout_strategy = "vertical",
       layout_config = {
         prompt_position = "bottom",
         horizontal = {

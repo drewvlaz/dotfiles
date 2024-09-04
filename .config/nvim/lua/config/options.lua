@@ -44,7 +44,9 @@ local options = {
   hidden = true, -- Required to keep multiple buffers open
   formatexpr = "", -- Proper use of gq
 }
+
 vim.opt.shortmess:append("c")
+
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
