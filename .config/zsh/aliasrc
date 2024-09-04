@@ -4,53 +4,52 @@
 alias sudo='sudo '
 
 # Navigation
-alias \
-    ..="cd .." \
-    ...="cd ../.." \
-    grep="grep --color=auto" \
-    la="ls -a" \
-    ll="ls -al"  \
-    cp="cp -v -r" \
-    :q="exit" \
-    b="cd -" \
-    za="zoxide add ." \
+alias ..="cd .."
+alias ...="cd ../.."
+alias grep="grep --color=auto"
+alias la="ls -a"
+alias ll="ls -al"
+alias cp="cp -v -r"
+alias :q="exit"
+alias b="cd -"
+alias za="zoxide add"
 
 # Common commands that are just too long
-alias \
-    cl="clear" \
-    ka="killall" \
-    g="git" \
-    lg="lazygit" \
-    gd="git diff" \
-    gb="git checkout @{-1}" \
-    gsb="git branch --list | fzf | xargs git checkout" \
-    gdel="git branch --list | fzf | xargs git branch -d" \
-    gstat="git status" \
-    ec="$EDITOR ~/.zshrc" \
-    sc="source ~/.zshrc" \
-    evc="$EDITOR ~/.config/nvim/init.vim" \
-    v="$EDITOR" \
-    vim="$EDITOR" \
-    ff="firefox" \
-    google="google-chrome-stable" \
-    toclip="xclip -selection c" \
-    yeet="yay -Rns" \
-    stdconvert="convert -resize 1240x1750 -gravity center extent 1240x1750 -units PixelsPerInch -density 150" \
-    yt="youtube-dl --add-metadata -i" \
-	yta="yt -x -f bestaudio/best --audio-format mp3" \
-    hb="clear && $HOME/.scripts/hashbang.sh" \
-    tlist='tmux list'
+alias cl="clear"
+alias ka="killall"
+alias g="git"
+alias lg="lazygit"
+alias gl="git log"
+alias gd="git diff"
+alias gb="git checkout @{-1}"
+alias gsb="git branch --list | fzf | xargs git checkout"
+alias gs="git status" # WARN: This overrides gs (GhostScript)
+alias gco="git checkout"
+alias ec="$EDITOR ~/.zshrc"
+alias sc="source ~/.zshrc"
+alias evc="$EDITOR ~/.config/nvim/init.vim"
+alias v="$EDITOR"
+alias vim="$EDITOR"
+alias ff="firefox"
+alias google="google-chrome-stable"
+alias toclip="xclip -selection c"
+alias yeet="yay -Rns"
+alias stdconvert="convert -resize 1240x1750 -gravity center extent 1240x1750 -units PixelsPerInch -density 150"
+alias yt="youtube-dl --add-metadata -i"
+alias yta="yt -x -f bestaudio/best --audio-format mp3"
+alias hb="clear && $HOME/.scripts/hashbang.sh"
+alias tlist="tmux list"
+alias py="ipython"
 
 # Improved commands
-alias \
-    ls="lsd --color=always" \
-    yay="yay" \
-    python="python3" \
-    pip="pip3" \
-    fetch="neofetch --ascii_colors 4 4 --colors 11 8 8 11 8 7" \
-    gccc="gcc -Wall -Werror" \
-    nvide="neovide --frameless --geometry 145x45" \
-    fzf="fzf --prompt='❯ ' --pointer='❯ '" \
-    please="sudo !!" \
-    plz="sudo !!" \
-    # alert=notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history | tail -n1 | sed -e 's/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//')" \
+alias ls="lsd --color=always"
+alias yay="yay"
+alias python="python3"
+alias pip="pip3"
+alias fetch="neofetch --ascii_colors 4 4 --colors 11 8 8 11 8 7"
+alias gccc="gcc -Wall -Werror"
+alias nvide="neovide --frameless --geometry 145x45"
+alias please="sudo !!"
+alias plz="sudo !!"
+alias pytest="pytest --pdbcls=IPython.terminal.debugger:TerminalPdb --no-header --cov=. --cov-report=xml:coverage.xml"
+# alert=notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history | tail -n1 | sed -e 's/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//')" \

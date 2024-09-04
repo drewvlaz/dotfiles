@@ -1,5 +1,30 @@
 #! /bin/bash
 
+ed() {
+  file=$(du -a src | awk '{print $2}' | fzf --prompt='❯ ' --pointer='❯ ')
+  if [ -n "$file" ]; then
+    $EDITOR $file
+  fi
+}
+
+gdel() {
+  target_branch=$(git branch --list | fzf | sed 's/^[[:space:]]*//')
+  if [ -z "$target_branch" ]; then
+    return
+  fi
+
+  git branch -d "$target_branch"
+  ret_val=$?
+
+  if [ $ret_val -ne 0 ]; then
+    echo "Are you sure you want to delete the branch?"
+    response=$(echo "n\ny" | fzf)
+    if [ "$response" = "y" ]; then
+      git branch -D "$target_branch"
+    fi
+  fi
+}
+
 dirs() {
   du -d 8 \
     -I .git \
@@ -16,7 +41,9 @@ dirs() {
     ~/Documents/backend \
     ~/Documents/partner \
     ~/Documents/patient \
+    ~/Documents/qhp-app/ \
     ~/Documents/dotfiles \
+    ~/Documents/repos \
     ~/.config/nvim \
     ~/.config/tmux \
     ~/.config/zsh \
@@ -29,7 +56,7 @@ lines() {
 }
 
 se() {
-  du -a \
+  file=$(du -a \
     ~/.wezterm.lua \
     ~/Documents/dotfiles \
     ~/.config/alacritty \
@@ -38,8 +65,10 @@ se() {
     ~/.config/zsh \
     ~/.scripts |
     awk '{print $2}' |
-    fzf |
-    xargs -r $EDITOR
+    fzf)
+  if [ -n "$file" ]; then
+    $EDITOR $file
+  fi
 }
 
 sd() {
@@ -85,7 +114,11 @@ stat() {
 }
 
 ide() {
-  dir=$(dirs | awk '{print $2}' | fzf)
+  backend_path=~/Documents/backend
+  partner_path=~/Documents/partner
+  patient_path=~/Documents/patient
+
+  # dir=$(dirs | awk '{print $2}' | fzf)
   retVal=$?
 
   if [ $# -gt 0 ]; then
@@ -95,9 +128,13 @@ ide() {
   fi
 
   if [ $retVal -eq 0 ]; then
-    tmux new-session -c $dir -s $session -n code -d \; \
-      new-window -n term -c $dir \; \
-      select-window -t "$session":code
+    tmux new-session -c "$backend_path" -s "$session" -n "backend" -d \; \
+      new-window -c "$partner_path" -n "partner" \; \
+      new-window -c "$patient_path" -n "patient" \; \
+      new-window -c "$backend_path" -n "servers" \; \
+      split-window -c "$partner_path" -h \; \
+      new-window -c "$backend_path" \; \
+      select-window -t "$session":backend
     # tmux send-keys -t "$session":0 ls C-m
     tmux attach -t $session
     # tmux new-session -s "$session" -d

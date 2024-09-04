@@ -16,16 +16,6 @@ $git_commit\
 $git_state\
 $git_metrics\
 $git_status\
-$package\
-$golang\
-$java\
-$julia\
-$nodejs\
-$python\
-$ruby\
-$rust\
-$lua\
-$conda\
 $status\
 $shell\
 $env_var\
@@ -33,6 +23,17 @@ $custom\
 $cmd_duration\
 $line_break\
 [[╰─](bold white)$character](bold green)"""
+
+# $package\
+# $golang\
+# $java\
+# $julia\
+# $nodejs\
+# $python\
+# $ruby\
+# $rust\
+# $lua\
+# $conda\
 
 [character]
 # ❮❯

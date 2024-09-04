@@ -49,11 +49,15 @@ export STARSHIP_CONFIG=~/.config/zsh/themes/starship/config.toml
 export LC_CTYPE=en_US.UTF-8
 export XDG_RUNTIME_DIR=/run/user/1000
 export ANDROID_HOME=~/Library/Android/sdk
+export MYVIMRC=~/.config/nvim/init.lua
 
 # Applications
-export FZF_DEFAULT_OPTS="--layout=reverse --height=10"
-# eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
+export FZF_DEFAULT_OPTS="--layout=reverse --height=20 --prompt='❯ ' --pointer='❯ '"
+eval "$(fzf --zsh)"
+source ~/Documents/repos/fzf-git.sh/fzf-git.sh
+
+# Python
+export PYTHONBREAKPOINT=IPython.terminal.debugger.set_trace
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -111,34 +115,6 @@ lfcd() {
     fi
 }
 
-# Use nnn to switch directories
-# nnncd() {
-#     # Block nesting of nnn in subshells
-#     if [ -n $NNNLVL ] && [ "${NNNLVL:-0}" -ge 1 ]; then
-#         echo "nnn is already running"
-#         return
-#     fi
-
-#     # The default behaviour is to cd on quit (nnn checks if NNN_TMPFILE is set)
-#     # To cd on quit only on ^G, remove the "export" as in:
-#     #     NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
-#     # NOTE: NNN_TMPFILE is fixed, should not be modified
-#     export NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
-
-#     # Unmask ^Q (, ^V etc.) (if required, see `stty -a`) to Quit nnn
-#     # stty start undef
-#     # stty stop undef
-#     # stty lwrap undef
-#     # stty lnext undef
-
-#     nnn "$@"
-
-#     if [ -f "$NNN_TMPFILE" ]; then
-#             . "$NNN_TMPFILE"
-#             rm -f "$NNN_TMPFILE" > /dev/null
-#     fi
-# }
-
 # Custom ZSH Binds
 bindkey -s '^o' 'lfcd\n'
 bindkey 'jk' vi-cmd-mode
@@ -153,22 +129,14 @@ bindkey '^e' edit-command-line
 [ -f "$HOME/.config/zsh/zfunctions" ] && source "$HOME/.config/zsh/zfunctions"
 # [ -f "$HOME/.config/zsh/zoxiderc" ] && source "$HOME/.config/zsh/zoxiderc"
 
-# source /usr/share/nvm/init-nvm.sh
-
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 eval "$(/opt/homebrew/bin/mise activate zsh)"
 setopt prompt_subst
-# function virtualenv_info {
-#     [ $VIRTUAL_ENV ] && echo -n '('`basename $VIRTUAL_ENV`') '
-# }
-# PROMPT='$(virtualenv_info)'"$PROMPT"
 PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
 # Load themes
 eval "$(starship init zsh)" 2>/dev/null
-# source "$HOME/.config/zsh/themes/spaceshiprc"
-# eval "$(zoxide init zsh)"
 
 eval "$(thefuck --alias)" 2>/dev/null
 
