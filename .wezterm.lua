@@ -5,15 +5,11 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.font = wezterm.font("CaskaydiaCove Nerd Font")
--- config.font = wezterm.font("MesloLGS Nerd Font Mono")
 config.font_size = 18
 config.font_rules = {
 	{
-		intensity = "Normal",
 		italic = true,
-		font = wezterm.font_with_fallback({
-			family = "CaskaydiaCove Nerd Font Italic",
-		}),
+		font = wezterm.font("My Mono", { italic = true }),
 	},
 }
 
