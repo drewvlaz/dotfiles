@@ -125,7 +125,7 @@ function TidyBuffersUI:goto_buffer()
   end
 end
 
-vim.keymap.set("n", "<leader>bv", TidyBuffersUI.open_popup, { noremap = true, silent = true })
+-- vim.keymap.set("n", "<leader>bv", TidyBuffersUI.open_popup, { noremap = true, silent = true })
 
 -- return BufferListUI
 return {}

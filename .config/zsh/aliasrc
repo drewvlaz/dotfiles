@@ -39,7 +39,8 @@ alias yt="youtube-dl --add-metadata -i"
 alias yta="yt -x -f bestaudio/best --audio-format mp3"
 alias hb="clear && $HOME/.scripts/hashbang.sh"
 alias tlist="tmux list"
-alias py="ipython"
+alias py="python manage.py shell"
+alias ip="ipython"
 
 # Improved commands
 alias ls="lsd --color=always"

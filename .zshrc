@@ -58,6 +58,7 @@ source ~/Documents/repos/fzf-git.sh/fzf-git.sh
 
 # Python
 export PYTHONBREAKPOINT=IPython.terminal.debugger.set_trace
+export PYTHONSTARTUP=~/.pythonrc.py
 
 # Basic auto/tab complete:
 autoload -U compinit

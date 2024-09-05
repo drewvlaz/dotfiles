@@ -89,6 +89,9 @@ for i = 1, 9 do
   end, whichkey_opts(string.format("Goto file %d", i)))
 end
 
+-- NeoTree --
+keymap("n", "<leader>i", "<cmd>Neotree buffers float toggle<CR>", whichkey_opts("Inspect buffers"))
+
 -- Vimtex --
 -- keymap("n", "<leader>dc", "<cmd>VimtexCompile<CR>", whichkey_opts("Compile"))
 -- keymap("n", "<leader>df", "<cmd>VimtexClean<CR>", whichkey_opts("Clean"))
