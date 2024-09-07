@@ -1,4 +1,4 @@
-local keymaps = require("keymaps")
+local keymaps = require("config.keymaps")
 
 --------------------------------------------------------------------------------
 -- region LUALINE

@@ -292,8 +292,6 @@ mv test.sh Documents
 g stash push -- src/services/care_team/
 g stash push -- src/migrations
 git log --name-status HEAD^..HEAD
-git log -1 --pretty=%B
-git log -1 --pretty=%B | head -n1
 mv ezpr comm
 comm
 mv comm com
@@ -459,7 +457,6 @@ tnaqme
 lsd
 man lsd
 lsd --help
-v .git
 cd .git
 cd hooks
 cat pre-
@@ -515,7 +512,6 @@ python manage.py migrate api 0588
 python manage.py migrate api 0587
 g branch -d staging
 g branch -D staging
-g add 
 g commit -m "tmp"
 g checkout feat/axl-489-make-public-facing-codes-for-visitchangelocations-to-use-in
 g checkout -b feat/axl-489-make-public-facing-codes-for-visitchangelocations-to-use-in
@@ -618,7 +614,6 @@ g checkout -b fix/axl-775-editing-shifts-fails-if-proposed-shift-would-overlap-w
 br
 g branch --help
 g status --help
-rm init.lua
 git config --global color.ui auto 
 g checkout -b fix/axl-785-visits-not-prompted-to-be-reassigned-when-modifying-shift
 python manage.py runserver -v 0
@@ -728,7 +723,6 @@ tux
 mkdir misc
 g clone https://github.com/ThePrimeagen/harpoon/tree/harpoon2
 g clone https://github.com/ThePrimeagen/harpoon
-cd harpoon
 g checkout harpoon2
 v lua/harpoon/buffer.lua
 v src/services/shifts/shift_rules
@@ -777,7 +771,6 @@ du -a src/
 du -a src
 du -a src | awk '{print $2}'
 du -a src | awk '{print $2}' | fzf
-g com
 g commit -am "fix: re-add the reschedule/cancel button to Visit Detail page"
 q
 g pull origin master
@@ -975,7 +968,6 @@ sl
 g clone https://github.com/drewvlaz/zen-mode.nvim
 cd zen-mode.nvim
 v lua
-g commit -am "fix"
 v lua/zen-mode/view.lua
 wse
 which hb
@@ -1022,8 +1014,6 @@ pytest --help | ripgrep "k EXPRESSION"
 ripgrep
 pytest --help | rg "k EXPRESSION"
 man rg
-v Brewfile
-brew bundle
 tldr bat
 tldr fuck
 python manage.py pytest --failfast hello
@@ -1084,7 +1074,6 @@ pytest --reuse-db -W ignore::DeprecationWarning
 pytest --reuse-db -W ignore::DeprecationWarning --create-db
 pytest --reuse-db -W ignore::DeprecationWarning --create-db -n auto
 pytest --reuse-db -W ignore::DeprecationWarning -n auto
-g commit -am "fix tests"
 g clean
 tldr fzf
 man fzf
@@ -1184,7 +1173,6 @@ pytest -k test_get_shifts_page_basic  --pdb
 pytest -k test_get_shifts_page_basic  --
 pytest -k test_get_shifts_page_basic
 pytest -k test_create_shift_block_partner
-g restore --staged .
 gd src/services/
 s
 pytest -k test_create_shift_block_partner --pdb
@@ -1211,7 +1199,6 @@ pytest -k test_partner_create_shift_bloc
 pytest -k test_partner_create_shift_block_invalid_times
 pytest -k test_partner_create_shift_block_fake_clinicians --pdb
 pytest -k test_partner_create_shift_block_fake_clinicians
-pytest --help
 pytest -k test_partner_create_shift_block -s --log-level=WARNING
 pytest --help | v
 pytest -k test_partner_create_shift_block -s
@@ -1263,7 +1250,6 @@ gco master
 npx expo run:android
 ngrok http --domain dolphin-driving-stingray.ngrok-free.app 8000
 v package.json
-g reset --hard HEAD~3
 rm -rf ios
 yarn add expo
 yarn install
@@ -1282,12 +1268,10 @@ gcom -c
 g stash show stash@\{1\}
 g stash show stash@\{2\}
 gco -b refactor/axl-896-bring-edit-shift-dialog-up-to-parity-with-create-shift
-...
 g clone git@gitlab.com:dwt1/wallpapers.git
 g clone https://gitlab.com/dwt1/wallpapers.git
 ipython
 ip
-g commit -am "minor"
 jupyter 
 jupyter notebooks
 jupyter notebook
@@ -1327,7 +1311,6 @@ echo $PYTEST_XDIST_WORKER
 pytest -n auto --pdb
 pytest -n auto --pdb -s
 g commit -am "fix overlap"
-g rebase --abort
 gco -b fix/multi-day-shift-blocks
 g commit -am "fix shift block windows"
 g push -f
@@ -1352,7 +1335,6 @@ ge
 gld
 gco -b fix/shift-block-clinician-avail
 g commit -am "remove redundant loop"
-g commit -am "rename"
 g rebase staging
 g rebase --continue
 g reset HEAD~1
@@ -1368,7 +1350,6 @@ pytest -n auto
 v conftest.py
 g commit -am "add conftest"
 g commit -am "remove migration"
-v requirements.in
 python manage.py pipsync
 g commit -am "remove instafail"
 g.
@@ -1378,7 +1359,6 @@ gco -b feat/make-qhp-recallable-without-name
 pytest -k test_create_clinician_reservation_multi_clinicians
 pytest -k test_get_care_team_from_uuid
 g commit -am "feat: be able to make multiple calls to make_qhp without changing name"
-\:q
 pytest -k test_create_clinician_reservation
 pytest -k test_create_reservation_no_expiry
 pytest -k test_reservations
@@ -1408,7 +1388,6 @@ g commit -am "save"
 v . pyproject.toml
 v . 
 echo $MYVIMRC
-v
 pytest -n0 -s -k test_shift_block_occurrences_in_window_fully_contained
 pytest -n0 -s -k test_shift_block_occurrences_in_window_recurring
 pytest -n0 -s -k test_shift_block_occurrences_in_window_basic
@@ -1428,19 +1407,13 @@ v local_env.py
 python manage.py migrate
 gco -b fix/axl-971-fix-search-functionality-on-service-and-service-bundles-in
 g commit -am "fix: search bar"
-gdel
-pytest --create-db
-pytest -n0 -s -k test_create_clinician_reservation
 g commit -am "clinic to address"
-pytest -n0 -s -k test_create_reservation_v2_service_area
-pytest -n0 -s -k test_create_reservation_v2_service_area --pdb
 g commit -am "service area"
 chmod +x unstash
 v unstash
 bat gcom
 cd dotfiles
 cd repos
-g reset --hard HEAD~
 al
 ls .config
 cp -r ~/.config/nvim .config/nvim
@@ -1462,9 +1435,6 @@ rm -rf *
 cp ~/.config/nvim/* .
 ../bspwm
 cp ~/.wezterm.lua .
-cd .config
-cd nvim
-ll
 l
 rm lua/plugins/test.lua
 g commit -m "updates"
@@ -1474,7 +1444,6 @@ g rm -r .config/tmux/plugins
 cd .config/tmux
 ls plugins
 rm -rf plugins
-..
 g add .gitignore
 cd .fonts/MyMonoNerd
 rm MyMono-Italic.otf
@@ -1484,8 +1453,6 @@ cp .fonts/MyMonoNerd/* ~/.fonts/MyMonoNerd
 ga
 g commit -am "italicsgs"
 defaults write -g KeyRepeat -int 1
-la
-rm .wezterm.lua--
 g commit -am "hi groups"
 tname
 cat $(which tname)
@@ -1505,37 +1472,21 @@ echo $tmux#{pane_current_path}
 echo $tmux_pane_current_path
 tmux display-message -p "#{pane_current_path}"
 basename $(tmux display-message -p "#{pane_current_path}")
-cd .scripts
 ./tmux_name_window.sh
-b
 v tmux_name_window.sh
-tat
 ide
-g reset HEAD~
-v .wezterm.lua
 python manage.py mangledb
-g pull
 g restore --staged ../tmux/plugins
 gco -b feat/axl-978-create-validation-task-to-check-for-problematic-shiftshift
 python
 python manage.py shell
-gcom
-gco -b chore/axl-696-shift-blocks-with-clinician-teams-remove-old-frontend
-g merge staging
 g merge --abort
 ed 
-g stash
-g stash pop
 g stash --abort
 g stash clear
 g stash lsit
 g stash list
-g stash show
-g stash drop
-g restore --staged . && g restore .
-se
 py -c "from src.utils.everything import *"
-ec
 v .pythonrc.py
 g
 gd ca4048090
@@ -1546,66 +1497,268 @@ tldr grep
 g show ca4048090  | rg TODO
 tldr rg
 g show ca4048090  | rg "\+.*TODO"
-tmux
 cl
-sc
-sd
 g show ca4048090  | rg "^\+.*TODO"
-gl
-cstash
-gb
 gco -b fix/axl-892-fix-negative-incorrect-s-in-visit-order-frequency-fields
-st
 hb
-py
-g restore .
-python manage.py makemigrations
-pytest -n0 -s -k test_reservations --create-db --migrations
-pytest -n0 -s -k test_reservations
-pytest --create-db --migrations
 g commit -am "potential visit"
-gsb
-g merge feat/axl-908-crud-reservations-via-the-api
 e
-ed
-g merge --continue
-pytest
-g push
-v .
-v 
 cd lua
 cd plugins
-cd
 cd .dotfiles
-cd .config/nvim
-gd
-gs
-g add -A
-exit
-ls
-ls lua/plugins
 g commit -am "updates"
-v init.lua
+ls lua/plugins
+...
 stow --adopt .
-: 1725516603:0;ls
-: 1725516605:0;ls lua/plugins
-: 1725516614:0;ls
-: 1725516617:0;ls lua/plugins
-: 1725516631:0;...
-: 1725516633:0;stow --adopt .
-: 1725516636:0;gs
-: 1725516641:0;gd
-: 1725516649:0;v init.lua
-: 1725516708:0;v .
-: 1725516716:0;la
-: 1725517150:0;v .
-: 1725518737:0;v init.lua
-: 1725519074:0;v .
-: 1725519329:0;tmux
-: 1725519334:0;sd
-: 1725519339:0;v .
-: 1725554105:0;v
-: 1725554108:0;v .
-: 1725554444:0;gb
-: 1725554445:0;v .
-: 1725554496:0;exit
+tmux
+v
+pytest -n0 -s -k test_create_reservation_start_in_past
+pytest -n0 -s -k test_create_reservation_v2_service_area --pdb
+g commit -am "avail params"
+du 
+du -a
+du -a | grep harpoon
+cat harpoon
+ls harpoon.json
+cat harpoon.json
+bat harpoon.json
+v harpoon.json
+cat 1265f4bde8d02fb35ac5f9ef294766e2c1cb0021849c8082dc1f749ed2c80c17.json
+cat *.json
+bat *.json
+g commit -am "internal dataclass"
+g commit -am "start + duration"
+g add 
+g restore --staged .
+g commit -am "avail"
+pytest -n0 -s -k test_create_reservation_v2 --xfail
+pytest --help
+pytest --help | rg fail
+pytest -n0 -s -k test_create_reservation_v2 -x
+pytest -n0 -s -k /Users/drewvlaz/Documents/backend/src/public_api_v2_new/tests/test_reservations.py::test_create_reservation_v2
+pytest -s -k test_create_reservation_v0
+pytest -n0 -s -k test_create_reservation_v0 --log-level=ERROR
+pytest -n0 -s -k test_create_reservation_v2_service_area
+pytest -n0 -s -k test_create_reservation_v2_with_clinic --pdb
+pytest -n0 -s -k test_create_reservation_v2_with_clinic
+g commit -am "fix tests"
+g commit -am "todo"
+g restore --staged . && g restore .
+g stash show
+g stash drop
+python manage.py makemigrations
+g commit -am "move is_virtual"
+g commit -am "minor"
+g com
+g commit -am "duration type"
+pytest -n0 -s -k test_reservations --create-db --migrations
+g commit -am "very ugly"
+g commit -am "rename"
+g rebase feat/axl-908-crud-reservations-via-the-api
+g rebase --abort
+pytest -n0 -s -k test_create_clinician_reservation0 --create-db
+pytest -s -k test_reservations
+pytest -n0 -s -k test_create_reservation_v0 --create-db --migrations
+pytest -n0 -s -k test_create_reservation0
+pytest -n0 -s -k test_reservations
+gco -b fix/temp
+g reset --hard HEAD~3
+g reset --hard cf420d705 
+pytest -n0 -s -k test_create_clinician_reservation --create-db
+pytest -n0 -s -k test_create_clinician_reservation
+pytest -n0 -s -k test_create_reservation_v2 --create-db
+pytest -n0 -s -k test_create_reservation_v2
+pytest -n0 -s -k test_create_reservation_v0 --create-db
+pytest -n0 -s -k test_create_reservation_v000000 --pdb
+pytest -n0 -s -k test_potential_visit_options
+pytest -n0 -s -k test_create_reservation_v000000 --create-db
+pytest -n0 -s -k test_create_reservation_v000000
+pip install autoflake8
+which autoflake8
+ls .venv/bin
+autoflake8
+b
+v src/public_api_v2_new/tests/test_reservations.py
+pip uninstall autoflake8
+g commit -am "reorg"
+pytest -n0 -s -k test_create_reservation_v0
+pytest -n0 -s -k test_create_clinician_reservation0
+pytest -n0 -s -k test_create_clinician_reservation2
+pytest -n0 -s -k test_create_clinician_reservation_multi_clinicians
+pytest -n0 -k test_reserv
+g commit -am "fix"
+g commit -am "feedbak"
+g commit -am "goodbye quicktest :("
+v .git
+pytest -n0 -k care_team
+pytest -n0 -k care_team -s --create-db 
+pytest -n0 -k care_team -s --create-db
+pytest -n0 -k care_team -s
+g stash
+g stash pop
+g commit -am "loggers"
+gco -b chore/axl-696-shift-blocks-with-clinician-teams-remove-old-frontend
+g show d2dddc5e | rg "^+.*TODO"
+py
+g commit -am "msg"
+st
+pytest -n0 -k get_care_team_clinicians_for_patient
+pytest -n0 -k test_edit_and_create_single_patient_care_team
+pytest -n0 -k test_edit_and_create_single_patient_care_team -s
+pytest -n0 -s -k test_reservation
+g commit -am "appt id"
+g merge feat/axl-908-crud-reservations-via-the-api
+gdel
+gco -b feat/axl-911-create-visits-with-reservations
+gcom
+g commit -am "len"
+gsbs
+pytest -x
+pytest -x -n0
+g merge staging
+g merge --continue
+pytest --create-db --migrations
+pytest -n0 --create-d
+pytest -n0 --create-db
+pytest -s
+pytest -s -n0
+pytest --create-db
+pytest
+pytest -n0
+gd
+g commit -am "modes"
+g commit -am "config"
+g pull
+gco -b feat/special-service-exceptions
+g add -A
+g commit -am "service exception"
+gb
+gsb
+v requirements.in
+g reset HEAD~
+git log -1
+git log -1 --pretty=%B
+git log -1 --pretty=%B | head -n1
+cd .scripts
+cp cstash cpop
+v cpop
+\:q
+chmod +x cpop
+cpop
+se
+gd --quiet
+g diff --quiet
+cstash
+g diff --quiet 
+cd .local/share/nvim
+cd .local/share/nvim/lazy
+cd harpoon
+gl
+g restore .
+g reset --hard HEAD~
+rm -rf harpoon
+sd
+v Brewfile
+curl --v
+curl -v
+brew uninstall curl
+which curl
+brew uninstall usage
+brew bundle
+curl
+/opt/homebrew/bin/lsd
+brew install curl
+brew reinstall curl
+/opt/homebrew/Cellar/curl
+/opt/homebrew/Cellar/curl/8.9.1/bin/curl
+/opt/homebrew/Cellar/curl/8.9.1/bin/curl -V
+curl -V
+$PREFIX
+echo $PREFIX
+ll $XDG_RUNTIME_DIR
+ll /run/user | grep 1000
+mkdir -p /tmp/$USER-runtime
+ls /tmp/drewvlaz-runtime
+ec
+echo $XDG_RUNTIME_DIR
+sc
+cd $XDG_RUNTIME_DIR
+cat nvim.4107.0
+ed
+git rev-parse --is-inside-work-tree
+git rev-parse --is-inside-work-tree > /dev/null
+git rev-parse --is-inside-work-tree > /dev/null 2>&1
+git branch --show-current
+git branch --show-current > /dev/null 2>&1
+git branch --show-current 2>&1
+git branch --show-current 2>&1;
+v 
+exit
+cat .config/.neoconf.json
+cd .config
+cd nvim
+..
+rm init.lua
+rm *.lau
+rm *.lua
+rm init.vim.bkup lazy-lock.json lazyvim.json
+rm -rf lua stylua.toml .neoconf.json
+cd .dotfiles/
+la
+cat .wezterm.lua--
+v .wezterm.lua--
+g rm .wezterm.lua--
+gs
+g commit -am "reorg nvim"
+g push
+cd .config/nvim
+v init.lua
+tat
+cd
+rm .wezterm.lua--
+ll
+v .wezterm.lua
+v .
+ls
+: 1725739600:0;stow --adopt .
+: 1725739603:0;v init.lua
+: 1725739609:0;sd
+: 1725739611:0;ls
+: 1725739614:0;cd lua/plugins
+: 1725739614:0;ls
+: 1725739633:0;...
+: 1725739634:0;stow --adopt .
+: 1725739644:0;gs
+: 1725739663:0;cd
+: 1725739664:0;sd
+: 1725739666:0;..
+: 1725739667:0;ls
+: 1725739671:0;rm init.vim.bkup lazy-lock.json lazyvim.json
+: 1725739673:0;rm init.lua
+: 1725739674:0;ls
+: 1725739681:0;ll
+: 1725739690:0;rm .neoconf.json
+: 1725739693:0;rm -rf lua
+: 1725739698:0;rm stylua.toml
+: 1725739700:0;ll
+: 1725739705:0;cd nvim
+: 1725739706:0;ls
+: 1725739721:0;cd .config
+: 1725739722:0;ls
+: 1725739732:0;rm init.lua init.vim.bkup lazy-lock.json lazyvim.json lua
+: 1725739734:0;ll
+: 1725739740:0;rm .neoconf.json stylua.toml
+: 1725739741:0;ls
+: 1725739743:0;ll
+: 1725739748:0;stow --adopt .
+: 1725739749:0;gs
+: 1725739764:0;ls
+: 1725739766:0;ls lua/plugins
+: 1725739804:0;..
+: 1725739805:0;ls
+: 1725739807:0;ll
+: 1725739851:0;..
+: 1725739852:0;ll
+: 1725739871:0;cd bspwm
+: 1725739871:0;ls
+: 1725739874:0;v bspwmrc

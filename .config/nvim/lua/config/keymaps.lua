@@ -3,7 +3,7 @@
 -- Add any additional keymaps here
 
 --------------------------------------------------------------------------------
--- region GENERAL
+-- region HELPERS
 --------------------------------------------------------------------------------
 
 local M = {}
@@ -13,7 +13,7 @@ M.keymap = function(mode, key, action, opts)
   if opts == nil then
     opts = M.opts
   else
-    opts = vim.tbl_extend("keep", M.opts, opts)
+    opts = vim.tbl_extend("force", M.opts, opts)
   end
   vim.keymap.set(mode, key, action, opts)
 end
@@ -22,6 +22,11 @@ M.which_keymap = function(mode, key, action, description)
   local opts = vim.tbl_extend("keep", M.opts, { desc = description })
   M.keymap(mode, key, action, opts)
 end
+
+-- endregion
+--------------------------------------------------------------------------------
+-- region KEYMAPS
+--------------------------------------------------------------------------------
 
 -- Easier Escape --
 M.keymap("i", "jk", "<ESC>")
@@ -58,7 +63,7 @@ M.keymap("n", "<M-J>", ":resize -2<CR>")
 M.keymap("n", "<M-H>", ":vertical resize -2<CR>")
 M.keymap("n", "<M-L>", ":vertical resize +2<CR>")
 
-return M
-
 -- endregion
 --------------------------------------------------------------------------------
+
+return M

@@ -1,7 +1,7 @@
 local keymaps = require("config.keymaps")
 
 --------------------------------------------------------------------------------
--- region GitBlame
+-- region GIT-BLAME
 --------------------------------------------------------------------------------
 keymaps.which_keymap("n", "<leader>ga", "<cmd>GitBlameToggle<CR>", "Toggle author blame")
 keymaps.which_keymap("n", "<leader>gb", "<cmd>GitBlameOpenCommitURL<CR>", "Open in browser")
