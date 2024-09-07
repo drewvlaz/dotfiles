@@ -27,6 +27,7 @@ SAVEHIST=8000
 HISTFILE=~/.config/zsh/history
 
 # Variables
+# export PATH=/opt/homebrew/Cellar/curl/8.9.1/bin:$PATH
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/.scripts
 export PATH=$PATH:~/.emacs.d/bin
@@ -47,9 +48,11 @@ export STARSHIP_CONFIG=~/.config/zsh/themes/starship/config.toml
 # export TERM=xterm-256color
 # Prevent double first character in commands
 export LC_CTYPE=en_US.UTF-8
-export XDG_RUNTIME_DIR=/run/user/1000
 export ANDROID_HOME=~/Library/Android/sdk
 export MYVIMRC=~/.config/nvim/init.lua
+export XDG_RUNTIME_DIR=/tmp/$USER-runtime
+
+[ ! -f "$XDG_RUNTIME_DIR" ] && mkdir -p "$XDG_RUNTIME_DIR"
 
 # Applications
 export FZF_DEFAULT_OPTS="--layout=reverse --height=20 --prompt='❯ ' --pointer='❯ '"

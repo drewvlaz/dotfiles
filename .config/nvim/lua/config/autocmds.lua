@@ -69,6 +69,9 @@ local custom_hi_groups = function()
   vim.api.nvim_set_hl(0, "@comment", { italic = true, fg = comment_highlight.fg })
   vim.api.nvim_set_hl(0, "Label", { fg = comment_highlight.fg }) -- special override for git-blame
 
+  local attribute_highlight = vim.api.nvim_get_hl(0, { name = "Special" })
+  vim.api.nvim_set_hl(0, "@variable.parameter.python", { bold = true })
+
   -- Transparent backgrounds
   local transparent_groups = {
     "Normal",

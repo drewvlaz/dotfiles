@@ -48,6 +48,7 @@ return {
         { name = "buffer" },
         { name = "path" },
         { name = "nvim_lsp_signature_help" },
+        { name = "vim-dadbod-completion" },
       },
 
       formatting = {

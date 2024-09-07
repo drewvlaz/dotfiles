@@ -168,7 +168,6 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false\
 g diff src
 vim ~/.zshrc
 mkdir tmux
-cd tmux
 cd ../dotfiles
 vim tmux.conf
 vim .config/zsh/zfunctions
@@ -366,7 +365,6 @@ python manage.py quicktest test_create_patient
 g restore --staged src/services/shifts/
 g checkout -b feat/axl-529-coverage-lookup
 basename 
-basename "$(pwd)"
 tmux select-pane -T "title"
 tmux select-pane -T "Your Pane Name"\
 
@@ -637,7 +635,6 @@ cp ~/Documents/dotfiles/personal/.config/alacritty .
 mv alacritty.yml bkup
 cd .config/alacritty
 v alacritty.toml
-cd dotfiles
 cd personal/.scripts
 hash
 colors.sh
@@ -652,7 +649,6 @@ cp hashbang.sh ~/.scripts
 ../
 cd zsh/zfu
 v zsh/zfunctions
-cd zsh
 v zfunctions
 du -h -I .git
 du -h -I .git src
@@ -671,7 +667,6 @@ sdls
 which v
 ../partner
 tnae
-b
 gf
 cat which cstash
 which cstash
@@ -680,7 +675,6 @@ cat $(which cstash)
 fzf
 which gsb
 pop
-al
 cd .tm
 ecxit
 touch everforest-dark.tmux.conf
@@ -695,7 +689,6 @@ brew
 brew install "font-meslo-lg-nerd-font"
 brew uninstall "font-meslo-lg-nerd-font"
 cp -r Documents/dotfiles/personal/.config/nvim .config/nvim
-cd .config/nvim
 mv init.vim init.vim.bkup
 cp nvim/* .
 rm nvim
@@ -746,16 +739,10 @@ stow
 cd personal
 man stow
 mv personal ~/.dotfiles
-cd .dotfiles
 cd 
-cd .config
 cp nvim nvim_bkup
 ls nvim_bkup
-stow --adopt .
-ll
 g restore --staged .config/zsh/history
-g add .gitignore
-v .gitignore
 g commit -m "lots of changes to neovim"
 g checkout -b work
 g rm .config/zsh/history
@@ -771,7 +758,6 @@ v src/services/shifts/shift_rules/mutations.py
 v nvim_bkup
 mv nvim nvim_old
 mv nvim_bkup nvim
-cd nvim
 ../nvim_old
 python manage.py quicktest test_to_timewindow_assignments
 python manage.py quicktest test_to_timewindow_round_up_only_if_subdividing
@@ -871,8 +857,6 @@ trim
 ;q
 g status
 which gdel
-tmux
-tname
 pwd 
 pwd --help
 pwd -help
@@ -892,7 +876,6 @@ echo "yes" | xargs -r printf "no"
 echo "yes" | xargs -r echo "no"
 echo "/Users/drewvlaz/Documents/backend/local_env.py"| xargs -r nvim
 du -a src | awk '{print $2}' | fzf --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' | tmux send-keys "cd $(pwd)"
-tmux display-message -p "#{pane_current_path}"
 cd /Users/drewvlaz/Documents/backend
 du -a src | awk '{print $2}' | fzf --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' | xargs -r nvim
 du -a src | awk '{print $2}' | fzf --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' --prompt='âƒ½¯ ' --pointer='âƒ½¯ ' | xargs -r nvim && echo $(pwd)
@@ -914,7 +897,6 @@ which vim
 nivm
 which nvim
 tkill
-ide
 nvim
 g lgo
 git log
@@ -940,7 +922,6 @@ g checkout -b feat/axl-890-add-external-id-field-to-edit_visit
 g rebase feat/axl-890-add-external-id-field-to-edit_visit
 g r 
 g checkout -b feat/axl-338-surface-external-patient-id-in-api-v2
-g merge --abort
 python manage.py quicktest PartnerShiftTest
 g stash 
 python manage.py quicktest  TestPatientPublicAPIv2
@@ -988,7 +969,6 @@ g stash pop
 python manage.py quicktest test_edit_shift_block_partner_multiple_qhps
 gcom -c -n
 g pull origin
-v .wezterm.lua
 g checkout -b fix/axl-808-fix-visits-csv-export-in-partner
 cd Documents
 sl
@@ -1044,7 +1024,6 @@ pytest --help | rg "k EXPRESSION"
 man rg
 v Brewfile
 brew bundle
-tldr rg
 tldr bat
 tldr fuck
 python manage.py pytest --failfast hello
@@ -1139,7 +1118,6 @@ pytest -k test_get_team_qhps_on_complex_shift_block -s
 pytest -k test_get_non_team_qhps_on_shift_block
 pytest -k test_get_all_qhps_on_shift_block
 pytest -k test_get_no_single_qhps_on_team_shift_block
-ed 
 g commit -am "fix cov"
 python manage.py migrate api 0599
 which pytes
@@ -1188,7 +1166,6 @@ g checkout -b fix/axl-570-patient-search-bar-clears-text-after-search-has-been
 ls misc
 cd misc
 g clone git@github.com:junegunn/fzf-git.sh.git
-pwd
 feat/axl-694-shift-blocks-with-clinician-teams-backend-migration 
 ../misc/fzf-git.sh
 v fzf-git.sh
@@ -1249,7 +1226,6 @@ pytest -n auto -k
 gd src/partner/_views/
 gd src/services/shift_blocks/
 g merge feat/axl-694-shift-blocks-with-clinician-teams-backend-migration
-python
 pytest -k test_partner_edit_shift_block_times
 pytest -k test_shift_blocks
 g commit -m "respond to comments"
@@ -1267,7 +1243,6 @@ npm install --force
 npm clean
 npx clean
 rm -rf package-lock.json
-la
 npx install
 v android/settings.gradle
 npm run install:android
@@ -1308,15 +1283,10 @@ g stash show stash@\{1\}
 g stash show stash@\{2\}
 gco -b refactor/axl-896-bring-edit-shift-dialog-up-to-parity-with-create-shift
 ...
-..
-cd repos
 g clone git@gitlab.com:dwt1/wallpapers.git
 g clone https://gitlab.com/dwt1/wallpapers.git
 ipython
 ip
-py
-gcom
-v 
 g commit -am "minor"
 jupyter 
 jupyter notebooks
@@ -1335,7 +1305,6 @@ g commit -am "refactor"
 pytest -k test_partner_create_shift_block_partially_overlaps_visit
 pytest -k test_create_shift_block
 g commit -am "tests"
-tat
 gco -b feat/deprecate-django-tests
 python manage.py quictest
 python manage.py migrate api 0597
@@ -1348,7 +1317,6 @@ g commit -am "clean-up migrations"
 g stash show stash@\{3\}
 g commit -am "comm
 g commit -am "comments"
-g
 gco -b feat/shift-block-fix
 g commit -am "minor fix for backend compatability"
 g commit -am "explicit none"
@@ -1363,7 +1331,6 @@ g rebase --abort
 gco -b fix/multi-day-shift-blocks
 g commit -am "fix shift block windows"
 g push -f
-hb
 gco -b fix/shift-block-timezones
 g commit -am "fix shift block tz"
 g commit -am "remove"
@@ -1383,8 +1350,6 @@ gco -b past
 g reset --hard HEAD~ 
 ge
 gld
-cl
-l
 gco -b fix/shift-block-clinician-avail
 g commit -am "remove redundant loop"
 g commit -am "rename"
@@ -1402,7 +1367,6 @@ pytest -n auto --create-db --migrations
 pytest -n auto
 v conftest.py
 g commit -am "add conftest"
-g merge staging
 g commit -am "remove migration"
 v requirements.in
 python manage.py pipsync
@@ -1410,7 +1374,6 @@ g commit -am "remove instafail"
 g.
 pytest -k test_create_reservation
 pytest -k test_create_reservation --create-db
-cstash
 gco -b feat/make-qhp-recallable-without-name
 pytest -k test_create_clinician_reservation_multi_clinicians
 pytest -k test_get_care_team_from_uuid
@@ -1438,244 +1401,211 @@ g commit -m "add address/clinic tests"
 g commit -am "add address/clinic tests"
 g commit -am "remove import"
 g merge feat/axl-909-consider-reservations-in-availability-service
-g merge --continue
 v src
 g commit -am "uuid"
 gd --staged
 g commit -am "save"
-se
 v . pyproject.toml
 v . 
 echo $MYVIMRC
-sc
 v
-v init.lua
-cd
-cd .scripts
-ls
 pytest -n0 -s -k test_shift_block_occurrences_in_window_fully_contained
 pytest -n0 -s -k test_shift_block_occurrences_in_window_recurring
 pytest -n0 -s -k test_shift_block_occurrences_in_window_basic
 pytest -n0 -s -k test_shift_block_occurrences
 g commit -am "feat: shiftblock window tests"
-g reset HEAD~
-g stash
 gco -b feat/axl-957-tests-for-shiftblocks-contained-in-overlapping-given-time
 gco -b fix/axl-957-tests-for-shiftblocks-contained-in-overlapping-given-time
 g commit -am "fix: shiftblock window tests"
-g restore .
 fuck
-g stash pop
-g add -A
-g stash show
-g stash drop
-g pull
 g revert a55939f9 
 gd HEAD~
-g reset --hard HEAD~
 gd a55939f9 
 gd a55939f9 eb9a1952 
-ed
 python manage.py makemigrations --merge --skip-checks
 python manage.py makemigrations --merge
-sd
 v local_env.py
 python manage.py migrate
-g restore --staged . && g restore .
 gco -b fix/axl-971-fix-search-functionality-on-service-and-service-bundles-in
 g commit -am "fix: search bar"
 gdel
-st
-python manage.py mangledb
-v .
-gs
 pytest --create-db
 pytest -n0 -s -k test_create_clinician_reservation
-python manage.py makemigrations
-pytest --create-db --migrations
-gd
 g commit -am "clinic to address"
-gsb
-g stash lsit
-g stash list
 pytest -n0 -s -k test_create_reservation_v2_service_area
 pytest -n0 -s -k test_create_reservation_v2_service_area --pdb
-pytest -n0 -s -k test_reservations
 g commit -am "service area"
-g push
-gb
-g merge feat/axl-908-crud-reservations-via-the-api
-gl
-pytest
+chmod +x unstash
+v unstash
+bat gcom
+cd dotfiles
+cd repos
+g reset --hard HEAD~
+al
+ls .config
+cp -r ~/.config/nvim .config/nvim
+rm -rf nvim_old
+mkdir nvim_old
+cp -r nvim/* nvim_old
+rm *
+cp ~/.config/zsh/* zsh
+rm -rf zsh
+cp ~/.config/zsh .
+rm -rf tmux
+cp ~/.config/tmux .
+ls tmux
+cd zsh
+../zsh
+cd tmux
+../nvim
+rm -rf *
+cp ~/.config/nvim/* .
+../bspwm
+cp ~/.wezterm.lua .
+cd .config
+cd nvim
+ll
+l
+rm lua/plugins/test.lua
+g commit -m "updates"
+v .gitignore
+g rm .config/tmux/plugins
+g rm -r .config/tmux/plugins
+cd .config/tmux
+ls plugins
+rm -rf plugins
+..
+g add .gitignore
+cd .fonts/MyMonoNerd
+rm MyMono-Italic.otf
+gb -f
+ls .fonts/MyMonoNerd
+cp .fonts/MyMonoNerd/* ~/.fonts/MyMonoNerd
+ga
+g commit -am "italicsgs"
+defaults write -g KeyRepeat -int 1
+la
+rm .wezterm.lua--
+g commit -am "hi groups"
+tname
+cat $(which tname)
+which tname
+which tname > tmux_name_window.sh
+chmod +x tmux_name_window.sh
+cat tmux_name_window.sh
+pwd
+basename
+basename "$(pwd)"
+echo $pane_current_path
+echo #pane_current_path
+echo #{pane_current_path}
+echo tmux#{pane_current_path}
+echo #tmux#{pane_current_path}
+echo $tmux#{pane_current_path}
+echo $tmux_pane_current_path
+tmux display-message -p "#{pane_current_path}"
+basename $(tmux display-message -p "#{pane_current_path}")
+cd .scripts
+./tmux_name_window.sh
+b
+v tmux_name_window.sh
+tat
+ide
+g reset HEAD~
+v .wezterm.lua
+python manage.py mangledb
+g pull
+g restore --staged ../tmux/plugins
+gco -b feat/axl-978-create-validation-task-to-check-for-problematic-shiftshift
+python
+python manage.py shell
+gcom
+gco -b chore/axl-696-shift-blocks-with-clinician-teams-remove-old-frontend
+g merge staging
+g merge --abort
+ed 
+g stash
+g stash pop
+g stash --abort
+g stash clear
+g stash lsit
+g stash list
+g stash show
+g stash drop
+g restore --staged . && g restore .
+se
+py -c "from src.utils.everything import *"
 ec
+v .pythonrc.py
+g
+gd ca4048090
+g show ca4048090 
+g show ca4048090  | grep TODO
+g show ca4048090  | grep -e "\+*.TODO"
+tldr grep
+g show ca4048090  | rg TODO
+tldr rg
+g show ca4048090  | rg "\+.*TODO"
+tmux
+cl
+sc
+sd
+g show ca4048090  | rg "^\+.*TODO"
+gl
+cstash
+gb
+gco -b fix/axl-892-fix-negative-incorrect-s-in-visit-order-frequency-fields
+st
+hb
+py
+g restore .
+python manage.py makemigrations
+pytest -n0 -s -k test_reservations --create-db --migrations
+pytest -n0 -s -k test_reservations
+pytest --create-db --migrations
+g commit -am "potential visit"
+gsb
+g merge feat/axl-908-crud-reservations-via-the-api
+e
+ed
+g merge --continue
+pytest
+g push
+v .
+v 
+cd lua
+cd plugins
+cd
+cd .dotfiles
+cd .config/nvim
+gd
+gs
+g add -A
 exit
-: 1725417085:0;cstash
-: 1725417087:0;gb
-: 1725417090:0;gl
-: 1725418468:0;gb
-: 1725418472:0;gl
-: 1725418494:0;cd
-: 1725418496:0;cd .scripts
-: 1725418499:0;v unstash
-: 1725418506:0;ls
-: 1725418511:0;chmod +x unstash
-: 1725418519:0;ls
-: 1725418522:0;v unstash
-: 1725418536:0;bat gcom
-: 1725419010:0;v init.lua
-: 1725419023:0;v .
-: 1725419150:0;v init.lua
-: 1725420613:0;sd
-: 1725420618:0;ls
-: 1725420621:0;..
-: 1725420623:0;cd dotfiles
-: 1725420623:0;ls
-: 1725420625:0;..
-: 1725420625:0;ls
-: 1725420630:0;cd repos
-: 1725420630:0;ls
-: 1725420634:0;..
-: 1725420635:0;cd
-: 1725420635:0;ls
-: 1725420639:0;ll
-: 1725420641:0;la
-: 1725420646:0;cd .dotfiles
-: 1725420646:0;ls
-: 1725420653:0;gs
-: 1725420669:0;g add -A
-: 1725420675:0;g commit -am "updates"
-: 1725420677:0;g push
-: 1725420680:0;gsb
-: 1725420684:0;gl
-: 1725420699:0;g reset --hard HEAD~
-: 1725420704:0;v .
-: 1725420716:0;al
-: 1725420717:0;la
-: 1725420719:0;ll
-: 1725420727:0;gb
-: 1725420730:0;ls
-: 1725420731:0;la
-: 1725420733:0;ls .config
-: 1725420749:0;cp -r ~/.config/nvim .config/nvim
-: 1725420752:0;ls
-: 1725420756:0;cd .config/nvim
-: 1725420756:0;ls
-: 1725420759:0;v init.lua
-: 1725420776:0;ls
-: 1725420779:0;cd
-: 1725420781:0;cd .config
-: 1725420781:0;ls
-: 1725420786:0;rm -rf nvim_old
-: 1725420796:0;mkdir nvim_old
-: 1725420802:0;cp -r nvim/* nvim_old
-: 1725420813:0;ls
-: 1725420817:0;rm *
-: 1725420822:0;rm -rf *
-: 1725420824:0;ls
-: 1725420833:0;cp ~/.config/nvim/* .
-: 1725420835:0;ls
-: 1725420842:0;..
-: 1725420844:0;ls
-: 1725420862:0;cp ~/.config/zsh/* zsh
-: 1725420870:0;ll
-: 1725420886:0;rm -rf zsh
-: 1725420895:0;cp ~/.config/zsh .
-: 1725420897:0;ls
-: 1725420900:0;sc
-: 1725420909:0;ls
-: 1725420922:0;rm -rf tmux
-: 1725420926:0;ls
-: 1725420929:0;cp ~/.config/tmux .
-: 1725420938:0;ls
-: 1725420940:0;ls tmux
-: 1725420947:0;cd tmux
-: 1725420947:0;ls
-: 1725420953:0;la
-: 1725420959:0;ll
-: 1725420973:0;g restore --staged . && g restore .
-: 1725420975:0;ls
-: 1725420978:0;cd tmux
-: 1725420980:0;ls
-: 1725420981:0;ll
-: 1725420984:0;cd zsh
-: 1725420988:0;../zsh
-: 1725420990:0;ll
-: 1725421006:0;ls
-: 1725421010:0;..
-: 1725421011:0;ls
-: 1725421014:0;cd tmux
-: 1725421014:0;ls
-: 1725421015:0;ll
-: 1725421020:0;cd plugins
-: 1725421021:0;ll
-: 1725421024:0;..
-: 1725421026:0;ls
-: 1725421029:0;cd nvim
-: 1725421029:0;ls
-: 1725421030:0;ll
-: 1725421039:0;../nvim
-: 1725421040:0;ls
-: 1725421043:0;rm -rf *
-: 1725421051:0;cp ~/.config/nvim/* .
-: 1725421052:0;ls
-: 1725421065:0;../bspwm
-: 1725421065:0;ls
-: 1725421066:0;ll
-: 1725421069:0;..
-: 1725421070:0;ls
-: 1725421074:0;ll
-: 1725421079:0;..
-: 1725421080:0;ll
-: 1725421093:0;..
-: 1725421094:0;ls
-: 1725421097:0;..
-: 1725421108:0;cp ~/.wezterm.lua .
-: 1725421114:0;stow --adopt .
-: 1725421119:0;ll
-: 1725421120:0;ls
-: 1725421124:0;cd .config
-: 1725421125:0;ls
-: 1725421127:0;cd nvim
-: 1725421127:0;ll
-: 1725421136:0;v init.lua
-: 1725421167:0;ls
-: 1725421170:0;ls lua/plugins
-: 1725421181:0;ls
-: 1725421183:0;cd .config/nvim
-: 1725421184:0;ls
-: 1725421186:0;ls lua/plugins
-: 1725421189:0;gs
-: 1725421210:0;l
-: 1725421216:0;rm lua/plugins/test.lua
-: 1725421217:0;ls
-: 1725421219:0;gs
-: 1725421230:0;g add -A
-: 1725421240:0;gs
-: 1725421251:0;g restore --staged ../tmux/plugins
-: 1725421252:0;gs
-: 1725421260:0;v .gitignore
-: 1725421263:0;..
-: 1725421265:0;v .gitignore
-: 1725421285:0;gs
-: 1725421292:0;g add .gitignore
-: 1725421293:0;gs
-: 1725421296:0;v .gitignore
-: 1725421301:0;gs
-: 1725421312:0;g commit -m "updates"
-: 1725421314:0;gs
-: 1725421318:0;v .gitignore
-: 1725421325:0;gs
-: 1725421326:0;v .gitignore
-: 1725421332:0;gs
-: 1725421350:0;g rm .config/tmux/plugins
-: 1725421355:0;g rm -r .config/tmux/plugins
-: 1725421359:0;gs
-: 1725421387:0;cd .config/tmux
-: 1725421388:0;ls
-: 1725421391:0;ls plugins
-: 1725421398:0;rm -rf plugins
-: 1725421400:0;..
-: 1725421401:0;ls
-: 1725421403:0;gs
-: 1725421409:0;g add .gitignore
-: 1725421414:0;g commit -am "updates"
+ls
+ls lua/plugins
+g commit -am "updates"
+v init.lua
+stow --adopt .
+: 1725516603:0;ls
+: 1725516605:0;ls lua/plugins
+: 1725516614:0;ls
+: 1725516617:0;ls lua/plugins
+: 1725516631:0;...
+: 1725516633:0;stow --adopt .
+: 1725516636:0;gs
+: 1725516641:0;gd
+: 1725516649:0;v init.lua
+: 1725516708:0;v .
+: 1725516716:0;la
+: 1725517150:0;v .
+: 1725518737:0;v init.lua
+: 1725519074:0;v .
+: 1725519329:0;tmux
+: 1725519334:0;sd
+: 1725519339:0;v .
+: 1725554105:0;v
+: 1725554108:0;v .
+: 1725554444:0;gb
+: 1725554445:0;v .
+: 1725554496:0;exit

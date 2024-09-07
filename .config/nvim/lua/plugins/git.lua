@@ -1,3 +1,22 @@
+local keymaps = require("config.keymaps")
+
+--------------------------------------------------------------------------------
+-- region GitBlame
+--------------------------------------------------------------------------------
+keymaps.which_keymap("n", "<leader>ga", "<cmd>GitBlameToggle<CR>", "Toggle author blame")
+keymaps.which_keymap("n", "<leader>gb", "<cmd>GitBlameOpenCommitURL<CR>", "Open in browser")
+
+-- TODO: figure out why these work as global vars but not in opts
+vim.g.gitblame_message_template = "  <author> (<date>) • <summary>"
+vim.g.gitblame_date_format = "%m-%d-%Y"
+vim.g.gitblame_highlight_group = "Label"
+vim.g.gitblame_set_extmark_options = {
+  hl_mode = "combine",
+}
+
+-- endregion
+--------------------------------------------------------------------------------
+
 return {
   "f-person/git-blame.nvim",
   -- load the plugin at startup
@@ -7,16 +26,8 @@ return {
   -- If you want to load the plugin at startup, add something like event = "VeryLazy",
   -- or lazy = false. One of both options will work.
   opts = {
-    -- your configuration comes here
-    -- for example
     enabled = true, -- if you want to enable the plugin
-    message_template = " <author> (<date>) • <summary>", -- • <<sha>>", -- template for the blame message, check the Message template section for more options
-    date_format = "%m-%d-%Y", -- template for the date, check Date format section for more options
     virtual_text_column = 1, -- virtual text start column, check Start virtual text at column section for more options
     display_virtual_text = 1, -- virtual text
-    highlight_group = "Label",
-    set_extmark_options = {
-      hl_mode = "combine",
-    },
   },
 }

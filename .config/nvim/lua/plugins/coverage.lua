@@ -1,3 +1,15 @@
+local keymaps = require("config.keymaps")
+
+--------------------------------------------------------------------------------
+-- region Coverage
+--------------------------------------------------------------------------------
+keymaps.which_keymap("n", "<leader>cc", "<cmd>Coverage<CR>", "Enable code coverage")
+keymaps.which_keymap("n", "<leader>Cs", "<cmd>Coverage<CR>", "Show code coverage summary")
+keymaps.which_keymap("n", "<leader>Ct", "<cmd>CoverageToggle<CR>", "Toggle code coverage")
+
+-- endregion
+--------------------------------------------------------------------------------
+
 return {
   "andythigpen/nvim-coverage",
   opts = {
