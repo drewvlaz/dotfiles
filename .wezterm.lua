@@ -28,10 +28,10 @@ config.window_background_opacity = 0.77
 config.macos_window_background_blur = 50
 
 config.window_padding = {
-	left = 20,
-	right = 20,
+	left = 15, -- the left padding is different from right lol
+	right = 10,
 	top = 10,
-	bottom = 5,
+	bottom = 0,
 }
 
 -- endregion
@@ -63,7 +63,7 @@ config.color_scheme = "Oceanic Next (Gogh)"
 -- region MISC
 --------------------------------------------------------------------------------
 
--- For Neovim
+-- To play well with neovim zen-mode
 wezterm.on("user-var-changed", function(window, pane, name, value)
 	local overrides = window:get_config_overrides() or {}
 	if name == "ZEN_MODE" then

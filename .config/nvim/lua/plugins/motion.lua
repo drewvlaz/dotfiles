@@ -5,7 +5,12 @@ local keymaps = require("config.keymaps")
 --------------------------------------------------------------------------------
 local harpoon_config = function()
   local harpoon = require("harpoon")
-  harpoon:setup()
+  harpoon:setup({
+    settings = {
+      save_on_toggle = true,
+      save_on_ui_close = true,
+    },
+  })
 
   --- HELPER FUNCTIONS ---
   local get_current_branch = function()
@@ -49,12 +54,7 @@ local harpoon_config = function()
     keymaps.which_keymap("n", key, action, string.format("Goto file %d", i))
   end
 
-  return {
-    settings = {
-      save_on_toggle = true,
-      save_on_ui_close = true,
-    },
-  }
+  return {}
 end
 
 -- endregion

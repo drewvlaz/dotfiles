@@ -54,4 +54,12 @@ return {
     "nvim-lualine/lualine.nvim",
     opts = lualine_opts,
   },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      window = {
+        position = "right",
+      },
+    },
+  },
 }

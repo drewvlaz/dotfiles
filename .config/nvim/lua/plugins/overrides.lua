@@ -11,12 +11,18 @@ return {
     event = "VeryLazy",
     opts = {
       spec = {
-        -- ["<leader>f"] = {
-        --   "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<CR>",
-        -- },
-        ["<leader>C"] = { name = "coverage" },
-        ["<leader>d"] = { name = "document" },
-        ["<leader>h"] = { name = "harpoon" },
+        {
+          "<leader>C",
+          group = "coverage",
+        },
+        {
+          "<leader>d",
+          group = "debug",
+        },
+        {
+          "<leader>h",
+          group = "harpoon",
+        },
       },
     },
   },

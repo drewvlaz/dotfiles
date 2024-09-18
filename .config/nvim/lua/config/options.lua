@@ -43,6 +43,9 @@ local options = {
   guifont = "OperatorMono Nerd Font Mono:h22", -- the font used in graphical neovim applications
   hidden = true, -- Required to keep multiple buffers open
   formatexpr = "", -- Proper use of gq
+  foldmethod = "expr",
+  foldmarker = "# region,# endregion",
+  foldexpr = "nvim_treesitter#foldexpr()",
 }
 
 vim.opt.shortmess:append("c")
@@ -50,6 +53,9 @@ vim.opt.shortmess:append("c")
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
 vim.cmd("set whichwrap+=<,>,[,],h,l")
 vim.cmd("set spellsuggest+=10")

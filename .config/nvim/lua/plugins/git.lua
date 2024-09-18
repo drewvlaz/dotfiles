@@ -7,7 +7,8 @@ keymaps.which_keymap("n", "<leader>ga", "<cmd>GitBlameToggle<CR>", "Toggle autho
 keymaps.which_keymap("n", "<leader>gb", "<cmd>GitBlameOpenCommitURL<CR>", "Open in browser")
 
 -- TODO: figure out why these work as global vars but not in opts
-vim.g.gitblame_message_template = "  <author> (<date>) • <summary>"
+-- vim.g.gitblame_message_template = "     (<date>) • <summary>"
+vim.g.gitblame_message_template = "     <author> (<date>) • <summary>"
 vim.g.gitblame_date_format = "%m-%d-%Y"
 vim.g.gitblame_highlight_group = "Label"
 vim.g.gitblame_set_extmark_options = {

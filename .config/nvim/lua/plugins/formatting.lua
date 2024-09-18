@@ -9,7 +9,10 @@ return {
     },
     formatters = {
       autoflake = {
-        prepend_args = { "--remove-all-unused-imports", "--remove-unused-variables" },
+        prepend_args = {
+          "--remove-all-unused-imports",
+          -- "--remove-unused-variables",
+        },
       },
     },
     -- format_on_save = {

@@ -23,6 +23,14 @@ M.which_keymap = function(mode, key, action, description)
   M.keymap(mode, key, action, opts)
 end
 
+local toggle_folding_method = function()
+  if vim.o.foldmethod == "expr" then
+    vim.o.foldmethod = "marker"
+  else
+    vim.o.foldmethod = "expr"
+  end
+end
+
 -- endregion
 --------------------------------------------------------------------------------
 -- region KEYMAPS
@@ -32,6 +40,9 @@ end
 M.keymap("i", "jk", "<ESC>")
 -- keymap("i", "kj", "<ESC>", opts)
 M.keymap("i", "<C-c>", "<ESC>")
+
+-- Folding
+M.which_keymap("n", "<leader>um", toggle_folding_method, "Toggle folding method")
 
 -- Vertical movement --
 M.keymap("n", "<C-u>", "<C-u>zz")
