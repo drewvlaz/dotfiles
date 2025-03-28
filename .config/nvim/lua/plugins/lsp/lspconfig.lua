@@ -191,6 +191,55 @@ return {
             filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
           })
         end,
+        ["tsserver"] = function()
+          lspconfig["tsserver"].setup({
+            capabilities = capabilities,
+            settings = {
+              typescript = {
+                inlayHints = {
+                  includeInlayParameterNameHints = "all",
+                  includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+                  includeInlayFunctionParameterTypeHints = true,
+                  includeInlayVariableTypeHints = true,
+                  includeInlayPropertyDeclarationTypeHints = true,
+                  includeInlayFunctionLikeReturnTypeHints = true,
+                  includeInlayEnumMemberValueHints = true,
+                },
+                preferences = {
+                  importModuleSpecifierPreference = "relative",
+                  importModuleSpecifierEnding = "minimal",
+                  includeCompletionsForImportStatements = true,
+                  includeCompletionsWithSnippetText = true,
+                  includeAutomaticOptionalChainCompletions = true,
+                  includeCompletionsWithClassMemberSnippets = true,
+                  includeCompletionsWithObjectLiteralMethodSnippets = true,
+                  quotePreference = "auto",
+                },
+              },
+              javascript = {
+                inlayHints = {
+                  includeInlayParameterNameHints = "all",
+                  includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+                  includeInlayFunctionParameterTypeHints = true,
+                  includeInlayVariableTypeHints = true,
+                  includeInlayPropertyDeclarationTypeHints = true,
+                  includeInlayFunctionLikeReturnTypeHints = true,
+                  includeInlayEnumMemberValueHints = true,
+                },
+                preferences = {
+                  importModuleSpecifierPreference = "relative",
+                  importModuleSpecifierEnding = "minimal",
+                  includeCompletionsForImportStatements = true,
+                  includeCompletionsWithSnippetText = true,
+                  includeAutomaticOptionalChainCompletions = true,
+                  includeCompletionsWithClassMemberSnippets = true,
+                  includeCompletionsWithObjectLiteralMethodSnippets = true,
+                  quotePreference = "auto",
+                },
+              },
+            },
+          })
+        end,
         ["lua_ls"] = function()
           -- configure lua server (with special settings)
           lspconfig["lua_ls"].setup({
