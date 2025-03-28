@@ -4,7 +4,6 @@ return {
     "neovim/nvim-lspconfig",
     event = { "BufReadPre", "BufNewFile" },
     dependencies = {
-      -- "hrsh7th/cmp-nvim-lsp",
       { "antosha417/nvim-lsp-file-operations", config = true },
     },
     config = function()
@@ -14,8 +13,9 @@ return {
       -- import mason_lspconfig plugin
       local mason_lspconfig = require("mason-lspconfig")
 
-      -- import cmp-nvim-lsp plugin
-      -- local cmp_nvim_lsp = require("cmp_nvim_lsp")
+      -- Get default capabilities
+      local capabilities = vim.lsp.protocol.make_client_capabilities()
+      capabilities.textDocument.completion.completionItem.snippetSupport = true
 
       local keymap = vim.keymap -- for conciseness
 
@@ -104,8 +104,6 @@ return {
         end,
       })
 
-      -- used to enable autocompletion (assign to every lsp server config)
-      -- local capabilities = cmp_nvim_lsp.default_capabilities()
 
       -- Change the Diagnostic symbols in the sign column (gutter)
       -- (not in youtube nvim video)
@@ -123,7 +121,7 @@ return {
         -- default handler for installed servers
         function(server_name)
           lspconfig[server_name].setup({
-            -- capabilities = capabilities,
+            capabilities = capabilities,
           })
         end,
         ["pylsp"] = function()
@@ -131,7 +129,7 @@ return {
             "E501", -- line too long
           }
           lspconfig["pylsp"].setup({
-            -- capabilities = capabilities,
+            capabilities = capabilities,
             settings = {
               pylsp = {
                 plugins = {
@@ -158,7 +156,7 @@ return {
         end,
         ["pyright"] = function()
           lspconfig["pyright"].setup({
-            -- capabilities = capabilities,
+            capabilities = capabilities,
             settings = {
               python = {
                 disableOrganizeImports = true,
@@ -197,14 +195,14 @@ return {
         ["emmet_ls"] = function()
           -- configure emmet language server
           lspconfig["emmet_ls"].setup({
-            -- capabilities = capabilities,
+            capabilities = capabilities,
             filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
           })
         end,
         ["lua_ls"] = function()
           -- configure lua server (with special settings)
           lspconfig["lua_ls"].setup({
-            -- capabilities = capabilities,
+            capabilities = capabilities,
             settings = {
               Lua = {
                 -- make the language server recognize "vim" global
