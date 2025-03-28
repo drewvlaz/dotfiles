@@ -4,7 +4,7 @@ return {
     "neovim/nvim-lspconfig",
     event = { "BufReadPre", "BufNewFile" },
     dependencies = {
-      "hrsh7th/cmp-nvim-lsp",
+      -- "hrsh7th/cmp-nvim-lsp",
       { "antosha417/nvim-lsp-file-operations", config = true },
     },
     config = function()
@@ -15,7 +15,7 @@ return {
       local mason_lspconfig = require("mason-lspconfig")
 
       -- import cmp-nvim-lsp plugin
-      local cmp_nvim_lsp = require("cmp_nvim_lsp")
+      -- local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
       local keymap = vim.keymap -- for conciseness
 
@@ -105,7 +105,7 @@ return {
       })
 
       -- used to enable autocompletion (assign to every lsp server config)
-      local capabilities = cmp_nvim_lsp.default_capabilities()
+      -- local capabilities = cmp_nvim_lsp.default_capabilities()
 
       -- Change the Diagnostic symbols in the sign column (gutter)
       -- (not in youtube nvim video)
@@ -123,7 +123,7 @@ return {
         -- default handler for installed servers
         function(server_name)
           lspconfig[server_name].setup({
-            capabilities = capabilities,
+            -- capabilities = capabilities,
           })
         end,
         ["pylsp"] = function()
@@ -131,7 +131,7 @@ return {
             "E501", -- line too long
           }
           lspconfig["pylsp"].setup({
-            capabilities = capabilities,
+            -- capabilities = capabilities,
             settings = {
               pylsp = {
                 plugins = {
@@ -158,7 +158,7 @@ return {
         end,
         ["pyright"] = function()
           lspconfig["pyright"].setup({
-            capabilities = capabilities,
+            -- capabilities = capabilities,
             settings = {
               python = {
                 disableOrganizeImports = true,
@@ -167,6 +167,7 @@ return {
                   autoSearchPaths = true,
                   diagnosticMode = "workspace",
                   useLibraryCodeForTypes = true,
+                  -- typeCheckingMode = "strict", -- Enable strict type checking
                   -- logLevel = "Trace",
                   exclude = {
                     "**/node_modules",
@@ -179,25 +180,13 @@ return {
                   },
                 },
                 ignorePyrightErrors = py_ignored,
+                diagnosticSeverityOverrides = {
+                  reportImplicitBool = "error", -- Enables the bool-truthy linting check
+                },
               },
             },
           })
         end,
-        -- ["svelte"] = function()
-        --   -- configure svelte server
-        --   lspconfig["svelte"].setup({
-        --     capabilities = capabilities,
-        --     on_attach = function(client, bufnr)
-        --       vim.api.nvim_create_autocmd("BufWritePost", {
-        --         pattern = { "*.js", "*.ts" },
-        --         callback = function(ctx)
-        --           -- Here use ctx.match instead of ctx.file
-        --           client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.match })
-        --         end,
-        --       })
-        --     end,
-        --   })
-        -- end,
         -- ["graphql"] = function()
         --   -- configure graphql language server
         --   lspconfig["graphql"].setup({
@@ -208,14 +197,14 @@ return {
         ["emmet_ls"] = function()
           -- configure emmet language server
           lspconfig["emmet_ls"].setup({
-            capabilities = capabilities,
+            -- capabilities = capabilities,
             filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
           })
         end,
         ["lua_ls"] = function()
           -- configure lua server (with special settings)
           lspconfig["lua_ls"].setup({
-            capabilities = capabilities,
+            -- capabilities = capabilities,
             settings = {
               Lua = {
                 -- make the language server recognize "vim" global
@@ -229,6 +218,16 @@ return {
             },
           })
         end,
+        --   ["rust_analyzer"] = function()
+        --     lspconfig["rust_analyzer"].setup({
+        --       -- capabilities = capabilities,
+        --       settings = {
+        --         checkOnSave = {
+        --           command = "clippy",
+        --         },
+        --       },
+        --     })
+        --   end,
       })
     end,
   },
