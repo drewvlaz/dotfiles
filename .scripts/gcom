@@ -1,0 +1,81 @@
+#!/bin/bash
+
+# isort .
+
+CUR_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+
+if [ $CUR_BRANCH = "staging" ]; then
+    echo "On staging branch. Aborting..."
+    exit
+fi
+
+LAST_COMMIT_MSG=$(git log -1 --pretty=%B | head -n1)
+ACTION=""
+NO_ADD=0
+while getopts "cnh" opt; do
+  case ${opt} in
+    # if making a series of commits, don't want to have to continually
+    # fuzzy find the action, just take from previous commit using -c
+    c )
+	ACTION=$(echo "$LAST_COMMIT_MSG" | awk -F: '{print $1}')
+      ;;
+    # if don't want to add all unstaged files by default use -n
+    n )
+	NO_ADD=1
+      ;;
+    h )
+	echo "TODO: add help"
+	exit
+      ;;
+    \? )
+      echo "Invalid option: $OPTARG" 1>&2
+      ;;
+    : )
+      echo "Invalid option: $OPTARG requires an argument" 1>&2
+      ;;
+  esac
+done
+shift $((OPTIND -1))
+
+# add all unstaged files by default
+if [ $NO_ADD -eq 0 ]; then
+    git add -A
+fi
+
+# fuzzy find action (feat, fix, remove, etc.)
+if [ -z "$ACTION" ]; then
+    ACTION=$(cat $HOME/.scripts/git_commit_actions.txt | fzf)
+fi
+
+# use current branch (should be taken from linear) as the base for the commit msg
+COMMIT_DESC=$(echo "$CUR_BRANCH" | awk -F/ '{print $2}' | sed 's/-/ /g' | cut -d' ' -f3-)
+
+# remove duplicate words if they exist (e.x. linear branch has "delete" as first word
+# and "delete" is also the action)
+if [ "$(echo $COMMIT_DESC | awk '{print $1}')" = "$ACTION" ]; then
+    COMMIT_DESC=$(echo "$COMMIT_DESC" | cut -d' ' -f2-)
+fi
+
+COMMIT_MSG="$ACTION: $COMMIT_DESC"
+
+
+# allow the option to add additional context to commit
+printf "context: "
+read CONTEXT
+if [ -n "$CONTEXT" ]; then
+    COMMIT_MSG="$COMMIT_MSG ($CONTEXT)"
+fi
+
+# if [ "$LAST_COMMIT_MSG" = "$COMMIT_MSG" ]; then
+#     COMMIT_MSG="$COMMIT_MSG cont."
+# fi
+
+# eventually add possibility for using github-cli
+# git commit -m "$COMMIT_MSG" && gh ...
+
+# echo $COMMIT_MSG
+git commit -m "$COMMIT_MSG"
+
+
+
+

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+du -a src | awk '{print $2}' | fzf --prompt='❯ ' --pointer='❯ ' | xargs -r $EDITOR

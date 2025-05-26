@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ "$VIRTUAL_ENV" = "$(pwd)/.venv" ]; then
+  python manage.py migrate
+else
+  yarn prisma migrate dev
+fi

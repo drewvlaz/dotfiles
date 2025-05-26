@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ "$VIRTUAL_ENV" = "$(pwd)/.venv" ]; then
+    python manage.py runserver
+else
+    yarn run start
+fi
+

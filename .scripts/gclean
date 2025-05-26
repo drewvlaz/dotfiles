@@ -1,0 +1,16 @@
+#!/bin/bash
+
+FILES=$(git clean -n)
+
+if [ $(echo $FILES | wc -l) -eq 0 ]; then
+	echo "No files to clean. Aborting..."
+	exit
+fi
+
+echo $FILES
+
+PROCEED=$(printf 'no\nyes\n' | fzf)
+
+if [ "$PROCEED" == "yes" ]; then
+	git clean -f
+fi
