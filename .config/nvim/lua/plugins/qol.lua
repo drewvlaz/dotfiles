@@ -63,6 +63,11 @@ return {
     "drewvlaz/zen-mode.nvim",
     opts = zen_mode_opts,
   },
+  {
+    "kevinhwang91/nvim-bqf",
+    ft = "qf",
+  },
+
   -- {
   --   "kevinhwang91/nvim-ufo",
   --   dependencies = "kevinhwang91/promise-async",

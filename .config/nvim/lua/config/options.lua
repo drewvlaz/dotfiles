@@ -46,6 +46,8 @@ local options = {
   foldmethod = "expr",
   foldmarker = "# region,# endregion",
   foldexpr = "nvim_treesitter#foldexpr()",
+  textwidth = 80,
+  spell = true,
 }
 
 vim.opt.shortmess:append("c")
@@ -56,6 +58,8 @@ end
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+
+vim.g.snacks_animate = false
 
 vim.cmd("set whichwrap+=<,>,[,],h,l")
 vim.cmd("set spellsuggest+=10")

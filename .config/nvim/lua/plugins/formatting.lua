@@ -6,6 +6,7 @@ return {
       typescript = { "prettier", "eslint" },
       typescriptreact = { "prettier", "eslint" },
       python = { "autoflake", "isort", "black" },
+      rust = { "rustfmt" },
     },
     formatters = {
       autoflake = {

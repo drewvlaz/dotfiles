@@ -27,6 +27,7 @@ local harpoon_config = function()
 
   local add_file = function()
     harpoon:list(get_current_branch()):add()
+    vim.notify("File added to harpoon", vim.log.levels.INFO)
   end
 
   local view_files = function()
@@ -43,12 +44,15 @@ local harpoon_config = function()
   end
 
   --- KEYMAPS ---
-  keymaps.which_keymap("n", "<leader>hA", add_file, "Add file")
+  keymaps.which_keymap("n", "<leader>hs", add_file, "Add file")
   keymaps.which_keymap("n", "<leader>hv", view_files, "View files")
 
   for i = 1, 9 do
     local key = string.format("<leader>h%s", string.char(96 + i))
     local action = function()
+      -- These options are necessary to play well with the startup screen
+      vim.opt["number"] = true
+      vim.opt["signcolumn"] = "yes"
       select_file(i)
     end
     keymaps.which_keymap("n", key, action, string.format("Goto file %d", i))
@@ -59,6 +63,14 @@ end
 
 -- endregion
 --------------------------------------------------------------------------------
+-- region: Marks
+--------------------------------------------------------------------------------
+local marks_config = function()
+  -- local marks = require("marks")
+  keymaps.which_keymap("n", "<leader>ma", "<cmd>MarksListAll<CR>", "List all marks")
+  keymaps.which_keymap("n", "<leader>mb", "<cmd>MarksListBuf<CR>", "List buffer marks")
+end
+-- endregion
 
 return {
   {
@@ -79,6 +91,12 @@ return {
       leap.opts.highlight_unlabeled_phase_one_targets = true
       leap.add_default_mappings(true)
     end,
+  },
+  {
+    "chentoast/marks.nvim",
+    event = "VeryLazy",
+    config = marks_config,
+    opts = {},
   },
 }
 

@@ -55,3 +55,32 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
     vim.opt_local.formatoptions:remove("o")
   end,
 })
+
+-- vim.api.nvim_create_autocmd("BufLeave", {
+--   group = augroup("delete_empty_buffers_on_leave"),
+--   pattern = "*",
+--   callback = function()
+--     local buf = vim.api.nvim_get_current_buf()
+--     local buf_name = vim.api.nvim_buf_get_name(buf)
+--     if
+--       vim.bo[buf].modifiable
+--       and vim.bo[buf].buftype == ""
+--       and vim.fn.getbufvar(buf, "&modified") == 0
+--       and buf_name == ""
+--     then
+--       vim.cmd("bdelete")
+--     end
+--   end,
+-- })
+
+vim.api.nvim_create_autocmd("InsertEnter", {
+  callback = function()
+    vim.diagnostic.enable(false)
+  end,
+})
+
+vim.api.nvim_create_autocmd("InsertLeave", {
+  callback = function()
+    vim.diagnostic.enable()
+  end,
+})

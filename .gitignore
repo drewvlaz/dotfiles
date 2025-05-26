@@ -1,2 +1,3 @@
 .config/zsh/history
 .config/tmux/plugins/*
+.aider*

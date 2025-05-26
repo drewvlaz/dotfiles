@@ -1,7 +1,13 @@
 #! /bin/bash
 
 ed() {
-  file=$(du -a src | awk '{print $2}' | fzf --prompt='❯ ' --pointer='❯ ')
+  file=$(
+    du -a src |
+      awk '{print $2}' |
+      fzf \
+        --preview 'bat --style=plain --color=always {}' \
+        --preview-window noborder
+  )
   if [ -n "$file" ]; then
     $EDITOR $file
   fi
@@ -25,6 +31,72 @@ gdel() {
   fi
 }
 
+sqrebase() {
+  current_branch=$(git branch --show-current)
+
+  # The original base of the current branch
+  if [ -z "$1" ]; then
+    og_base_unparsed=$(git branch --list | fzf --prompt='From: ')
+    if [ $? -ne 0 ]; then
+      return
+    fi
+    og_base=$(echo $og_base_unparsed | sed 's/^[[:space:]]*//')
+  else
+    og_base=$1
+  fi
+
+  echo "alskdf"
+
+  # The target base of the current branch
+  if [ -z "$2" ]; then
+    target_base_unparsed=$(git branch --list | fzf --prompt='To: ')
+    if [ $? -ne 0 ]; then
+      return
+    fi
+    target_base=$(echo $target_base_unparsed | sed 's/^[[:space:]]*//')
+  else
+    target_base=$1
+  fi
+
+  # Diff the head of the current branch against the target branch
+  git diff $og_base..HEAD >changes.patch
+
+  # Create a backup branch just in case
+  git checkout -b "TMP/$current_branch"
+
+  # Clean branch under same name as current branch
+  git checkout $target_base
+  git branch -D $current_branch
+  git checkout -b $current_branch
+
+  # Apply the changes
+  git apply changes.patch
+  rm changes.patch
+}
+
+dfile() {
+  file=$(du -a src | awk '{print $2}' | fzf --prompt='❯ ' --pointer='❯ ')
+  if [ -n "$file" ]; then
+    git log --follow -p -- "$file"
+  fi
+}
+
+dfunc() {
+  if [ -z "$1" ]; then
+    return
+  fi
+  func=$1
+  file=$(rg --files-with-matches "^\s*def $func\(" | fzf --prompt='❯ ' --pointer='❯ ')
+  if [ -n "$file" ]; then
+    git log -L :$func:$file
+  fi
+}
+
+maxmigr() {
+  max=$(ls src/migrations | grep -E '^[0-9]+_' | tail -n 1 | cut -d '.' -f 1)
+  echo $max >src/migrations/max_migration.txt
+}
+
 dirs() {
   du -d 8 \
     -I .git \
@@ -38,10 +110,12 @@ dirs() {
     -I bin \
     -I misc \
     -I node_modules \
-    ~/Documents/backend \
-    ~/Documents/partner \
-    ~/Documents/patient \
-    ~/Documents/qhp-app/ \
+    ~/dev/backend \
+    ~/dev/partner \
+    ~/dev/interop \
+    ~/dev/docs \
+    ~/dev/patient \
+    ~/dev/qhp-app/ \
     ~/Documents/dotfiles \
     ~/Documents/repos \
     ~/.config/nvim \
@@ -53,6 +127,15 @@ dirs() {
 
 lines() {
   cat $1 | wc -l
+}
+
+explore() {
+  rg --color=always --line-number --no-heading --smart-case "" |
+    fzf --ansi --delimiter : \
+      --preview 'bat --style=full --color=always --highlight-line {2} {1}' \
+      --preview-window '~4,+{2}+4/3,<80(up)' \
+      --height 100% \
+      --layout default
 }
 
 se() {
@@ -114,9 +197,10 @@ stat() {
 }
 
 ide() {
-  backend_path=~/Documents/backend
-  partner_path=~/Documents/partner
-  patient_path=~/Documents/patient
+  backend_path=~/dev/backend
+  partner_path=~/dev/partner
+  patient_path=~/dev/patient
+  interop_path=~/dev/interop
 
   # dir=$(dirs | awk '{print $2}' | fzf)
   retVal=$?
@@ -130,11 +214,13 @@ ide() {
   if [ $retVal -eq 0 ]; then
     tmux new-session -c "$backend_path" -s "$session" -n "backend" -d \; \
       new-window -c "$partner_path" -n "partner" \; \
-      new-window -c "$patient_path" -n "patient" \; \
+      \
       new-window -c "$backend_path" -n "servers" \; \
       split-window -c "$partner_path" -h \; \
+      split-window -c "$interop_path" -v -p 90 \; \
       new-window -c "$backend_path" \; \
-      select-window -t "$session":backend
+      new-window -c "$interop_path" -n "interop" \; \
+      select-window -t "$session":backend # new-window -c "$patient_path" -n "patient" \; \
     # tmux send-keys -t "$session":0 ls C-m
     tmux attach -t $session
     # tmux new-session -s "$session" -d

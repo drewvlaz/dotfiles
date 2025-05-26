@@ -38,7 +38,11 @@ end
 
 -- Easier Escape --
 M.keymap("i", "jk", "<ESC>")
--- keymap("i", "kj", "<ESC>", opts)
+M.keymap("i", "jK", "<ESC>")
+M.keymap("i", "JK", "<ESC>")
+M.keymap("i", "Jk", "<ESC>")
+-- Disabled because causes lag when trying to type a "k" which is annoying
+-- M.keymap("i", "kj", "<ESC>")
 M.keymap("i", "<C-c>", "<ESC>")
 
 -- Folding
@@ -64,6 +68,7 @@ M.which_keymap("n", "<leader>br", "<cmd>b #<CR>", "Return to last buffer")
 
 -- Go forward in jump list, apparently <C-i> and <TAB> are the same to terminal
 M.keymap("n", "<C-n>", "<C-i>")
+M.keymap("n", "<C-b>", "<cmd>bd<CR>")
 
 -- Source
 M.which_keymap("n", "<leader>S", "<cmd>source $MYVIMRC<CR>", "Source vimrc")

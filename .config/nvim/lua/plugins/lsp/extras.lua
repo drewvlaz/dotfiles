@@ -6,4 +6,31 @@ return {
   --     require("symbol-usage").setup()
   --   end,
   -- },
+
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    config = function()
+      local null_ls = require("null-ls")
+      local file = vim.fn.expand("%:p") -- Get the full path of the current file
+
+      -- null_ls.setup({
+      --   sources = {
+      --     null_ls.builtins.diagnostics.mypy.with({
+      --       command = "mypy", -- Ensure this matches Mason's installed path for mypy
+      --       args = {
+      --         "--show-column-numbers",
+      --         -- "--ignore-missing-imports", -- Adjust this based on your project needs
+      --         "--allow-untyped-decorators",
+      --         "--disable-error-code=ignore-without-code",
+      --         -- "ignore-valid-type-comments=false",
+      --         "--cache-dir=.mypy_cache",
+      --         "--config-file",
+      --         "pyproject.toml",
+      --         file,
+      --       },
+      --     }),
+      --   },
+      -- })
+    end,
+  },
 }

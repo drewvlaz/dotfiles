@@ -24,7 +24,7 @@ config.font_rules = {
 config.enable_tab_bar = false
 config.window_decorations = "RESIZE"
 
-config.window_background_opacity = 0.77
+config.window_background_opacity = 0.95
 config.macos_window_background_blur = 50
 
 config.window_padding = {
@@ -39,8 +39,11 @@ config.window_padding = {
 -- region COLORS
 --------------------------------------------------------------------------------
 
--- config.color_scheme = 'Everforest Dark Hard (Gogh)'
+-- config.color_scheme = "Everforest Dark Hard (Gogh)"
 config.color_scheme = "Oceanic Next (Gogh)"
+-- config.color_scheme = "Gruvbox Dark (Gogh)"
+-- config.color_scheme = "Catppuccin Frappé (Gogh)"
+-- config.color_scheme = "Catppuccin Macchiato (Gogh)"
 -- config.colors = {
 -- 	background = "#21282c",
 -- }

@@ -116,157 +116,166 @@ return {
         "E501", -- line too long
       }
 
-      mason_lspconfig.setup_handlers({
-        -- default handler for installed servers
-        function(server_name)
-          lspconfig[server_name].setup({
-            capabilities = capabilities,
-          })
-        end,
-        ["pylsp"] = function()
-          local ignored = {
-            "E501", -- line too long
-          }
-          lspconfig["pylsp"].setup({
-            capabilities = capabilities,
-            settings = {
-              pylsp = {
-                plugins = {
-                  black = { enabled = true },
-                  isort = { enabled = true },
-                  mypy = { enabled = true },
-                  flake8 = {
-                    enabled = true,
-                    ignore = ignored,
-                  },
-                  mccabe = { enabled = false },
-                  pyflakes = {
-                    enabled = true,
-                    ignore = ignored,
-                  },
-                  pycodestyle = {
-                    enabled = true,
-                    ignore = ignored,
+      mason_lspconfig.setup({
+        ensure_installed = {
+          "ts_ls",
+          "pyright",
+          -- "pylsp",
+        },
+        automatic_enable = true,
+        automatic_installation = true,
+        handlers = {
+          -- default handler for installed servers
+          function(server_name)
+            lspconfig[server_name].setup({
+              capabilities = capabilities,
+            })
+          end,
+          ["pylsp"] = function()
+            local ignored = {
+              "E501", -- line too long
+            }
+            lspconfig["pylsp"].setup({
+              capabilities = capabilities,
+              settings = {
+                pylsp = {
+                  plugins = {
+                    black = { enabled = true },
+                    isort = { enabled = true },
+                    mypy = { enabled = true },
+                    flake8 = {
+                      enabled = true,
+                      ignore = ignored,
+                    },
+                    mccabe = { enabled = false },
+                    pyflakes = {
+                      enabled = true,
+                      ignore = ignored,
+                    },
+                    pycodestyle = {
+                      enabled = true,
+                      ignore = ignored,
+                    },
                   },
                 },
               },
-            },
-          })
-        end,
-        ["pyright"] = function()
-          lspconfig["pyright"].setup({
-            capabilities = capabilities,
-            settings = {
-              python = {
-                disableOrganizeImports = true,
-                analysis = {
-                  autoImportCompletions = true,
-                  autoSearchPaths = true,
-                  diagnosticMode = "workspace",
-                  useLibraryCodeForTypes = true,
-                  -- typeCheckingMode = "strict", -- Enable strict type checking
-                  -- logLevel = "Trace",
-                  exclude = {
-                    "**/node_modules",
-                    "**/build",
-                    "**/dist",
+            })
+          end,
+          ["pyright"] = function()
+            lspconfig["pyright"].setup({
+              capabilities = capabilities,
+              settings = {
+                python = {
+                  disableOrganizeImports = true,
+                  analysis = {
+                    autoImportCompletions = true,
+                    autoSearchPaths = true,
+                    diagnosticMode = "workspace",
+                    useLibraryCodeForTypes = true,
+                    -- typeCheckingMode = "strict", -- Enable strict type checking
+                    -- logLevel = "Trace",
+                    exclude = {
+                      "**/node_modules",
+                      "**/build",
+                      "**/dist",
+                    },
+                    include = {
+                      "src",
+                      "tests",
+                    },
                   },
-                  include = {
-                    "src",
-                    "tests",
+                  ignorePyrightErrors = py_ignored,
+                  diagnosticSeverityOverrides = {
+                    reportImplicitBool = "error", -- Enables the bool-truthy linting check
                   },
                 },
-                ignorePyrightErrors = py_ignored,
-                diagnosticSeverityOverrides = {
-                  reportImplicitBool = "error", -- Enables the bool-truthy linting check
+              },
+            })
+          end,
+          ["emmet_ls"] = function()
+            -- configure emmet language server
+            lspconfig["emmet_ls"].setup({
+              capabilities = capabilities,
+              filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+            })
+          end,
+          -- ["ts_ls"] = function()
+          --   lspconfig["tsserver"].setup({
+          --     capabilities = capabilities,
+          --     settings = {
+          --       typescript = {
+          --         inlayHints = {
+          --           includeInlayParameterNameHints = "all",
+          --           includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+          --           includeInlayFunctionParameterTypeHints = true,
+          --           includeInlayVariableTypeHints = true,
+          --           includeInlayPropertyDeclarationTypeHints = true,
+          --           includeInlayFunctionLikeReturnTypeHints = true,
+          --           includeInlayEnumMemberValueHints = true,
+          --         },
+          --         preferences = {
+          --           importModuleSpecifierPreference = "relative",
+          --           importModuleSpecifierEnding = "minimal",
+          --           includeCompletionsForImportStatements = true,
+          --           includeCompletionsWithSnippetText = true,
+          --           includeAutomaticOptionalChainCompletions = true,
+          --           includeCompletionsWithClassMemberSnippets = true,
+          --           includeCompletionsWithObjectLiteralMethodSnippets = true,
+          --           quotePreference = "auto",
+          --         },
+          --       },
+          --       -- javascript = {
+          --       --   inlayHints = {
+          --       --     includeInlayParameterNameHints = "all",
+          --       --     includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+          --       --     includeInlayFunctionParameterTypeHints = true,
+          --       --     includeInlayVariableTypeHints = true,
+          --       --     includeInlayPropertyDeclarationTypeHints = true,
+          --       --     includeInlayFunctionLikeReturnTypeHints = true,
+          --       --     includeInlayEnumMemberValueHints = true,
+          --       --   },
+          --       --   preferences = {
+          --       --     importModuleSpecifierPreference = "relative",
+          --       --     importModuleSpecifierEnding = "minimal",
+          --       --     includeCompletionsForImportStatements = true,
+          --       --     includeCompletionsWithSnippetText = true,
+          --       --     includeAutomaticOptionalChainCompletions = true,
+          --       --     includeCompletionsWithClassMemberSnippets = true,
+          --       --     includeCompletionsWithObjectLiteralMethodSnippets = true,
+          --       --     quotePreference = "auto",
+          --       --   },
+          --       -- },
+          --     },
+          --   })
+          -- end,
+          ["lua_ls"] = function()
+            -- configure lua server (with special settings)
+            lspconfig["lua_ls"].setup({
+              capabilities = capabilities,
+              settings = {
+                Lua = {
+                  -- make the language server recognize "vim" global
+                  diagnostics = {
+                    globals = { "vim" },
+                  },
+                  completion = {
+                    callSnippet = "Replace",
+                  },
                 },
               },
-            },
-          })
-        end,
-        ["emmet_ls"] = function()
-          -- configure emmet language server
-          lspconfig["emmet_ls"].setup({
-            capabilities = capabilities,
-            filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
-          })
-        end,
-        ["tsserver"] = function()
-          lspconfig["tsserver"].setup({
-            capabilities = capabilities,
-            settings = {
-              typescript = {
-                inlayHints = {
-                  includeInlayParameterNameHints = "all",
-                  includeInlayParameterNameHintsWhenArgumentMatchesName = false,
-                  includeInlayFunctionParameterTypeHints = true,
-                  includeInlayVariableTypeHints = true,
-                  includeInlayPropertyDeclarationTypeHints = true,
-                  includeInlayFunctionLikeReturnTypeHints = true,
-                  includeInlayEnumMemberValueHints = true,
-                },
-                preferences = {
-                  importModuleSpecifierPreference = "relative",
-                  importModuleSpecifierEnding = "minimal",
-                  includeCompletionsForImportStatements = true,
-                  includeCompletionsWithSnippetText = true,
-                  includeAutomaticOptionalChainCompletions = true,
-                  includeCompletionsWithClassMemberSnippets = true,
-                  includeCompletionsWithObjectLiteralMethodSnippets = true,
-                  quotePreference = "auto",
-                },
-              },
-              javascript = {
-                inlayHints = {
-                  includeInlayParameterNameHints = "all",
-                  includeInlayParameterNameHintsWhenArgumentMatchesName = false,
-                  includeInlayFunctionParameterTypeHints = true,
-                  includeInlayVariableTypeHints = true,
-                  includeInlayPropertyDeclarationTypeHints = true,
-                  includeInlayFunctionLikeReturnTypeHints = true,
-                  includeInlayEnumMemberValueHints = true,
-                },
-                preferences = {
-                  importModuleSpecifierPreference = "relative",
-                  importModuleSpecifierEnding = "minimal",
-                  includeCompletionsForImportStatements = true,
-                  includeCompletionsWithSnippetText = true,
-                  includeAutomaticOptionalChainCompletions = true,
-                  includeCompletionsWithClassMemberSnippets = true,
-                  includeCompletionsWithObjectLiteralMethodSnippets = true,
-                  quotePreference = "auto",
-                },
-              },
-            },
-          })
-        end,
-        ["lua_ls"] = function()
-          -- configure lua server (with special settings)
-          lspconfig["lua_ls"].setup({
-            capabilities = capabilities,
-            settings = {
-              Lua = {
-                -- make the language server recognize "vim" global
-                diagnostics = {
-                  globals = { "vim" },
-                },
-                completion = {
-                  callSnippet = "Replace",
-                },
-              },
-            },
-          })
-        end,
-        --   ["rust_analyzer"] = function()
-        --     lspconfig["rust_analyzer"].setup({
-        --       -- capabilities = capabilities,
-        --       settings = {
-        --         checkOnSave = {
-        --           command = "clippy",
-        --         },
-        --       },
-        --     })
-        --   end,
+            })
+          end,
+          --   ["rust_analyzer"] = function()
+          --     lspconfig["rust_analyzer"].setup({
+          --       -- capabilities = capabilities,
+          --       settings = {
+          --         checkOnSave = {
+          --           command = "clippy",
+          --         },
+          --       },
+          --     })
+          --   end,
+        },
       })
     end,
   },

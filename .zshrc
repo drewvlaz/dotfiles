@@ -9,7 +9,7 @@
 [ -z "${TMUX}" ] && [ -f "$HOME/.scripts/hashbang.sh" ] && "$HOME/.scripts/hashbang.sh"
 # [ -f "$HOME/.scripts/hashbang.sh" ] && "$HOME/.scripts/hashbang.sh"
 
-# Enable colors and change prompt:
+# Enable colors and change prompt (fallback for if starship is not installed):
 autoload -U colors && colors
 # PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 PS1="%B%{$fg[red]%}[%{$fg[magenta]%}%~%{$fg[red]%}]%{$fg[blue]%}$%{$reset_color%}%b "
@@ -36,6 +36,11 @@ export PATH=$PATH:~/.npm-global/bin
 export PATH=$PATH:~/.local/share/gem/ruby/3.0.0/bin
 export PATH=$PATH:$HOME/npm/bin
 export PATH=$PATH:$HOME/.scripts
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/Library/Python/3.9/bin
+export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/sessionmanagerplugin/bin
 export GOPATH=~/go
 export GOPATH=$GOPATH~/golib
 export SUDO_EDITOR=nvim
@@ -52,12 +57,19 @@ export ANDROID_HOME=~/Library/Android/sdk
 export MYVIMRC=~/.config/nvim/init.lua
 export XDG_RUNTIME_DIR=/tmp/$USER-runtime
 
+export AIDER_DARK_MODE=1
+export AIDER_VIM=1
+export AIDER_USER_INPUT_COLOR='#A7C080'
+
 [ ! -f "$XDG_RUNTIME_DIR" ] && mkdir -p "$XDG_RUNTIME_DIR"
 
 # Applications
 export FZF_DEFAULT_OPTS="--layout=reverse --height=20 --prompt='❯ ' --pointer='❯ '"
 eval "$(fzf --zsh)"
 source ~/Documents/repos/fzf-git.sh/fzf-git.sh
+
+
+eval "$(thefuck --alias)" 2>/dev/null
 
 # Python
 export PYTHONBREAKPOINT=IPython.terminal.debugger.set_trace
@@ -132,6 +144,7 @@ bindkey '^e' edit-command-line
 [ -f "$HOME/.config/zsh/aliasrc" ] && source "$HOME/.config/zsh/aliasrc"
 [ -f "$HOME/.config/zsh/zfunctions" ] && source "$HOME/.config/zsh/zfunctions"
 # [ -f "$HOME/.config/zsh/zoxiderc" ] && source "$HOME/.config/zsh/zoxiderc"
+[ -f "$HOME/.secr" ] && source "$HOME/.secr" # secrets
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -142,11 +155,9 @@ PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 # Load themes
 eval "$(starship init zsh)" 2>/dev/null
 
-eval "$(thefuck --alias)" 2>/dev/null
-
 # Load extensions ; should be last.
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-# source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+# source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh 2>/dev/null
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 
 
