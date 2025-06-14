@@ -1,15 +1,21 @@
 #!/bin/bash
 
-OWNER="Axle-Health"
-REPO="interop"
-AUTHOR="drewvlaz"
-LIMIT=50
+# Get current git repo name
+get_current_repo() {
+  basename -s .git "$(git config --get remote.origin.url 2>/dev/null)"
+}
 
-get_user_prs() {
+# Parse GraphQL query by removing newlines and extra spaces
+_parse_query() {
+  echo "$1" | tr -d '\n' | tr -s ' '
+}
+
+# Get all authors with open PRs
+get_pr_authors() {
+  # Parameters
   local owner="$1"
   local repo="$2"
-  local author="$3"
-  local limit="$4"
+  local limit="$3"
 
   local query='{
       "query": "
@@ -17,7 +23,39 @@ get_user_prs() {
               repository(owner: \"'$owner'\", name: \"'$repo'\") {
                   pullRequests(first: '$limit', states: OPEN) {
                       nodes {
-                          number
+                          author {
+                              login
+                          }
+                      }
+                  }
+              }
+          }
+      "
+  }'
+
+  curl -s -X POST \
+    -H "Authorization: Bearer $GITHUB_TOKEN" \
+    -H "Content-Type: application/json" \
+    -d "$(_parse_query "$query")" \
+    https://api.github.com/graphql |
+    jq -r '.data.repository.pullRequests.nodes[].author.login' | sort | uniq
+}
+
+# Get PRs for a specific author
+get_user_prs() {
+  # Parameters
+  local owner="$1"
+  local repo="$2"
+  local author="$3"
+  local limit="$4"
+
+  # TODO: Is it possible to filter by author in query?
+  local query='{
+      "query": "
+          query {
+              repository(owner: \"'$owner'\", name: \"'$repo'\") {
+                  pullRequests(first: '$limit', states: OPEN) {
+                      nodes {
                           title
                           url
                           author {
@@ -29,23 +67,119 @@ get_user_prs() {
           }
       "
   }'
-  local parsed_query=$(echo "$query" | tr -d '\n' | tr -s ' ')
 
-  local selection=$(
+  local selected_pr=$(
     curl -s -X POST \
       -H "Authorization: Bearer $GITHUB_TOKEN" \
       -H "Content-Type: application/json" \
-      -d "$parsed_query" \
+      -d "$(_parse_query "$query")" \
       https://api.github.com/graphql |
       jq -r '(.data.repository.pullRequests.nodes.[] | select(.author.login == "'$author'") | "\(.url)\t\(.title)")' |
-      fzf --no-sort --prompt="PRs> " --delimiter='\t' --with-nth=2 # --preview="echo {1}"
+      fzf --no-sort --prompt="PRs for $author> " --delimiter='\t' --with-nth=2
   )
 
-  local selected_title=$(echo "$selection" | cut -f2)
-  local selected_url=$(echo "$selection" | cut -f1)
+  if [[ -n "$selected_pr" ]]; then
+    local selected_pr_title=$(echo "$selected_pr" | cut -f2)
+    local selected_pr_url=$(echo "$selected_pr" | cut -f1)
 
-  echo "$selected_title"
-  open "$selected_url"
+    echo "$selected_pr_title"
+    open "$selected_pr_url"
+  else
+    echo "No PR selected"
+  fi
 }
 
-get_user_prs "$OWNER" "$REPO" "$AUTHOR" "$LIMIT"
+# Find author using fuzzy matching
+find_author() {
+  # Parameters
+  local search_term="$1"
+  local authors="$2"
+
+  echo "$authors" | fzf --filter="$search_term" | head -1
+}
+
+# Display usage information
+usage() {
+  echo "Usage: $(basename "$0") [OPTIONS]"
+  echo "Options:"
+  echo "  -a, --author AUTHOR   Filter PRs by author (fuzzy matching)"
+  echo "  -r, --repo REPO       Specify repository name (default: interop)"
+  echo "  -h, --help            Display this help message"
+  exit 1
+}
+
+main() {
+  # Set default values
+  local gh_owner="Axle-Health"
+  local gh_repo=$(get_current_repo)
+  local gh_pr_limit=50
+  local author_input=""
+  local repo_input=""
+
+  # Parse command line arguments
+  while [[ $# -gt 0 ]]; do
+    case "$1" in
+    -a | --author)
+      author_input="$2"
+      shift 2
+      ;;
+    -r | --repo)
+      repo_input="$2"
+      shift 2
+      ;;
+    -h | --help)
+      usage
+      ;;
+    *)
+      # If no flag is provided, assume it's the author
+      if [[ -z "$author_input" ]]; then
+        author_input="$1"
+      elif [[ -z "$repo_input" ]]; then
+        repo_input="$1"
+      else
+        echo "Error: Unknown argument '$1'"
+        usage
+      fi
+      shift
+      ;;
+    esac
+  done
+
+  # Override default repo if specified
+  if [[ -n "$repo_input" ]]; then
+    gh_repo="$repo_input"
+  else
+    echo "Using current repository: $gh_repo"
+  fi
+
+  # Get all authors first
+  echo "Fetching PR authors from $gh_repo..."
+  local all_authors=$(get_pr_authors "$gh_owner" "$gh_repo" "$gh_pr_limit")
+
+  # Check if an author was provided as an argument
+  local author=""
+  if [[ -n "$author_input" ]]; then
+    # Use fuzzy matching to find the author username
+    author=$(find_author "$author_input" "$all_authors")
+
+    if [[ -z "$author" ]]; then
+      echo "No matching author found for '$author_input'. Showing all authors..."
+      author=$(echo "$all_authors" | fzf --prompt="Select author> ")
+    else
+      echo "Found matching author: $author"
+    fi
+  else
+    # Let user select an author with fzf
+    author=$(echo "$all_authors" | fzf --prompt="Select author> ")
+  fi
+
+  if [[ -z "$author" ]]; then
+    echo "No author selected. Exiting."
+    exit 0
+  fi
+
+  echo "Fetching PRs for $author in $gh_repo..."
+  get_user_prs "$gh_owner" "$gh_repo" "$author" "$gh_pr_limit"
+}
+
+main "$@"
