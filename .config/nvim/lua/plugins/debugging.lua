@@ -144,7 +144,7 @@ local dap_js_config = function()
         print(test_name)
         if test_name then
           table.insert(args, "-t")
-          table.insert(args, "'" .. test_name .. "'")
+          table.insert(args, test_name)
         end
         for _, arg in ipairs(args) do
           print(arg)

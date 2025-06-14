@@ -27,7 +27,10 @@ local supermaven_config = function()
       clear_suggestion = "<C-]>",
       accept_word = "<C-n>",
     },
-    ignore_filetypes = {},
+    -- ignore renaming files in file explorer
+    ignore_filetypes = {
+      "neo-tree",
+    },
     color = {
       suggestion_color = "#ffb996",
       cterm = 244,

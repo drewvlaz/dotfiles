@@ -68,7 +68,6 @@ export FZF_DEFAULT_OPTS="--layout=reverse --height=20 --prompt='❯ ' --pointer=
 eval "$(fzf --zsh)"
 source ~/Documents/repos/fzf-git.sh/fzf-git.sh
 
-
 eval "$(thefuck --alias)" 2>/dev/null
 
 # Python
@@ -156,6 +155,8 @@ PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 eval "$(starship init zsh)" 2>/dev/null
 
 # Load extensions ; should be last.
+source ~/.config/zsh/plugins/zummoner/zummoner.zsh
+
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 # source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh 2>/dev/null
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null

@@ -49,10 +49,7 @@ local custom_hi_groups = function()
     vim.api.nvim_set_hl(0, group, { bg = "NONE" })
   end
 
-  local pastel_orange = "#ffb996"
-  vim.api.nvim_set_hl(0, "CopilotSuggestion", { fg = pastel_orange, bg = "NONE" })
-  -- vim.api.nvim_set_hl(0, "debugPC", { guibg = pastel_orange })
-  vim.cmd([[hi default link debugPC Visual]])
+  vim.api.nvim_set_hl(0, "CopilotSuggestion", { fg = "#ffb996", bg = "NONE" })
 end
 
 vim.api.nvim_create_autocmd("ColorScheme", {

@@ -1,0 +1,51 @@
+#!/bin/bash
+
+OWNER="Axle-Health"
+REPO="interop"
+AUTHOR="drewvlaz"
+LIMIT=50
+
+get_user_prs() {
+  local owner="$1"
+  local repo="$2"
+  local author="$3"
+  local limit="$4"
+
+  local query='{
+      "query": "
+          query {
+              repository(owner: \"'$owner'\", name: \"'$repo'\") {
+                  pullRequests(first: '$limit', states: OPEN) {
+                      nodes {
+                          number
+                          title
+                          url
+                          author {
+                              login
+                          }
+                      }
+                  }
+              }
+          }
+      "
+  }'
+  local parsed_query=$(echo "$query" | tr -d '\n' | tr -s ' ')
+
+  local selection=$(
+    curl -s -X POST \
+      -H "Authorization: Bearer $GITHUB_TOKEN" \
+      -H "Content-Type: application/json" \
+      -d "$parsed_query" \
+      https://api.github.com/graphql |
+      jq -r '(.data.repository.pullRequests.nodes.[] | select(.author.login == "'$author'") | "\(.url)\t\(.title)")' |
+      fzf --no-sort --prompt="PRs> " --delimiter='\t' --with-nth=2 # --preview="echo {1}"
+  )
+
+  local selected_title=$(echo "$selection" | cut -f2)
+  local selected_url=$(echo "$selection" | cut -f1)
+
+  echo "$selected_title"
+  open "$selected_url"
+}
+
+get_user_prs "$OWNER" "$REPO" "$AUTHOR" "$LIMIT"

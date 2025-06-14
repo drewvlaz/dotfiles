@@ -25,6 +25,7 @@ vim.api.nvim_create_autocmd("FileType", {
   group = augroup("indents"),
   pattern = { "typescript", "typescriptreact", "javascript", "python" },
   callback = function()
+    vim.opt_local.tabstop = 2
     vim.opt_local.shiftwidth = 4
   end,
 })
