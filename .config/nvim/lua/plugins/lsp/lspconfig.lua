@@ -36,11 +36,6 @@ return {
               vim.tbl_extend("keep", { include_declaration = false }, lsp_telescope_opts)
             )
           end
-          local function custom_lsp_definitions()
-            require("telescope.builtin").lsp_definitions(
-              vim.tbl_extend("keep", { jump_type = "never" }, lsp_telescope_opts)
-            )
-          end
 
           local function open_telescope_picker(picker, telescope_opts)
             require("telescope.builtin")[picker]({
@@ -49,6 +44,9 @@ return {
                 horizontal = { preview_width = 0.6, results_width = 0.8 },
                 vertical = { preview_height = 0.5, results_height = 0.8 },
               },
+              -- Clear the ignore patterns to allow searching node_modules
+              file_ignore_patterns = {},
+              path_display = { "smart" },
             })
           end
 
@@ -59,7 +57,7 @@ return {
           -- opts.desc = "Go to definition (with preview)"
           -- keymap.set("n", "gD", custom_lsp_definitions, opts) -- go to declaration
           opts.desc = "Go to declaration"
-          keymap.set("n", "gd", function()
+          keymap.set("n", "gD", function()
             open_telescope_picker("lsp_declarations", lsp_telescope_opts)
           end, opts) -- show lsp definitions
 
@@ -104,6 +102,10 @@ return {
         end,
       })
 
+      vim.diagnostic.config({
+        underline = true,
+      })
+
       -- Change the Diagnostic symbols in the sign column (gutter)
       -- (not in youtube nvim video)
       local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
@@ -114,12 +116,88 @@ return {
 
       local py_ignored = {
         "E501", -- line too long
+        "W503", -- line break before binary operator
+        "W504", -- line break after binary operator
       }
+
+      -- TODO: Figure out why this doesn't work with mason-lspconfig handlers
+      lspconfig.ts_ls.setup({
+        capabilities = capabilities,
+        init_options = {
+          preferences = {
+            importModuleSpecifier = "relative",
+            importModuleSpecifierPreference = "relative",
+            importModuleSpecifierEnding = "minimal",
+            includeCompletionsForImportStatements = true,
+            includeCompletionsWithSnippetText = true,
+            includeAutomaticOptionalChainCompletions = true,
+            includeCompletionsWithClassMemberSnippets = true,
+            includeCompletionsWithObjectLiteralMethodSnippets = true,
+            quotePreference = "auto",
+          },
+        },
+        -- settings = {
+        --   preferences = {
+        --     importModuleSpecifier = "relative",
+        --   },
+        -- },
+      })
+
+      -- lspconfig.pylsp.setup({
+      --   capabilities = capabilities,
+      --   settings = {
+      --     pylsp = {
+      --       plugins = {
+      --         black = { enabled = true },
+      --         isort = { enabled = true },
+      --         mypy = { enabled = true },
+      --         flake8 = {
+      --           enabled = true,
+      --           ignore = py_ignored,
+      --         },
+      --         mccabe = { enabled = false },
+      --         pyflakes = {
+      --           enabled = true,
+      --           ignore = py_ignored,
+      --         },
+      --         pycodestyle = {
+      --           enabled = true,
+      --           ignore = py_ignored,
+      --         },
+      --         rope_autoimport = { enabled = true },
+      --         rope_completion = { enabled = true },
+      --       },
+      --     },
+      --   },
+      -- })
+
+      lspconfig.ruff.setup({
+        -- before_init = function(_, config)
+        --   config.settings.python.pythonPath = vim.fn.getcwd() .. ".venv/bin/python"
+        -- end,
+        capabilities = capabilities,
+        init_options = {
+          settings = {
+            args = {
+              "--extend-select=DJ", -- Django-specific rules
+              "--config=" .. vim.fn.getcwd() .. "/pyproject.toml",
+            },
+            python = {
+              analysis = {
+                autoSearchPaths = true,
+                useLibraryCodeForTypes = true,
+                diagnosticMode = "workspace",
+              },
+            },
+          },
+        },
+      })
 
       mason_lspconfig.setup({
         ensure_installed = {
           "ts_ls",
-          "pyright",
+          "ruff",
+          -- "pyright",
           -- "pylsp",
         },
         automatic_enable = true,
@@ -199,55 +277,6 @@ return {
               filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
             })
           end,
-          -- ["ts_ls"] = function()
-          --   lspconfig["tsserver"].setup({
-          --     capabilities = capabilities,
-          --     settings = {
-          --       typescript = {
-          --         inlayHints = {
-          --           includeInlayParameterNameHints = "all",
-          --           includeInlayParameterNameHintsWhenArgumentMatchesName = false,
-          --           includeInlayFunctionParameterTypeHints = true,
-          --           includeInlayVariableTypeHints = true,
-          --           includeInlayPropertyDeclarationTypeHints = true,
-          --           includeInlayFunctionLikeReturnTypeHints = true,
-          --           includeInlayEnumMemberValueHints = true,
-          --         },
-          --         preferences = {
-          --           importModuleSpecifierPreference = "relative",
-          --           importModuleSpecifierEnding = "minimal",
-          --           includeCompletionsForImportStatements = true,
-          --           includeCompletionsWithSnippetText = true,
-          --           includeAutomaticOptionalChainCompletions = true,
-          --           includeCompletionsWithClassMemberSnippets = true,
-          --           includeCompletionsWithObjectLiteralMethodSnippets = true,
-          --           quotePreference = "auto",
-          --         },
-          --       },
-          --       -- javascript = {
-          --       --   inlayHints = {
-          --       --     includeInlayParameterNameHints = "all",
-          --       --     includeInlayParameterNameHintsWhenArgumentMatchesName = false,
-          --       --     includeInlayFunctionParameterTypeHints = true,
-          --       --     includeInlayVariableTypeHints = true,
-          --       --     includeInlayPropertyDeclarationTypeHints = true,
-          --       --     includeInlayFunctionLikeReturnTypeHints = true,
-          --       --     includeInlayEnumMemberValueHints = true,
-          --       --   },
-          --       --   preferences = {
-          --       --     importModuleSpecifierPreference = "relative",
-          --       --     importModuleSpecifierEnding = "minimal",
-          --       --     includeCompletionsForImportStatements = true,
-          --       --     includeCompletionsWithSnippetText = true,
-          --       --     includeAutomaticOptionalChainCompletions = true,
-          --       --     includeCompletionsWithClassMemberSnippets = true,
-          --       --     includeCompletionsWithObjectLiteralMethodSnippets = true,
-          --       --     quotePreference = "auto",
-          --       --   },
-          --       -- },
-          --     },
-          --   })
-          -- end,
           ["lua_ls"] = function()
             -- configure lua server (with special settings)
             lspconfig["lua_ls"].setup({
@@ -265,16 +294,6 @@ return {
               },
             })
           end,
-          --   ["rust_analyzer"] = function()
-          --     lspconfig["rust_analyzer"].setup({
-          --       -- capabilities = capabilities,
-          --       settings = {
-          --         checkOnSave = {
-          --           command = "clippy",
-          --         },
-          --       },
-          --     })
-          --   end,
         },
       })
     end,

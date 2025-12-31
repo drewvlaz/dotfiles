@@ -6,7 +6,7 @@ export GOPATH=~/go
 export GOPATH=$GOPATH~/golib
 export EDITOR=nvim
 export TERMINAL=alacritty
-export BROWSER=google-chrome
+# export BROWSER=google-chrome
 export FILEMANAGER=nautilus
 
 # Applications

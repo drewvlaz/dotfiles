@@ -82,8 +82,14 @@ get_user_prs() {
     local selected_pr_title=$(echo "$selected_pr" | cut -f2)
     local selected_pr_url=$(echo "$selected_pr" | cut -f1)
 
-    echo "$selected_pr_title"
     open "$selected_pr_url"
+
+    # echo $"$selected_pr_url.diff"
+    # curl \
+    #   -H "Authorization: Bearer $GITHUB_TOKEN" \
+    #   -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8' \
+    #   "$selected_pr_url.diff"
+
   else
     echo "No PR selected"
   fi

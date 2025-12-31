@@ -1,7 +1,23 @@
 return {
   {
-    "kevinhwang91/nvim-ufo",
+    "kevinhwang91/nvim-ufo", -- folding
     requires = "kevinhwang91/promise-async",
+  },
+  -- TODO: Move to specific file
+  {
+    "ibhagwan/fzf-lua",
+    -- optional for icon support
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    -- or if using mini.icons/mini.nvim
+    -- dependencies = { "nvim-mini/mini.icons" },
+    opts = {
+      winopts = {
+        width = 0.96,
+        preview = {
+          layout = "vertical",
+        },
+      },
+    },
   },
 }
 

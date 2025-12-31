@@ -20,6 +20,12 @@ return {
           preview_height = 0.55,
         },
       },
+      file_ignore_patterns = {
+        ".git/",
+        "node_modules/",
+        "__pycache__/",
+        ".sql",
+      },
 
       mappings = {
         i = {

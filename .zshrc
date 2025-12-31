@@ -39,13 +39,13 @@ export PATH=$PATH:$HOME/.scripts
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/Library/Python/3.9/bin
 export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:$HOME/.yarn/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/usr/local/sessionmanagerplugin/bin
 export GOPATH=~/go
 export GOPATH=$GOPATH~/golib
 export SUDO_EDITOR=nvim
 export EDITOR=nvim
-export BROWSER=google-chrome-stable
 # export FILEMANAGER=nautilus
 # export RUST_BACKTRACE=full
 export RUST_LOG=trace
@@ -120,18 +120,23 @@ echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 # Use lf to switch directories
-lfcd() {
-    tmp="$(mktemp)"
-    lf -last-dir-path="$tmp" "$@"
-    if [ -f "$tmp" ]; then
-        dir="$(cat "$tmp")"
-        rm -f "$tmp"
-        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
-    fi
+# lfcd() {
+#     tmp="$(mktemp)"
+#     lf -last-dir-path="$tmp" "$@"
+#     if [ -f "$tmp" ]; then
+#         dir="$(cat "$tmp")"
+#         rm -f "$tmp"
+#         [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+#     fi
+# }
+get_file() {
+  local pane_id=$(tmux display-message -p '#{pane_id}')
+  local file=$(ls -a | fzf)
+  [[ -n "$file" ]] && tmux send-keys -t "$pane_id" "$file"
 }
 
 # Custom ZSH Binds
-bindkey -s '^o' 'lfcd\n'
+bindkey -s '^o' 'get_file\n'
 bindkey 'jk' vi-cmd-mode
 bindkey '^ ' autosuggest-accept
 
@@ -154,12 +159,29 @@ PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 # Load themes
 eval "$(starship init zsh)" 2>/dev/null
 
+#compdef gt
+###-begin-gt-completions-###
+#
+# yargs command completion script
+#
+# Installation: gt completion >> ~/.zshrc
+#    or gt completion >> ~/.zprofile on OSX.
+#
+_gt_yargs_completions()
+{
+  local reply
+  local si=$IFS
+  IFS=$'
+' reply=($(COMP_CWORD="$((CURRENT-1))" COMP_LINE="$BUFFER" COMP_POINT="$CURSOR" gt --get-yargs-completions "${words[@]}"))
+  IFS=$si
+  _describe 'values' reply
+}
+compdef _gt_yargs_completions gt
+###-end-gt-completions-###
+
 # Load extensions ; should be last.
 source ~/.config/zsh/plugins/zummoner/zummoner.zsh
 
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 # source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh 2>/dev/null
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
-
-
-

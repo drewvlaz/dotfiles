@@ -24,8 +24,8 @@ local supermaven_config = function()
   require("supermaven-nvim").setup({
     keymaps = {
       accept_suggestion = "<C-l>",
-      clear_suggestion = "<C-]>",
-      accept_word = "<C-n>",
+      clear_suggestion = "<C-h>",
+      accept_word = "<C-g>",
     },
     -- ignore renaming files in file explorer
     ignore_filetypes = {
@@ -40,6 +40,7 @@ local supermaven_config = function()
     disable_keymaps = false, -- disables built in keymaps for more manual control
     -- condition to check for stopping supermaven, `true` means to stop supermaven when the condition is true.
     condition = function()
+      -- TODO: Stop if buffer is too large
       return false
     end,
   })

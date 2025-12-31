@@ -50,6 +50,11 @@ local custom_hi_groups = function()
   end
 
   vim.api.nvim_set_hl(0, "CopilotSuggestion", { fg = "#ffb996", bg = "NONE" })
+
+  vim.api.nvim_set_hl(0, "DiagnosticUnderlineError", { underline = true, sp = "#e67e80" })
+  vim.api.nvim_set_hl(0, "DiagnosticUnderlineWarn", { underline = true, sp = "#dbbc7f" })
+  vim.api.nvim_set_hl(0, "DiagnosticUnderlineHint", { underline = true, sp = "#7dc6bf" })
+  vim.api.nvim_set_hl(0, "DiagnosticUnderlineInfo", { underline = true, sp = "#8ddb8c" })
 end
 
 vim.api.nvim_create_autocmd("ColorScheme", {

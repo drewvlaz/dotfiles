@@ -31,12 +31,37 @@ gdel() {
   fi
 }
 
-sqrebase() {
+gtl() {
+  target=$(git worktree list | fzf --prompt='❯ ' --pointer='❯ ' | awk '{print $1}')
+  if [ $? -ne 0 ]; then
+    cd $target
+  fi
+}
+
+gta() {
+  git worktree add "../$1" && cd "../$1" && mise trust
+}
+
+gtd() {
+  echo "Deleting worktree..."
+  if [ -z "$1" ]; then
+    git worktree list |
+      rg -v '(dev/interop|dev/partner|dev/backend|dev/patient)' |
+      fzf --prompt='❯ ' --pointer='❯ ' |
+      awk '{print $1}' |
+      sed 's/^[[:space:]]*//' | sed 's|.*/||' |
+      xargs git worktree remove
+  else
+    git worktree remove $1
+  fi
+}
+
+squash() {
   current_branch=$(git branch --show-current)
 
   # The original base of the current branch
   if [ -z "$1" ]; then
-    og_base_unparsed=$(git branch --list | fzf --prompt='From: ')
+    og_base_unparsed=$(git branch --list | fzf --prompt='Base: ')
     if [ $? -ne 0 ]; then
       return
     fi
@@ -45,18 +70,16 @@ sqrebase() {
     og_base=$1
   fi
 
-  echo "alskdf"
-
-  # The target base of the current branch
-  if [ -z "$2" ]; then
-    target_base_unparsed=$(git branch --list | fzf --prompt='To: ')
-    if [ $? -ne 0 ]; then
-      return
-    fi
-    target_base=$(echo $target_base_unparsed | sed 's/^[[:space:]]*//')
-  else
-    target_base=$1
-  fi
+  # # The target base of the current branch
+  # if [ -z "$2" ]; then
+  #   target_base_unparsed=$(git branch --list | fzf --prompt='To: ')
+  #   if [ $? -ne 0 ]; then
+  #     return
+  #   fi
+  #   target_base=$(echo $target_base_unparsed | sed 's/^[[:space:]]*//')
+  # else
+  #   target_base=$1
+  # fi
 
   # Diff the head of the current branch against the target branch
   git diff $og_base..HEAD >changes.patch
@@ -65,13 +88,13 @@ sqrebase() {
   git checkout -b "TMP/$current_branch"
 
   # Clean branch under same name as current branch
-  git checkout $target_base
+  # git checkout $target_base
+  git checkout $og_base
   git branch -D $current_branch
   git checkout -b $current_branch
 
   # Apply the changes
   git apply changes.patch
-  rm changes.patch
 }
 
 dfile() {

@@ -14,27 +14,34 @@ alias :q="exit"
 alias b="cd -"
 alias za="zoxide add"
 
-# Common commands that are just too long
-alias cl="clear"
-alias ka="killall"
+# Git
 alias g="git"
 alias lg="lazygit"
 # alias gl="git log --pretty='format:%C(yellow)%h%C(reset) %C(blue)%ad%C(reset) %C(cyan)%an%C(reset) %C(white)%s%C(reset) %C(auto)%D%C(reset)' --date=iso"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset - %s %Cgreen(%ar) %C(bold blue)[%an]%Creset%C(yellow)%d%Creset' --abbrev-commit"
 alias gd="git diff"
 alias gb="git checkout @{-1}"
-alias gp="git pull"
+alias gu="git pull"
+alias gp="git push"
 alias gsb="git branch --list | fzf | xargs git checkout"
 alias gs="git status" # WARN: This overrides gs (GhostScript)
 alias gco="git checkout"
 alias gcp="git cherry-pick"
+# Graphite
+alias gtc="gt create"
+alias gsync="gt sync"
+alias gstack="gt log short --stack"
+
+# Common commands that are just too long
+alias cl="clear"
+alias ka="killall"
 alias ec="$EDITOR ~/.zshrc"
 alias sc="source ~/.zshrc"
 alias evc="$EDITOR ~/.config/nvim/init.vim"
 alias v="$EDITOR"
 alias vim="$EDITOR"
 alias ff="firefox"
-alias google="google-chrome-stable"
+# alias google="google-chrome-stable"
 alias toclip="xclip -selection c"
 alias yeet="yay -Rns"
 alias stdconvert="convert -resize 1240x1750 -gravity center extent 1240x1750 -units PixelsPerInch -density 150"
@@ -44,6 +51,7 @@ alias hb="clear && $HOME/.scripts/hashbang.sh"
 alias tlist="tmux list"
 alias py="python manage.py shell"
 alias ip="ipython"
+alias notif="afplay /System/Library/Sounds/Glass.aiff -v 5"
 
 # Axle commands
 alias pipsync="python manage.py pipsync"
