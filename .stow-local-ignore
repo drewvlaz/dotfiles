@@ -20,5 +20,7 @@ _darcs
 ^/README.*
 ^/LICENSE.*
 ^/COPYING
+^/Brewfile.*
+^/install\.sh
 
 assets
