@@ -1,1 +1,0 @@
-.scripts/toggle_alacritty_op.sh

@@ -1,1 +1,0 @@
-.scripts/skyline-condensed.sh

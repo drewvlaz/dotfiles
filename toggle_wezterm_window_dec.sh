@@ -1,1 +1,0 @@
-.scripts/toggle_wezterm_window_dec.sh
