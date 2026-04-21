@@ -1,0 +1,56 @@
+#!/bin/bash
+PORT=$1
+
+# ANSI color codes
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+YELLOW='\033[0;33m'
+RED='\033[0;31m'
+CYAN='\033[0;36m'
+RESET='\033[0m'
+
+# Start ngrok in background and capture its PID
+ngrok http --domain dolphin-driving-stingray.ngrok-free.app ${PORT:-8001} --log=stdout >/dev/null 2>&1 &
+NGROK_PID=$!
+
+# Kill ngrok when script exits (Ctrl-C, error, or normal exit)
+trap "kill $NGROK_PID 2>/dev/null" EXIT
+
+# Give ngrok a moment to start
+sleep 2
+
+seen_ids=()
+
+while true; do
+	while IFS='|' read -r id time method uri status; do
+		if [[ ! " ${seen_ids[@]} " =~ " ${id} " ]]; then
+			# Color code method
+			case $method in
+			GET) method_color="${GREEN}" ;;
+			POST) method_color="${BLUE}" ;;
+			PUT) method_color="${YELLOW}" ;;
+			DELETE) method_color="${RED}" ;;
+			PATCH) method_color="${CYAN}" ;;
+			*) method_color="${RESET}" ;;
+			esac
+
+			# Color code status
+			if [[ $status =~ ^2 ]]; then
+				status_color="${GREEN}"
+			elif [[ $status =~ ^3 ]]; then
+				status_color="${CYAN}"
+			elif [[ $status =~ ^4 ]]; then
+				status_color="${YELLOW}"
+			elif [[ $status =~ ^5 ]]; then
+				status_color="${RED}"
+			else
+				status_color="${RESET}"
+			fi
+
+			echo -e "$time ${method_color}${method}${RESET} $uri ${status_color}${status}${RESET}"
+			seen_ids+=("$id")
+		fi
+	done < <(curl -s http://127.0.0.1:4040/api/requests/http |
+		jq -r '.requests[] | "\(.id)|\(.start)|\(.request.method)|\(.request.uri)|\(.response.status_code)"')
+	sleep 1.5
+done

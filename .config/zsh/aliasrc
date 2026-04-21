@@ -71,6 +71,6 @@ alias gccc="gcc -Wall -Werror"
 alias nvide="neovide --frameless --geometry 145x45"
 alias please="sudo !!"
 alias plz="sudo !!"
-alias pytest="pytest --pdbcls=IPython.terminal.debugger:TerminalPdb --no-header --cov=. --cov-report=xml:coverage.xml --testmon --disable-warnings"
+# alias pytest="pytest --pdbcls=IPython.terminal.debugger:TerminalPdb --no-header --cov=. --cov-report=xml:coverage.xml --testmon --disable-warnings"
 alias pcd="pytest --create-db"
 # alert=notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history | tail -n1 | sed -e 's/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//')" \

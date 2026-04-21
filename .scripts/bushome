@@ -1,0 +1,53 @@
+#!/bin/bash
+
+STOP_ID="BBB:6847"
+ROUTE_ID="BBB:14412"
+CACHE_FILE="/tmp/bushome.json"
+CACHE_TTL_SECONDS=120
+
+fetch_data() {
+	echo "Fetching data..."
+	curl -sS "https://external.transitapp.com/v3/public/stop_departures?global_stop_id=$STOP_ID" \
+		-H "apiKey: $TRANSIT_APP_API_KEY" >"$CACHE_FILE"
+}
+
+FORCE=false
+if [[ "$1" == "-f" ]]; then
+	FORCE=true
+fi
+
+NOW=$(date +%s)
+
+# Force refresh or check cache
+if [[ "$FORCE" == true ]]; then
+	fetch_data
+elif [[ -f "$CACHE_FILE" ]]; then
+	# Check cache age
+	if [[ "$(uname)" == "Darwin" ]]; then
+		CACHE_AGE=$((NOW - $(stat -f %m "$CACHE_FILE")))
+	else
+		CACHE_AGE=$((NOW - $(stat -c %Y "$CACHE_FILE")))
+	fi
+
+	if [[ "$CACHE_AGE" -gt "$CACHE_TTL_SECONDS" ]]; then
+		fetch_data
+	else
+		# Check if first departure has passed
+		FIRST_DEPARTURE=$(jq -r --arg route_id "$ROUTE_ID" \
+			'.route_departures[] | select(.global_route_id == $route_id).itineraries[].schedule_items[0].departure_time' \
+			"$CACHE_FILE" 2>/dev/null | head -1)
+
+		if [[ -z "$FIRST_DEPARTURE" ]] || [[ "$FIRST_DEPARTURE" -lt "$NOW" ]]; then
+			fetch_data
+		else
+			echo "Using cached data:"
+		fi
+	fi
+else
+	fetch_data
+fi
+
+# Now parse and display times
+jq -r --arg route_id "$ROUTE_ID" \
+	'.route_departures[] | select(.global_route_id == $route_id).itineraries[].schedule_items[].departure_time | strflocaltime("%I:%M %p") | sub("^0"; "")' \
+	"$CACHE_FILE"

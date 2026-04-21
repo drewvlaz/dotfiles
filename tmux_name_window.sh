@@ -1,0 +1,1 @@
+.scripts/tmux_name_window.sh

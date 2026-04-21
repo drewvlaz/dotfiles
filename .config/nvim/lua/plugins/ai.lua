@@ -25,7 +25,7 @@ local supermaven_config = function()
     keymaps = {
       accept_suggestion = "<C-l>",
       clear_suggestion = "<C-h>",
-      accept_word = "<C-g>",
+      accept_word = "<C-e>",
     },
     -- ignore renaming files in file explorer
     ignore_filetypes = {

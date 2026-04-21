@@ -79,17 +79,14 @@ return {
     config = harpoon_config,
   },
   {
-    "ggandor/leap.nvim",
+    url = "https://codeberg.org/andyg/leap.nvim",
     enabled = true,
-    keys = {
-      { "s", mode = { "n", "x", "o" }, desc = "Leap forward to" },
-      { "S", mode = { "n", "x", "o" }, desc = "Leap backward to" },
-      { "gs", mode = { "n", "x", "o" }, desc = "Leap from windows" },
-    },
     config = function()
       local leap = require("leap")
-      leap.opts.highlight_unlabeled_phase_one_targets = true
-      leap.add_default_mappings(true)
+      -- leap.opts.highlight_unlabeled_phase_one_targets = true
+      vim.keymap.set({ "n", "x", "o" }, "s", "<Plug>(leap-forward)")
+      vim.keymap.set({ "n", "x", "o" }, "S", "<Plug>(leap-backward)")
+      vim.keymap.set("n", "gs", "<Plug>(leap-from-window)")
     end,
   },
   {

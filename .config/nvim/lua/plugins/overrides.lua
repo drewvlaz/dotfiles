@@ -71,6 +71,15 @@ return {
     },
   },
   {
+    "ThePrimeagen/refactoring.nvim",
+    dependencies = {
+      "lewis6991/async.nvim",
+    },
+    config = function(_, opts)
+      require("refactoring").setup(opts)
+    end,
+  },
+  {
     "MagicDuck/grug-far.nvim",
     version = "1.6.3",
     config = function()

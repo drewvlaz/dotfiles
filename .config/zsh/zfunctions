@@ -1,5 +1,13 @@
 #! /bin/bash
 
+see() {
+  bat $(which $1)
+}
+
+diffs() {
+  diff <(tr -s ' ' <$1) <(tr -s ' ' <$2) -u -d | delta
+}
+
 ed() {
   file=$(
     du -a src |
@@ -33,7 +41,7 @@ gdel() {
 
 gtl() {
   target=$(git worktree list | fzf --prompt='❯ ' --pointer='❯ ' | awk '{print $1}')
-  if [ $? -ne 0 ]; then
+  if [ -n "$target" ]; then
     cd $target
   fi
 }
@@ -224,6 +232,9 @@ ide() {
   partner_path=~/dev/partner
   patient_path=~/dev/patient
   interop_path=~/dev/interop
+  interop_c0_path=~/dev/int-c0
+  interop_c1_path=~/dev/int-c1
+  interop_c2_path=~/dev/int-c2
 
   # dir=$(dirs | awk '{print $2}' | fzf)
   retVal=$?
@@ -235,15 +246,19 @@ ide() {
   fi
 
   if [ $retVal -eq 0 ]; then
-    tmux new-session -c "$backend_path" -s "$session" -n "backend" -d \; \
-      new-window -c "$partner_path" -n "partner" \; \
+    tmux new-session -c "$backend_path" -s "$session" -n "svr" -d \; \
       \
-      new-window -c "$backend_path" -n "servers" \; \
       split-window -c "$partner_path" -h \; \
       split-window -c "$interop_path" -v -p 90 \; \
-      new-window -c "$backend_path" \; \
-      new-window -c "$interop_path" -n "interop" \; \
-      select-window -t "$session":backend # new-window -c "$patient_path" -n "patient" \; \
+      \
+      new-window -c "$interop_path" -n "int" \; \
+      new-window -c "$interop_c0_path" -n "int0" \; \
+      new-window -c "$interop_c1_path" -n "int1" \; \
+      new-window -c "$interop_c2_path" -n "int2" \; \
+      select-window -t "$session":int # new-window -c "$partner_path" -n "partner" \; \
+    # new-window -c "$backend_path" -n "servers" \; \
+    # new-window -c "$backend_path" \; \
+    # new-window -c "$patient_path" -n "patient" \; \
     # tmux send-keys -t "$session":0 ls C-m
     tmux attach -t $session
     # tmux new-session -s "$session" -d
@@ -269,6 +284,22 @@ tkill() {
   if [ $retVal -eq 0 ]; then
     tmux kill-session -t $session
   fi
+}
+
+scrollback() {
+  local tmp=$(mktemp)
+  tmux capture-pane -pS -${1:-10000} >"$tmp"
+  $EDITOR +"?\\S" +nohl "$tmp"
+  rm -f "$tmp"
+}
+
+heavyapps() {
+  ps aux |
+    awk 'NR==1 || $3+0 > 0.5 || $4+0 > 0.5' |
+    sort -k3 -rn |
+    head -40 |
+    awk 'BEGIN {printf "%-10s %-7s %-6s %-6s %s\n", "USER", "PID", "%CPU", "%MEM", "COMMAND"} NR>1 {printf "%-10s %-7s %-6s %-6s %s\n", $1, $2, $3, $4, $11}' |
+    column -t
 }
 
 randp() {

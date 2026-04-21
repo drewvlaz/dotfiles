@@ -46,6 +46,7 @@ export GOPATH=~/go
 export GOPATH=$GOPATH~/golib
 export SUDO_EDITOR=nvim
 export EDITOR=nvim
+export BROWSER=zen
 # export FILEMANAGER=nautilus
 # export RUST_BACKTRACE=full
 export RUST_LOG=trace
@@ -144,9 +145,15 @@ bindkey '^ ' autosuggest-accept
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
+# # Auto save output of last command
+# preexec() { _last_output_file=$(mktemp); exec > >(tee "$_last_output_file") 2>&1; }
+# precmd() { exec > /dev/tty 2>&1; }
+# last() { cat "$_last_output_file"; }
+
 # Load aliases if exist
 [ -f "$HOME/.config/zsh/aliasrc" ] && source "$HOME/.config/zsh/aliasrc"
 [ -f "$HOME/.config/zsh/zfunctions" ] && source "$HOME/.config/zsh/zfunctions"
+[ -f "$HOME/.config/zsh/worktree" ] && source "$HOME/.config/zsh/worktree"
 # [ -f "$HOME/.config/zsh/zoxiderc" ] && source "$HOME/.config/zsh/zoxiderc"
 [ -f "$HOME/.secr" ] && source "$HOME/.secr" # secrets
 
@@ -179,9 +186,15 @@ _gt_yargs_completions()
 compdef _gt_yargs_completions gt
 ###-end-gt-completions-###
 
+# bc idk where this is being set :/
+unset GITHUB_TOKEN
+
 # Load extensions ; should be last.
 source ~/.config/zsh/plugins/zummoner/zummoner.zsh
 
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 # source $HOMEBREW_PREFIX/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh 2>/dev/null
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+
+# opencode
+export PATH=/Users/drewvlaz/.opencode/bin:$PATH
