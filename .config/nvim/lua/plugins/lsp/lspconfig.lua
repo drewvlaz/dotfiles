@@ -41,8 +41,8 @@ return {
             require("telescope.builtin")[picker]({
               layout_strategy = telescope_opts.strategy or "horizontal",
               layout_config = telescope_opts.config or {
-                horizontal = { preview_width = 0.6, results_width = 0.8 },
-                vertical = { preview_height = 0.5, results_height = 0.8 },
+                horizontal = { preview_width = 0.6, results_width = 0.8, preview_cutoff = 1 },
+                vertical = { preview_height = 0.5, results_height = 0.8, preview_cutoff = 1 },
               },
               -- Clear the ignore patterns to allow searching node_modules
               file_ignore_patterns = {},
@@ -120,28 +120,9 @@ return {
         "W504", -- line break after binary operator
       }
 
-      -- TODO: Figure out why this doesn't work with mason-lspconfig handlers
-      lspconfig.ts_ls.setup({
-        capabilities = capabilities,
-        init_options = {
-          preferences = {
-            importModuleSpecifier = "relative",
-            importModuleSpecifierPreference = "relative",
-            importModuleSpecifierEnding = "minimal",
-            includeCompletionsForImportStatements = true,
-            includeCompletionsWithSnippetText = true,
-            includeAutomaticOptionalChainCompletions = true,
-            includeCompletionsWithClassMemberSnippets = true,
-            includeCompletionsWithObjectLiteralMethodSnippets = true,
-            quotePreference = "auto",
-          },
-        },
-        -- settings = {
-        --   preferences = {
-        --     importModuleSpecifier = "relative",
-        --   },
-        -- },
-      })
+      -- ts_ls is set up via the mason_lspconfig handlers block below — having
+      -- a manual setup here too would attach the client twice (duplicate
+      -- references / completions).
 
       -- lspconfig.pylsp.setup({
       --   capabilities = capabilities,
@@ -190,6 +171,26 @@ return {
               },
             },
           },
+        },
+      })
+
+      -- mason-lspconfig v2 removed `handlers` — use vim.lsp.config + automatic_enable.
+      local ts_prefs = {
+        importModuleSpecifierPreference = "relative",
+        importModuleSpecifierEnding = "minimal",
+        quotePreference = "auto",
+        includeCompletionsForImportStatements = true,
+        includeCompletionsWithSnippetText = true,
+        includeAutomaticOptionalChainCompletions = true,
+        includeCompletionsWithClassMemberSnippets = true,
+        includeCompletionsWithObjectLiteralMethodSnippets = true,
+      }
+      vim.lsp.config("ts_ls", {
+        capabilities = capabilities,
+        init_options = { preferences = ts_prefs },
+        settings = {
+          typescript = { preferences = ts_prefs },
+          javascript = { preferences = ts_prefs },
         },
       })
 

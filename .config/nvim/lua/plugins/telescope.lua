@@ -15,9 +15,11 @@ return {
         prompt_position = "bottom",
         horizontal = {
           preview_width = 0.55,
+          preview_cutoff = 1,
         },
         vertical = {
           preview_height = 0.55,
+          preview_cutoff = 1,
         },
       },
       file_ignore_patterns = {
