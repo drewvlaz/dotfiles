@@ -4,6 +4,8 @@
 #  _ / /\__ \ | | | | | (__
 # (_)___|___/_| |_|_|  \___|
 
+# zmodload zsh/zprof
+
 # Welcome message, don't display in tmux
 # fortune -s -n 150 | cowsay -W 38 -f cower | lolcat
 [ -z "${TMUX}" ] && [ -f "$HOME/.scripts/hashbang.sh" ] && "$HOME/.scripts/hashbang.sh"
@@ -79,7 +81,12 @@ export PYTHONSTARTUP=~/.pythonrc.py
 autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
-compinit
+# only rebuild ~/.zcompdump if >24h old; otherwise fast path
+if [[ -n ${ZDOTDIR:-$HOME}/.zcompdump(#qN.mh+24) ]]; then
+  compinit
+else
+  compinit -C
+fi
 _comp_options+=(globdots) # Include hidden files.
 
 # Case insensitive completion
@@ -198,3 +205,5 @@ source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev
 
 # opencode
 export PATH=/Users/drewvlaz/.opencode/bin:$PATH
+
+# zprof
