@@ -1,7 +1,10 @@
 {
   "mcpServers": {
     "linear": {
-      "url": "https://mcp.linear.app/mcp"
+      "url": "https://mcp.linear.app/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:LINEAR_API_KEY}"
+      }
     },
     "sentry": {
       "url": "https://mcp.sentry.dev/mcp"
