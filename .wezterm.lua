@@ -10,12 +10,12 @@ local config = wezterm.config_builder()
 --------------------------------------------------------------------------------
 config.font = wezterm.font("CaskaydiaCove Nerd Font")
 config.font_size = 18
-config.font_rules = {
-	{
-		italic = true,
-		font = wezterm.font("My Mono", { italic = true }),
-	},
-}
+-- config.font_rules = {
+-- 	{
+-- 		italic = true,
+-- 		font = wezterm.font("My Mono", { italic = true }),
+-- 	},
+-- }
 config.underline_thickness = "120%"
 config.underline_position = "-2pt"
 
@@ -24,6 +24,7 @@ config.underline_position = "-2pt"
 -- region WINDOW
 --------------------------------------------------------------------------------
 config.enable_tab_bar = false
+config.audible_bell = "Disabled"
 config.window_decorations = "RESIZE"
 
 config.window_background_opacity = 0.85

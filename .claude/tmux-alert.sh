@@ -12,7 +12,7 @@ onedark_comment_grey="#5c6370"
 # Skips if the pane's window is already focused.
 # Clears automatically when the window is next focused.
 
-[ -z "$TMUX" ] && exit 0
+[ -z "$TMUX" ] && [ -z "$TMUX_PANE" ] && exit 0
 
 pane="${TMUX_PANE:-$(tmux display-message -p '#{pane_id}' 2>/dev/null)}"
 [ -z "$pane" ] && exit 0

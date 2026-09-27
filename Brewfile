@@ -45,34 +45,26 @@ brew "lazygit"
 brew "delta"
 brew "git-town"
 brew "jj"
-brew "withgraphite/tap/graphite"
+#brew "withgraphite/tap/graphite"
 
 ########################################
 # Languages & runtimes
 ########################################
-brew "mise"                 # polyglot version manager
-brew "jdx/tap/usage"
-brew "openjdk@11"
 brew "lua"
 brew "luarocks"
 brew "tsc"
-brew "yarn"
-brew "pipx"
 brew "virtualenv"
 
 ########################################
 # AI / LLM
 ########################################
-brew "aichat"
 brew "llm"
 
 ########################################
 # Media
 ########################################
 brew "ffmpeg"
-brew "imagemagick"
 brew "yt-dlp"
-brew "ncspot"
 
 ########################################
 # Notifications & misc
@@ -82,11 +74,9 @@ brew "terminal-notifier"
 brew "ntfy"
 
 ########################################
-# Work (Axle Health)
+# Work
 ########################################
 brew "redis"                # backend broker + geocoding cache
-brew "ghostscript"          # PDF generation for faxing
-brew "ios-deploy"           # Expo -> physical iOS devices
 brew "awscli"
 brew "docker"
 

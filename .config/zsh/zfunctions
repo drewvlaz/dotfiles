@@ -1,7 +1,15 @@
 #! /bin/bash
 
 see() {
-  bat $(which $1)
+  which $1 | bat -l sh
+}
+
+gt() {
+  if [ "$1" = "restack" ] || [ "$1" = "r" ]; then
+    echo "gt: '$1' is disabled (rewrites parents -> force push). Run 'ch $1' explicitly if you really want it." >&2
+    return 1
+  fi
+  ch "$@"
 }
 
 diffs() {
@@ -10,7 +18,12 @@ diffs() {
 
 ed() {
   file=$(
-    du -a src |
+    du -a \
+      -I .git \
+      -I .github \
+      -I .ruff_cache \
+      -I .cursor \
+      . |
       awk '{print $2}' |
       fzf \
         --preview 'bat --style=plain --color=always {}' \
@@ -141,14 +154,7 @@ dirs() {
     -I bin \
     -I misc \
     -I node_modules \
-    ~/dev/backend \
-    ~/dev/partner \
-    ~/dev/interop \
-    ~/dev/docs \
-    ~/dev/patient \
-    ~/dev/qhp-app/ \
-    ~/Documents/dotfiles \
-    ~/Documents/repos \
+    ~/.dotfiles \
     ~/.config/nvim \
     ~/.config/tmux \
     ~/.config/zsh \
@@ -172,7 +178,6 @@ explore() {
 se() {
   file=$(du -a \
     ~/.wezterm.lua \
-    ~/Documents/dotfiles \
     ~/.config/alacritty \
     ~/.config/nvim \
     ~/.config/tmux \
@@ -228,16 +233,8 @@ stat() {
 }
 
 ide() {
-  backend_path=~/dev/backend
-  partner_path=~/dev/partner
-  patient_path=~/dev/patient
-  interop_path=~/dev/interop
-  interop_c0_path=~/dev/int-c0
-  interop_c1_path=~/dev/int-c1
-  interop_c2_path=~/dev/int-c2
-
-  # dir=$(dirs | awk '{print $2}' | fzf)
-  retVal=$?
+  backend_path=~/dev/codes-health/backend/
+  frontend_path=~/dev/codes-health/frontend/
 
   if [ $# -gt 0 ]; then
     session=$1
@@ -245,29 +242,11 @@ ide() {
     session="ide"
   fi
 
-  if [ $retVal -eq 0 ]; then
-    tmux new-session -c "$backend_path" -s "$session" -n "svr" -d \; \
-      \
-      split-window -c "$partner_path" -h \; \
-      split-window -c "$interop_path" -v -p 90 \; \
-      \
-      new-window -c "$interop_path" -n "int" \; \
-      new-window -c "$interop_c0_path" -n "int0" \; \
-      new-window -c "$interop_c1_path" -n "int1" \; \
-      new-window -c "$interop_c2_path" -n "int2" \; \
-      select-window -t "$session":int # new-window -c "$partner_path" -n "partner" \; \
-    # new-window -c "$backend_path" -n "servers" \; \
-    # new-window -c "$backend_path" \; \
-    # new-window -c "$patient_path" -n "patient" \; \
-    # tmux send-keys -t "$session":0 ls C-m
-    tmux attach -t $session
-    # tmux new-session -s "$session" -d
-    # tmux rename-window -t "$session:0" "code"
-    # tmux send-keys -t "$session:0" "cd $dir && clear" C-m
-    # tmux new-window -t "$session:1" -n "term"
-    # tmux send-keys -t "$session:1" "cd $dir && clear" C-m
-    # tmux attach -t "$session:0"
-  fi
+  tmux new-session -c "$backend_path" -s "$session" -n "svr" -d \; \
+    split-window -c "$frontend_path" -h \; \
+    select-pane -t "$session":svr.0
+
+  tmux attach -t "$session"
 }
 
 tat() {
