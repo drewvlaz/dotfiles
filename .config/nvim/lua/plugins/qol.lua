@@ -68,25 +68,53 @@ return {
     ft = "qf",
   },
 
-  -- {
-  --   "kevinhwang91/nvim-ufo",
-  --   dependencies = "kevinhwang91/promise-async",
-  --   config = function()
-  --     vim.o.foldcolumn = "1" -- '0' is not bad
-  --     vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
-  --     vim.o.foldlevelstart = 99
-  --     vim.o.foldenable = true
-  --
-  --     -- Using ufo provider need remap `zR` and `zM`. If Neovim is 0.6.1, remap yourself
-  --     vim.keymap.set("n", "zR", require("ufo").openAllFolds)
-  --     vim.keymap.set("n", "zM", require("ufo").closeAllFolds)
-  --     local capabilities = vim.lsp.protocol.make_client_capabilities()
-  --     capabilities.textDocument.foldingRange = {
-  --       dynamicRegistration = false,
-  --       lineFoldingOnly = true,
-  --     }
-  --   end,
-  -- },
+  {
+    -- Loaded eagerly at high priority so its top-level `async` module wins
+    -- name resolution over lewis6991/async.nvim (pulled in by refactoring.nvim),
+    -- which ships a same-named but incompatible `async` module.
+    "kevinhwang91/promise-async",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("async")
+      require("promise")
+    end,
+  },
+  {
+    "kevinhwang91/nvim-ufo",
+    dependencies = "kevinhwang91/promise-async",
+    event = "BufReadPost",
+    opts = {
+      provider_selector = function(bufnr, filetype, buftype)
+        -- skip floats/pickers/scratch buffers (Telescope, noice, etc.) that have
+        -- nothing to fold; without this, both providers bail and there's no
+        -- third fallback, so it surfaces as an unhandled promise rejection.
+        if buftype ~= "" then
+          return ""
+        end
+        -- only opt into treesitter folding when a parser is actually attached
+        -- and a folds query exists; otherwise ufo's provider throws instead of
+        -- falling back cleanly (e.g. Makefile with no `make` parser installed)
+        local ok = pcall(vim.treesitter.get_parser, bufnr)
+        local lang = vim.treesitter.language.get_lang(filetype) or filetype
+        if ok and vim.treesitter.query.get(lang, "folds") then
+          return { "lsp", "treesitter" }
+        end
+        return { "lsp", "indent" }
+      end,
+    },
+    init = function()
+      vim.o.foldcolumn = "1"
+      vim.o.foldlevel = 99
+      vim.o.foldlevelstart = 99
+      vim.o.foldenable = true
+    end,
+    config = function(_, opts)
+      require("ufo").setup(opts)
+      vim.keymap.set("n", "zR", require("ufo").openAllFolds)
+      vim.keymap.set("n", "zM", require("ufo").closeAllFolds)
+    end,
+  },
   -- {
   --   "folke/twilight.nvim",
   --   opts = {

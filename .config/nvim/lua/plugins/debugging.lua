@@ -48,6 +48,45 @@ local dap_python_config = function()
     --   -- pythonPath = venv_python_path(),
     -- },
     {
+      name = "main_backend (attach docker)",
+      type = "debugpy",
+      request = "attach",
+      connect = { host = "127.0.0.1", port = 5678 },
+      pathMappings = {
+        {
+          localRoot = vim.loop.cwd() .. "/backend",
+          remoteRoot = "/app",
+        },
+      },
+      justMyCode = false,
+    },
+    {
+      name = "admin_backend (attach docker)",
+      type = "debugpy",
+      request = "attach",
+      connect = { host = "127.0.0.1", port = 5679 },
+      pathMappings = {
+        {
+          localRoot = vim.loop.cwd() .. "/backend",
+          remoteRoot = "/app",
+        },
+      },
+      justMyCode = false,
+    },
+    {
+      name = "temporal-integration-worker (attach docker)",
+      type = "debugpy",
+      request = "attach",
+      connect = { host = "127.0.0.1", port = 5680 },
+      pathMappings = {
+        {
+          localRoot = vim.loop.cwd() .. "/backend",
+          remoteRoot = "/app",
+        },
+      },
+      justMyCode = false,
+    },
+    {
       name = "django",
       type = "debugpy",
       request = "launch",

@@ -5,21 +5,8 @@ return {
     formatters_by_ft = {
       typescript = { "prettier", "eslint" },
       typescriptreact = { "prettier", "eslint" },
-      python = { "autoflake", "isort", "black" },
+      python = { "ruff_fix", "ruff_format" },
       rust = { "rustfmt" },
     },
-    formatters = {
-      autoflake = {
-        prepend_args = {
-          "--remove-all-unused-imports",
-          -- "--remove-unused-variables",
-        },
-      },
-    },
-    -- format_on_save = {
-    --   lsp_fallback = true,
-    --   async = false,
-    --   timeout = 1000,
-    -- },
   },
 }
